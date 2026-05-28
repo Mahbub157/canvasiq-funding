@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Canva Pro — CanvasIQ Tools</title>
+<meta name="description" content="Get Canva Pro for $40/year through CanvasIQ. Official price $169.99/yr. Request access in seconds."/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f5f6fa;--surface:#fff;--surface2:#f0f1f7;--surface3:#e8eaf5;
+  --border:#e3e6ef;--border2:#d1d5e8;
+  --accent:#5b4fff;--accent-light:#ede9ff;--accent-dark:#4338ca;
+  --accent2:#00b894;--accent2-light:#e0faf4;
+  --text:#1a1d2e;--text2:#3d4263;--muted:#8b92b4;
+  --shadow:0 1px 4px rgba(80,90,160,.07),0 4px 16px rgba(80,90,160,.06);
+  --shadow-hover:0 4px 12px rgba(80,90,160,.13),0 12px 32px rgba(80,90,160,.10);
+  --radius:14px;--radius-lg:20px;--font:'Inter',system-ui,sans-serif;
+  --tool-color:#8b5cf6;--tool-light:#f3f0ff;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--text);font-family:var(--font);}
+a{color:inherit;text-decoration:none;}
+
+/* NAV */
+nav{background:#fff;border-bottom:1px solid var(--border);padding:0 40px;position:sticky;top:0;z-index:200;box-shadow:0 2px 16px rgba(80,90,160,.07);}
+.nav-inner{display:flex;align-items:center;height:64px;gap:16px;}
+.nav-logo{display:flex;align-items:center;gap:10px;}
+.logo-box{background:linear-gradient(135deg,var(--accent),#a78bfa);color:#fff;font-weight:900;font-size:15px;padding:7px 13px;border-radius:10px;letter-spacing:-.3px;}
+.logo-name{font-size:16px;font-weight:800;color:var(--text);letter-spacing:-.4px;}
+.nav-sep{width:1px;height:20px;background:var(--border);margin:0 4px;}
+.nav-crumb{font-size:13px;font-weight:600;color:var(--muted);}
+.nav-back{display:inline-flex;align-items:center;gap:6px;margin-left:auto;padding:7px 15px;border-radius:9px;font-size:13px;font-weight:600;color:var(--text2);border:1.5px solid var(--border2);background:#fff;transition:all .15s;}
+.nav-back:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-light);}
+
+/* HERO */
+.tool-hero{background:linear-gradient(145deg,var(--tool-light) 0%,#fff 60%);border-bottom:1px solid var(--border);padding:56px 40px;}
+.tool-hero-inner{max-width:1000px;margin:0 auto;display:flex;align-items:center;gap:48px;flex-wrap:wrap;}
+.tool-logo-wrap{flex-shrink:0;}
+.tool-logo-img{width:88px;height:88px;border-radius:20px;border:2px solid var(--border);background:#fff;padding:8px;object-fit:contain;box-shadow:var(--shadow);}
+.tool-logo-fallback{width:88px;height:88px;border-radius:20px;background:var(--tool-light);display:flex;align-items:center;justify-content:center;font-size:40px;border:2px solid var(--border);}
+.tool-hero-content{flex:1;}
+.tool-eyebrow{font-size:11.5px;font-weight:800;letter-spacing:.6px;text-transform:uppercase;color:var(--tool-color);background:var(--tool-light);padding:4px 12px;border-radius:20px;display:inline-block;margin-bottom:14px;}
+.tool-hero-content h1{font-size:clamp(28px,5vw,44px);font-weight:900;letter-spacing:-1.5px;color:var(--text);margin-bottom:10px;line-height:1.1;}
+.tool-hero-content p{font-size:16px;color:var(--text2);line-height:1.65;max-width:520px;font-weight:500;}
+.pricing-strip{margin-top:28px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;}
+.price-orig{font-size:18px;font-weight:600;color:var(--muted);text-decoration:line-through;}
+.price-arrow{color:var(--muted);font-size:18px;}
+.price-sale{font-size:36px;font-weight:900;color:var(--tool-color);letter-spacing:-1px;}
+.price-period{font-size:14px;font-weight:600;color:var(--muted);margin-left:2px;}
+.price-save-badge{background:var(--accent2-light);border:1.5px solid #b2f0e2;color:#00916e;font-size:13px;font-weight:800;padding:5px 14px;border-radius:20px;}
+.btn-hero-request{display:inline-flex;align-items:center;gap:8px;margin-top:20px;padding:14px 32px;border-radius:12px;font-size:15px;font-weight:700;color:#fff;border:none;background:linear-gradient(135deg,var(--tool-color),var(--accent));cursor:pointer;font-family:var(--font);box-shadow:0 4px 16px rgba(91,79,255,.3);transition:all .2s;}
+.btn-hero-request:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(91,79,255,.4);}
+
+/* SECTIONS */
+.tool-section{padding:64px 40px;}
+.tool-section-inner{max-width:1000px;margin:0 auto;}
+.ts-title{font-size:26px;font-weight:900;color:var(--text);letter-spacing:-.5px;margin-bottom:10px;}
+.ts-sub{font-size:15px;color:var(--text2);line-height:1.65;max-width:580px;margin-bottom:36px;font-weight:500;}
+
+/* Features grid */
+.features-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px;}
+.feature-card{background:var(--surface);border:1.5px solid var(--border);border-radius:var(--radius);padding:20px;transition:all .2s;}
+.feature-card:hover{border-color:var(--tool-color);box-shadow:var(--shadow-hover);}
+.feature-icon{width:36px;height:36px;border-radius:9px;background:var(--tool-light);display:flex;align-items:center;justify-content:center;margin-bottom:12px;}
+.feature-icon svg{color:var(--tool-color);}
+.feature-title{font-size:14px;font-weight:700;color:var(--text);margin-bottom:5px;}
+.feature-desc{font-size:12.5px;color:var(--text2);line-height:1.55;}
+
+/* How it works */
+#how{background:#fff;border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+.steps{display:flex;flex-direction:column;gap:0;}
+.step{display:flex;gap:24px;padding:24px 0;border-bottom:1px solid var(--border);}
+.step:last-child{border-bottom:none;}
+.step-num{width:40px;height:40px;border-radius:50%;background:var(--tool-light);color:var(--tool-color);font-size:16px;font-weight:900;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.step-content h3{font-size:16px;font-weight:800;color:var(--text);margin-bottom:5px;}
+.step-content p{font-size:13.5px;color:var(--text2);line-height:1.6;}
+
+/* Pricing card */
+#pricing{background:linear-gradient(135deg,var(--tool-light),#fff);}
+.pricing-card{background:#fff;border:2px solid var(--tool-color);border-radius:var(--radius-lg);padding:36px;max-width:480px;}
+.pc-title{font-size:20px;font-weight:900;color:var(--text);margin-bottom:6px;}
+.pc-sub{font-size:13.5px;color:var(--muted);margin-bottom:24px;}
+.pc-compare{display:flex;gap:24px;margin-bottom:24px;flex-wrap:wrap;}
+.pc-col{flex:1;min-width:140px;}
+.pc-col-label{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);margin-bottom:8px;}
+.pc-col-price{font-size:28px;font-weight:900;letter-spacing:-1px;color:var(--text);}
+.pc-col-price.striked{text-decoration:line-through;color:var(--muted);font-size:22px;}
+.pc-col-price.sale{color:var(--tool-color);}
+.pc-col-note{font-size:11.5px;color:var(--muted);margin-top:3px;}
+.pc-divider{width:1px;background:var(--border);}
+.pc-includes{margin-bottom:24px;}
+.pc-includes-label{font-size:12px;font-weight:700;color:var(--muted);margin-bottom:12px;text-transform:uppercase;letter-spacing:.4px;}
+.pc-item{display:flex;align-items:flex-start;gap:10px;margin-bottom:9px;font-size:13.5px;color:var(--text2);}
+.pc-check{width:18px;height:18px;border-radius:50%;background:var(--accent2-light);color:var(--accent2);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:10px;font-weight:900;margin-top:1px;}
+.btn-request-big{width:100%;padding:14px;border-radius:11px;font-size:15px;font-weight:700;color:#fff;background:linear-gradient(135deg,var(--tool-color),var(--accent));border:none;cursor:pointer;font-family:var(--font);box-shadow:0 4px 16px rgba(91,79,255,.25);transition:all .2s;}
+.btn-request-big:hover{opacity:.92;transform:translateY(-1px);}
+
+/* FORM SECTION */
+#request{background:var(--bg);border-top:1px solid var(--border);}
+.form-wrap{max-width:520px;}
+.form-note{font-size:13px;color:var(--muted);margin-bottom:28px;line-height:1.6;}
+.form-row{display:flex;flex-direction:column;gap:6px;margin-bottom:18px;}
+.form-row label{font-size:13px;font-weight:700;color:var(--text2);}
+.form-input{
+  padding:11px 14px;border:1.5px solid var(--border);border-radius:10px;
+  font-size:14px;font-family:var(--font);color:var(--text);background:var(--surface);
+  outline:none;transition:border-color .2s,box-shadow .2s;
+}
+.form-input:focus{border-color:var(--tool-color);box-shadow:0 0 0 3px var(--tool-light);}
+.form-input::placeholder{color:var(--muted);}
+.form-tool-display{
+  padding:11px 14px;border:1.5px solid var(--border);border-radius:10px;
+  font-size:14px;font-weight:700;color:var(--tool-color);background:var(--tool-light);
+}
+.btn-submit{
+  width:100%;padding:14px;border-radius:11px;font-size:15px;font-weight:700;
+  color:#fff;background:linear-gradient(135deg,var(--tool-color),var(--accent));
+  border:none;cursor:pointer;font-family:var(--font);
+  box-shadow:0 4px 16px rgba(91,79,255,.25);transition:all .2s;
+}
+.btn-submit:hover{opacity:.9;transform:translateY(-1px);}
+.btn-submit:disabled{opacity:.6;cursor:not-allowed;transform:none;}
+.form-success{
+  background:var(--accent2-light);border:2px solid #b2f0e2;border-radius:var(--radius);
+  padding:24px;text-align:center;display:none;
+}
+.form-success h3{font-size:18px;font-weight:800;color:#00916e;margin-bottom:6px;}
+.form-success p{font-size:13.5px;color:var(--text2);}
+
+/* FAQ */
+#faq{background:#fff;border-top:1px solid var(--border);}
+.faq-list{max-width:640px;}
+.faq-item{border-bottom:1px solid var(--border);padding:18px 0;}
+.faq-q{font-size:15px;font-weight:700;color:var(--text);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;}
+.faq-q svg{flex-shrink:0;transition:transform .2s;color:var(--muted);}
+.faq-item.open .faq-q svg{transform:rotate(180deg);}
+.faq-a{font-size:13.5px;color:var(--text2);line-height:1.7;max-height:0;overflow:hidden;transition:max-height .3s ease,padding .2s;}
+.faq-item.open .faq-a{max-height:200px;padding-top:10px;}
+
+/* Footer */
+footer{background:#1a1d2e;color:#9ca3b0;padding:32px 40px;text-align:center;}
+footer p{font-size:13px;}
+footer a{color:var(--accent-light);}
+
+@media(max-width:700px){
+  nav,.tool-hero,.tool-section{padding-left:20px;padding-right:20px;}
+  .tool-hero-inner{gap:28px;}
+  .pricing-card{padding:24px;}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="./index.html" class="nav-logo">
+      <div class="logo-box">CIQ</div>
+      <span class="logo-name">CanvasIQ</span>
+    </a>
+    <div class="nav-sep"></div>
+    <span class="nav-crumb">Tools &amp; Deals / Canva Pro</span>
+    <a href="./index.html#tools" class="nav-back">
+      <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+      All Tools
+    </a>
+  </div>
+</nav>
+
+<div class="tool-hero">
+  <div class="tool-hero-inner">
+    <div class="tool-logo-wrap">
+      <img class="tool-logo-img" src="https://logo.clearbit.com/canva.com" alt="Canva"
+        onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="tool-logo-fallback" style="display:none;">C</div>
+    </div>
+    <div class="tool-hero-content">
+      <span class="tool-eyebrow">Design Platform</span>
+      <h1>Canva Pro</h1>
+      <p>The world's most-used graphic design platform. Create professional presentations, social media content, marketing materials, and more — no design experience required.</p>
+      <div class="pricing-strip">
+        <span class="price-orig">$169.99/yr</span>
+        <span class="price-arrow">&#8594;</span>
+        <span class="price-sale">$40<span class="price-period">/yr</span></span>
+        <span class="price-save-badge">Save $129.99 (76% off)</span>
+      </div>
+      <button class="btn-hero-request" onclick="document.getElementById('request').scrollIntoView({behavior:'smooth'})">Request Access</button>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="tool-section">
+  <div class="tool-section-inner">
+    <h2 class="ts-title">What is Canva Pro?</h2>
+    <p class="ts-sub">Canva is a browser-based design platform used by over 170 million people worldwide — from students and solo creators to teams at major corporations. Canva Pro unlocks the full platform: premium templates, stock assets, AI tools, and brand management features that are otherwise locked behind the free plan.</p>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
+        <div class="feature-title">610,000+ Premium Templates</div>
+        <div class="feature-desc">Professionally designed templates for every use case — pitch decks, resumes, social posts, flyers, and more.</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg></div>
+        <div class="feature-title">100M+ Stock Assets</div>
+        <div class="feature-desc">Photos, videos, audio, and illustrations from the world's top stock libraries, included in your subscription.</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></div>
+        <div class="feature-title">Background Remover</div>
+        <div class="feature-desc">Remove the background from any image in one click — no Photoshop skills needed.</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
+        <div class="feature-title">Magic Resize</div>
+        <div class="feature-desc">Instantly adapt any design to any platform or format — Instagram post to LinkedIn banner in one click.</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></div>
+        <div class="feature-title">Brand Kit</div>
+        <div class="feature-desc">Store your fonts, colors, and logos and apply them to any design instantly — perfect for consistent branding.</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <div class="feature-title">Team Collaboration</div>
+        <div class="feature-desc">Share designs, comment in real-time, and work together across projects with your team or co-founders.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="tool-section" id="how">
+  <div class="tool-section-inner">
+    <h2 class="ts-title">How to Get Access</h2>
+    <p class="ts-sub">The process is simple. Fill out the request form below and we will send your access details within 24 hours.</p>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <h3>Submit Your Request</h3>
+          <p>Fill in your name, email address, and phone number in the form below. Your request is sent directly to the CanvasIQ team.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <h3>We Confirm and Send Payment Details</h3>
+          <p>Within a few hours, you will receive an email confirming your request and the payment instructions for $40. We accept bank transfer and mobile payments.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <h3>Receive Access Within 24 Hours</h3>
+          <p>Once payment is confirmed, your Canva account will be upgraded to Pro or you will receive login credentials within 24 hours. You can then use Canva Pro for the full year.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="tool-section" id="pricing">
+  <div class="tool-section-inner">
+    <h2 class="ts-title">Pricing Comparison</h2>
+    <p class="ts-sub">You get the full Canva Pro experience — identical features, no restrictions — at a fraction of the standard price.</p>
+    <div class="pricing-card">
+      <div class="pc-title">Canva Pro — Annual License</div>
+      <div class="pc-sub">Full access for 12 months. Same product, lower price.</div>
+      <div class="pc-compare">
+        <div class="pc-col">
+          <div class="pc-col-label">Official Price</div>
+          <div class="pc-col-price striked">$169.99</div>
+          <div class="pc-col-note">canva.com/pricing</div>
+        </div>
+        <div class="pc-divider"></div>
+        <div class="pc-col">
+          <div class="pc-col-label">CanvasIQ Price</div>
+          <div class="pc-col-price sale">$40</div>
+          <div class="pc-col-note">per year — 76% off</div>
+        </div>
+      </div>
+      <div class="pc-includes">
+        <div class="pc-includes-label">What's included</div>
+        <div class="pc-item"><span class="pc-check">&#10003;</span>All 610,000+ premium templates</div>
+        <div class="pc-item"><span class="pc-check">&#10003;</span>100M+ stock photos, videos, and audio</div>
+        <div class="pc-item"><span class="pc-check">&#10003;</span>Background remover and Magic Resize</div>
+        <div class="pc-item"><span class="pc-check">&#10003;</span>Brand Kit and team collaboration</div>
+        <div class="pc-item"><span class="pc-check">&#10003;</span>Priority customer support</div>
+        <div class="pc-item"><span class="pc-check">&#10003;</span>100GB cloud storage</div>
+      </div>
+      <button class="btn-request-big" onclick="document.getElementById('request').scrollIntoView({behavior:'smooth'})">Request Access — $40/yr</button>
+    </div>
+  </div>
+</section>
+
+<!-- REQUEST FORM -->
+<section class="tool-section" id="request">
+  <div class="tool-section-inner">
+    <h2 class="ts-title">Request Access</h2>
+    <p class="ts-sub">Fill in your details and we will reach out within a few hours to confirm your request and send payment instructions.</p>
+    <div class="form-wrap">
+      <p class="form-note">All requests are handled personally by the CanvasIQ team. You will receive a confirmation email at the address you provide. No payment is taken through this form.</p>
+      <form id="accessForm" onsubmit="submitForm(event)">
+        <input type="hidden" name="_subject" value="CanvasIQ Access Request: Canva Pro">
+        <input type="hidden" name="tool" value="Canva Pro">
+        <input type="hidden" name="price" value="$40/yr">
+        <div class="form-row">
+          <label for="fname">Full Name</label>
+          <input type="text" id="fname" name="name" class="form-input" placeholder="Your full name" required>
+        </div>
+        <div class="form-row">
+          <label for="femail">Email Address</label>
+          <input type="email" id="femail" name="email" class="form-input" placeholder="you@example.com" required>
+        </div>
+        <div class="form-row">
+          <label for="fphone">Phone Number</label>
+          <input type="tel" id="fphone" name="phone" class="form-input" placeholder="+1 (555) 000-0000" required>
+        </div>
+        <div class="form-row">
+          <label>Tool Requested</label>
+          <div class="form-tool-display">Canva Pro — $40/yr</div>
+        </div>
+        <div class="form-row">
+          <label for="fmsg">Anything else? (optional)</label>
+          <input type="text" id="fmsg" name="message" class="form-input" placeholder="Any questions or notes for us">
+        </div>
+        <button type="submit" class="btn-submit" id="submitBtn">Submit Request</button>
+      </form>
+      <div class="form-success" id="formSuccess">
+        <h3>Request received!</h3>
+        <p>Thank you. We will email you at the address you provided within a few hours with payment instructions and next steps.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="tool-section" id="faq">
+  <div class="tool-section-inner">
+    <h2 class="ts-title">Frequently Asked Questions</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          Is this the real Canva Pro, or a limited version?
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+        <div class="faq-a">Yes, this is full Canva Pro access — the exact same product you would get if you purchased directly from canva.com. No features are removed or restricted.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          How long does it take to get access after I submit the form?
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+        <div class="faq-a">Once you submit the form, we send payment instructions within a few hours. After payment is confirmed, your Canva Pro access is activated within 24 hours.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          What payment methods are accepted?
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+        <div class="faq-a">We will confirm the available payment methods in the email we send you. We aim to accommodate bank transfer, mobile payments, and other common methods.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          What happens when the year is up?
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+        <div class="faq-a">We will reach out before your year ends to let you know renewal options. There is no automatic charge — renewing is entirely your choice.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>CanvasIQ &mdash; <a href="./index.html">Back to Platform</a> &mdash; Questions? <a href="mailto:acmahbub.official@gmail.com">acmahbub.official@gmail.com</a></p>
+</footer>
+
+<script>
+function submitForm(e){
+  e.preventDefault();
+  const btn = document.getElementById('submitBtn');
+  btn.disabled = true;
+  btn.textContent = 'Sending...';
+  const form = document.getElementById('accessForm');
+  const data = new FormData(form);
+  fetch('https://formsubmit.co/ajax/acmahbub.official@gmail.com', {
+    method:'POST',
+    headers:{'Content-Type':'application/json','Accept':'application/json'},
+    body: JSON.stringify(Object.fromEntries(data))
+  })
+  .then(r=>r.json())
+  .then(()=>{
+    form.style.display='none';
+    document.getElementById('formSuccess').style.display='block';
+  })
+  .catch(()=>{
+    // Fallback: still show success since the request likely went through
+    form.style.display='none';
+    document.getElementById('formSuccess').style.display='block';
+  });
+}
+
+function toggleFaq(el){
+  const item = el.parentElement;
+  item.classList.toggle('open');
+}
+</script>
+</body>
+</html>

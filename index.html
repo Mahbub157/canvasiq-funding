@@ -251,20 +251,76 @@ section{padding:72px 40px;}
 }
 .btn-promo:hover{transform:scale(1.03);box-shadow:0 4px 16px rgba(0,0,0,.2);}
 
-/* ── RESOURCES ── */
+/* ── RESOURCES / ARTICLES ── */
 #resources{background:#fff;border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
-.resources-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:20px;}
-.res-card{
-  background:var(--bg);border:1.5px solid var(--border);border-radius:var(--radius);
-  padding:24px;transition:all .2s;
+.articles-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:24px;}
+.article-card{
+  background:var(--surface);border:1.5px solid var(--border);border-radius:var(--radius-lg);
+  overflow:hidden;transition:all .2s;cursor:pointer;
 }
-.res-card:hover{transform:translateY(-2px);box-shadow:var(--shadow-hover);border-color:var(--card-color,var(--accent));}
-.res-icon{font-size:28px;margin-bottom:14px;}
-.res-type{font-size:11px;font-weight:800;color:var(--card-color,var(--accent));text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px;}
-.res-title{font-size:15px;font-weight:700;color:var(--text);margin-bottom:8px;line-height:1.4;}
-.res-desc{font-size:13px;color:var(--text2);line-height:1.5;margin-bottom:14px;}
-.res-tag-row{display:flex;gap:6px;flex-wrap:wrap;}
-.res-tag{font-size:11px;font-weight:600;color:var(--muted);background:var(--surface3);padding:3px 9px;border-radius:20px;}
+.article-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover);}
+.article-img{
+  height:180px;overflow:hidden;position:relative;
+  background:var(--surface2);
+}
+.article-img img{width:100%;height:100%;object-fit:cover;transition:transform .3s;}
+.article-card:hover .article-img img{transform:scale(1.04);}
+.article-cat{
+  position:absolute;top:12px;left:12px;
+  font-size:10.5px;font-weight:800;letter-spacing:.4px;text-transform:uppercase;
+  padding:4px 10px;border-radius:20px;
+}
+.article-body{padding:20px;}
+.article-meta{display:flex;align-items:center;gap:10px;margin-bottom:10px;}
+.article-date{font-size:11.5px;color:var(--muted);font-weight:500;}
+.article-read-time{font-size:11.5px;color:var(--muted);font-weight:500;}
+.article-dot{width:3px;height:3px;border-radius:50%;background:var(--muted);}
+.article-title{font-size:16px;font-weight:800;color:var(--text);margin-bottom:8px;line-height:1.4;letter-spacing:-.2px;}
+.article-excerpt{font-size:13px;color:var(--text2);line-height:1.65;margin-bottom:16px;}
+.article-read-btn{
+  display:inline-flex;align-items:center;gap:6px;
+  font-size:13px;font-weight:700;color:var(--accent);
+  background:var(--accent-light);border:none;border-radius:8px;
+  padding:7px 14px;cursor:pointer;font-family:var(--font);transition:all .15s;
+}
+.article-read-btn:hover{background:var(--accent);color:#fff;}
+.article-read-btn svg{transition:transform .15s;}
+.article-card:hover .article-read-btn svg{transform:translateX(3px);}
+
+/* Article modal */
+.modal-overlay{
+  position:fixed;inset:0;background:rgba(10,12,30,.6);z-index:1000;
+  display:none;align-items:flex-start;justify-content:center;
+  padding:40px 20px;overflow-y:auto;backdrop-filter:blur(3px);
+}
+.modal-overlay.open{display:flex;}
+.modal-box{
+  background:#fff;border-radius:var(--radius-lg);max-width:720px;width:100%;
+  box-shadow:0 20px 60px rgba(0,0,0,.2);position:relative;
+  margin:auto;
+}
+.modal-hero{height:260px;overflow:hidden;border-radius:var(--radius-lg) var(--radius-lg) 0 0;}
+.modal-hero img{width:100%;height:100%;object-fit:cover;}
+.modal-content{padding:36px 40px 40px;}
+.modal-cat{
+  font-size:11px;font-weight:800;letter-spacing:.5px;text-transform:uppercase;
+  padding:4px 12px;border-radius:20px;display:inline-block;margin-bottom:14px;
+}
+.modal-title{font-size:26px;font-weight:900;color:var(--text);margin-bottom:10px;letter-spacing:-.5px;line-height:1.2;}
+.modal-meta{display:flex;align-items:center;gap:12px;margin-bottom:24px;font-size:13px;color:var(--muted);font-weight:500;padding-bottom:20px;border-bottom:1px solid var(--border);}
+.modal-body{font-size:15px;color:var(--text2);line-height:1.8;}
+.modal-body h3{font-size:18px;font-weight:800;color:var(--text);margin:28px 0 10px;letter-spacing:-.3px;}
+.modal-body p{margin-bottom:16px;}
+.modal-body ul{margin:0 0 16px 20px;}
+.modal-body li{margin-bottom:8px;}
+.modal-body strong{color:var(--text);font-weight:700;}
+.modal-close{
+  position:absolute;top:16px;right:16px;width:36px;height:36px;border-radius:50%;
+  background:rgba(0,0,0,.5);border:none;color:#fff;font-size:18px;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;line-height:1;z-index:10;
+  transition:background .15s;
+}
+.modal-close:hover{background:rgba(0,0,0,.75);}
 
 /* ── JOBS ── */
 #jobs{background:linear-gradient(135deg,#fff7ed 0%,#fff 50%);}
@@ -562,60 +618,31 @@ footer{background:#1a1d2e;color:#9ca3b0;padding:56px 40px 32px;}
   </div>
 </section>
 
-<!-- RESOURCE HUB -->
+<!-- RESOURCE HUB / ARTICLES -->
 <section id="resources">
   <div class="section-inner">
     <div class="section-header">
-      <span class="section-eyebrow" style="background:#fffbeb;color:#c2500a;">📖 Free &amp; Premium</span>
+      <span class="section-eyebrow" style="background:#fffbeb;color:#c2500a;">Free Guides &amp; Articles</span>
       <h2 class="section-title">Resource Library</h2>
-      <p class="section-sub">Templates, playbooks, and guides to help you move faster — from pitch deck to product launch.</p>
+      <p class="section-sub">In-depth guides written for students and early-stage founders. No fluff — just actionable advice.</p>
     </div>
-    <div class="resources-grid">
-      <div class="res-card" style="--card-color:#5b4fff;">
-        <div class="res-icon">📊</div>
-        <div class="res-type" style="color:#5b4fff;">Pitch Deck Template</div>
-        <div class="res-title">The 12-Slide Startup Pitch Deck (Investor-Ready)</div>
-        <div class="res-desc">Used by 500+ founders to raise pre-seed funding. Includes notes on what investors actually look for on each slide.</div>
-        <div class="res-tag-row"><span class="res-tag">Fundraising</span><span class="res-tag">Free</span><span class="res-tag">PowerPoint + Figma</span></div>
-      </div>
-      <div class="res-card" style="--card-color:#00b894;">
-        <div class="res-icon">✍️</div>
-        <div class="res-type" style="color:#00b894;">Grant Writing Guide</div>
-        <div class="res-title">How to Write a Winning Grant Application</div>
-        <div class="res-desc">Step-by-step guide with examples from successful $50K–$500K applications. Includes common mistakes to avoid.</div>
-        <div class="res-tag-row"><span class="res-tag">Grants</span><span class="res-tag">Free</span><span class="res-tag">PDF Guide</span></div>
-      </div>
-      <div class="res-card" style="--card-color:#f59e0b;">
-        <div class="res-icon">🚀</div>
-        <div class="res-type" style="color:#f59e0b;">Startup Checklist</div>
-        <div class="res-title">EdTech Startup Launch Checklist (100 Steps)</div>
-        <div class="res-desc">From idea validation to first paying customer — a comprehensive checklist built for EdTech and SaaS founders at MVP stage.</div>
-        <div class="res-tag-row"><span class="res-tag">Startup</span><span class="res-tag">Pro</span><span class="res-tag">Notion Template</span></div>
-      </div>
-      <div class="res-card" style="--card-color:#8b5cf6;">
-        <div class="res-icon">🎯</div>
-        <div class="res-type" style="color:#8b5cf6;">Competition Prep</div>
-        <div class="res-title">How to Win Startup Competitions: A Playbook</div>
-        <div class="res-desc">Research-backed strategies from teams that won SBIR, HeroX, and university pitch competitions. Includes judging rubrics.</div>
-        <div class="res-tag-row"><span class="res-tag">Competitions</span><span class="res-tag">Free</span><span class="res-tag">PDF + Slides</span></div>
-      </div>
-      <div class="res-card" style="--card-color:#ec4899;">
-        <div class="res-icon">📱</div>
-        <div class="res-type" style="color:#ec4899;">Student Freelancer Kit</div>
-        <div class="res-title">Freelancing While in College: Full Toolkit</div>
-        <div class="res-desc">Contracts, invoice templates, client email scripts, rate calculators. Everything to start earning from your skills today.</div>
-        <div class="res-tag-row"><span class="res-tag">Students</span><span class="res-tag">Free</span><span class="res-tag">Canva + PDF</span></div>
-      </div>
-      <div class="res-card" style="--card-color:#06b6d4;">
-        <div class="res-icon">🤖</div>
-        <div class="res-type" style="color:#06b6d4;">AI Tools Guide</div>
-        <div class="res-title">50 AI Tools Every Founder Should Know in 2025</div>
-        <div class="res-desc">Curated list with use cases, pricing tiers, and which ones actually save you time vs. which ones are hype.</div>
-        <div class="res-tag-row"><span class="res-tag">AI</span><span class="res-tag">Free</span><span class="res-tag">Interactive List</span></div>
-      </div>
-    </div>
+    <div class="articles-grid" id="articlesGrid"></div>
   </div>
 </section>
+
+<!-- ARTICLE MODAL -->
+<div class="modal-overlay" id="articleModal" onclick="if(event.target===this)closeModal()">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal()">&#215;</button>
+    <div class="modal-hero"><img id="modalImg" src="" alt=""/></div>
+    <div class="modal-content">
+      <span class="modal-cat" id="modalCat"></span>
+      <h2 class="modal-title" id="modalTitle"></h2>
+      <div class="modal-meta" id="modalMeta"></div>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+</div>
 
 <!-- JOBS & INTERNSHIPS -->
 <section id="jobs">
@@ -740,14 +767,10 @@ footer{background:#1a1d2e;color:#9ca3b0;padding:56px 40px 32px;}
 <script>
 // ── TOOLS DATA ──
 const tools = [
-  { name:'Canva Pro',    domain:'canva.com',    orig:'$119/yr',  sale:'$47/yr',  badge:'61% OFF', cta:'Get Deal',   url:'#' },
-  { name:'Notion',       domain:'notion.so',    orig:'$96/yr',   sale:'Free',    badge:'Student',  cta:'Get Free',   url:'#' },
-  { name:'Grammarly',    domain:'grammarly.com',orig:'$144/yr',  sale:'$55/yr',  badge:'62% OFF', cta:'Get Deal',   url:'#' },
-  { name:'Microsoft 365',domain:'microsoft.com',orig:'$69/yr',   sale:'Free',    badge:'Student',  cta:'Get Free',   url:'#' },
-  { name:'Figma',        domain:'figma.com',    orig:'$144/yr',  sale:'Free',    badge:'Student',  cta:'Get Free',   url:'#' },
-  { name:'Brilliant',    domain:'brilliant.org',orig:'$149/yr',  sale:'$59/yr',  badge:'60% OFF', cta:'Get Deal',   url:'#' },
-  { name:'Miro',         domain:'miro.com',     orig:'$96/yr',   sale:'Free',    badge:'Student',  cta:'Get Free',   url:'#' },
-  { name:'Coursera',     domain:'coursera.org', orig:'$399/yr',  sale:'Free',    badge:'Audit',    cta:'Learn Free', url:'#' },
+  { name:'Canva Pro',      domain:'canva.com',    orig:'$169.99/yr', sale:'$40/yr',  save:'76% off', badge:'76% OFF', cta:'Request Access', url:'./canva.html' },
+  { name:'Microsoft 365',  domain:'microsoft.com',orig:'$99.99/yr',  sale:'$50/yr',  save:'50% off', badge:'50% OFF', cta:'Request Access', url:'./msoffice.html' },
+  { name:'Figma Pro',      domain:'figma.com',    orig:'$144/yr',    sale:'$20/yr',  save:'86% off', badge:'86% OFF', cta:'Request Access', url:'./figma.html' },
+  { name:'Brilliant',      domain:'brilliant.org',orig:'$149.99/yr', sale:'$10/yr',  save:'93% off', badge:'93% OFF', cta:'Request Access', url:'./brilliant.html' },
 ];
 
 function renderTools(){
@@ -756,18 +779,18 @@ function renderTools(){
     const logoUrl = `https://logo.clearbit.com/${t.domain}`;
     const faviconUrl = `https://www.google.com/s2/favicons?domain=${t.domain}&sz=128`;
     return `
-    <div class="tool-card" onclick="window.open('${t.url}','_blank')">
+    <div class="tool-card" onclick="window.location.href='${t.url}'">
       <div class="tool-logo">
         <img src="${logoUrl}" alt="${t.name}" loading="lazy"
-          onerror="this.onerror=null;this.src='${faviconUrl}';this.onerror=function(){this.style.display='none';this.parentElement.innerHTML='<span class=tool-logo-fallback>🛠️</span>';}">
+          onerror="this.onerror=null;this.src='${faviconUrl}';this.onerror=function(){this.style.display='none';this.parentElement.innerHTML='<span class=tool-logo-fallback style=font-size:22px>&#128736;</span>';}">
       </div>
       <div class="tool-name">${t.name}</div>
       <div class="tool-price-row">
         <span class="tool-orig">${t.orig}</span>
         <span class="tool-sale">${t.sale}</span>
       </div>
-      <span class="tool-badge">${t.badge}</span>
-      <button class="tool-cta-btn" style="margin-top:12px;">${t.cta} →</button>
+      <span class="tool-badge">${t.save}</span>
+      <button class="tool-cta-btn" style="margin-top:12px;">${t.cta}</button>
     </div>`;
   }).join('');
 }
@@ -893,6 +916,207 @@ async function loadFunding(){
   }
 }
 
+// ── ARTICLES DATA ──
+const articles = [
+  {
+    id:1,
+    cat:'Grant Writing',
+    catColor:'#00b894',
+    catBg:'#e0faf4',
+    date:'May 2025',
+    readTime:'8 min read',
+    img:'https://images.unsplash.com/photo-1455390582262-e6f0a8dc4a7b?w=800&q=80',
+    title:'How to Write a Winning Grant Application',
+    excerpt:'Most grant applications fail not because the idea is bad, but because they ignore what reviewers are actually scoring. Here is what separates a funded application from a rejected one.',
+    body:`<p>Applying for a grant is one of the most high-leverage things an early-stage founder can do. A single successful application can give you $25,000 to $500,000 in non-dilutive capital — money you do not have to pay back and do not have to give up equity for. Yet most founders either never apply, or they apply poorly.</p>
+    <h3>Understand What Reviewers Are Actually Looking For</h3>
+    <p>Grant reviewers are not investors. They are not looking for the next billion-dollar company. They are looking for proposals that clearly address a stated problem, present a credible plan, and demonstrate that the team can execute. Most grants have a published scoring rubric. Read it. Structure your narrative to directly address each scoring criterion, in the same order they appear.</p>
+    <h3>The Problem Statement Is Everything</h3>
+    <p>Spend at least 30% of your word count on the problem. Be specific. Use data. Instead of writing "students struggle to learn," write "73% of community college students in the US drop STEM courses by the second semester, citing lack of personalized support as the primary reason (NCES, 2023)." Reviewers read hundreds of proposals. Specificity and evidence make yours stand out immediately.</p>
+    <h3>Show That You Can Execute</h3>
+    <p>Grants are bets on teams as much as ideas. Include brief bios of key team members with relevant credentials. If you have an advisor, a pilot program, or early users, mention them. Even a 20-person waitlist signals that real people care about your solution. Reviewers deduct points for proposals that look like they came from someone with no relevant experience and no traction.</p>
+    <h3>Budget Realism Matters More Than You Think</h3>
+    <p>An inflated or vague budget is a red flag. Break it down line by line. Justify every major cost. If you are requesting $50,000, explain exactly how you will spend it — personnel, technology, testing, marketing — and tie each expenditure back to a specific milestone. Reviewers appreciate founders who have clearly thought through execution, not just vision.</p>
+    <h3>Common Mistakes That Get Applications Rejected</h3>
+    <ul>
+      <li><strong>Ignoring the eligibility requirements.</strong> Read them twice before you invest time in writing.</li>
+      <li><strong>Writing for yourself, not the reviewer.</strong> Avoid jargon. Write at a level that a smart person outside your field can understand.</li>
+      <li><strong>Submitting at the last minute.</strong> Most grant portals have technical issues near the deadline. Submit 48 hours early.</li>
+      <li><strong>Not following formatting rules.</strong> Font size, page limits, file types — violating these can result in automatic disqualification.</li>
+      <li><strong>Failing to answer "so what."</strong> After every paragraph, ask yourself: why does this matter? If you cannot answer it, rewrite the paragraph.</li>
+    </ul>
+    <h3>Before You Submit</h3>
+    <p>Ask someone outside your field to read your application. If they cannot explain your problem and solution back to you in two sentences, your writing is not clear enough. Then read the scoring rubric one final time and check that every criterion has been addressed directly in your narrative.</p>`
+  },
+  {
+    id:2,
+    cat:'Pitch Decks',
+    catColor:'#5b4fff',
+    catBg:'#ede9ff',
+    date:'April 2025',
+    readTime:'10 min read',
+    img:'https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80',
+    title:'The 12-Slide Pitch Deck Every Pre-Seed Founder Needs',
+    excerpt:'Investors spend an average of 3 minutes and 44 seconds reviewing a pitch deck. Here is the exact slide structure that gets you a second meeting — and what most founders get wrong.',
+    body:`<p>A pitch deck is not a business plan. It is not a product demo. It is a carefully sequenced argument for why a smart person should give you money to pursue an idea. Every slide serves a specific purpose. Remove anything that does not serve that purpose.</p>
+    <h3>Slide 1 — The Problem</h3>
+    <p>Open with a problem your target audience viscerally feels. Use a concrete, memorable story or statistic. The goal of this slide is to make the investor think: "Yes, that is a real problem. I wonder how they solve it." Do not spend more than one slide on the problem.</p>
+    <h3>Slide 2 — Your Solution</h3>
+    <p>One sentence. Then a short description. Then, if possible, a screenshot or mockup. Investors should instantly understand what you built. Avoid describing features. Describe outcomes: "Students who use our platform improve test scores by 40% in 8 weeks."</p>
+    <h3>Slide 3 — Market Size</h3>
+    <p>Show TAM, SAM, and SOM with a brief explanation of how you calculated each. Investors at the pre-seed stage understand that your numbers are estimates. What they are looking for is that you understand the difference between the total market and the addressable slice you are realistically going after.</p>
+    <h3>Slide 4 — Traction</h3>
+    <p>This is the most important slide at pre-seed. Show any evidence that people want what you are building: users, revenue, letters of intent, pilot partners, waitlist signups, survey data. If you have nothing yet, be honest about where you are and what you plan to use the funding to achieve.</p>
+    <h3>Slide 5 — Business Model</h3>
+    <p>How do you make money? Keep it simple. Show one or two revenue streams, unit economics if you have them, and projected pricing. Investors want to know you have thought about this — they do not expect perfection at pre-seed.</p>
+    <h3>Slides 6 through 9</h3>
+    <p>Cover your go-to-market strategy (how you acquire customers), your competition and what differentiates you, your team and why you are the right people to solve this problem, and your financial projections for the next 18 to 24 months.</p>
+    <h3>Slide 10 — The Ask</h3>
+    <p>State clearly how much you are raising, what structure (SAFE, convertible note, or equity), and what milestones this funding will get you to. Be specific. "We are raising $500,000 to hire two engineers and reach 10,000 users in 12 months" is more compelling than "We are raising $500,000 for growth."</p>
+    <h3>Design Principles</h3>
+    <p>Use one font family. Stick to two or three brand colors. Every slide should have a single headline that communicates the key point — even if the investor never reads the body text. Remove every word that does not add meaning. When in doubt, cut.</p>`
+  },
+  {
+    id:3,
+    cat:'Startup Strategy',
+    catColor:'#f59e0b',
+    catBg:'#fffbeb',
+    date:'March 2025',
+    readTime:'12 min read',
+    img:'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&q=80',
+    title:'Launching an EdTech Startup: From Idea to First 100 Users',
+    excerpt:'Most EdTech startups fail before they launch because founders spend too long building. This is the lean approach that gets you to real users in 30 days — and what to do once you have them.',
+    body:`<p>The graveyard of EdTech startups is full of products that were technically impressive and completely unused. The single most common reason is that founders built for too long before talking to users. This guide gives you a repeatable process for getting from idea to first 100 users — fast.</p>
+    <h3>Week 1 — Validate Before You Build</h3>
+    <p>Spend your first week doing nothing but talking to potential users. Aim for 20 conversations with people who represent your target learner or institution. Ask about their current pain, what they already use to solve it, and how much time or money the problem costs them. You are not pitching. You are listening. If you cannot find 20 people who have this problem, you do not yet have a validated market.</p>
+    <h3>Week 2 — Define the Minimum Viable Product</h3>
+    <p>An MVP in EdTech is not a course platform with 50 features. It is the smallest thing that delivers the core learning outcome you promise. If you are building a tutoring platform, your MVP might be a simple scheduling page and a Zoom call. If you are building an adaptive quiz tool, your MVP might be a Google Form with branching logic. The question to ask yourself is: "What is the absolute minimum version of this that would genuinely help my target user?"</p>
+    <h3>Week 3 — Build and Invite</h3>
+    <p>Build your MVP. Use no-code tools where possible — Notion, Glide, Webflow, Airtable. Then personally reach out to the 20 people you spoke with in Week 1. Invite them to try it for free. Do not send a mass email. Write personal messages. "I built the thing we talked about. Would you try it this week and tell me what you think?" You will get a higher response rate and better feedback.</p>
+    <h3>Getting from 10 Users to 100</h3>
+    <p>The jump from 10 to 100 users usually comes from one of three channels: referrals from satisfied early users, partnerships with one or two institutions or student groups, or targeted social media content (particularly LinkedIn for B2B and TikTok or Instagram for B2C). Focus on the channel where your first 10 users came from. Do not spread yourself across all three.</p>
+    <h3>What to Measure in the First 90 Days</h3>
+    <ul>
+      <li><strong>Activation rate:</strong> What percentage of signups actually use the product?</li>
+      <li><strong>Retention:</strong> Do users come back after day 1, day 7, day 30?</li>
+      <li><strong>Net Promoter Score:</strong> Would users recommend it to a friend?</li>
+      <li><strong>Learning outcome:</strong> Is the product actually helping users learn what you claim?</li>
+    </ul>
+    <p>If activation or retention is low, talk to users who dropped off. The answer to why they left is almost always more valuable than any analytics dashboard.</p>`
+  },
+  {
+    id:4,
+    cat:'Competitions',
+    catColor:'#8b5cf6',
+    catBg:'#f3f0ff',
+    date:'February 2025',
+    readTime:'7 min read',
+    img:'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80',
+    title:'How to Win Startup Competitions: A Strategic Guide',
+    excerpt:'Winning a startup competition is not about having the best idea. It is about understanding how competitions are judged and preparing your team to perform against each criterion. Here is the playbook.',
+    body:`<p>Startup competitions collectively award hundreds of millions of dollars each year. MIT's $100K, Rice Business Plan Competition, SXSW Pitch, and hundreds of university competitions are accessible to early-stage founders with little more than a strong concept and a credible team. Yet most participants treat them like a lottery. The ones who win treat them like a performance.</p>
+    <h3>Research the Judging Criteria Before You Apply</h3>
+    <p>Every competition publishes its judging rubric. Some weight innovation heavily. Others prioritize market size, team credentials, or social impact. Read the rubric and reframe your pitch narrative to directly address each criterion, in proportion to its point value. A pitch that scores consistently across all criteria almost always beats one that excels in only one area.</p>
+    <h3>Know Your Judges</h3>
+    <p>Look up every judge beforehand. What is their background — investor, operator, academic? What sectors have they worked in? Tailor your language accordingly. An investor-heavy judging panel cares about market size and return potential. An academic panel cares about rigor and methodology. A corporate-sponsored competition often has judges looking for partnership opportunities with startups in specific verticals.</p>
+    <h3>The First 60 Seconds Win or Lose It</h3>
+    <p>Judges decide within the first minute whether they are interested. Lead with the problem and the stakes — not your company history, not your team background, not a long disclaimer. Open with something visceral: a statistic, a story, a question that makes the room sit up. Then tell them what you built and for whom. Everything else is supporting evidence.</p>
+    <h3>Practice Your Q&A More Than Your Pitch</h3>
+    <p>The pitch is scripted. The Q&A is where teams either earn or lose credibility. Compile a list of every hard question you might be asked: How big is the market? Who are your competitors? What is your unfair advantage? How do you acquire customers? What happens if a larger company copies you? Practice answering each one in 60 seconds or less, with specifics. "We are not sure yet" is an acceptable answer for some early-stage questions, but it must be paired with "and here is how we are going to find out."</p>
+    <h3>After the Competition</h3>
+    <p>Win or lose, every competition is a networking event. Connect with every judge on LinkedIn the day after. Send a brief, specific thank-you note referencing something they said. Many funded startups trace their investor relationships back to a competition they did not win. The check is the prize. The relationships are the return.</p>`
+  },
+  {
+    id:5,
+    cat:'Student Life',
+    catColor:'#ec4899',
+    catBg:'#fdf2f8',
+    date:'January 2025',
+    readTime:'6 min read',
+    img:'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&q=80',
+    title:'Freelancing in College: How to Earn Your First $1,000',
+    excerpt:'Freelancing while studying is one of the highest-ROI things you can do as a student. Here is how to get your first client, price your work correctly, and build a portfolio that compounds over time.',
+    body:`<p>The average college student graduates with limited savings and zero professional portfolio. Freelancing changes both. Done right, it gives you cash, client references, and a portfolio before you leave campus. This guide covers the practical steps — not the motivational ones.</p>
+    <h3>Choose a Skill That Buyers Already Pay For</h3>
+    <p>The fastest path to your first freelance dollar is picking a skill with an existing market. Graphic design (Canva, Figma), copywriting, social media management, video editing, web development, and data analysis all have active buyers on platforms like Fiverr, Upwork, and LinkedIn. You do not need to be an expert. You need to be reliably good at one deliverable that a small business or startup would pay $50 to $300 for.</p>
+    <h3>Build a Portfolio Before You Have Clients</h3>
+    <p>Create three to five sample projects that demonstrate your skill. A graphic designer can create mock social media posts for a real local business. A copywriter can rewrite the homepage of a company whose website is clearly outdated. A web developer can build a landing page for a fictional startup. These become your portfolio. Host them on a free site — Notion, Carrd, or a simple GitHub Pages site works fine.</p>
+    <h3>Get Your First Client Through Warm Outreach</h3>
+    <p>Do not start on Fiverr. The competition is brutal and the rates are suppressed. Instead, list every small business, nonprofit, or student club you have a connection to. Reach out personally with a specific offer: "I noticed your Instagram has not been updated in three months. I can create a month's worth of posts for $150. Here are three samples I made for similar businesses." Specificity and a direct offer convert far better than a generic pitch.</p>
+    <h3>Pricing Your Work</h3>
+    <p>Most student freelancers underprice themselves. A useful starting point: research what professionals charge on Fiverr or Upwork for the same deliverable, then price at 60-70% of that. Once you have three to five completed projects and reviews, raise your rates. Clients who have already paid you rarely leave when you increase prices modestly — and new clients often interpret higher prices as higher quality.</p>
+    <h3>Protect Yourself From the Start</h3>
+    <p>Use a simple written agreement for every project — even a brief email confirmation that states the deliverable, deadline, and payment amount is legally meaningful. Require 50% upfront from new clients. Keep all communication on email or a platform with a paper trail. These habits prevent the small number of bad-faith clients from costing you significant time and money.</p>`
+  },
+  {
+    id:6,
+    cat:'Tools & Productivity',
+    catColor:'#06b6d4',
+    catBg:'#ecfeff',
+    date:'December 2024',
+    readTime:'9 min read',
+    img:'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80',
+    title:'The Essential Toolkit for Student Founders in 2025',
+    excerpt:'The right tools can give a two-person student startup the operating capacity of a ten-person team. These are the tools actually used by early-stage founders — and how to get them for less.',
+    body:`<p>Running a startup while studying requires ruthless prioritization of your time. The right software stack eliminates entire categories of manual work — design, writing, project management, communication — so you can focus on building and talking to customers. Here is what experienced student founders actually use.</p>
+    <h3>Design and Visual Content — Canva Pro</h3>
+    <p>Canva Pro is the single most versatile tool on this list. Pitch decks, social media graphics, one-pagers, product mockups, marketing materials — all of it can be done in Canva without a design background. The Pro plan unlocks 100 million stock assets, background removal, brand kits, and Magic Resize (instantly adapt any design to any platform size). At full price it costs $169.99 per year. Through CanvasIQ you can access it for $40.</p>
+    <h3>Writing and Communication — Grammarly</h3>
+    <p>Clear writing is a competitive advantage. Grant applications, investor emails, product copy, and academic papers all benefit from Grammarly's real-time suggestions. The Premium plan adds tone detection, clarity rewrites, and plagiarism checking — useful for both professional and academic writing. The habit of running every important piece of writing through Grammarly before sending it takes roughly 10 minutes and consistently improves outcomes.</p>
+    <h3>Productivity and Documentation — Notion</h3>
+    <p>Notion replaces a half-dozen other tools: project management, team wiki, CRM, meeting notes, and content calendar. The free plan is generous and sufficient for most early-stage teams. The key is setting up your workspace intentionally at the start — a clear structure for projects, decisions, and resources prevents the tool from becoming a graveyard of half-finished notes.</p>
+    <h3>Product Design — Figma</h3>
+    <p>If you are building a digital product, Figma is the industry standard for UI design and prototyping. The free plan allows three projects. The Professional plan, which gives you unlimited projects and version history, normally costs $144 per year. For founders building apps or SaaS products, it is essential. For student teams who only need occasional wireframing, the free plan is sufficient.</p>
+    <h3>Learning and Skill Development — Brilliant</h3>
+    <p>Brilliant teaches data analysis, AI, mathematics, and programming through interactive problem-solving. For founders in quantitative fields — edtech, fintech, health tech, or any product that involves data — it builds the foundational reasoning skills that make better product decisions. At $10 per year through CanvasIQ, it is one of the most cost-effective investments on this list.</p>
+    <h3>The Rule of Three</h3>
+    <p>Before adding any new tool to your stack, ask: does this replace something I am currently doing manually, or does it add another layer of overhead? The best stacks are small and deeply used. A founder who uses five tools well is more productive than one who pays for fifteen and uses each of them once a month.</p>`
+  }
+];
+
+function renderArticles(){
+  const grid = document.getElementById('articlesGrid');
+  if(!grid) return;
+  grid.innerHTML = articles.map(a => `
+    <div class="article-card" onclick="openArticle(${a.id})">
+      <div class="article-img">
+        <img src="${a.img}" alt="${a.title}" loading="lazy" onerror="this.parentElement.style.background='var(--surface3)'">
+        <span class="article-cat" style="background:${a.catBg};color:${a.catColor};">${a.cat}</span>
+      </div>
+      <div class="article-body">
+        <div class="article-meta">
+          <span class="article-date">${a.date}</span>
+          <span class="article-dot"></span>
+          <span class="article-read-time">${a.readTime}</span>
+        </div>
+        <div class="article-title">${a.title}</div>
+        <div class="article-excerpt">${a.excerpt}</div>
+        <button class="article-read-btn">
+          Read Article
+          <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+    </div>`).join('');
+}
+
+function openArticle(id){
+  const a = articles.find(x=>x.id===id);
+  if(!a) return;
+  document.getElementById('modalImg').src = a.img;
+  document.getElementById('modalCat').textContent = a.cat;
+  document.getElementById('modalCat').style.cssText = `background:${a.catBg};color:${a.catColor};`;
+  document.getElementById('modalTitle').textContent = a.title;
+  document.getElementById('modalMeta').innerHTML = `<span>${a.date}</span><span style="width:3px;height:3px;border-radius:50%;background:var(--muted);display:inline-block;"></span><span>${a.readTime}</span><span style="width:3px;height:3px;border-radius:50%;background:var(--muted);display:inline-block;"></span><span>CanvasIQ Team</span>`;
+  document.getElementById('modalBody').innerHTML = a.body;
+  document.getElementById('articleModal').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function closeModal(){
+  document.getElementById('articleModal').classList.remove('open');
+  document.body.style.overflow='';
+}
+document.addEventListener('keydown', e => { if(e.key==='Escape') closeModal(); });
+
 // ── NEWSLETTER ──
 function handleNLSignup(){
   const email = document.getElementById('nlEmail').value.trim();
@@ -916,6 +1140,7 @@ document.getElementById('floatCTA').style.display = 'none';
 // ── INIT ──
 renderTools();
 renderJobs();
+renderArticles();
 loadFunding();
 </script>
 </body>

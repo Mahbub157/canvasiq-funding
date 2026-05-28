@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Brilliant Premium — CanvasIQ Tools</title>
+<meta name="description" content="Get Brilliant Premium for $10/year through CanvasIQ. Official price $149.99/yr. Interactive learning for math, science, and AI."/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f5f6fa;--surface:#fff;--surface2:#f0f1f7;--surface3:#e8eaf5;
+  --border:#e3e6ef;--border2:#d1d5e8;
+  --accent:#5b4fff;--accent-light:#ede9ff;--accent-dark:#4338ca;
+  --accent2:#00b894;--accent2-light:#e0faf4;
+  --text:#1a1d2e;--text2:#3d4263;--muted:#8b92b4;
+  --shadow:0 1px 4px rgba(80,90,160,.07),0 4px 16px rgba(80,90,160,.06);
+  --shadow-hover:0 4px 12px rgba(80,90,160,.13),0 12px 32px rgba(80,90,160,.10);
+  --radius:14px;--radius-lg:20px;--font:'Inter',system-ui,sans-serif;
+  --tool-color:#d97706;--tool-light:#fffbeb;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--text);font-family:var(--font);}
+a{color:inherit;text-decoration:none;}
+
+nav{background:#fff;border-bottom:1px solid var(--border);padding:0 40px;position:sticky;top:0;z-index:200;box-shadow:0 2px 16px rgba(80,90,160,.07);}
+.nav-inner{display:flex;align-items:center;height:64px;gap:16px;}
+.nav-logo{display:flex;align-items:center;gap:10px;}
+.logo-box{background:linear-gradient(135deg,var(--accent),#a78bfa);color:#fff;font-weight:900;font-size:15px;padding:7px 13px;border-radius:10px;letter-spacing:-.3px;}
+.logo-name{font-size:16px;font-weight:800;color:var(--text);letter-spacing:-.4px;}
+.nav-sep{width:1px;height:20px;background:var(--border);margin:0 4px;}
+.nav-crumb{font-size:13px;font-weight:600;color:var(--muted);}
+.nav-back{display:inline-flex;align-items:center;gap:6px;margin-left:auto;padding:7px 15px;border-radius:9px;font-size:13px;font-weight:600;color:var(--text2);border:1.5px solid var(--border2);background:#fff;transition:all .15s;}
+.nav-back:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-light);}
+
+.tool-hero{background:linear-gradient(145deg,var(--tool-light) 0%,#fff 60%);border-bottom:1px solid var(--border);padding:56px 40px;}
+.tool-hero-inner{max-width:1000px;margin:0 auto;display:flex;align-items:center;gap:48px;flex-wrap:wrap;}
+.tool-logo-img{width:88px;height:88px;border-radius:20px;border:2px solid var(--border);background:#fff;padding:8px;object-fit:contain;box-shadow:var(--shadow);}
+.tool-logo-fallback{width:88px;height:88px;border-radius:20px;background:var(--tool-light);display:none;align-items:center;justify-content:center;font-size:32px;font-weight:900;color:var(--tool-color);border:2px solid var(--border);}
+.tool-hero-content{flex:1;}
+.tool-eyebrow{font-size:11.5px;font-weight:800;letter-spacing:.6px;text-transform:uppercase;color:var(--tool-color);background:var(--tool-light);padding:4px 12px;border-radius:20px;display:inline-block;margin-bottom:14px;}
+.tool-hero-content h1{font-size:clamp(28px,5vw,44px);font-weight:900;letter-spacing:-1.5px;color:var(--text);margin-bottom:10px;line-height:1.1;}
+.tool-hero-content p{font-size:16px;color:var(--text2);line-height:1.65;max-width:520px;font-weight:500;}
+.pricing-strip{margin-top:28px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;}
+.price-orig{font-size:18px;font-weight:600;color:var(--muted);text-decoration:line-through;}
+.price-arrow{color:var(--muted);font-size:18px;}
+.price-sale{font-size:36px;font-weight:900;color:var(--tool-color);letter-spacing:-1px;}
+.price-period{font-size:14px;font-weight:600;color:var(--muted);margin-left:2px;}
+.price-save-badge{background:var(--accent2-light);border:1.5px solid #b2f0e2;color:#00916e;font-size:13px;font-weight:800;padding:5px 14px;border-radius:20px;}
+.btn-hero-request{display:inline-flex;align-items:center;gap:8px;margin-top:20px;padding:14px 32px;border-radius:12px;font-size:15px;font-weight:700;color:#fff;border:none;background:linear-gradient(135deg,var(--tool-color),#b45309);cursor:pointer;font-family:var(--font);box-shadow:0 4px 16px rgba(217,119,6,.3);transition:all .2s;}
+.btn-hero-request:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(217,119,6,.4);}
+
+.tool-section{padding:64px 40px;}
+.tool-section-inner{max-width:1000px;margin:0 auto;}
+.ts-title{font-size:26px;font-weight:900;color:var(--text);letter-spacing:-.5px;margin-bottom:10px;}
+.ts-sub{font-size:15px;color:var(--text2);line-height:1.65;max-width:580px;margin-bottom:36px;font-weight:500;}
+
+.features-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px;}
+.feature-card{background:var(--surface);border:1.5px solid var(--border);border-radius:var(--radius);padding:20px;transition:all .2s;}
+.feature-card:hover{border-color:var(--tool-color);box-shadow:var(--shadow-hover);}
+.feature-icon{width:36px;height:36px;border-radius:9px;background:var(--tool-light);display:flex;align-items:center;justify-content:center;margin-bottom:12px;}
+.feature-icon svg{color:var(--tool-color);}
+.feature-title{font-size:14px;font-weight:700;color:var(--text);margin-bottom:5px;}
+.feature-desc{font-size:12.5px;color:var(--text2);line-height:1.55;}
+
+#how{background:#fff;border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+.steps{display:flex;flex-direction:column;gap:0;}
+.step{display:flex;gap:24px;padding:24px 0;border-bottom:1px solid var(--border);}
+.step:last-child{border-bottom:none;}
+.step-num{width:40px;height:40px;border-radius:50%;background:var(--tool-light);color:var(--tool-color);font-size:16px;font-weight:900;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.step-content h3{font-size:16px;font-weight:800;color:var(--text);margin-bottom:5px;}
+.step-content p{font-size:13.5px;color:var(--text2);line-height:1.6;}
+
+#pricing{background:linear-gradient(135deg,var(--tool-light),#fff);}
+.pricing-card{background:#fff;border:2px solid var(--tool-color);border-radius:var(--radius-lg);padding:36px;max-width:480px;}
+.pc-title{font-size:20px;font-weight:900;color:var(--text);margin-bottom:6px;}
+.pc-sub{font-size:13.5px;color:var(--muted);margin-bottom:24px;}
+.pc-compare{display:flex;gap:24px;margin-bottom:24px;flex-wrap:wrap;}
+.pc-col{flex:1;min-width:140px;}
+.pc-col-label{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);margin-bottom:8px;}
+.pc-col-price{font-size:28px;font-weight:900;letter-spacing:-1px;color:var(--text);}
+.pc-col-price.striked{text-decoration:line-through;color:var(--muted);font-size:22px;}
+.pc-col-price.sale{color:var(--tool-color);}
+.pc-col-note{font-size:11.5px;color:var(--muted);margin-top:3px;}
+.pc-divider{width:1px;background:var(--border);}
+.pc-includes{margin-bottom:24px;}
+.pc-includes-label{font-size:12px;font-weight:700;color:var(--muted);margin-bottom:12px;text-transform:uppercase;letter-spacing:.4px;}
+.pc-item{display:flex;align-items:flex-start;gap:10px;margin-bottom:9px;font-size:13.5px;color:var(--text2);}
+.pc-check{width:18px;height:18px;border-radius:50%;background:var(--accent2-light);color:var(--accent2);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:10px;font-weight:900;margin-top:1px;}
+.btn-request-big{width:100%;padding:14px;border-radius:11px;font-size:15px;font-weight:700;color:#fff;background:linear-gradient(135deg,var(--tool-color),#b45309);border:none;cursor:pointer;font-family:var(--font);box-shadow:0 4px 16px rgba(217,119,6,.2);transition:all .2s;}
+.btn-request-big:hover{opacity:.92;transform:translateY(-1px);}
+
+#request{background:var(--bg);border-top:1px solid var(--border);}
+.form-wrap{max-width:520px;}
+.form-note{font-size:13px;color:var(--muted);margin-bottom:28px;line-height:1.6;}
+.form-row{display:flex;flex-direction:column;gap:6px;margin-bottom:18px;}
+.form-row label{font-size:13px;font-weight:700;color:var(--text2);}
+.form-input{padding:11px 14px;border:1.5px solid var(--border);border-radius:10px;font-size:14px;font-family:var(--font);color:var(--text);background:var(--surface);outline:none;transition:border-color .2s,box-shadow .2s;}
+.form-input:focus{border-color:var(--tool-color);box-shadow:0 0 0 3px var(--tool-light);}
+.form-input::placeholder{color:var(--muted);}
+.form-tool-display{padding:11px 14px;border:1.5px solid var(--border);border-radius:10px;font-size:14px;font-weight:700;color:var(--tool-color);background:var(--tool-light);}
+.btn-submit{width:100%;padding:14px;border-radius:11px;font-size:15px;font-weight:700;color:#fff;background:linear-gradient(135deg,var(--tool-color),#b45309);border:none;cursor:pointer;font-family:var(--font);box-shadow:0 4px 16px rgba(217,119,6,.2);transition:all .2s;}
+.btn-submit:hover{opacity:.9;transform:translateY(-1px);}
+.btn-submit:disabled{opacity:.6;cursor:not-allowed;transform:none;}
+.form-success{background:var(--accent2-light);border:2px solid #b2f0e2;border-radius:var(--radius);padding:24px;text-align:center;display:none;}
+.form-success h3{font-size:18px;font-weight:800;color:#00916e;margin-bottom:6px;}
+.form-success p{font-size:13.5px;color:var(--text2);}
+
+#faq{background:#fff;border-top:1px solid var(--border);}
+.faq-list{max-width:640px;}
+.faq-item{border-bottom:1px solid var(--border);padding:18px 0;}
+.faq-q{font-size:15px;font-weight:700;color:var(--text);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;}
+.faq-q svg{flex-shrink:0;transition:transform .2s;color:var(--muted);}
+.faq-item.open .faq-q svg{transform:rotate(180deg);}
+.faq-a{font-size:13.5px;color:var(--text2);line-height:1.7;max-height:0;overflow:hidden;transition:max-height .3s ease,padding .2s;}
+.faq-item.open .faq-a{max-height:200px;padding-top:10px;}
+
+footer{background:#1a1d2e;color:#9ca3b0;padding:32px 40px;text-align:center;}
+footer p{font-size:13px;}
+footer a{color:#a78bfa;}
+
+@media(max-width:700px){
+  nav,.tool-hero,.tool-section{padding-left:20px;padding-right:20px;}
+  .tool-hero-inner{gap:28px;}
+  .pricing-card{padding:24px;}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="./index.html" class="nav-logo">
+      <div class="logo-box">CIQ</div>
+      <span class="logo-name">CanvasIQ</span>
+    </a>
+    <div class="nav-sep"></div>
+    <span class="nav-crumb">Tools &amp; Deals / Brilliant Premium</span>
+    <a href="./index.html#tools" class="nav-back">
+      <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+      All Tools
+    </a>
+  </div>
+</nav>
+
+<div class="tool-hero">
+  <div class="tool-hero-inner">
+    <div>
+      <img class="tool-logo-img" src="https://logo.clearbit.com/brilliant.org" alt="Brilliant"
+        onerror="this.style.display='none';document.getElementById('brilliantFallback').style.display='flex'">
+      <div id="brilliantFallback" class="tool-logo-fallback">B</div>
+    </div>
+    <div class="tool-hero-content">
+      <span class="tool-eyebrow">Interactive Learning</span>
+      <h1>Brilliant Premium</h1>
+      <p>The most effective way to learn math, science, data analysis, programming, and AI. Used by engineers at top tech companies and students at leading universities worldwide to build rigorous analytical skills.</p>
+      <div class="pricing-strip">
+        <span class="price-orig">$149.99/yr</span>
+        <span class="price-arrow">&#8594;</span>
+        <span class="price-sale">$10<span class="price-period">/yr</span></span>
+        <span class="price-save-badge">Save $139.99 (93% off)</span>
+      </div>
+      <button class="btn-hero-request" onclick="document.getElementById('request').scrollIntoView({behavior:'smooth'})">Request Access</button>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="tool-section">
+  <div class="tool-section-inner">
+    <h2 class="ts-title">What is Brilliant Premium?</h2>
+    <p class="ts-sub">Brilliant is an interactive learning platform built around the principle that the best way to understand something is to work through it — not watch someone else explain it. Every course is built as a sequence of guided problems that teach concepts through active reasoning. The Premium plan unlocks the full library of over 60 courses spanning mathematics, physics, data science, computer science, and artificial intelligence.</p>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+        </div>
+        <div class="feature-title">60+ Courses</div>
+        <div class="feature-desc">Full access to every course on the platform — from foundational algebra and logic to neural networks, calculus, and quantum computing.</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <div class="feature-title">Data Science &amp; AI</div>
+        <div class="feature-desc">Courses on data analysis, machine learning fundamentals, neural networks, and Python — built for people who want to understand how AI actually works.</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        </div>
+        <div class="feature-title">Programming &amp; Logic</div>
+        <div class="feature-desc">Learn to think like a programmer through interactive problem sets covering algorithms, logic, Python fundamentals, and computational thinking.</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        </div>
+        <div class="feature-title">No Passive Video Lectures</div>
+        <div class="feature-desc">Every lesson is interactive. You learn by solving, not by watching — which research consistently shows leads to faster and deeper understanding.</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+        </div>
+        <div class="feature-title">Mobile and Desktop</div>
+        <div class="feature-desc">Study anywhere — Brilliant works on iPhone, Android, and all browsers. Offline mode lets you download lessons for travel or low-connectivity situations.</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+        </div>
+        <div class="feature-title">Personalized Learning Path</div>
+        <div class="feature-desc">Brilliant adapts to your level and goals — whether you are refreshing forgotten math or diving into advanced probability for the first time.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="tool-section" id="how">
+  <div class="tool-section-inner">
+    <h2 class="ts-title">How to Get Access</h2>
+    <p class="ts-sub">Submit your details below and we will upgrade your Brilliant account to Premium within 24 hours of payment confirmation.</p>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <h3>Submit Your Request</h3>
+          <p>Fill in your name, email, and phone number below. Use the same email address as your Brilliant account, or the one you want to create your account with.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <h3>We Confirm and Send Payment Details</h3>
+          <p>Within a few hours you will receive an email with instructions for paying $10. We confirm your request first before asking for payment.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <h3>Your Account is Upgraded Within 24 Hours</h3>
+          <p>After payment is confirmed, your Brilliant account will be upgraded to Premium. You will see full access to all courses when you next log in.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="tool-section" id="pricing">
+  <div class="tool-section-inner">
+    <h2 class="ts-title">Pricing Comparison</h2>
+    <p class="ts-sub">Full Brilliant Premium access for an entire year — the same product, at a price that makes it a no-brainer for any student.</p>
+    <div class="pricing-card">
+      <div class="pc-title">Brilliant Premium — Annual</div>
+      <div class="pc-sub">12 months of full access to all 60+ courses on the platform.</div>
+      <div class="pc-compare">
+        <div class="pc-col">
+          <div class="pc-col-label">Official Price</div>
+          <div class="pc-col-price striked">$149.99</div>
+          <div class="pc-col-note">brilliant.org/premium</div>
+        </div>
+        <div class="pc-divider"></div>
+        <div class="pc-col">
+          <div class="pc-col-label">CanvasIQ Price</div>
+          <div class="pc-col-price sale">$10</div>
+          <div class="pc-col-note">per year — 93% off</div>
+        </div>
+      </div>
+      <div class="pc-includes">
+        <div class="pc-includes-label">What is included</div>
+        <div class="pc-item"><span class="pc-check">&#10003;</span>All 60+ courses — math, science, CS, data, and AI</div>
+        <div class="pc-item"><span class="pc-check">&#10003;</span>Interactive problem-solving format throughout</div>
+        <div class="pc-item"><span class="pc-check">&#10003;</span>Offline mode for mobile learning</div>
+        <div class="pc-item"><span class="pc-check">&#10003;</span>Personalized daily learning paths</div>
+        <div class="pc-item"><span class="pc-check">&#10003;</span>Progress tracking and streaks</div>
+        <div class="pc-item"><span class="pc-check">&#10003;</span>Access on iOS, Android, and all browsers</div>
+      </div>
+      <button class="btn-request-big" onclick="document.getElementById('request').scrollIntoView({behavior:'smooth'})">Request Access — $10/yr</button>
+    </div>
+  </div>
+</section>
+
+<!-- REQUEST FORM -->
+<section class="tool-section" id="request">
+  <div class="tool-section-inner">
+    <h2 class="ts-title">Request Access</h2>
+    <p class="ts-sub">Submit your details and we will reach out within a few hours to confirm and arrange your Brilliant Premium upgrade.</p>
+    <div class="form-wrap">
+      <p class="form-note">Please use the email address associated with your Brilliant account, or the one you plan to register with. No payment is collected through this form — payment instructions are sent by email after we confirm your request.</p>
+      <form id="accessForm" onsubmit="submitForm(event)">
+        <input type="hidden" name="_subject" value="CanvasIQ Access Request: Brilliant Premium">
+        <input type="hidden" name="tool" value="Brilliant Premium">
+        <input type="hidden" name="price" value="$10/yr">
+        <div class="form-row">
+          <label for="fname">Full Name</label>
+          <input type="text" id="fname" name="name" class="form-input" placeholder="Your full name" required>
+        </div>
+        <div class="form-row">
+          <label for="femail">Email Address (use your Brilliant account email)</label>
+          <input type="email" id="femail" name="email" class="form-input" placeholder="you@example.com" required>
+        </div>
+        <div class="form-row">
+          <label for="fphone">Phone Number</label>
+          <input type="tel" id="fphone" name="phone" class="form-input" placeholder="+1 (555) 000-0000" required>
+        </div>
+        <div class="form-row">
+          <label>Tool Requested</label>
+          <div class="form-tool-display">Brilliant Premium — $10/yr</div>
+        </div>
+        <div class="form-row">
+          <label for="fmsg">Anything else? (optional)</label>
+          <input type="text" id="fmsg" name="message" class="form-input" placeholder="Any questions or notes for us">
+        </div>
+        <button type="submit" class="btn-submit" id="submitBtn">Submit Request</button>
+      </form>
+      <div class="form-success" id="formSuccess">
+        <h3>Request received!</h3>
+        <p>Thank you. We will email you within a few hours with payment instructions. Your Brilliant account will be upgraded to Premium within 24 hours of payment confirmation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="tool-section" id="faq">
+  <div class="tool-section-inner">
+    <h2 class="ts-title">Frequently Asked Questions</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          Do I need an existing Brilliant account?
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+        <div class="faq-a">No. If you do not have one, create a free account at brilliant.org before submitting your request. Use that email address in the form so we can upgrade the correct account.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          Is this the full Brilliant Premium experience with no limitations?
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+        <div class="faq-a">Yes. This is a genuine Brilliant Premium upgrade to your account. You get access to all 60+ courses and every feature of the Premium plan with no restrictions.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          Is Brilliant suitable for complete beginners?
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+        <div class="faq-a">Yes. Brilliant has courses at every level, from foundational math and logic to advanced topics in calculus, probability, and machine learning. The platform asks about your background when you start and adapts the recommended path to your level.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          How much time does it take per week to get value from Brilliant?
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+        <div class="faq-a">Even 15 minutes a day produces noticeable improvement in analytical reasoning over time. Brilliant is designed for learners with busy schedules — short daily sessions are the intended usage pattern, not long weekend blocks.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>CanvasIQ &mdash; <a href="./index.html">Back to Platform</a> &mdash; Questions? <a href="mailto:acmahbub.official@gmail.com">acmahbub.official@gmail.com</a></p>
+</footer>
+
+<script>
+function submitForm(e){
+  e.preventDefault();
+  const btn = document.getElementById('submitBtn');
+  btn.disabled = true;
+  btn.textContent = 'Sending...';
+  const form = document.getElementById('accessForm');
+  const data = new FormData(form);
+  fetch('https://formsubmit.co/ajax/acmahbub.official@gmail.com',{
+    method:'POST',
+    headers:{'Content-Type':'application/json','Accept':'application/json'},
+    body:JSON.stringify(Object.fromEntries(data))
+  })
+  .then(()=>{ form.style.display='none'; document.getElementById('formSuccess').style.display='block'; })
+  .catch(()=>{ form.style.display='none'; document.getElementById('formSuccess').style.display='block'; });
+}
+function toggleFaq(el){ el.parentElement.classList.toggle('open'); }
+</script>
+</body>
+</html>
