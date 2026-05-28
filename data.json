@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-05-28T08:00:00Z",
-  "totalFound": 32,
+  "lastUpdated": "2026-05-28T19:45:40.607344+00:00",
+  "totalFound": 61,
   "opportunities": [
     {
       "id": 1,
@@ -11,8 +11,12 @@
       "deadline": "2026-05-27",
       "deadlineLabel": "May 27, 2026",
       "type": "competition",
-      "loc": ["national"],
-      "sector": ["general"],
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "general"
+      ],
       "url": "https://techcrunch.com/startup-battlefield/",
       "equity": false,
       "addedDate": "2026-05-26",
@@ -27,57 +31,14 @@
       "deadline": "2026-05-31",
       "deadlineLabel": "May 31, 2026",
       "type": "competition",
-      "loc": ["national", "virtual"],
-      "sector": ["women"],
+      "loc": [
+        "national",
+        "virtual"
+      ],
+      "sector": [
+        "women"
+      ],
       "url": "https://www.womenfoundersnetwork.org/",
-      "equity": false,
-      "addedDate": "2026-05-26",
-      "source": "manual"
-    },
-    {
-      "id": 3,
-      "name": "Cartier Women's Initiative 2027",
-      "desc": "One of the world's most prestigious women entrepreneur grants. 1st: $100K, 2nd: $60K, 3rd: $30K. Any sector. Must be impact-driven, with recurring revenue. Includes INSEAD fellowship.",
-      "prize": "Up to $100K",
-      "prizeVal": 100000,
-      "deadline": "2026-06-16",
-      "deadlineLabel": "June 16, 2026",
-      "type": "grant",
-      "loc": ["global", "virtual"],
-      "sector": ["women"],
-      "url": "https://www.cartierwomensinitiative.com/",
-      "equity": false,
-      "addedDate": "2026-05-26",
-      "source": "manual"
-    },
-    {
-      "id": 4,
-      "name": "ED/IES SBIR — Phase IB (EdTech MVP)",
-      "desc": "Dept. of Education SBIR for startups with existing EdTech prototypes. Phase IB specifically strengthens research-based MVPs. Phase I: $250K → Phase II: $1M. Must register on SAM.gov first. Zero equity.",
-      "prize": "$250K → $1M",
-      "prizeVal": 250000,
-      "deadline": "2026-06-29",
-      "deadlineLabel": "June 29, 2026",
-      "type": "grant",
-      "loc": ["national", "virtual"],
-      "sector": ["edtech"],
-      "url": "https://ies.ed.gov/funding/research/programs/small-business-innovation-research-sbir/solicitation-information",
-      "equity": false,
-      "addedDate": "2026-05-26",
-      "source": "manual"
-    },
-    {
-      "id": 5,
-      "name": "AI for Good Innovation Factory Grand Finale",
-      "desc": "UN-backed ITU competition for AI startups solving real-world problems. $20K cash to top startup. Global summit in Geneva, July 7–10.",
-      "prize": "$20K cash",
-      "prizeVal": 20000,
-      "deadline": "2026-07-07",
-      "deadlineLabel": "July 7–10, 2026",
-      "type": "competition",
-      "loc": ["global", "virtual"],
-      "sector": ["ai"],
-      "url": "https://aiforgood.itu.int/about-us/innovation-factory/",
       "equity": false,
       "addedDate": "2026-05-26",
       "source": "manual"
@@ -91,12 +52,323 @@
       "deadline": "2026-05-31",
       "deadlineLabel": "May 2026",
       "type": "competition",
-      "loc": ["global", "virtual"],
-      "sector": ["general", "ai"],
+      "loc": [
+        "global",
+        "virtual"
+      ],
+      "sector": [
+        "general",
+        "ai"
+      ],
       "url": "https://entrepreneurshipworldcup.com/",
       "equity": false,
       "addedDate": "2026-05-26",
       "source": "manual"
+    },
+    {
+      "id": 1101921862,
+      "name": "Residence Supply Research Contest 2026",
+      "desc": "DEadline: May 31, 2026 The Residence Supply Research Contest 2026 is an international academic and creative competition designed to encourage innovative thinking in the fields of lighting design, interior environments, sustainability, wellness, smart home systems, and illumination science. The contest provides a unique platform for students, researchers, designers, architects, and creative thinker",
+      "prize": "See listing",
+      "prizeVal": 0,
+      "deadline": "2026-05-31",
+      "deadlineLabel": "May 31, 2026",
+      "type": "competition",
+      "loc": [
+        "national",
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://grantsdatabase.org/2026/05/28/residence-supply-research-contest-2026/",
+      "equity": false,
+      "addedDate": "2026-05-28",
+      "source": "auto"
+    },
+    {
+      "id": 1734462288,
+      "name": "Social Fiction Design Competition 2026: Win USD $10,000 for Imagining the Future",
+      "desc": "Deadline: May 31, 2026 The Social Fiction Design Competition 2026 is now open for applications, inviting writers, visionaries, innovators, students, and changemakers from around the world to imagine a better future for humanity. Organised by YY Ventures and the Yunus Centre, this global competition offers participants the opportunity to share original fictional stories that explore [...] The post",
+      "prize": "$10,000",
+      "prizeVal": 10000,
+      "deadline": "2026-05-31",
+      "deadlineLabel": "May 31, 2026",
+      "type": "competition",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://grantsdatabase.org/2026/05/28/social-fiction-design-competition-2026-win-usd-10000-for-imagining-the-future/",
+      "equity": false,
+      "addedDate": "2026-05-28",
+      "source": "auto"
+    },
+    {
+      "id": 3890296686,
+      "name": "Social Business Design Competition 2026 ($10,000 Prize)",
+      "desc": "Deadline: May 31, 2026 The Social Business Design Competition 2026 is now open for applications, offering innovators, changemakers, entrepreneurs, and problem-solvers from across the globe the opportunity to transform impactful ideas into real-world solutions. Organised by YY Ventures and Yunus Centre, the competition aims to nurture the next generation of social innovators and entrepreneurs who [",
+      "prize": "$10,000",
+      "prizeVal": 10000,
+      "deadline": "2026-05-31",
+      "deadlineLabel": "May 31, 2026",
+      "type": "competition",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://grantsdatabase.org/2026/05/28/social-business-design-competition-2026-10000-prize/",
+      "equity": false,
+      "addedDate": "2026-05-28",
+      "source": "auto"
+    },
+    {
+      "id": 3255136388,
+      "name": "MASS African Design Centre Fellowship 2026 – Fully Funded Design Residency in Rwanda",
+      "desc": "Deadline: June 14, 2026 The MASS African Design Centre Fellowship 2026 is a prestigious, fully funded 12-month design residency programme hosted in Kigali, Rwanda. It is designed to support emerging African architects, urban designers, landscape architects, and related built-environment professionals who are committed to creating socially impactful, community-driven, and culturally rooted design s",
+      "prize": "See listing",
+      "prizeVal": 0,
+      "deadline": "2026-06-14",
+      "deadlineLabel": "June 14, 2026",
+      "type": "competition",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://grantsdatabase.org/2026/05/28/mass-african-design-centre-fellowship-2026-fully-funded-design-residency-in-rwanda/",
+      "equity": false,
+      "addedDate": "2026-05-28",
+      "source": "auto"
+    },
+    {
+      "id": 3,
+      "name": "Cartier Women's Initiative 2027",
+      "desc": "One of the world's most prestigious women entrepreneur grants. 1st: $100K, 2nd: $60K, 3rd: $30K. Any sector. Must be impact-driven, with recurring revenue. Includes INSEAD fellowship.",
+      "prize": "Up to $100K",
+      "prizeVal": 100000,
+      "deadline": "2026-06-16",
+      "deadlineLabel": "June 16, 2026",
+      "type": "grant",
+      "loc": [
+        "global",
+        "virtual"
+      ],
+      "sector": [
+        "women"
+      ],
+      "url": "https://www.cartierwomensinitiative.com/",
+      "equity": false,
+      "addedDate": "2026-05-26",
+      "source": "manual"
+    },
+    {
+      "id": 3133458523,
+      "name": "Future Generation Art Prize 2027 ($100,000 award)",
+      "desc": "Deadline: June 28, 2026 Applications are open for the Future Generation Art Prize 2027. The Future Generation Art Prize is a biannual global contemporary art prize to discover, recognize and give long-term support to a future generation of artists. Established by the Victor Pinchuk Foundation in 2009, the Prize supported the artistic development and production [...]",
+      "prize": "$100,000",
+      "prizeVal": 100000,
+      "deadline": "2026-06-28",
+      "deadlineLabel": "June 28, 2026",
+      "type": "award",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://opportunitydesk.org/2026/05/28/future-generation-art-prize-2027/",
+      "equity": false,
+      "addedDate": "2026-05-28",
+      "source": "auto"
+    },
+    {
+      "id": 4,
+      "name": "ED/IES SBIR — Phase IB (EdTech MVP)",
+      "desc": "Dept. of Education SBIR for startups with existing EdTech prototypes. Phase IB specifically strengthens research-based MVPs. Phase I: $250K → Phase II: $1M. Must register on SAM.gov first. Zero equity.",
+      "prize": "$250K → $1M",
+      "prizeVal": 250000,
+      "deadline": "2026-06-29",
+      "deadlineLabel": "June 29, 2026",
+      "type": "grant",
+      "loc": [
+        "national",
+        "virtual"
+      ],
+      "sector": [
+        "edtech"
+      ],
+      "url": "https://ies.ed.gov/funding/research/programs/small-business-innovation-research-sbir/solicitation-information",
+      "equity": false,
+      "addedDate": "2026-05-26",
+      "source": "manual"
+    },
+    {
+      "id": 2319467979,
+      "name": "Ministry of Foreign Affairs (MOFA) Taiwan Fellowship 2027",
+      "desc": "Deadline: June 30, 2026 Applications are open for the MOFA Taiwan Fellowship 2027. MOFA Taiwan Fellowship is established by the Ministry of Foreign Affairs (MOFA) to award foreign experts and scholars interested in researches related to Taiwan, cross-strait relations, Asia-Pacific region and Sinology, as well as research topics related to key policies such as comprehensive [...]",
+      "prize": "See listing",
+      "prizeVal": 0,
+      "deadline": "2026-06-30",
+      "deadlineLabel": "June 30, 2026",
+      "type": "award",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://opportunitydesk.org/2026/05/28/mofa-taiwan-fellowship-2027/",
+      "equity": false,
+      "addedDate": "2026-05-28",
+      "source": "auto"
+    },
+    {
+      "id": 3563460407,
+      "name": "RioCan and BlackNorth Initiative Bursary 2026–2027",
+      "desc": "Deadline: July 3, 2026 The RioCan and BlackNorth Initiative Bursary 2026–2027 is a prestigious post-secondary funding opportunity designed to support self-identifying Black students pursuing higher education in Canada. This bursary goes beyond financial assistance by combining funding with mentorship, skills development, and career-building opportunities within the commercial real estate sector. T",
+      "prize": "See listing",
+      "prizeVal": 0,
+      "deadline": "2026-07-03",
+      "deadlineLabel": "July 03, 2026",
+      "type": "grant",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "edtech",
+        "bipoc"
+      ],
+      "url": "https://grantsdatabase.org/2026/05/28/riocan-and-blacknorth-initiative-bursary-2026-2027/",
+      "equity": false,
+      "addedDate": "2026-05-28",
+      "source": "auto"
+    },
+    {
+      "id": 485777590,
+      "name": "Meaningful Business 100 (MB100) Award 2026 – Global Recognition for Impact Leaders",
+      "desc": "Deadline: July 3, 2026 The Meaningful Business 100 (MB100) Award 2026 is a prestigious global recognition programme that celebrates 100 exceptional leaders who are successfully combining profit with purpose while driving measurable, scalable impact across the world. The award shines a spotlight on entrepreneurs, founders, CEOs, investors, and sustainability leaders who are building businesses that",
+      "prize": "See listing",
+      "prizeVal": 0,
+      "deadline": "2026-07-03",
+      "deadlineLabel": "July 03, 2026",
+      "type": "award",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://grantsdatabase.org/2026/05/28/meaningful-business-100-mb100-award-2026-global-recognition-for-impact-leaders/",
+      "equity": false,
+      "addedDate": "2026-05-28",
+      "source": "auto"
+    },
+    {
+      "id": 80963939,
+      "name": "Stellar x CV Labs Accelerator 2026",
+      "desc": "Deadline: July 3, 2026 The Stellar x CV Labs Accelerator 2026 is a highly competitive, 12-week global startup programme designed to support early-stage founders building innovative solutions within the blockchain and fintech ecosystem. Backed by the Stellar Development Foundation and CV Labs, the accelerator focuses on helping startups scale real-world financial infrastructure using blockchain tec",
+      "prize": "See listing",
+      "prizeVal": 0,
+      "deadline": "2026-07-03",
+      "deadlineLabel": "July 03, 2026",
+      "type": "accelerator",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://grantsdatabase.org/2026/05/28/stellar-x-cv-labs-accelerator-2026/",
+      "equity": false,
+      "addedDate": "2026-05-28",
+      "source": "auto"
+    },
+    {
+      "id": 5,
+      "name": "AI for Good Innovation Factory Grand Finale",
+      "desc": "UN-backed ITU competition for AI startups solving real-world problems. $20K cash to top startup. Global summit in Geneva, July 7–10.",
+      "prize": "$20K cash",
+      "prizeVal": 20000,
+      "deadline": "2026-07-07",
+      "deadlineLabel": "July 7–10, 2026",
+      "type": "competition",
+      "loc": [
+        "global",
+        "virtual"
+      ],
+      "sector": [
+        "ai"
+      ],
+      "url": "https://aiforgood.itu.int/about-us/innovation-factory/",
+      "equity": false,
+      "addedDate": "2026-05-26",
+      "source": "manual"
+    },
+    {
+      "id": 3088337319,
+      "name": "Moonshot Awards 2026 for Changemakers",
+      "desc": "Deadline: July 12, 2026 The Moonshot Awards 2026 for Changemakers is a prestigious global initiative designed to identify, support, and accelerate young innovators who are building bold, scalable solutions to some of the world’s most pressing challenges. The programme celebrates creativity, impact, and leadership among young people who are actively working to transform ideas into [...] The post Mo",
+      "prize": "See listing",
+      "prizeVal": 0,
+      "deadline": "2026-07-12",
+      "deadlineLabel": "July 12, 2026",
+      "type": "competition",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://grantsdatabase.org/2026/05/28/moonshot-awards-2026-for-changemakers/",
+      "equity": false,
+      "addedDate": "2026-05-28",
+      "source": "auto"
+    },
+    {
+      "id": 3856178565,
+      "name": "Atlantic Fellows for Social Equity (AFSE) Fellowship 2027 (Funded)",
+      "desc": "Deadline: July 27, 2026 Applications are open for the Atlantic Fellows for Social Equity (AFSE) Fellowship 2027. The Atlantic Fellows for Social Equity (AFSE) is a transformative Indigenous and Pacific-centred fellowship program based at the University of Melbourne and supported by Waipapa Taumata Rau University of Auckland. They are building a dynamic network of Indigenous [...]",
+      "prize": "See listing",
+      "prizeVal": 0,
+      "deadline": "2026-07-27",
+      "deadlineLabel": "July 27, 2026",
+      "type": "competition",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "edtech"
+      ],
+      "url": "https://opportunitydesk.org/2026/05/28/atlantic-fellows-for-social-equity-fellowship-2027/",
+      "equity": true,
+      "addedDate": "2026-05-28",
+      "source": "auto"
+    },
+    {
+      "id": 4294057175,
+      "name": "Allan Gray Fellowship Programme 2026 for Eswatini, Botswana & Namibia",
+      "desc": "Deadline: July 31, 2026 Applications are open for the Allan Gray Fellowship Programme 2026. The Allan Gray Fellowship Programme is a prestigious four-year opportunity designed to support young achievers in their university journey at one of 10 partner universities in South Africa. The Allan Gray Fellowship Programme is designed to develop well-rounded individuals who graduate [...]",
+      "prize": "See listing",
+      "prizeVal": 0,
+      "deadline": "2026-07-31",
+      "deadlineLabel": "July 31, 2026",
+      "type": "competition",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "edtech"
+      ],
+      "url": "https://opportunitydesk.org/2026/05/28/allan-gray-fellowship-programme-2026-for-eswatini-botswana-namibia/",
+      "equity": false,
+      "addedDate": "2026-05-28",
+      "source": "auto"
     },
     {
       "id": 7,
@@ -107,8 +379,12 @@
       "deadline": "2026-09-02",
       "deadlineLabel": "Sept 2, 2026",
       "type": "competition",
-      "loc": ["nyc"],
-      "sector": ["edtech"],
+      "loc": [
+        "nyc"
+      ],
+      "sector": [
+        "edtech"
+      ],
       "url": "https://www.edtechweek.com/sharktank",
       "equity": true,
       "addedDate": "2026-05-26",
@@ -123,12 +399,98 @@
       "deadline": "2026-09-15",
       "deadlineLabel": "Rolling / NYC Regional",
       "type": "competition",
-      "loc": ["nyc", "national"],
-      "sector": ["general"],
+      "loc": [
+        "nyc",
+        "national"
+      ],
+      "sector": [
+        "general"
+      ],
       "url": "https://www.startupworldcup.io/",
       "equity": true,
       "addedDate": "2026-05-26",
       "source": "manual"
+    },
+    {
+      "id": 17,
+      "name": "Global EdTech Startup Awards (GESAwards)",
+      "desc": "World's largest EdTech competition — 6,000+ startups from 130 countries. Regional semifinals virtual. Finals at Bett Global in London.",
+      "prize": "Cash + investor access",
+      "prizeVal": 50000,
+      "deadline": "2026-09-15",
+      "deadlineLabel": "Sept 15, 2026",
+      "type": "competition",
+      "loc": [
+        "global",
+        "virtual"
+      ],
+      "sector": [
+        "edtech"
+      ],
+      "url": "https://www.globaledtechawards.org/",
+      "equity": false,
+      "addedDate": "2026-05-26",
+      "source": "manual"
+    },
+    {
+      "id": 3099765937,
+      "name": "Canon Foundation in Europe Japan-Africa Programme 2027 (Funded)",
+      "desc": "Deadline: September 15, 2026 Applications are open for the Canon Foundation in Europe Japan-Africa Programme 2027. The Japan-Africa Programme offers grants to postgraduate scholars from Japan and Africa who want to do research in African Studies in Africa and Japan respectively. The Programme is intended to support researchers from Japan to carry out research at [...]",
+      "prize": "See listing",
+      "prizeVal": 0,
+      "deadline": "2026-09-15",
+      "deadlineLabel": "September 15, 2026",
+      "type": "grant",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://opportunitydesk.org/2026/05/28/canon-foundation-in-europe-japan-africa-programme-2027/",
+      "equity": false,
+      "addedDate": "2026-05-28",
+      "source": "auto"
+    },
+    {
+      "id": 1901917952,
+      "name": "Canon Foundation in Europe Research Fellowship 2027 (up to €30,000)",
+      "desc": "Deadline: September 15, 2026 Applications are open for the Canon Foundation in Europe Research Fellowship 2027. Annually, the Canon Foundation in Europe grants up to 15 Fellowships to highly qualified European and Japanese researchers. European Fellows are expected to pursue a period of research in Japan whereas Japanese Fellows are expected to do their research [...]",
+      "prize": "See listing",
+      "prizeVal": 0,
+      "deadline": "2026-09-15",
+      "deadlineLabel": "September 15, 2026",
+      "type": "grant",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://opportunitydesk.org/2026/05/28/canon-foundation-in-europe-research-fellowship-2027/",
+      "equity": false,
+      "addedDate": "2026-05-28",
+      "source": "auto"
+    },
+    {
+      "id": 1970249943,
+      "name": "Nominations open for Global EdTech Startup Awards - Funds for Companies",
+      "desc": "As May 2026 approaches, a range of funding opportunities are expected to open . DOWNLOAD. Deadline Date: September 15, 2026 The Global EdTech Startups Awards is now accepting applications to support innovative startups from around the world to showcase their solutions and tackle pressing challenges in education and learning.",
+      "prize": "See listing",
+      "prizeVal": 0,
+      "deadline": "2026-09-15",
+      "deadlineLabel": "September 15, 2026",
+      "type": "competition",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "edtech"
+      ],
+      "url": "https://fundsforcompanies.fundsforngos.org/awards-and-prizes/nominations-open-for-global-edtech-startup-awards/",
+      "equity": false,
+      "addedDate": "2026-05-28",
+      "source": "auto"
     },
     {
       "id": 9,
@@ -139,89 +501,13 @@
       "deadline": "2026-09-30",
       "deadlineLabel": "Next cycle: Sept 2026",
       "type": "grant",
-      "loc": ["nyc"],
-      "sector": ["general"],
+      "loc": [
+        "nyc"
+      ],
+      "sector": [
+        "general"
+      ],
       "url": "https://queensstartup.org/",
-      "equity": false,
-      "addedDate": "2026-05-26",
-      "source": "manual"
-    },
-    {
-      "id": 10,
-      "name": "NYCEDC Founder Fellowship 2026",
-      "desc": "NYC Economic Development Corp fellowship for diverse tech founders. Network, mentorship, fundraising access. ~$1M in capital commitments across cohort.",
-      "prize": "~$1M across cohort",
-      "prizeVal": 50000,
-      "deadline": "2026-12-31",
-      "deadlineLabel": "2027 cycle: Fall 2026",
-      "type": "accelerator",
-      "loc": ["nyc"],
-      "sector": ["general", "bipoc"],
-      "url": "https://edc.nyc/founder-fellowship",
-      "equity": true,
-      "addedDate": "2026-05-26",
-      "source": "manual"
-    },
-    {
-      "id": 11,
-      "name": "Entrepreneurs Roundtable Accelerator (ERA) NYC",
-      "desc": "Top NYC accelerator explicitly accepting EdTech. Offers seed capital, mentorship, workspace, and VC introductions. Rolling applications.",
-      "prize": "Seed funding + workspace",
-      "prizeVal": 50000,
-      "deadline": "rolling",
-      "deadlineLabel": "Rolling",
-      "type": "accelerator",
-      "loc": ["nyc"],
-      "sector": ["general", "edtech"],
-      "url": "https://grantsdatabase.org/2025/10/03/entrepreneurs-roundtable-accelerator-winter-program-2026-apply-now-for-startup-acceleration-in-nyc/",
-      "equity": true,
-      "addedDate": "2026-05-26",
-      "source": "manual"
-    },
-    {
-      "id": 12,
-      "name": "New York Business Plan Competition (NYBPC)",
-      "desc": "One of NYC's longest-running cross-industry startup competitions. Open to all sectors. Judged by real investors. Strong alumni network.",
-      "prize": "Cash prizes",
-      "prizeVal": 10000,
-      "deadline": "rolling",
-      "deadlineLabel": "Annual",
-      "type": "competition",
-      "loc": ["nyc"],
-      "sector": ["general"],
-      "url": "https://nybpc.org/",
-      "equity": false,
-      "addedDate": "2026-05-26",
-      "source": "manual"
-    },
-    {
-      "id": 13,
-      "name": "Chloe Capital NYC Founder Fellowship",
-      "desc": "Women founders fellowship. Hybrid format — mostly virtual, few in-person NYC days. Min. $300K invested across ≥3 companies. At least one founder must live in NYC's 5 boroughs.",
-      "prize": "Min. $300K across cohort",
-      "prizeVal": 100000,
-      "deadline": "2027-01-01",
-      "deadlineLabel": "March–June program cycle",
-      "type": "accelerator",
-      "loc": ["nyc", "virtual"],
-      "sector": ["women"],
-      "url": "https://chloecapital.com/nyc-2026/",
-      "equity": true,
-      "addedDate": "2026-05-26",
-      "source": "manual"
-    },
-    {
-      "id": 14,
-      "name": "Milken–Penn GSE Education Business Plan Competition",
-      "desc": "Most prestigious education startup competition globally. $2M+ awarded historically. Semifinalists join Catapult virtual accelerator at Penn GSE. Finals in NYC.",
-      "prize": "Up to $80K prizes",
-      "prizeVal": 80000,
-      "deadline": "2027-02-11",
-      "deadlineLabel": "Jan–Feb 2027",
-      "type": "competition",
-      "loc": ["national", "virtual"],
-      "sector": ["edtech"],
-      "url": "https://www.educationcompetition.org/",
       "equity": false,
       "addedDate": "2026-05-26",
       "source": "manual"
@@ -235,8 +521,14 @@
       "deadline": "2026-10-15",
       "deadlineLabel": "Oct 2026 (next cycle)",
       "type": "competition",
-      "loc": ["national", "virtual"],
-      "sector": ["edtech", "ai"],
+      "loc": [
+        "national",
+        "virtual"
+      ],
+      "sector": [
+        "edtech",
+        "ai"
+      ],
       "url": "https://tools-competition.org/",
       "equity": false,
       "addedDate": "2026-05-26",
@@ -251,25 +543,96 @@
       "deadline": "2026-12-01",
       "deadlineLabel": "Apply Nov–Dec 2026",
       "type": "competition",
-      "loc": ["national"],
-      "sector": ["edtech"],
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "edtech"
+      ],
       "url": "https://sxswedu.com/competitions/launch/",
       "equity": false,
       "addedDate": "2026-05-26",
       "source": "manual"
     },
     {
-      "id": 17,
-      "name": "Global EdTech Startup Awards (GESAwards)",
-      "desc": "World's largest EdTech competition — 6,000+ startups from 130 countries. Regional semifinals virtual. Finals at Bett Global in London.",
-      "prize": "Cash + investor access",
-      "prizeVal": 50000,
-      "deadline": "2026-09-15",
-      "deadlineLabel": "Sept 15, 2026",
+      "id": 20,
+      "name": "FETC Pitchfest — Future of Education Technology",
+      "desc": "K–12 focused gamified pitch competition. Audience votes live at FETC in Orlando. Must have raised under $8M.",
+      "prize": "Prize + K-12 buyer exposure",
+      "prizeVal": 10000,
+      "deadline": "2026-12-15",
+      "deadlineLabel": "Nov–Dec 2026",
       "type": "competition",
-      "loc": ["global", "virtual"],
-      "sector": ["edtech"],
-      "url": "https://www.globaledtechawards.org/",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "edtech"
+      ],
+      "url": "https://www.fetc.org/",
+      "equity": false,
+      "addedDate": "2026-05-26",
+      "source": "manual"
+    },
+    {
+      "id": 10,
+      "name": "NYCEDC Founder Fellowship 2026",
+      "desc": "NYC Economic Development Corp fellowship for diverse tech founders. Network, mentorship, fundraising access. ~$1M in capital commitments across cohort.",
+      "prize": "~$1M across cohort",
+      "prizeVal": 50000,
+      "deadline": "2026-12-31",
+      "deadlineLabel": "2027 cycle: Fall 2026",
+      "type": "accelerator",
+      "loc": [
+        "nyc"
+      ],
+      "sector": [
+        "general",
+        "bipoc"
+      ],
+      "url": "https://edc.nyc/founder-fellowship",
+      "equity": true,
+      "addedDate": "2026-05-26",
+      "source": "manual"
+    },
+    {
+      "id": 13,
+      "name": "Chloe Capital NYC Founder Fellowship",
+      "desc": "Women founders fellowship. Hybrid format — mostly virtual, few in-person NYC days. Min. $300K invested across ≥3 companies. At least one founder must live in NYC's 5 boroughs.",
+      "prize": "Min. $300K across cohort",
+      "prizeVal": 100000,
+      "deadline": "2027-01-01",
+      "deadlineLabel": "March–June program cycle",
+      "type": "accelerator",
+      "loc": [
+        "nyc",
+        "virtual"
+      ],
+      "sector": [
+        "women"
+      ],
+      "url": "https://chloecapital.com/nyc-2026/",
+      "equity": true,
+      "addedDate": "2026-05-26",
+      "source": "manual"
+    },
+    {
+      "id": 14,
+      "name": "Milken–Penn GSE Education Business Plan Competition",
+      "desc": "Most prestigious education startup competition globally. $2M+ awarded historically. Semifinalists join Catapult virtual accelerator at Penn GSE. Finals in NYC.",
+      "prize": "Up to $80K prizes",
+      "prizeVal": 80000,
+      "deadline": "2027-02-11",
+      "deadlineLabel": "Jan–Feb 2027",
+      "type": "competition",
+      "loc": [
+        "national",
+        "virtual"
+      ],
+      "sector": [
+        "edtech"
+      ],
+      "url": "https://www.educationcompetition.org/",
       "equity": false,
       "addedDate": "2026-05-26",
       "source": "manual"
@@ -283,8 +646,12 @@
       "deadline": "2027-03-20",
       "deadlineLabel": "Feb–Mar 2027",
       "type": "accelerator",
-      "loc": ["national"],
-      "sector": ["edtech"],
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "edtech"
+      ],
       "url": "https://learnlaunch.com/",
       "equity": true,
       "addedDate": "2026-05-26",
@@ -299,25 +666,75 @@
       "deadline": "2027-04-01",
       "deadlineLabel": "Spring 2027",
       "type": "competition",
-      "loc": ["national", "virtual"],
-      "sector": ["edtech"],
+      "loc": [
+        "national",
+        "virtual"
+      ],
+      "sector": [
+        "edtech"
+      ],
       "url": "https://michiganvirtual.org/edtechcatalyst/",
       "equity": false,
       "addedDate": "2026-05-26",
       "source": "manual"
     },
     {
-      "id": 20,
-      "name": "FETC Pitchfest — Future of Education Technology",
-      "desc": "K–12 focused gamified pitch competition. Audience votes live at FETC in Orlando. Must have raised under $8M.",
-      "prize": "Prize + K-12 buyer exposure",
+      "id": 28,
+      "name": "NAACP Powershift Entrepreneur Grant",
+      "desc": "For Black entrepreneurs and businesses. $25,000 grant plus additional resources. Backed by L'Oréal.",
+      "prize": "$25K grant",
+      "prizeVal": 25000,
+      "deadline": "2027-04-01",
+      "deadlineLabel": "2027 cycle (watch)",
+      "type": "grant",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "bipoc"
+      ],
+      "url": "https://naacp.org/find-resources/grants",
+      "equity": false,
+      "addedDate": "2026-05-26",
+      "source": "manual"
+    },
+    {
+      "id": 11,
+      "name": "Entrepreneurs Roundtable Accelerator (ERA) NYC",
+      "desc": "Top NYC accelerator explicitly accepting EdTech. Offers seed capital, mentorship, workspace, and VC introductions. Rolling applications.",
+      "prize": "Seed funding + workspace",
+      "prizeVal": 50000,
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling",
+      "type": "accelerator",
+      "loc": [
+        "nyc"
+      ],
+      "sector": [
+        "general",
+        "edtech"
+      ],
+      "url": "https://grantsdatabase.org/2025/10/03/entrepreneurs-roundtable-accelerator-winter-program-2026-apply-now-for-startup-acceleration-in-nyc/",
+      "equity": true,
+      "addedDate": "2026-05-26",
+      "source": "manual"
+    },
+    {
+      "id": 12,
+      "name": "New York Business Plan Competition (NYBPC)",
+      "desc": "One of NYC's longest-running cross-industry startup competitions. Open to all sectors. Judged by real investors. Strong alumni network.",
+      "prize": "Cash prizes",
       "prizeVal": 10000,
-      "deadline": "2026-12-15",
-      "deadlineLabel": "Nov–Dec 2026",
+      "deadline": "rolling",
+      "deadlineLabel": "Annual",
       "type": "competition",
-      "loc": ["national"],
-      "sector": ["edtech"],
-      "url": "https://www.fetc.org/",
+      "loc": [
+        "nyc"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://nybpc.org/",
       "equity": false,
       "addedDate": "2026-05-26",
       "source": "manual"
@@ -331,8 +748,13 @@
       "deadline": "rolling",
       "deadlineLabel": "Rolling applications",
       "type": "competition",
-      "loc": ["global", "virtual"],
-      "sector": ["ai"],
+      "loc": [
+        "global",
+        "virtual"
+      ],
+      "sector": [
+        "ai"
+      ],
       "url": "https://www.raisesummit.com/startup-competition",
       "equity": false,
       "addedDate": "2026-05-26",
@@ -347,8 +769,14 @@
       "deadline": "rolling",
       "deadlineLabel": "Rolling (monitor seedfund.nsf.gov)",
       "type": "grant",
-      "loc": ["national", "virtual"],
-      "sector": ["edtech", "ai"],
+      "loc": [
+        "national",
+        "virtual"
+      ],
+      "sector": [
+        "edtech",
+        "ai"
+      ],
       "url": "https://seedfund.nsf.gov/topics/learning-cognition-technologies/",
       "equity": false,
       "addedDate": "2026-05-26",
@@ -363,8 +791,14 @@
       "deadline": "rolling",
       "deadlineLabel": "Rolling cohorts",
       "type": "corporate",
-      "loc": ["national", "virtual"],
-      "sector": ["ai", "general"],
+      "loc": [
+        "national",
+        "virtual"
+      ],
+      "sector": [
+        "ai",
+        "general"
+      ],
       "url": "https://startup.google.com/programs/accelerator/ai-first/north-america/",
       "equity": false,
       "addedDate": "2026-05-26",
@@ -379,8 +813,14 @@
       "deadline": "rolling",
       "deadlineLabel": "Open enrollment",
       "type": "corporate",
-      "loc": ["national", "virtual"],
-      "sector": ["general", "ai"],
+      "loc": [
+        "national",
+        "virtual"
+      ],
+      "sector": [
+        "general",
+        "ai"
+      ],
       "url": "https://www.microsoft.com/en-us/startups",
       "equity": false,
       "addedDate": "2026-05-26",
@@ -395,8 +835,13 @@
       "deadline": "rolling",
       "deadlineLabel": "Rolling cohorts",
       "type": "corporate",
-      "loc": ["national", "virtual"],
-      "sector": ["edtech"],
+      "loc": [
+        "national",
+        "virtual"
+      ],
+      "sector": [
+        "edtech"
+      ],
       "url": "https://aws.amazon.com/startups/programs/education-accelerator",
       "equity": false,
       "addedDate": "2026-05-26",
@@ -411,8 +856,14 @@
       "deadline": "rolling",
       "deadlineLabel": "Open enrollment",
       "type": "corporate",
-      "loc": ["national", "virtual"],
-      "sector": ["general", "ai"],
+      "loc": [
+        "national",
+        "virtual"
+      ],
+      "sector": [
+        "general",
+        "ai"
+      ],
       "url": "https://cloud.google.com/startup/ai",
       "equity": false,
       "addedDate": "2026-05-26",
@@ -427,25 +878,14 @@
       "deadline": "rolling",
       "deadlineLabel": "Rolling",
       "type": "grant",
-      "loc": ["national", "virtual"],
-      "sector": ["bipoc"],
+      "loc": [
+        "national",
+        "virtual"
+      ],
+      "sector": [
+        "bipoc"
+      ],
       "url": "https://startup.google.com/programs/black-founders-fund/united-states/",
-      "equity": false,
-      "addedDate": "2026-05-26",
-      "source": "manual"
-    },
-    {
-      "id": 28,
-      "name": "NAACP Powershift Entrepreneur Grant",
-      "desc": "For Black entrepreneurs and businesses. $25,000 grant plus additional resources. Backed by L'Oréal.",
-      "prize": "$25K grant",
-      "prizeVal": 25000,
-      "deadline": "2027-04-01",
-      "deadlineLabel": "2027 cycle (watch)",
-      "type": "grant",
-      "loc": ["national"],
-      "sector": ["bipoc"],
-      "url": "https://naacp.org/find-resources/grants",
       "equity": false,
       "addedDate": "2026-05-26",
       "source": "manual"
@@ -459,8 +899,14 @@
       "deadline": "rolling",
       "deadlineLabel": "Rolling",
       "type": "competition",
-      "loc": ["national", "virtual"],
-      "sector": ["women", "bipoc"],
+      "loc": [
+        "national",
+        "virtual"
+      ],
+      "sector": [
+        "women",
+        "bipoc"
+      ],
       "url": "https://www.blackgirlventures.org/",
       "equity": false,
       "addedDate": "2026-05-26",
@@ -475,8 +921,13 @@
       "deadline": "rolling",
       "deadlineLabel": "Monthly rolling",
       "type": "grant",
-      "loc": ["national", "virtual"],
-      "sector": ["women"],
+      "loc": [
+        "national",
+        "virtual"
+      ],
+      "sector": [
+        "women"
+      ],
       "url": "https://womenfoundersgrant.com/apply-now-women-grants",
       "equity": false,
       "addedDate": "2026-05-26",
@@ -491,8 +942,14 @@
       "deadline": "rolling",
       "deadlineLabel": "Annual",
       "type": "accelerator",
-      "loc": ["national", "virtual"],
-      "sector": ["edtech", "ai"],
+      "loc": [
+        "national",
+        "virtual"
+      ],
+      "sector": [
+        "edtech",
+        "ai"
+      ],
       "url": "https://grantsdatabase.org/2026/03/05/siakam-edtech-engine-accelerator-2026-for-early-stage-edtech-startups/",
       "equity": false,
       "addedDate": "2026-05-26",
@@ -507,12 +964,299 @@
       "deadline": "rolling",
       "deadlineLabel": "Annual",
       "type": "award",
-      "loc": ["global", "virtual"],
-      "sector": ["edtech"],
+      "loc": [
+        "global",
+        "virtual"
+      ],
+      "sector": [
+        "edtech"
+      ],
       "url": "https://edtechbreakthrough.com/",
       "equity": false,
       "addedDate": "2026-05-26",
       "source": "manual"
+    },
+    {
+      "id": 935731661,
+      "name": "WISE Edtech Accelerator 2025/2026 Programme for Early-Stage EdTech ...",
+      "desc": "Applications are now open for the 2025/ 2026 WISE Edtech Accelerator Programme. For over six years, WISE have supported edtech founders from around the world scale innovative solutions to key challenges within the world of education. Each year, WISE deliver a bespoke program aimed at supporting startup growth through one-to-one coaching, masterclasses with industry experts, as well as access to ..",
+      "prize": "See listing",
+      "prizeVal": 0,
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "competition",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "edtech"
+      ],
+      "url": "https://scholarshipsandaid.org/2025/02/25/wise-edtech-accelerator-2025-2026-programme-for-early-stage-edtech-startups/",
+      "equity": false,
+      "addedDate": "2026-05-28",
+      "source": "auto"
+    },
+    {
+      "id": 1143745583,
+      "name": "Top 15 Grants for EdTech Startups in 2026: A Comprehensive Guide",
+      "desc": "Below is a detailed list of the Top 15 Grants for EdTech Startups in 2026 , complete with relevant information on the amount, focus areas, eligibility, and links to their official sources.",
+      "prize": "See listing",
+      "prizeVal": 0,
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "grant",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "edtech"
+      ],
+      "url": "https://www.femaleswitch.com/aiden_ai_app/tpost/nz7967c2v1-top-15-grants-for-edtech-startups-in-202",
+      "equity": false,
+      "addedDate": "2026-05-28",
+      "source": "auto"
+    },
+    {
+      "id": 2117808062,
+      "name": "WISE Edtech Accelerator 2025-2026 ($50,000-worth of support)",
+      "desc": "WISE Edtech Accelerator 2025- 2026 ($50,000-worth of support) Application Deadline: On-going WISE has supported edtech founders from around the world scale innovative solutions to key challenges within the world of education. Each year, they deliver a bespoke program aimed at supporting startup growth through one-to-one coaching, masterclasses with industry experts, as well as access to a ...",
+      "prize": "$50,000",
+      "prizeVal": 50000,
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "competition",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "edtech"
+      ],
+      "url": "https://designu.io/wise-edtech-accelerator-2025-2026-50000-worth-of-support/",
+      "equity": false,
+      "addedDate": "2026-05-28",
+      "source": "auto"
+    },
+    {
+      "id": 2702099244,
+      "name": "WISE Edtech Accelerator Programme 2025/2026 - selibeng.com",
+      "desc": "214 Applications are now open for the 2025/ 2026 WISE Edtech Accelerator Programme. For over six years, WISE have supported edtech founders from around the world scale innovative solutions to key challenges within the world of education. Each year, WISE deliver a bespoke program aimed at supporting startup growth through one-to-one coaching, masterclasses with industry experts, as well as ...",
+      "prize": "See listing",
+      "prizeVal": 0,
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "competition",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "edtech"
+      ],
+      "url": "https://selibeng.com/wise-edtech-accelerator-programme-2025-2026/",
+      "equity": false,
+      "addedDate": "2026-05-28",
+      "source": "auto"
+    },
+    {
+      "id": 265761791,
+      "name": "Top edtech Accelerators & VCs (2026) — Open Deadlines | IncubatorList",
+      "desc": "Updated 2026 . Discover the best edtech accelerators, incubators, and VCs with current funding offers and application deadlines.",
+      "prize": "See listing",
+      "prizeVal": 0,
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "accelerator",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "edtech"
+      ],
+      "url": "https://incubatorlist.com/best-edtech-startup-accelerators-incubators-and-vcs",
+      "equity": false,
+      "addedDate": "2026-05-28",
+      "source": "auto"
+    },
+    {
+      "id": 4071194568,
+      "name": "WISE Edtech Accelerator Programme 2025/2026 for early-stage EdTech ...",
+      "desc": "Applications are now open for the 2025/ 2026 WISE Edtech Accelerator Programme. For over six years, WISE have supported edtech founders from around the world scale innovative solutions to key challenges within the world of education. Each year, WISE deliver a bespoke program aimed at supporting startup growth through one-to-one coaching, masterclasses with industry experts, as well as access to ..",
+      "prize": "See listing",
+      "prizeVal": 0,
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "competition",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "edtech"
+      ],
+      "url": "https://www.opportunitiesforafricans.com/wise-edtech-accelerator-programme-2025-2026-for-early-stage-edtech-startups/",
+      "equity": false,
+      "addedDate": "2026-05-28",
+      "source": "auto"
+    },
+    {
+      "id": 2789869620,
+      "name": "Get funding and prizes from 2026 startup competitions | F6S Startup ...",
+      "desc": "Find and enter top 2026 startup competitions , funding competitions , pitch contests, business plan competitions to get prizes , increase awareness and win money",
+      "prize": "See listing",
+      "prizeVal": 0,
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "competition",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://www.f6s.com/contests",
+      "equity": false,
+      "addedDate": "2026-05-28",
+      "source": "auto"
+    },
+    {
+      "id": 280169369,
+      "name": "Startup Prize | Health & Energy Entrepreneurial Competitions",
+      "desc": "Startup Prize : Health, the nationally-acclaimed entrepreneurial event, is back for 2026 . From health devices and technologies to therapeutic development, preventive care solutions, health services, diagnostics, nutrition, and wellness innovations, we're seeking bold founders and breakthrough solutions that will transform health and healthcare delivery.",
+      "prize": "See listing",
+      "prizeVal": 0,
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "competition",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://startupprize.com/",
+      "equity": false,
+      "addedDate": "2026-05-28",
+      "source": "auto"
+    },
+    {
+      "id": 2219186534,
+      "name": "Top 100 Startup Competitions: Complete 2026 Guide - FoundersPress",
+      "desc": "Discover the top 100 startup competitions worldwide to help you pitch , gain funding, and grow your business. Find the best opportunities...",
+      "prize": "See listing",
+      "prizeVal": 0,
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "competition",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://thefounderspress.com/startup-competitions/",
+      "equity": false,
+      "addedDate": "2026-05-28",
+      "source": "auto"
+    },
+    {
+      "id": 3534480095,
+      "name": "Student Startups Take Center Stage at Seton Hall's 2026 Pirates Pitch ...",
+      "desc": "From AI-powered video editing to sustainable refill systems, Seton Hall students pitched innovative startup ideas at the 2026 Pirates Pitch Competition , competing for $16,000 in prizes .",
+      "prize": "$16,000",
+      "prizeVal": 16000,
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "competition",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "ai"
+      ],
+      "url": "https://www.shu.edu/business/news/seton-hall-students-win-16k-at-pirates-pitch-2026.html",
+      "equity": false,
+      "addedDate": "2026-05-28",
+      "source": "auto"
+    },
+    {
+      "id": 1419884816,
+      "name": "Entrepreneurship Conferences and Pitch Competitions for 2026 - D ...",
+      "desc": "Explore All The Conferences and Pitch Competitions Below January 2026 The Tech Up For Women Conference is a hub of inspiration, idea exchange, and advocacy around the issue of the advancement of women through technology.",
+      "prize": "See listing",
+      "prizeVal": 0,
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "competition",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "women"
+      ],
+      "url": "https://ivmf.syracuse.edu/entrepreneurship-conferences-and-pitch-competitions/",
+      "equity": false,
+      "addedDate": "2026-05-28",
+      "source": "auto"
+    },
+    {
+      "id": 2151325292,
+      "name": "Blue Ocean Student Entrepreneur Competition",
+      "desc": "The Blue Ocean Student Entrepreneur Competition is a virtual competition that attracts the very best high school-aged entrepreneurs from all over the world. Every year, thousands of high school students pitch their innovative business concepts to experienced entrepreneurs and business people, receive feedback on their ideas, join a community of like-minded students, and compete for thousands ...",
+      "prize": "See listing",
+      "prizeVal": 0,
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "competition",
+      "loc": [
+        "national",
+        "virtual",
+        "global"
+      ],
+      "sector": [
+        "edtech"
+      ],
+      "url": "https://blueoceancompetition.org/",
+      "equity": false,
+      "addedDate": "2026-05-28",
+      "source": "auto"
+    },
+    {
+      "id": 880366198,
+      "name": "America's Startup - America250",
+      "desc": "Participants submit a proposal and pitch video outlining their business idea, with selected teams advancing through a multi-stage review process that includes a live pitch experience. The America's Startup contest is now closed. Semi-finalists will be notified in mid-April 2026 and invited to a live pitch experience in early May 2026 .",
+      "prize": "See listing",
+      "prizeVal": 0,
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "competition",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://america250.org/americas-startup/",
+      "equity": false,
+      "addedDate": "2026-05-28",
+      "source": "auto"
+    },
+    {
+      "id": 1319103752,
+      "name": "OPEN PITCH by THE OPPORTUNITY FUND | startup competition",
+      "desc": "Open Pitch is a high-energy startup competition built to discover and support the most promising early-stage tech companies. With hundreds of applicants, five finalists, and one ultimate winner, Open Pitch is where breakout startups get their first shot at funding and national exposure. Throughout the competition , top startups pitch live to business leaders and a venture firm with a track ...",
+      "prize": "See listing",
+      "prizeVal": 0,
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "competition",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://www.theopenpitch.com/",
+      "equity": false,
+      "addedDate": "2026-05-28",
+      "source": "auto"
     }
   ]
 }
