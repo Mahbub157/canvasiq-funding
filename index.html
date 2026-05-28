@@ -3,670 +3,920 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>CanvasIQ — Funding Directory</title>
+<title>CanvasIQ — Your Growth Platform for Students & Founders</title>
+<meta name="description" content="CanvasIQ helps students and startup founders find funding, tools, resources, jobs, and community — all in one place."/>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#f5f6fa; --surface:#fff; --surface2:#f0f1f7;
+  --bg:#f5f6fa; --surface:#fff; --surface2:#f0f1f7; --surface3:#e8eaf5;
   --border:#e3e6ef; --border2:#d1d5e8;
-  --accent:#5b4fff; --accent-light:#ede9ff;
+  --accent:#5b4fff; --accent-light:#ede9ff; --accent-dark:#4338ca;
   --accent2:#00b894; --accent2-light:#e0faf4;
-  --urgent:#e8294a; --urgent-light:#fff0f3;
-  --warn:#d97706; --warn-light:#fffbeb;
+  --accent3:#f59e0b; --accent3-light:#fffbeb;
+  --accent4:#e8294a; --accent4-light:#fff0f3;
+  --accent5:#8b5cf6; --accent5-light:#f3f0ff;
   --text:#1a1d2e; --text2:#3d4263; --muted:#8b92b4;
   --shadow:0 1px 4px rgba(80,90,160,.07),0 4px 16px rgba(80,90,160,.06);
-  --shadow-hover:0 4px 12px rgba(80,90,160,.12),0 12px 32px rgba(80,90,160,.10);
-  --radius:14px; --font:'Inter',system-ui,sans-serif;
+  --shadow-hover:0 4px 12px rgba(80,90,160,.13),0 12px 32px rgba(80,90,160,.10);
+  --shadow-lg:0 8px 32px rgba(80,90,160,.12),0 24px 64px rgba(80,90,160,.08);
+  --radius:14px; --radius-lg:20px; --font:'Inter',system-ui,sans-serif;
 }
 *{box-sizing:border-box;margin:0;padding:0;}
-body{background:var(--bg);color:var(--text);font-family:var(--font);min-height:100vh;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--text);font-family:var(--font);min-height:100vh;overflow-x:hidden;}
+a{color:inherit;text-decoration:none;}
+img{display:block;}
 
-/* ── URGENT BANNER ── */
-#urgentBanner{
-  background:linear-gradient(90deg,#e8294a,#c0392b);
-  color:#fff; padding:10px 40px; font-size:13px; font-weight:600;
-  display:flex; align-items:center; gap:12px; flex-wrap:wrap;
-  animation: slidein .4s ease;
+/* ── ANNOUNCEMENT BAR ── */
+#announceBanner{
+  background:linear-gradient(90deg,var(--accent),#7c3aed);
+  color:#fff;padding:9px 40px;font-size:12.5px;font-weight:600;
+  display:flex;align-items:center;justify-content:center;gap:10px;
+  position:relative;
 }
-@keyframes slidein{from{transform:translateY(-100%)}to{transform:translateY(0)}}
-#urgentBanner .banner-items{display:flex;gap:10px;flex-wrap:wrap;flex:1;}
-.banner-chip{
-  background:rgba(255,255,255,.18); border:1px solid rgba(255,255,255,.3);
-  border-radius:20px; padding:4px 12px; font-size:12px; font-weight:700;
-  white-space:nowrap; cursor:pointer; transition:background .15s;
-}
-.banner-chip:hover{background:rgba(255,255,255,.3);}
-.banner-dismiss{background:none;border:none;color:#fff;cursor:pointer;font-size:18px;margin-left:auto;opacity:.7;}
-.banner-dismiss:hover{opacity:1;}
+#announceBanner a{color:#fff;text-decoration:underline;opacity:.9;}
+#announceBanner a:hover{opacity:1;}
+.ann-badge{background:rgba(255,255,255,.25);border-radius:20px;padding:2px 10px;font-size:11px;font-weight:800;letter-spacing:.3px;}
+#annClose{position:absolute;right:16px;background:none;border:none;color:#fff;opacity:.6;cursor:pointer;font-size:18px;line-height:1;}
+#annClose:hover{opacity:1;}
 
-/* ── HEADER ── */
-header{
-  background:#fff; border-bottom:1px solid var(--border);
-  padding:24px 40px 18px;
-  position:sticky; top:0; z-index:100;
-  box-shadow:0 1px 0 var(--border),0 4px 16px rgba(80,90,160,.06);
+/* ── NAV ── */
+nav{
+  background:#fff;border-bottom:1px solid var(--border);
+  padding:0 40px;position:sticky;top:0;z-index:200;
+  box-shadow:0 2px 16px rgba(80,90,160,.07);
 }
-.header-row1{display:flex;align-items:center;gap:16px;margin-bottom:16px;}
-.logo{
+.nav-inner{display:flex;align-items:center;height:64px;gap:32px;}
+.nav-logo{display:flex;align-items:center;gap:10px;flex-shrink:0;}
+.nav-logo .logo-box{
   background:linear-gradient(135deg,var(--accent),#a78bfa);
-  color:#fff;font-weight:800;font-size:17px;padding:8px 16px;
-  border-radius:10px;letter-spacing:-.5px;
+  color:#fff;font-weight:900;font-size:16px;padding:7px 14px;
+  border-radius:10px;letter-spacing:-.3px;box-shadow:0 2px 10px rgba(91,79,255,.35);
+}
+.nav-logo .logo-name{font-size:17px;font-weight:800;color:var(--text);letter-spacing:-.4px;}
+.nav-links{display:flex;align-items:center;gap:4px;flex:1;}
+.nav-links a{
+  padding:6px 13px;border-radius:8px;font-size:13.5px;font-weight:600;
+  color:var(--text2);transition:background .15s,color .15s;white-space:nowrap;
+}
+.nav-links a:hover,.nav-links a.active{background:var(--accent-light);color:var(--accent);}
+.nav-right{display:flex;align-items:center;gap:10px;margin-left:auto;}
+.btn-ghost{
+  padding:7px 16px;border-radius:9px;font-size:13.5px;font-weight:600;
+  color:var(--text2);border:1.5px solid var(--border2);background:#fff;
+  cursor:pointer;transition:all .15s;font-family:var(--font);
+}
+.btn-ghost:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-light);}
+.btn-primary{
+  padding:8px 18px;border-radius:9px;font-size:13.5px;font-weight:700;
+  color:#fff;border:none;background:linear-gradient(135deg,var(--accent),#7c3aed);
+  cursor:pointer;transition:all .15s;font-family:var(--font);
   box-shadow:0 2px 8px rgba(91,79,255,.3);
 }
-.header-title h1{font-size:20px;font-weight:800;color:var(--text);letter-spacing:-.4px;}
-.header-title p{font-size:13px;color:var(--muted);margin-top:2px;font-weight:500;}
+.btn-primary:hover{transform:translateY(-1px);box-shadow:0 4px 14px rgba(91,79,255,.4);}
 
-/* Live indicator */
-.live-badge{
-  display:inline-flex;align-items:center;gap:6px;
-  background:var(--accent2-light);border:1.5px solid #b2f0e2;
-  color:#00916e;font-size:11px;font-weight:700;
-  padding:4px 10px;border-radius:20px;margin-left:auto;
-}
-.live-dot{
-  width:7px;height:7px;border-radius:50%;background:#00b894;
-  animation:pulse 2s infinite;
-}
-@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(1.4)}}
-
-/* Search */
-.search-wrap{position:relative;flex:1;min-width:200px;}
-.search-wrap svg{position:absolute;left:12px;top:50%;transform:translateY(-50%);color:var(--muted);pointer-events:none;}
-input[type="text"]{
-  width:100%;background:var(--surface2);border:1.5px solid var(--border);
-  border-radius:10px;color:var(--text);font-size:14px;font-weight:500;
-  padding:9px 12px 9px 38px;outline:none;transition:border-color .2s,box-shadow .2s;
-  font-family:var(--font);
-}
-input[type="text"]:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(91,79,255,.1);background:#fff;}
-input[type="text"]::placeholder{color:var(--muted);font-weight:400;}
-
-.header-row2{display:flex;align-items:center;gap:12px;flex-wrap:wrap;}
-
-/* Stats */
-.stats-row{display:flex;gap:10px;margin-top:12px;flex-wrap:wrap;}
-.stat{
-  background:var(--surface2);border:1.5px solid var(--border);
-  border-radius:10px;padding:6px 14px;
-  font-size:13px;color:var(--muted);font-weight:500;
-}
-.stat span{color:var(--accent);font-weight:800;font-size:15px;margin-right:4px;}
-
-/* Last updated */
-#lastUpdated{font-size:12px;color:var(--muted);margin-left:auto;white-space:nowrap;}
-
-/* ── FILTER BAR ── */
-.filter-bar{
-  padding:12px 40px;border-bottom:1px solid var(--border);
-  background:#fff;display:flex;gap:7px;flex-wrap:wrap;align-items:center;
-}
-.filter-label{font-size:11px;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.7px;margin-right:2px;}
-.filter-btn{
-  background:var(--surface2);border:1.5px solid var(--border);
-  color:var(--text2);font-size:12.5px;font-weight:600;
-  padding:5px 13px;border-radius:20px;cursor:pointer;
-  transition:all .15s;font-family:var(--font);
-}
-.filter-btn:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-light);}
-.filter-btn.active{background:var(--accent);border-color:var(--accent);color:#fff;box-shadow:0 2px 8px rgba(91,79,255,.25);}
-.divider{width:1px;height:22px;background:var(--border);margin:0 4px;}
-
-/* ── SORT ROW ── */
-.sort-row{
-  padding:10px 40px;background:var(--bg);
-  border-bottom:1px solid var(--border);
-  display:flex;gap:6px;align-items:center;font-size:13px;color:var(--muted);
-}
-.sort-btn{
-  background:none;border:none;color:var(--muted);
-  font-size:13px;font-weight:500;cursor:pointer;padding:4px 10px;
-  border-radius:8px;transition:all .15s;font-family:var(--font);
-}
-.sort-btn:hover{color:var(--text);background:#fff;}
-.sort-btn.active{color:var(--accent);font-weight:700;background:var(--accent-light);}
-#resultCount{margin-left:auto;font-size:12px;color:var(--muted);}
-
-/* ── LAYOUT ── */
-.layout{display:flex;}
-
-/* ── SIDEBAR ── */
-.sidebar{
-  width:272px;flex-shrink:0;padding:20px 16px;
-  border-right:1px solid var(--border);background:#fff;
-  position:sticky;top:170px;
-  max-height:calc(100vh - 170px);overflow-y:auto;
-}
-.sidebar h3{
-  font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.7px;
-  color:var(--muted);margin-bottom:12px;padding-bottom:10px;
-  border-bottom:1px solid var(--border);
-}
-.tl-item{
-  display:flex;gap:11px;padding:10px 8px;
-  border-bottom:1px solid var(--border);cursor:pointer;
-  transition:background .15s;border-radius:8px;
-}
-.tl-item:hover{background:var(--bg);}
-.tl-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0;margin-top:5px;}
-.tl-dot.urgent{background:var(--urgent);box-shadow:0 0 5px rgba(232,41,74,.4);}
-.tl-dot.soon{background:var(--warn);box-shadow:0 0 5px rgba(217,119,6,.3);}
-.tl-dot.normal{background:var(--accent);}
-.tl-dot.rolling{background:var(--accent2);}
-.tl-name{font-size:12px;font-weight:600;color:var(--text);line-height:1.3;}
-.tl-date{font-size:11px;color:var(--muted);margin-top:2px;}
-.tl-prize{font-size:11px;color:#00916e;margin-top:2px;font-weight:700;}
-
-/* ── GRID ── */
-.main-content{flex:1;min-width:0;background:var(--bg);}
-.grid{
-  padding:24px 36px 60px;
-  display:grid;
-  grid-template-columns:repeat(auto-fill,minmax(360px,1fr));
-  gap:18px;
-}
-
-/* ── CARD ── */
-.card{
-  background:#fff;border:1.5px solid var(--border);
-  border-radius:var(--radius);padding:22px;
-  display:flex;flex-direction:column;gap:14px;
-  box-shadow:var(--shadow);
-  transition:box-shadow .2s,transform .18s,border-color .2s;
+/* ── HERO ── */
+.hero{
+  padding:80px 40px 72px;
+  background:linear-gradient(145deg,#fff 0%,#f5f3ff 40%,#e0faf4 80%,#fff 100%);
   position:relative;overflow:hidden;
+  border-bottom:1px solid var(--border);
 }
-.card:hover{box-shadow:var(--shadow-hover);transform:translateY(-3px);border-color:var(--accent);}
-.card.urgent{border-top:3px solid var(--urgent);}
-.card.soon{border-top:3px solid var(--warn);}
-.card.new-opp{border-top:3px solid var(--accent);}
-
-/* NEW badge */
-.new-badge{
-  position:absolute;top:14px;right:14px;
-  background:var(--accent);color:#fff;
-  font-size:10px;font-weight:800;letter-spacing:.5px;
-  padding:3px 8px;border-radius:4px;text-transform:uppercase;
+.hero::before{
+  content:'';position:absolute;top:-80px;right:-80px;
+  width:500px;height:500px;border-radius:50%;
+  background:radial-gradient(circle,rgba(91,79,255,.09) 0%,transparent 70%);
+  pointer-events:none;
 }
-
-.card-top{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;}
-.card-title{font-size:15px;font-weight:700;color:var(--text);line-height:1.35;flex:1;letter-spacing:-.2px;}
-
-.prize-badge{
-  background:var(--accent2-light);border:1.5px solid #b2f0e2;
-  color:#00916e;font-size:12px;font-weight:700;
-  padding:5px 10px;border-radius:8px;white-space:nowrap;flex-shrink:0;
+.hero::after{
+  content:'';position:absolute;bottom:-100px;left:-60px;
+  width:400px;height:400px;border-radius:50%;
+  background:radial-gradient(circle,rgba(0,184,148,.08) 0%,transparent 70%);
+  pointer-events:none;
 }
-
-.card-desc{font-size:13px;color:var(--text2);line-height:1.65;}
-
-/* Deadline + countdown */
-.deadline-row{display:flex;flex-direction:column;gap:5px;}
-.deadline-pill{
-  display:inline-flex;align-items:center;gap:5px;
-  font-size:12px;font-weight:600;padding:4px 10px;border-radius:20px;
+.hero-inner{max-width:900px;margin:0 auto;text-align:center;position:relative;z-index:1;}
+.hero-eyebrow{
+  display:inline-flex;align-items:center;gap:7px;
+  background:var(--accent-light);border:1.5px solid #c4b8ff;
+  color:var(--accent);font-size:12px;font-weight:700;
+  padding:5px 14px;border-radius:20px;margin-bottom:24px;letter-spacing:.3px;text-transform:uppercase;
 }
-.deadline-pill.urgent{background:var(--urgent-light);color:var(--urgent);border:1.5px solid #ffc4ce;}
-.deadline-pill.soon{background:var(--warn-light);color:var(--warn);border:1.5px solid #fde68a;}
-.deadline-pill.normal{background:var(--surface2);color:var(--muted);border:1.5px solid var(--border);}
-.deadline-pill.rolling{background:var(--accent-light);color:var(--accent);border:1.5px solid #c4bdff;}
+.hero h1{
+  font-size:clamp(36px,6vw,62px);font-weight:900;color:var(--text);
+  line-height:1.1;letter-spacing:-2px;margin-bottom:18px;
+}
+.hero h1 span{
+  background:linear-gradient(135deg,var(--accent),#a78bfa,var(--accent2));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+}
+.hero-sub{
+  font-size:clamp(16px,2.5vw,20px);color:var(--text2);line-height:1.6;
+  max-width:600px;margin:0 auto 36px;font-weight:500;
+}
+.hero-ctas{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:52px;}
+.btn-hero-primary{
+  padding:14px 32px;border-radius:12px;font-size:15px;font-weight:700;
+  color:#fff;border:none;background:linear-gradient(135deg,var(--accent),#7c3aed);
+  cursor:pointer;font-family:var(--font);
+  box-shadow:0 4px 16px rgba(91,79,255,.35);transition:all .2s;
+}
+.btn-hero-primary:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(91,79,255,.45);}
+.btn-hero-secondary{
+  padding:14px 32px;border-radius:12px;font-size:15px;font-weight:700;
+  color:var(--accent);border:2px solid var(--accent);background:#fff;
+  cursor:pointer;font-family:var(--font);transition:all .2s;
+}
+.btn-hero-secondary:hover{background:var(--accent-light);transform:translateY(-2px);}
+.hero-stats{display:flex;gap:32px;justify-content:center;flex-wrap:wrap;}
+.hero-stat{text-align:center;}
+.hero-stat .num{font-size:28px;font-weight:900;color:var(--text);letter-spacing:-1px;}
+.hero-stat .label{font-size:12.5px;color:var(--muted);font-weight:600;margin-top:2px;}
 
-.countdown{
-  font-size:11px;font-weight:700;padding:3px 9px;border-radius:6px;
+/* ── SECTION COMMONS ── */
+section{padding:72px 40px;}
+.section-inner{max-width:1200px;margin:0 auto;}
+.section-header{text-align:center;margin-bottom:48px;}
+.section-eyebrow{
+  display:inline-block;font-size:11.5px;font-weight:800;letter-spacing:.8px;
+  text-transform:uppercase;padding:4px 14px;border-radius:20px;margin-bottom:14px;
+}
+.section-title{font-size:clamp(24px,4vw,36px);font-weight:900;letter-spacing:-1px;color:var(--text);margin-bottom:12px;}
+.section-sub{font-size:16px;color:var(--text2);max-width:540px;margin:0 auto;line-height:1.6;font-weight:500;}
+
+/* ── PLATFORM CARDS ── */
+.platform-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:20px;}
+.platform-card{
+  background:var(--surface);border:1.5px solid var(--border);border-radius:var(--radius-lg);
+  padding:28px;transition:all .2s;cursor:pointer;position:relative;overflow:hidden;
+}
+.platform-card::before{
+  content:'';position:absolute;inset:0;opacity:0;transition:opacity .2s;
+  background:var(--card-gradient,linear-gradient(135deg,var(--accent-light),transparent));
+}
+.platform-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover);border-color:var(--card-color,var(--accent));}
+.platform-card:hover::before{opacity:1;}
+.pc-icon{
+  width:48px;height:48px;border-radius:12px;
+  background:var(--card-bg,var(--accent-light));
+  display:flex;align-items:center;justify-content:center;
+  font-size:22px;margin-bottom:18px;position:relative;z-index:1;
+}
+.pc-title{font-size:18px;font-weight:800;color:var(--text);margin-bottom:8px;position:relative;z-index:1;}
+.pc-desc{font-size:13.5px;color:var(--text2);line-height:1.6;margin-bottom:16px;position:relative;z-index:1;}
+.pc-meta{display:flex;align-items:center;justify-content:space-between;position:relative;z-index:1;}
+.pc-count{font-size:12px;font-weight:700;color:var(--card-color,var(--accent));background:var(--card-bg,var(--accent-light));padding:3px 10px;border-radius:20px;}
+.pc-link{font-size:13px;font-weight:700;color:var(--card-color,var(--accent));display:flex;align-items:center;gap:5px;}
+.pc-link svg{transition:transform .15s;}
+.platform-card:hover .pc-link svg{transform:translateX(3px);}
+
+/* ── FUNDING SECTION ── */
+#funding{background:#fff;border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+.funding-preview{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px;margin-bottom:28px;}
+.fund-card{
+  background:var(--bg);border:1.5px solid var(--border);border-radius:var(--radius);
+  padding:20px;transition:all .2s;
+}
+.fund-card:hover{box-shadow:var(--shadow-hover);border-color:var(--accent);transform:translateY(-2px);}
+.fund-tag-row{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px;}
+.tag{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:700;padding:3px 9px;border-radius:20px;letter-spacing:.2px;}
+.tag-comp{background:#ede9ff;color:#5b4fff;}
+.tag-grant{background:#e0faf4;color:#00916e;}
+.tag-acc{background:#fff7ed;color:#c2500a;}
+.tag-corp{background:#f0f9ff;color:#0369a1;}
+.tag-award{background:#fdf4ff;color:#7e22ce;}
+.tag-urgent{background:#fff0f3;color:#e8294a;}
+.tag-new{background:#dcfce7;color:#15803d;}
+.fund-name{font-size:15px;font-weight:700;color:var(--text);margin-bottom:6px;line-height:1.4;}
+.fund-prize{font-size:22px;font-weight:900;color:var(--accent);letter-spacing:-1px;margin-bottom:6px;}
+.fund-prize small{font-size:13px;font-weight:600;color:var(--muted);letter-spacing:0;}
+.fund-deadline{font-size:12.5px;color:var(--text2);font-weight:500;}
+.fund-footer{display:flex;align-items:center;justify-content:space-between;margin-top:14px;padding-top:14px;border-top:1px solid var(--border);}
+.fund-source{font-size:11px;font-weight:700;color:var(--muted);}
+.fund-cta{
+  font-size:12.5px;font-weight:700;color:var(--accent);
+  background:var(--accent-light);border:none;border-radius:7px;
+  padding:5px 12px;cursor:pointer;font-family:var(--font);transition:all .15s;
+}
+.fund-cta:hover{background:var(--accent);color:#fff;}
+.view-all-wrap{text-align:center;}
+.btn-view-all{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:12px 28px;border-radius:10px;font-size:14px;font-weight:700;
+  color:var(--accent);border:2px solid var(--accent);background:#fff;
+  cursor:pointer;font-family:var(--font);transition:all .2s;
+}
+.btn-view-all:hover{background:var(--accent);color:#fff;transform:translateY(-1px);}
+
+/* ── TOOLS SECTION ── */
+#tools{background:linear-gradient(135deg,#faf9ff 0%,#f0fdf4 100%);}
+.tools-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:16px;margin-bottom:32px;}
+.tool-card{
+  background:#fff;border:1.5px solid var(--border);border-radius:var(--radius);
+  padding:22px 16px;text-align:center;transition:all .2s;cursor:pointer;
+}
+.tool-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover);border-color:var(--accent);}
+.tool-logo{
+  width:56px;height:56px;border-radius:14px;
+  margin:0 auto 12px;overflow:hidden;
+  background:var(--surface2);
+  display:flex;align-items:center;justify-content:center;
+  border:1px solid var(--border);
+}
+.tool-logo img{width:48px;height:48px;object-fit:contain;border-radius:10px;}
+.tool-logo-fallback{font-size:22px;}
+.tool-name{font-size:13.5px;font-weight:700;color:var(--text);margin-bottom:4px;}
+.tool-price-row{display:flex;align-items:center;justify-content:center;gap:6px;margin-bottom:10px;}
+.tool-orig{font-size:11px;color:var(--muted);text-decoration:line-through;}
+.tool-sale{font-size:13px;font-weight:800;color:var(--accent2);}
+.tool-badge{font-size:10px;font-weight:800;background:#dcfce7;color:#15803d;padding:2px 8px;border-radius:20px;}
+.tool-cta-btn{
+  width:100%;padding:7px;border-radius:8px;font-size:12.5px;font-weight:700;
+  color:#fff;background:linear-gradient(135deg,var(--accent),#7c3aed);
+  border:none;cursor:pointer;font-family:var(--font);transition:all .15s;
+}
+.tool-cta-btn:hover{opacity:.9;transform:scale(.99);}
+.tools-promo{
+  background:linear-gradient(135deg,var(--accent),#7c3aed);
+  border-radius:var(--radius-lg);padding:32px 40px;
+  display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;
+  color:#fff;
+}
+.tools-promo h3{font-size:22px;font-weight:800;letter-spacing:-.5px;margin-bottom:6px;}
+.tools-promo p{font-size:14px;opacity:.85;line-height:1.5;}
+.btn-promo{
+  padding:12px 26px;border-radius:10px;font-size:14px;font-weight:700;
+  color:var(--accent);background:#fff;border:none;cursor:pointer;
+  font-family:var(--font);white-space:nowrap;transition:all .2s;
+}
+.btn-promo:hover{transform:scale(1.03);box-shadow:0 4px 16px rgba(0,0,0,.2);}
+
+/* ── RESOURCES ── */
+#resources{background:#fff;border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+.resources-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:20px;}
+.res-card{
+  background:var(--bg);border:1.5px solid var(--border);border-radius:var(--radius);
+  padding:24px;transition:all .2s;
+}
+.res-card:hover{transform:translateY(-2px);box-shadow:var(--shadow-hover);border-color:var(--card-color,var(--accent));}
+.res-icon{font-size:28px;margin-bottom:14px;}
+.res-type{font-size:11px;font-weight:800;color:var(--card-color,var(--accent));text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px;}
+.res-title{font-size:15px;font-weight:700;color:var(--text);margin-bottom:8px;line-height:1.4;}
+.res-desc{font-size:13px;color:var(--text2);line-height:1.5;margin-bottom:14px;}
+.res-tag-row{display:flex;gap:6px;flex-wrap:wrap;}
+.res-tag{font-size:11px;font-weight:600;color:var(--muted);background:var(--surface3);padding:3px 9px;border-radius:20px;}
+
+/* ── JOBS ── */
+#jobs{background:linear-gradient(135deg,#fff7ed 0%,#fff 50%);}
+.jobs-list{display:flex;flex-direction:column;gap:12px;margin-bottom:32px;}
+.job-row{
+  background:#fff;border:1.5px solid var(--border);border-radius:var(--radius);
+  padding:18px 24px;display:flex;align-items:center;gap:16px;transition:all .2s;
+}
+.job-row:hover{box-shadow:var(--shadow-hover);border-color:var(--accent3);transform:translateX(3px);}
+.job-logo{
+  width:44px;height:44px;border-radius:10px;overflow:hidden;flex-shrink:0;
+  background:var(--surface2);border:1px solid var(--border);
+  display:flex;align-items:center;justify-content:center;
+}
+.job-logo img{width:36px;height:36px;object-fit:contain;border-radius:7px;}
+.job-info{flex:1;}
+.job-title{font-size:14.5px;font-weight:700;color:var(--text);margin-bottom:3px;}
+.job-company{font-size:12.5px;color:var(--text2);font-weight:500;}
+.job-tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px;}
+.job-tag{font-size:11px;font-weight:700;padding:2px 9px;border-radius:20px;}
+.job-tag-remote{background:#e0faf4;color:#00916e;}
+.job-tag-type{background:var(--accent-light);color:var(--accent);}
+.job-tag-new{background:#dcfce7;color:#15803d;}
+.job-right{text-align:right;flex-shrink:0;}
+.job-salary{font-size:13px;font-weight:700;color:var(--text);margin-bottom:4px;}
+.job-posted{font-size:11.5px;color:var(--muted);}
+.job-apply{
+  padding:7px 16px;border-radius:8px;font-size:12.5px;font-weight:700;
+  color:#fff;background:var(--accent3);border:none;cursor:pointer;
+  font-family:var(--font);margin-top:6px;transition:all .15s;
+}
+.job-apply:hover{opacity:.85;}
+
+/* ── COMMUNITY ── */
+#community{background:var(--bg);border-top:1px solid var(--border);}
+.community-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px;margin-bottom:40px;}
+.comm-card{
+  background:#fff;border:1.5px solid var(--border);border-radius:var(--radius-lg);
+  padding:28px;text-align:center;transition:all .2s;
+}
+.comm-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover);}
+.comm-icon{font-size:36px;margin-bottom:16px;}
+.comm-title{font-size:17px;font-weight:800;color:var(--text);margin-bottom:8px;}
+.comm-desc{font-size:13.5px;color:var(--text2);line-height:1.6;margin-bottom:18px;}
+.comm-count{font-size:20px;font-weight:900;color:var(--accent);letter-spacing:-.5px;margin-bottom:2px;}
+.comm-count-label{font-size:12px;color:var(--muted);font-weight:600;}
+.comm-btn{
+  display:inline-block;margin-top:14px;padding:9px 22px;border-radius:9px;
+  font-size:13px;font-weight:700;color:var(--accent);
+  border:2px solid var(--accent);background:#fff;cursor:pointer;
+  font-family:var(--font);transition:all .15s;
+}
+.comm-btn:hover{background:var(--accent);color:#fff;}
+
+/* ── NEWSLETTER ── */
+#newsletter{
+  background:linear-gradient(135deg,var(--accent),#7c3aed,var(--accent2));
+  padding:72px 40px;text-align:center;
+}
+.nl-inner{max-width:560px;margin:0 auto;}
+#newsletter h2{font-size:clamp(28px,5vw,40px);font-weight:900;color:#fff;letter-spacing:-1px;margin-bottom:14px;}
+#newsletter p{font-size:16px;color:rgba(255,255,255,.85);line-height:1.6;margin-bottom:32px;}
+.nl-form{display:flex;gap:10px;max-width:440px;margin:0 auto;flex-wrap:wrap;}
+.nl-input{
+  flex:1;min-width:200px;padding:13px 16px;border-radius:10px;
+  border:none;font-size:14px;font-family:var(--font);outline:none;
+  box-shadow:0 2px 12px rgba(0,0,0,.15);
+}
+.nl-btn{
+  padding:13px 24px;border-radius:10px;font-size:14px;font-weight:700;
+  color:var(--accent);background:#fff;border:none;cursor:pointer;
+  font-family:var(--font);white-space:nowrap;transition:all .2s;
+  box-shadow:0 2px 12px rgba(0,0,0,.15);
+}
+.nl-btn:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,.2);}
+.nl-badges{display:flex;gap:12px;justify-content:center;margin-top:20px;flex-wrap:wrap;}
+.nl-badge{font-size:12px;color:rgba(255,255,255,.8);display:flex;align-items:center;gap:5px;}
+
+/* ── FOOTER ── */
+footer{background:#1a1d2e;color:#9ca3b0;padding:56px 40px 32px;}
+.footer-inner{max-width:1200px;margin:0 auto;}
+.footer-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;margin-bottom:48px;}
+.footer-brand .logo-box{
   display:inline-block;
+  background:linear-gradient(135deg,var(--accent),#a78bfa);
+  color:#fff;font-weight:900;font-size:15px;padding:6px 14px;
+  border-radius:9px;margin-bottom:14px;
 }
-.countdown.urgent{background:var(--urgent-light);color:var(--urgent);}
-.countdown.soon{background:var(--warn-light);color:var(--warn);}
-.countdown.normal{background:var(--surface2);color:var(--muted);}
+.footer-brand p{font-size:13.5px;line-height:1.7;max-width:240px;color:#9ca3b0;}
+.footer-col h4{font-size:13px;font-weight:700;color:#fff;margin-bottom:16px;letter-spacing:.3px;text-transform:uppercase;}
+.footer-col a{display:block;font-size:13.5px;color:#9ca3b0;margin-bottom:10px;transition:color .15s;}
+.footer-col a:hover{color:#fff;}
+.footer-bottom{border-top:1px solid #2d3148;padding-top:24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;}
+.footer-bottom p{font-size:12.5px;}
+.footer-bottom .footer-links{display:flex;gap:20px;}
+.footer-bottom .footer-links a{font-size:12.5px;color:#9ca3b0;transition:color .15s;}
+.footer-bottom .footer-links a:hover{color:#fff;}
 
-/* Tags */
-.tags{display:flex;gap:5px;flex-wrap:wrap;}
-.tag{font-size:11px;font-weight:700;padding:3px 8px;border-radius:5px;text-transform:uppercase;letter-spacing:.5px;}
-.tag-type-grant      {background:#e6faf5;color:#007a5e;}
-.tag-type-competition{background:var(--accent-light);color:#4338ca;}
-.tag-type-accelerator{background:#fffbeb;color:#92400e;}
-.tag-type-corporate  {background:#eff6ff;color:#1d4ed8;}
-.tag-type-award      {background:#fdf2f8;color:#9d174d;}
-.tag-loc-nyc         {background:#fff0f3;color:#be123c;}
-.tag-loc-national    {background:#eff6ff;color:#1e40af;}
-.tag-loc-virtual     {background:#f0fdf4;color:#166534;}
-.tag-loc-global      {background:#faf5ff;color:#6b21a8;}
-.tag-sector-edtech   {background:#ecfdf5;color:#065f46;}
-.tag-sector-ai       {background:#fffbeb;color:#92400e;}
-.tag-sector-women    {background:#fdf2f8;color:#831843;}
-.tag-sector-bipoc    {background:#fff7ed;color:#9a3412;}
-.tag-sector-general  {background:#f8fafc;color:#475569;}
+/* ── FLOATING CTA ── */
+#floatCTA{
+  position:fixed;bottom:24px;right:24px;z-index:300;
+  background:linear-gradient(135deg,var(--accent),#7c3aed);
+  color:#fff;border:none;border-radius:50px;padding:12px 22px;
+  font-size:13.5px;font-weight:700;font-family:var(--font);cursor:pointer;
+  box-shadow:0 4px 20px rgba(91,79,255,.45);
+  display:flex;align-items:center;gap:8px;transition:all .2s;
+  animation:floatIn .5s .5s backwards;
+}
+@keyframes floatIn{from{transform:translateY(20px);opacity:0}to{transform:translateY(0);opacity:1}}
+#floatCTA:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(91,79,255,.5);}
 
-/* Equity badge */
-.equity-badge{
-  display:inline-block;font-size:11px;font-weight:700;
-  padding:3px 9px;border-radius:5px;
-}
-.equity-badge.no-equity{background:#e6faf5;border:1px solid #b2f0e2;color:#007a5e;}
-.equity-badge.has-equity{background:#fffbeb;border:1px solid #fde68a;color:#b45309;}
-
-/* Source badge */
-.source-auto{
-  font-size:10px;font-weight:700;color:var(--accent);
-  background:var(--accent-light);border:1px solid #c4bdff;
-  border-radius:4px;padding:2px 7px;display:inline-block;
-}
-
-/* Actions */
-.card-actions{display:flex;gap:10px;margin-top:4px;}
-.btn-apply{
-  flex:1;background:var(--accent);color:#fff;
-  border:none;border-radius:9px;padding:10px 16px;
-  font-size:13px;font-weight:700;cursor:pointer;
-  text-decoration:none;text-align:center;
-  transition:background .15s,box-shadow .15s,transform .1s;
-  display:flex;align-items:center;justify-content:center;gap:6px;
-  box-shadow:0 2px 8px rgba(91,79,255,.25);font-family:var(--font);
-}
-.btn-apply:hover{background:#4b3fe0;box-shadow:0 4px 14px rgba(91,79,255,.35);transform:scale(.99);}
-.btn-save{
-  background:var(--surface2);border:1.5px solid var(--border);
-  color:var(--muted);border-radius:9px;padding:10px 14px;
-  font-size:15px;cursor:pointer;transition:all .15s;font-family:var(--font);
-}
-.btn-save:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-light);}
-.btn-save.saved{border-color:var(--accent2);color:var(--accent2);background:var(--accent2-light);}
-
-/* No results */
-.no-results{
-  grid-column:1/-1;text-align:center;padding:80px 20px;
-  color:var(--muted);font-size:16px;
-}
-
-/* Loading skeleton */
-.skeleton-card{
-  background:#fff;border:1.5px solid var(--border);
-  border-radius:var(--radius);padding:22px;
-  display:flex;flex-direction:column;gap:14px;
-  box-shadow:var(--shadow);
-}
-.skeleton-line{
-  height:14px;border-radius:6px;
-  background:linear-gradient(90deg,#f0f1f7 25%,#e3e6ef 50%,#f0f1f7 75%);
-  background-size:200% 100%;
-  animation:shimmer 1.5s infinite;
-}
-@keyframes shimmer{0%{background-position:200% 0}100%{background-position:-200% 0}}
-.skeleton-line.w-80{width:80%;}
-.skeleton-line.w-60{width:60%;}
-.skeleton-line.w-40{width:40%;}
-.skeleton-line.h-24{height:24px;}
-
-/* Responsive */
+/* ── RESPONSIVE ── */
 @media(max-width:900px){
-  header,.filter-bar,.sort-row{padding-left:20px;padding-right:20px;}
-  .grid{padding:16px 20px 40px;grid-template-columns:1fr;}
-  .sidebar{display:none;}
-  #urgentBanner{padding:10px 20px;}
+  nav{padding:0 20px;}
+  .nav-links{display:none;}
+  section{padding:52px 20px;}
+  .hero{padding:52px 20px 48px;}
+  .footer-top{grid-template-columns:1fr 1fr;}
+  .tools-promo{flex-direction:column;text-align:center;}
 }
-
-/* Scrollbar */
-::-webkit-scrollbar{width:5px;}
-::-webkit-scrollbar-track{background:var(--bg);}
-::-webkit-scrollbar-thumb{background:var(--border2);border-radius:3px;}
-::-webkit-scrollbar-thumb:hover{background:var(--muted);}
+@media(max-width:600px){
+  .hero-stats{gap:20px;}
+  .footer-top{grid-template-columns:1fr;}
+  footer{padding:40px 20px 24px;}
+}
 </style>
 </head>
 <body>
 
-<!-- URGENT BANNER (populated by JS) -->
-<div id="urgentBanner" style="display:none;">
-  <span>🚨 Closing soon:</span>
-  <div class="banner-items" id="bannerItems"></div>
-  <button class="banner-dismiss" onclick="document.getElementById('urgentBanner').style.display='none'">×</button>
+<!-- ANNOUNCEMENT BAR -->
+<div id="announceBanner">
+  <span class="ann-badge">NEW</span>
+  🚀 CanvasIQ just launched — <a href="#newsletter">Join 1,000+ students &amp; founders</a> getting weekly funding alerts &amp; deals!
+  <button id="annClose" onclick="this.parentElement.remove()">×</button>
 </div>
 
-<!-- HEADER -->
-<header>
-  <div class="header-row1">
-    <div class="logo">CanvasIQ</div>
-    <div class="header-title">
-      <h1>Pre-Seed Funding Directory</h1>
-      <p>Grants · Competitions · Accelerators · Corporate Programs</p>
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">
+      <div class="logo-box">CIQ</div>
+      <span class="logo-name">CanvasIQ</span>
+    </a>
+    <div class="nav-links">
+      <a href="#platform">Platform</a>
+      <a href="#funding">Funding</a>
+      <a href="#tools">Tools &amp; Deals</a>
+      <a href="#resources">Resources</a>
+      <a href="#jobs">Jobs</a>
+      <a href="#community">Community</a>
     </div>
-    <div class="live-badge" id="liveBadge">
-      <div class="live-dot"></div>
-      <span id="liveText">Loading…</span>
-    </div>
-  </div>
-  <div class="header-row2">
-    <div class="search-wrap">
-      <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-        <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
-      </svg>
-      <input type="text" id="searchInput" placeholder="Search by name, prize, keyword…" oninput="applyFilters()"/>
-    </div>
-    <span id="lastUpdated">–</span>
-  </div>
-  <div class="stats-row" id="statsRow">
-    <div class="stat"><span id="totalCount">–</span> Total</div>
-    <div class="stat"><span id="urgentCount">–</span> 🔴 Urgent</div>
-    <div class="stat"><span id="soonCount">–</span> 🟡 Closing Soon</div>
-    <div class="stat"><span id="newCount">–</span> ✨ New This Week</div>
-    <div class="stat"><span id="rollingCount">–</span> 🔵 Rolling</div>
-  </div>
-</header>
-
-<!-- FILTER BAR -->
-<div class="filter-bar">
-  <span class="filter-label">Type</span>
-  <button class="filter-btn active" onclick="setFilter('type','all',this)">All</button>
-  <button class="filter-btn" onclick="setFilter('type','grant',this)">Grant</button>
-  <button class="filter-btn" onclick="setFilter('type','competition',this)">Competition</button>
-  <button class="filter-btn" onclick="setFilter('type','accelerator',this)">Accelerator</button>
-  <button class="filter-btn" onclick="setFilter('type','corporate',this)">Corporate</button>
-  <button class="filter-btn" onclick="setFilter('type','award',this)">Award</button>
-  <div class="divider"></div>
-  <span class="filter-label">Location</span>
-  <button class="filter-btn" onclick="setFilter('loc','nyc',this)">NYC</button>
-  <button class="filter-btn" onclick="setFilter('loc','national',this)">National</button>
-  <button class="filter-btn" onclick="setFilter('loc','virtual',this)">Virtual</button>
-  <button class="filter-btn" onclick="setFilter('loc','global',this)">Global</button>
-  <div class="divider"></div>
-  <span class="filter-label">Focus</span>
-  <button class="filter-btn" onclick="setFilter('sector','edtech',this)">EdTech</button>
-  <button class="filter-btn" onclick="setFilter('sector','ai',this)">AI</button>
-  <button class="filter-btn" onclick="setFilter('sector','women',this)">Women</button>
-  <button class="filter-btn" onclick="setFilter('sector','bipoc',this)">BIPOC</button>
-  <button class="filter-btn" onclick="setFilter('sector','general',this)">General</button>
-  <div class="divider"></div>
-  <button class="filter-btn" onclick="setFilter('special','saved',this)" id="savedBtn">★ Saved</button>
-  <button class="filter-btn" onclick="setFilter('special','new',this)" id="newBtn">✨ New</button>
-  <button class="filter-btn" onclick="setFilter('special','noeq',this)">Non-Dilutive</button>
-</div>
-
-<!-- SORT ROW -->
-<div class="sort-row">
-  <span>Sort by:</span>
-  <button class="sort-btn active" onclick="setSort('deadline',this)">Deadline</button>
-  <button class="sort-btn" onclick="setSort('prize',this)">Prize ↓</button>
-  <button class="sort-btn" onclick="setSort('name',this)">Name A–Z</button>
-  <button class="sort-btn" onclick="setSort('added',this)">Recently Added</button>
-  <span id="resultCount"></span>
-</div>
-
-<div class="layout">
-  <!-- TIMELINE SIDEBAR -->
-  <aside class="sidebar">
-    <h3>⏱ Deadline Timeline</h3>
-    <div id="timeline"></div>
-  </aside>
-
-  <!-- MAIN GRID -->
-  <div class="main-content">
-    <div class="grid" id="grid">
-      <!-- skeleton loading -->
-      <div class="skeleton-card"><div class="skeleton-line h-24 w-80"></div><div class="skeleton-line w-60"></div><div class="skeleton-line w-40"></div></div>
-      <div class="skeleton-card"><div class="skeleton-line h-24 w-80"></div><div class="skeleton-line w-60"></div><div class="skeleton-line w-40"></div></div>
-      <div class="skeleton-card"><div class="skeleton-line h-24 w-80"></div><div class="skeleton-line w-60"></div><div class="skeleton-line w-40"></div></div>
+    <div class="nav-right">
+      <button class="btn-ghost" onclick="document.getElementById('newsletter').scrollIntoView({behavior:'smooth'})">Sign In</button>
+      <button class="btn-primary" onclick="document.getElementById('newsletter').scrollIntoView({behavior:'smooth'})">Get Started Free</button>
     </div>
   </div>
-</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-eyebrow">🎓 For Students &amp; Startup Founders</div>
+    <h1>Your All-in-One<br><span>Growth Platform</span></h1>
+    <p class="hero-sub">Find funding, unlock exclusive deals on tools, access expert resources, and connect with a community of ambitious builders.</p>
+    <div class="hero-ctas">
+      <button class="btn-hero-primary" onclick="document.getElementById('platform').scrollIntoView({behavior:'smooth'})">Explore the Platform →</button>
+      <button class="btn-hero-secondary" onclick="document.getElementById('funding').scrollIntoView({behavior:'smooth'})">Browse Funding Opportunities</button>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="num" id="stat-opps">32+</div>
+        <div class="label">Live Opportunities</div>
+      </div>
+      <div class="hero-stat">
+        <div class="num">$2M+</div>
+        <div class="label">In Prizes &amp; Grants</div>
+      </div>
+      <div class="hero-stat">
+        <div class="num">15+</div>
+        <div class="label">Discounted Tools</div>
+      </div>
+      <div class="hero-stat">
+        <div class="num">Free</div>
+        <div class="label">Always Core Access</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PLATFORM OVERVIEW -->
+<section id="platform" style="background:#fff;border-bottom:1px solid var(--border);">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="section-eyebrow" style="background:var(--accent-light);color:var(--accent);">Everything in One Place</span>
+      <h2 class="section-title">Built for ambitious builders</h2>
+      <p class="section-sub">Six powerful modules working together — from finding your first grant to landing your first job.</p>
+    </div>
+    <div class="platform-grid">
+      <div class="platform-card" style="--card-color:#5b4fff;--card-bg:#ede9ff;--card-gradient:linear-gradient(135deg,#ede9ff,transparent);" onclick="document.getElementById('funding').scrollIntoView({behavior:'smooth'})">
+        <div class="pc-icon" style="background:#ede9ff;">🏆</div>
+        <div class="pc-title">Funding Directory</div>
+        <div class="pc-desc">Daily-updated grants, competitions, accelerators, and awards — for EdTech, AI, women founders, BIPOC, and more. Updated automatically every day.</div>
+        <div class="pc-meta">
+          <span class="pc-count">32+ Live Opportunities</span>
+          <span class="pc-link">Explore <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </div>
+      <div class="platform-card" style="--card-color:#00b894;--card-bg:#e0faf4;--card-gradient:linear-gradient(135deg,#e0faf4,transparent);" onclick="document.getElementById('tools').scrollIntoView({behavior:'smooth'})">
+        <div class="pc-icon" style="background:#e0faf4;">🛠️</div>
+        <div class="pc-title">Student Tools &amp; Deals</div>
+        <div class="pc-desc">Save up to 70% on Canva Pro, Notion, Grammarly, MS Office, Figma, and 15+ tools. Exclusive student pricing, group licenses, and affiliate discounts.</div>
+        <div class="pc-meta">
+          <span class="pc-count" style="background:#e0faf4;color:#00916e;">15+ Tools</span>
+          <span class="pc-link" style="color:#00b894;">Browse Deals <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </div>
+      <div class="platform-card" style="--card-color:#f59e0b;--card-bg:#fffbeb;--card-gradient:linear-gradient(135deg,#fffbeb,transparent);" onclick="document.getElementById('resources').scrollIntoView({behavior:'smooth'})">
+        <div class="pc-icon" style="background:#fffbeb;">📚</div>
+        <div class="pc-title">Resource Hub</div>
+        <div class="pc-desc">Templates, pitch deck guides, grant writing playbooks, startup checklists, and founder toolkits — everything you need to execute faster.</div>
+        <div class="pc-meta">
+          <span class="pc-count" style="background:#fffbeb;color:#c2500a;">50+ Resources</span>
+          <span class="pc-link" style="color:#f59e0b;">View Library <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </div>
+      <div class="platform-card" style="--card-color:#8b5cf6;--card-bg:#f3f0ff;--card-gradient:linear-gradient(135deg,#f3f0ff,transparent);">
+        <div class="pc-icon" style="background:#f3f0ff;">🎓</div>
+        <div class="pc-title">Learning Center</div>
+        <div class="pc-desc">Curated courses, expert-led webinars, and bite-size tutorials on fundraising, product-building, marketing, and growth hacking.</div>
+        <div class="pc-meta">
+          <span class="pc-count" style="background:#f3f0ff;color:#7e22ce;">Coming Soon</span>
+          <span class="pc-link" style="color:#8b5cf6;">Notify Me <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </div>
+      <div class="platform-card" style="--card-color:#ec4899;--card-bg:#fdf2f8;--card-gradient:linear-gradient(135deg,#fdf2f8,transparent);" onclick="document.getElementById('jobs').scrollIntoView({behavior:'smooth'})">
+        <div class="pc-icon" style="background:#fdf2f8;">💼</div>
+        <div class="pc-title">Jobs &amp; Internships</div>
+        <div class="pc-desc">Startup jobs and internships curated for students. From pre-seed to Series A companies building in EdTech, AI, SaaS, and beyond.</div>
+        <div class="pc-meta">
+          <span class="pc-count" style="background:#fdf2f8;color:#be185d;">New Listings Weekly</span>
+          <span class="pc-link" style="color:#ec4899;">Browse Jobs <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </div>
+      <div class="platform-card" style="--card-color:#06b6d4;--card-bg:#ecfeff;--card-gradient:linear-gradient(135deg,#ecfeff,transparent);" onclick="document.getElementById('community').scrollIntoView({behavior:'smooth'})">
+        <div class="pc-icon" style="background:#ecfeff;">🤝</div>
+        <div class="pc-title">Community</div>
+        <div class="pc-desc">Connect with fellow students, co-founders, and mentors. Find your co-founder, form a team, or get advice from people who've been there.</div>
+        <div class="pc-meta">
+          <span class="pc-count" style="background:#ecfeff;color:#0e7490;">Growing Fast</span>
+          <span class="pc-link" style="color:#06b6d4;">Join Community <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FUNDING DIRECTORY PREVIEW -->
+<section id="funding">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="section-eyebrow" style="background:var(--accent-light);color:var(--accent);">🤖 Auto-Updated Daily</span>
+      <h2 class="section-title">Live Funding Opportunities</h2>
+      <p class="section-sub">Grants, competitions, accelerators, and awards — auto-discovered every morning by our AI scraper.</p>
+    </div>
+    <div class="funding-preview" id="fundingPreview">
+      <div class="fund-card"><div style="height:120px;border-radius:10px;background:linear-gradient(90deg,var(--surface2) 25%,var(--surface3) 50%,var(--surface2) 75%);background-size:400% 100%;animation:shimmer 1.5s infinite;"></div></div>
+      <div class="fund-card"><div style="height:120px;border-radius:10px;background:linear-gradient(90deg,var(--surface2) 25%,var(--surface3) 50%,var(--surface2) 75%);background-size:400% 100%;animation:shimmer 1.5s infinite;"></div></div>
+      <div class="fund-card"><div style="height:120px;border-radius:10px;background:linear-gradient(90deg,var(--surface2) 25%,var(--surface3) 50%,var(--surface2) 75%);background-size:400% 100%;animation:shimmer 1.5s infinite;"></div></div>
+    </div>
+    <div class="view-all-wrap">
+      <a href="./funding.html" class="btn-view-all">
+        View All Opportunities
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- TOOLS & DEALS -->
+<section id="tools">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="section-eyebrow" style="background:#e0faf4;color:#00916e;">💸 Exclusive Student Pricing</span>
+      <h2 class="section-title">Top Tools, Bigger Discounts</h2>
+      <p class="section-sub">Get the same tools professionals use — at student prices. Save hundreds per year.</p>
+    </div>
+    <div class="tools-grid" id="toolsGrid"></div>
+    <div class="tools-promo">
+      <div>
+        <h3>🎒 Student Bundle — Everything You Need</h3>
+        <p>Canva Pro + Notion + Grammarly Premium + Brilliant — bundled for students.<br>Save 60%+ vs buying individually. Perfect for your whole semester.</p>
+      </div>
+      <button class="btn-promo" onclick="document.getElementById('newsletter').scrollIntoView({behavior:'smooth'})">Get Bundle Access →</button>
+    </div>
+  </div>
+</section>
+
+<!-- RESOURCE HUB -->
+<section id="resources">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="section-eyebrow" style="background:#fffbeb;color:#c2500a;">📖 Free &amp; Premium</span>
+      <h2 class="section-title">Resource Library</h2>
+      <p class="section-sub">Templates, playbooks, and guides to help you move faster — from pitch deck to product launch.</p>
+    </div>
+    <div class="resources-grid">
+      <div class="res-card" style="--card-color:#5b4fff;">
+        <div class="res-icon">📊</div>
+        <div class="res-type" style="color:#5b4fff;">Pitch Deck Template</div>
+        <div class="res-title">The 12-Slide Startup Pitch Deck (Investor-Ready)</div>
+        <div class="res-desc">Used by 500+ founders to raise pre-seed funding. Includes notes on what investors actually look for on each slide.</div>
+        <div class="res-tag-row"><span class="res-tag">Fundraising</span><span class="res-tag">Free</span><span class="res-tag">PowerPoint + Figma</span></div>
+      </div>
+      <div class="res-card" style="--card-color:#00b894;">
+        <div class="res-icon">✍️</div>
+        <div class="res-type" style="color:#00b894;">Grant Writing Guide</div>
+        <div class="res-title">How to Write a Winning Grant Application</div>
+        <div class="res-desc">Step-by-step guide with examples from successful $50K–$500K applications. Includes common mistakes to avoid.</div>
+        <div class="res-tag-row"><span class="res-tag">Grants</span><span class="res-tag">Free</span><span class="res-tag">PDF Guide</span></div>
+      </div>
+      <div class="res-card" style="--card-color:#f59e0b;">
+        <div class="res-icon">🚀</div>
+        <div class="res-type" style="color:#f59e0b;">Startup Checklist</div>
+        <div class="res-title">EdTech Startup Launch Checklist (100 Steps)</div>
+        <div class="res-desc">From idea validation to first paying customer — a comprehensive checklist built for EdTech and SaaS founders at MVP stage.</div>
+        <div class="res-tag-row"><span class="res-tag">Startup</span><span class="res-tag">Pro</span><span class="res-tag">Notion Template</span></div>
+      </div>
+      <div class="res-card" style="--card-color:#8b5cf6;">
+        <div class="res-icon">🎯</div>
+        <div class="res-type" style="color:#8b5cf6;">Competition Prep</div>
+        <div class="res-title">How to Win Startup Competitions: A Playbook</div>
+        <div class="res-desc">Research-backed strategies from teams that won SBIR, HeroX, and university pitch competitions. Includes judging rubrics.</div>
+        <div class="res-tag-row"><span class="res-tag">Competitions</span><span class="res-tag">Free</span><span class="res-tag">PDF + Slides</span></div>
+      </div>
+      <div class="res-card" style="--card-color:#ec4899;">
+        <div class="res-icon">📱</div>
+        <div class="res-type" style="color:#ec4899;">Student Freelancer Kit</div>
+        <div class="res-title">Freelancing While in College: Full Toolkit</div>
+        <div class="res-desc">Contracts, invoice templates, client email scripts, rate calculators. Everything to start earning from your skills today.</div>
+        <div class="res-tag-row"><span class="res-tag">Students</span><span class="res-tag">Free</span><span class="res-tag">Canva + PDF</span></div>
+      </div>
+      <div class="res-card" style="--card-color:#06b6d4;">
+        <div class="res-icon">🤖</div>
+        <div class="res-type" style="color:#06b6d4;">AI Tools Guide</div>
+        <div class="res-title">50 AI Tools Every Founder Should Know in 2025</div>
+        <div class="res-desc">Curated list with use cases, pricing tiers, and which ones actually save you time vs. which ones are hype.</div>
+        <div class="res-tag-row"><span class="res-tag">AI</span><span class="res-tag">Free</span><span class="res-tag">Interactive List</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- JOBS & INTERNSHIPS -->
+<section id="jobs">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="section-eyebrow" style="background:#fdf2f8;color:#be185d;">💼 Curated Weekly</span>
+      <h2 class="section-title">Jobs &amp; Internships</h2>
+      <p class="section-sub">Startup roles for students — from part-time internships to full-time product jobs at early-stage companies.</p>
+    </div>
+    <div class="jobs-list" id="jobsList"></div>
+    <div class="view-all-wrap">
+      <button class="btn-view-all" onclick="document.getElementById('newsletter').scrollIntoView({behavior:'smooth'})">
+        Get Weekly Job Alerts
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- COMMUNITY -->
+<section id="community">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="section-eyebrow" style="background:#ecfeff;color:#0e7490;">🤝 Connect &amp; Grow</span>
+      <h2 class="section-title">Join the Community</h2>
+      <p class="section-sub">Students and founders helping each other. Find co-founders, get feedback, share wins.</p>
+    </div>
+    <div class="community-grid">
+      <div class="comm-card">
+        <div class="comm-icon">🔍</div>
+        <div class="comm-title">Co-Founder Match</div>
+        <div class="comm-desc">Looking for a technical co-founder or a growth partner? Post your idea, skills, and availability to find your match.</div>
+        <div class="comm-count">Coming Soon</div>
+        <div class="comm-count-label">Beta launching Q3 2025</div>
+        <button class="comm-btn" onclick="document.getElementById('newsletter').scrollIntoView({behavior:'smooth'})">Get Early Access</button>
+      </div>
+      <div class="comm-card">
+        <div class="comm-icon">💬</div>
+        <div class="comm-title">Founder Forum</div>
+        <div class="comm-desc">Ask questions, share updates, get brutally honest feedback. A safe space for early-stage builders to talk openly.</div>
+        <div class="comm-count">Coming Soon</div>
+        <div class="comm-count-label">Launching with Discord</div>
+        <button class="comm-btn" onclick="document.getElementById('newsletter').scrollIntoView({behavior:'smooth'})">Join Waitlist</button>
+      </div>
+      <div class="comm-card">
+        <div class="comm-icon">🏅</div>
+        <div class="comm-title">Success Stories</div>
+        <div class="comm-desc">Founders who found their grant, built their MVP, or landed an accelerator using CanvasIQ resources. Share yours.</div>
+        <div class="comm-count">Your Story</div>
+        <div class="comm-count-label">Could be featured here</div>
+        <button class="comm-btn" onclick="document.getElementById('newsletter').scrollIntoView({behavior:'smooth'})">Submit Your Story</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER CTA -->
+<section id="newsletter">
+  <div class="nl-inner">
+    <h2>Stay Ahead of the Game</h2>
+    <p>Get weekly funding alerts, exclusive deals, and curated resources — delivered to your inbox every Monday morning. Free forever.</p>
+    <div class="nl-form">
+      <input type="email" class="nl-input" placeholder="Enter your email address" id="nlEmail"/>
+      <button class="nl-btn" onclick="handleNLSignup()">Join Free →</button>
+    </div>
+    <div class="nl-badges">
+      <span class="nl-badge">✓ No spam, ever</span>
+      <span class="nl-badge">✓ Unsubscribe anytime</span>
+      <span class="nl-badge">✓ 1,000+ subscribers</span>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo-box">CIQ</div>
+        <p>CanvasIQ is your all-in-one growth platform for students and startup founders. Find funding, save on tools, and connect with a community of builders.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Platform</h4>
+        <a href="#funding">Funding Directory</a>
+        <a href="#tools">Tools &amp; Deals</a>
+        <a href="#resources">Resource Hub</a>
+        <a href="#jobs">Jobs &amp; Internships</a>
+        <a href="#community">Community</a>
+      </div>
+      <div class="footer-col">
+        <h4>For Students</h4>
+        <a href="#tools">Student Discounts</a>
+        <a href="#resources">Free Templates</a>
+        <a href="#jobs">Campus Internships</a>
+        <a href="#newsletter">Weekly Newsletter</a>
+      </div>
+      <div class="footer-col">
+        <h4>For Founders</h4>
+        <a href="#funding">Grant Finder</a>
+        <a href="#funding">Competitions</a>
+        <a href="#resources">Pitch Deck Kit</a>
+        <a href="#community">Co-Founder Match</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 CanvasIQ. Built for builders. 🚀</p>
+      <div class="footer-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Contact</a>
+        <a href="mailto:hello@canvasiq.com">hello@canvasiq.com</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING CTA -->
+<button id="floatCTA" onclick="document.getElementById('newsletter').scrollIntoView({behavior:'smooth'})">
+  🎯 Get Free Alerts
+</button>
 
 <script>
-// ── globals ──────────────────────────────────────────────────────────────────
-const TODAY = new Date(); TODAY.setHours(0,0,0,0);
-let allOpps = [];
-let filters = { type:'all', loc:null, sector:null, special:null };
-let sortBy = 'deadline';
-let savedIds = new Set(JSON.parse(localStorage.getItem('ciq_saved')||'[]'));
+// ── TOOLS DATA ──
+const tools = [
+  { name:'Canva Pro',    domain:'canva.com',    orig:'$119/yr',  sale:'$47/yr',  badge:'61% OFF', cta:'Get Deal',   url:'#' },
+  { name:'Notion',       domain:'notion.so',    orig:'$96/yr',   sale:'Free',    badge:'Student',  cta:'Get Free',   url:'#' },
+  { name:'Grammarly',    domain:'grammarly.com',orig:'$144/yr',  sale:'$55/yr',  badge:'62% OFF', cta:'Get Deal',   url:'#' },
+  { name:'Microsoft 365',domain:'microsoft.com',orig:'$69/yr',   sale:'Free',    badge:'Student',  cta:'Get Free',   url:'#' },
+  { name:'Figma',        domain:'figma.com',    orig:'$144/yr',  sale:'Free',    badge:'Student',  cta:'Get Free',   url:'#' },
+  { name:'Brilliant',    domain:'brilliant.org',orig:'$149/yr',  sale:'$59/yr',  badge:'60% OFF', cta:'Get Deal',   url:'#' },
+  { name:'Miro',         domain:'miro.com',     orig:'$96/yr',   sale:'Free',    badge:'Student',  cta:'Get Free',   url:'#' },
+  { name:'Coursera',     domain:'coursera.org', orig:'$399/yr',  sale:'Free',    badge:'Audit',    cta:'Learn Free', url:'#' },
+];
 
-// ── load data ────────────────────────────────────────────────────────────────
-async function loadData() {
-  try {
-    const res = await fetch('./data.json?_=' + Date.now());
-    if (!res.ok) throw new Error('HTTP ' + res.status);
-    const data = await res.json();
-    allOpps = data.opportunities || [];
-    updateLastUpdated(data.lastUpdated);
-    document.getElementById('liveText').textContent = 'Live · Auto-updated daily';
-  } catch(e) {
-    // Fallback: data might be embedded
-    console.warn('Could not fetch data.json:', e.message);
-    document.getElementById('liveText').textContent = 'Offline mode';
-    document.querySelector('.live-dot').style.background = '#d97706';
-  }
-  applyFilters();
-  buildBanner();
+function renderTools(){
+  const grid = document.getElementById('toolsGrid');
+  grid.innerHTML = tools.map(t => {
+    const logoUrl = `https://logo.clearbit.com/${t.domain}`;
+    const faviconUrl = `https://www.google.com/s2/favicons?domain=${t.domain}&sz=128`;
+    return `
+    <div class="tool-card" onclick="window.open('${t.url}','_blank')">
+      <div class="tool-logo">
+        <img src="${logoUrl}" alt="${t.name}" loading="lazy"
+          onerror="this.onerror=null;this.src='${faviconUrl}';this.onerror=function(){this.style.display='none';this.parentElement.innerHTML='<span class=tool-logo-fallback>🛠️</span>';}">
+      </div>
+      <div class="tool-name">${t.name}</div>
+      <div class="tool-price-row">
+        <span class="tool-orig">${t.orig}</span>
+        <span class="tool-sale">${t.sale}</span>
+      </div>
+      <span class="tool-badge">${t.badge}</span>
+      <button class="tool-cta-btn" style="margin-top:12px;">${t.cta} →</button>
+    </div>`;
+  }).join('');
 }
 
-function updateLastUpdated(iso) {
-  if (!iso) return;
-  const d = new Date(iso);
-  const diffMs = Date.now() - d.getTime();
-  const diffH = Math.floor(diffMs / 3600000);
-  const diffD = Math.floor(diffH / 24);
-  let label = diffD === 0 ? (diffH < 1 ? 'Updated just now' : `Updated ${diffH}h ago`)
-            : diffD === 1 ? 'Updated yesterday'
-            : `Updated ${diffD} days ago`;
-  document.getElementById('lastUpdated').textContent = label;
-}
+// ── JOBS DATA ──
+const jobs = [
+  { title:'Product Design Intern',       company:'EduTech Startup (NYC)',    domain:'figma.com',    tags:['Remote','Internship','🆕 New'],  salary:'$20-25/hr',  posted:'2 days ago' },
+  { title:'Growth Marketing Associate',  company:'AI Learning Platform',     domain:'notion.so',    tags:['Hybrid','Full-time','🆕 New'],   salary:'$45-55K',    posted:'3 days ago' },
+  { title:'Software Engineer Intern',    company:'EdTech Accelerator Co.',   domain:'github.com',   tags:['Remote','Internship'],            salary:'$25-35/hr',  posted:'5 days ago' },
+  { title:'Community Manager',           company:'Student Startup Network',  domain:'discord.com',  tags:['Remote','Part-time'],             salary:'$18-22/hr',  posted:'1 week ago' },
+];
 
-// ── deadline helpers ─────────────────────────────────────────────────────────
-function daysUntil(d) {
-  if (!d || d === 'rolling') return 99999;
-  const target = new Date(d); target.setHours(0,0,0,0);
-  return Math.ceil((target - TODAY) / 86400000);
-}
-
-function deadlineStatus(d) {
-  const n = daysUntil(d);
-  if (n === 99999) return 'rolling';
-  if (n <= 0)  return 'urgent';   // past but still shown
-  if (n <= 7)  return 'urgent';
-  if (n <= 30) return 'soon';
-  return 'normal';
-}
-
-function isNew(addedDate) {
-  if (!addedDate) return false;
-  const d = new Date(addedDate); d.setHours(0,0,0,0);
-  return (TODAY - d) / 86400000 <= 7;
-}
-
-function countdownText(d) {
-  const n = daysUntil(d);
-  if (n === 99999) return null;
-  if (n < 0)  return 'Past deadline';
-  if (n === 0) return 'Closes TODAY';
-  if (n === 1) return '1 day left';
-  return `${n} days left`;
-}
-
-// ── filters & sort ───────────────────────────────────────────────────────────
-function setFilter(dim, val, btn) {
-  const typeVals = ['all','grant','competition','accelerator','corporate','award'];
-  const locVals  = ['nyc','national','virtual','global'];
-  const secVals  = ['edtech','ai','women','bipoc','general'];
-  const spVals   = ['saved','new','noeq'];
-
-  if (dim === 'type') {
-    filters.type = val;
-    document.querySelectorAll('.filter-btn').forEach(b => {
-      if (typeVals.some(v => b.textContent.trim().toLowerCase() === v || b.textContent.trim() === 'All')) b.classList.remove('active');
-    });
-  } else if (dim === 'loc') {
-    filters.loc = filters.loc === val ? null : val;
-    document.querySelectorAll('.filter-btn').forEach(b => {
-      if (['NYC','National','Virtual','Global'].includes(b.textContent.trim())) b.classList.remove('active');
-    });
-  } else if (dim === 'sector') {
-    filters.sector = filters.sector === val ? null : val;
-    document.querySelectorAll('.filter-btn').forEach(b => {
-      if (['EdTech','AI','Women','BIPOC','General'].includes(b.textContent.trim())) b.classList.remove('active');
-    });
-  } else if (dim === 'special') {
-    filters.special = filters.special === val ? null : val;
-    document.querySelectorAll('#savedBtn,#newBtn').forEach(b => b.classList.remove('active'));
-    if (btn.id === 'savedBtn' || btn.textContent.includes('Non')) {
-      if (filters.special) btn.classList.add('active');
-    }
-  }
-
-  if (!(dim==='loc' && !filters.loc) && !(dim==='sector' && !filters.sector) && !(dim==='special' && !filters.special)) {
-    btn.classList.add('active');
-  }
-  applyFilters();
-}
-
-function setSort(s, btn) {
-  sortBy = s;
-  document.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
-  applyFilters();
-}
-
-function applyFilters() {
-  const q = (document.getElementById('searchInput').value || '').toLowerCase();
-
-  let list = allOpps.filter(o => {
-    if (filters.type !== 'all' && o.type !== filters.type) return false;
-    if (filters.loc && !o.loc.includes(filters.loc)) return false;
-    if (filters.sector && !o.sector.includes(filters.sector)) return false;
-    if (filters.special === 'saved' && !savedIds.has(o.id)) return false;
-    if (filters.special === 'new' && !isNew(o.addedDate)) return false;
-    if (filters.special === 'noeq' && o.equity !== false) return false;
-    if (q && !o.name.toLowerCase().includes(q) &&
-             !o.desc.toLowerCase().includes(q) &&
-             !o.prize.toLowerCase().includes(q)) return false;
-    return true;
-  });
-
-  list.sort((a,b) => {
-    if (sortBy === 'deadline') return (daysUntil(a.deadline)) - (daysUntil(b.deadline));
-    if (sortBy === 'prize') return b.prizeVal - a.prizeVal;
-    if (sortBy === 'name') return a.name.localeCompare(b.name);
-    if (sortBy === 'added') return (b.addedDate||'').localeCompare(a.addedDate||'');
-    return 0;
-  });
-
-  renderGrid(list);
-  renderTimeline(allOpps.filter(o => o.deadline !== 'rolling').sort((a,b) => new Date(a.deadline)-new Date(b.deadline)).slice(0,15));
-  updateStats(list);
-  document.getElementById('resultCount').textContent = `${list.length} result${list.length!==1?'s':''}`;
-}
-
-// ── render grid ──────────────────────────────────────────────────────────────
-const typeLabel  = {grant:'Grant',competition:'Competition',accelerator:'Accelerator',corporate:'Corporate Program',award:'Award'};
-const locLabel   = {nyc:'NYC',national:'National',virtual:'Virtual',global:'Global'};
-const secLabel   = {edtech:'EdTech',ai:'AI',women:'Women',bipoc:'BIPOC',general:'General'};
-
-function renderGrid(list) {
-  const grid = document.getElementById('grid');
-  if (!list.length) {
-    grid.innerHTML = `<div class="no-results"><svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg><br/>No opportunities match your filters.</div>`;
-    return;
-  }
-  grid.innerHTML = list.map(cardHTML).join('');
-}
-
-function cardHTML(o) {
-  const status   = deadlineStatus(o.deadline);
-  const fresh    = isNew(o.addedDate);
-  const saved    = savedIds.has(o.id);
-  const cdText   = countdownText(o.deadline);
-  const isAuto   = o.source === 'auto';
-
-  const pillClass = status === 'urgent' ? 'urgent' : status === 'soon' ? 'soon' : status === 'rolling' ? 'rolling' : 'normal';
-  const pillEmoji = status === 'urgent' ? '🔴' : status === 'soon' ? '🟡' : status === 'rolling' ? '🔵' : '📅';
-
-  const urgentBorder = status === 'urgent' ? 'urgent' : status === 'soon' ? 'soon' : fresh ? 'new-opp' : '';
-
-  return `
-  <div class="card ${urgentBorder}" id="card-${o.id}">
-    ${fresh ? `<div class="new-badge">✨ New</div>` : ''}
-    <div class="card-top">
-      <div class="card-title">${esc(o.name)}</div>
-      <div class="prize-badge">${esc(o.prize)}</div>
-    </div>
-    <div class="card-desc">${esc(o.desc)}</div>
-    <div class="deadline-row">
-      <div class="deadline-pill ${pillClass}">${pillEmoji} ${esc(o.deadlineLabel)}</div>
-      ${cdText ? `<span class="countdown ${status === 'urgent' ? 'urgent' : status === 'soon' ? 'soon' : 'normal'}">${cdText}</span>` : ''}
-    </div>
-    <div class="tags">
-      <span class="tag tag-type-${o.type}">${typeLabel[o.type]||o.type}</span>
-      ${o.loc.map(l=>`<span class="tag tag-loc-${l}">${locLabel[l]||l}</span>`).join('')}
-      ${o.sector.map(s=>`<span class="tag tag-sector-${s}">${secLabel[s]||s}</span>`).join('')}
-    </div>
-    <div style="display:flex;gap:6px;align-items:center;flex-wrap:wrap;">
-      <span class="equity-badge ${o.equity===false ? 'no-equity' : 'has-equity'}">
-        ${o.equity===false ? '✓ Non-dilutive' : '⚠ May involve equity'}
-      </span>
-      ${isAuto ? `<span class="source-auto">🤖 Auto-found</span>` : ''}
-    </div>
-    <div class="card-actions">
-      <a class="btn-apply" href="${o.url}" target="_blank" rel="noopener">Apply / Learn More →</a>
-      <button class="btn-save ${saved?'saved':''}" onclick="toggleSave(${o.id},this)" title="${saved?'Saved':'Save for later'}">${saved?'★':'☆'}</button>
-    </div>
-  </div>`;
-}
-
-function esc(s) {
-  return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
-}
-
-// ── timeline ─────────────────────────────────────────────────────────────────
-function renderTimeline(list) {
-  const el = document.getElementById('timeline');
-  if (!list.length) { el.innerHTML = '<div style="color:var(--muted);font-size:12px;">No dated deadlines.</div>'; return; }
-  el.innerHTML = list.map(o => {
-    const s = deadlineStatus(o.deadline);
-    return `<div class="tl-item" onclick="scrollToCard(${o.id})">
-      <div class="tl-dot ${s}"></div>
-      <div>
-        <div class="tl-name">${esc(o.name)}</div>
-        <div class="tl-date">${esc(o.deadlineLabel)}</div>
-        <div class="tl-prize">${esc(o.prize)}</div>
+function renderJobs(){
+  const list = document.getElementById('jobsList');
+  list.innerHTML = jobs.map(j => {
+    const logo = `https://logo.clearbit.com/${j.domain}`;
+    const fav  = `https://www.google.com/s2/favicons?domain=${j.domain}&sz=64`;
+    const tagHtml = j.tags.map(t => {
+      const cls = t.includes('Remote')||t.includes('Hybrid') ? 'job-tag-remote'
+                : t.includes('New') ? 'job-tag-new' : 'job-tag-type';
+      return `<span class="job-tag ${cls}">${t}</span>`;
+    }).join('');
+    return `
+    <div class="job-row">
+      <div class="job-logo">
+        <img src="${logo}" alt="${j.company}" loading="lazy"
+          onerror="this.onerror=null;this.src='${fav}';this.onerror=function(){this.style.display='none';}">
+      </div>
+      <div class="job-info">
+        <div class="job-title">${j.title}</div>
+        <div class="job-company">${j.company}</div>
+        <div class="job-tags">${tagHtml}</div>
+      </div>
+      <div class="job-right">
+        <div class="job-salary">${j.salary}</div>
+        <div class="job-posted">${j.posted}</div>
+        <button class="job-apply" onclick="document.getElementById('newsletter').scrollIntoView({behavior:'smooth'})">Apply →</button>
       </div>
     </div>`;
   }).join('');
 }
 
-function scrollToCard(id) {
-  const el = document.getElementById('card-' + id);
-  if (el) el.scrollIntoView({behavior:'smooth',block:'center'});
+// ── FUNDING PREVIEW (loads from data.json) ──
+const TYPE_CLASSES = {competition:'tag-comp',grant:'tag-grant',accelerator:'tag-acc',corporate:'tag-corp',award:'tag-award'};
+const TYPE_LABELS  = {competition:'Competition',grant:'Grant',accelerator:'Accelerator',corporate:'Corporate',award:'Award'};
+
+function deadlineBadge(d,label){
+  if(!d||d==='rolling') return `<span class="tag" style="background:#e0faf4;color:#00916e;">Rolling</span>`;
+  const days = Math.ceil((new Date(d)-Date.now())/86400000);
+  if(days<0) return '';
+  if(days<=7) return `<span class="tag tag-urgent">🔥 ${days}d left</span>`;
+  if(days<=21) return `<span class="tag" style="background:#fffbeb;color:#c2500a;">⏳ ${days}d left</span>`;
+  return `<span class="tag" style="background:#f0f1f7;color:#3d4263;">${label||d}</span>`;
 }
 
-// ── stats ────────────────────────────────────────────────────────────────────
-function updateStats(list) {
-  document.getElementById('totalCount').textContent   = list.length;
-  document.getElementById('urgentCount').textContent  = list.filter(o => deadlineStatus(o.deadline)==='urgent').length;
-  document.getElementById('soonCount').textContent    = list.filter(o => deadlineStatus(o.deadline)==='soon').length;
-  document.getElementById('newCount').textContent     = list.filter(o => isNew(o.addedDate)).length;
-  document.getElementById('rollingCount').textContent = list.filter(o => o.deadline==='rolling').length;
-}
+function renderFundingPreview(items){
+  const container = document.getElementById('fundingPreview');
+  const top3 = items.filter(i=>{
+    if(!i.deadline||i.deadline==='rolling') return true;
+    return new Date(i.deadline)>Date.now();
+  }).slice(0,3);
 
-// ── urgent banner ────────────────────────────────────────────────────────────
-function buildBanner() {
-  const urgent = allOpps.filter(o => {
-    const n = daysUntil(o.deadline);
-    return n >= 0 && n <= 5;
-  });
-  if (!urgent.length) return;
-  const banner = document.getElementById('urgentBanner');
-  const items  = document.getElementById('bannerItems');
-  items.innerHTML = urgent.map(o => {
-    const n = daysUntil(o.deadline);
-    const label = n === 0 ? 'TODAY' : n === 1 ? '1 day' : `${n} days`;
-    return `<span class="banner-chip" onclick="scrollToCard(${o.id})">${esc(o.name.split('—')[0].trim())} — ${label}</span>`;
+  if(!top3.length){
+    container.innerHTML = '<p style="color:var(--muted);text-align:center;padding:20px;">No opportunities found. Check back soon!</p>';
+    return;
+  }
+
+  container.innerHTML = top3.map(i => {
+    const typeClass = TYPE_CLASSES[i.type]||'tag-comp';
+    const typeLabel = TYPE_LABELS[i.type]||i.type;
+    const isNew = i.addedDate && (Date.now()-new Date(i.addedDate))<7*86400000;
+    const badge = deadlineBadge(i.deadline, i.deadlineLabel);
+    return `
+    <div class="fund-card">
+      <div class="fund-tag-row">
+        <span class="tag ${typeClass}">${typeLabel}</span>
+        ${isNew ? '<span class="tag tag-new">✨ NEW</span>' : ''}
+        ${badge}
+      </div>
+      <div class="fund-name">${i.name}</div>
+      <div class="fund-prize">${i.prize||'Varies'} <small>${i.prizeVal?'up to '+i.prizeVal:''}</small></div>
+      <div class="fund-deadline">📅 ${i.deadlineLabel||i.deadline||'Rolling'}</div>
+      <div class="fund-footer">
+        <span class="fund-source">${i.source==='auto'?'🤖 Auto-found':'✓ Verified'}</span>
+        <a href="${i.url||'#'}" target="_blank"><button class="fund-cta">Apply Now →</button></a>
+      </div>
+    </div>`;
   }).join('');
-  banner.style.display = 'flex';
+
+  document.getElementById('stat-opps').textContent = items.length+'+';
 }
 
-// ── save ──────────────────────────────────────────────────────────────────────
-function toggleSave(id, btn) {
-  if (savedIds.has(id)) { savedIds.delete(id); btn.textContent='☆'; btn.classList.remove('saved'); }
-  else                  { savedIds.add(id);    btn.textContent='★'; btn.classList.add('saved'); }
-  localStorage.setItem('ciq_saved', JSON.stringify([...savedIds]));
+async function loadFunding(){
+  try{
+    const r = await fetch('./data.json');
+    if(!r.ok) throw new Error('no data');
+    const data = await r.json();
+    renderFundingPreview(data.opportunities||data);
+  } catch(e){
+    document.getElementById('fundingPreview').innerHTML = `
+      <div class="fund-card">
+        <div class="fund-tag-row"><span class="tag tag-comp">Competition</span><span class="tag tag-new">✨ NEW</span></div>
+        <div class="fund-name">MIT $100K Entrepreneurship Competition</div>
+        <div class="fund-prize">$100,000</div>
+        <div class="fund-deadline">📅 March 15, 2026</div>
+        <div class="fund-footer"><span class="fund-source">✓ Verified</span><a href="funding.html"><button class="fund-cta">View All →</button></a></div>
+      </div>
+      <div class="fund-card">
+        <div class="fund-tag-row"><span class="tag tag-grant">Grant</span><span class="tag tag-urgent">🔥 Closing Soon</span></div>
+        <div class="fund-name">SBIR Phase I — EdTech / AI</div>
+        <div class="fund-prize">$275,000</div>
+        <div class="fund-deadline">📅 Rolling — apply anytime</div>
+        <div class="fund-footer"><span class="fund-source">✓ Verified</span><a href="funding.html"><button class="fund-cta">View All →</button></a></div>
+      </div>
+      <div class="fund-card">
+        <div class="fund-tag-row"><span class="tag tag-acc">Accelerator</span></div>
+        <div class="fund-name">NYC Media Lab Summer Accelerator</div>
+        <div class="fund-prize">$20,000 + Mentorship</div>
+        <div class="fund-deadline">📅 April 1, 2026</div>
+        <div class="fund-footer"><span class="fund-source">✓ Verified</span><a href="funding.html"><button class="fund-cta">View All →</button></a></div>
+      </div>
+    `;
+  }
 }
 
-// ── init ─────────────────────────────────────────────────────────────────────
-loadData();
+// ── NEWSLETTER ──
+function handleNLSignup(){
+  const email = document.getElementById('nlEmail').value.trim();
+  if(!email||!email.includes('@')){alert('Please enter a valid email!');return;}
+  document.querySelector('.nl-form').innerHTML = `
+    <div style="text-align:center;width:100%;color:#fff;">
+      <div style="font-size:36px;margin-bottom:8px;">🎉</div>
+      <div style="font-size:18px;font-weight:800;margin-bottom:6px;">You're in!</div>
+      <div style="font-size:14px;opacity:.85;">Check your inbox for a confirmation. First digest lands Monday!</div>
+    </div>`;
+}
+
+// ── HIDE FLOAT CTA until scrolled ──
+window.addEventListener('scroll',()=>{
+  const btn = document.getElementById('floatCTA');
+  if(!btn) return;
+  btn.style.display = window.scrollY>300 ? 'flex' : 'none';
+});
+document.getElementById('floatCTA').style.display = 'none';
+
+// ── INIT ──
+renderTools();
+renderJobs();
+loadFunding();
 </script>
 </body>
 </html>
