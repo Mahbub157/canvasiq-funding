@@ -116,19 +116,17 @@ nav{position:sticky;top:0;z-index:200;height:60px;background:rgba(255,255,255,.8
 .section-hdr-right{font-size:12px;color:var(--muted)}
 
 /* ── CARDS ── */
-.cards-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.cards-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
 
 /* ── CARD ── */
 .card{background:var(--surface);border-radius:var(--radius);border:1px solid var(--border);overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--shadow);transition:box-shadow .18s,transform .15s,border-color .15s}
 .card:hover{box-shadow:var(--shadow-h);transform:translateY(-2px);border-color:rgba(79,70,229,.2)}
 /* Image area */
-.card-img-wrap{position:relative;height:152px;overflow:hidden;flex-shrink:0}
-.card-bg{width:100%;height:100%;display:flex;align-items:center;justify-content:center;position:relative}
-.card-img-wrap img.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;transition:transform .35s}
-.card:hover .hero-img{transform:scale(1.05)}
-.card-img-wrap img.logo-img{width:80px;height:80px;object-fit:contain;border-radius:12px;background:#fff;padding:8px;box-shadow:0 4px 16px rgba(0,0,0,.15);position:relative;z-index:1;transition:transform .25s}
-.card:hover .logo-img{transform:scale(1.06)}
-.card-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,transparent 45%,rgba(15,23,42,.5))}
+.card-img-wrap{position:relative;height:168px;overflow:hidden;flex-shrink:0;border-radius:var(--radius) var(--radius) 0 0}
+.card-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s ease}
+.card:hover .card-photo{transform:scale(1.06)}
+.card-overlay{position:absolute;inset:0;transition:opacity .2s}
+.card:hover .card-overlay{opacity:.85}
 .card-badges{position:absolute;top:10px;left:10px;display:flex;gap:5px;flex-wrap:wrap}
 .type-tag{font-size:9px;font-weight:800;padding:3px 8px;border-radius:5px;letter-spacing:.04em;text-transform:uppercase}
 .tt-Competition{background:rgba(124,58,237,.9);color:#fff}
@@ -203,8 +201,8 @@ nav{position:sticky;top:0;z-index:200;height:60px;background:rgba(255,255,255,.8
 .alert-form button:hover{background:rgba(255,255,255,.25)}
 .foot{font-size:10px;color:var(--muted);padding:10px 32px;text-align:right;background:var(--surface);border-top:1px solid var(--border)}
 
-@media(max-width:1100px){
-  .cards-grid{grid-template-columns:repeat(2,1fr)}
+@media(max-width:1200px){
+  .cards-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
   .hero-visual{width:300px;height:220px}
   .hero h1{font-size:28px}
 }
@@ -404,48 +402,108 @@ nav{position:sticky;top:0;z-index:200;height:60px;background:rgba(255,255,255,.8
 </div>
 
 <script>
-// ── Card gradient backgrounds per type ─────────────────────────────────────
-const BG = {
-  Competition: ['linear-gradient(135deg,#4f46e5,#7c3aed)','linear-gradient(135deg,#6366f1,#8b5cf6)','linear-gradient(135deg,#3730a3,#5b21b6)'],
-  Grant:       ['linear-gradient(135deg,#1d4ed8,#2563eb)','linear-gradient(135deg,#1e40af,#3b82f6)','linear-gradient(135deg,#0369a1,#0ea5e9)'],
-  Fellowship:  ['linear-gradient(135deg,#b45309,#d97706)','linear-gradient(135deg,#92400e,#f59e0b)','linear-gradient(135deg,#a16207,#eab308)'],
-  Prize:       ['linear-gradient(135deg,#be185d,#db2777)','linear-gradient(135deg,#9d174d,#ec4899)','linear-gradient(135deg,#7f1d1d,#dc2626)'],
-  Event:       ['linear-gradient(135deg,#065f46,#059669)','linear-gradient(135deg,#047857,#10b981)','linear-gradient(135deg,#0f766e,#14b8a6)'],
-  Scholarship: ['linear-gradient(135deg,#9a3412,#ea580c)','linear-gradient(135deg,#7c2d12,#f97316)','linear-gradient(135deg,#78350f,#d97706)'],
+// ── Type overlay colors (semi-transparent on top of photo) ─────────────────
+const TYPE_OVERLAY = {
+  Competition:'rgba(79,46,220,.55)',
+  Grant:      'rgba(29,78,216,.55)',
+  Fellowship: 'rgba(146,64,14,.55)',
+  Prize:      'rgba(157,23,77,.55)',
+  Event:      'rgba(6,78,59,.55)',
+  Scholarship:'rgba(154,52,18,.55)',
 };
-const bgIdx={};
-function getBG(type){
-  const arr=BG[type]||BG.Competition;
-  bgIdx[type]=(bgIdx[type]||0);
-  const b=arr[bgIdx[type]%arr.length];
-  bgIdx[type]++;
-  return b;
-}
 
-// ── Domain for Clearbit logo per org ───────────────────────────────────────
-// Falls back to gradient background if logo fails
-const DOMAINS = {
-  1:'thielfellowship.org',2:'ycombinator.com',3:'nsf.gov',4:'mit.edu',
-  5:'techcrunch.com',6:'rice.edu',7:'stanford.edu',8:'harvard.edu',
-  9:'google.org',10:'ed.gov',11:'gatesfoundation.org',12:'sxsw.com',
-  13:'wharton.upenn.edu',14:'amazon.com',15:'microsoft.com',16:'masschallenge.org',
-  17:'leanstartup.co',18:'mozilla.org',19:'techcrunch.com',20:'fastcompany.com',
-  21:'kauffman.org',22:'schmidtfutures.com',23:'c-e-o.org',24:'herox.com',25:'ventureforamerica.org',
-  26:'basis.org.bd',27:'startupbangladesh.gov.bd',28:'a2i.gov.bd',29:'grameenphone.com',
-  30:'robi.com.bd',31:'buet.ac.bd',32:'bracuniversity.ac.bd',33:'ictd.gov.bd',
-  34:'ictd.gov.bd',35:'bkash.com',36:'diu.ac.bd',37:'undp.org',38:'a2i.gov.bd',
-  39:'britishcouncil.org',40:'northsouth.edu',41:'startupdhaka.com',42:'shetrades.com',
-  43:'kuet.ac.bd',44:'iutoic-dhaka.edu',45:'dutchbanglabank.com',46:'numarix.netlify.app',
-  47:'ec.europa.eu',48:'berkeley.edu',49:'turkiyeburslari.gov.tr',50:'state.gov',
-  51:'echoinggreen.org',52:'niied.go.kr',53:'mit.edu',54:'gsea.org',
-  55:'obama.org',56:'mext.go.jp',57:'adb.org',58:'ey.com',59:'rolexawards.com',
-  60:'seedstars.com',61:'gatesfoundation.org',62:'skoll.org',63:'cartierwomensinitiative.com',
-  64:'hultprize.org',65:'daad.de',66:'ted.com',67:'schwarzmanscholars.org',68:'ox.ac.uk',
-  69:'usaid.gov',70:'drkfoundation.org',71:'cscuk.fcdo.gov.uk',72:'ashoka.org',
-  73:'mastercardfdn.org',74:'fordfoundation.org',75:'websummit.com',76:'startupworldcup.io',
-  77:'en.unesco.org',78:'sdgactionawards.org',79:'worldbank.org',80:'chanzuckerberg.com',
-  81:'opensocietyfoundations.org',82:'rockefellerfoundation.org',83:'omidyar.com',
-  84:'genglobal.org',85:'atlanticfellows.org',86:'chevening.org',87:'smefinanceforum.org',
+// ── Specific Unsplash image per opportunity ─────────────────────────────────
+const IMGS = {
+  // US
+  1:'photo-1523240795612-9a054b0db644', // young founder/laptop
+  2:'photo-1556761175-4b46a572b786',    // startup team meeting
+  3:'photo-1532094349884-543bc11b234d', // lab/research
+  4:'photo-1546410531-bb4caa6b424d',    // MIT-style campus innovation
+  5:'photo-1540575467063-178a50c2df87', // tech conference stage
+  6:'photo-1607013251379-e6eecfffe234', // university campus
+  7:'photo-1571019613454-1cb2f99b2d8b', // stanford-style campus
+  8:'photo-1574958269340-fa927503f3dd', // innovation lab
+  9:'photo-1573496359142-b8d87734a5a2', // community/social impact
+  10:'photo-1503676260728-1c00da094a0b', // classroom/education
+  11:'photo-1523050854058-8df90110c9f1', // graduation/university
+  12:'photo-1493225457124-a3eb161ffa5f', // conference/music/SXSW
+  13:'photo-1568992687947-868a62a9f521', // business school
+  14:'photo-1518770660439-4636190af475', // Amazon/AI/tech chips
+  15:'photo-1633419461186-7d40a38105ec', // Microsoft/tech office
+  16:'photo-1515187029135-18ee286d815b', // accelerator/coworking
+  17:'photo-1552664730-d307ca884978',    // lean startup team
+  18:'photo-1558494949-ef010cbdcc31',    // open internet/code
+  19:'photo-1551650975-87deedd944c3',    // startup pitch stage
+  20:'photo-1561070791-2526d30994b5',    // design/innovation
+  21:'photo-1589561253898-768105ca91a8', // entrepreneurship
+  22:'photo-1507413245164-6160d8298b31', // science/research lab
+  23:'photo-1542744173-8e7e53415bb0',    // pitch/presentation
+  24:'photo-1526374965328-7f61d4dc18c5', // challenge/matrix
+  25:'photo-1559136555-9303baea8ebd',    // entrepreneur startup
+  // BD
+  26:'photo-1555949963-aa79dcee981c',   // tech award/trophy
+  27:'photo-1559136555-9303baea8ebd',   // startup pitch
+  28:'photo-1560179707-f14e90ef3623',   // digital government
+  29:'photo-1512941937669-90a1b58e7e9c',// mobile/telecom
+  30:'photo-1551650975-87deedd944c3',   // digital innovation
+  31:'photo-1498050108023-c5249f4df085',// app development/laptop
+  32:'photo-1488521787991-ed7bbaae773c',// social impact/community
+  33:'photo-1540575467063-178a50c2df87',// innovation forum
+  34:'photo-1523050854058-8df90110c9f1',// scholarship/university
+  35:'photo-1563013544-824ae1b704d3',   // fintech/payment
+  36:'photo-1571171637578-41bc2dd41cd2',// hackathon/coding
+  37:'photo-1488521787991-ed7bbaae773c',// community/social
+  38:'photo-1571171637578-41bc2dd41cd2',// national hackathon
+  39:'photo-1524178232363-1fb2b075b655',// leadership
+  40:'photo-1542744173-8e7e53415bb0',   // startup challenge
+  41:'photo-1559136555-9303baea8ebd',   // startup summit
+  42:'photo-1573496359142-b8d87734a5a2',// women entrepreneurs
+  43:'photo-1581091226825-a6a2a5aee158',// robotics/engineering
+  44:'photo-1518770660439-4636190af475',// tech fest
+  45:'photo-1523050854058-8df90110c9f1',// scholarship
+  46:'photo-1503676260728-1c00da094a0b',// edtech summit
+  // Global
+  47:'photo-1541339907198-e08756dedf3f', // european university
+  48:'photo-1521737604893-d14cc237f11d', // social venture/team
+  49:'photo-1524231757912-21f4fe3a7200', // Istanbul/Turkey
+  50:'photo-1521737604893-d14cc237f11d', // echoing green/social
+  51:'photo-1541339907198-e08756dedf3f', // Fulbright/USA study
+  52:'photo-1538428494232-9c0d8a3ab403', // Seoul/Korea
+  53:'photo-1526374965328-7f61d4dc18c5', // MIT solve/global
+  54:'photo-1559136555-9303baea8ebd',    // student entrepreneur
+  55:'photo-1524178232363-1fb2b075b655', // Obama/leadership
+  56:'photo-1528360983277-13d401cdc186', // Japan/university
+  57:'photo-1559666126-84f389727b9a',    // Asia/development
+  58:'photo-1507679799987-c73779587ccf', // entrepreneur of year
+  59:'photo-1524592094714-0f0654e20314', // Rolex/prestigious award
+  60:'photo-1555949963-aa79dcee981c',    // Seedstars/emerging markets
+  61:'photo-1532094349884-543bc11b234d', // Gates/research
+  62:'photo-1488521787991-ed7bbaae773c', // Skoll/social enterprise
+  63:'photo-1573496359142-b8d87734a5a2', // Cartier women
+  64:'photo-1567427017947-545c5f8d16ad', // Hult prize/award
+  65:'photo-1467269204594-9661b134dd2b', // Germany/Berlin
+  66:'photo-1558008258-3256797b43f3',    // TED stage
+  67:'photo-1547981609-4b6bfe67ca0b',    // China/Tsinghua
+  68:'photo-1607013251379-e6eecfffe234', // Oxford/Rhodes
+  69:'photo-1488521787991-ed7bbaae773c', // USAID/development
+  70:'photo-1521737604893-d14cc237f11d', // DRK/nonprofit
+  71:'photo-1513635269975-59663e0ac1ad', // London/UK Commonwealth
+  72:'photo-1521737604893-d14cc237f11d', // Ashoka changemakers
+  73:'photo-1523050854058-8df90110c9f1', // Mastercard scholars
+  74:'photo-1521737604893-d14cc237f11d', // Ford Foundation
+  75:'photo-1540575467063-178a50c2df87', // Web Summit/Lisbon
+  76:'photo-1567427017947-545c5f8d16ad', // Startup World Cup prize
+  77:'photo-1524178232363-1fb2b075b655', // UNESCO youth
+  78:'photo-1575502537398-4f17d5abd7e6', // UN SDG
+  79:'photo-1573496359142-b8d87734a5a2', // World Bank youth
+  80:'photo-1503676260728-1c00da094a0b', // CZI EdTech
+  81:'photo-1521737604893-d14cc237f11d', // Open Society
+  82:'photo-1532094349884-543bc11b234d', // Rockefeller
+  83:'photo-1503676260728-1c00da094a0b', // Omidyar EdTech
+  84:'photo-1540575467063-178a50c2df87', // GEW event
+  85:'photo-1524178232363-1fb2b075b655', // Atlantic Fellows
+  86:'photo-1513635269975-59663e0ac1ad', // Chevening/UK
+  87:'photo-1563013544-824ae1b704d3',    // IFC SME Finance
 };
 
 const FLAGS={BD:'🇧🇩',US:'🇺🇸',Global:'🌐'};
@@ -631,21 +689,21 @@ function buildCard(o){
   const cd=cdHtml(o.dl);
   if(cd===null) return '';
   const isSaved=saved.includes(o.id);
-  const bg=getBG(o.type);
-  const domain=DOMAINS[o.id];
+  const photoId=IMGS[o.id];
+  const overlayColor=TYPE_OVERLAY[o.type]||'rgba(30,27,75,.5)';
   const newTag=o.st==='new'?'<span class="new-tag">New</span>':'';
-  const vb=o.v?'':'<span style="font-size:9px;font-weight:600;background:rgba(255,255,255,.8);color:#374151;padding:2px 7px;border-radius:5px">Community</span>';
+  const vb=!o.v?'<span style="font-size:9px;font-weight:600;background:rgba(255,255,255,.82);color:#374151;padding:2px 7px;border-radius:5px;backdrop-filter:blur(4px)">Community</span>':'';
 
-  let imgHtml='';
-  if(domain){
-    imgHtml=`<img class="logo-img" src="https://logo.clearbit.com/${domain}" alt="${o.org}"
-      onerror="this.style.display='none'">`;
-  }
+  // Photo URL — Unsplash source (no API key needed)
+  const photoUrl=photoId
+    ?`https://images.unsplash.com/${photoId}?w=560&h=340&fit=crop&crop=entropy&q=75&auto=format`
+    :`https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=560&h=340&fit=crop&q=75&auto=format`;
 
   return`<div class="card">
     <div class="card-img-wrap">
-      <div class="card-bg" style="background:${bg}">${imgHtml}</div>
-      <div class="card-overlay"></div>
+      <img class="card-photo" src="${photoUrl}" alt="${o.title}" loading="lazy"
+        onerror="this.src='https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=560&h=340&fit=crop&q=75'">
+      <div class="card-overlay" style="background:linear-gradient(160deg,${overlayColor} 0%,rgba(15,23,42,.65) 100%)"></div>
       <div class="card-badges">
         <span class="type-tag tt-${o.type}">${o.type}</span>
         <span class="country-flag-tag">${FLAGS[o.c]||'🌍'}</span>
