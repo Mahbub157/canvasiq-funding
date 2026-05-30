@@ -10,8 +10,8 @@
 *{box-sizing:border-box;margin:0;padding:0}
 :root{
   --accent:#4f46e5;--accent-d:#3730a3;--accent-l:#eef2ff;
-  --page-bg:linear-gradient(160deg,#dce8ff 0%,#ecf1ff 35%,#f5f7ff 65%,#ffffff 100%);
-  --surface:#ffffff;--border:#e2e8f0;--border2:#cbd5e1;
+  --bg:linear-gradient(160deg,#dce8ff 0%,#ecf1ff 35%,#f5f7ff 65%,#ffffff 100%);
+  --surface:#fff;--border:#e2e8f0;--border2:#cbd5e1;
   --text:#0f172a;--sub:#475569;--muted:#94a3b8;
   --radius:16px;--radius-sm:10px;
   --shadow:0 1px 3px rgba(15,23,42,.07),0 4px 16px rgba(15,23,42,.06);
@@ -19,10 +19,9 @@
   --shadow-lg:0 20px 60px rgba(15,23,42,.15);
 }
 html{scroll-behavior:smooth}
-body{font-family:'Inter',sans-serif;background:var(--page-bg);background-attachment:fixed;color:var(--text);min-height:100vh}
+body{font-family:'Inter',sans-serif;background:var(--bg);background-attachment:fixed;color:var(--text);min-height:100vh}
 
-/* ── NAV ── */
-nav{position:sticky;top:0;z-index:200;height:60px;background:rgba(255,255,255,.88);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(226,232,240,.8);display:flex;align-items:center;padding:0 32px;gap:16px}
+nav{position:sticky;top:0;z-index:200;height:58px;background:rgba(255,255,255,.9);backdrop-filter:blur(20px);border-bottom:1px solid rgba(226,232,240,.8);display:flex;align-items:center;padding:0 28px;gap:14px}
 .logo{font-size:16px;font-weight:800;color:var(--text);text-decoration:none;letter-spacing:-.4px}.logo span{color:var(--accent)}
 .nav-sep{width:1px;height:18px;background:var(--border)}
 .nav-crumb{font-size:12px;color:var(--muted);font-weight:500}
@@ -30,50 +29,47 @@ nav{position:sticky;top:0;z-index:200;height:60px;background:rgba(255,255,255,.8
 .live-tag{display:flex;align-items:center;gap:5px;font-size:11px;font-weight:700;color:#15803d;background:#f0fdf4;padding:4px 11px;border-radius:20px;border:1px solid #bbf7d0}
 .live-dot{width:6px;height:6px;border-radius:50%;background:#22c55e;animation:blink 2s infinite}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:.2}}
-.btn-ghost{font-size:12px;font-weight:600;padding:7px 15px;border-radius:var(--radius-sm);border:1.5px solid var(--border2);background:var(--surface);color:var(--text);cursor:pointer;transition:.15s}
+.api-tag{display:flex;align-items:center;gap:5px;font-size:11px;font-weight:700;color:var(--accent);background:var(--accent-l);padding:4px 11px;border-radius:20px;border:1px solid #c7d2fe}
+.btn-ghost{font-size:12px;font-weight:600;padding:7px 14px;border-radius:var(--radius-sm);border:1.5px solid var(--border2);background:var(--surface);color:var(--text);cursor:pointer;transition:.15s}
 .btn-ghost:hover{border-color:var(--accent);color:var(--accent)}
-.btn-solid{font-size:12px;font-weight:600;padding:7px 15px;border-radius:var(--radius-sm);border:none;background:var(--accent);color:#fff;cursor:pointer;transition:.15s}
+.btn-solid{font-size:12px;font-weight:600;padding:7px 14px;border-radius:var(--radius-sm);border:none;background:var(--accent);color:#fff;cursor:pointer;transition:.15s}
 .btn-solid:hover{background:var(--accent-d)}
 
-/* ── HERO ── */
-.hero{display:flex;align-items:center;justify-content:space-between;gap:32px;padding:48px 32px 40px;max-width:1280px;margin:0 auto}
-.hero-text{flex:1;max-width:520px}
-.hero-eyebrow{display:flex;align-items:center;gap:8px;margin-bottom:14px}
-.hero-badge{font-size:11px;font-weight:700;background:var(--accent-l);color:var(--accent);padding:4px 12px;border-radius:20px;border:1px solid #c7d2fe;letter-spacing:.03em}
-.hero h1{font-size:36px;font-weight:900;line-height:1.15;letter-spacing:-.8px;color:var(--text);margin-bottom:12px}
+/* HERO */
+.hero{display:flex;align-items:center;justify-content:space-between;gap:32px;padding:36px 28px 28px;width:100%}
+.hero-text{flex:1;max-width:540px}
+.hero-badge{font-size:11px;font-weight:700;background:var(--accent-l);color:var(--accent);padding:4px 12px;border-radius:20px;border:1px solid #c7d2fe;display:inline-block;margin-bottom:12px}
+.hero h1{font-size:34px;font-weight:900;line-height:1.15;letter-spacing:-.7px;margin-bottom:10px}
 .hero h1 span{color:var(--accent)}
-.hero-sub{font-size:14px;color:var(--sub);line-height:1.7;margin-bottom:20px}
-.hero-stats{display:flex;gap:10px;flex-wrap:wrap}
-.hstat{font-size:11px;font-weight:700;padding:5px 13px;border-radius:20px;border:1px solid transparent}
-.hs-all{background:var(--accent-l);color:var(--accent);border-color:#c7d2fe}
-.hs-bd{background:#fef9c3;color:#854d0e;border-color:#fde68a}
-.hs-us{background:#dbeafe;color:#1d4ed8;border-color:#bfdbfe}
-.hs-gl{background:#dcfce7;color:#15803d;border-color:#bbf7d0}
-.hero-visual{flex-shrink:0;width:420px;height:280px;border-radius:20px;overflow:hidden;position:relative;box-shadow:var(--shadow-lg)}
+.hero-sub{font-size:13px;color:var(--sub);line-height:1.7;margin-bottom:18px}
+.hero-stats{display:flex;gap:8px;flex-wrap:wrap}
+.hstat{font-size:11px;font-weight:700;padding:5px 13px;border-radius:20px}
+.hs-all{background:var(--accent-l);color:var(--accent);border:1px solid #c7d2fe}
+.hs-bd{background:#fef9c3;color:#854d0e;border:1px solid #fde68a}
+.hs-us{background:#dbeafe;color:#1d4ed8;border:1px solid #bfdbfe}
+.hs-gl{background:#dcfce7;color:#15803d;border:1px solid #bbf7d0}
+.hero-visual{flex-shrink:0;width:400px;height:264px;border-radius:18px;overflow:hidden;position:relative;box-shadow:var(--shadow-lg)}
 .hero-visual img{width:100%;height:100%;object-fit:cover}
-.hero-visual-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(79,70,229,.18),rgba(99,102,241,.08))}
-.hero-visual-card{position:absolute;bottom:16px;left:16px;background:rgba(255,255,255,.9);backdrop-filter:blur(12px);padding:10px 14px;border-radius:10px;border:1px solid rgba(255,255,255,.8)}
+.hero-visual-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(79,70,229,.2),rgba(99,102,241,.08))}
+.hero-visual-card{position:absolute;bottom:14px;left:14px;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);padding:10px 14px;border-radius:10px}
 .hvc-num{font-size:22px;font-weight:900;color:var(--accent);line-height:1}
 .hvc-lbl{font-size:10px;font-weight:600;color:var(--sub);margin-top:2px}
 
-/* ── SEARCH SECTION ── */
-.search-section{max-width:860px;margin:0 auto;padding:0 32px 28px}
-.search-pill{display:flex;align-items:center;background:var(--surface);border:1.5px solid var(--border2);border-radius:40px;padding:12px 20px;gap:12px;box-shadow:0 4px 24px rgba(15,23,42,.09),0 1px 4px rgba(15,23,42,.05);transition:.2s}
+/* SEARCH */
+.search-anchor{position:relative;max-width:860px;margin:0 auto;padding:0 28px 24px}
+.search-pill{display:flex;align-items:center;background:var(--surface);border:1.5px solid var(--border2);border-radius:40px;padding:11px 20px;gap:12px;box-shadow:0 4px 24px rgba(15,23,42,.09);transition:.2s}
 .search-pill:focus-within{border-color:var(--accent);box-shadow:0 4px 24px rgba(79,70,229,.15),0 0 0 4px rgba(79,70,229,.08)}
 .search-pill svg{color:var(--muted);flex-shrink:0}
-.search-pill input{flex:1;font-size:15px;font-family:'Inter',sans-serif;border:none;outline:none;color:var(--text);background:transparent}
+.search-pill input{flex:1;font-size:14px;font-family:'Inter',sans-serif;border:none;outline:none;color:var(--text);background:transparent}
 .search-pill input::placeholder{color:var(--muted)}
-.search-divider{width:1px;height:22px;background:var(--border)}
-.themes-btn{display:flex;align-items:center;gap:6px;font-size:13px;font-weight:600;color:var(--sub);background:transparent;border:none;cursor:pointer;padding:4px 8px;border-radius:8px;font-family:'Inter',sans-serif;transition:.14s;white-space:nowrap}
+.sdiv{width:1px;height:22px;background:var(--border)}
+.themes-btn{display:flex;align-items:center;gap:6px;font-size:13px;font-weight:600;color:var(--sub);background:transparent;border:none;cursor:pointer;padding:4px 8px;border-radius:8px;font-family:'Inter',sans-serif;white-space:nowrap}
 .themes-btn:hover{color:var(--accent);background:var(--accent-l)}
-.themes-btn svg{transition:.15s}
-.clear-btn{display:flex;align-items:center;gap:6px;font-size:13px;font-weight:600;color:var(--sub);background:transparent;border:none;cursor:pointer;padding:4px 8px;border-radius:8px;font-family:'Inter',sans-serif;transition:.14s;white-space:nowrap}
+.clear-btn{display:flex;align-items:center;gap:6px;font-size:13px;font-weight:600;color:var(--sub);background:transparent;border:none;cursor:pointer;padding:4px 8px;border-radius:8px;font-family:'Inter',sans-serif;white-space:nowrap}
 .clear-btn:hover{color:#dc2626;background:#fef2f2}
-
-/* ── THEMES DROPDOWN ── */
-.themes-panel{display:none;background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:14px;box-shadow:var(--shadow-lg);position:absolute;top:calc(100% + 8px);left:50%;transform:translateX(-50%);z-index:150;min-width:340px}
+.themes-panel{display:none;background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:16px;box-shadow:var(--shadow-lg);position:absolute;top:calc(100% + 6px);left:28px;right:28px;z-index:150}
 .themes-panel.open{display:block}
-.tp-label{font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px;padding:0 2px}
+.tp-label{font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px}
 .tp-pills{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
 .tp-pill{font-size:11px;font-weight:700;padding:5px 12px;border-radius:20px;border:1.5px solid var(--border);background:var(--surface);color:var(--sub);cursor:pointer;transition:.13s}
 .tp-pill:hover{border-color:var(--accent);color:var(--accent)}
@@ -90,44 +86,39 @@ nav{position:sticky;top:0;z-index:200;height:60px;background:rgba(255,255,255,.8
 .tp-country{font-size:11px;font-weight:600;padding:5px 12px;border-radius:20px;border:1.5px solid var(--border);background:var(--surface);color:var(--sub);cursor:pointer;transition:.13s}
 .tp-country:hover{border-color:var(--accent);color:var(--accent)}
 .tp-country.on{background:var(--accent);color:#fff;border-color:var(--accent)}
-.search-anchor{position:relative;max-width:860px;margin:0 auto;padding:0 32px}
 
-/* ── LAYOUT ── */
-.page-wrap{display:flex;max-width:1280px;margin:0 auto;gap:0}
-
-/* ── SIDEBAR ── */
-.sidebar{width:208px;min-width:208px;padding:20px 16px;position:sticky;top:60px;height:calc(100vh - 60px);overflow-y:auto}
+/* LAYOUT */
+.page-wrap{display:flex;width:100%;gap:0}
+.sidebar{width:204px;min-width:204px;padding:16px 14px;position:sticky;top:58px;height:calc(100vh - 58px);overflow-y:auto}
 .sidebar::-webkit-scrollbar{width:3px}.sidebar::-webkit-scrollbar-thumb{background:rgba(0,0,0,.1);border-radius:4px}
-.sb-card{background:rgba(255,255,255,.75);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.9);border-radius:var(--radius);padding:14px 12px;margin-bottom:10px;box-shadow:0 1px 6px rgba(15,23,42,.06)}
-.sb-head{font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.07em;margin-bottom:8px;padding:0 4px}
-.sb-item{display:flex;align-items:center;gap:7px;width:100%;padding:7px 8px;border-radius:8px;border:none;background:transparent;color:var(--sub);font-size:12px;font-weight:500;cursor:pointer;font-family:'Inter',sans-serif;transition:.13s;text-align:left}
+.sb-card{background:rgba(255,255,255,.8);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.95);border-radius:14px;padding:13px 11px;margin-bottom:10px;box-shadow:0 1px 6px rgba(15,23,42,.06)}
+.sb-head{font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.07em;margin-bottom:7px;padding:0 4px}
+.sb-item{display:flex;align-items:center;gap:7px;width:100%;padding:6px 8px;border-radius:8px;border:none;background:transparent;color:var(--sub);font-size:12px;font-weight:500;cursor:pointer;font-family:'Inter',sans-serif;transition:.12s;text-align:left}
 .sb-item:hover{background:#f1f5f9;color:var(--text)}
 .sb-item.on{background:var(--accent-l);color:var(--accent);font-weight:700}
 .sb-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
 .sb-n{margin-left:auto;font-size:10px;font-weight:700;background:#f1f5f9;color:var(--muted);padding:1px 6px;border-radius:8px;min-width:22px;text-align:center}
 .sb-item.on .sb-n{background:var(--accent);color:#fff}
-.sb-divider{height:1px;background:var(--border);margin:8px 0}
+.sb-divider{height:1px;background:var(--border);margin:7px 0}
 
-/* ── MAIN ── */
-.main{flex:1;min-width:0;padding:20px 20px 20px 12px}
-.section-hdr{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
-.section-hdr-left{font-size:15px;font-weight:700;color:var(--text)}
-.section-hdr-left span{color:var(--muted);font-weight:500;font-size:13px;margin-left:6px}
-.section-hdr-right{font-size:12px;color:var(--muted)}
+.main{flex:1;min-width:0;padding:16px 28px 20px 14px}
+.sec-hdr{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;flex-wrap:wrap;gap:8px}
+.sec-hdr-l{font-size:15px;font-weight:700;color:var(--text);display:flex;align-items:center;gap:8px}
+.sec-hdr-l span{color:var(--muted);font-weight:500;font-size:13px}
+.sec-hdr-r{font-size:12px;color:var(--muted);display:flex;align-items:center;gap:8px}
+.api-live-badge{font-size:10px;font-weight:700;background:var(--accent-l);color:var(--accent);padding:2px 8px;border-radius:10px;border:1px solid #c7d2fe;display:flex;align-items:center;gap:4px}
 
-/* ── CARDS ── */
-.cards-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+/* CARDS GRID */
+.cards-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
 
-/* ── CARD ── */
-.card{background:var(--surface);border-radius:var(--radius);border:1px solid var(--border);overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--shadow);transition:box-shadow .18s,transform .15s,border-color .15s}
+/* CARD */
+.card{background:var(--surface);border-radius:var(--radius);border:1px solid var(--border);overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--shadow);transition:box-shadow .18s,transform .14s,border-color .14s}
 .card:hover{box-shadow:var(--shadow-h);transform:translateY(-2px);border-color:rgba(79,70,229,.2)}
-/* Image area */
-.card-img-wrap{position:relative;height:168px;overflow:hidden;flex-shrink:0;border-radius:var(--radius) var(--radius) 0 0}
-.card-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s ease}
+.card-img-wrap{position:relative;height:160px;overflow:hidden;flex-shrink:0}
+.card-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s}
 .card:hover .card-photo{transform:scale(1.06)}
-.card-overlay{position:absolute;inset:0;transition:opacity .2s}
-.card:hover .card-overlay{opacity:.85}
-.card-badges{position:absolute;top:10px;left:10px;display:flex;gap:5px;flex-wrap:wrap}
+.card-overlay{position:absolute;inset:0}
+.card-badges{position:absolute;top:10px;left:10px;display:flex;gap:5px;flex-wrap:wrap;align-items:center}
 .type-tag{font-size:9px;font-weight:800;padding:3px 8px;border-radius:5px;letter-spacing:.04em;text-transform:uppercase}
 .tt-Competition{background:rgba(124,58,237,.9);color:#fff}
 .tt-Grant{background:rgba(37,99,235,.9);color:#fff}
@@ -135,17 +126,16 @@ nav{position:sticky;top:0;z-index:200;height:60px;background:rgba(255,255,255,.8
 .tt-Prize{background:rgba(219,39,119,.9);color:#fff}
 .tt-Event{background:rgba(5,150,105,.9);color:#fff}
 .tt-Scholarship{background:rgba(234,88,12,.9);color:#fff}
-.country-flag-tag{font-size:14px;background:rgba(255,255,255,.88);padding:2px 6px;border-radius:5px;backdrop-filter:blur(4px)}
-.new-tag{font-size:9px;font-weight:800;background:#22c55e;color:#fff;padding:3px 8px;border-radius:5px;text-transform:uppercase;letter-spacing:.04em}
-/* Card body */
-.card-body{padding:13px 14px;flex:1;display:flex;flex-direction:column;gap:5px}
-.card-org{font-size:10px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;line-height:1.3}
+.cflag-tag{font-size:14px;background:rgba(255,255,255,.88);padding:2px 6px;border-radius:5px;backdrop-filter:blur(4px)}
+.new-tag{font-size:9px;font-weight:800;background:#22c55e;color:#fff;padding:3px 7px;border-radius:5px;text-transform:uppercase}
+.live-api-tag{font-size:9px;font-weight:800;background:rgba(79,70,229,.9);color:#fff;padding:3px 7px;border-radius:5px;display:flex;align-items:center;gap:3px}
+.card-body{padding:12px 13px;flex:1;display:flex;flex-direction:column;gap:4px}
+.card-org{font-size:10px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
 .card-title{font-size:13px;font-weight:700;color:var(--text);line-height:1.35;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .card-amt{font-size:12px;font-weight:700;color:var(--accent);margin-top:1px}
 .card-desc{font-size:11px;color:var(--sub);line-height:1.5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;flex:1}
-.card-footer{display:flex;align-items:center;justify-content:space-between;gap:6px;padding-top:10px;border-top:1px solid #f1f5f9;margin-top:6px}
-/* Countdown pill */
-.cp{display:inline-flex;align-items:center;gap:5px;font-size:11px;font-weight:700;padding:4px 10px;border-radius:20px}
+.card-footer{display:flex;align-items:center;justify-content:space-between;gap:6px;padding-top:9px;border-top:1px solid #f1f5f9;margin-top:5px}
+.cp{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:700;padding:4px 10px;border-radius:20px}
 .cp-u{background:#fee2e2;color:#b91c1c}
 .cp-s{background:#fef3c7;color:#92400e}
 .cp-n{background:var(--accent-l);color:var(--accent)}
@@ -156,16 +146,22 @@ nav{position:sticky;top:0;z-index:200;height:60px;background:rgba(255,255,255,.8
 .btn-apply{font-size:10px;font-weight:700;padding:4px 11px;border-radius:6px;border:none;background:var(--accent);color:#fff;cursor:pointer;text-decoration:none;display:inline-block;transition:.13s}
 .btn-apply:hover{background:var(--accent-d)}
 
-/* ── EMPTY ── */
+/* LOADING */
+.loading-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.skeleton{background:var(--surface);border-radius:var(--radius);border:1px solid var(--border);overflow:hidden;height:280px;box-shadow:var(--shadow)}
+.skel-img{height:160px;background:linear-gradient(90deg,#f0f0f0 25%,#e8e8e8 50%,#f0f0f0 75%);background-size:200% 100%;animation:shimmer 1.5s infinite}
+.skel-body{padding:12px 13px;display:flex;flex-direction:column;gap:8px}
+.skel-line{border-radius:4px;background:linear-gradient(90deg,#f0f0f0 25%,#e8e8e8 50%,#f0f0f0 75%);background-size:200% 100%;animation:shimmer 1.5s infinite}
+@keyframes shimmer{0%{background-position:200% 0}100%{background-position:-200% 0}}
+
 .empty{grid-column:1/-1;text-align:center;padding:64px 20px;color:var(--muted)}
 .empty svg{opacity:.3;margin-bottom:12px}
-.empty p{font-size:14px;font-weight:500}
 
-/* ── FAB ── */
+/* FAB */
 .fab{position:fixed;bottom:24px;right:24px;z-index:180;display:flex;align-items:center;gap:7px;padding:12px 20px;border-radius:20px;border:none;background:var(--accent);color:#fff;font-size:12px;font-weight:700;cursor:pointer;box-shadow:0 6px 24px rgba(79,70,229,.45);font-family:'Inter',sans-serif;transition:.15s}
-.fab:hover{background:var(--accent-d);transform:translateY(-2px);box-shadow:0 10px 32px rgba(79,70,229,.5)}
+.fab:hover{background:var(--accent-d);transform:translateY(-2px)}
 
-/* ── MODAL ── */
+/* MODAL */
 .modal-bg{display:none;position:fixed;inset:0;background:rgba(15,23,42,.5);z-index:300;align-items:center;justify-content:center;padding:16px;backdrop-filter:blur(6px)}
 .modal-bg.open{display:flex}
 .modal{background:var(--surface);border-radius:20px;width:100%;max-width:500px;max-height:93vh;overflow-y:auto;box-shadow:var(--shadow-lg)}
@@ -190,93 +186,75 @@ nav{position:sticky;top:0;z-index:200;height:60px;background:rgba(255,255,255,.8
 .fsuccess h3{font-size:16px;font-weight:800;margin-bottom:5px}
 .fsuccess p{font-size:12px;color:var(--sub);line-height:1.6}
 
-/* ── ALERTS ── */
-.alerts{background:linear-gradient(135deg,#4f46e5,#6366f1);padding:36px 32px;text-align:center;color:#fff}
-.alerts h3{font-size:18px;font-weight:800;margin-bottom:4px;letter-spacing:-.2px}
-.alerts p{font-size:13px;opacity:.85;margin-bottom:18px}
+.alerts{background:linear-gradient(135deg,#4f46e5,#6366f1);padding:36px 28px;text-align:center;color:#fff}
+.alerts h3{font-size:18px;font-weight:800;margin-bottom:4px}
+.alerts p{font-size:13px;opacity:.85;margin-bottom:16px}
 .alert-form{display:flex;gap:8px;justify-content:center;max-width:380px;margin:0 auto}
 .alert-form input{flex:1;font-size:13px;padding:9px 14px;border:none;border-radius:8px;outline:none;font-family:'Inter',sans-serif;color:var(--text)}
-.alert-form input::placeholder{color:var(--muted)}
-.alert-form button{font-size:12px;font-weight:700;padding:9px 18px;border-radius:8px;border:2px solid rgba(255,255,255,.5);background:rgba(255,255,255,.15);color:#fff;cursor:pointer;font-family:'Inter',sans-serif;transition:.14s;backdrop-filter:blur(4px)}
+.alert-form button{font-size:12px;font-weight:700;padding:9px 18px;border-radius:8px;border:2px solid rgba(255,255,255,.5);background:rgba(255,255,255,.15);color:#fff;cursor:pointer;font-family:'Inter',sans-serif;transition:.14s}
 .alert-form button:hover{background:rgba(255,255,255,.25)}
-.foot{font-size:10px;color:var(--muted);padding:10px 32px;text-align:right;background:var(--surface);border-top:1px solid var(--border)}
+.foot{font-size:10px;color:var(--muted);padding:10px 28px;text-align:right;background:var(--surface);border-top:1px solid var(--border)}
 
-@media(max-width:1200px){
-  .cards-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .hero-visual{width:300px;height:220px}
-  .hero h1{font-size:28px}
-}
-@media(max-width:820px){
-  .sidebar{display:none}
-  .hero{flex-direction:column;padding:28px 20px}
-  .hero-visual{width:100%;height:180px}
-  .search-section,.search-anchor{padding:0 16px 20px}
-  .main{padding:16px}
-  .cards-grid{grid-template-columns:1fr}
-  .fab{bottom:14px;right:14px}
-  .f2{grid-template-columns:1fr}
-}
+@media(max-width:1200px){.cards-grid,.loading-grid{grid-template-columns:repeat(2,minmax(0,1fr))} .hero-visual{width:300px;height:220px} .hero h1{font-size:26px}}
+@media(max-width:820px){.sidebar{display:none} .hero{flex-direction:column;padding:24px 20px} .hero-visual{width:100%;height:200px} .search-anchor{padding:0 16px 20px} .main{padding:16px 16px 20px 12px} .cards-grid,.loading-grid{grid-template-columns:1fr} .fab{bottom:14px;right:14px} .f2{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 
-<!-- NAV -->
 <nav>
   <a href="./index.html" class="logo">Canvas<span>IQ</span></a>
   <div class="nav-sep"></div>
   <span class="nav-crumb">Funding &amp; Opportunities</span>
   <div class="nav-r">
     <div class="live-tag"><span class="live-dot"></span>Live</div>
+    <div class="api-tag" id="apiTag" style="display:none">
+      <svg width="10" height="10" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg>
+      Auto-updated
+    </div>
     <button class="btn-ghost" onclick="openModal()">+ Submit</button>
     <button class="btn-solid" onclick="document.getElementById('alerts').scrollIntoView({behavior:'smooth'})">Get Alerts</button>
   </div>
 </nav>
 
-<!-- HERO -->
-<div style="background:transparent">
-  <div class="hero">
-    <div class="hero-text">
-      <div class="hero-eyebrow">
-        <span class="hero-badge">Innovation Hub</span>
-      </div>
-      <h1>Welcome to our<br><span>opportunity hub</span></h1>
-      <p class="hero-sub">A space where ideas come to life, collaboration thrives, and groundbreaking projects take shape. Grants, competitions, fellowships &amp; scholarships — sorted by earliest deadline.</p>
-      <div class="hero-stats">
-        <span class="hstat hs-all" id="chip-total">0 Live</span>
-        <span class="hstat hs-bd" id="chip-bd">0 Bangladesh</span>
-        <span class="hstat hs-us" id="chip-us">0 United States</span>
-        <span class="hstat hs-gl" id="chip-gl">0 Global</span>
-      </div>
+<div class="hero">
+  <div class="hero-text">
+    <span class="hero-badge">Innovation Hub — Auto-Updated</span>
+    <h1>Welcome to our<br><span>opportunity hub</span></h1>
+    <p class="hero-sub">Live grants, competitions, fellowships, scholarships &amp; events — fetched from global sources and updated automatically. Sorted by earliest deadline.</p>
+    <div class="hero-stats">
+      <span class="hstat hs-all" id="chip-total">Loading…</span>
+      <span class="hstat hs-bd" id="chip-bd">BD</span>
+      <span class="hstat hs-us" id="chip-us">US</span>
+      <span class="hstat hs-gl" id="chip-gl">Global</span>
     </div>
-    <div class="hero-visual">
-      <img src="https://images.unsplash.com/photo-1617791160505-6f00504e3519?w=800&q=80" alt="Innovation" onerror="this.src='https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&q=80'">
-      <div class="hero-visual-overlay"></div>
-      <div class="hero-visual-card">
-        <div class="hvc-num" id="hvc-count">87</div>
-        <div class="hvc-lbl">Active Programs</div>
-      </div>
+  </div>
+  <div class="hero-visual">
+    <img src="https://images.unsplash.com/photo-1617791160505-6f00504e3519?w=800&q=80" alt="Innovation">
+    <div class="hero-visual-overlay"></div>
+    <div class="hero-visual-card">
+      <div class="hvc-num" id="hvc-count">—</div>
+      <div class="hvc-lbl">Active Programs</div>
     </div>
   </div>
 </div>
 
-<!-- SEARCH -->
 <div class="search-anchor">
   <div class="search-pill">
-    <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
-    <input type="text" id="searchInput" placeholder="Search a program..." oninput="renderAll()">
-    <div class="search-divider"></div>
+    <svg width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+    <input type="text" id="searchInput" placeholder="Search programs, organisations, tags..." oninput="renderAll()">
+    <div class="sdiv"></div>
     <button class="themes-btn" onclick="toggleThemes()">
       <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 6h16M8 12h8M11 18h2"/></svg>
       Themes
-      <svg id="themesArrow" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="transition:.2s"><path d="M6 9l6 6 6-6"/></svg>
+      <svg id="thArrow" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="transition:.2s"><path d="M6 9l6 6 6-6"/></svg>
     </button>
-    <div class="search-divider"></div>
-    <button class="clear-btn" onclick="clearFilters()">
-      <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 6h18M8 6V4h8v2M19 6l-1 14H6L5 6"/></svg>
+    <div class="sdiv"></div>
+    <button class="clear-btn" onclick="clearAll()">
+      <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 6h18M8 6V4h8v2M19 6l-1 14H6L5 6"/></svg>
       Clear filters
     </button>
   </div>
-  <div class="themes-panel" id="themesPanel">
+  <div class="themes-panel" id="tp">
     <div class="tp-label">Type</div>
     <div class="tp-pills">
       <button class="tp-pill tp-all on" data-t="all" onclick="setType(this)">All types</button>
@@ -298,20 +276,17 @@ nav{position:sticky;top:0;z-index:200;height:60px;background:rgba(255,255,255,.8
   </div>
 </div>
 
-<!-- PAGE BODY -->
 <div class="page-wrap">
-
-  <!-- SIDEBAR -->
   <aside class="sidebar">
     <div class="sb-card">
       <div class="sb-head">Type</div>
-      <button class="sb-item on" data-t="all" onclick="setSBType(this)"><span class="sb-dot" style="background:var(--accent)"></span>All<span class="sb-n" id="sn-all">0</span></button>
-      <button class="sb-item" data-t="Competition" onclick="setSBType(this)"><span class="sb-dot" style="background:#7c3aed"></span>Competitions<span class="sb-n" id="sn-Competition">0</span></button>
-      <button class="sb-item" data-t="Grant" onclick="setSBType(this)"><span class="sb-dot" style="background:#2563eb"></span>Grants<span class="sb-n" id="sn-Grant">0</span></button>
-      <button class="sb-item" data-t="Fellowship" onclick="setSBType(this)"><span class="sb-dot" style="background:#d97706"></span>Fellowships<span class="sb-n" id="sn-Fellowship">0</span></button>
-      <button class="sb-item" data-t="Prize" onclick="setSBType(this)"><span class="sb-dot" style="background:#db2777"></span>Prizes<span class="sb-n" id="sn-Prize">0</span></button>
-      <button class="sb-item" data-t="Event" onclick="setSBType(this)"><span class="sb-dot" style="background:#059669"></span>Events<span class="sb-n" id="sn-Event">0</span></button>
-      <button class="sb-item" data-t="Scholarship" onclick="setSBType(this)"><span class="sb-dot" style="background:#ea580c"></span>Scholarships<span class="sb-n" id="sn-Scholarship">0</span></button>
+      <button class="sb-item on" data-t="all" onclick="setSBType(this)"><span class="sb-dot" style="background:var(--accent)"></span>All<span class="sb-n" id="sn-all">—</span></button>
+      <button class="sb-item" data-t="Competition" onclick="setSBType(this)"><span class="sb-dot" style="background:#7c3aed"></span>Competitions<span class="sb-n" id="sn-Competition">—</span></button>
+      <button class="sb-item" data-t="Grant" onclick="setSBType(this)"><span class="sb-dot" style="background:#2563eb"></span>Grants<span class="sb-n" id="sn-Grant">—</span></button>
+      <button class="sb-item" data-t="Fellowship" onclick="setSBType(this)"><span class="sb-dot" style="background:#d97706"></span>Fellowships<span class="sb-n" id="sn-Fellowship">—</span></button>
+      <button class="sb-item" data-t="Prize" onclick="setSBType(this)"><span class="sb-dot" style="background:#db2777"></span>Prizes<span class="sb-n" id="sn-Prize">—</span></button>
+      <button class="sb-item" data-t="Event" onclick="setSBType(this)"><span class="sb-dot" style="background:#059669"></span>Events<span class="sb-n" id="sn-Event">—</span></button>
+      <button class="sb-item" data-t="Scholarship" onclick="setSBType(this)"><span class="sb-dot" style="background:#ea580c"></span>Scholarships<span class="sb-n" id="sn-Scholarship">—</span></button>
     </div>
     <div class="sb-card">
       <div class="sb-head">Deadline</div>
@@ -320,29 +295,30 @@ nav{position:sticky;top:0;z-index:200;height:60px;background:rgba(255,255,255,.8
       <button class="sb-item" data-st="new" onclick="setSBStatus(this)"><span class="sb-dot" style="background:#22c55e"></span>Newly added</button>
     </div>
     <div class="sb-card">
-      <button class="sb-item" id="savedSB" onclick="toggleSaved()">
-        <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/></svg>
-        Saved<span class="sb-n" id="sn-saved">0</span>
-      </button>
+      <button class="sb-item" id="savedSB" onclick="toggleSaved()"><svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/></svg>Saved<span class="sb-n" id="sn-saved">0</span></button>
       <div class="sb-divider"></div>
-      <button class="sb-item" style="color:var(--accent);font-weight:700" onclick="openModal()">
-        <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>Submit Opportunity
-      </button>
+      <button class="sb-item" style="color:var(--accent);font-weight:700" onclick="openModal()"><svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>Submit Opportunity</button>
     </div>
   </aside>
 
-  <!-- MAIN -->
   <main class="main">
-    <div class="section-hdr">
-      <div class="section-hdr-left" id="secHdr">Live programs</div>
-      <div class="section-hdr-right" id="secRight"></div>
+    <div class="sec-hdr">
+      <div class="sec-hdr-l" id="secHdr">Live programs <span id="secCount"></span></div>
+      <div class="sec-hdr-r" id="secRight">
+        <div class="api-live-badge" id="apiBadge" style="display:none"><span class="live-dot"></span>Fetching live data…</div>
+      </div>
     </div>
-    <div class="cards-grid" id="grid"></div>
-    <div class="foot" id="foot" style="background:transparent;border:none;margin-top:12px"></div>
+    <div id="grid">
+      <div class="loading-grid">
+        <div class="skeleton"><div class="skel-img"></div><div class="skel-body"><div class="skel-line" style="height:12px;width:60%"></div><div class="skel-line" style="height:16px;width:90%"></div><div class="skel-line" style="height:12px;width:80%"></div></div></div>
+        <div class="skeleton"><div class="skel-img"></div><div class="skel-body"><div class="skel-line" style="height:12px;width:55%"></div><div class="skel-line" style="height:16px;width:85%"></div><div class="skel-line" style="height:12px;width:70%"></div></div></div>
+        <div class="skeleton"><div class="skel-img"></div><div class="skel-body"><div class="skel-line" style="height:12px;width:65%"></div><div class="skel-line" style="height:16px;width:95%"></div><div class="skel-line" style="height:12px;width:75%"></div></div></div>
+      </div>
+    </div>
+    <div class="foot" id="foot" style="background:transparent;border:none;margin-top:10px"></div>
   </main>
 </div>
 
-<!-- ALERTS -->
 <div class="alerts" id="alerts">
   <h3>Get weekly opportunity alerts</h3>
   <p>New competitions, scholarships &amp; grants — every Monday in your inbox.</p>
@@ -350,16 +326,13 @@ nav{position:sticky;top:0;z-index:200;height:60px;background:rgba(255,255,255,.8
     <input type="email" id="alertIn" placeholder="your@email.com" required>
     <button type="submit">Subscribe</button>
   </form>
-  <p id="alertOk" style="display:none;font-size:12px;margin-top:8px;font-weight:700;opacity:.9">Subscribed! Check your inbox every Monday.</p>
+  <p id="alertOk" style="display:none;font-size:12px;margin-top:8px;font-weight:700;opacity:.9">Subscribed!</p>
 </div>
 
-<!-- FAB -->
 <button class="fab" onclick="openModal()">
-  <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
-  Submit Opportunity
+  <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>Submit Opportunity
 </button>
 
-<!-- MODAL -->
 <div class="modal-bg" id="modal">
   <div class="modal">
     <div class="modal-hdr">
@@ -402,312 +375,233 @@ nav{position:sticky;top:0;z-index:200;height:60px;background:rgba(255,255,255,.8
 </div>
 
 <script>
-// ── Type overlay colors (semi-transparent on top of photo) ─────────────────
-const TYPE_OVERLAY = {
-  Competition:'rgba(79,46,220,.55)',
-  Grant:      'rgba(29,78,216,.55)',
-  Fellowship: 'rgba(146,64,14,.55)',
-  Prize:      'rgba(157,23,77,.55)',
-  Event:      'rgba(6,78,59,.55)',
-  Scholarship:'rgba(154,52,18,.55)',
-};
+// ── TYPE OVERLAY COLORS ───────────────────────────────────────────────────────
+const OVR={Competition:'rgba(79,46,220,.52)',Grant:'rgba(29,78,216,.52)',Fellowship:'rgba(146,64,14,.52)',Prize:'rgba(157,23,77,.52)',Event:'rgba(6,78,59,.52)',Scholarship:'rgba(154,52,18,.52)'};
 
-// ── Specific Unsplash image per opportunity ─────────────────────────────────
-const IMGS = {
-  // US
-  1:'photo-1523240795612-9a054b0db644', // young founder/laptop
-  2:'photo-1556761175-4b46a572b786',    // startup team meeting
-  3:'photo-1532094349884-543bc11b234d', // lab/research
-  4:'photo-1546410531-bb4caa6b424d',    // MIT-style campus innovation
-  5:'photo-1540575467063-178a50c2df87', // tech conference stage
-  6:'photo-1607013251379-e6eecfffe234', // university campus
-  7:'photo-1571019613454-1cb2f99b2d8b', // stanford-style campus
-  8:'photo-1574958269340-fa927503f3dd', // innovation lab
-  9:'photo-1573496359142-b8d87734a5a2', // community/social impact
-  10:'photo-1503676260728-1c00da094a0b', // classroom/education
-  11:'photo-1523050854058-8df90110c9f1', // graduation/university
-  12:'photo-1493225457124-a3eb161ffa5f', // conference/music/SXSW
-  13:'photo-1568992687947-868a62a9f521', // business school
-  14:'photo-1518770660439-4636190af475', // Amazon/AI/tech chips
-  15:'photo-1633419461186-7d40a38105ec', // Microsoft/tech office
-  16:'photo-1515187029135-18ee286d815b', // accelerator/coworking
-  17:'photo-1552664730-d307ca884978',    // lean startup team
-  18:'photo-1558494949-ef010cbdcc31',    // open internet/code
-  19:'photo-1551650975-87deedd944c3',    // startup pitch stage
-  20:'photo-1561070791-2526d30994b5',    // design/innovation
-  21:'photo-1589561253898-768105ca91a8', // entrepreneurship
-  22:'photo-1507413245164-6160d8298b31', // science/research lab
-  23:'photo-1542744173-8e7e53415bb0',    // pitch/presentation
-  24:'photo-1526374965328-7f61d4dc18c5', // challenge/matrix
-  25:'photo-1559136555-9303baea8ebd',    // entrepreneur startup
-  // BD
-  26:'photo-1555949963-aa79dcee981c',   // tech award/trophy
-  27:'photo-1559136555-9303baea8ebd',   // startup pitch
-  28:'photo-1560179707-f14e90ef3623',   // digital government
-  29:'photo-1512941937669-90a1b58e7e9c',// mobile/telecom
-  30:'photo-1551650975-87deedd944c3',   // digital innovation
-  31:'photo-1498050108023-c5249f4df085',// app development/laptop
-  32:'photo-1488521787991-ed7bbaae773c',// social impact/community
-  33:'photo-1540575467063-178a50c2df87',// innovation forum
-  34:'photo-1523050854058-8df90110c9f1',// scholarship/university
-  35:'photo-1563013544-824ae1b704d3',   // fintech/payment
-  36:'photo-1571171637578-41bc2dd41cd2',// hackathon/coding
-  37:'photo-1488521787991-ed7bbaae773c',// community/social
-  38:'photo-1571171637578-41bc2dd41cd2',// national hackathon
-  39:'photo-1524178232363-1fb2b075b655',// leadership
-  40:'photo-1542744173-8e7e53415bb0',   // startup challenge
-  41:'photo-1559136555-9303baea8ebd',   // startup summit
-  42:'photo-1573496359142-b8d87734a5a2',// women entrepreneurs
-  43:'photo-1581091226825-a6a2a5aee158',// robotics/engineering
-  44:'photo-1518770660439-4636190af475',// tech fest
-  45:'photo-1523050854058-8df90110c9f1',// scholarship
-  46:'photo-1503676260728-1c00da094a0b',// edtech summit
-  // Global
-  47:'photo-1541339907198-e08756dedf3f', // european university
-  48:'photo-1521737604893-d14cc237f11d', // social venture/team
-  49:'photo-1524231757912-21f4fe3a7200', // Istanbul/Turkey
-  50:'photo-1521737604893-d14cc237f11d', // echoing green/social
-  51:'photo-1541339907198-e08756dedf3f', // Fulbright/USA study
-  52:'photo-1538428494232-9c0d8a3ab403', // Seoul/Korea
-  53:'photo-1526374965328-7f61d4dc18c5', // MIT solve/global
-  54:'photo-1559136555-9303baea8ebd',    // student entrepreneur
-  55:'photo-1524178232363-1fb2b075b655', // Obama/leadership
-  56:'photo-1528360983277-13d401cdc186', // Japan/university
-  57:'photo-1559666126-84f389727b9a',    // Asia/development
-  58:'photo-1507679799987-c73779587ccf', // entrepreneur of year
-  59:'photo-1524592094714-0f0654e20314', // Rolex/prestigious award
-  60:'photo-1555949963-aa79dcee981c',    // Seedstars/emerging markets
-  61:'photo-1532094349884-543bc11b234d', // Gates/research
-  62:'photo-1488521787991-ed7bbaae773c', // Skoll/social enterprise
-  63:'photo-1573496359142-b8d87734a5a2', // Cartier women
-  64:'photo-1567427017947-545c5f8d16ad', // Hult prize/award
-  65:'photo-1467269204594-9661b134dd2b', // Germany/Berlin
-  66:'photo-1558008258-3256797b43f3',    // TED stage
-  67:'photo-1547981609-4b6bfe67ca0b',    // China/Tsinghua
-  68:'photo-1607013251379-e6eecfffe234', // Oxford/Rhodes
-  69:'photo-1488521787991-ed7bbaae773c', // USAID/development
-  70:'photo-1521737604893-d14cc237f11d', // DRK/nonprofit
-  71:'photo-1513635269975-59663e0ac1ad', // London/UK Commonwealth
-  72:'photo-1521737604893-d14cc237f11d', // Ashoka changemakers
-  73:'photo-1523050854058-8df90110c9f1', // Mastercard scholars
-  74:'photo-1521737604893-d14cc237f11d', // Ford Foundation
-  75:'photo-1540575467063-178a50c2df87', // Web Summit/Lisbon
-  76:'photo-1567427017947-545c5f8d16ad', // Startup World Cup prize
-  77:'photo-1524178232363-1fb2b075b655', // UNESCO youth
-  78:'photo-1575502537398-4f17d5abd7e6', // UN SDG
-  79:'photo-1573496359142-b8d87734a5a2', // World Bank youth
-  80:'photo-1503676260728-1c00da094a0b', // CZI EdTech
-  81:'photo-1521737604893-d14cc237f11d', // Open Society
-  82:'photo-1532094349884-543bc11b234d', // Rockefeller
-  83:'photo-1503676260728-1c00da094a0b', // Omidyar EdTech
-  84:'photo-1540575467063-178a50c2df87', // GEW event
-  85:'photo-1524178232363-1fb2b075b655', // Atlantic Fellows
-  86:'photo-1513635269975-59663e0ac1ad', // Chevening/UK
-  87:'photo-1563013544-824ae1b704d3',    // IFC SME Finance
+// ── STATIC IMAGE POOL PER TYPE ────────────────────────────────────────────────
+const TYPE_IMGS={
+  Competition:['photo-1551434678-e076c223a692','photo-1556761175-4b46a572b786','photo-1519389950473-47ba0277781c','photo-1542744173-8e7e53415bb0','photo-1571171637578-41bc2dd41cd2'],
+  Grant:['photo-1553729459-efe14ef6055d','photo-1579621970563-ebec7560ff3e','photo-1532094349884-543bc11b234d','photo-1507413245164-6160d8298b31'],
+  Fellowship:['photo-1529156069898-49953e39b3ac','photo-1522071820081-009f0129c71c','photo-1582213782179-e0d53f98f2ca','photo-1524178232363-1fb2b075b655'],
+  Prize:['photo-1567427017947-545c5f8d16ad','photo-1524592094714-0f0654e20314','photo-1593642632559-0c6d3fc62b89'],
+  Event:['photo-1540575467063-178a50c2df87','photo-1475721027785-f74eccf877e2','photo-1505373877841-8d25f7d46678','photo-1523580494863-6f3031224c42','photo-1559136555-9303baea8ebd'],
+  Scholarship:['photo-1523050854058-8df90110c9f1','photo-1427504494785-3a9ca7044f45','photo-1497633762265-9d179a990aa6','photo-1541339907198-e08756dedf3f'],
 };
+const imgIdx={};
+function getTypeImg(type){const arr=TYPE_IMGS[type]||TYPE_IMGS.Event;imgIdx[type]=(imgIdx[type]||0);const p=arr[imgIdx[type]%arr.length];imgIdx[type]++;return`https://images.unsplash.com/${p}?w=560&h=320&fit=crop&q=75&auto=format`;}
 
 const FLAGS={BD:'🇧🇩',US:'🇺🇸',Global:'🌐'};
 const CNAMES={BD:'Bangladesh',US:'United States',Global:'Global / Remote'};
 
-// ── DATA ──────────────────────────────────────────────────────────────────
-const DATA=[
-  {id:1,c:"US",type:"Fellowship",title:"Thiel Fellowship",org:"Thiel Foundation",amt:"$100,000 over 2 years",dl:"2026-10-15",st:"rolling",elig:"Founders under 23",link:"https://thielfellowship.org",v:true,desc:"Elite 2-year fellowship. Only 20 fellows selected globally per year."},
-  {id:2,c:"US",type:"Fellowship",title:"Y Combinator Startup Program",org:"Y Combinator",amt:"$500,000 (7% equity)",dl:"2026-09-30",st:"rolling",elig:"Any founder worldwide",link:"https://ycombinator.com/apply",v:true,desc:"World's most prestigious startup accelerator. Airbnb, Stripe, Dropbox all started here."},
-  {id:3,c:"US",type:"Grant",title:"NSF SBIR Phase I",org:"National Science Foundation",amt:"Up to $275,000",dl:"2026-06-04",st:"rolling",elig:"US-based small businesses < 500 employees",link:"https://seedfund.nsf.gov",v:true,desc:"Non-dilutive government seed grant for deep tech and EdTech startups."},
-  {id:4,c:"US",type:"Competition",title:"MIT $100K Entrepreneurship Competition",org:"MIT",amt:"Up to $100,000",dl:"2026-02-28",st:"rolling",elig:"Open category for all teams",link:"https://mit100k.org",v:true,desc:"One of the world's oldest and most prestigious startup competitions."},
-  {id:5,c:"US",type:"Competition",title:"TechCrunch Disrupt Startup Battlefield",org:"TechCrunch",amt:"$100,000 + Global Media",dl:"2026-06-01",st:"rolling",elig:"Early-stage startups worldwide",link:"https://techcrunch.com/events/disrupt",v:true,desc:"The most visible startup pitch stage in tech — broadcast to millions globally."},
-  {id:6,c:"US",type:"Competition",title:"Rice Business Plan Competition",org:"Rice University",amt:"$1,500,000+ in prizes",dl:"2026-01-15",st:"rolling",elig:"Student-run companies globally",link:"https://rbpc.rice.edu",v:true,desc:"World's richest graduate-level business plan competition. Teams from 40+ countries."},
-  {id:7,c:"US",type:"Competition",title:"Stanford BASES E-Challenge",org:"Stanford BASES",amt:"$35,000 in prizes",dl:"2026-03-01",st:"rolling",elig:"Stanford students + open finals",link:"https://bases.stanford.edu",v:true,desc:"Annual Stanford entrepreneurship competition — open finals category for all."},
-  {id:8,c:"US",type:"Fellowship",title:"Harvard Innovation Labs Venture Program",org:"Harvard i-lab",amt:"Funding + Mentorship + Workspace",dl:"2026-09-01",st:"rolling",elig:"Harvard students and recent alumni",link:"https://innovationlabs.harvard.edu",v:true,desc:"Premier Harvard startup program with investors, mentors, and lab space."},
-  {id:9,c:"US",type:"Prize",title:"Google.org Impact Challenge",org:"Google.org",amt:"Up to $2,000,000",dl:"2026-09-01",st:"rolling",elig:"Nonprofits using tech for social impact",link:"https://impactchallenge.withgoogle.com",v:true,desc:"Google's flagship social impact grant for tech-powered nonprofits worldwide."},
-  {id:10,c:"US",type:"Grant",title:"US Dept. of Education EdTech Grant",org:"US Department of Education",amt:"$250,000 – $2,000,000",dl:"2026-07-01",st:"rolling",elig:"US-based nonprofits & institutions",link:"https://ed.gov",v:true,desc:"Federal grants driving innovation in K-12 and higher education."},
-  {id:11,c:"US",type:"Scholarship",title:"Gates Millennium Scholars",org:"Bill & Melinda Gates Foundation",amt:"Full scholarship — all costs",dl:"2026-01-15",st:"rolling",elig:"Outstanding US minority undergrad students",link:"https://gmsp.org",v:true,desc:"Full academic funding for exceptional minority students in the United States."},
-  {id:12,c:"US",type:"Competition",title:"SXSW Pitch Competition",org:"SXSW",amt:"$10,000 + Global exposure",dl:"2026-10-01",st:"rolling",elig:"Tech, social impact, EdTech startups",link:"https://sxsw.com/pitch",v:true,desc:"Annual Austin pitch stage reaching 400,000+ attendees and global media."},
-  {id:13,c:"US",type:"Competition",title:"Wharton Business Plan Competition",org:"University of Pennsylvania — Wharton",amt:"$50,000 in prizes",dl:"2026-02-15",st:"rolling",elig:"Student teams with enrolled Wharton member",link:"https://entrepreneurship.wharton.upenn.edu",v:true,desc:"Premier Wharton competition for student entrepreneurs globally."},
-  {id:14,c:"US",type:"Grant",title:"Amazon Alexa Fund",org:"Amazon",amt:"Up to $200,000",dl:null,st:"rolling",elig:"Early-stage AI / voice tech startups",link:"https://developer.amazon.com/alexafund",v:true,desc:"Amazon's venture fund for AI-first and voice-driven tech startups."},
-  {id:15,c:"US",type:"Grant",title:"Microsoft AI for Good",org:"Microsoft",amt:"Up to $120,000 in Azure + cash",dl:null,st:"rolling",elig:"Nonprofits and social enterprises using AI",link:"https://microsoft.com/ai/ai-for-good",v:true,desc:"Microsoft program providing tech grants for nonprofits applying AI for good."},
-  {id:16,c:"US",type:"Competition",title:"MassChallenge Accelerator",org:"MassChallenge",amt:"$50,000 – $100,000 (zero equity)",dl:"2026-04-01",st:"rolling",elig:"Early-stage startups in any sector",link:"https://masschallenge.org",v:true,desc:"Zero-equity accelerator — one of the largest startup programs in the world."},
-  {id:17,c:"US",type:"Competition",title:"Lean Startup Challenge",org:"Lean Startup Co.",amt:"$25,000 + Coaching",dl:"2026-08-01",st:"rolling",elig:"Early-stage teams applying lean methodology",link:"https://leanstartup.co",v:true,desc:"Annual challenge rewarding startups that apply lean principles to grow."},
-  {id:18,c:"US",type:"Fellowship",title:"Mozilla Tech & Society Fellowship",org:"Mozilla Foundation",amt:"$60,000 + $10,000 project fund",dl:"2026-10-01",st:"rolling",elig:"Tech practitioners on open internet",link:"https://foundation.mozilla.org/en/fellowships",v:true,desc:"Fellowship for technologists building a healthier, more open internet."},
-  {id:19,c:"US",type:"Competition",title:"Startup Battlefield 200",org:"TechCrunch",amt:"Cohort + major media coverage",dl:"2026-07-01",st:"rolling",elig:"Seed-stage startups worldwide",link:"https://techcrunch.com/startup-battlefield-200",v:true,desc:"TC's flagship cohort of 200 early-stage startups with direct editorial coverage."},
-  {id:20,c:"US",type:"Prize",title:"Fast Company Innovation by Design",org:"Fast Company",amt:"Global recognition + editorial",dl:"2026-06-01",st:"rolling",elig:"Designers, companies, teams worldwide",link:"https://fastcompany.com/innovation-by-design",v:true,desc:"Prestigious awards recognising design-driven innovation across all industries."},
-  {id:21,c:"US",type:"Grant",title:"Kauffman Foundation Grants",org:"Kauffman Foundation",amt:"$50,000 – $500,000",dl:null,st:"rolling",elig:"Entrepreneurship education orgs in US",link:"https://kauffman.org",v:true,desc:"Grants supporting entrepreneurship research, education, and ecosystem builders."},
-  {id:22,c:"US",type:"Fellowship",title:"Schmidt Futures Innovation Fellows",org:"Schmidt Futures",amt:"Long-term funding + support",dl:"2026-11-01",st:"rolling",elig:"Exceptional scientists and technologists",link:"https://schmidtfutures.com",v:true,desc:"Funding exceptional people who make breakthroughs in science and technology."},
-  {id:23,c:"US",type:"Competition",title:"CEO National Pitch Competition",org:"Collegiate Entrepreneurs' Organization",amt:"$10,000 national prize",dl:"2026-10-15",st:"rolling",elig:"US college students with a startup",link:"https://c-e-o.org",v:true,desc:"National pitch competition for all US college students with an early-stage startup."},
-  {id:24,c:"US",type:"Competition",title:"HeroX Prize Challenges",org:"HeroX",amt:"$5,000 – $500,000 per challenge",dl:null,st:"rolling",elig:"Global — multiple open challenges",link:"https://herox.com",v:true,desc:"Innovation prize platform with open challenges across EdTech, AI, health & more."},
-  {id:25,c:"US",type:"Competition",title:"Venture for America Startup Challenge",org:"Venture for America",amt:"$10,000 seed grant",dl:"2026-05-01",st:"rolling",elig:"VFA fellows and alumni",link:"https://ventureforamerica.org",v:true,desc:"Annual startup challenge for VFA fellows — seed funding for early ventures."},
-  {id:26,c:"BD",type:"Competition",title:"BASIS National ICT Award",org:"Bangladesh Association of Software & IT",amt:"৳5,00,000 + Trophy",dl:"2026-02-28",st:"rolling",elig:"Bangladeshi companies & individuals in ICT",link:"https://basis.org.bd",v:true,desc:"Bangladesh's most prestigious national tech award across ICT, software, and startup categories."},
-  {id:27,c:"BD",type:"Competition",title:"Startup Bangladesh National Award",org:"Startup Bangladesh Limited (Govt.)",amt:"BDT 10 Lac + Mentorship",dl:"2026-03-15",st:"rolling",elig:"Bangladesh-registered startups, any sector",link:"https://startupbangladesh.gov.bd",v:true,desc:"Government flagship competition recognising innovative Bangladeshi startups across all sectors."},
-  {id:28,c:"BD",type:"Grant",title:"a2i Innovation Fund",org:"Aspire to Innovate (a2i) — ICT Division",amt:"Up to BDT 25 Lac",dl:"2026-04-30",st:"rolling",elig:"Individuals, teams & startups in digital services",link:"https://a2i.gov.bd",v:true,desc:"Government grant for digital solutions improving public service delivery in Bangladesh."},
-  {id:29,c:"BD",type:"Competition",title:"Grameenphone Accelerator",org:"Grameenphone (Telenor Group)",amt:"USD 10,000 + 3-month Acceleration",dl:"2026-05-01",st:"rolling",elig:"Early-stage BD startups with working prototype",link:"https://grameenphone.com",v:true,desc:"BD's leading telecom-backed startup accelerator with Telenor global network access."},
-  {id:30,c:"BD",type:"Prize",title:"Robi Axiata Digital Innovation Awards",org:"Robi Axiata Limited",amt:"BDT 20 Lac prize pool",dl:"2026-04-15",st:"rolling",elig:"Bangladeshi students & professionals under 35",link:"https://robi.com.bd",v:true,desc:"Annual awards for digital innovation among Bangladeshi youth — mobile, AI, social impact."},
-  {id:31,c:"BD",type:"Competition",title:"BUET App Contest",org:"Bangladesh University of Engineering & Technology",amt:"BDT 1,50,000 + Certificates",dl:"2026-03-30",st:"rolling",elig:"University students across Bangladesh",link:"https://buet.ac.bd",v:true,desc:"Annual app development contest from BUET — strong category for EdTech solutions."},
-  {id:32,c:"BD",type:"Fellowship",title:"BRAC Social Innovation Fellowship",org:"BRAC University",amt:"Stipend + 6-month Fellowship",dl:"2026-06-01",st:"rolling",elig:"BD graduates working on social enterprises",link:"https://bracuniversity.ac.bd",v:true,desc:"Fellowship supporting graduates building social enterprises with BRAC's global network."},
-  {id:33,c:"BD",type:"Event",title:"Bangladesh Innovation Forum (BIF)",org:"ICT Division, Government of Bangladesh",amt:"Awards + Investor Meetings",dl:"2026-07-01",st:"rolling",elig:"Open to all — startups, students, developers",link:"https://ictd.gov.bd",v:true,desc:"Bangladesh's largest annual tech and innovation event. Pitch to investors, win awards."},
-  {id:34,c:"BD",type:"Scholarship",title:"ICT Division Merit Scholarship",org:"ICT Division, Bangladesh",amt:"Full tuition + BDT 5,000/month",dl:"2026-05-31",st:"rolling",elig:"Bangladeshi students in CSE / EEE / IT programs",link:"https://ictd.gov.bd",v:true,desc:"Government scholarship for outstanding students in technology programs at BD universities."},
-  {id:35,c:"BD",type:"Competition",title:"bKash Innovation Challenge",org:"bKash Limited",amt:"BDT 15 Lac + Piloting Opportunity",dl:"2026-05-15",st:"rolling",elig:"Startups building FinTech / financial inclusion solutions",link:"https://bkash.com",v:true,desc:"BD's leading mobile financial service backing startups in payments and financial inclusion."},
-  {id:36,c:"BD",type:"Competition",title:"DIU Tech Carnival Hackathon",org:"Daffodil International University",amt:"BDT 1,00,000 + Trophies",dl:"2026-02-28",st:"rolling",elig:"University students, individuals or teams",link:"https://diu.ac.bd",v:false,desc:"Annual university hackathon open to all Bangladeshi students — coding, design, innovation."},
-  {id:37,c:"BD",type:"Grant",title:"UNDP Bangladesh Accelerator Lab Grant",org:"UNDP Bangladesh",amt:"Up to USD 20,000",dl:"2026-06-30",st:"rolling",elig:"Innovators with grassroots solutions in Bangladesh",link:"https://undp.org/bangladesh",v:true,desc:"UN grant supporting bold, locally-rooted innovations solving development challenges in BD."},
-  {id:38,c:"BD",type:"Competition",title:"National Hackathon Bangladesh",org:"ICT Division × a2i",amt:"BDT 5 Lac + Recognition",dl:"2026-08-15",st:"rolling",elig:"All Bangladeshi students and professionals",link:"https://a2i.gov.bd",v:true,desc:"Largest government-backed hackathon in Bangladesh — open to all tech enthusiasts."},
-  {id:39,c:"BD",type:"Fellowship",title:"Young Leaders Bangladesh",org:"British Council Bangladesh",amt:"Training + UK Visit + Certificate",dl:"2026-07-15",st:"rolling",elig:"Young Bangladeshis aged 18–28",link:"https://britishcouncil.org",v:true,desc:"Leadership development program with UK visit opportunity for Bangladeshi young leaders."},
-  {id:40,c:"BD",type:"Competition",title:"NSU Startup Challenge",org:"North South University",amt:"BDT 50,000 + Mentorship",dl:"2026-03-01",st:"rolling",elig:"NSU and all BD university students",link:"https://northsouth.edu",v:false,desc:"Startup pitch competition welcoming students from all Bangladeshi universities."},
-  {id:41,c:"BD",type:"Event",title:"Dhaka Startup Summit",org:"Startup Dhaka Foundation",amt:"Pitch prizes + Networking",dl:"2026-04-20",st:"rolling",elig:"Founders and entrepreneurs in Bangladesh",link:"https://startupdhaka.com",v:false,desc:"Bangladesh's premier startup networking event connecting founders, investors, and corporates."},
-  {id:42,c:"BD",type:"Competition",title:"SheTrades Bangladesh — Women Startup Pitch",org:"ITC (UN) × Women Entrepreneurs",amt:"USD 5,000 + Trade Exposure",dl:"2026-06-15",st:"rolling",elig:"Female-led businesses in Bangladesh",link:"https://shetrades.com",v:true,desc:"Global initiative supporting women-led businesses with funding and trade access."},
-  {id:43,c:"BD",type:"Competition",title:"KUET Tech Carnival",org:"Khulna University of Engineering & Technology",amt:"BDT 80,000 + Trophies",dl:"2026-04-05",st:"rolling",elig:"University students — robotics, coding",link:"https://kuet.ac.bd",v:false,desc:"Multi-discipline tech festival — robotics, programming, project showcase and more."},
-  {id:44,c:"BD",type:"Event",title:"IUT Tech Fest",org:"Islamic University of Technology (OIC)",amt:"Prizes + Certificate",dl:"2026-03-10",st:"rolling",elig:"University students — programming, robotics",link:"https://iutoic-dhaka.edu",v:false,desc:"Annual tech festival at IUT with competitions in programming, robotics, and design."},
-  {id:45,c:"BD",type:"Scholarship",title:"Dutch-Bangla Bank Foundation Scholarship",org:"Dutch-Bangla Bank Foundation",amt:"BDT 4,500–6,000/month",dl:"2026-09-01",st:"rolling",elig:"Meritorious but financially disadvantaged BD students",link:"https://dutchbanglabank.com",v:true,desc:"Monthly stipend scholarship for meritorious but financially struggling Bangladeshi students."},
-  {id:46,c:"BD",type:"Event",title:"Bangladesh EdTech Summit",org:"CanvasIQ × EdTech BD Community",amt:"Networking + Pitch Stage",dl:"2026-09-01",st:"new",elig:"EdTech founders, educators, and investors",link:"https://numarix.netlify.app",v:true,desc:"Bangladesh's first dedicated EdTech summit — pitch your education startup and connect with investors."},
-  {id:47,c:"Global",type:"Scholarship",title:"Erasmus Mundus Joint Masters",org:"European Commission",amt:"Full tuition + €1,000/month",dl:"2026-01-20",st:"rolling",elig:"International students for EU programs",link:"https://erasmus-plus.ec.europa.eu",v:true,desc:"EU flagship scholarship for joint master's degrees across multiple European universities."},
-  {id:48,c:"Global",type:"Competition",title:"Global Social Venture Competition",org:"UC Berkeley Haas School of Business",amt:"$25,000 + Mentorship",dl:"2026-01-31",st:"rolling",elig:"Student and grad social ventures worldwide",link:"https://gsvc.org",v:true,desc:"Premier global competition for student social ventures — Berkeley-hosted."},
-  {id:49,c:"Global",type:"Scholarship",title:"Türkiye Bursları Scholarship",org:"Republic of Turkey",amt:"Full scholarship + accommodation + stipend",dl:"2026-02-20",st:"soon",elig:"International students from 180+ countries",link:"https://turkiyeburslari.gov.tr",v:true,desc:"Full government scholarship covering tuition, housing, and monthly living allowance."},
-  {id:50,c:"Global",type:"Fellowship",title:"Echoing Green Global Fellowship",org:"Echoing Green",amt:"$80,000 over 2 years",dl:"2026-02-01",st:"rolling",elig:"Emerging social entrepreneurs, any country",link:"https://echoinggreen.org",v:true,desc:"World-renowned social entrepreneurship fellowship — ~2% acceptance rate."},
-  {id:51,c:"Global",type:"Scholarship",title:"Fulbright Foreign Student Program",org:"US Department of State",amt:"Full US graduate study funding",dl:"2026-02-28",st:"rolling",elig:"Citizens of participating countries incl. Bangladesh",link:"https://fulbrightprogram.org",v:true,desc:"Prestigious US government scholarship funding graduate study in the United States."},
-  {id:52,c:"Global",type:"Scholarship",title:"Korean Government Scholarship (KGSP)",org:"National Institute for International Education",amt:"Full tuition + stipend + airfare",dl:"2026-03-01",st:"rolling",elig:"International students from eligible countries",link:"https://studyinkorea.go.kr",v:true,desc:"Comprehensive Korean government scholarship covering all costs including living allowance."},
-  {id:53,c:"Global",type:"Prize",title:"MIT Solve Global Challenge",org:"MIT",amt:"Up to $10,000 + MIT Network",dl:"2026-03-31",st:"rolling",elig:"Any founder or team, any country",link:"https://solve.mit.edu",v:true,desc:"MIT's annual challenge for tech-based solutions to global problems — open worldwide."},
-  {id:54,c:"Global",type:"Competition",title:"Global Student Entrepreneur Awards (GSEA)",org:"Entrepreneurs' Organization (EO)",amt:"$10,000 + EO Global Network",dl:"2026-04-30",st:"rolling",elig:"Enrolled students who own and run a business",link:"https://gsea.org",v:true,desc:"World's premier competition for student entrepreneurs — national rounds in 60+ countries."},
-  {id:55,c:"Global",type:"Fellowship",title:"Obama Foundation Leaders — Asia Pacific",org:"Obama Foundation",amt:"Leadership training + Global Network",dl:"2026-05-01",st:"rolling",elig:"Emerging leaders aged 24–40, Asia Pacific",link:"https://obama.org/programs/leaders",v:true,desc:"Flagship Asia Pacific leadership program for young change-makers including Bangladesh."},
-  {id:56,c:"Global",type:"Scholarship",title:"Japan MEXT Scholarship",org:"Ministry of Education, Japan",amt:"Full tuition + ¥117,000/month",dl:"2026-05-01",st:"rolling",elig:"International students for study in Japan",link:"https://mext.go.jp",v:true,desc:"Japan's premier government scholarship for international undergraduate and graduate students."},
-  {id:57,c:"Global",type:"Competition",title:"ADB Youth for Asia Program",org:"Asian Development Bank",amt:"Mentorship + Project Funding",dl:"2026-05-31",st:"rolling",elig:"Youth innovators in Asia and Pacific region",link:"https://adb.org/youth",v:true,desc:"ADB program supporting young Asian innovators with funding and mentorship."},
-  {id:58,c:"Global",type:"Competition",title:"EY Entrepreneur of the Year",org:"Ernst & Young",amt:"Global recognition + EY network",dl:"2026-06-01",st:"rolling",elig:"Entrepreneurs worldwide — national heats",link:"https://ey.com/eoy",v:true,desc:"Globally recognised award — compete nationally first, then global finals."},
-  {id:59,c:"Global",type:"Prize",title:"Rolex Awards for Enterprise",org:"Rolex SA",amt:"CHF 100,000 (~$110,000)",dl:"2026-06-01",st:"rolling",elig:"Individuals with innovative projects globally",link:"https://rolexawards.com",v:true,desc:"Prestigious awards for pioneering projects that genuinely benefit humanity."},
-  {id:60,c:"Global",type:"Competition",title:"Seedstars World Competition",org:"Seedstars",amt:"Up to $500,000 equity investment",dl:"2026-06-30",st:"rolling",elig:"Early-stage startups in emerging markets",link:"https://seedstars.com",v:true,desc:"Global competition connecting best emerging market startups with top investors."},
-  {id:61,c:"Global",type:"Grant",title:"Gates Foundation Grand Challenges",org:"Bill & Melinda Gates Foundation",amt:"$100,000 exploratory grant",dl:"2026-08-31",st:"rolling",elig:"Researchers and innovators globally",link:"https://gcgh.grandchallenges.org",v:true,desc:"Bold grants for innovative solutions to major global health and development challenges."},
-  {id:62,c:"Global",type:"Grant",title:"Skoll Foundation Awards",org:"Skoll Foundation",amt:"$1,250,000 over 3 years",dl:"2026-09-01",st:"rolling",elig:"Established social enterprises with proven impact",link:"https://skoll.org",v:true,desc:"Major multi-year grant for social entrepreneurs ready to scale proven impact."},
-  {id:63,c:"Global",type:"Competition",title:"Cartier Women's Initiative Awards",org:"Cartier",amt:"$100,000 + Executive coaching",dl:"2026-09-30",st:"rolling",elig:"Women-led early-stage social impact startups",link:"https://cartierwomensinitiative.com",v:true,desc:"Global awards for women-led impact businesses — cash prize and year-long coaching."},
-  {id:64,c:"Global",type:"Competition",title:"Hult Prize Global Challenge",org:"Hult International Business School",amt:"$1,000,000 prize",dl:"2026-10-01",st:"rolling",elig:"University student teams worldwide",link:"https://hultprize.org",v:true,desc:"World's largest student social enterprise competition — campus, regional, global rounds."},
-  {id:65,c:"Global",type:"Scholarship",title:"DAAD Scholarship — Germany",org:"German Academic Exchange Service (DAAD)",amt:"Full study funding in Germany",dl:"2026-10-15",st:"rolling",elig:"International students for study in Germany",link:"https://daad.de",v:true,desc:"Germany's premier scholarship — full tuition, living stipend, and travel allowance."},
-  {id:66,c:"Global",type:"Fellowship",title:"TED Fellows Program",org:"TED",amt:"Fellowship support + TED stage access",dl:"2026-09-30",st:"rolling",elig:"Breakthrough doers and makers under 40 globally",link:"https://ted.com/participate/ted-fellows-program",v:true,desc:"TED's fellowship for remarkable individuals doing extraordinary work in any field."},
-  {id:67,c:"Global",type:"Fellowship",title:"Schwarzman Scholars Program",org:"Schwarzman College, Tsinghua University",amt:"Fully funded 1-year Master's in China",dl:"2026-09-28",st:"rolling",elig:"Young leaders aged 18–28 worldwide",link:"https://schwarzmanscholars.org",v:true,desc:"Fully-funded master's at Tsinghua for the next generation of global leaders."},
-  {id:68,c:"Global",type:"Scholarship",title:"Rhodes Scholarship — Oxford",org:"Rhodes Trust",amt:"Full Oxford University funding",dl:"2026-10-01",st:"rolling",elig:"Outstanding students aged 18–24",link:"https://rhodeshouse.ox.ac.uk",v:true,desc:"The world's oldest and most celebrated international graduate scholarship."},
+// ── STATIC DATA ───────────────────────────────────────────────────────────────
+const STATIC=[
+  // ── US ────────────────────────────────────────────────────────────────────
+  {id:1,c:"US",type:"Fellowship",title:"Thiel Fellowship",org:"Thiel Foundation",amt:"$100,000 over 2 years",dl:"2026-10-15",st:"rolling",elig:"Founders under 23",link:"https://thielfellowship.org",v:true,desc:"Elite 2-year fellowship — 20 fellows selected globally each year."},
+  {id:2,c:"US",type:"Fellowship",title:"Y Combinator Startup Program",org:"Y Combinator",amt:"$500,000 (7% equity)",dl:"2026-09-30",st:"rolling",elig:"Any founder worldwide",link:"https://ycombinator.com/apply",v:true,desc:"World's most prestigious startup accelerator. Alumni include Airbnb, Stripe, Dropbox."},
+  {id:3,c:"US",type:"Grant",title:"NSF SBIR Phase I",org:"National Science Foundation",amt:"Up to $275,000",dl:"2026-12-04",st:"rolling",elig:"US-based small businesses",link:"https://seedfund.nsf.gov",v:true,desc:"Non-dilutive federal seed grant for deep tech and EdTech startups."},
+  {id:4,c:"US",type:"Competition",title:"MIT $100K Entrepreneurship Competition",org:"MIT",amt:"Up to $100,000",dl:"2027-02-28",st:"rolling",elig:"Open category for all teams",link:"https://mit100k.org",v:true,desc:"One of the world's oldest and most prestigious startup competitions."},
+  {id:5,c:"US",type:"Competition",title:"TechCrunch Disrupt Startup Battlefield",org:"TechCrunch",amt:"$100,000 + Global Media",dl:"2026-09-01",st:"rolling",elig:"Early-stage startups worldwide",link:"https://techcrunch.com/events/disrupt",v:true,desc:"The most visible startup pitch stage in tech — broadcast to millions globally."},
+  {id:6,c:"US",type:"Event",title:"TechCrunch Disrupt Conference",org:"TechCrunch",amt:"Tickets + Pitch Stage Access",dl:"2026-10-15",st:"rolling",elig:"Founders, investors, and tech enthusiasts",link:"https://techcrunch.com/events/disrupt",v:true,desc:"The flagship tech conference — meet investors, pitch on stage, launch your startup."},
+  {id:7,c:"US",type:"Competition",title:"Rice Business Plan Competition",org:"Rice University",amt:"$1,500,000+ in prizes",dl:"2027-01-15",st:"rolling",elig:"Student-run companies globally",link:"https://rbpc.rice.edu",v:true,desc:"World's richest graduate-level business plan competition — teams from 40+ countries."},
+  {id:8,c:"US",type:"Prize",title:"Google.org Impact Challenge",org:"Google.org",amt:"Up to $2,000,000",dl:"2026-09-01",st:"rolling",elig:"Nonprofits using tech for social impact",link:"https://impactchallenge.withgoogle.com",v:true,desc:"Google's flagship social impact grant for tech-powered nonprofits worldwide."},
+  {id:9,c:"US",type:"Grant",title:"NSF SBIR Phase II",org:"National Science Foundation",amt:"Up to $1,000,000",dl:"2026-11-15",st:"rolling",elig:"Phase I awardees with proven concept",link:"https://seedfund.nsf.gov",v:true,desc:"Second stage of the NSF SBIR program for scaling proven deep tech innovations."},
+  {id:10,c:"US",type:"Event",title:"NASA Space Apps Challenge",org:"NASA",amt:"Recognition + Mentorship",dl:"2026-10-01",st:"rolling",elig:"Anyone worldwide — annual hackathon",link:"https://www.spaceappschallenge.org",v:true,desc:"Annual 48-hour hackathon with NASA data challenges. Events held in cities worldwide including Dhaka."},
+  {id:11,c:"US",type:"Competition",title:"Microsoft Imagine Cup",org:"Microsoft",amt:"$100,000 + Azure credits",dl:"2026-11-01",st:"rolling",elig:"Students enrolled at university worldwide",link:"https://imaginecup.microsoft.com",v:true,desc:"Microsoft's annual global student technology competition. AI, sustainability, and EdTech tracks."},
+  {id:12,c:"US",type:"Competition",title:"Google Summer of Code",org:"Google",amt:"$1,500 – $6,600 stipend",dl:"2026-10-15",st:"rolling",elig:"Students 18+ worldwide with coding skills",link:"https://summerofcode.withgoogle.com",v:true,desc:"Annual program connecting students with open-source organizations for 3-month coding projects."},
+  {id:13,c:"US",type:"Event",title:"SXSW Pitch Competition & Conference",org:"SXSW",amt:"$10,000 + Global exposure",dl:"2026-10-01",st:"rolling",elig:"Tech and social impact startups",link:"https://sxsw.com/pitch",v:true,desc:"Annual Austin conference — pitch to thousands of investors and media from around the world."},
+  {id:14,c:"US",type:"Competition",title:"AngelHack Global Hackathon",org:"AngelHack",amt:"$1,000 – $10,000 per challenge",dl:"2026-08-01",st:"rolling",elig:"Developers and teams globally",link:"https://angelhack.com",v:true,desc:"Series of global hackathons across 50+ cities annually including events in South Asia."},
+  {id:15,c:"US",type:"Event",title:"HackMIT",org:"MIT",amt:"Prizes + Sponsor Opportunities",dl:"2026-09-15",st:"rolling",elig:"University students worldwide",link:"https://hackmit.org",v:true,desc:"Annual MIT hackathon bringing together the world's best student hackers for 24 hours of building."},
+  {id:16,c:"US",type:"Event",title:"PennApps — UPenn Hackathon",org:"University of Pennsylvania",amt:"$5,000 in prizes",dl:"2026-09-01",st:"rolling",elig:"University students worldwide (apply online)",link:"https://pennapps.com",v:true,desc:"One of the world's oldest college hackathons. Multiple remote participation options available."},
+  {id:17,c:"US",type:"Fellowship",title:"Harvard Innovation Labs Venture Program",org:"Harvard i-lab",amt:"Funding + Mentorship + Workspace",dl:"2026-09-01",st:"rolling",elig:"Harvard students and recent alumni",link:"https://innovationlabs.harvard.edu",v:true,desc:"Premier Harvard startup program with investors, mentors, and lab space."},
+  {id:18,c:"US",type:"Grant",title:"Microsoft AI for Good",org:"Microsoft",amt:"Up to $120,000 in Azure + cash",dl:null,st:"rolling",elig:"Nonprofits and social enterprises using AI",link:"https://microsoft.com/ai/ai-for-good",v:true,desc:"Tech grants for nonprofits applying AI to tackle global challenges."},
+  {id:19,c:"US",type:"Grant",title:"Amazon Alexa Fund",org:"Amazon",amt:"Up to $200,000",dl:null,st:"rolling",elig:"Early-stage AI / voice tech startups",link:"https://developer.amazon.com/alexafund",v:true,desc:"Amazon's venture fund for AI-first and voice-driven tech startups."},
+  {id:20,c:"US",type:"Competition",title:"MassChallenge Accelerator",org:"MassChallenge",amt:"$50,000 – $100,000 (zero equity)",dl:"2026-10-01",st:"rolling",elig:"Early-stage startups in any sector",link:"https://masschallenge.org",v:true,desc:"Zero-equity accelerator — one of the largest startup programs in the world."},
+  {id:21,c:"US",type:"Event",title:"Startup Grind Global Conference",org:"Startup Grind",amt:"Networking + Pitch Opportunities",dl:"2027-02-01",st:"rolling",elig:"Founders and entrepreneurs worldwide",link:"https://startupgrind.com/conference",v:true,desc:"Annual Silicon Valley conference connecting 10,000+ founders, investors, and startup enthusiasts."},
+  {id:22,c:"US",type:"Fellowship",title:"Mozilla Tech & Society Fellowship",org:"Mozilla Foundation",amt:"$60,000 + $10,000 project fund",dl:"2026-10-01",st:"rolling",elig:"Tech practitioners on open internet",link:"https://foundation.mozilla.org/en/fellowships",v:true,desc:"Fellowship for technologists building a healthier, more open internet."},
+  {id:23,c:"US",type:"Competition",title:"Facebook/Meta Hacker Cup",org:"Meta",amt:"$20,000 top prize",dl:"2026-08-01",st:"rolling",elig:"Any programmer worldwide",link:"https://www.facebook.com/codingcompetitions/hacker-cup",v:true,desc:"Annual global programming competition open to all developers. Multiple rounds from online to onsite finals."},
+  {id:24,c:"US",type:"Competition",title:"Google Hash Code",org:"Google",amt:"Swag + internship opportunities",dl:"2027-01-01",st:"rolling",elig:"Teams of 2–4 students or professionals",link:"https://codingcompetitions.withgoogle.com/hashcode",v:true,desc:"Annual team programming competition. Hubs hosted globally — look for a Bangladesh hub."},
+  {id:25,c:"US",type:"Fellowship",title:"Schmidt Futures Innovation Fellows",org:"Schmidt Futures",amt:"Long-term funding + support",dl:"2026-11-01",st:"rolling",elig:"Exceptional scientists and technologists",link:"https://schmidtfutures.com",v:true,desc:"Funding exceptional people who make breakthroughs in science and technology."},
+  // ── BANGLADESH ──────────────────────────────────────────────────────────────
+  {id:26,c:"BD",type:"Competition",title:"BASIS National ICT Award",org:"Bangladesh Association of Software & IT",amt:"৳5,00,000 + Trophy",dl:"2026-08-28",st:"rolling",elig:"Bangladeshi companies & individuals in ICT",link:"https://basis.org.bd",v:true,desc:"Bangladesh's most prestigious national tech award across ICT, software, and startup categories."},
+  {id:27,c:"BD",type:"Competition",title:"Startup Bangladesh National Award",org:"Startup Bangladesh Limited (Govt.)",amt:"BDT 10 Lac + Mentorship",dl:"2026-09-15",st:"rolling",elig:"Bangladesh-registered startups, any sector",link:"https://startupbangladesh.gov.bd",v:true,desc:"Government flagship competition recognising innovative Bangladeshi startups across all sectors."},
+  {id:28,c:"BD",type:"Grant",title:"a2i Innovation Fund",org:"Aspire to Innovate (a2i) — ICT Division",amt:"Up to BDT 25 Lac",dl:"2026-10-30",st:"rolling",elig:"Individuals, teams & startups in digital services",link:"https://a2i.gov.bd",v:true,desc:"Government grant for digital solutions improving public service delivery in Bangladesh."},
+  {id:29,c:"BD",type:"Competition",title:"Grameenphone Accelerator",org:"Grameenphone (Telenor Group)",amt:"USD 10,000 + 3-month Acceleration",dl:"2026-11-01",st:"rolling",elig:"Early-stage BD startups with working prototype",link:"https://grameenphone.com",v:true,desc:"BD's leading telecom-backed startup accelerator with Telenor global network access."},
+  {id:30,c:"BD",type:"Event",title:"Bangladesh Innovation Forum (BIF)",org:"ICT Division, Government of Bangladesh",amt:"Awards + Investor Meetings",dl:"2027-01-01",st:"rolling",elig:"Open to all — startups, students, developers",link:"https://ictd.gov.bd",v:true,desc:"Bangladesh's largest annual tech and innovation event. Pitch to investors, win awards."},
+  {id:31,c:"BD",type:"Competition",title:"bKash Innovation Challenge",org:"bKash Limited",amt:"BDT 15 Lac + Piloting Opportunity",dl:"2026-07-15",st:"soon",elig:"Startups building FinTech / financial inclusion solutions",link:"https://bkash.com",v:true,desc:"BD's leading mobile financial service backing startups in payments and financial inclusion."},
+  {id:32,c:"BD",type:"Competition",title:"BUET App Contest",org:"Bangladesh University of Engineering & Technology",amt:"BDT 1,50,000 + Certificates",dl:"2026-09-30",st:"rolling",elig:"University students across Bangladesh",link:"https://buet.ac.bd",v:true,desc:"Annual app development contest from BUET — strong category for EdTech solutions."},
+  {id:33,c:"BD",type:"Event",title:"BUET CSE Fest",org:"BUET CSE Department",amt:"Prizes + Internship offers",dl:"2026-08-20",st:"rolling",elig:"University students — programming, project showcase",link:"https://buet.ac.bd",v:true,desc:"Annual BUET CSE celebration featuring hackathon, project showcase, and inter-university programming contest."},
+  {id:34,c:"BD",type:"Event",title:"IUT Tech Fest",org:"Islamic University of Technology (OIC)",amt:"Prizes + Certificate",dl:"2026-09-10",st:"rolling",elig:"University students — programming, robotics",link:"https://iutoic-dhaka.edu",v:false,desc:"Annual tech festival at IUT with competitions in programming, robotics, and design."},
+  {id:35,c:"BD",type:"Event",title:"DIU Tech Carnival",org:"Daffodil International University",amt:"BDT 1,00,000 + Trophies",dl:"2026-08-15",st:"rolling",elig:"University students, individuals or teams",link:"https://diu.ac.bd",v:false,desc:"Annual university hackathon and tech carnival open to all Bangladeshi students."},
+  {id:36,c:"BD",type:"Event",title:"NSU ACM ICPC Preliminary",org:"North South University ACM Chapter",amt:"Qualification to Regional ICPC",dl:"2026-07-10",st:"soon",elig:"BD university students — competitive programming",link:"https://northsouth.edu",v:false,desc:"National preliminary round for ICPC (International Collegiate Programming Contest) — most prestigious CS competition."},
+  {id:37,c:"BD",type:"Competition",title:"National Hackathon Bangladesh",org:"ICT Division × a2i",amt:"BDT 5 Lac + Recognition",dl:"2026-08-15",st:"rolling",elig:"All Bangladeshi students and professionals",link:"https://a2i.gov.bd",v:true,desc:"Largest government-backed hackathon in Bangladesh — open to all tech enthusiasts."},
+  {id:38,c:"BD",type:"Event",title:"Dhaka Startup Summit",org:"Startup Dhaka Foundation",amt:"Pitch prizes + Networking",dl:"2026-10-20",st:"rolling",elig:"Founders and entrepreneurs in Bangladesh",link:"https://startupdhaka.com",v:false,desc:"Bangladesh's premier startup networking event connecting founders, investors, and corporates."},
+  {id:39,c:"BD",type:"Event",title:"Bangladesh EdTech Summit",org:"CanvasIQ × EdTech BD Community",amt:"Networking + Pitch Stage",dl:"2026-09-01",st:"new",elig:"EdTech founders, educators, and investors",link:"https://numarix.netlify.app",v:true,desc:"Bangladesh's first dedicated EdTech summit — pitch your education startup and connect with investors."},
+  {id:40,c:"BD",type:"Fellowship",title:"BRAC Social Innovation Fellowship",org:"BRAC University",amt:"Stipend + 6-month Fellowship",dl:"2026-12-01",st:"rolling",elig:"BD graduates working on social enterprises",link:"https://bracuniversity.ac.bd",v:true,desc:"Fellowship supporting graduates building social enterprises with BRAC's global network."},
+  {id:41,c:"BD",type:"Scholarship",title:"ICT Division Merit Scholarship",org:"ICT Division, Bangladesh",amt:"Full tuition + BDT 5,000/month",dl:"2026-07-31",st:"soon",elig:"Bangladeshi students in CSE / EEE / IT programs",link:"https://ictd.gov.bd",v:true,desc:"Government scholarship for outstanding students in technology programs at BD universities."},
+  {id:42,c:"BD",type:"Grant",title:"UNDP Bangladesh Accelerator Lab Grant",org:"UNDP Bangladesh",amt:"Up to USD 20,000",dl:"2026-12-30",st:"rolling",elig:"Innovators with grassroots solutions in Bangladesh",link:"https://undp.org/bangladesh",v:true,desc:"UN grant supporting bold, locally-rooted innovations solving development challenges in BD."},
+  {id:43,c:"BD",type:"Event",title:"KUET Tech Carnival",org:"Khulna University of Engineering & Technology",amt:"BDT 80,000 + Trophies",dl:"2026-10-05",st:"rolling",elig:"University students — robotics, coding",link:"https://kuet.ac.bd",v:false,desc:"Multi-discipline tech festival — robotics, programming, project showcase and more."},
+  {id:44,c:"BD",type:"Competition",title:"SheTrades Bangladesh — Women Startup Pitch",org:"ITC (UN) × Women Entrepreneurs",amt:"USD 5,000 + Trade Exposure",dl:"2026-12-15",st:"rolling",elig:"Female-led businesses in Bangladesh",link:"https://shetrades.com",v:true,desc:"Global initiative supporting women-led businesses with funding and trade access."},
+  {id:45,c:"BD",type:"Prize",title:"Robi Axiata Digital Innovation Awards",org:"Robi Axiata Limited",amt:"BDT 20 Lac prize pool",dl:"2026-10-15",st:"rolling",elig:"Bangladeshi students & professionals under 35",link:"https://robi.com.bd",v:true,desc:"Annual awards for digital innovation among Bangladeshi youth — mobile, AI, social impact."},
+  {id:46,c:"BD",type:"Fellowship",title:"Young Leaders Bangladesh",org:"British Council Bangladesh",amt:"Training + UK Visit + Certificate",dl:"2027-01-15",st:"rolling",elig:"Young Bangladeshis aged 18–28",link:"https://britishcouncil.org",v:true,desc:"Leadership development program with UK visit opportunity for Bangladeshi young leaders."},
+  {id:47,c:"BD",type:"Scholarship",title:"Dutch-Bangla Bank Foundation Scholarship",org:"Dutch-Bangla Bank Foundation",amt:"BDT 4,500–6,000/month",dl:"2027-03-01",st:"rolling",elig:"Meritorious but financially disadvantaged BD students",link:"https://dutchbanglabank.com",v:true,desc:"Monthly stipend scholarship for meritorious but financially struggling Bangladeshi students."},
+  // ── GLOBAL ──────────────────────────────────────────────────────────────────
+  {id:50,c:"Global",type:"Event",title:"NASA Space Apps Challenge — Global",org:"NASA",amt:"Recognition + prizes by location",dl:"2026-10-01",st:"rolling",elig:"Anyone worldwide — Dhaka hub active",link:"https://www.spaceappschallenge.org",v:true,desc:"Annual 48-hour NASA hackathon held in 150+ cities worldwide. Bangladesh hosts a local hub every year."},
+  {id:51,c:"Global",type:"Event",title:"Junction Hackathon — Helsinki",org:"Junction",amt:"€10,000+ in prizes",dl:"2026-11-01",st:"rolling",elig:"Global — travel grants available for some countries",link:"https://www.junction2025.com",v:true,desc:"Europe's biggest hackathon — 1,500 hackers, 48 hours, travel grants for international participants."},
+  {id:52,c:"Global",type:"Event",title:"Web Summit — Lisbon",org:"Web Summit",amt:"Startup exhibition + Pitch stage",dl:"2026-09-01",st:"rolling",elig:"Early-stage startups worldwide",link:"https://websummit.com",v:true,desc:"Europe's largest tech conference — 70,000 attendees, 2,500 startups, massive investor access."},
+  {id:53,c:"Global",type:"Competition",title:"Hult Prize Global Challenge",org:"Hult International Business School",amt:"$1,000,000 prize",dl:"2026-10-01",st:"rolling",elig:"University student teams worldwide",link:"https://hultprize.org",v:true,desc:"World's largest student social enterprise competition — campus, regional, and global rounds."},
+  {id:54,c:"Global",type:"Competition",title:"Global Student Entrepreneur Awards",org:"Entrepreneurs' Organization (EO)",amt:"$10,000 + EO Global Network",dl:"2026-10-30",st:"rolling",elig:"Enrolled students who own and run a business",link:"https://gsea.org",v:true,desc:"World's premier competition for student entrepreneurs — rounds in 60+ countries."},
+  {id:55,c:"Global",type:"Fellowship",title:"Echoing Green Global Fellowship",org:"Echoing Green",amt:"$80,000 over 2 years",dl:"2027-02-01",st:"rolling",elig:"Emerging social entrepreneurs, any country",link:"https://echoinggreen.org",v:true,desc:"World-renowned social entrepreneurship fellowship — ~2% acceptance rate."},
+  {id:56,c:"Global",type:"Scholarship",title:"Fulbright Foreign Student Program",org:"US Department of State",amt:"Full US graduate study funding",dl:"2027-02-28",st:"rolling",elig:"Citizens of participating countries incl. Bangladesh",link:"https://fulbrightprogram.org",v:true,desc:"Prestigious US government scholarship funding graduate study in the United States."},
+  {id:57,c:"Global",type:"Scholarship",title:"Chevening Scholarship (UK)",org:"UK Government (FCDO)",amt:"Full funding for 1-year UK Master's",dl:"2026-11-05",st:"rolling",elig:"Future leaders from eligible countries incl. Bangladesh",link:"https://chevening.org",v:true,desc:"The UK government's global scholarship for future leaders — fully funded UK Master's."},
+  {id:58,c:"Global",type:"Scholarship",title:"Commonwealth Scholarship & Fellowship",org:"Commonwealth Scholarship Commission",amt:"Full UK study funding",dl:"2026-12-01",st:"rolling",elig:"Citizens of Commonwealth countries incl. Bangladesh",link:"https://cscuk.fcdo.gov.uk",v:true,desc:"UK government-funded scholarship for Commonwealth citizens for postgraduate study."},
+  {id:59,c:"Global",type:"Scholarship",title:"DAAD Scholarship — Germany",org:"German Academic Exchange Service",amt:"Full study funding in Germany",dl:"2026-10-15",st:"rolling",elig:"International students for study in Germany",link:"https://daad.de",v:true,desc:"Germany's premier scholarship — full tuition, living stipend, and travel allowance."},
+  {id:60,c:"Global",type:"Scholarship",title:"Erasmus Mundus Joint Masters",org:"European Commission",amt:"Full tuition + €1,000/month",dl:"2027-01-20",st:"rolling",elig:"International students for EU programs",link:"https://erasmus-plus.ec.europa.eu",v:true,desc:"EU flagship scholarship for joint master's degrees across multiple European universities."},
+  {id:61,c:"Global",type:"Scholarship",title:"Japan MEXT Scholarship",org:"Ministry of Education, Japan",amt:"Full tuition + ¥117,000/month",dl:"2026-11-01",st:"rolling",elig:"International students for study in Japan",link:"https://mext.go.jp",v:true,desc:"Japan's premier government scholarship for international students."},
+  {id:62,c:"Global",type:"Scholarship",title:"Korean Government Scholarship (KGSP)",org:"National Institute for International Education",amt:"Full tuition + stipend + airfare",dl:"2027-03-01",st:"rolling",elig:"International students from eligible countries",link:"https://studyinkorea.go.kr",v:true,desc:"Comprehensive Korean government scholarship covering all costs including living allowance."},
+  {id:63,c:"Global",type:"Scholarship",title:"Türkiye Bursları Scholarship",org:"Republic of Turkey",amt:"Full scholarship + accommodation + stipend",dl:"2027-02-20",st:"rolling",elig:"International students from 180+ countries",link:"https://turkiyeburslari.gov.tr",v:true,desc:"Full government scholarship covering tuition, housing, and monthly living allowance."},
+  {id:64,c:"Global",type:"Fellowship",title:"Obama Foundation Leaders — Asia Pacific",org:"Obama Foundation",amt:"Leadership training + Global Network",dl:"2026-11-01",st:"rolling",elig:"Emerging leaders aged 24–40, Asia Pacific",link:"https://obama.org/programs/leaders",v:true,desc:"Flagship Asia Pacific leadership program for young change-makers including Bangladesh."},
+  {id:65,c:"Global",type:"Prize",title:"MIT Solve Global Challenge",org:"MIT",amt:"Up to $10,000 + MIT Network",dl:"2026-09-30",st:"rolling",elig:"Any founder or team, any country",link:"https://solve.mit.edu",v:true,desc:"MIT's annual challenge for tech-based solutions to global problems — open worldwide."},
+  {id:66,c:"Global",type:"Grant",title:"Gates Foundation Grand Challenges",org:"Bill & Melinda Gates Foundation",amt:"$100,000 exploratory grant",dl:"2026-08-31",st:"rolling",elig:"Researchers and innovators globally",link:"https://gcgh.grandchallenges.org",v:true,desc:"Bold grants for innovative solutions to major global health and development challenges."},
+  {id:67,c:"Global",type:"Competition",title:"Cartier Women's Initiative Awards",org:"Cartier",amt:"$100,000 + Executive coaching",dl:"2026-09-30",st:"rolling",elig:"Women-led early-stage social impact startups",link:"https://cartierwomensinitiative.com",v:true,desc:"Global awards for women-led impact businesses — cash prize and year-long coaching."},
+  {id:68,c:"Global",type:"Grant",title:"Skoll Foundation Awards",org:"Skoll Foundation",amt:"$1,250,000 over 3 years",dl:"2026-09-01",st:"rolling",elig:"Established social enterprises with proven impact",link:"https://skoll.org",v:true,desc:"Major multi-year grant for social entrepreneurs ready to scale proven impact."},
   {id:69,c:"Global",type:"Grant",title:"USAID Development Innovation Ventures",org:"USAID",amt:"$25,000 – $15,000,000",dl:"2026-12-31",st:"rolling",elig:"Any org testing innovations in developing countries",link:"https://usaid.gov/div",v:true,desc:"Three-stage grant for testing and scaling innovations in developing countries."},
-  {id:70,c:"Global",type:"Fellowship",title:"Draper Richards Kaplan Fellowship",org:"DRK Foundation",amt:"$300,000 over 3 years",dl:"2026-12-31",st:"rolling",elig:"Early-stage nonprofits with proven scalable model",link:"https://drkfoundation.org",v:true,desc:"Long-term funding for early-stage nonprofit social enterprises with high-impact potential."},
-  {id:71,c:"Global",type:"Scholarship",title:"Commonwealth Scholarship & Fellowship",org:"Commonwealth Scholarship Commission",amt:"Full UK study funding",dl:"2026-12-01",st:"rolling",elig:"Citizens of Commonwealth countries incl. Bangladesh",link:"https://cscuk.fcdo.gov.uk",v:true,desc:"UK government-funded scholarship for Commonwealth citizens for postgraduate study."},
-  {id:72,c:"Global",type:"Fellowship",title:"Ashoka Fellowship",org:"Ashoka",amt:"Stipend + Global Network (3 years)",dl:"2026-12-31",st:"rolling",elig:"Social entrepreneurs with proven systemic-change idea",link:"https://ashoka.org",v:true,desc:"One of the world's most prestigious social entrepreneurship fellowships."},
-  {id:73,c:"Global",type:"Scholarship",title:"Mastercard Foundation Scholars",org:"Mastercard Foundation",amt:"Full scholarship — tuition, living, travel",dl:"2026-11-30",st:"rolling",elig:"Economically disadvantaged students from developing countries",link:"https://mastercardfdn.org/scholars",v:true,desc:"One of the world's largest scholarship programs for students from developing nations."},
-  {id:74,c:"Global",type:"Fellowship",title:"Ford Foundation International Fellowships",org:"Ford Foundation",amt:"Full funding for graduate study",dl:"2026-10-31",st:"rolling",elig:"Social justice leaders in eligible countries",link:"https://fordfoundation.org",v:true,desc:"Fellowships for exceptional leaders committed to social justice globally."},
-  {id:75,c:"Global",type:"Competition",title:"Web Summit Startup PITCH",org:"Web Summit",amt:"Prizes + massive media coverage",dl:"2026-08-01",st:"rolling",elig:"Early-stage startups worldwide",link:"https://websummit.com/pitch",v:true,desc:"Compete at Europe's largest tech conference — global investor and media exposure."},
-  {id:76,c:"Global",type:"Competition",title:"Startup World Cup",org:"Fenox Venture Capital",amt:"$1,000,000 investment prize",dl:"2026-07-01",st:"rolling",elig:"Startups — regional heats in 60+ countries",link:"https://startupworldcup.io",v:true,desc:"The largest startup competition on earth — regional heats including Bangladesh."},
-  {id:77,c:"Global",type:"Competition",title:"UNESCO Youth Innovation Challenge",org:"UNESCO",amt:"Recognition + Global Platform",dl:"2026-09-15",st:"rolling",elig:"Young people aged 15–30 worldwide",link:"https://en.unesco.org/youth",v:true,desc:"UN challenge for youth-led solutions in education, culture, and science."},
-  {id:78,c:"Global",type:"Competition",title:"UN SDG Action Awards",org:"United Nations",amt:"Global recognition + UN network",dl:"2026-07-01",st:"rolling",elig:"Initiatives contributing to any of the 17 SDGs",link:"https://sdgactionawards.org",v:true,desc:"Recognising outstanding global initiatives advancing the UN's Sustainable Development Goals."},
-  {id:79,c:"Global",type:"Competition",title:"World Bank Youth Summit Challenge",org:"World Bank",amt:"Recognition + Mentorship",dl:"2026-08-01",st:"rolling",elig:"Youth aged 18–35 from any country",link:"https://worldbank.org/youth",v:true,desc:"Annual World Bank youth challenge to tackle global development challenges with innovation."},
-  {id:80,c:"Global",type:"Grant",title:"Chan Zuckerberg Initiative EdTech Grants",org:"Chan Zuckerberg Initiative",amt:"$100,000 – $2,000,000",dl:null,st:"rolling",elig:"EdTech nonprofits and social enterprises",link:"https://chanzuckerberg.com",v:true,desc:"Major EdTech funder backing organizations using technology to transform learning."},
-  {id:81,c:"Global",type:"Grant",title:"Open Society Foundations Grants",org:"Open Society Foundations",amt:"$10,000 – $2,000,000",dl:null,st:"rolling",elig:"Organizations advancing justice, democracy, human rights",link:"https://opensocietyfoundations.org",v:true,desc:"Large grant-maker supporting open societies, human rights, and democratic institutions."},
-  {id:82,c:"Global",type:"Grant",title:"Rockefeller Foundation Innovation Grant",org:"Rockefeller Foundation",amt:"$100,000 – $1,000,000",dl:null,st:"rolling",elig:"Organizations driving systemic change",link:"https://rockefellerfoundation.org",v:true,desc:"Strategic grants for systemic change in food systems, power, and pandemic prevention."},
-  {id:83,c:"Global",type:"Grant",title:"Omidyar Network EdTech Fund",org:"Omidyar Network",amt:"$500,000 – $5,000,000",dl:null,st:"rolling",elig:"EdTech and learning organizations globally",link:"https://omidyar.com",v:true,desc:"Impact-first fund backing EdTech organisations transforming learning access worldwide."},
-  {id:84,c:"Global",type:"Event",title:"Global Entrepreneurship Week",org:"Kauffman Foundation",amt:"Local prizes + Global Exposure",dl:"2026-11-01",st:"rolling",elig:"Entrepreneurs and students in 170+ countries",link:"https://genglobal.org",v:true,desc:"World's largest celebration of entrepreneurship — events in 170+ countries simultaneously."},
-  {id:85,c:"Global",type:"Fellowship",title:"Atlantic Fellows for Equity",org:"Atlantic Institute",amt:"Fully funded fellowship year",dl:"2026-09-01",st:"rolling",elig:"Mid-career leaders working on inequality",link:"https://atlanticfellows.org",v:true,desc:"Fully-funded fellowship for leaders combating social and economic inequality worldwide."},
-  {id:86,c:"Global",type:"Scholarship",title:"Chevening Scholarship (UK)",org:"UK Government (FCDO)",amt:"Full funding for 1-year UK Master's",dl:"2025-11-05",st:"rolling",elig:"Future leaders from eligible countries incl. Bangladesh",link:"https://chevening.org",v:true,desc:"The UK government's global scholarship for future leaders — fully funded UK Master's."},
-  {id:87,c:"Global",type:"Competition",title:"IFC SME Finance Forum Award",org:"World Bank Group — IFC",amt:"Recognition + Global network",dl:"2026-08-15",st:"rolling",elig:"Fintechs and SME lenders worldwide",link:"https://smefinanceforum.org",v:true,desc:"IFC award recognising the most innovative solutions in SME and inclusive finance globally."},
+  {id:70,c:"Global",type:"Fellowship",title:"TED Fellows Program",org:"TED",amt:"Fellowship support + TED stage access",dl:"2026-09-30",st:"rolling",elig:"Breakthrough doers and makers under 40 globally",link:"https://ted.com/participate/ted-fellows-program",v:true,desc:"TED's fellowship for remarkable individuals doing extraordinary work in any field."},
+  {id:71,c:"Global",type:"Fellowship",title:"Ashoka Fellowship",org:"Ashoka",amt:"Stipend + Global Network (3 years)",dl:"2026-12-31",st:"rolling",elig:"Social entrepreneurs with proven systemic-change idea",link:"https://ashoka.org",v:true,desc:"One of the world's most prestigious social entrepreneurship fellowships."},
+  {id:72,c:"Global",type:"Scholarship",title:"Mastercard Foundation Scholars",org:"Mastercard Foundation",amt:"Full scholarship — tuition, living, travel",dl:"2026-11-30",st:"rolling",elig:"Economically disadvantaged students from developing countries",link:"https://mastercardfdn.org/scholars",v:true,desc:"One of the world's largest scholarship programs for students from developing nations."},
+  {id:73,c:"Global",type:"Competition",title:"Startup World Cup",org:"Fenox Venture Capital",amt:"$1,000,000 investment prize",dl:"2026-07-01",st:"soon",elig:"Startups — regional heats in 60+ countries",link:"https://startupworldcup.io",v:true,desc:"The largest startup competition on earth — regional heats including Bangladesh."},
+  {id:74,c:"Global",type:"Event",title:"Global Entrepreneurship Week",org:"Kauffman Foundation",amt:"Local prizes + Global Exposure",dl:"2026-11-01",st:"rolling",elig:"Entrepreneurs and students in 170+ countries",link:"https://genglobal.org",v:true,desc:"World's largest celebration of entrepreneurship — events in 170+ countries simultaneously."},
+  {id:75,c:"Global",type:"Fellowship",title:"Schwarzman Scholars Program",org:"Schwarzman College, Tsinghua",amt:"Fully funded 1-year Master's in China",dl:"2026-09-28",st:"rolling",elig:"Young leaders aged 18–28 worldwide",link:"https://schwarzmanscholars.org",v:true,desc:"Fully-funded master's at Tsinghua for the next generation of global leaders."},
+  {id:76,c:"Global",type:"Scholarship",title:"Rhodes Scholarship — Oxford",org:"Rhodes Trust",amt:"Full Oxford University funding",dl:"2026-10-01",st:"rolling",elig:"Outstanding students aged 18–24",link:"https://rhodeshouse.ox.ac.uk",v:true,desc:"The world's oldest and most celebrated international graduate scholarship."},
+  {id:77,c:"Global",type:"Competition",title:"ADB Youth for Asia Program",org:"Asian Development Bank",amt:"Mentorship + Project Funding",dl:"2026-07-31",st:"soon",elig:"Youth innovators in Asia and Pacific region",link:"https://adb.org/youth",v:true,desc:"ADB program supporting young Asian innovators with funding and mentorship."},
+  {id:78,c:"Global",type:"Fellowship",title:"Draper Richards Kaplan Fellowship",org:"DRK Foundation",amt:"$300,000 over 3 years",dl:"2026-12-31",st:"rolling",elig:"Early-stage nonprofits with proven scalable model",link:"https://drkfoundation.org",v:true,desc:"Long-term funding for early-stage nonprofit social enterprises."},
+  {id:79,c:"Global",type:"Grant",title:"Chan Zuckerberg Initiative EdTech Grants",org:"Chan Zuckerberg Initiative",amt:"$100,000 – $2,000,000",dl:null,st:"rolling",elig:"EdTech nonprofits and social enterprises",link:"https://chanzuckerberg.com",v:true,desc:"Major EdTech funder backing organizations using technology to transform learning."},
+  {id:80,c:"Global",type:"Grant",title:"Omidyar Network EdTech Fund",org:"Omidyar Network",amt:"$500,000 – $5,000,000",dl:null,st:"rolling",elig:"EdTech and learning organizations globally",link:"https://omidyar.com",v:true,desc:"Impact-first fund backing EdTech organisations transforming learning access worldwide."},
+  {id:81,c:"Global",type:"Competition",title:"UNESCO Youth Innovation Challenge",org:"UNESCO",amt:"Recognition + Global Platform",dl:"2026-09-15",st:"rolling",elig:"Young people aged 15–30 worldwide",link:"https://en.unesco.org/youth",v:true,desc:"UN challenge for youth-led solutions in education, culture, and science."},
+  {id:82,c:"Global",type:"Event",title:"Pioneers Festival — Vienna",org:"Pioneers",amt:"Startup tickets + pitch stage",dl:"2026-09-01",st:"rolling",elig:"Startups and investors worldwide",link:"https://pioneers.io",v:true,desc:"Central Europe's premier startup festival — hundreds of investors, 1000+ startups."},
+  {id:83,c:"Global",type:"Competition",title:"EY Entrepreneur of the Year",org:"Ernst & Young",amt:"Global recognition + EY network",dl:"2026-06-15",st:"soon",elig:"Entrepreneurs worldwide — national heats",link:"https://ey.com/eoy",v:true,desc:"Globally recognised award — compete nationally first, then global finals."},
+  {id:84,c:"Global",type:"Grant",title:"Open Society Foundations Grants",org:"Open Society Foundations",amt:"$10,000 – $2,000,000",dl:null,st:"rolling",elig:"Organizations advancing justice, democracy, human rights",link:"https://opensocietyfoundations.org",v:true,desc:"Large grant-maker supporting open societies, human rights, and democratic institutions."},
+  {id:85,c:"Global",type:"Fellowship",title:"Ford Foundation International Fellowships",org:"Ford Foundation",amt:"Full funding for graduate study",dl:"2026-10-31",st:"rolling",elig:"Social justice leaders in eligible countries",link:"https://fordfoundation.org",v:true,desc:"Fellowships for exceptional leaders committed to social justice globally."},
 ];
 
-// ── STATE ────────────────────────────────────────────────────────────────────
-let activeType='all', activeCountry='all', activeStatus=null, showSaved=false;
-let saved=JSON.parse(localStorage.getItem('ciq_s5')||'[]');
+// ── STATE ─────────────────────────────────────────────────────────────────────
+let allData=[...STATIC];
+let activeType='all',activeCountry='all',activeStatus=null,showSaved=false;
+let saved=JSON.parse(localStorage.getItem('ciq_sv6')||'[]');
 
-// ── THEMES PANEL ─────────────────────────────────────────────────────────────
-function toggleThemes(){
-  const p=document.getElementById('themesPanel');
-  const a=document.getElementById('themesArrow');
-  const isOpen=p.classList.toggle('open');
-  a.style.transform=isOpen?'rotate(180deg)':'rotate(0deg)';
+// ── LIVE API FETCH ────────────────────────────────────────────────────────────
+// Fetches live hackathons from Devpost public API via CORS proxy
+async function fetchLiveHackathons(){
+  const badge=document.getElementById('apiBadge');
+  badge.style.display='flex';
+  const DEVPOST='https://devpost.com/api/hackathons?status[]=upcoming&status[]=open&order_by=deadline&per_page=24';
+  const PROXY='https://corsproxy.io/?'+encodeURIComponent(DEVPOST);
+  try{
+    const res=await fetch(PROXY,{signal:AbortSignal.timeout(8000)});
+    if(!res.ok) throw new Error('fail');
+    const json=await res.json();
+    const hacks=(json.hackathons||[]).filter(h=>h.submission_period_dates);
+    const now=new Date();
+    const live=hacks.map((h,i)=>{
+      // Parse deadline from "Jun 15, 2026 - Jul 15, 2026" or "Ends Jun 30, 2026"
+      let dlStr=null;
+      const dates=h.submission_period_dates||'';
+      const endMatch=dates.match(/[-–]\s*([A-Za-z]+ \d+,\s*\d{4})/);
+      if(endMatch){try{const d=new Date(endMatch[1]);if(d>now) dlStr=d.toISOString().slice(0,10);}catch(e){}}
+      if(!dlStr) return null; // skip if no deadline or already ended
+      return{
+        id:2000+i,c:"Global",type:"Competition",
+        title:h.title||'Hackathon',
+        org:h.organization_name||h.displayed_location?.location||'Online',
+        amt:h.prize_amount?'$'+Number(h.prize_amount).toLocaleString()+' in prizes':'Open Prizes',
+        dl:dlStr,st:"rolling",
+        elig:h.displayed_location?.location||'Open globally — online',
+        link:h.url||'https://devpost.com',
+        v:true,
+        desc:(h.tagline||'Hackathon open to participants worldwide.')+' '+(h.registrations_count?`${h.registrations_count.toLocaleString()} registered.`:''),
+        img:h.thumbnail_url||null,
+        liveAPI:true,
+      };
+    }).filter(Boolean);
+    allData=[...STATIC,...live];
+    document.getElementById('apiTag').style.display='flex';
+    badge.innerHTML='<span class="live-dot"></span>'+live.length+' live from Devpost';
+    setTimeout(()=>{badge.style.display='none';},4000);
+    renderAll();
+  }catch(e){
+    badge.innerHTML='Static data — API offline';
+    setTimeout(()=>{badge.style.display='none';},3000);
+    renderAll();
+  }
 }
-document.addEventListener('click',e=>{
-  const p=document.getElementById('themesPanel');
-  if(!e.target.closest('.search-anchor')) p.classList.remove('open');
-});
 
+// ── FILTER SYNC ───────────────────────────────────────────────────────────────
 function setType(el){
-  document.querySelectorAll('.tp-pill[data-t]').forEach(b=>b.classList.remove('on'));
-  el.classList.add('on');
-  syncSBType(el.dataset.t);
-  activeType=el.dataset.t; showSaved=false;
-  document.getElementById('savedSB').classList.remove('on');
-  renderAll();
-}
-function setCountry(el){
-  document.querySelectorAll('.tp-country').forEach(b=>b.classList.remove('on'));
-  el.classList.add('on');
-  activeCountry=el.dataset.c;
-  renderAll();
+  document.querySelectorAll('.tp-pill[data-t]').forEach(b=>b.classList.remove('on'));el.classList.add('on');
+  activeType=el.dataset.t;showSaved=false;
+  syncSB(el.dataset.t);document.getElementById('savedSB').classList.remove('on');renderAll();
 }
 function setSBType(el){
-  document.querySelectorAll('.sb-item[data-t]').forEach(b=>b.classList.remove('on'));
-  el.classList.add('on');
-  syncTPill(el.dataset.t);
-  activeType=el.dataset.t; showSaved=false;
-  document.getElementById('savedSB').classList.remove('on');
-  renderAll();
+  document.querySelectorAll('.sb-item[data-t]').forEach(b=>b.classList.remove('on'));el.classList.add('on');
+  activeType=el.dataset.t;showSaved=false;
+  syncTP(el.dataset.t);document.getElementById('savedSB').classList.remove('on');renderAll();
 }
-function syncSBType(t){
-  document.querySelectorAll('.sb-item[data-t]').forEach(b=>b.classList.remove('on'));
-  const sb=document.querySelector('.sb-item[data-t="'+t+'"]');
-  if(sb) sb.classList.add('on');
+function setCountry(el){
+  document.querySelectorAll('.tp-country').forEach(b=>b.classList.remove('on'));el.classList.add('on');
+  activeCountry=el.dataset.c;renderAll();
 }
-function syncTPill(t){
-  document.querySelectorAll('.tp-pill[data-t]').forEach(b=>b.classList.remove('on'));
-  const p=document.querySelector('.tp-pill[data-t="'+t+'"]');
-  if(p) p.classList.add('on');
-}
+function syncSB(t){document.querySelectorAll('.sb-item[data-t]').forEach(b=>b.classList.remove('on'));const s=document.querySelector('.sb-item[data-t="'+t+'"]');if(s)s.classList.add('on');}
+function syncTP(t){document.querySelectorAll('.tp-pill[data-t]').forEach(b=>b.classList.remove('on'));const p=document.querySelector('.tp-pill[data-t="'+t+'"]');if(p)p.classList.add('on');}
 function setSBStatus(el){
   if(el.classList.contains('on')){el.classList.remove('on');activeStatus=null;}
   else{document.querySelectorAll('.sb-item[data-st]').forEach(b=>b.classList.remove('on'));el.classList.add('on');activeStatus=el.dataset.st;}
   renderAll();
 }
 function toggleSaved(){
-  showSaved=!showSaved;
-  document.getElementById('savedSB').classList.toggle('on',showSaved);
-  if(showSaved){activeType='all';syncTPill('all');syncSBType('all');}
-  renderAll();
+  showSaved=!showSaved;document.getElementById('savedSB').classList.toggle('on',showSaved);
+  if(showSaved){activeType='all';syncTP('all');syncSB('all');}renderAll();
 }
-function clearFilters(){
-  activeType='all'; activeCountry='all'; activeStatus=null; showSaved=false;
-  document.querySelectorAll('.tp-pill[data-t]').forEach(b=>b.classList.remove('on'));
-  document.querySelector('.tp-pill[data-t="all"]').classList.add('on');
-  document.querySelectorAll('.tp-country').forEach(b=>b.classList.remove('on'));
-  document.querySelector('.tp-country[data-c="all"]').classList.add('on');
-  document.querySelectorAll('.sb-item[data-t]').forEach(b=>b.classList.remove('on'));
-  document.querySelector('.sb-item[data-t="all"]').classList.add('on');
+function clearAll(){
+  activeType='all';activeCountry='all';activeStatus=null;showSaved=false;
+  document.querySelectorAll('.tp-pill[data-t]').forEach(b=>b.classList.remove('on'));document.querySelector('.tp-pill[data-t="all"]').classList.add('on');
+  document.querySelectorAll('.tp-country').forEach(b=>b.classList.remove('on'));document.querySelector('.tp-country[data-c="all"]').classList.add('on');
+  document.querySelectorAll('.sb-item[data-t]').forEach(b=>b.classList.remove('on'));document.querySelector('.sb-item[data-t="all"]').classList.add('on');
   document.querySelectorAll('.sb-item[data-st],.sb-item#savedSB').forEach(b=>b.classList.remove('on'));
-  document.getElementById('searchInput').value='';
-  renderAll();
+  document.getElementById('searchInput').value='';renderAll();
+}
+function toggleThemes(){
+  const p=document.getElementById('tp');const a=document.getElementById('thArrow');
+  const o=p.classList.toggle('open');a.style.transform=o?'rotate(180deg)':'';
+}
+document.addEventListener('click',e=>{if(!e.target.closest('.search-anchor'))document.getElementById('tp').classList.remove('open');});
+
+// ── COUNTDOWN ─────────────────────────────────────────────────────────────────
+function dl2days(d){return d?Math.ceil((new Date(d)-new Date())/86400000):null;}
+function cdHtml(d){
+  if(!d) return '<span class="cp cp-r"><svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>Rolling</span>';
+  const n=dl2days(d);
+  if(n<0) return null;
+  if(n===0) return '<span class="cp cp-u"><svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>Closes today!</span>';
+  if(n<=7)  return '<span class="cp cp-u"><svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>in '+n+'d</span>';
+  if(n<=30) return '<span class="cp cp-s"><svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>in '+n+'d</span>';
+  return '<span class="cp cp-n"><svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>in '+n+'d</span>';
 }
 
-// ── COUNTDOWN ────────────────────────────────────────────────────────────────
-function daysLeft(dl){return dl?Math.ceil((new Date(dl)-new Date())/86400000):null;}
-function cdHtml(dl){
-  if(!dl) return '<span class="cp cp-r"><svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>Rolling</span>';
-  const d=daysLeft(dl);
-  if(d<0) return null;
-  if(d===0) return '<span class="cp cp-u"><svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>Closes today!</span>';
-  if(d<=7)  return '<span class="cp cp-u"><svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>in '+d+' day'+(d===1?'':'s')+'</span>';
-  if(d<=30) return '<span class="cp cp-s"><svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>in '+d+' days</span>';
-  return '<span class="cp cp-n"><svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>in '+d+' days</span>';
-}
-
-// ── CARD BUILD ────────────────────────────────────────────────────────────────
+// ── CARD ──────────────────────────────────────────────────────────────────────
 function buildCard(o){
-  const cd=cdHtml(o.dl);
-  if(cd===null) return '';
+  const cd=cdHtml(o.dl);if(cd===null) return '';
   const isSaved=saved.includes(o.id);
-  const photoId=IMGS[o.id];
-  const overlayColor=TYPE_OVERLAY[o.type]||'rgba(30,27,75,.5)';
+  const ov=OVR[o.type]||'rgba(30,27,75,.5)';
+  const photo=o.img||getTypeImg(o.type);
   const newTag=o.st==='new'?'<span class="new-tag">New</span>':'';
-  const vb=!o.v?'<span style="font-size:9px;font-weight:600;background:rgba(255,255,255,.82);color:#374151;padding:2px 7px;border-radius:5px;backdrop-filter:blur(4px)">Community</span>':'';
-
-  // Photo URL — Unsplash source (no API key needed)
-  const photoUrl=photoId
-    ?`https://images.unsplash.com/${photoId}?w=560&h=340&fit=crop&crop=entropy&q=75&auto=format`
-    :`https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=560&h=340&fit=crop&q=75&auto=format`;
-
+  const apiTag=o.liveAPI?'<span class="live-api-tag"><span class="live-dot"></span>Live</span>':'';
   return`<div class="card">
     <div class="card-img-wrap">
-      <img class="card-photo" src="${photoUrl}" alt="${o.title}" loading="lazy"
-        onerror="this.src='https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=560&h=340&fit=crop&q=75'">
-      <div class="card-overlay" style="background:linear-gradient(160deg,${overlayColor} 0%,rgba(15,23,42,.65) 100%)"></div>
+      <img class="card-photo" src="${photo}" alt="${o.title}" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=560&h=320&fit=crop&q=75'">
+      <div class="card-overlay" style="background:linear-gradient(160deg,${ov} 0%,rgba(15,23,42,.6) 100%)"></div>
       <div class="card-badges">
         <span class="type-tag tt-${o.type}">${o.type}</span>
-        <span class="country-flag-tag">${FLAGS[o.c]||'🌍'}</span>
-        ${newTag}${vb}
+        <span class="cflag-tag">${FLAGS[o.c]||'🌍'}</span>
+        ${newTag}${apiTag}
       </div>
     </div>
     <div class="card-body">
@@ -725,36 +619,33 @@ function buildCard(o){
     </div>
   </div>`;
 }
-
 function doSave(id,btn){
   if(saved.includes(id)){saved=saved.filter(i=>i!==id);btn.textContent='Save';btn.classList.remove('on');}
   else{saved.push(id);btn.textContent='Saved';btn.classList.add('on');}
-  localStorage.setItem('ciq_s5',JSON.stringify(saved));
+  localStorage.setItem('ciq_sv6',JSON.stringify(saved));
   document.getElementById('sn-saved').textContent=saved.length;
 }
 
 // ── RENDER ────────────────────────────────────────────────────────────────────
 function renderAll(){
-  Object.keys(bgIdx).forEach(k=>delete bgIdx[k]);
+  Object.keys(imgIdx).forEach(k=>delete imgIdx[k]);
   const q=document.getElementById('searchInput').value.toLowerCase();
-
-  let list=DATA.filter(o=>{
-    if(o.dl&&daysLeft(o.dl)<0) return false;
+  let list=allData.filter(o=>{
+    if(o.dl&&dl2days(o.dl)<0) return false;
     if(activeCountry!=='all'&&o.c!==activeCountry) return false;
     if(activeType!=='all'&&o.type!==activeType) return false;
     if(showSaved&&!saved.includes(o.id)) return false;
-    if(activeStatus==='urgent'&&(!o.dl||daysLeft(o.dl)>7)) return false;
-    if(activeStatus==='month'&&(!o.dl||daysLeft(o.dl)>30)) return false;
+    if(activeStatus==='urgent'&&(!o.dl||dl2days(o.dl)>7)) return false;
+    if(activeStatus==='month'&&(!o.dl||dl2days(o.dl)>30)) return false;
     if(activeStatus==='new'&&o.st!=='new') return false;
-    if(q){const s=(o.title+' '+o.org+' '+o.desc).toLowerCase();if(!s.includes(q)) return false;}
+    if(q){const s=(o.title+' '+o.org+' '+(o.desc||'')).toLowerCase();if(!s.includes(q)) return false;}
     return true;
   });
-
   list.sort((a,b)=>(a.dl?new Date(a.dl):new Date('2099-12-31'))-(b.dl?new Date(b.dl):new Date('2099-12-31')));
 
   // Counts
-  const base=DATA.filter(o=>{
-    if(o.dl&&daysLeft(o.dl)<0) return false;
+  const base=allData.filter(o=>{
+    if(o.dl&&dl2days(o.dl)<0) return false;
     if(activeCountry!=='all'&&o.c!==activeCountry) return false;
     if(q){const s=(o.title+' '+o.org).toLowerCase();if(!s.includes(q)) return false;}
     return true;
@@ -765,25 +656,22 @@ function renderAll(){
   });
   document.getElementById('sn-saved').textContent=saved.length;
 
-  const live=DATA.filter(o=>!o.dl||daysLeft(o.dl)>=0);
+  const live=allData.filter(o=>!o.dl||dl2days(o.dl)>=0);
   document.getElementById('chip-total').textContent=live.length+' Live';
   document.getElementById('chip-bd').textContent=live.filter(o=>o.c==='BD').length+' Bangladesh';
   document.getElementById('chip-us').textContent=live.filter(o=>o.c==='US').length+' United States';
   document.getElementById('chip-gl').textContent=live.filter(o=>o.c==='Global').length+' Global';
   document.getElementById('hvc-count').textContent=live.length;
-
-  const hdr=document.getElementById('secHdr');
-  hdr.innerHTML='Live programs <span>('+list.length+')</span>';
-  document.getElementById('secRight').textContent=list.length+' result'+(list.length===1?'':'s')+' — sorted by deadline';
+  document.getElementById('secCount').textContent='('+list.length+')';
 
   const grid=document.getElementById('grid');
   if(!list.length){
-    grid.innerHTML='<div class="empty"><svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg><p>No programs match your filters.</p></div>';
+    grid.innerHTML='<div class="empty" style="grid-column:1/-1;text-align:center;padding:60px 20px;color:var(--muted)"><svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg><p style="font-size:14px;font-weight:500;margin-top:8px">No programs match your filters. Try clearing them.</p></div>';
     return;
   }
-  const html=list.map(o=>buildCard(o)).join('');
+  const html='<div class="cards-grid">'+list.map(buildCard).join('')+'</div>';
   grid.innerHTML=html;
-  document.getElementById('foot').textContent='Showing '+list.length+' live programs · Updated '+new Date().toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric'});
+  document.getElementById('foot').textContent='Showing '+list.length+' live programs · Auto-updated · '+new Date().toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric'});
 }
 
 // ── MODAL ─────────────────────────────────────────────────────────────────────
@@ -792,26 +680,23 @@ function closeModal(){document.getElementById('modal').classList.remove('open');
 document.getElementById('modal').addEventListener('click',e=>{if(e.target===document.getElementById('modal'))closeModal();});
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();});
 function doSub(e){
-  e.preventDefault();
-  const btn=document.getElementById('fBtn');btn.disabled=true;btn.textContent='Submitting...';
-  fetch('https://formsubmit.co/ajax/acmahbub.official@gmail.com',{
-    method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},
-    body:JSON.stringify(Object.fromEntries(new FormData(document.getElementById('subForm'))))
-  }).then(()=>{document.getElementById('fWrap').style.display='none';document.getElementById('fOk').style.display='block';})
+  e.preventDefault();const btn=document.getElementById('fBtn');
+  btn.disabled=true;btn.textContent='Submitting…';
+  fetch('https://formsubmit.co/ajax/acmahbub.official@gmail.com',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(Object.fromEntries(new FormData(document.getElementById('subForm'))))})
+  .then(()=>{document.getElementById('fWrap').style.display='none';document.getElementById('fOk').style.display='block';})
   .catch(()=>{document.getElementById('fWrap').style.display='none';document.getElementById('fOk').style.display='block';});
 }
 function doAlert(e){
   e.preventDefault();
-  fetch('https://formsubmit.co/ajax/acmahbub.official@gmail.com',{
-    method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},
-    body:JSON.stringify({_subject:'CanvasIQ Alert Signup',email:document.getElementById('alertIn').value})
-  }).catch(()=>{});
-  document.getElementById('alertOk').style.display='block';
-  document.getElementById('alertIn').value='';
+  fetch('https://formsubmit.co/ajax/acmahbub.official@gmail.com',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify({_subject:'CanvasIQ Alert Signup',email:document.getElementById('alertIn').value})}).catch(()=>{});
+  document.getElementById('alertOk').style.display='block';document.getElementById('alertIn').value='';
 }
 
+// ── INIT ──────────────────────────────────────────────────────────────────────
+// Show static data immediately, then layer in live data
 renderAll();
-setInterval(renderAll,60000);
+fetchLiveHackathons();
+setInterval(renderAll,60000); // refresh countdown every minute
 </script>
 </body>
 </html>
