@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#4f46e5">
+<title>Idea Match — CanvasIQ</title>
+<meta name="description" content="Describe your startup idea and get the funding, competitions and events tailored to you — no more scrolling through hundreds of listings.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+:root{
+  --a:#4f46e5;--ad:#3730a3;--al:#eef2ff;
+  --bg:linear-gradient(160deg,#dce8ff 0%,#ecf1ff 35%,#f5f7ff 65%,#fff 100%);
+  --sf:#fff;--br:#e2e8f0;--br2:#cbd5e1;
+  --tx:#0f172a;--sb:#475569;--mu:#94a3b8;
+  --r:14px;--rs:9px;
+  --sh:0 1px 3px rgba(15,23,42,.07),0 4px 16px rgba(15,23,42,.06);
+  --shh:0 8px 32px rgba(15,23,42,.13),0 2px 8px rgba(15,23,42,.07);
+  --shl:0 20px 60px rgba(15,23,42,.15);
+  --nav-h:58px;
+}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--bg);background-attachment:fixed;color:var(--tx);min-height:100vh;overflow-x:hidden}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:300;height:var(--nav-h);background:rgba(255,255,255,.92);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(226,232,240,.8);display:flex;align-items:center;padding:0 20px;gap:12px}
+.logo{font-size:16px;font-weight:800;color:var(--tx);text-decoration:none;letter-spacing:-.4px;white-space:nowrap}.logo span{color:var(--a)}
+.nav-sep{width:1px;height:18px;background:var(--br);flex-shrink:0}
+.nav-crumb{font-size:12px;color:var(--mu);font-weight:500;display:none}
+@media(min-width:600px){.nav-crumb{display:block}}
+.nav-r{display:flex;gap:6px;margin-left:auto;align-items:center}
+.btn-ghost{font-size:12px;font-weight:600;padding:6px 13px;border-radius:var(--rs);border:1.5px solid var(--br2);background:var(--sf);color:var(--tx);cursor:pointer;transition:.14s;white-space:nowrap;text-decoration:none}
+.btn-ghost:hover{border-color:var(--a);color:var(--a)}
+
+/* HERO */
+.wrap{max-width:860px;margin:0 auto;padding:0 20px}
+.hero{text-align:center;padding:40px 20px 8px}
+.hero-badge{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:700;color:var(--a);background:var(--al);padding:5px 13px;border-radius:20px;margin-bottom:16px}
+.hero h1{font-size:30px;font-weight:900;letter-spacing:-1px;line-height:1.1}
+@media(min-width:600px){.hero h1{font-size:42px}}
+.hero h1 .g{background:linear-gradient(90deg,var(--a),#7c3aed);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.hero p{font-size:14px;color:var(--sb);margin-top:12px;max-width:560px;margin-left:auto;margin-right:auto;line-height:1.6}
+@media(min-width:600px){.hero p{font-size:15px}}
+
+/* INPUT CARD */
+.panel{background:var(--sf);border:1px solid var(--br);border-radius:18px;box-shadow:var(--shl);padding:20px;margin:24px auto 0}
+.panel label{display:block;font-size:11px;font-weight:700;color:var(--sb);text-transform:uppercase;letter-spacing:.05em;margin-bottom:8px}
+.idea-in{width:100%;font-family:'Inter',sans-serif;font-size:15px;padding:14px 16px;border:1.5px solid var(--br2);border-radius:12px;outline:none;color:var(--tx);background:var(--sf);resize:vertical;min-height:96px;transition:.14s;line-height:1.5}
+.idea-in:focus{border-color:var(--a);box-shadow:0 0 0 4px rgba(79,70,229,.1)}
+.idea-in::placeholder{color:var(--mu)}
+.ex-row{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
+.ex{font-size:11px;font-weight:600;color:var(--sb);background:#f1f5f9;border:none;padding:6px 11px;border-radius:20px;cursor:pointer;transition:.12s}
+.ex:hover{background:var(--al);color:var(--a)}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px}
+@media(max-width:520px){.opts{grid-template-columns:1fr}}
+.opt select{width:100%;font-family:'Inter',sans-serif;font-size:14px;padding:11px 12px;border:1.5px solid var(--br2);border-radius:10px;outline:none;background:var(--sf);color:var(--tx);-webkit-appearance:none;min-height:44px}
+.opt select:focus{border-color:var(--a)}
+.go{width:100%;margin-top:18px;padding:14px;border:none;border-radius:12px;background:var(--a);color:#fff;font-size:15px;font-weight:800;font-family:'Inter',sans-serif;cursor:pointer;transition:.14s;min-height:50px;display:flex;align-items:center;justify-content:center;gap:8px}
+.go:hover{background:var(--ad);transform:translateY(-1px)}
+.go:disabled{opacity:.6;cursor:not-allowed;transform:none}
+.spin{width:16px;height:16px;border:2px solid rgba(255,255,255,.4);border-top-color:#fff;border-radius:50%;animation:sp .7s linear infinite;display:none}
+@keyframes sp{to{transform:rotate(360deg)}}
+.go.loading .spin{display:inline-block}
+.go.loading .go-txt{opacity:.85}
+
+/* RESULTS */
+.results{padding:28px 0 80px}
+.res-hdr{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.res-hdr h2{font-size:17px;font-weight:800}
+.res-hdr h2 span{color:var(--mu);font-weight:500;font-size:14px}
+.mode-tag{font-size:10px;font-weight:700;padding:3px 9px;border-radius:10px;background:var(--al);color:var(--a)}
+.mlist{display:grid;gap:14px}
+.mcard{background:var(--sf);border:1px solid var(--br);border-radius:var(--r);box-shadow:var(--sh);padding:16px;display:flex;gap:14px;transition:box-shadow .18s,transform .14s,border-color .14s}
+.mcard:hover{box-shadow:var(--shh);transform:translateY(-2px);border-color:rgba(79,70,229,.2)}
+@media(hover:none){.mcard:hover{transform:none;box-shadow:var(--sh)}}
+.ring{flex-shrink:0;width:56px;height:56px;position:relative}
+.ring svg{transform:rotate(-90deg)}
+.ring-num{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;color:var(--a)}
+.mc-body{flex:1;min-width:0}
+.mc-top{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-bottom:4px}
+.tt{font-size:9px;font-weight:800;padding:3px 8px;border-radius:5px;letter-spacing:.04em;text-transform:uppercase;color:#fff}
+.tt-Competition{background:#7c3aed}.tt-Grant{background:#2563eb}.tt-Fellowship{background:#d97706}.tt-Prize{background:#db2777}.tt-Event{background:#059669}.tt-Scholarship{background:#ea580c}
+.mc-flag{font-size:13px}
+.mc-org{font-size:10px;font-weight:600;color:var(--mu);text-transform:uppercase;letter-spacing:.05em}
+.mc-title{font-size:15px;font-weight:800;line-height:1.3;margin-top:2px}
+.mc-amt{font-size:12px;font-weight:700;color:var(--a);margin-top:3px}
+.mc-why{font-size:12px;color:var(--sb);line-height:1.5;margin-top:8px;background:#f8fafc;border-left:3px solid var(--a);padding:8px 10px;border-radius:0 8px 8px 0}
+.mc-why b{color:var(--tx)}
+.mc-foot{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
+.b-apply{font-size:11px;font-weight:700;padding:7px 14px;border-radius:8px;border:none;background:var(--a);color:#fff;text-decoration:none;transition:.12s}
+.b-apply:hover{background:var(--ad)}
+.b-cd{font-size:11px;font-weight:700;padding:6px 11px;border-radius:20px;display:inline-flex;align-items:center}
+.cpu{background:#fee2e2;color:#b91c1c}.cps{background:#fef3c7;color:#92400e}.cpn{background:var(--al);color:var(--a)}.cpr{background:#f1f5f9;color:var(--mu)}
+.empty{text-align:center;padding:50px 20px;color:var(--mu);font-size:14px}
+.foot{font-size:11px;color:var(--mu);text-align:center;padding:18px 20px 40px}
+.foot a{color:var(--a);text-decoration:none}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="./index.html" class="logo">Canvas<span>IQ</span></a>
+  <div class="nav-sep"></div>
+  <span class="nav-crumb">Idea Match</span>
+  <div class="nav-r">
+    <a href="./funding.html" class="btn-ghost">Browse all →</a>
+  </div>
+</nav>
+
+<div class="wrap">
+  <div class="hero">
+    <div class="hero-badge">✦ AI-powered · Beta</div>
+    <h1>Tell us your idea.<br>We'll find <span class="g">your</span> opportunities.</h1>
+    <p>Hundreds of grants, competitions and events is overwhelming. Describe what you're building and get only the handful that actually fit — ranked, with the reason for each match.</p>
+  </div>
+
+  <div class="panel">
+    <label for="idea">Describe your startup or project idea</label>
+    <textarea id="idea" class="idea-in" placeholder="e.g. An AI-powered tutoring app that helps rural students in Bangladesh learn maths in their own language. Pre-seed, looking for non-dilutive grants and student competitions."></textarea>
+    <div class="ex-row">
+      <button class="ex" onclick="setEx(this)">AI tutoring app for rural students</button>
+      <button class="ex" onclick="setEx(this)">Climate-tech hardware startup</button>
+      <button class="ex" onclick="setEx(this)">Women-led fintech in Bangladesh</button>
+      <button class="ex" onclick="setEx(this)">Social impact venture, early stage</button>
+    </div>
+    <div class="opts">
+      <div class="opt">
+        <label for="stage">Stage</label>
+        <select id="stage">
+          <option value="">Any stage</option>
+          <option>Just an idea</option>
+          <option>Building MVP / prototype</option>
+          <option>Early revenue / traction</option>
+          <option>Scaling / growth</option>
+        </select>
+      </div>
+      <div class="opt">
+        <label for="country">Location focus</label>
+        <select id="country">
+          <option value="">Anywhere</option>
+          <option value="Bangladesh">Bangladesh</option>
+          <option value="United States">United States</option>
+          <option value="Global">Global / Remote</option>
+        </select>
+      </div>
+    </div>
+    <button class="go" id="goBtn" onclick="runMatch()">
+      <span class="spin"></span><span class="go-txt">✦ Find my opportunities</span>
+    </button>
+  </div>
+
+  <div class="results" id="results" style="display:none">
+    <div class="res-hdr">
+      <h2>Your matches <span id="resCount"></span></h2>
+      <span class="mode-tag" id="modeTag"></span>
+    </div>
+    <div class="mlist" id="mlist"></div>
+  </div>
+
+  <div class="foot">
+    Powered by CanvasIQ · <a href="./funding.html">Browse the full directory →</a>
+  </div>
+</div>
+
+<script>
+// ── DATA SOURCES (same as funding.html — we never change the existing pipeline) ──
+const REPO_RAW = 'https://raw.githubusercontent.com/Mahbub157/canvasiq-funding/main/';
+const FLAGS = { BD:'🇧🇩', US:'🇺🇸', Bangladesh:'🇧🇩', 'United States':'🇺🇸', Global:'🌐' };
+let OPPS = [];
+
+// Normalize both schemas (data.json archive + live-events.json) into one shape.
+function normalize(o) {
+  const title = o.title || o.name || '';
+  const link = o.link || o.url || '#';
+  if (!title) return null;
+  let country = o.country || '';
+  if (!country) { // infer from data.json 'loc' / 'c'
+    const loc = (o.loc || []).join(' ');
+    if (/bangladesh/i.test(loc) || o.c === 'BD') country = 'Bangladesh';
+    else if (/national/i.test(loc) || o.c === 'US') country = 'United States';
+    else country = 'Global';
+  }
+  const type = (o.type || 'Competition');
+  return {
+    id: o.id ?? (title.toLowerCase().slice(0,40)),
+    title,
+    org: o.org || o.organization || 'Online',
+    desc: o.desc || o.description || '',
+    type: type.charAt(0).toUpperCase() + type.slice(1).toLowerCase(),
+    country,
+    amt: o.amt || o.prize || o.amount || 'See listing',
+    deadline: (o.deadline && o.deadline !== 'rolling') ? o.deadline : null,
+    link,
+    sector: o.sector || [],
+  };
+}
+
+async function loadData() {
+  const grab = async (file) => {
+    try { const r = await fetch(REPO_RAW + file + '?t=' + Date.now(), { cache:'no-store' });
+      if (!r.ok) return []; const j = await r.json(); return j.opportunities || []; }
+    catch(e){ return []; }
+  };
+  const [archive, live] = await Promise.all([grab('data.json'), grab('live-events.json')]);
+  const seen = new Set();
+  OPPS = [...archive, ...live].map(normalize).filter(Boolean).filter(o => {
+    const k = o.title.toLowerCase().trim(); if (seen.has(k)) return false; seen.add(k); return true;
+  }).filter(o => !o.deadline || new Date(o.deadline) >= new Date());
+}
+loadData();
+
+// ── SECTOR / SIGNAL VOCABULARY (drives the local fallback matcher) ──────────────
+const SECTORS = {
+  ai:['ai','artificial intelligence','machine learning','ml','llm','generative','deep learning','neural'],
+  edtech:['edtech','education','learning','tutor','student','school','classroom','course','teaching','university'],
+  fintech:['fintech','finance','payment','banking','lending','wallet','financial'],
+  health:['health','medical','medtech','wellness','clinic','patient','diagnos','biotech'],
+  climate:['climate','sustainab','green','clean energy','carbon','renewable','environment','solar'],
+  women:['women','female','woman','girl','gender'],
+  social:['social impact','nonprofit','ngo','community','poverty','inclusion','development','underserved'],
+  hardware:['hardware','device','robotics','iot','manufactur','sensor'],
+  saas:['saas','software','platform','app','b2b','automation','productivity'],
+  agri:['agri','farm','food','crop','agtech'],
+};
+const STAGE_WORDS = {
+  'Just an idea':['idea','concept','pre-seed','student','early','no revenue'],
+  'Building MVP / prototype':['mvp','prototype','beta','pre-seed','early-stage','build'],
+  'Early revenue / traction':['revenue','traction','customers','seed','growing','recurring'],
+  'Scaling / growth':['scal','growth','series','expand','revenue','traction'],
+};
+const STOP = new Set('a an the and or to for of in on with my our we i is are app that this it will would like you your idea startup project building help students people using based'.split(' '));
+
+function tokens(t){ return (t||'').toLowerCase().replace(/[^a-z0-9\s]/g,' ').split(/\s+/).filter(w=>w.length>2 && !STOP.has(w)); }
+function detectSectors(text){ const t=text.toLowerCase(); return Object.keys(SECTORS).filter(s=>SECTORS[s].some(k=>t.includes(k))); }
+
+// ── LOCAL FALLBACK MATCHER (works with ZERO backend) ────────────────────────────
+function localMatch(idea, opps, stage, country) {
+  const ideaSectors = detectSectors(idea);
+  const ideaTokens = new Set(tokens(idea));
+  const stageWords = STAGE_WORDS[stage] || [];
+
+  const scored = opps.map(o => {
+    const blob = (o.title + ' ' + o.org + ' ' + o.desc + ' ' + (o.sector||[]).join(' ')).toLowerCase();
+    let score = 0; const reasons = [];
+
+    // Sector overlap (strongest signal)
+    const oppSectors = [...new Set([...(o.sector||[]), ...detectSectors(blob)])];
+    const sectorHit = ideaSectors.filter(s => oppSectors.includes(s) || blob.includes(s));
+    if (sectorHit.length) { score += sectorHit.length * 28; reasons.push('matches your <b>' + sectorHit.join(' & ') + '</b> focus'); }
+
+    // Keyword overlap
+    let kw = 0; ideaTokens.forEach(w => { if (blob.includes(w)) kw++; });
+    if (kw) { score += Math.min(kw * 6, 30); }
+
+    // Stage alignment
+    if (stageWords.some(w => blob.includes(w))) { score += 12; reasons.push('suited to your <b>' + (stage||'stage').toLowerCase() + '</b>'); }
+
+    // Country preference
+    if (country) {
+      if (o.country === country) { score += 18; reasons.push('available in <b>' + country + '</b>'); }
+      else if (o.country === 'Global') { score += 8; reasons.push('open globally'); }
+      else { score -= 14; }
+    } else if (o.country === 'Global') { score += 4; }
+
+    // Non-dilutive / grant nudge for idea/MVP stage
+    if (/grant|non-dilutive|equity-free|scholarship/.test(blob) && (stage==='Just an idea'||stage==='Building MVP / prototype')) { score += 8; }
+
+    // Deadline urgency tiny boost (acts on something soon)
+    if (o.deadline) { const d=Math.ceil((new Date(o.deadline)-new Date())/86400000); if (d>=0 && d<=45) score += 4; }
+
+    if (!reasons.length && kw) reasons.push('relevant to keywords in your idea');
+    if (!reasons.length) reasons.push('a broadly relevant opportunity for founders');
+
+    // Normalize to a friendly 0–99 match %
+    const pct = Math.max(8, Math.min(99, Math.round(score)));
+    return { ...o, score, pct, reason: reasons.slice(0,2).join(' · ') };
+  });
+
+  return scored.filter(o => o.score > 10).sort((a,b)=>b.score-a.score).slice(0, 8);
+}
+
+/* ────────────────────────────────────────────────────────────────────────────
+   BACKEND CONTRACT — wire true LLM matching here later (no front-end changes).
+   Create a Netlify Function at:  /.netlify/functions/match
+   It receives:   { idea, stage, country, opportunities:[{id,title,org,desc,type,country,amt,deadline}] }
+   The function calls your LLM (Anthropic/OpenAI) with the API key held SERVER-SIDE,
+   asks it to rank fit and explain why, and returns:
+       { matches: [ { id, pct: 0-100, reason: "one sentence why it fits" } ] }
+   If the endpoint is missing or errors, we silently fall back to localMatch()
+   so the page always works. See README/notes for a sample function.
+──────────────────────────────────────────────────────────────────────────── */
+async function callMatcher(idea, stage, country) {
+  // 1) Try the AI backend if it exists
+  try {
+    const r = await fetch('/.netlify/functions/match', {
+      method:'POST', headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({ idea, stage, country,
+        opportunities: OPPS.map(o => ({ id:o.id, title:o.title, org:o.org, desc:o.desc, type:o.type, country:o.country, amt:o.amt, deadline:o.deadline })) }),
+      signal: AbortSignal.timeout(20000),
+    });
+    if (r.ok) {
+      const j = await r.json();
+      if (j && Array.isArray(j.matches) && j.matches.length) {
+        const byId = new Map(OPPS.map(o => [String(o.id), o]));
+        const merged = j.matches.map(m => { const o = byId.get(String(m.id)); return o ? { ...o, pct:Math.max(8,Math.min(99,m.pct||50)), reason:m.reason||'' } : null; }).filter(Boolean);
+        if (merged.length) return { mode:'AI', matches: merged };
+      }
+    }
+  } catch (e) { /* fall through */ }
+  // 2) Fallback: instant local matching
+  return { mode:'Smart match', matches: localMatch(idea, OPPS, stage, country) };
+}
+
+// ── UI ──────────────────────────────────────────────────────────────────────
+function setEx(btn){ document.getElementById('idea').value = btn.textContent; }
+
+function cd(deadline){
+  if(!deadline) return '<span class="b-cd cpr">Rolling</span>';
+  const n = Math.ceil((new Date(deadline)-new Date())/86400000);
+  if(n<0) return '';
+  if(n<=7) return `<span class="b-cd cpu">Closes in ${n}d</span>`;
+  if(n<=30) return `<span class="b-cd cps">In ${n}d</span>`;
+  return `<span class="b-cd cpn">In ${n}d</span>`;
+}
+function ringSvg(pct){
+  const r=24, c=2*Math.PI*r, off=c*(1-pct/100);
+  return `<svg width="56" height="56" viewBox="0 0 56 56"><circle cx="28" cy="28" r="${r}" fill="none" stroke="#eef2ff" stroke-width="5"/><circle cx="28" cy="28" r="${r}" fill="none" stroke="#4f46e5" stroke-width="5" stroke-linecap="round" stroke-dasharray="${c}" stroke-dashoffset="${off}"/></svg>`;
+}
+
+async function runMatch(){
+  const idea = document.getElementById('idea').value.trim();
+  if(idea.length < 8){ document.getElementById('idea').focus(); document.getElementById('idea').style.borderColor='#ef4444'; return; }
+  document.getElementById('idea').style.borderColor='';
+  const stage = document.getElementById('stage').value;
+  const country = document.getElementById('country').value;
+  const btn = document.getElementById('goBtn');
+  btn.classList.add('loading'); btn.disabled = true;
+
+  if(!OPPS.length) await loadData();
+  const { mode, matches } = await callMatcher(idea, stage, country);
+
+  btn.classList.remove('loading'); btn.disabled = false;
+  const res = document.getElementById('results');
+  const list = document.getElementById('mlist');
+  res.style.display = 'block';
+  document.getElementById('resCount').textContent = `(${matches.length})`;
+  document.getElementById('modeTag').textContent = mode;
+
+  if(!matches.length){
+    list.innerHTML = '<div class="empty">No strong matches yet — try describing your idea in a bit more detail, or <a href="./funding.html" style="color:var(--a)">browse everything →</a></div>';
+  } else {
+    list.innerHTML = matches.map(o => `
+      <div class="mcard">
+        <div class="ring">${ringSvg(o.pct)}<div class="ring-num">${o.pct}%</div></div>
+        <div class="mc-body">
+          <div class="mc-top">
+            <span class="tt tt-${o.type}">${o.type}</span>
+            <span class="mc-flag">${FLAGS[o.country]||'🌍'}</span>
+            <span class="mc-org">${o.org}</span>
+          </div>
+          <div class="mc-title">${o.title}</div>
+          <div class="mc-amt">${o.amt}</div>
+          <div class="mc-why">✦ Why this fits: ${o.reason}</div>
+          <div class="mc-foot">
+            ${cd(o.deadline)}
+            <a class="b-apply" href="${o.link}" target="_blank" rel="noopener">View &amp; apply →</a>
+          </div>
+        </div>
+      </div>`).join('');
+  }
+  res.scrollIntoView({ behavior:'smooth', block:'start' });
+}
+
+document.getElementById('idea').addEventListener('keydown', e => {
+  if((e.metaKey||e.ctrlKey) && e.key==='Enter') runMatch();
+});
+</script>
+</body>
+</html>
