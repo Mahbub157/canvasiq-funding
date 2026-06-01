@@ -218,6 +218,14 @@ nav{position:sticky;top:0;z-index:300;height:var(--nav-h);background:rgba(255,25
 @media(min-width:860px){.fab{bottom:24px;right:24px}}
 .fab:hover{background:var(--ad);transform:translateY(-2px)}
 
+/* ── FIND MY MATCH FLOATING ICON ── */
+.match-fab{position:fixed;bottom:24px;left:24px;z-index:191;display:flex;align-items:center;gap:8px;height:54px;padding:0 17px;border-radius:27px;background:linear-gradient(135deg,#4f46e5,#7c3aed);color:#fff;text-decoration:none;font-size:13px;font-weight:700;box-shadow:0 6px 24px rgba(124,58,237,.45);transition:transform .18s,box-shadow .18s;overflow:hidden;font-family:'Inter',sans-serif}
+.match-fab svg{flex-shrink:0}
+.match-fab .mf-label{white-space:nowrap;max-width:0;opacity:0;transition:max-width .25s,opacity .2s}
+.match-fab:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(124,58,237,.5)}
+.match-fab:hover .mf-label{max-width:150px;opacity:1}
+@media(max-width:859px){.match-fab{bottom:calc(var(--mob-nav) + 12px);left:16px;width:48px;height:48px;padding:0;justify-content:center;border-radius:50%}.match-fab .mf-label{display:none}}
+
 /* ── MODAL ── */
 .modal-bg{display:none;position:fixed;inset:0;background:rgba(15,23,42,.5);z-index:400;align-items:center;justify-content:center;padding:16px;backdrop-filter:blur(6px)}
 .modal-bg.open{display:flex}
@@ -423,6 +431,12 @@ nav{position:sticky;top:0;z-index:300;height:var(--nav-h);background:rgba(255,25
 <button class="fab" id="desktopFab" onclick="openModal()">
   <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>Submit Opportunity
 </button>
+
+<!-- FIND MY MATCH (floating icon → AI matcher) -->
+<a class="match-fab" href="./match.html" aria-label="Find my match — get opportunities tailored to your idea">
+  <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 3v4M3 5h4M6 17v4M4 19h4M13 3l2.5 6.5L22 12l-6.5 2.5L13 21l-2.5-6.5L4 12l6.5-2.5z"/></svg>
+  <span class="mf-label">Find my match</span>
+</a>
 
 <!-- MODAL -->
 <div class="modal-bg" id="modal">
