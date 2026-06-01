@@ -1,0 +1,44 @@
+name: Auto-Update Opportunities (DEPRECATED — use daily-update.yml)
+
+# ──────────────────────────────────────────────────────────────────────────────
+# This workflow has been superseded by daily-update.yml, which runs the unified
+# scraper.py (live APIs + RSS + deep web search) and writes BOTH live-events.json
+# and data.json. The old inline-Python pipeline that lived here is retired to
+# avoid two scheduled jobs committing competing data in different schemas.
+#
+# Its schedule is removed; it only runs on manual dispatch and simply delegates
+# to the same scraper for convenience.
+# ──────────────────────────────────────────────────────────────────────────────
+
+on:
+  workflow_dispatch:   # manual trigger only — no schedule
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run unified scraper
+        run: python scraper.py
+
+      - name: Commit if changed
+        run: |
+          git config --local user.email "canvasiq-bot@users.noreply.github.com"
+          git config --local user.name "CanvasIQ Bot"
+          git add live-events.json data.json
+          COUNT=$(python -c "import json; print(json.load(open('live-events.json'))['count'])")
+          git diff --staged --quiet || git commit -m "🤖 Manual update $(date -u '+%Y-%m-%d'): $COUNT live opportunities"
+          git push

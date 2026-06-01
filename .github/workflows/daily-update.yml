@@ -25,14 +25,16 @@ jobs:
       - name: 📦 Install dependencies
         run: pip install -r requirements.txt
 
-      - name: 🔍 Run opportunity scraper
+      - name: 🔍 Run unified opportunity scraper
         run: python scraper.py
 
-      - name: 💾 Commit updated data.json
+      - name: 💾 Commit updated data files
         run: |
           git config --global user.name  "CanvasIQ Bot"
           git config --global user.email "bot@canvasiq.com"
-          git add data.json
-          # Only commit if data.json actually changed
-          git diff --staged --quiet || git commit -m "🤖 Daily update: $(date +'%Y-%m-%d') — auto-scraped new opportunities"
+          # The scraper writes BOTH files: live-events.json (read by the site)
+          # and data.json (the richer archive).
+          git add live-events.json data.json
+          COUNT=$(python -c "import json; print(json.load(open('live-events.json'))['count'])")
+          git diff --staged --quiet || git commit -m "🤖 Daily update $(date -u '+%Y-%m-%d'): $COUNT live opportunities"
           git push
