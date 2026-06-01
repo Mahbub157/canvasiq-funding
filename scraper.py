@@ -1,302 +1,406 @@
 """
-CanvasIQ Funding Directory — Daily Opportunity Scraper
-=======================================================
-Searches multiple sources daily for new startup grants, competitions,
-and accelerator programs. Updates data.json automatically.
+CanvasIQ Funding Directory — Unified Deep Opportunity Engine
+============================================================
+One engine that discovers startup/student grants, competitions, accelerators,
+awards, fellowships and scholarships from MANY sources every day, then writes
+BOTH output files the site needs:
 
-Sources:
-  - RSS feeds: GrantsDatabase, OpportunityDesk, Grants.gov
-  - Web search: DuckDuckGo HTML (no API key needed)
+  • live-events.json  → the file funding.html actually fetches (page schema)
+  • data.json         → the richer archive (curated + auto, internal schema)
 
-Run:  python scraper.py
-Deps: pip install requests feedparser beautifulsoup4
+Sources (all best-effort; any that fail are skipped, never fatal):
+  • Live JSON APIs : Devpost, Challenge.gov, HeroX
+  • RSS feeds      : OpportunityDesk, Grants.gov, FundsForCompanies, GrantsDatabase
+  • Deep web search: DuckDuckGo HTML (no API key) across many tuned queries
+
+Run:   python scraper.py
+Deps:  pip install -r requirements.txt   (feedparser + bs4 optional; live APIs
+       and JSON IO work on the Python standard library alone)
 """
 
 import json
 import re
 import time
+import html
 import hashlib
 import urllib.request
 import urllib.parse
 from datetime import datetime, timezone, timedelta
 from typing import Optional
 
-# ── try optional deps ────────────────────────────────────────────────────────
+# ── optional deps (graceful) ──────────────────────────────────────────────────
 try:
     import feedparser
     HAS_FEEDPARSER = True
 except ImportError:
     HAS_FEEDPARSER = False
-    print("⚠  feedparser not installed — skipping RSS feeds. Run: pip install feedparser")
+    print("⚠  feedparser not installed — RSS feeds skipped. (pip install feedparser)")
 
 try:
     from bs4 import BeautifulSoup
     HAS_BS4 = True
 except ImportError:
     HAS_BS4 = False
-    print("⚠  beautifulsoup4 not installed — skipping web search. Run: pip install beautifulsoup4")
+    print("⚠  beautifulsoup4 not installed — web search skipped. (pip install beautifulsoup4)")
 
-# ── config ───────────────────────────────────────────────────────────────────
+# ── config ────────────────────────────────────────────────────────────────────
 
-DATA_FILE = "data.json"
+DATA_FILE = "data.json"            # rich internal archive
+LIVE_FILE = "live-events.json"     # consumed directly by funding.html
+EXPIRE_AFTER_DAYS = 7              # drop entries this many days past deadline
+MAX_LIVE = 120                     # cap entries written to live-events.json
 
-# RSS feeds to monitor daily
+UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+      "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36")
+
+# Live JSON APIs — (name, url, parser_key)
+DEVPOST_URL = "https://devpost.com/api/hackathons?status[]=upcoming&status[]=open&order_by=deadline&per_page=48"
+CHALLENGEGOV_URL = "https://api.challenge.gov/api/challenges?status=active&limit=40"
+HEROX_URL = "https://www.herox.com/api/v1/challenges?status=active&page_size=30"
+
 RSS_FEEDS = [
-    "https://grantsdatabase.org/feed/",
     "https://opportunitydesk.org/feed/",
-    "https://www.fundsforcompanies.fundsforngos.org/feed/",
     "https://grants.gov/rss/GG_NewOpp.xml",
+    "https://www.fundsforcompanies.fundsforngos.org/feed/",
+    "https://grantsdatabase.org/feed/",
 ]
 
-# DuckDuckGo search queries to run daily
+# Deep, tuned search queries — broad coverage so nothing is missed.
 SEARCH_QUERIES = [
-    "EdTech startup grant 2026 application open",
-    "education startup pitch competition prize 2026",
-    "startup competition grant NYC 2026",
+    "startup grant 2026 application open non-dilutive",
+    "startup pitch competition 2026 cash prize apply",
+    "startup accelerator program 2026 application open",
     "AI startup grant competition 2026 apply",
-    "women entrepreneur startup grant 2026",
-    "BIPOC founder startup grant competition 2026",
-    "pre-seed startup competition award 2026 virtual",
-    "education technology accelerator program 2026",
-    "startup pitch competition $100000 prize 2026",
-    "small business grant competition technology 2026",
+    "EdTech startup grant competition 2026",
+    "women entrepreneur startup grant 2026 apply",
+    "BIPOC minority founder startup grant 2026",
+    "student innovation competition 2026 prize apply",
+    "fellowship for entrepreneurs 2026 application",
+    "social impact startup award 2026 apply",
+    "climate tech startup grant competition 2026",
+    "fintech startup competition 2026 prize",
+    "Bangladesh startup competition grant 2026 apply",
+    "international scholarship 2026 fully funded apply",
+    "hackathon 2026 prize registration open",
+    "pre-seed startup competition 2026 equity-free",
 ]
 
-# Keywords that MUST appear for an entry to be considered relevant
 RELEVANCE_KEYWORDS = [
     "grant", "competition", "award", "prize", "funding", "accelerator",
-    "pitch", "challenge", "fellowship", "incubator", "startup", "entrepreneur"
+    "pitch", "challenge", "fellowship", "incubator", "startup", "entrepreneur",
+    "scholarship", "hackathon", "innovation",
 ]
-
-# Keywords that make an entry higher confidence
 QUALITY_KEYWORDS = [
     "apply", "application", "deadline", "open", "eligible", "winners",
-    "cash", "equity-free", "non-dilutive", "no equity"
+    "cash", "equity-free", "non-dilutive", "no equity", "register", "submit",
 ]
-
-# Keywords to EXCLUDE (spam / irrelevant)
 EXCLUDE_KEYWORDS = [
-    "loan", "mortgage", "insurance", "casino", "gambling", "crypto",
-    "nft", "forex", "trading signals", "diet", "weight loss"
+    "loan", "mortgage", "insurance", "casino", "gambling", "betting",
+    "nft", "forex", "trading signals", "diet", "weight loss", "porn",
+    "essay writing service", "write my essay",
 ]
 
-# ── helpers ──────────────────────────────────────────────────────────────────
+# ── IO ──────────────────────────────────────────────────────────────────────
 
-def load_data() -> dict:
-    """Load existing data.json."""
+def load_json(path: str, default: dict) -> dict:
     try:
-        with open(DATA_FILE, "r", encoding="utf-8") as f:
+        with open(path, "r", encoding="utf-8") as f:
             return json.load(f)
-    except FileNotFoundError:
-        return {"lastUpdated": "", "totalFound": 0, "opportunities": []}
+    except (FileNotFoundError, json.JSONDecodeError):
+        return default
 
-def save_data(data: dict):
-    """Save updated data.json."""
-    data["lastUpdated"] = datetime.now(timezone.utc).isoformat()
-    data["totalFound"] = len(data["opportunities"])
-    with open(DATA_FILE, "w", encoding="utf-8") as f:
-        json.dump(data, f, indent=2, ensure_ascii=False)
-    print(f"✅ Saved {data['totalFound']} opportunities to {DATA_FILE}")
 
-def make_id(url: str, title: str) -> str:
-    """Create a stable unique ID from URL + title."""
-    raw = (url + title).lower().strip()
-    return int(hashlib.md5(raw.encode()).hexdigest()[:8], 16)
+def fetch_json(url: str, timeout: int = 15) -> Optional[dict]:
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "application/json"})
+        with urllib.request.urlopen(req, timeout=timeout) as r:
+            return json.loads(r.read().decode("utf-8", errors="ignore"))
+    except Exception as e:
+        print(f"  ⚠  API error ({url[:50]}…): {e}")
+        return None
 
-def existing_ids(data: dict) -> set:
-    return {o["id"] for o in data["opportunities"]}
 
-def existing_urls(data: dict) -> set:
-    return {o["url"].lower().strip("/") for o in data["opportunities"]}
+def fetch_html(url: str, timeout: int = 12) -> Optional[str]:
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept-Language": "en-US,en;q=0.9"})
+        with urllib.request.urlopen(req, timeout=timeout) as r:
+            return r.read().decode("utf-8", errors="ignore")
+    except Exception as e:
+        print(f"  ⚠  fetch error ({url[:50]}…): {e}")
+        return None
 
-def existing_names(data: dict) -> set:
-    return {o["name"].lower().strip() for o in data["opportunities"]}
+
+# ── classification / extraction ───────────────────────────────────────────────
+
+def clean(text: str) -> str:
+    text = html.unescape(text or "")
+    text = re.sub(r"<[^>]+>", " ", text)
+    return re.sub(r"\s+", " ", text).strip()
+
 
 def is_relevant(title: str, desc: str) -> bool:
-    """Check if an entry is relevant to startup funding."""
-    text = (title + " " + desc).lower()
-    # Must have at least one relevance keyword
-    if not any(kw in text for kw in RELEVANCE_KEYWORDS):
+    t = (title + " " + desc).lower()
+    if not any(k in t for k in RELEVANCE_KEYWORDS):
         return False
-    # Must not contain exclusion keywords
-    if any(kw in text for kw in EXCLUDE_KEYWORDS):
+    if any(k in t for k in EXCLUDE_KEYWORDS):
         return False
     return True
 
-def confidence_score(title: str, desc: str) -> int:
-    """Score 0–10 for quality of opportunity."""
-    text = (title + " " + desc).lower()
-    score = 0
-    for kw in QUALITY_KEYWORDS:
-        if kw in text:
-            score += 1
-    for kw in RELEVANCE_KEYWORDS:
-        if kw in text:
-            score += 1
-    return min(score, 10)
 
-# ── extraction ───────────────────────────────────────────────────────────────
+def confidence(title: str, desc: str) -> int:
+    t = (title + " " + desc).lower()
+    return min(sum(k in t for k in QUALITY_KEYWORDS) + sum(k in t for k in RELEVANCE_KEYWORDS), 12)
 
-def extract_prize(text: str) -> tuple:
-    """Extract prize label and numeric value from text."""
-    patterns = [
-        (r"\$(\d+(?:\.\d+)?)\s*[Mm]illion", lambda m: (f"${m.group(1)}M", int(float(m.group(1)) * 1_000_000))),
-        (r"\$(\d+(?:\.\d+)?)\s*[Mm]",        lambda m: (f"${m.group(1)}M", int(float(m.group(1)) * 1_000_000))),
-        (r"\$(\d+(?:\.\d+)?)\s*[Kk]",        lambda m: (f"${m.group(1)}K", int(float(m.group(1)) * 1_000))),
-        (r"\$(\d{1,3}(?:,\d{3})+)",           lambda m: (f"${m.group(1)}", int(m.group(1).replace(",", "")))),
-        (r"\$(\d{3,})\b",                     lambda m: (f"${m.group(1)}", int(m.group(1)))),
-        (r"€(\d+(?:\.\d+)?)\s*[Mm]",          lambda m: (f"€{m.group(1)}M", int(float(m.group(1)) * 1_000_000))),
-        (r"€(\d+(?:\.\d+)?)\s*[Kk]",          lambda m: (f"€{m.group(1)}K", int(float(m.group(1)) * 1_000))),
+
+def detect_type(title: str, desc: str) -> str:
+    """Return capitalized type used by the site UI."""
+    t = (title + " " + desc).lower()
+    if any(w in t for w in ["scholarship", "fully funded", "tuition"]):
+        return "Scholarship"
+    if any(w in t for w in ["fellowship", "fellow "]):
+        return "Fellowship"
+    if any(w in t for w in ["grant", "non-dilutive", "funding opportunity"]):
+        return "Grant"
+    if any(w in t for w in ["accelerator", "incubator", "cohort", "bootcamp"]):
+        return "Competition"
+    if any(w in t for w in ["competition", "pitch", "contest", "challenge", "hackathon", "battlefield", "cup"]):
+        return "Competition"
+    if any(w in t for w in ["award", "prize", "recognition"]):
+        return "Prize"
+    if any(w in t for w in ["summit", "conference", "forum", "expo", "festival", "meetup"]):
+        return "Event"
+    return "Competition"
+
+
+def detect_country(title: str, desc: str, default: str = "Global") -> str:
+    """Return one of: 'Bangladesh', 'United States', 'Global'."""
+    t = (title + " " + desc).lower()
+    if any(w in t for w in ["bangladesh", "dhaka", "bdt", "৳", "bangladeshi"]):
+        return "Bangladesh"
+    if any(w in t for w in ["united states", "u.s.", " usa", "american", "nyc", "new york", "sba", "sbir", "challenge.gov"]):
+        return "United States"
+    return default
+
+
+def detect_sector(title: str, desc: str) -> list:
+    t = (title + " " + desc).lower()
+    s = []
+    if any(w in t for w in ["edtech", "education", "learning", "classroom", "k-12", "k12", "school", "university", "student"]):
+        s.append("edtech")
+    if any(w in t for w in ["artificial intelligence", "machine learning", " ai ", "ai-", "llm", "generative"]):
+        s.append("ai")
+    if any(w in t for w in ["women", "female", "woman-owned", "women-led"]):
+        s.append("women")
+    if any(w in t for w in ["black", "bipoc", "minority", "underrepresented", "latina", "hispanic"]):
+        s.append("bipoc")
+    if any(w in t for w in ["climate", "sustainab", "green", "clean energy", "carbon"]):
+        s.append("climate")
+    if any(w in t for w in ["fintech", "financial", "payments", "banking"]):
+        s.append("fintech")
+    return s or ["general"]
+
+
+MONTHS = {m: f"{i:02d}" for i, m in enumerate(
+    ["january", "february", "march", "april", "may", "june", "july", "august",
+     "september", "october", "november", "december"], 1)}
+MONTHS.update({m[:3]: n for m, n in list(MONTHS.items())})
+
+
+def extract_deadline(text: str) -> Optional[str]:
+    """Return ISO date string for a future deadline, or None (rolling)."""
+    pats = [
+        r"(jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|jun(?:e)?|jul(?:y)?|aug(?:ust)?|sep(?:tember)?|oct(?:ober)?|nov(?:ember)?|dec(?:ember)?)\s+(\d{1,2})(?:st|nd|rd|th)?,?\s+(202[6-9])",
+        r"(\d{1,2})(?:st|nd|rd|th)?\s+(jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|jun(?:e)?|jul(?:y)?|aug(?:ust)?|sep(?:tember)?|oct(?:ober)?|nov(?:ember)?|dec(?:ember)?)\s+(202[6-9])",
     ]
-    for pattern, extractor in patterns:
-        m = re.search(pattern, text, re.IGNORECASE)
-        if m:
-            return extractor(m)
-    return ("See listing", 0)
-
-def extract_deadline(text: str) -> tuple:
-    """Extract ISO deadline string and human-readable label."""
-    month_map = {
-        "january": "01", "february": "02", "march": "03", "april": "04",
-        "may": "05", "june": "06", "july": "07", "august": "08",
-        "september": "09", "october": "10", "november": "11", "december": "12",
-        "jan": "01", "feb": "02", "mar": "03", "apr": "04",
-        "jun": "06", "jul": "07", "aug": "08", "sep": "09",
-        "oct": "10", "nov": "11", "dec": "12"
-    }
-    # Full date: "June 30, 2026" / "30 June 2026"
-    patterns = [
-        r"(January|February|March|April|May|June|July|August|September|October|November|December"
-        r"|Jan|Feb|Mar|Apr|Jun|Jul|Aug|Sep|Oct|Nov|Dec)"
-        r"\s+(\d{1,2})(?:st|nd|rd|th)?,?\s+(202[6-9])",
-
-        r"(\d{1,2})(?:st|nd|rd|th)?\s+"
-        r"(January|February|March|April|May|June|July|August|September|October|November|December"
-        r"|Jan|Feb|Mar|Apr|Jun|Jul|Aug|Sep|Oct|Nov|Dec)"
-        r"\s+(202[6-9])",
-    ]
-    for pat in patterns:
+    for pat in pats:
         m = re.search(pat, text, re.IGNORECASE)
-        if m:
-            groups = m.groups()
-            if groups[0].isdigit():
-                day, month_name, year = groups
-            else:
-                month_name, day, year = groups
-            month_num = month_map.get(month_name.lower(), "01")
-            day = str(day).zfill(2)
-            iso = f"{year}-{month_num}-{day}"
-            label = f"{month_name} {day}, {year}"
-            # Only accept future dates
-            try:
-                if datetime.strptime(iso, "%Y-%m-%d") > datetime.now():
-                    return iso, label
-            except ValueError:
-                pass
-    return "rolling", "Rolling / Open"
+        if not m:
+            continue
+        g = m.groups()
+        if g[0].isdigit():
+            day, mon, year = g
+        else:
+            mon, day, year = g
+        mn = MONTHS.get(mon.lower()[:3])
+        if not mn:
+            continue
+        iso = f"{year}-{mn}-{int(day):02d}"
+        try:
+            if datetime.strptime(iso, "%Y-%m-%d").date() >= datetime.now(timezone.utc).date():
+                return iso
+        except ValueError:
+            pass
+    return None
 
-def categorize(title: str, desc: str) -> dict:
-    """Classify type, location, and sector from text."""
-    text = (title + " " + desc).lower()
 
-    # Type
-    if any(w in text for w in ["grant", "funding opportunity", "award funds", "non-dilutive"]):
-        opp_type = "grant"
-    elif any(w in text for w in ["competition", "pitch", "contest", "challenge", "battlefield"]):
-        opp_type = "competition"
-    elif any(w in text for w in ["accelerator", "incubator", "cohort", "bootcamp"]):
-        opp_type = "accelerator"
-    elif any(w in text for w in ["corporate", "microsoft", "google", "amazon", "aws", "credits"]):
-        opp_type = "corporate"
-    elif any(w in text for w in ["award", "recognition", "prize"]):
-        opp_type = "award"
-    else:
-        opp_type = "competition"
+def extract_amount(text: str) -> str:
+    m = re.search(r"\$\s?\d[\d,]*(?:\.\d+)?\s*(?:million|m|k|thousand)?", text, re.IGNORECASE)
+    if m:
+        return m.group(0).strip()
+    m = re.search(r"€\s?\d[\d,]*(?:\.\d+)?\s*(?:million|m|k)?", text, re.IGNORECASE)
+    return m.group(0).strip() if m else "See listing"
 
-    # Location
-    locs = []
-    if any(w in text for w in ["new york", "nyc", "manhattan", "brooklyn", "queens", "bronx"]):
-        locs.append("nyc")
-    if any(w in text for w in ["national", "nationwide", "united states", "u.s.", "usa", "american", "u.s.-based"]):
-        locs.append("national")
-    if any(w in text for w in ["virtual", "online", "remote", "digital", "web-based"]):
-        locs.append("virtual")
-    if any(w in text for w in ["global", "international", "worldwide", "world", "country"]):
-        locs.append("global")
-    if not locs:
-        locs = ["national"]
 
-    # Sector
-    sectors = []
-    if any(w in text for w in ["edtech", "education technology", "learning", "educational",
-                                 "classroom", "k-12", "k12", "higher ed", "university", "school"]):
-        sectors.append("edtech")
-    if any(w in text for w in ["artificial intelligence", "machine learning", "deep learning",
-                                " ai ", "ai-", "-ai", "llm", "generative"]):
-        sectors.append("ai")
-    if any(w in text for w in ["women", "female", "woman-owned", "women-led", "women-founded"]):
-        sectors.append("women")
-    if any(w in text for w in ["black", "bipoc", "minority", "diverse founder",
-                                 "underrepresented", "hispanic", "latina", "people of color"]):
-        sectors.append("bipoc")
-    if not sectors:
-        sectors = ["general"]
+def make_id(url: str, title: str) -> int:
+    raw = (url + "|" + title).lower().strip()
+    return 6000 + int(hashlib.md5(raw.encode()).hexdigest()[:6], 16) % 900000
 
-    equity_indicators = ["equity", "stake", "ownership", "convertible note", "series"]
-    equity = any(w in text for w in equity_indicators)
 
-    return {"type": opp_type, "loc": locs, "sector": sectors, "equity": equity}
+# ── normalized record ──────────────────────────────────────────────────────────
 
-# ── RSS scraping ─────────────────────────────────────────────────────────────
+def make_record(title, desc, url, *, org="Online", amt=None, deadline=None,
+                country=None, img="", source="auto", opp_type=None) -> Optional[dict]:
+    title = clean(title)[:140]
+    desc = clean(desc)[:480]
+    url = (url or "").strip()
+    if not title or not url or not url.startswith("http"):
+        return None
+    blob = title + " " + desc
+    opp_type = opp_type or detect_type(title, desc)
+    country = country or detect_country(title, desc)
+    deadline = deadline or extract_deadline(blob)
+    amt = amt or extract_amount(blob)
+    if not desc:
+        desc = f"{opp_type} opportunity — open for applications. See the official listing for full eligibility."
+    return {
+        "id": make_id(url, title),
+        "title": title,
+        "desc": desc,
+        "type": opp_type,
+        "country": country,
+        "org": clean(org)[:80] or "Online",
+        "amt": amt,
+        "deadline": deadline,             # ISO or None (rolling)
+        "url": url,
+        "img": img or "",
+        "sector": detect_sector(title, desc),
+        "source": source,
+        "addedDate": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
+    }
 
-def scrape_rss(url: str) -> list:
-    """Fetch and parse an RSS feed, returning raw entries."""
+
+# ── live API sources ────────────────────────────────────────────────────────────
+
+def from_devpost() -> list:
+    out = []
+    data = fetch_json(DEVPOST_URL)
+    if not data:
+        return out
+    for h in data.get("hackathons", []):
+        dates = h.get("submission_period_dates", "") or ""
+        m = re.search(r"[-–]\s*([A-Za-z]+ \d+,?\s*\d{4})", dates)
+        dl = extract_deadline(m.group(1)) if m else None
+        prize = h.get("prize_amount") or 0
+        try:
+            prize_n = int(re.sub(r"[^\d]", "", str(prize)) or 0)
+        except ValueError:
+            prize_n = 0
+        rec = make_record(
+            h.get("title", ""), h.get("tagline", "") or "Global hackathon open worldwide.",
+            h.get("url", ""), org=h.get("organization_name") or "Devpost",
+            amt=f"${prize_n:,} in prizes" if prize_n else "Open prizes",
+            deadline=dl, country="Global", img=h.get("thumbnail_url", ""),
+            source="devpost", opp_type="Competition")
+        if rec:
+            out.append(rec)
+    print(f"  ✓ Devpost: {len(out)}")
+    return out
+
+
+def from_challengegov() -> list:
+    out = []
+    data = fetch_json(CHALLENGEGOV_URL)
+    if not data:
+        return out
+    rows = (data.get("_embedded", {}) or {}).get("results", []) or data.get("data", []) or []
+    for c in rows:
+        dl_raw = c.get("submission_end_date") or c.get("end_date") or ""
+        dl = dl_raw[:10] if dl_raw else None
+        prize = c.get("total_prize_offered_amount") or 0
+        try:
+            prize_n = int(float(prize))
+        except (ValueError, TypeError):
+            prize_n = 0
+        rec = make_record(
+            c.get("title", ""), c.get("brief_description") or c.get("description") or "",
+            c.get("external_url") or "https://challenge.gov",
+            org=c.get("agency_name") or "US Government",
+            amt=f"${prize_n:,}" if prize_n else "Government prize",
+            deadline=dl, country="United States", source="challengegov", opp_type="Competition")
+        if rec:
+            out.append(rec)
+    print(f"  ✓ Challenge.gov: {len(out)}")
+    return out
+
+
+def from_herox() -> list:
+    out = []
+    data = fetch_json(HEROX_URL)
+    if not data:
+        return out
+    for h in (data.get("results") or data.get("data") or []):
+        dl_raw = h.get("end_date") or h.get("submission_deadline") or ""
+        dl = dl_raw[:10] if dl_raw else None
+        prize = h.get("prize_amount") or h.get("total_prize") or 0
+        try:
+            prize_n = int(float(prize))
+        except (ValueError, TypeError):
+            prize_n = 0
+        url = h.get("url", "") or ""
+        if url.startswith("/"):
+            url = "https://herox.com" + url
+        rec = make_record(
+            h.get("title") or h.get("name", ""), h.get("summary") or h.get("tagline") or "",
+            url or "https://herox.com",
+            org=(h.get("organization") or {}).get("name") if isinstance(h.get("organization"), dict) else "HeroX",
+            amt=f"${prize_n:,}" if prize_n else "Open prize",
+            deadline=dl, country="Global", img=h.get("image_url", ""),
+            source="herox", opp_type="Competition")
+        if rec:
+            out.append(rec)
+    print(f"  ✓ HeroX: {len(out)}")
+    return out
+
+
+# ── RSS + web search ────────────────────────────────────────────────────────────
+
+def from_rss() -> list:
+    out = []
     if not HAS_FEEDPARSER:
-        return []
-    try:
-        print(f"  📡 RSS: {url}")
-        feed = feedparser.parse(url)
-        results = []
-        for entry in feed.entries[:30]:  # latest 30 entries
-            title = getattr(entry, "title", "")
-            summary = getattr(entry, "summary", "") or getattr(entry, "description", "")
-            link = getattr(entry, "link", "")
-            # Strip HTML from summary
-            if HAS_BS4:
-                summary = BeautifulSoup(summary, "html.parser").get_text(" ", strip=True)
-            else:
-                summary = re.sub(r"<[^>]+>", " ", summary)
-            results.append({"title": title, "desc": summary[:400], "url": link})
-        return results
-    except Exception as e:
-        print(f"  ⚠  RSS error ({url}): {e}")
-        return []
+        return out
+    for url in RSS_FEEDS:
+        try:
+            feed = feedparser.parse(url)
+            n = 0
+            for e in feed.entries[:30]:
+                title = getattr(e, "title", "")
+                summary = getattr(e, "summary", "") or getattr(e, "description", "")
+                link = getattr(e, "link", "")
+                if not is_relevant(title, summary) or confidence(title, summary) < 2:
+                    continue
+                rec = make_record(title, summary, link, org="OpportunityDesk", source="rss")
+                if rec:
+                    out.append(rec); n += 1
+            print(f"  ✓ RSS {url.split('/')[2]}: {n}")
+        except Exception as ex:
+            print(f"  ⚠  RSS {url}: {ex}")
+        time.sleep(1)
+    return out
 
-# ── web search (DuckDuckGo HTML, no API key) ─────────────────────────────────
 
-def search_duckduckgo(query: str) -> list:
-    """Search DuckDuckGo and return list of {title, desc, url}."""
+def from_search() -> list:
+    out = []
     if not HAS_BS4:
-        return []
-    try:
-        encoded = urllib.parse.quote_plus(query)
-        url = f"https://html.duckduckgo.com/html/?q={encoded}"
-        headers = {
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-                          "AppleWebKit/537.36 (KHTML, like Gecko) "
-                          "Chrome/120.0.0.0 Safari/537.36",
-            "Accept-Language": "en-US,en;q=0.9",
-        }
-        req = urllib.request.Request(url, headers=headers)
-        with urllib.request.urlopen(req, timeout=12) as resp:
-            html = resp.read().decode("utf-8", errors="ignore")
-
-        soup = BeautifulSoup(html, "html.parser")
-        results = []
-        for item in soup.select(".result"):
+        return out
+    for q in SEARCH_QUERIES:
+        html_doc = fetch_html(f"https://html.duckduckgo.com/html/?q={urllib.parse.quote_plus(q)}")
+        if not html_doc:
+            time.sleep(2); continue
+        soup = BeautifulSoup(html_doc, "html.parser")
+        n = 0
+        for item in soup.select(".result")[:10]:
             t_el = item.select_one(".result__title")
             s_el = item.select_one(".result__snippet")
-            u_el = item.select_one(".result__url")
             if not t_el:
                 continue
             title = t_el.get_text(" ", strip=True)
@@ -304,139 +408,145 @@ def search_duckduckgo(query: str) -> list:
             link = ""
             a = t_el.find("a")
             if a and a.get("href"):
-                href = a["href"]
-                # DuckDuckGo wraps URLs — extract uddg= param
-                parsed = urllib.parse.urlparse(href)
-                qs = urllib.parse.parse_qs(parsed.query)
-                link = qs.get("uddg", [href])[0]
-            elif u_el:
-                link = "https://" + u_el.get_text(strip=True)
-            results.append({"title": title, "desc": desc[:400], "url": link})
-        return results[:8]  # top 8 per query
-    except Exception as e:
-        print(f"  ⚠  Search error ('{query[:40]}…'): {e}")
-        return []
+                qs = urllib.parse.parse_qs(urllib.parse.urlparse(a["href"]).query)
+                link = qs.get("uddg", [a["href"]])[0]
+            if not is_relevant(title, desc) or confidence(title, desc) < 3:
+                continue
+            rec = make_record(title, desc, link, source="search")
+            if rec:
+                out.append(rec); n += 1
+        print(f"  ✓ search '{q[:32]}…': {n}")
+        time.sleep(2)
+    return out
 
-# ── main pipeline ─────────────────────────────────────────────────────────────
 
-def build_opportunity(raw: dict, existing_data: dict) -> Optional[dict]:
-    """
-    Turn a raw {title, desc, url} dict into a structured opportunity,
-    or return None if it's irrelevant / already exists.
-    """
-    title = raw.get("title", "").strip()
-    desc = raw.get("desc", "").strip()
-    url = raw.get("url", "").strip()
+# ── output serializers ──────────────────────────────────────────────────────────
 
-    if not title or not url:
-        return None
-
-    # Skip if already tracked
-    urls = existing_urls(existing_data)
-    names = existing_names(existing_data)
-    clean_url = url.lower().strip("/")
-    if clean_url in urls:
-        return None
-    if title.lower().strip() in names:
-        return None
-
-    # Relevance check
-    if not is_relevant(title, desc):
-        return None
-
-    # Confidence threshold (must score ≥ 2)
-    if confidence_score(title, desc) < 2:
-        return None
-
-    cat = categorize(title, desc)
-    prize_label, prize_val = extract_prize(title + " " + desc)
-    deadline, deadline_label = extract_deadline(title + " " + desc)
-
-    opp_id = make_id(url, title)
-    # Make sure ID doesn't collide
-    existing = existing_ids(existing_data)
-    while opp_id in existing:
-        opp_id += 1
-
-    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-
+def to_live_entry(r: dict) -> dict:
+    """Shape exactly as funding.html's fetchLiveData() expects."""
     return {
-        "id": opp_id,
-        "name": title[:120],
-        "desc": desc[:500],
-        "prize": prize_label,
-        "prizeVal": prize_val,
-        "deadline": deadline,
-        "deadlineLabel": deadline_label,
-        "type": cat["type"],
-        "loc": cat["loc"],
-        "sector": cat["sector"],
-        "url": url,
-        "equity": cat["equity"],
-        "addedDate": today,
-        "source": "auto"
+        "title": r["title"],
+        "type": r["type"],
+        "country": r["country"],
+        "org": r["org"],
+        "amt": r["amt"],
+        "deadline": r["deadline"],          # ISO or null → site treats as rolling
+        "elig": "Open — see official listing",
+        "link": r["url"],
+        "desc": r["desc"],
+        "img": r["img"],
+        "source": r["source"],
+        "verified": True,
+        "liveAPI": True,
     }
 
+
+def to_data_entry(r: dict) -> dict:
+    """Richer internal archive schema (data.json)."""
+    loc = {"Bangladesh": ["bangladesh"], "United States": ["national"]}.get(r["country"], ["global"])
+    return {
+        "id": r["id"],
+        "name": r["title"],
+        "desc": r["desc"],
+        "prize": r["amt"],
+        "deadline": r["deadline"] or "rolling",
+        "deadlineLabel": r["deadline"] or "Rolling / Open",
+        "type": r["type"].lower(),
+        "loc": loc,
+        "sector": r["sector"],
+        "url": r["url"],
+        "country": r["country"],
+        "addedDate": r["addedDate"],
+        "source": r["source"],
+    }
+
+
+# ── pipeline ────────────────────────────────────────────────────────────────────
+
+def dedupe(records: list) -> list:
+    seen_url, seen_title, out = set(), set(), []
+    for r in records:
+        u = r["url"].lower().rstrip("/")
+        t = r["title"].lower().strip()[:50]
+        if u in seen_url or t in seen_title:
+            continue
+        seen_url.add(u); seen_title.add(t); out.append(r)
+    return out
+
+
+def not_expired(deadline: Optional[str], cutoff: str) -> bool:
+    if not deadline or deadline == "rolling":
+        return True
+    return deadline >= cutoff
+
+
 def run():
-    print("🤖 CanvasIQ Funding Scraper — starting daily update")
-    print(f"   {datetime.now().strftime('%Y-%m-%d %H:%M UTC')}\n")
+    started = datetime.now(timezone.utc)
+    print(f"🤖 CanvasIQ Unified Scraper — {started:%Y-%m-%d %H:%M UTC}\n")
 
-    data = load_data()
-    initial_count = len(data["opportunities"])
-    new_count = 0
+    sources_ok, records = [], []
 
-    # ── 1. RSS feeds ──────────────────────────────────────────────────────────
-    print("── RSS Feeds ──────────────────────────────────────────────────────")
-    for feed_url in RSS_FEEDS:
-        entries = scrape_rss(feed_url)
-        for raw in entries:
-            opp = build_opportunity(raw, data)
-            if opp:
-                data["opportunities"].append(opp)
-                new_count += 1
-                print(f"  ✨ NEW [{opp['type'].upper()}]: {opp['name'][:70]}")
-        time.sleep(1)  # polite delay
+    print("── Live APIs ──")
+    for name, fn in [("Devpost", from_devpost), ("Challenge.gov", from_challengegov), ("HeroX", from_herox)]:
+        try:
+            got = fn(); records += got; sources_ok.append(f"{name}: {len(got)}")
+        except Exception as e:
+            sources_ok.append(f"{name}: failed ({e})")
+        time.sleep(1)
 
-    # ── 2. Web searches ───────────────────────────────────────────────────────
-    print("\n── Web Searches ───────────────────────────────────────────────────")
-    for query in SEARCH_QUERIES:
-        print(f"  🔍 '{query}'")
-        results = search_duckduckgo(query)
-        for raw in results:
-            opp = build_opportunity(raw, data)
-            if opp:
-                data["opportunities"].append(opp)
-                new_count += 1
-                print(f"  ✨ NEW [{opp['type'].upper()}]: {opp['name'][:70]}")
-        time.sleep(2)  # respectful delay between searches
+    print("\n── RSS Feeds ──")
+    try:
+        got = from_rss(); records += got; sources_ok.append(f"RSS: {len(got)}")
+    except Exception as e:
+        sources_ok.append(f"RSS: failed ({e})")
 
-    # ── 3. Remove expired (past deadline by >30 days) ────────────────────────
-    cutoff = (datetime.now(timezone.utc) - timedelta(days=30)).strftime("%Y-%m-%d")
-    before = len(data["opportunities"])
-    data["opportunities"] = [
-        o for o in data["opportunities"]
-        if o["deadline"] == "rolling" or o["deadline"] >= cutoff
-    ]
-    removed = before - len(data["opportunities"])
-    if removed:
-        print(f"\n🗑  Removed {removed} expired opportunities (>30 days past deadline)")
+    print("\n── Deep Web Search ──")
+    try:
+        got = from_search(); records += got; sources_ok.append(f"Search: {len(got)}")
+    except Exception as e:
+        sources_ok.append(f"Search: failed ({e})")
 
-    # ── 4. Sort by deadline (rolling last) ───────────────────────────────────
-    def sort_key(o):
-        d = o["deadline"]
-        return "9999-99-99" if d == "rolling" else d
+    # Dedupe + drop expired
+    cutoff = (started - timedelta(days=EXPIRE_AFTER_DAYS)).strftime("%Y-%m-%d")
+    records = [r for r in dedupe(records) if not_expired(r["deadline"], cutoff)]
 
-    data["opportunities"].sort(key=sort_key)
+    # Sort: soonest real deadline first, rolling last
+    records.sort(key=lambda r: r["deadline"] or "9999-99-99")
 
-    # ── summary ───────────────────────────────────────────────────────────────
-    print(f"\n── Summary ────────────────────────────────────────────────────────")
-    print(f"   Before : {initial_count} opportunities")
-    print(f"   Added  : {new_count} new")
-    print(f"   Removed: {removed} expired")
-    print(f"   Total  : {len(data['opportunities'])} opportunities")
+    # ── write live-events.json (what the site reads) ──────────────────────────
+    live = [to_live_entry(r) for r in records[:MAX_LIVE]]
+    live_out = {
+        "updated": started.isoformat(),
+        "count": len(live),
+        "sources": sources_ok,
+        "opportunities": live,
+    }
+    with open(LIVE_FILE, "w", encoding="utf-8") as f:
+        json.dump(live_out, f, indent=2, ensure_ascii=False)
+    print(f"\n💾 {LIVE_FILE}: {len(live)} live opportunities")
 
-    save_data(data)
-    print("\n✅ Done! data.json updated.")
+    # ── merge into data.json archive (preserve curated 'manual' entries) ──────
+    archive = load_json(DATA_FILE, {"opportunities": []})
+    manual = [o for o in archive.get("opportunities", []) if o.get("source") == "manual"]
+    manual = [o for o in manual if not_expired(o.get("deadline"), cutoff)]
+    manual_urls = {o.get("url", "").lower().rstrip("/") for o in manual}
+    auto = [to_data_entry(r) for r in records if r["url"].lower().rstrip("/") not in manual_urls]
+    merged = manual + auto
+    merged.sort(key=lambda o: o.get("deadline") if o.get("deadline") not in (None, "rolling") else "9999-99-99")
+    data_out = {
+        "lastUpdated": started.isoformat(),
+        "totalFound": len(merged),
+        "opportunities": merged,
+    }
+    with open(DATA_FILE, "w", encoding="utf-8") as f:
+        json.dump(data_out, f, indent=2, ensure_ascii=False)
+    print(f"💾 {DATA_FILE}: {len(merged)} total ({len(manual)} curated + {len(auto)} auto)")
+
+    print("\n── Sources ──")
+    for s in sources_ok:
+        print(f"   {s}")
+    print(f"\n✅ Done in {(datetime.now(timezone.utc) - started).seconds}s")
+
 
 if __name__ == "__main__":
     run()
