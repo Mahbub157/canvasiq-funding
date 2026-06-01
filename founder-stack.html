@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#4f46e5">
+<title>Founder Stack — CanvasIQ</title>
+<meta name="description" content="The tools, credits and deals every student founder needs to build, launch and grow — hand-picked by CanvasIQ.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+:root{
+  --a:#4f46e5;--ad:#3730a3;--al:#eef2ff;
+  --bg:linear-gradient(160deg,#dce8ff 0%,#ecf1ff 35%,#f5f7ff 65%,#fff 100%);
+  --sf:#fff;--br:#e2e8f0;--br2:#cbd5e1;
+  --tx:#0f172a;--sb:#475569;--mu:#94a3b8;
+  --r:14px;--rs:9px;
+  --sh:0 1px 3px rgba(15,23,42,.07),0 4px 16px rgba(15,23,42,.06);
+  --shh:0 8px 32px rgba(15,23,42,.13),0 2px 8px rgba(15,23,42,.07);
+  --shl:0 20px 60px rgba(15,23,42,.15);
+  --nav-h:58px;
+}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--bg);background-attachment:fixed;color:var(--tx);min-height:100vh;overflow-x:hidden}
+nav{position:sticky;top:0;z-index:300;height:var(--nav-h);background:rgba(255,255,255,.92);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(226,232,240,.8);display:flex;align-items:center;padding:0 20px;gap:12px}
+.logo{font-size:16px;font-weight:800;color:var(--tx);text-decoration:none;letter-spacing:-.4px;white-space:nowrap}.logo span{color:var(--a)}
+.nav-sep{width:1px;height:18px;background:var(--br);flex-shrink:0}
+.nav-crumb{font-size:12px;color:var(--mu);font-weight:500;display:none}
+@media(min-width:600px){.nav-crumb{display:block}}
+.nav-r{display:flex;gap:6px;margin-left:auto;align-items:center}
+.btn-ghost{font-size:12px;font-weight:600;padding:6px 13px;border-radius:var(--rs);border:1.5px solid var(--br2);background:var(--sf);color:var(--tx);cursor:pointer;transition:.14s;white-space:nowrap;text-decoration:none}
+.btn-ghost:hover{border-color:var(--a);color:var(--a)}
+
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+.hero{text-align:center;padding:40px 20px 4px}
+.hero-badge{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:700;color:var(--a);background:var(--al);padding:5px 13px;border-radius:20px;margin-bottom:16px}
+.hero h1{font-size:30px;font-weight:900;letter-spacing:-1px;line-height:1.1}
+@media(min-width:600px){.hero h1{font-size:40px}}
+.hero h1 .g{background:linear-gradient(90deg,var(--a),#7c3aed);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.hero p{font-size:14px;color:var(--sb);margin-top:12px;max-width:560px;margin-left:auto;margin-right:auto;line-height:1.6}
+@media(min-width:600px){.hero p{font-size:15px}}
+
+.cat{margin-top:32px}
+.cat-h{font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:.06em;color:var(--sb);margin-bottom:14px;display:flex;align-items:center;gap:8px}
+.cat-h::after{content:"";flex:1;height:1px;background:var(--br)}
+.grid{display:grid;grid-template-columns:1fr;gap:14px}
+@media(min-width:600px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:960px){.grid{grid-template-columns:repeat(3,1fr)}}
+.tool{background:var(--sf);border:1px solid var(--br);border-radius:var(--r);box-shadow:var(--sh);padding:18px;display:flex;flex-direction:column;transition:box-shadow .18s,transform .14s,border-color .14s}
+.tool:hover{box-shadow:var(--shh);transform:translateY(-2px);border-color:rgba(79,70,229,.2)}
+@media(hover:none){.tool:hover{transform:none;box-shadow:var(--sh)}}
+.tool-top{display:flex;align-items:center;gap:11px;margin-bottom:10px}
+.tool-ico{width:42px;height:42px;border-radius:11px;display:flex;align-items:center;justify-content:center;font-size:22px;background:var(--al);flex-shrink:0}
+.tool-name{font-size:15px;font-weight:800;line-height:1.2}
+.tool-cat{font-size:10px;font-weight:600;color:var(--mu);text-transform:uppercase;letter-spacing:.04em;margin-top:2px}
+.tool-desc{font-size:12.5px;color:var(--sb);line-height:1.55;flex:1}
+.tool-perk{font-size:12px;font-weight:700;color:#047857;background:#ecfdf5;border:1px solid #a7f3d0;padding:6px 10px;border-radius:8px;margin:12px 0;display:inline-block}
+.tool-cta{display:inline-flex;align-items:center;justify-content:center;gap:6px;font-size:13px;font-weight:700;padding:10px 14px;border-radius:9px;border:none;background:var(--a);color:#fff;text-decoration:none;transition:.14s;margin-top:auto}
+.tool-cta:hover{background:var(--ad)}
+
+.disclosure{max-width:720px;margin:34px auto 0;text-align:center;font-size:11.5px;color:var(--mu);line-height:1.6;background:rgba(255,255,255,.6);border:1px solid var(--br);border-radius:12px;padding:14px 18px}
+.foot{font-size:11px;color:var(--mu);text-align:center;padding:24px 20px 50px}
+.foot a{color:var(--a);text-decoration:none}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="./index.html" class="logo">Canvas<span>IQ</span></a>
+  <div class="nav-sep"></div>
+  <span class="nav-crumb">Founder Stack</span>
+  <div class="nav-r">
+    <a href="./funding.html" class="btn-ghost">Funding →</a>
+  </div>
+</nav>
+
+<div class="wrap">
+  <div class="hero">
+    <div class="hero-badge">🧰 Curated for founders & students</div>
+    <h1>The <span class="g">Founder Stack</span></h1>
+    <p>The tools, free credits and deals worth grabbing when you're building a startup on a student budget. Hand-picked, with the best offer for each.</p>
+  </div>
+
+  <!-- ════════════════════════════════════════════════════════════════════════
+       HOW TO ACTIVATE EARNINGS:
+       Each "tool-cta" link below has a placeholder href like REPLACE_WITH_xxx.
+       1. Sign up for each program's affiliate / referral / partner scheme.
+       2. Paste YOUR unique referral URL in place of the matching REPLACE_WITH_xxx.
+       3. (Optional) update the .tool-perk text with the exact current offer.
+       Programs to apply to are named in each comment.
+  ════════════════════════════════════════════════════════════════════════ -->
+
+  <!-- ── BUILD ───────────────────────────────────────────────────────────── -->
+  <div class="cat">
+    <div class="cat-h">🛠 Build your product</div>
+    <div class="grid">
+
+      <div class="tool">
+        <div class="tool-top"><div class="tool-ico">📝</div><div><div class="tool-name">Notion</div><div class="tool-cat">Docs & wiki</div></div></div>
+        <div class="tool-desc">All-in-one workspace for notes, docs, tasks and your startup wiki. Free for individuals; students get Plus free.</div>
+        <span class="tool-perk">Free Plus plan for students</span>
+        <!-- Affiliate: Notion Affiliate Program (notion.so/affiliates) -->
+        <a class="tool-cta" href="REPLACE_WITH_NOTION_AFFILIATE_URL" target="_blank" rel="noopener sponsored">Get Notion →</a>
+      </div>
+
+      <div class="tool">
+        <div class="tool-top"><div class="tool-ico">🎨</div><div><div class="tool-name">Framer</div><div class="tool-cat">Website builder</div></div></div>
+        <div class="tool-desc">Design and ship a stunning startup site without code — fast, modern, great for landing pages.</div>
+        <span class="tool-perk">Free plan + student discount</span>
+        <!-- Affiliate: Framer Partner Program (framer.com/partners) -->
+        <a class="tool-cta" href="REPLACE_WITH_FRAMER_AFFILIATE_URL" target="_blank" rel="noopener sponsored">Try Framer →</a>
+      </div>
+
+      <div class="tool">
+        <div class="tool-top"><div class="tool-ico">📋</div><div><div class="tool-name">Airtable</div><div class="tool-cat">Database & ops</div></div></div>
+        <div class="tool-desc">Spreadsheet-meets-database for tracking users, content, CRM and ops as you scale.</div>
+        <span class="tool-perk">Generous free tier</span>
+        <!-- Affiliate: Airtable / Impact partner program -->
+        <a class="tool-cta" href="REPLACE_WITH_AIRTABLE_AFFILIATE_URL" target="_blank" rel="noopener sponsored">Get Airtable →</a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── LAUNCH ──────────────────────────────────────────────────────────── -->
+  <div class="cat">
+    <div class="cat-h">🚀 Launch & host</div>
+    <div class="grid">
+
+      <div class="tool">
+        <div class="tool-top"><div class="tool-ico">☁️</div><div><div class="tool-name">AWS Activate</div><div class="tool-cat">Cloud credits</div></div></div>
+        <div class="tool-desc">Up to $100,000 in AWS cloud credits for eligible startups — the standard backbone for early infra.</div>
+        <span class="tool-perk">Up to $100K in credits</span>
+        <!-- Referral: AWS Activate (aws.amazon.com/activate) — apply via an Activate Provider/partner org for higher tiers -->
+        <a class="tool-cta" href="REPLACE_WITH_AWS_ACTIVATE_URL" target="_blank" rel="noopener sponsored">Claim credits →</a>
+      </div>
+
+      <div class="tool">
+        <div class="tool-top"><div class="tool-ico">🌐</div><div><div class="tool-name">Hostinger</div><div class="tool-cat">Web hosting</div></div></div>
+        <div class="tool-desc">Cheap, reliable hosting and domains for your first site — beginner-friendly with one-click setup.</div>
+        <span class="tool-perk">Up to 75% off + free domain</span>
+        <!-- Affiliate: Hostinger Affiliate Program (hostinger.com/affiliates) -->
+        <a class="tool-cta" href="REPLACE_WITH_HOSTINGER_AFFILIATE_URL" target="_blank" rel="noopener sponsored">Get hosting →</a>
+      </div>
+
+      <div class="tool">
+        <div class="tool-top"><div class="tool-ico">🌊</div><div><div class="tool-name">DigitalOcean</div><div class="tool-cat">Cloud servers</div></div></div>
+        <div class="tool-desc">Simple, developer-friendly cloud servers — great when you outgrow basic hosting.</div>
+        <span class="tool-perk">$200 free credit (60 days)</span>
+        <!-- Referral: DigitalOcean referral program (digitalocean.com/referral-program) -->
+        <a class="tool-cta" href="REPLACE_WITH_DIGITALOCEAN_REFERRAL_URL" target="_blank" rel="noopener sponsored">Get $200 credit →</a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── GROW ────────────────────────────────────────────────────────────── -->
+  <div class="cat">
+    <div class="cat-h">📈 Grow & market</div>
+    <div class="grid">
+
+      <div class="tool">
+        <div class="tool-top"><div class="tool-ico">🟠</div><div><div class="tool-name">HubSpot for Startups</div><div class="tool-cat">CRM & marketing</div></div></div>
+        <div class="tool-desc">CRM, email and marketing automation — startups get steep first-year discounts through partner programs.</div>
+        <span class="tool-perk">Up to 90% off year one</span>
+        <!-- Affiliate: HubSpot Affiliate / Solutions Partner (hubspot.com/partners/affiliates) -->
+        <a class="tool-cta" href="REPLACE_WITH_HUBSPOT_AFFILIATE_URL" target="_blank" rel="noopener sponsored">Get HubSpot →</a>
+      </div>
+
+      <div class="tool">
+        <div class="tool-top"><div class="tool-ico">✉️</div><div><div class="tool-name">Brevo</div><div class="tool-cat">Email marketing</div></div></div>
+        <div class="tool-desc">Send newsletters and automated emails to your waitlist and users — free up to 300 emails/day.</div>
+        <span class="tool-perk">Free plan to start</span>
+        <!-- Affiliate: Brevo Affiliate Program (brevo.com/affiliate-program) -->
+        <a class="tool-cta" href="REPLACE_WITH_BREVO_AFFILIATE_URL" target="_blank" rel="noopener sponsored">Try Brevo →</a>
+      </div>
+
+      <div class="tool">
+        <div class="tool-top"><div class="tool-ico">📊</div><div><div class="tool-name">Tally</div><div class="tool-cat">Forms & surveys</div></div></div>
+        <div class="tool-desc">Free, beautiful forms for waitlists, user research and applications — no limits on the free plan.</div>
+        <span class="tool-perk">Free, unlimited forms</span>
+        <!-- Affiliate: Tally partner / referral (tally.so) -->
+        <a class="tool-cta" href="REPLACE_WITH_TALLY_AFFILIATE_URL" target="_blank" rel="noopener sponsored">Get Tally →</a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── OPERATE ─────────────────────────────────────────────────────────── -->
+  <div class="cat">
+    <div class="cat-h">🏛 Incorporate & operate</div>
+    <div class="grid">
+
+      <div class="tool">
+        <div class="tool-top"><div class="tool-ico">📐</div><div><div class="tool-name">Stripe Atlas</div><div class="tool-cat">Incorporation</div></div></div>
+        <div class="tool-desc">Incorporate a US company, get a bank account and issue equity — popular path for global founders raising from US VCs.</div>
+        <span class="tool-perk">Flat-fee incorporation</span>
+        <!-- Referral: Stripe Atlas (stripe.com/atlas) -->
+        <a class="tool-cta" href="REPLACE_WITH_STRIPE_ATLAS_URL" target="_blank" rel="noopener sponsored">Incorporate →</a>
+      </div>
+
+      <div class="tool">
+        <div class="tool-top"><div class="tool-ico">🧮</div><div><div class="tool-name">Zoho Books</div><div class="tool-cat">Accounting</div></div></div>
+        <div class="tool-desc">Affordable invoicing and accounting for early-stage teams — free tier for the smallest businesses.</div>
+        <span class="tool-perk">Free plan available</span>
+        <!-- Affiliate: Zoho Affiliate Program (zoho.com/affiliates) -->
+        <a class="tool-cta" href="REPLACE_WITH_ZOHO_AFFILIATE_URL" target="_blank" rel="noopener sponsored">Get Zoho →</a>
+      </div>
+
+      <div class="tool">
+        <div class="tool-top"><div class="tool-ico">📅</div><div><div class="tool-name">Calendly</div><div class="tool-cat">Scheduling</div></div></div>
+        <div class="tool-desc">Let investors, mentors and customers book time with you in one click — free plan covers the basics.</div>
+        <span class="tool-perk">Free plan to start</span>
+        <!-- Affiliate: Calendly partner / Impact program -->
+        <a class="tool-cta" href="REPLACE_WITH_CALENDLY_AFFILIATE_URL" target="_blank" rel="noopener sponsored">Get Calendly →</a>
+      </div>
+
+    </div>
+  </div>
+
+  <p class="disclosure">
+    <strong>Affiliate disclosure:</strong> Some links on this page are affiliate or referral links, which means CanvasIQ may earn a commission if you sign up — at no extra cost to you. We only list tools we'd genuinely recommend to founders and students. Offers and pricing are set by each provider and may change.
+  </p>
+
+  <div class="foot">
+    CanvasIQ · <a href="./funding.html">Find funding →</a> · <a href="./match.html">Match my idea →</a>
+  </div>
+</div>
+
+</body>
+</html>

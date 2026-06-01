@@ -252,6 +252,19 @@ nav{position:sticky;top:0;z-index:300;height:var(--nav-h);background:rgba(255,25
 .fsuccess h3{font-size:16px;font-weight:800;margin-bottom:5px}
 .fsuccess p{font-size:12px;color:var(--sb);line-height:1.6}
 
+/* ── LISTING TIERS ── */
+.tier-promo{background:linear-gradient(135deg,var(--al),#f5f3ff);border:1px solid #ddd6fe;border-radius:12px;padding:14px;margin-bottom:16px}
+.tier-promo-h{font-size:12px;font-weight:800;color:var(--ad);display:flex;align-items:center;gap:6px;margin-bottom:10px}
+.tier-row{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+@media(max-width:440px){.tier-row{grid-template-columns:1fr}}
+.tier-card{background:var(--sf);border:1.5px solid var(--br);border-radius:10px;padding:11px 12px;text-decoration:none;color:var(--tx);transition:.14s;display:block}
+.tier-card:hover{border-color:var(--a);box-shadow:0 4px 14px rgba(79,70,229,.15);transform:translateY(-1px)}
+.tier-name{font-size:12px;font-weight:800;display:flex;align-items:center;justify-content:space-between;gap:6px}
+.tier-price{font-size:11px;font-weight:800;color:var(--a)}
+.tier-desc{font-size:10.5px;color:var(--sb);line-height:1.45;margin-top:4px}
+.tier-badge{font-size:8px;font-weight:800;text-transform:uppercase;letter-spacing:.05em;background:linear-gradient(90deg,var(--a),#7c3aed);color:#fff;padding:2px 6px;border-radius:10px}
+.tier-free-note{font-size:10.5px;color:var(--mu);text-align:center;margin-bottom:14px}
+
 /* ── ALERTS ── */
 .alerts{background:linear-gradient(135deg,#4f46e5,#6366f1);padding:36px 20px;text-align:center;color:#fff;margin-top:0}
 .alerts h3{font-size:18px;font-weight:800;margin-bottom:4px}
@@ -374,6 +387,9 @@ nav{position:sticky;top:0;z-index:300;height:var(--nav-h);background:rgba(255,25
       <button class="sbi" style="color:var(--a);font-weight:700" onclick="openModal()">
         <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>Submit Opportunity
       </button>
+      <a class="sbi" href="./founder-stack.html" style="font-weight:600;text-decoration:none">
+        <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 7h18M3 12h18M3 17h18"/></svg>Founder tool deals
+      </a>
     </div>
     <div class="api-updated" id="apiUpdatedSB" style="display:none">
       <strong>Auto-updated</strong><br>
@@ -446,6 +462,25 @@ nav{position:sticky;top:0;z-index:300;height:var(--nav-h);background:rgba(255,25
       <button class="mx" onclick="closeModal()"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg></button>
     </div>
     <div class="mbody">
+      <!-- LISTING TIERS — Featured uses a hosted payment link (Stripe/Gumroad),
+           Enterprise opens an email. The free form below is unchanged. -->
+      <div class="tier-promo">
+        <div class="tier-promo-h">✦ Want maximum visibility?</div>
+        <div class="tier-row">
+          <!-- Replace the href with your Stripe Payment Link or Gumroad product URL -->
+          <a class="tier-card" href="REPLACE_WITH_STRIPE_OR_GUMROAD_PAYMENT_LINK" target="_blank" rel="noopener">
+            <div class="tier-name">Featured <span class="tier-badge">Popular</span></div>
+            <div class="tier-price">$29 / listing</div>
+            <div class="tier-desc">Top of the directory + a slot in the homepage carousel for 30 days. Reviewed within 24h.</div>
+          </a>
+          <a class="tier-card" href="mailto:acmahbub.official@gmail.com?subject=CanvasIQ%20Enterprise%20%2F%20Bulk%20Listings&body=Hi%20CanvasIQ%2C%20I%27d%20like%20to%20discuss%20bulk%20or%20partner%20listings.">
+            <div class="tier-name">Enterprise</div>
+            <div class="tier-price">Let's talk</div>
+            <div class="tier-desc">Bulk listings, partner placement or a sponsored campaign for your accelerator/org.</div>
+          </a>
+        </div>
+      </div>
+      <div class="tier-free-note">…or submit a standard free listing below ↓</div>
       <div id="fWrap">
         <form id="subForm" onsubmit="doSub(event)">
           <input type="hidden" name="_subject" value="CanvasIQ: New Opportunity Submission">
