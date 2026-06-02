@@ -1029,7 +1029,7 @@ function renderFundingPreview(items){
       <div class="fund-prize">${i.prize||'Varies'} <small>${i.prizeVal?'up to '+i.prizeVal:''}</small></div>
       <div class="fund-deadline">📅 ${i.deadlineLabel||i.deadline||'Rolling'}</div>
       <div class="fund-footer">
-        <span class="fund-source">${i.source==='auto'?'🤖 Auto-found':'✓ Verified'}</span>
+        <span class="fund-source">${i.verified?'✓ Verified':'Unverified'}</span>
         <a href="${i.url||'#'}" target="_blank"><button class="fund-cta">Apply Now →</button></a>
       </div>
     </div>`;
@@ -1038,34 +1038,51 @@ function renderFundingPreview(items){
   document.getElementById('stat-opps').textContent = items.length+'+';
 }
 
+// Maps any opportunity (live-events.json OR data.json) into the preview shape.
+function mapFunding(o){
+  return {
+    name: o.title || o.name || '',
+    type: (o.type || 'competition').toLowerCase(),
+    prize: o.amt || o.prize || 'Varies',
+    prizeVal: o.prizeVal || '',
+    deadline: (o.deadline && o.deadline !== 'rolling') ? o.deadline : 'rolling',
+    deadlineLabel: o.deadline || o.deadlineLabel || 'Rolling',
+    url: o.link || o.url || '#',
+    source: 'auto',
+    verified: o.verified === true,
+    addedDate: o.checkedAt || o.addedDate || '',
+  };
+}
+
+// Pull the VERIFIED live feed first (same source the funding page trusts),
+// so the homepage only ever previews real, date-checked opportunities.
+const REPO_RAW = 'https://raw.githubusercontent.com/Mahbub157/canvasiq-funding/main/';
 async function loadFunding(){
+  // 1) Verified live feed
+  try{
+    const r = await fetch(REPO_RAW + 'live-events.json?t=' + Date.now(), { cache:'no-store' });
+    if(r.ok){
+      const data = await r.json();
+      const items = (data.opportunities||[]).map(mapFunding).filter(i=>i.verified);
+      if(items.length){ renderFundingPreview(items); return; }
+    }
+  }catch(e){}
+  // 2) Local data.json — verified entries only
   try{
     const r = await fetch('./data.json');
-    if(!r.ok) throw new Error('no data');
-    const data = await r.json();
-    renderFundingPreview(data.opportunities||data);
-  } catch(e){
+    if(r.ok){
+      const data = await r.json();
+      const items = (data.opportunities||[]).map(mapFunding).filter(i=>i.verified);
+      if(items.length){ renderFundingPreview(items); return; }
+    }
+  }catch(e){}
+  // 3) No verified data yet — show a neutral message, never fake "verified" cards.
+  {
     document.getElementById('fundingPreview').innerHTML = `
-      <div class="fund-card">
-        <div class="fund-tag-row"><span class="tag tag-comp">Competition</span><span class="tag tag-new">✨ NEW</span></div>
-        <div class="fund-name">MIT $100K Entrepreneurship Competition</div>
-        <div class="fund-prize">$100,000</div>
-        <div class="fund-deadline">📅 March 15, 2026</div>
-        <div class="fund-footer"><span class="fund-source">✓ Verified</span><a href="funding.html"><button class="fund-cta">View All →</button></a></div>
-      </div>
-      <div class="fund-card">
-        <div class="fund-tag-row"><span class="tag tag-grant">Grant</span><span class="tag tag-urgent">🔥 Closing Soon</span></div>
-        <div class="fund-name">SBIR Phase I — EdTech / AI</div>
-        <div class="fund-prize">$275,000</div>
-        <div class="fund-deadline">📅 Rolling — apply anytime</div>
-        <div class="fund-footer"><span class="fund-source">✓ Verified</span><a href="funding.html"><button class="fund-cta">View All →</button></a></div>
-      </div>
-      <div class="fund-card">
-        <div class="fund-tag-row"><span class="tag tag-acc">Accelerator</span></div>
-        <div class="fund-name">NYC Media Lab Summer Accelerator</div>
-        <div class="fund-prize">$20,000 + Mentorship</div>
-        <div class="fund-deadline">📅 April 1, 2026</div>
-        <div class="fund-footer"><span class="fund-source">✓ Verified</span><a href="funding.html"><button class="fund-cta">View All →</button></a></div>
+      <div style="grid-column:1/-1;text-align:center;padding:30px 20px;color:var(--muted);">
+        <p style="font-size:15px;font-weight:600;color:var(--text2);margin-bottom:6px;">Loading verified opportunities…</p>
+        <p style="font-size:13px;">Fresh grants &amp; competitions are pulled from official sources daily.</p>
+        <a href="funding.html" style="display:inline-block;margin-top:14px;"><button class="fund-cta">Browse the full directory →</button></a>
       </div>
     `;
   }

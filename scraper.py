@@ -50,6 +50,13 @@ LIVE_FILE = "live-events.json"     # consumed directly by funding.html
 EXPIRE_AFTER_DAYS = 7              # drop entries this many days past deadline
 MAX_LIVE = 120                     # cap entries written to live-events.json
 
+# Only these sources return REAL, structured deadlines straight from an official
+# API, so only they are trusted enough to publish to the live site. RSS + web
+# search are kept for discovery but never published unverified (they're the
+# source of wrong dates / non-existent events).
+VERIFIED_SOURCES = {"devpost", "challengegov", "herox"}
+PUBLISH_UNVERIFIED = False         # keep False so nothing unverified hits the site
+
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36")
 
@@ -436,7 +443,8 @@ def to_live_entry(r: dict) -> dict:
         "desc": r["desc"],
         "img": r["img"],
         "source": r["source"],
-        "verified": True,
+        "verified": r.get("verified", False),
+        "checkedAt": r.get("checkedAt", ""),
         "liveAPI": True,
     }
 
@@ -458,6 +466,8 @@ def to_data_entry(r: dict) -> dict:
         "country": r["country"],
         "addedDate": r["addedDate"],
         "source": r["source"],
+        "verified": r.get("verified", False),
+        "checkedAt": r.get("checkedAt", ""),
     }
 
 
@@ -510,14 +520,27 @@ def run():
     cutoff = (started - timedelta(days=EXPIRE_AFTER_DAYS)).strftime("%Y-%m-%d")
     records = [r for r in dedupe(records) if not_expired(r["deadline"], cutoff)]
 
+    # Tag verification + the date we checked it, so the site can show trust.
+    today = started.strftime("%Y-%m-%d")
+    for r in records:
+        r["verified"] = r["source"] in VERIFIED_SOURCES
+        r["checkedAt"] = today
+
     # Sort: soonest real deadline first, rolling last
     records.sort(key=lambda r: r["deadline"] or "9999-99-99")
 
     # ── write live-events.json (what the site reads) ──────────────────────────
-    live = [to_live_entry(r) for r in records[:MAX_LIVE]]
+    # Publish ONLY verified entries (real deadlines from official APIs) unless
+    # PUBLISH_UNVERIFIED is explicitly turned on. This is what stops fake events
+    # and guessed deadlines from ever reaching the live site.
+    publishable = [r for r in records if r["verified"] or PUBLISH_UNVERIFIED]
+    live = [to_live_entry(r) for r in publishable[:MAX_LIVE]]
+    verified_n = sum(1 for r in publishable if r["verified"])
     live_out = {
         "updated": started.isoformat(),
         "count": len(live),
+        "verifiedCount": verified_n,
+        "policy": "verified-only" if not PUBLISH_UNVERIFIED else "includes-unverified",
         "sources": sources_ok,
         "opportunities": live,
     }
