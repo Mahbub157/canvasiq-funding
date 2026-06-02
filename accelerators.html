@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#4f46e5">
+<title>Accelerator Programs — CanvasIQ</title>
+<meta name="description" content="The accelerators and incubators worth applying to — global, Bangladesh and student-friendly. Funding, equity terms and links in one place.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+:root{
+  --a:#4f46e5;--ad:#3730a3;--al:#eef2ff;
+  --bg:linear-gradient(160deg,#dce8ff 0%,#ecf1ff 35%,#f5f7ff 65%,#fff 100%);
+  --sf:#fff;--br:#e2e8f0;--br2:#cbd5e1;
+  --tx:#0f172a;--sb:#475569;--mu:#94a3b8;
+  --r:14px;--rs:9px;
+  --sh:0 1px 3px rgba(15,23,42,.07),0 4px 16px rgba(15,23,42,.06);
+  --shh:0 8px 32px rgba(15,23,42,.13),0 2px 8px rgba(15,23,42,.07);
+  --shl:0 20px 60px rgba(15,23,42,.15);
+  --nav-h:58px;
+}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--bg);background-attachment:fixed;color:var(--tx);min-height:100vh;overflow-x:hidden}
+nav{position:sticky;top:0;z-index:300;height:var(--nav-h);background:rgba(255,255,255,.92);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(226,232,240,.8);display:flex;align-items:center;padding:0 20px;gap:12px}
+.logo{font-size:16px;font-weight:800;color:var(--tx);text-decoration:none;letter-spacing:-.4px}.logo span{color:var(--a)}
+.nav-sep{width:1px;height:18px;background:var(--br)}
+.nav-crumb{font-size:12px;color:var(--mu);font-weight:500;display:none}
+@media(min-width:600px){.nav-crumb{display:block}}
+.nav-r{display:flex;gap:6px;margin-left:auto;align-items:center}
+.btn-ghost{font-size:12px;font-weight:600;padding:6px 13px;border-radius:var(--rs);border:1.5px solid var(--br2);background:var(--sf);color:var(--tx);text-decoration:none;transition:.14s}
+.btn-ghost:hover{border-color:var(--a);color:var(--a)}
+
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+.hero{text-align:center;padding:38px 20px 4px;position:relative}
+.hero::before{content:"";position:absolute;top:-20px;left:50%;transform:translateX(-50%);width:min(560px,90%);height:220px;background:radial-gradient(60% 60% at 50% 40%,rgba(124,58,237,.22),rgba(79,70,229,.10) 45%,transparent 70%);filter:blur(20px);z-index:0;pointer-events:none}
+.hero>*{position:relative;z-index:1}
+.hero-badge{display:inline-flex;align-items:center;gap:7px;font-size:11px;font-weight:700;color:var(--a);background:rgba(255,255,255,.7);border:1px solid #ddd6fe;padding:5px 13px;border-radius:20px;margin-bottom:14px;backdrop-filter:blur(8px)}
+.hero-badge svg{color:#7c3aed}
+.hero h1{font-size:28px;font-weight:900;letter-spacing:-1px;line-height:1.1}
+@media(min-width:600px){.hero h1{font-size:38px}}
+.hero h1 .g{background:linear-gradient(90deg,var(--a),#7c3aed);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.hero p{font-size:14px;color:var(--sb);margin:10px auto 0;max-width:540px;line-height:1.6}
+
+.controls{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;align-items:center;margin-top:24px}
+.search{flex:1;min-width:200px;max-width:360px;display:flex;align-items:center;gap:8px;background:var(--sf);border:1.5px solid var(--br2);border-radius:24px;padding:8px 14px}
+.search input{flex:1;border:none;outline:none;font-family:'Inter',sans-serif;font-size:13px;background:transparent;color:var(--tx);min-width:0}
+.search svg{color:var(--mu);flex-shrink:0}
+.chip{font-size:12px;font-weight:700;padding:7px 14px;border-radius:20px;border:1.5px solid var(--br2);background:var(--sf);color:var(--sb);cursor:pointer;transition:.12s}
+.chip:hover{border-color:var(--a);color:var(--a)}
+.chip.on{background:var(--a);color:#fff;border-color:var(--a)}
+
+.count{text-align:center;font-size:12px;color:var(--mu);margin-top:16px;font-weight:600}
+.grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:14px}
+@media(min-width:620px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:980px){.grid{grid-template-columns:repeat(3,1fr)}}
+.card{background:var(--sf);border:1px solid var(--br);border-radius:var(--r);box-shadow:var(--sh);padding:17px;display:flex;flex-direction:column;transition:box-shadow .18s,transform .14s,border-color .14s}
+.card:hover{box-shadow:var(--shh);transform:translateY(-2px);border-color:rgba(79,70,229,.2)}
+@media(hover:none){.card:hover{transform:none;box-shadow:var(--sh)}}
+.c-top{display:flex;align-items:center;gap:11px;margin-bottom:10px}
+.c-logo{width:44px;height:44px;border-radius:11px;background:#fff;border:1px solid var(--br);display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:800;color:var(--a);flex-shrink:0;overflow:hidden}
+.c-logo img{width:28px;height:28px;object-fit:contain;display:block}
+.c-name{font-size:15px;font-weight:800;line-height:1.15}
+.c-region{font-size:11px;color:var(--mu);margin-top:2px}
+.badges{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:8px}
+.bdg{font-size:9.5px;font-weight:800;padding:3px 8px;border-radius:6px;text-transform:uppercase;letter-spacing:.03em}
+.bdg-eq{background:#fef3c7;color:#92400e}
+.bdg-free{background:#ecfdf5;color:#047857}
+.bdg-cash{background:var(--al);color:var(--a)}
+.c-desc{font-size:12.5px;color:var(--sb);line-height:1.55;flex:1}
+.c-focus{font-size:11px;color:var(--mu);margin-top:8px}
+.c-focus b{color:var(--sb);font-weight:700}
+.c-cta{display:inline-flex;align-items:center;justify-content:center;gap:6px;font-size:13px;font-weight:700;padding:9px 14px;border-radius:9px;border:none;background:var(--a);color:#fff;text-decoration:none;transition:.14s;margin-top:12px}
+.c-cta:hover{background:var(--ad)}
+.empty{text-align:center;padding:40px;color:var(--mu);grid-column:1/-1}
+.foot{font-size:11px;color:var(--mu);text-align:center;padding:24px 20px 50px}
+.foot a{color:var(--a);text-decoration:none}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="./index.html" class="logo">Canvas<span>IQ</span></a>
+  <div class="nav-sep"></div>
+  <span class="nav-crumb">Accelerators</span>
+  <div class="nav-r">
+    <a href="./funding.html" class="btn-ghost">Funding →</a>
+  </div>
+</nav>
+
+<div class="wrap">
+  <div class="hero">
+    <div class="hero-badge"><svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7M12 19l-2-2m-3-3l-2-2"/></svg>Programs that level you up</div>
+    <h1><span class="g">Accelerators</span> &amp; incubators</h1>
+    <p>The programs worth applying to — funding, mentorship and networks, with equity terms made clear. Global, Bangladesh and student-friendly.</p>
+  </div>
+
+  <div class="controls">
+    <div class="search">
+      <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+      <input id="q" placeholder="Search accelerators…" oninput="render()">
+    </div>
+    <div id="chips"></div>
+  </div>
+
+  <div class="count" id="count"></div>
+  <div class="grid" id="grid"></div>
+
+  <div class="foot">
+    CanvasIQ · <a href="./funding.html">Funding</a> · <a href="./vc-list.html">Investors</a> · <a href="./autopilot.html">Application autopilot</a>
+  </div>
+</div>
+
+<script>
+// ── ACCELERATOR DATA (edit / extend freely) ────────────────────────────────────
+const DATA=[
+  {n:'Y Combinator',d:'ycombinator.com',r:'Global',type:'cash-eq',offer:'$500K for 7% equity',focus:'Any sector, any stage',link:'https://ycombinator.com/apply',desc:"The world's most prestigious accelerator. Airbnb, Stripe, Dropbox, Reddit all started here. Two batches a year."},
+  {n:'Techstars',d:'techstars.com',r:'Global',type:'cash-eq',offer:'~$120K investment',focus:'50+ programs worldwide',link:'https://techstars.com/apply',desc:'Global 3-month mentorship-driven accelerator with programs across cities and verticals.'},
+  {n:'500 Global',d:'500.co',r:'Global',type:'cash-eq',offer:'Seed investment + program',focus:'Early-stage, global',link:'https://500.co',desc:'One of the most active early-stage VCs and accelerators, with a strong emerging-markets focus.'},
+  {n:'Antler',d:'antler.co',r:'Global',type:'cash-eq',offer:'Day-zero funding',focus:'Pre-idea to pre-seed',link:'https://antler.co',desc:'Backs founders from day zero — even helps you find a co-founder and form the company.'},
+  {n:'Entrepreneur First',d:'joinef.com',r:'Global',type:'cash-eq',offer:'Stipend + investment',focus:'Individuals pre-team',link:'https://joinef.com',desc:'A talent investor — join as an individual, find a co-founder and build a company from scratch.'},
+  {n:'MassChallenge',d:'masschallenge.org',r:'US',type:'free',offer:'Up to $100K, zero equity',focus:'Any sector, early-stage',link:'https://masschallenge.org',desc:'One of the largest zero-equity accelerators — keep 100% of your company.'},
+  {n:'Plug and Play',d:'plugandplaytechcenter.com',r:'US',type:'cash-eq',offer:'Investment + corporate pilots',focus:'Many verticals',link:'https://plugandplaytechcenter.com',desc:'Silicon Valley innovation platform connecting startups with corporates and investors.'},
+  {n:'Surge (Peak XV)',d:'peakxv.com',r:'Global',type:'cash-eq',offer:'Up to $3M',focus:'South & Southeast Asia',link:'https://peakxv.com',desc:'Rapid scale-up program from Peak XV (formerly Sequoia India) for the region’s top startups.'},
+  {n:'Seedcamp',d:'seedcamp.com',r:'Global',type:'cash-eq',offer:'Pre-seed / seed investment',focus:'Europe-focused, global',link:'https://seedcamp.com',desc:"Europe's seed fund backing founders early with a strong operator network."},
+  {n:'Microsoft for Startups',d:'microsoft.com',r:'Global',type:'free',offer:'Up to $150K Azure credits',focus:'Any tech startup',link:'https://startups.microsoft.com',desc:'Founders Hub — free cloud credits, tools and mentorship, no equity, easy to join.'},
+  {n:'NVIDIA Inception',d:'nvidia.com',r:'Global',type:'free',offer:'Credits + GPU access',focus:'AI / deep tech',link:'https://nvidia.com/startups',desc:'Free program for AI startups — compute credits, technical support and go-to-market help.'},
+  {n:'Startup Bangladesh',d:'startupbangladesh.gov.bd',r:'Bangladesh',type:'cash-eq',offer:'Equity investment (Govt fund)',focus:'BD-registered startups',link:'https://startupbangladesh.gov.bd',desc:"The government's flagship venture fund and accelerator for Bangladeshi startups."},
+  {n:'GP Accelerator',d:'grameenphone.com',r:'Bangladesh',type:'cash-eq',offer:'Seed + 3-month program',focus:'Early-stage BD startups',link:'https://grameenphone.com',desc:'Telenor-backed accelerator — mentorship, funding and access to GP’s network.'},
+  {n:'Robi r-ventures',d:'robi.com.bd',r:'Bangladesh',type:'cash-eq',offer:'Acceleration + investment',focus:'Digital BD startups',link:'https://robi.com.bd',desc:'Robi Axiata’s accelerator backing digital and tech ventures in Bangladesh.'},
+  {n:'IDEA Project (ICT Division)',d:'idea.gov.bd',r:'Bangladesh',type:'cash',offer:'Grants up to BDT 1 crore',focus:'BD innovators & startups',link:'https://idea.gov.bd',desc:'Government innovation fund offering grants and incubation to Bangladeshi startups.'},
+  {n:'LightCastle / Toru',d:'lightcastlebd.com',r:'Bangladesh',type:'free',offer:'Incubation + advisory',focus:'Impact & early-stage',link:'https://lightcastlebd.com',desc:'Local ecosystem builder running incubation and acceleration for BD entrepreneurs.'},
+];
+const REGIONS=['All','Global','Bangladesh','US'];
+let region='All';
+
+function logo(d,fb){ return `<div class="c-logo" data-fb="${fb}"><img src="https://logo.clearbit.com/${d}" alt="" loading="lazy" onerror="this.style.display='none';this.parentElement.textContent=this.parentElement.dataset.fb"></div>`; }
+function initials(n){ return n.replace(/[^A-Za-z ]/g,'').split(' ').filter(Boolean).map(x=>x[0]).join('').slice(0,2).toUpperCase(); }
+function badge(t){
+  if(t==='free') return '<span class="bdg bdg-free">Equity-free</span>';
+  if(t==='cash') return '<span class="bdg bdg-cash">Grant / cash</span>';
+  if(t==='cash-eq') return '<span class="bdg bdg-cash">Funded</span><span class="bdg bdg-eq">Takes equity</span>';
+  return '';
+}
+
+function renderChips(){ document.getElementById('chips').innerHTML=REGIONS.map(r=>`<button class="chip${r===region?' on':''}" onclick="setR('${r}')">${r}</button>`).join(''); }
+function setR(r){ region=r; renderChips(); render(); }
+
+function render(){
+  const q=(document.getElementById('q').value||'').toLowerCase();
+  const list=DATA.filter(a=>(region==='All'||a.r===region) && (!q || (a.n+' '+a.focus+' '+a.desc).toLowerCase().includes(q)));
+  document.getElementById('count').textContent=`${list.length} program${list.length!==1?'s':''}`;
+  const g=document.getElementById('grid');
+  g.innerHTML = list.length ? list.map(a=>`
+    <div class="card">
+      <div class="c-top">${logo(a.d,initials(a.n))}<div><div class="c-name">${a.n}</div><div class="c-region">${a.r}</div></div></div>
+      <div class="badges">${badge(a.type)}</div>
+      <div class="c-desc">${a.desc}</div>
+      <div class="c-focus"><b>Offer:</b> ${a.offer} · <b>Focus:</b> ${a.focus}</div>
+      <a class="c-cta" href="${a.link}" target="_blank" rel="noopener">Apply / learn more →</a>
+    </div>`).join('') : '<div class="empty">No programs match — try another filter.</div>';
+}
+renderChips(); render();
+</script>
+</body>
+</html>

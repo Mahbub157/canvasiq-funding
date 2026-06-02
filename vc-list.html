@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#4f46e5">
+<title>Investor Directory — CanvasIQ</title>
+<meta name="description" content="A curated directory of VCs and angels — by stage, sector and region. Find the right investors and draft tailored outreach.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+:root{
+  --a:#4f46e5;--ad:#3730a3;--al:#eef2ff;
+  --bg:linear-gradient(160deg,#dce8ff 0%,#ecf1ff 35%,#f5f7ff 65%,#fff 100%);
+  --sf:#fff;--br:#e2e8f0;--br2:#cbd5e1;
+  --tx:#0f172a;--sb:#475569;--mu:#94a3b8;
+  --r:14px;--rs:9px;
+  --sh:0 1px 3px rgba(15,23,42,.07),0 4px 16px rgba(15,23,42,.06);
+  --shh:0 8px 32px rgba(15,23,42,.13),0 2px 8px rgba(15,23,42,.07);
+  --shl:0 20px 60px rgba(15,23,42,.15);
+  --nav-h:58px;
+}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--bg);background-attachment:fixed;color:var(--tx);min-height:100vh;overflow-x:hidden}
+nav{position:sticky;top:0;z-index:300;height:var(--nav-h);background:rgba(255,255,255,.92);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(226,232,240,.8);display:flex;align-items:center;padding:0 20px;gap:12px}
+.logo{font-size:16px;font-weight:800;color:var(--tx);text-decoration:none;letter-spacing:-.4px}.logo span{color:var(--a)}
+.nav-sep{width:1px;height:18px;background:var(--br)}
+.nav-crumb{font-size:12px;color:var(--mu);font-weight:500;display:none}
+@media(min-width:600px){.nav-crumb{display:block}}
+.nav-r{display:flex;gap:6px;margin-left:auto;align-items:center}
+.btn-ghost{font-size:12px;font-weight:600;padding:6px 13px;border-radius:var(--rs);border:1.5px solid var(--br2);background:var(--sf);color:var(--tx);text-decoration:none;transition:.14s}
+.btn-ghost:hover{border-color:var(--a);color:var(--a)}
+
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+.hero{text-align:center;padding:38px 20px 4px;position:relative}
+.hero::before{content:"";position:absolute;top:-20px;left:50%;transform:translateX(-50%);width:min(560px,90%);height:220px;background:radial-gradient(60% 60% at 50% 40%,rgba(124,58,237,.22),rgba(79,70,229,.10) 45%,transparent 70%);filter:blur(20px);z-index:0;pointer-events:none}
+.hero>*{position:relative;z-index:1}
+.hero-badge{display:inline-flex;align-items:center;gap:7px;font-size:11px;font-weight:700;color:var(--a);background:rgba(255,255,255,.7);border:1px solid #ddd6fe;padding:5px 13px;border-radius:20px;margin-bottom:14px;backdrop-filter:blur(8px)}
+.hero-badge svg{color:#7c3aed}
+.hero h1{font-size:28px;font-weight:900;letter-spacing:-1px;line-height:1.1}
+@media(min-width:600px){.hero h1{font-size:38px}}
+.hero h1 .g{background:linear-gradient(90deg,var(--a),#7c3aed);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.hero p{font-size:14px;color:var(--sb);margin:10px auto 0;max-width:560px;line-height:1.6}
+
+.controls{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;align-items:center;margin-top:24px}
+.search{flex:1;min-width:200px;max-width:340px;display:flex;align-items:center;gap:8px;background:var(--sf);border:1.5px solid var(--br2);border-radius:24px;padding:8px 14px}
+.search input{flex:1;border:none;outline:none;font-family:'Inter',sans-serif;font-size:13px;background:transparent;color:var(--tx);min-width:0}
+.search svg{color:var(--mu);flex-shrink:0}
+select{font-family:'Inter',sans-serif;font-size:12.5px;font-weight:600;padding:8px 12px;border:1.5px solid var(--br2);border-radius:20px;background:var(--sf);color:var(--sb);outline:none;-webkit-appearance:none;cursor:pointer}
+select:focus{border-color:var(--a)}
+
+.count{text-align:center;font-size:12px;color:var(--mu);margin-top:16px;font-weight:600}
+.grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:14px}
+@media(min-width:620px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:980px){.grid{grid-template-columns:repeat(3,1fr)}}
+.card{background:var(--sf);border:1px solid var(--br);border-radius:var(--r);box-shadow:var(--sh);padding:17px;display:flex;flex-direction:column;transition:box-shadow .18s,transform .14s,border-color .14s}
+.card:hover{box-shadow:var(--shh);transform:translateY(-2px);border-color:rgba(79,70,229,.2)}
+@media(hover:none){.card:hover{transform:none;box-shadow:var(--sh)}}
+.c-top{display:flex;align-items:center;gap:11px;margin-bottom:10px}
+.c-logo{width:44px;height:44px;border-radius:11px;background:#fff;border:1px solid var(--br);display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:800;color:var(--a);flex-shrink:0;overflow:hidden}
+.c-logo img{width:28px;height:28px;object-fit:contain;display:block}
+.c-name{font-size:15px;font-weight:800;line-height:1.15}
+.c-region{font-size:11px;color:var(--mu);margin-top:2px}
+.stage{display:inline-block;font-size:9.5px;font-weight:800;padding:3px 8px;border-radius:6px;text-transform:uppercase;letter-spacing:.03em;background:var(--al);color:var(--a);margin-bottom:8px}
+.c-desc{font-size:12.5px;color:var(--sb);line-height:1.55;flex:1}
+.tags{display:flex;gap:5px;flex-wrap:wrap;margin-top:10px}
+.tag{font-size:10px;font-weight:600;color:var(--sb);background:#f1f5f9;padding:3px 8px;border-radius:6px}
+.c-meta{font-size:11px;color:var(--mu);margin-top:8px}.c-meta b{color:var(--sb)}
+.c-acts{display:flex;gap:7px;margin-top:12px}
+.c-cta{flex:1;display:inline-flex;align-items:center;justify-content:center;gap:5px;font-size:12.5px;font-weight:700;padding:9px;border-radius:9px;border:none;background:var(--a);color:#fff;text-decoration:none;transition:.14s}
+.c-cta:hover{background:var(--ad)}
+.c-cta.sec{flex:0 0 auto;background:var(--al);color:var(--a);padding:9px 12px}
+.empty{text-align:center;padding:40px;color:var(--mu);grid-column:1/-1}
+
+.tip{max-width:720px;margin:24px auto 0;font-size:12px;color:var(--sb);line-height:1.6;background:var(--al);border:1px solid #ddd6fe;border-radius:12px;padding:14px 18px;text-align:center}
+.tip a{color:var(--a);font-weight:700;text-decoration:none}
+.foot{font-size:11px;color:var(--mu);text-align:center;padding:24px 20px 50px}
+.foot a{color:var(--a);text-decoration:none}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="./index.html" class="logo">Canvas<span>IQ</span></a>
+  <div class="nav-sep"></div>
+  <span class="nav-crumb">Investors</span>
+  <div class="nav-r">
+    <a href="./funding.html" class="btn-ghost">Funding →</a>
+  </div>
+</nav>
+
+<div class="wrap">
+  <div class="hero">
+    <div class="hero-badge"><svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 3v18h18M7 14l4-4 3 3 5-6"/></svg>Find the right backers</div>
+    <h1>Investor <span class="g">directory</span></h1>
+    <p>A curated list of VCs and angels — filtered by stage, sector and region — so you pitch the funds that actually back companies like yours. Then draft tailored outreach in one click.</p>
+  </div>
+
+  <div class="controls">
+    <div class="search">
+      <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+      <input id="q" placeholder="Search investors…" oninput="render()">
+    </div>
+    <select id="fStage" onchange="render()"><option value="">Any stage</option><option>Pre-seed</option><option>Seed</option><option>Series A</option><option>Growth</option></select>
+    <select id="fRegion" onchange="render()"><option value="">Any region</option><option>Global</option><option>US</option><option>Asia</option><option>Bangladesh</option></select>
+    <select id="fSector" onchange="render()"><option value="">Any sector</option><option>Generalist</option><option>AI</option><option>SaaS</option><option>Fintech</option><option>EdTech</option><option>Climate</option><option>Emerging markets</option></select>
+  </div>
+
+  <div class="tip">
+    Found a fit? Use <a href="./autopilot.html">Application Autopilot</a> to turn your founder profile into a tailored intro — then review and send it yourself. (Always personalise before reaching out.)
+  </div>
+
+  <div class="count" id="count"></div>
+  <div class="grid" id="grid"></div>
+
+  <div class="foot">
+    CanvasIQ · <a href="./funding.html">Funding</a> · <a href="./accelerators.html">Accelerators</a> · <a href="./autopilot.html">Autopilot</a>
+  </div>
+</div>
+
+<script>
+// ── INVESTOR DATA (edit / extend freely) ───────────────────────────────────────
+const DATA=[
+  {n:'Y Combinator',d:'ycombinator.com',r:'Global',stage:['Pre-seed','Seed'],sectors:['Generalist'],check:'$500K standard',desc:'Accelerator + fund. The single best-known launchpad; rolling applications.',link:'https://ycombinator.com'},
+  {n:'Sequoia Capital',d:'sequoiacap.com',r:'US',stage:['Seed','Series A','Growth'],sectors:['Generalist','AI','SaaS'],check:'Seed → growth',desc:'Legendary multi-stage firm behind Apple, Google, Stripe and many more.',link:'https://sequoiacap.com'},
+  {n:'Andreessen Horowitz',d:'a16z.com',r:'US',stage:['Seed','Series A','Growth'],sectors:['AI','SaaS','Fintech'],check:'Seed → growth',desc:'a16z — large multi-stage fund with deep operator and go-to-market support.',link:'https://a16z.com'},
+  {n:'Accel',d:'accel.com',r:'Global',stage:['Seed','Series A'],sectors:['SaaS','Fintech','Generalist'],check:'Early → growth',desc:'Global early-stage firm (Facebook, Slack, Flipkart) with a strong India presence.',link:'https://accel.com'},
+  {n:'Peak XV Partners',d:'peakxv.com',r:'Asia',stage:['Seed','Series A','Growth'],sectors:['Generalist','SaaS','Fintech'],check:'Seed → growth',desc:'Formerly Sequoia India & SEA — the region’s leading multi-stage fund, runs Surge.',link:'https://peakxv.com'},
+  {n:'500 Global',d:'500.co',r:'Global',stage:['Pre-seed','Seed'],sectors:['Generalist','Emerging markets'],check:'Small early cheques',desc:'Very active early-stage investor with a strong emerging-markets portfolio.',link:'https://500.co'},
+  {n:'Antler',d:'antler.co',r:'Global',stage:['Pre-seed'],sectors:['Generalist'],check:'Day-zero cheque',desc:'Invests at the earliest stage — even before you have a co-founder or company.',link:'https://antler.co'},
+  {n:'Lightspeed',d:'lsvp.com',r:'Global',stage:['Seed','Series A','Growth'],sectors:['AI','SaaS','Fintech'],check:'Early → growth',desc:'Global multi-stage fund active across the US, India and SEA.',link:'https://lsvp.com'},
+  {n:'Khosla Ventures',d:'khoslaventures.com',r:'US',stage:['Seed','Series A'],sectors:['AI','Climate'],check:'Seed → early',desc:'Bold early-stage bets on deep tech, AI and climate from Vinod Khosla.',link:'https://khoslaventures.com'},
+  {n:'Reach Capital',d:'reachcapital.com',r:'US',stage:['Pre-seed','Seed','Series A'],sectors:['EdTech'],check:'Early-stage',desc:'The leading dedicated EdTech and future-of-work fund.',link:'https://reachcapital.com'},
+  {n:'Owl Ventures',d:'owlvc.com',r:'US',stage:['Series A','Growth'],sectors:['EdTech'],check:'A → growth',desc:'The largest EdTech-focused VC, backing education companies worldwide.',link:'https://owlvc.com'},
+  {n:'Lowercarbon Capital',d:'lowercarbon.com',r:'Global',stage:['Seed','Series A'],sectors:['Climate'],check:'Early-stage',desc:'Backs climate and decarbonisation startups — “unf**king the planet”.',link:'https://lowercarbon.com'},
+  {n:'Better Tomorrow Ventures',d:'btv.vc',r:'US',stage:['Pre-seed','Seed'],sectors:['Fintech'],check:'Pre-seed / seed',desc:'Fintech-only fund investing at the earliest stages globally.',link:'https://btv.vc'},
+  {n:'IDLC Venture Capital',d:'idlc.com',r:'Bangladesh',stage:['Seed','Series A'],sectors:['Generalist','Emerging markets'],check:'Local early-stage',desc:'One of Bangladesh’s active institutional VCs backing local startups.',link:'https://idlc.com'},
+  {n:'Startup Bangladesh',d:'startupbangladesh.gov.bd',r:'Bangladesh',stage:['Pre-seed','Seed'],sectors:['Generalist'],check:'Govt equity fund',desc:'The government venture fund investing in BD-registered startups.',link:'https://startupbangladesh.gov.bd'},
+  {n:'SBK Tech Ventures',d:'sbktechventures.com',r:'Bangladesh',stage:['Seed','Series A'],sectors:['Generalist'],check:'Early-stage',desc:'Early venture fund focused on the Bangladeshi tech ecosystem.',link:'https://sbktechventures.com'},
+  {n:'Anchorless Bangladesh',d:'anchorless.vc',r:'Bangladesh',stage:['Pre-seed','Seed'],sectors:['Generalist','Emerging markets'],check:'Early cheques',desc:'US-based fund investing specifically in Bangladesh-focused founders.',link:'https://anchorless.vc'},
+  {n:'Wavemaker Partners',d:'wavemaker.vc',r:'Asia',stage:['Seed','Series A'],sectors:['Generalist','SaaS'],check:'Early-stage',desc:'Southeast Asia early-stage fund active across the region.',link:'https://wavemaker.vc'},
+];
+
+function logo(d,fb){ return `<div class="c-logo" data-fb="${fb}"><img src="https://logo.clearbit.com/${d}" alt="" loading="lazy" onerror="this.style.display='none';this.parentElement.textContent=this.parentElement.dataset.fb"></div>`; }
+function initials(n){ return n.replace(/[^A-Za-z ]/g,'').split(' ').filter(Boolean).map(x=>x[0]).join('').slice(0,2).toUpperCase(); }
+
+function render(){
+  const q=(document.getElementById('q').value||'').toLowerCase();
+  const st=document.getElementById('fStage').value;
+  const rg=document.getElementById('fRegion').value;
+  const sc=document.getElementById('fSector').value;
+  const list=DATA.filter(v=>
+    (!q||(v.n+' '+v.desc+' '+v.sectors.join(' ')).toLowerCase().includes(q)) &&
+    (!st||v.stage.includes(st)) && (!rg||v.r===rg) && (!sc||v.sectors.includes(sc)));
+  document.getElementById('count').textContent=`${list.length} investor${list.length!==1?'s':''}`;
+  const g=document.getElementById('grid');
+  g.innerHTML=list.length? list.map(v=>{
+    const mailto='mailto:?subject='+encodeURIComponent('Intro: '+v.n)+'&body='+encodeURIComponent('Draft a tailored intro to '+v.n+' in CanvasIQ Autopilot, then paste it here.');
+    return `<div class="card">
+      <div class="c-top">${logo(v.d,initials(v.n))}<div><div class="c-name">${v.n}</div><div class="c-region">${v.r}</div></div></div>
+      <span class="stage">${v.stage.join(' · ')}</span>
+      <div class="c-desc">${v.desc}</div>
+      <div class="tags">${v.sectors.map(s=>`<span class="tag">${s}</span>`).join('')}</div>
+      <div class="c-meta"><b>Typical cheque:</b> ${v.check}</div>
+      <div class="c-acts">
+        <a class="c-cta" href="${v.link}" target="_blank" rel="noopener">Visit site →</a>
+        <a class="c-cta sec" href="./autopilot.html" title="Draft tailored outreach">Draft</a>
+      </div>
+    </div>`;
+  }).join('') : '<div class="empty">No investors match these filters — try widening them.</div>';
+}
+render();
+</script>
+</body>
+</html>

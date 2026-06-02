@@ -54,7 +54,8 @@ nav{position:sticky;top:0;z-index:300;height:var(--nav-h);background:rgba(255,25
 .tool:hover{box-shadow:var(--shh);transform:translateY(-2px);border-color:rgba(79,70,229,.2)}
 @media(hover:none){.tool:hover{transform:none;box-shadow:var(--sh)}}
 .tool-top{display:flex;align-items:center;gap:11px;margin-bottom:10px}
-.tool-ico{width:42px;height:42px;border-radius:11px;display:flex;align-items:center;justify-content:center;font-size:17px;font-weight:800;color:#fff;background:linear-gradient(135deg,var(--a),#7c3aed);flex-shrink:0;letter-spacing:-.5px}
+.tool-ico{width:42px;height:42px;border-radius:11px;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:800;color:var(--a);background:#fff;border:1px solid var(--br);flex-shrink:0;letter-spacing:-.5px;overflow:hidden}
+.tool-ico img{width:26px;height:26px;object-fit:contain;display:block}
 .cat-h svg{color:var(--a)}
 .tool-name{font-size:15px;font-weight:800;line-height:1.2}
 .tool-cat{font-size:10px;font-weight:600;color:var(--mu);text-transform:uppercase;letter-spacing:.04em;margin-top:2px}
@@ -101,7 +102,7 @@ nav{position:sticky;top:0;z-index:300;height:var(--nav-h);background:rgba(255,25
     <div class="grid">
 
       <div class="tool">
-        <div class="tool-top"><div class="tool-ico">N</div><div><div class="tool-name">Notion</div><div class="tool-cat">Docs & wiki</div></div></div>
+        <div class="tool-top"><div class="tool-ico" data-fb="N"><img src="https://logo.clearbit.com/notion.so" alt="Notion logo" loading="lazy" onerror="this.style.display='none';this.parentElement.textContent=this.parentElement.dataset.fb"></div><div><div class="tool-name">Notion</div><div class="tool-cat">Docs & wiki</div></div></div>
         <div class="tool-desc">All-in-one workspace for notes, docs, tasks and your startup wiki. Free for individuals; students get Plus free.</div>
         <span class="tool-perk">Free Plus plan for students</span>
         <!-- Affiliate: Notion Affiliate Program (notion.so/affiliates) -->
@@ -109,7 +110,7 @@ nav{position:sticky;top:0;z-index:300;height:var(--nav-h);background:rgba(255,25
       </div>
 
       <div class="tool">
-        <div class="tool-top"><div class="tool-ico">Fr</div><div><div class="tool-name">Framer</div><div class="tool-cat">Website builder</div></div></div>
+        <div class="tool-top"><div class="tool-ico" data-fb="Fr"><img src="https://logo.clearbit.com/framer.com" alt="Framer logo" loading="lazy" onerror="this.style.display='none';this.parentElement.textContent=this.parentElement.dataset.fb"></div><div><div class="tool-name">Framer</div><div class="tool-cat">Website builder</div></div></div>
         <div class="tool-desc">Design and ship a stunning startup site without code — fast, modern, great for landing pages.</div>
         <span class="tool-perk">Free plan + student discount</span>
         <!-- Affiliate: Framer Partner Program (framer.com/partners) -->
@@ -117,7 +118,7 @@ nav{position:sticky;top:0;z-index:300;height:var(--nav-h);background:rgba(255,25
       </div>
 
       <div class="tool">
-        <div class="tool-top"><div class="tool-ico">At</div><div><div class="tool-name">Airtable</div><div class="tool-cat">Database & ops</div></div></div>
+        <div class="tool-top"><div class="tool-ico" data-fb="At"><img src="https://logo.clearbit.com/airtable.com" alt="Airtable logo" loading="lazy" onerror="this.style.display='none';this.parentElement.textContent=this.parentElement.dataset.fb"></div><div><div class="tool-name">Airtable</div><div class="tool-cat">Database & ops</div></div></div>
         <div class="tool-desc">Spreadsheet-meets-database for tracking users, content, CRM and ops as you scale.</div>
         <span class="tool-perk">Generous free tier</span>
         <!-- Affiliate: Airtable / Impact partner program -->
@@ -133,7 +134,7 @@ nav{position:sticky;top:0;z-index:300;height:var(--nav-h);background:rgba(255,25
     <div class="grid">
 
       <div class="tool">
-        <div class="tool-top"><div class="tool-ico">AW</div><div><div class="tool-name">AWS Activate</div><div class="tool-cat">Cloud credits</div></div></div>
+        <div class="tool-top"><div class="tool-ico" data-fb="AW"><img src="https://logo.clearbit.com/aws.amazon.com" alt="AWS logo" loading="lazy" onerror="this.style.display='none';this.parentElement.textContent=this.parentElement.dataset.fb"></div><div><div class="tool-name">AWS Activate</div><div class="tool-cat">Cloud credits</div></div></div>
         <div class="tool-desc">Up to $100,000 in AWS cloud credits for eligible startups — the standard backbone for early infra.</div>
         <span class="tool-perk">Up to $100K in credits</span>
         <!-- Referral: AWS Activate (aws.amazon.com/activate) — apply via an Activate Provider/partner org for higher tiers -->
@@ -141,7 +142,7 @@ nav{position:sticky;top:0;z-index:300;height:var(--nav-h);background:rgba(255,25
       </div>
 
       <div class="tool">
-        <div class="tool-top"><div class="tool-ico">H</div><div><div class="tool-name">Hostinger</div><div class="tool-cat">Web hosting</div></div></div>
+        <div class="tool-top"><div class="tool-ico" data-fb="H"><img src="https://logo.clearbit.com/hostinger.com" alt="Hostinger logo" loading="lazy" onerror="this.style.display='none';this.parentElement.textContent=this.parentElement.dataset.fb"></div><div><div class="tool-name">Hostinger</div><div class="tool-cat">Web hosting</div></div></div>
         <div class="tool-desc">Cheap, reliable hosting and domains for your first site — beginner-friendly with one-click setup.</div>
         <span class="tool-perk">Up to 75% off + free domain</span>
         <!-- Affiliate: Hostinger Affiliate Program (hostinger.com/affiliates) -->
@@ -149,7 +150,7 @@ nav{position:sticky;top:0;z-index:300;height:var(--nav-h);background:rgba(255,25
       </div>
 
       <div class="tool">
-        <div class="tool-top"><div class="tool-ico">DO</div><div><div class="tool-name">DigitalOcean</div><div class="tool-cat">Cloud servers</div></div></div>
+        <div class="tool-top"><div class="tool-ico" data-fb="DO"><img src="https://logo.clearbit.com/digitalocean.com" alt="DigitalOcean logo" loading="lazy" onerror="this.style.display='none';this.parentElement.textContent=this.parentElement.dataset.fb"></div><div><div class="tool-name">DigitalOcean</div><div class="tool-cat">Cloud servers</div></div></div>
         <div class="tool-desc">Simple, developer-friendly cloud servers — great when you outgrow basic hosting.</div>
         <span class="tool-perk">$200 free credit (60 days)</span>
         <!-- Referral: DigitalOcean referral program (digitalocean.com/referral-program) -->
@@ -165,7 +166,7 @@ nav{position:sticky;top:0;z-index:300;height:var(--nav-h);background:rgba(255,25
     <div class="grid">
 
       <div class="tool">
-        <div class="tool-top"><div class="tool-ico">Hs</div><div><div class="tool-name">HubSpot for Startups</div><div class="tool-cat">CRM & marketing</div></div></div>
+        <div class="tool-top"><div class="tool-ico" data-fb="Hs"><img src="https://logo.clearbit.com/hubspot.com" alt="HubSpot logo" loading="lazy" onerror="this.style.display='none';this.parentElement.textContent=this.parentElement.dataset.fb"></div><div><div class="tool-name">HubSpot for Startups</div><div class="tool-cat">CRM & marketing</div></div></div>
         <div class="tool-desc">CRM, email and marketing automation — startups get steep first-year discounts through partner programs.</div>
         <span class="tool-perk">Up to 90% off year one</span>
         <!-- Affiliate: HubSpot Affiliate / Solutions Partner (hubspot.com/partners/affiliates) -->
@@ -173,7 +174,7 @@ nav{position:sticky;top:0;z-index:300;height:var(--nav-h);background:rgba(255,25
       </div>
 
       <div class="tool">
-        <div class="tool-top"><div class="tool-ico">Br</div><div><div class="tool-name">Brevo</div><div class="tool-cat">Email marketing</div></div></div>
+        <div class="tool-top"><div class="tool-ico" data-fb="Br"><img src="https://logo.clearbit.com/brevo.com" alt="Brevo logo" loading="lazy" onerror="this.style.display='none';this.parentElement.textContent=this.parentElement.dataset.fb"></div><div><div class="tool-name">Brevo</div><div class="tool-cat">Email marketing</div></div></div>
         <div class="tool-desc">Send newsletters and automated emails to your waitlist and users — free up to 300 emails/day.</div>
         <span class="tool-perk">Free plan to start</span>
         <!-- Affiliate: Brevo Affiliate Program (brevo.com/affiliate-program) -->
@@ -181,7 +182,7 @@ nav{position:sticky;top:0;z-index:300;height:var(--nav-h);background:rgba(255,25
       </div>
 
       <div class="tool">
-        <div class="tool-top"><div class="tool-ico">Ta</div><div><div class="tool-name">Tally</div><div class="tool-cat">Forms & surveys</div></div></div>
+        <div class="tool-top"><div class="tool-ico" data-fb="Ta"><img src="https://logo.clearbit.com/tally.so" alt="Tally logo" loading="lazy" onerror="this.style.display='none';this.parentElement.textContent=this.parentElement.dataset.fb"></div><div><div class="tool-name">Tally</div><div class="tool-cat">Forms & surveys</div></div></div>
         <div class="tool-desc">Free, beautiful forms for waitlists, user research and applications — no limits on the free plan.</div>
         <span class="tool-perk">Free, unlimited forms</span>
         <!-- Affiliate: Tally partner / referral (tally.so) -->
@@ -197,7 +198,7 @@ nav{position:sticky;top:0;z-index:300;height:var(--nav-h);background:rgba(255,25
     <div class="grid">
 
       <div class="tool">
-        <div class="tool-top"><div class="tool-ico">SA</div><div><div class="tool-name">Stripe Atlas</div><div class="tool-cat">Incorporation</div></div></div>
+        <div class="tool-top"><div class="tool-ico" data-fb="SA"><img src="https://logo.clearbit.com/stripe.com" alt="Stripe logo" loading="lazy" onerror="this.style.display='none';this.parentElement.textContent=this.parentElement.dataset.fb"></div><div><div class="tool-name">Stripe Atlas</div><div class="tool-cat">Incorporation</div></div></div>
         <div class="tool-desc">Incorporate a US company, get a bank account and issue equity — popular path for global founders raising from US VCs.</div>
         <span class="tool-perk">Flat-fee incorporation</span>
         <!-- Referral: Stripe Atlas (stripe.com/atlas) -->
@@ -205,7 +206,7 @@ nav{position:sticky;top:0;z-index:300;height:var(--nav-h);background:rgba(255,25
       </div>
 
       <div class="tool">
-        <div class="tool-top"><div class="tool-ico">Z</div><div><div class="tool-name">Zoho Books</div><div class="tool-cat">Accounting</div></div></div>
+        <div class="tool-top"><div class="tool-ico" data-fb="Z"><img src="https://logo.clearbit.com/zoho.com" alt="Zoho logo" loading="lazy" onerror="this.style.display='none';this.parentElement.textContent=this.parentElement.dataset.fb"></div><div><div class="tool-name">Zoho Books</div><div class="tool-cat">Accounting</div></div></div>
         <div class="tool-desc">Affordable invoicing and accounting for early-stage teams — free tier for the smallest businesses.</div>
         <span class="tool-perk">Free plan available</span>
         <!-- Affiliate: Zoho Affiliate Program (zoho.com/affiliates) -->
@@ -213,7 +214,7 @@ nav{position:sticky;top:0;z-index:300;height:var(--nav-h);background:rgba(255,25
       </div>
 
       <div class="tool">
-        <div class="tool-top"><div class="tool-ico">Cal</div><div><div class="tool-name">Calendly</div><div class="tool-cat">Scheduling</div></div></div>
+        <div class="tool-top"><div class="tool-ico" data-fb="Cal"><img src="https://logo.clearbit.com/calendly.com" alt="Calendly logo" loading="lazy" onerror="this.style.display='none';this.parentElement.textContent=this.parentElement.dataset.fb"></div><div><div class="tool-name">Calendly</div><div class="tool-cat">Scheduling</div></div></div>
         <div class="tool-desc">Let investors, mentors and customers book time with you in one click — free plan covers the basics.</div>
         <span class="tool-perk">Free plan to start</span>
         <!-- Affiliate: Calendly partner / Impact program -->
