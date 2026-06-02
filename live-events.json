@@ -1,12 +1,14 @@
 {
-  "updated": "2026-06-02T12:02:12.032073+00:00",
-  "count": 73,
+  "updated": "2026-06-02T22:16:39.591145+00:00",
+  "count": 39,
+  "verifiedCount": 39,
+  "policy": "verified-only",
   "sources": [
     "Devpost: 40",
     "Challenge.gov: 0",
     "HeroX: 0",
-    "RSS: 17",
-    "Search: 19"
+    "RSS: 16",
+    "Search: 20"
   ],
   "opportunities": [
     {
@@ -22,6 +24,7 @@
       "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/645/471/datas/medium_square.png",
       "source": "devpost",
       "verified": true,
+      "checkedAt": "2026-06-02",
       "liveAPI": true
     },
     {
@@ -37,6 +40,7 @@
       "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/665/639/datas/medium_square.png",
       "source": "devpost",
       "verified": true,
+      "checkedAt": "2026-06-02",
       "liveAPI": true
     },
     {
@@ -52,6 +56,7 @@
       "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/664/872/datas/medium_square.png",
       "source": "devpost",
       "verified": true,
+      "checkedAt": "2026-06-02",
       "liveAPI": true
     },
     {
@@ -67,21 +72,7 @@
       "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/667/302/datas/medium_square.jpg",
       "source": "devpost",
       "verified": true,
-      "liveAPI": true
-    },
-    {
-      "title": "International Geneva Peace Fellowship Programme 2026: Fully Funded Fellowship in Switzerland",
-      "type": "Scholarship",
-      "country": "Global",
-      "org": "OpportunityDesk",
-      "amt": "See listing",
-      "deadline": "2026-06-07",
-      "elig": "Open — see official listing",
-      "link": "https://grantsdatabase.org/2026/06/01/international-geneva-peace-fellowship-programme-2026-fully-funded-fellowship-in-switzerland/",
-      "desc": "Deadline: June 7, 2026 The International Geneva Peace Fellowship Programme 2026 is now open for applications from emerging and mid-career professionals passionate about peacebuilding, humanitarian diplomacy, mediation, and international cooperation. This prestigious fully funded fellowship offers participants a unique opportunity to live and work in Geneva, Switzerland, while engaging with leading global institutions and experts [...] The post International Geneva Peace Fello",
-      "img": "",
-      "source": "rss",
-      "verified": true,
+      "checkedAt": "2026-06-02",
       "liveAPI": true
     },
     {
@@ -97,21 +88,7 @@
       "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/715/520/datas/medium_square.png",
       "source": "devpost",
       "verified": true,
-      "liveAPI": true
-    },
-    {
-      "title": "Cyber4Africa Programme 2026: Cybersecurity Accelerator for African AI Startups",
-      "type": "Competition",
-      "country": "Global",
-      "org": "OpportunityDesk",
-      "amt": "See listing",
-      "deadline": "2026-06-08",
-      "elig": "Open — see official listing",
-      "link": "https://grantsdatabase.org/2026/06/02/cyber4africa-programme-2026-cybersecurity-accelerator-for-african-ai-startups/",
-      "desc": "Deadline: June 8, 2026 The Cyber4Africa Programme 2026 is a strategic, six-month cybersecurity capacity-building initiative designed specifically for African AI startups. As artificial intelligence continues to transform industries across the continent, the need for secure, trustworthy, and resilient digital systems has never been more important. This programme directly addresses that need by helping startups integrate [...] The post Cyber4Africa Programme 2026: Cybersecurity",
-      "img": "",
-      "source": "rss",
-      "verified": true,
+      "checkedAt": "2026-06-02",
       "liveAPI": true
     },
     {
@@ -127,6 +104,7 @@
       "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/555/057/datas/medium_square.png",
       "source": "devpost",
       "verified": true,
+      "checkedAt": "2026-06-02",
       "liveAPI": true
     },
     {
@@ -142,6 +120,7 @@
       "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/670/119/datas/medium_square.",
       "source": "devpost",
       "verified": true,
+      "checkedAt": "2026-06-02",
       "liveAPI": true
     },
     {
@@ -157,6 +136,7 @@
       "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/546/944/datas/medium_square.jpg",
       "source": "devpost",
       "verified": true,
+      "checkedAt": "2026-06-02",
       "liveAPI": true
     },
     {
@@ -172,6 +152,7 @@
       "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/719/822/datas/medium_square.png",
       "source": "devpost",
       "verified": true,
+      "checkedAt": "2026-06-02",
       "liveAPI": true
     },
     {
@@ -187,6 +168,7 @@
       "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/427/812/datas/medium_square.jpg",
       "source": "devpost",
       "verified": true,
+      "checkedAt": "2026-06-02",
       "liveAPI": true
     },
     {
@@ -202,36 +184,7 @@
       "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/595/623/datas/medium_square.jpg",
       "source": "devpost",
       "verified": true,
-      "liveAPI": true
-    },
-    {
-      "title": "IWA LeaP Leadership Programme for Young Water Professionals 2026-2028",
-      "type": "Competition",
-      "country": "Global",
-      "org": "OpportunityDesk",
-      "amt": "See listing",
-      "deadline": "2026-06-12",
-      "elig": "Open — see official listing",
-      "link": "https://opportunitydesk.org/2026/06/01/iwa-leap-leadership-programme-2026-2028/",
-      "desc": "Deadline: June 12, 2026 Applications are open for the IWA LeaP Leadership Programme for Young Water Professionals 2026-2028. This initiative is a gateway to professional empowerment, allowing participants to realise their potential and expand their horizons. IWA LeaP allows 12 exceptional young water professionals from diverse backgrounds and regions to rise to the leadership challenge. [...]",
-      "img": "",
-      "source": "rss",
-      "verified": true,
-      "liveAPI": true
-    },
-    {
-      "title": "IWA LEAP Leadership Programme 2026–2028",
-      "type": "Competition",
-      "country": "Global",
-      "org": "OpportunityDesk",
-      "amt": "See listing",
-      "deadline": "2026-06-12",
-      "elig": "Open — see official listing",
-      "link": "https://grantsdatabase.org/2026/06/02/iwa-leap-leadership-programme-2026-2028/",
-      "desc": "Deadline: June 12, 2026 The IWA LEAP Leadership Programme 2026–2028 is a prestigious global initiative designed to develop the next generation of water sector leaders. Delivered by the International Water Association (IWA), the programme brings together exceptional young professionals from across the world to strengthen leadership capacity, foster innovation, and accelerate progress toward sustainable water [...] The post IWA LEAP Leadership Programme 2026–2028 appeared first",
-      "img": "",
-      "source": "rss",
-      "verified": true,
+      "checkedAt": "2026-06-02",
       "liveAPI": true
     },
     {
@@ -247,6 +200,7 @@
       "img": "https://d2dmyh35ffsxbl.cloudfront.net/assets/defaults/thumbnail-placeholder-8c916ef4da99a222ce6ece077c71c7e282f071f830747b2abb5718018cbfa699.gif",
       "source": "devpost",
       "verified": true,
+      "checkedAt": "2026-06-02",
       "liveAPI": true
     },
     {
@@ -262,6 +216,7 @@
       "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/571/266/datas/medium_square.jpeg",
       "source": "devpost",
       "verified": true,
+      "checkedAt": "2026-06-02",
       "liveAPI": true
     },
     {
@@ -277,6 +232,7 @@
       "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/466/363/datas/medium_square.png",
       "source": "devpost",
       "verified": true,
+      "checkedAt": "2026-06-02",
       "liveAPI": true
     },
     {
@@ -292,6 +248,7 @@
       "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/522/819/datas/medium_square.png",
       "source": "devpost",
       "verified": true,
+      "checkedAt": "2026-06-02",
       "liveAPI": true
     },
     {
@@ -307,6 +264,7 @@
       "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/521/059/datas/medium_square.png",
       "source": "devpost",
       "verified": true,
+      "checkedAt": "2026-06-02",
       "liveAPI": true
     },
     {
@@ -322,6 +280,7 @@
       "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/542/613/datas/medium_square.png",
       "source": "devpost",
       "verified": true,
+      "checkedAt": "2026-06-02",
       "liveAPI": true
     },
     {
@@ -337,6 +296,7 @@
       "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/712/573/datas/medium_square.jpeg",
       "source": "devpost",
       "verified": true,
+      "checkedAt": "2026-06-02",
       "liveAPI": true
     },
     {
@@ -352,6 +312,7 @@
       "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/692/777/datas/medium_square.png",
       "source": "devpost",
       "verified": true,
+      "checkedAt": "2026-06-02",
       "liveAPI": true
     },
     {
@@ -367,6 +328,7 @@
       "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/696/134/datas/medium_square.png",
       "source": "devpost",
       "verified": true,
+      "checkedAt": "2026-06-02",
       "liveAPI": true
     },
     {
@@ -382,36 +344,7 @@
       "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/596/347/datas/medium_square.png",
       "source": "devpost",
       "verified": true,
-      "liveAPI": true
-    },
-    {
-      "title": "PRRI Public Fellows Program 2026-2027 ($5,000 stipend)",
-      "type": "Fellowship",
-      "country": "Global",
-      "org": "OpportunityDesk",
-      "amt": "$5,000",
-      "deadline": "2026-06-19",
-      "elig": "Open — see official listing",
-      "link": "https://opportunitydesk.org/2026/06/01/prri-public-fellows-program-2026-2027/",
-      "desc": "Deadline: June 19, 2026 Applications are open for the PRRI Public Fellows Program 2026-2027. Created in 2017, the PRRI Public Fellows program is an 11-month, non-residential fellowship that helps researchers develop and hone their ability to bring academic research to a broader public audience. This program is ideal for mid-career scholars who want to engage [...]",
-      "img": "",
-      "source": "rss",
-      "verified": true,
-      "liveAPI": true
-    },
-    {
-      "title": "PRRI Public Fellows Program 2026–2027",
-      "type": "Fellowship",
-      "country": "Global",
-      "org": "OpportunityDesk",
-      "amt": "See listing",
-      "deadline": "2026-06-19",
-      "elig": "Open — see official listing",
-      "link": "https://grantsdatabase.org/2026/06/02/prri-public-fellows-program-2026-2027/",
-      "desc": "Deadline: June 19, 2026 The PRRI Public Fellows Program 2026–2027 is a highly competitive, non-residential fellowship designed to support mid-career scholars who are ready to translate academic research into impactful public engagement. Run by the Public Religion Research Institute (PRRI), this fellowship focuses on helping researchers move beyond traditional academic publishing into media commentary, policy [...] The post PRRI Public Fellows Program 2026–2027 appeared first ",
-      "img": "",
-      "source": "rss",
-      "verified": true,
+      "checkedAt": "2026-06-02",
       "liveAPI": true
     },
     {
@@ -427,6 +360,7 @@
       "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/672/865/datas/medium_square.png",
       "source": "devpost",
       "verified": true,
+      "checkedAt": "2026-06-02",
       "liveAPI": true
     },
     {
@@ -442,6 +376,7 @@
       "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/595/365/datas/medium_square.jpeg",
       "source": "devpost",
       "verified": true,
+      "checkedAt": "2026-06-02",
       "liveAPI": true
     },
     {
@@ -457,36 +392,7 @@
       "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/600/607/datas/medium_square.png",
       "source": "devpost",
       "verified": true,
-      "liveAPI": true
-    },
-    {
-      "title": "Github readme generation",
-      "type": "Competition",
-      "country": "Global",
-      "org": "presentme",
-      "amt": "Open prizes",
-      "deadline": "2026-06-22",
-      "elig": "Open — see official listing",
-      "link": "https://github-readme-generation.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/601/116/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "liveAPI": true
-    },
-    {
-      "title": "UN-Habitat Scroll of Honour Award 2026",
-      "type": "Prize",
-      "country": "Global",
-      "org": "OpportunityDesk",
-      "amt": "See listing",
-      "deadline": "2026-06-23",
-      "elig": "Open — see official listing",
-      "link": "https://opportunitydesk.org/2026/06/01/un-habitat-scroll-of-honour-award-2026/",
-      "desc": "Deadline: June 23, 2026 Applications are open for the UN-Habitat Scroll of Honour Award 2026. Launched in 1989, the UN-Habitat Scroll of Honour Award recognizes individuals and institutions whose work has contributed to improving the quality of urban life and advancing sustainable, inclusive, and resilient cities and communities. The award highlights initiatives that help leave [...]",
-      "img": "",
-      "source": "rss",
-      "verified": true,
+      "checkedAt": "2026-06-02",
       "liveAPI": true
     },
     {
@@ -502,36 +408,7 @@
       "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/708/497/datas/medium_square.jpg",
       "source": "devpost",
       "verified": true,
-      "liveAPI": true
-    },
-    {
-      "title": "Brand Portals for Brands",
-      "type": "Competition",
-      "country": "Global",
-      "org": "Adobe",
-      "amt": "$57,500 in prizes",
-      "deadline": "2026-06-25",
-      "elig": "Open — see official listing",
-      "link": "https://brand.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/721/393/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "liveAPI": true
-    },
-    {
-      "title": "EarthRISE Developers Academy 2026",
-      "type": "Competition",
-      "country": "Global",
-      "org": "OpportunityDesk",
-      "amt": "See listing",
-      "deadline": "2026-06-26",
-      "elig": "Open — see official listing",
-      "link": "https://opportunitydesk.org/2026/06/02/earthrise-developers-academy-2026/",
-      "desc": "Deadline: June 26, 2026 Applications are open for the EarthRISE Developers Academy 2026. NASA EarthRISE Developers Academy builds the next generation of science and technology leaders by immersing student and early career scientists in projects using NASA data to address real-world challenges. Building on Langley Research Center’s 25+ years of workforce development expertise, EarthRISE Developers [...]",
-      "img": "",
-      "source": "rss",
-      "verified": true,
+      "checkedAt": "2026-06-02",
       "liveAPI": true
     },
     {
@@ -547,6 +424,7 @@
       "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/273/831/datas/medium_square.png",
       "source": "devpost",
       "verified": true,
+      "checkedAt": "2026-06-02",
       "liveAPI": true
     },
     {
@@ -562,6 +440,7 @@
       "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/686/189/datas/medium_square.png",
       "source": "devpost",
       "verified": true,
+      "checkedAt": "2026-06-02",
       "liveAPI": true
     },
     {
@@ -577,6 +456,7 @@
       "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/624/515/datas/medium_square.jpg",
       "source": "devpost",
       "verified": true,
+      "checkedAt": "2026-06-02",
       "liveAPI": true
     },
     {
@@ -592,6 +472,7 @@
       "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/496/809/datas/medium_square.jpg",
       "source": "devpost",
       "verified": true,
+      "checkedAt": "2026-06-02",
       "liveAPI": true
     },
     {
@@ -607,6 +488,7 @@
       "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/631/974/datas/medium_square.png",
       "source": "devpost",
       "verified": true,
+      "checkedAt": "2026-06-02",
       "liveAPI": true
     },
     {
@@ -622,96 +504,23 @@
       "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/601/771/datas/medium_square.png",
       "source": "devpost",
       "verified": true,
+      "checkedAt": "2026-06-02",
       "liveAPI": true
     },
     {
-      "title": "Routledge/Round Table Commonwealth Studentship Awards 2026–2027",
-      "type": "Grant",
-      "country": "Global",
-      "org": "OpportunityDesk",
-      "amt": "See listing",
-      "deadline": "2026-07-07",
-      "elig": "Open — see official listing",
-      "link": "https://grantsdatabase.org/2026/06/01/routledge-round-table-commonwealth-studentship-awards-2026-2027/",
-      "desc": "Deadline: July 7, 2026 The Routledge/Round Table Commonwealth Studentship Awards 2026–2027 is a prestigious funding opportunity designed to support doctoral researchers working on themes related to the Commonwealth across humanities and social sciences disciplines. The programme is jointly supported by The Round Table journal and the Association of Commonwealth Universities (ACU), with the aim of [...] The post Routledge/Round Table Commonwealth Studentship Awards 2026–2027 a",
-      "img": "",
-      "source": "rss",
-      "verified": true,
-      "liveAPI": true
-    },
-    {
-      "title": "Global Pluralism Award 2027 for Pluralism Champions ($CAD 150,000 prize)",
-      "type": "Prize",
-      "country": "Global",
-      "org": "OpportunityDesk",
-      "amt": "See listing",
-      "deadline": "2026-07-10",
-      "elig": "Open — see official listing",
-      "link": "https://grantsdatabase.org/2026/06/02/global-pluralism-award-2027-for-pluralism-champions-cad-150000-prize/",
-      "desc": "Deadline: July 10, 2026 The Global Pluralism Award 2027 is officially open for applications and nominations from individuals, organisations, governments, businesses, and civil society groups around the world that are advancing inclusion, diversity, and peaceful coexistence in their communities. Presented by the Global Centre for Pluralism and supported by TD Bank Group, the award celebrates [...] The post Global Pluralism Award 2027 for Pluralism Champions ($CAD 150,000 prize",
-      "img": "",
-      "source": "rss",
-      "verified": true,
-      "liveAPI": true
-    },
-    {
-      "title": "Zendesk Foundation Tech for Good Impact Awards 2026 (up to $50,000)",
-      "type": "Grant",
-      "country": "Global",
-      "org": "OpportunityDesk",
-      "amt": "$50,000",
-      "deadline": "2026-07-15",
-      "elig": "Open — see official listing",
-      "link": "https://opportunitydesk.org/2026/06/01/tech-for-good-impact-awards-2026/",
-      "desc": "Deadline: July 15, 2026 Applications are invited for the Zendesk Foundation Tech for Good Impact Awards 2026. Every year, the Zendesk Foundation awards up to $50,000 in free software and grants to nonprofits doing work in community building, crisis response, or tech career opportunities. At Zendesk, they believe that technology can change lives — especially [...]",
-      "img": "",
-      "source": "rss",
-      "verified": true,
-      "liveAPI": true
-    },
-    {
-      "title": "LEGO Foundation Fellowship 2026 for Researchers (up to $300,000)",
-      "type": "Fellowship",
-      "country": "Global",
-      "org": "OpportunityDesk",
-      "amt": "$300,000",
-      "deadline": "2026-07-31",
-      "elig": "Open — see official listing",
-      "link": "https://opportunitydesk.org/2026/06/02/lego-foundation-fellowship-2026/",
-      "desc": "Deadline: July 31, 2026 Applications are open for the LEGO Foundation Fellowship 2026. The LEGO Foundation Fellowship is a global initiative supporting researchers working to deepen the understanding of how children thrive. Spanning disciplines from education and psychology to public health, data science, and humanitarian studies, the fellowship brings together early- and mid-career scholars whose [...]",
-      "img": "",
-      "source": "rss",
-      "verified": true,
-      "liveAPI": true
-    },
-    {
-      "title": "FCDO Senior Research Fellowships 2026",
-      "type": "Fellowship",
-      "country": "Global",
-      "org": "OpportunityDesk",
-      "amt": "See listing",
-      "deadline": "2026-08-30",
-      "elig": "Open — see official listing",
-      "link": "https://opportunitydesk.org/2026/06/02/fcdo-senior-research-fellowships-2026/",
-      "desc": "Deadline: August 30, 2026 Applications are open for the FCDO Senior Research Fellowships 2026. On behalf of the Foreign, Commonwealth and Development Office (FCDO), the Global Research and Technology Development (GRTD) Research Commissioning Centre, co-led by 3ie and the University of Birmingham, invites applicants to submit their applications for eleven Senior Research Fellowships at the FCDO. [...]",
-      "img": "",
-      "source": "rss",
-      "verified": true,
-      "liveAPI": true
-    },
-    {
-      "title": "EXPAND NORTH STAR | 8-10 December 2026",
+      "title": "GLITCHED GAMES",
       "type": "Competition",
       "country": "Global",
-      "org": "Online",
-      "amt": "See listing",
-      "deadline": "2026-12-10",
+      "org": "GB3-Productions",
+      "amt": "Open prizes",
+      "deadline": "2026-06-30",
       "elig": "Open — see official listing",
-      "link": "https://expandnorthstar.com/supernova-0X",
-      "desc": "From first prototype to market expansion, Supernova 0X is the global pitch competition at Expand North Star 2026 , rebuilt for how startups actually scale. Now structured by venture stage, this format connects founders with the right investors, at the right time. No mismatches. No distractions. Just real opportunities to raise, partner and grow.",
-      "img": "",
-      "source": "search",
+      "link": "https://glitch-to-win-games.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/572/176/datas/medium_square.png",
+      "source": "devpost",
       "verified": true,
+      "checkedAt": "2026-06-02",
       "liveAPI": true
     },
     {
@@ -727,6 +536,7 @@
       "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/623/740/datas/medium_square.png",
       "source": "devpost",
       "verified": true,
+      "checkedAt": "2026-06-02",
       "liveAPI": true
     },
     {
@@ -742,6 +552,7 @@
       "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/724/186/datas/medium_square.png",
       "source": "devpost",
       "verified": true,
+      "checkedAt": "2026-06-02",
       "liveAPI": true
     },
     {
@@ -757,6 +568,7 @@
       "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/720/148/datas/medium_square.png",
       "source": "devpost",
       "verified": true,
+      "checkedAt": "2026-06-02",
       "liveAPI": true
     },
     {
@@ -772,6 +584,7 @@
       "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/600/071/datas/medium_square.jpeg",
       "source": "devpost",
       "verified": true,
+      "checkedAt": "2026-06-02",
       "liveAPI": true
     },
     {
@@ -787,6 +600,7 @@
       "img": "https://d2dmyh35ffsxbl.cloudfront.net/assets/defaults/thumbnail-placeholder-8c916ef4da99a222ce6ece077c71c7e282f071f830747b2abb5718018cbfa699.gif",
       "source": "devpost",
       "verified": true,
+      "checkedAt": "2026-06-02",
       "liveAPI": true
     },
     {
@@ -802,306 +616,23 @@
       "img": "https://d2dmyh35ffsxbl.cloudfront.net/assets/defaults/thumbnail-placeholder-8c916ef4da99a222ce6ece077c71c7e282f071f830747b2abb5718018cbfa699.gif",
       "source": "devpost",
       "verified": true,
+      "checkedAt": "2026-06-02",
       "liveAPI": true
     },
     {
-      "title": "Rhodes Scholarships 2027 for Study at the University of Oxford (Fully-funded)",
-      "type": "Scholarship",
-      "country": "Global",
-      "org": "OpportunityDesk",
-      "amt": "See listing",
-      "deadline": null,
-      "elig": "Open — see official listing",
-      "link": "https://opportunitydesk.org/2026/06/01/rhodes-scholarships-2027/",
-      "desc": "Deadline: Varies Applications for the Rhodes Scholarships 2027 are now open. The Rhodes Scholarship is a fully-funded postgraduate award which enables talented young people from around the world to study full-time at the University of Oxford. The Rhodes Scholarship is merit-based, with the purpose of developing public-spirited leaders, and to promote international understanding and peace [...]",
-      "img": "",
-      "source": "rss",
-      "verified": true,
-      "liveAPI": true
-    },
-    {
-      "title": "Rhodes Scholarships 2027 – Fully Funded Opportunity to Study at the University of Oxford",
-      "type": "Scholarship",
-      "country": "Global",
-      "org": "OpportunityDesk",
-      "amt": "See listing",
-      "deadline": null,
-      "elig": "Open — see official listing",
-      "link": "https://grantsdatabase.org/2026/06/02/rhodes-scholarships-2027-fully-funded-opportunity-to-study-at-the-university-of-oxford/",
-      "desc": "Deadline: Varies The Rhodes Scholarships 2027 represent one of the most prestigious and competitive international scholarship opportunities available to outstanding students worldwide. Established in 1902, the Rhodes Scholarship enables exceptional individuals to pursue postgraduate study at the University of Oxford in the United Kingdom. Over more than a century, it has built a global reputation [...] The post Rhodes Scholarships 2027 – Fully Funded Opportunity to Study at t",
-      "img": "",
-      "source": "rss",
-      "verified": true,
-      "liveAPI": true
-    },
-    {
-      "title": "Startup Grants in the United States 2026",
-      "type": "Grant",
-      "country": "United States",
-      "org": "Online",
-      "amt": "$4",
-      "deadline": null,
-      "elig": "Open — see official listing",
-      "link": "https://opportunedhub.lovable.app/blog/startup-grants-united-states-2026/",
-      "desc": "FAQ The United States is the world's largest source of non-dilutive funding for startups , with federal agencies awarding over $4 billion annually through programs like the Small Business Innovation Research (SBIR) and Small Business Technology Transfer (STTR) programs. Unlike venture capital, these grants do not require founders to give up equity.",
-      "img": "",
-      "source": "search",
-      "verified": true,
-      "liveAPI": true
-    },
-    {
-      "title": "Top 10 Tech Startup Grants for 2026 (Non-Dilutive)",
-      "type": "Grant",
-      "country": "Global",
-      "org": "Online",
-      "amt": "See listing",
-      "deadline": null,
-      "elig": "Open — see official listing",
-      "link": "https://creditforstartups.com/resources/tech-startup-grants",
-      "desc": "Find the best tech startup grants for 2026 . Our list covers non-dilutive funding from AWS, Google, OpenAI, and more, with eligibility, tips, and links.",
-      "img": "",
-      "source": "search",
-      "verified": true,
-      "liveAPI": true
-    },
-    {
-      "title": "Startup Grants 2026: Best Opportunities, Top Providers & Expert Tips ...",
-      "type": "Grant",
-      "country": "Global",
-      "org": "Online",
-      "amt": "See listing",
-      "deadline": null,
-      "elig": "Open — see official listing",
-      "link": "https://grants.com/startup-grants-2026-best-opportunities-top-providers-expert-tips-for-founders/",
-      "desc": "Explore the ultimate guide to startup grants in 2026 . Discover top grants , providers, eligibility, and winning application tips for founders worldwide.",
-      "img": "",
-      "source": "search",
-      "verified": true,
-      "liveAPI": true
-    },
-    {
-      "title": "10 Best New Business Grants for Startups in 2026",
-      "type": "Grant",
-      "country": "Global",
-      "org": "Online",
-      "amt": "See listing",
-      "deadline": null,
-      "elig": "Open — see official listing",
-      "link": "https://creditforstartups.com/resources/new-business-grants",
-      "desc": "Discover the top 10 new business grants for 2026 . Our guide covers eligibility, deadlines, and tips for securing non-dilutive funding for your startup .",
-      "img": "",
-      "source": "search",
-      "verified": true,
-      "liveAPI": true
-    },
-    {
-      "title": "The Ultimate Guide to Startup Grants: Secure Funding for Your Business ...",
-      "type": "Grant",
-      "country": "Global",
-      "org": "Online",
-      "amt": "See listing",
-      "deadline": null,
-      "elig": "Open — see official listing",
-      "link": "https://grants.com/the-ultimate-guide-to-startup-grants-secure-funding-for-your-business-in-2026/",
-      "desc": "Explore top startup grants for 2026 . Learn about industry-specific programs, application tips, and how to win non-dilutive funding for your business.",
-      "img": "",
-      "source": "search",
-      "verified": true,
-      "liveAPI": true
-    },
-    {
-      "title": "The Best Startup Grants and Non-Dilutive Funding in 2026",
-      "type": "Grant",
-      "country": "United States",
-      "org": "Online",
-      "amt": "See listing",
-      "deadline": null,
-      "elig": "Open — see official listing",
-      "link": "https://sahin.io/blog/the-best-startup-grants-and-non-dilutive-funding-in-2026",
-      "desc": "Discover the top startup grants and non-dilutive funding sources for 2026 . Learn how to secure capital from government programs like SBIR/STTR and private grants without giving up equity.",
-      "img": "",
-      "source": "search",
-      "verified": true,
-      "liveAPI": true
-    },
-    {
-      "title": "Small Business Grants 2026 Guide 2026 - successknocks.com",
-      "type": "Grant",
-      "country": "United States",
-      "org": "Online",
-      "amt": "See listing",
-      "deadline": null,
-      "elig": "Open — see official listing",
-      "link": "https://successknocks.com/small-business-grants-2026-guide/",
-      "desc": "Small Business Grants 2026 Guide: Discover SBIR/STTR, corporate programs, eligibility, and step-by-step application tips for US founders. Secure non-dilutive funding—start applying smarter today.",
-      "img": "",
-      "source": "search",
-      "verified": true,
-      "liveAPI": true
-    },
-    {
-      "title": "Non-Dilutive Funding for Tech Startups in 2026: SBIR Is Frozen, Defense ...",
-      "type": "Grant",
-      "country": "United States",
-      "org": "Online",
-      "amt": "$50,000",
-      "deadline": null,
-      "elig": "Open — see official listing",
-      "link": "https://fundinglandscape.com/answers/tech-startup-funding-sbir-2026",
-      "desc": "What is the fastest path to non-dilutive funding for a tech startup in 2026 ? For defense or dual-use technology: DIU's Commercial Solutions Opening (60 to 90 day decisions) or SOFWERX (under 30 days). For non -defense: state innovation programs (some move in 60 to 90 days) and OBBBA tax credits (automatic, no application needed). NSF I-Corps ($50,000) is the fastest federal grant program but ...",
-      "img": "",
-      "source": "search",
-      "verified": true,
-      "liveAPI": true
-    },
-    {
-      "title": "SBIR & STTR Grants for Startups: Your First Application in 2026",
-      "type": "Grant",
-      "country": "United States",
-      "org": "Online",
-      "amt": "See listing",
-      "deadline": null,
-      "elig": "Open — see official listing",
-      "link": "https://grantedai.com/blog/sbir-sttr-grants-startups-first-application-2026",
-      "desc": "A practical guide for startups applying to SBIR and STTR grants for the first time in 2026 , covering eligibility, agencies, Phase I vs Phase II, and proposal tips.",
-      "img": "",
-      "source": "search",
-      "verified": true,
-      "liveAPI": true
-    },
-    {
-      "title": "Startup Competitions 2026 — Complete Directory",
+      "title": "305 HackShells Edition June 2026",
       "type": "Competition",
       "country": "Global",
-      "org": "Online",
-      "amt": "$25,000",
+      "org": "Swift at FIU",
+      "amt": "Open prizes",
       "deadline": null,
       "elig": "Open — see official listing",
-      "link": "https://bootstrapdirectory.com/startup-competitions-2026",
-      "desc": "What startup competitions are happening in 2026 ? Major competitions include Techstars, Y Combinator's Demo Day-adjacent events, regional pitch competitions (in every state and major metro), industry-specific competitions (SaaS, fintech, climate tech), and corporate-sponsored contests from companies like Google, Amazon, and Microsoft. Prize pools range from $25,000 for local competitions to $1 ...",
-      "img": "",
-      "source": "search",
+      "link": "https://305hackshellsjune2026.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "https://d2dmyh35ffsxbl.cloudfront.net/assets/defaults/thumbnail-placeholder-8c916ef4da99a222ce6ece077c71c7e282f071f830747b2abb5718018cbfa699.gif",
+      "source": "devpost",
       "verified": true,
-      "liveAPI": true
-    },
-    {
-      "title": "Top 100 Startup Competitions: Complete 2026 Guide",
-      "type": "Competition",
-      "country": "Global",
-      "org": "Online",
-      "amt": "See listing",
-      "deadline": null,
-      "elig": "Open — see official listing",
-      "link": "https://thefounderspress.com/startup-competitions/",
-      "desc": "Discover the top 100 startup competitions worldwide to help you pitch , gain funding, and grow your business. Find the best opportunities...",
-      "img": "",
-      "source": "search",
-      "verified": true,
-      "liveAPI": true
-    },
-    {
-      "title": "Best Startup Competitions of 2026 — Win Cash Without Giving Up Equity",
-      "type": "Grant",
-      "country": "Global",
-      "org": "Online",
-      "amt": "See listing",
-      "deadline": null,
-      "elig": "Open — see official listing",
-      "link": "https://bootstrapdirectory.com/best-startup-competitions-2026",
-      "desc": "Find the best startup competitions of 2026 . Top non-dilutive pitch contests for bootstrapped founders across sectors.",
-      "img": "",
-      "source": "search",
-      "verified": true,
-      "liveAPI": true
-    },
-    {
-      "title": "Startup Prize | Health & Energy Entrepreneurial Competitions",
-      "type": "Competition",
-      "country": "Global",
-      "org": "Online",
-      "amt": "$10,000",
-      "deadline": null,
-      "elig": "Open — see official listing",
-      "link": "https://startupprize.com/",
-      "desc": "A competition for startups and entrepreneurs in the health and energy sectors. Win $10,000 cash and investment in your company.",
-      "img": "",
-      "source": "search",
-      "verified": true,
-      "liveAPI": true
-    },
-    {
-      "title": "Pitch Competitions for Startup Founders 2026",
-      "type": "Competition",
-      "country": "Global",
-      "org": "Online",
-      "amt": "See listing",
-      "deadline": null,
-      "elig": "Open — see official listing",
-      "link": "https://startupmountainsummit.com/pitch-competitions-startup-founders-2026/",
-      "desc": "The best pitch competitions for startup founders in 2026 — what to look for, how to prepare, and why the right pitch contest can change your trajectory.",
-      "img": "",
-      "source": "search",
-      "verified": true,
-      "liveAPI": true
-    },
-    {
-      "title": "Best Startup Events and Pitch Competitions for Founders in Spring 2026",
-      "type": "Competition",
-      "country": "Global",
-      "org": "Online",
-      "amt": "See listing",
-      "deadline": null,
-      "elig": "Open — see official listing",
-      "link": "https://capwave.ai/blog/blog-startup-events-pitch-competitions-spring-2026",
-      "desc": "The best startup events and pitch competitions for founders in spring 2026 , from Startup Grind to YC deadlines. Dates, prep tips, and what to prioritize.",
-      "img": "",
-      "source": "search",
-      "verified": true,
-      "liveAPI": true
-    },
-    {
-      "title": "Get funding and prizes from 2026 startup competitions | F6S Startup ...",
-      "type": "Competition",
-      "country": "Global",
-      "org": "Online",
-      "amt": "See listing",
-      "deadline": null,
-      "elig": "Open — see official listing",
-      "link": "https://www.f6s.com/contests",
-      "desc": "Find and enter top 2026 startup competitions , funding competitions , pitch contests, business plan competitions to get prizes , increase awareness and win money",
-      "img": "",
-      "source": "search",
-      "verified": true,
-      "liveAPI": true
-    },
-    {
-      "title": "SBA Launches $1 Million Patriot Pitch Competition to Showcase America's ...",
-      "type": "Competition",
-      "country": "United States",
-      "org": "Online",
-      "amt": "$1 Million",
-      "deadline": null,
-      "elig": "Open — see official listing",
-      "link": "https://www.sba.gov/article/2026/05/13/sba-launches-1-million-patriot-pitch-competition-showcase-americas-entrepreneurs",
-      "desc": "WASHINGTON — Today, the U.S. Small Business Administration (SBA) launched the Patriot Pitch Competition , a national celebration of 250 years of American free enterprise and the small businesses that drive innovation, create jobs, and generate economic growth. Featuring a $1 million cash prize pool donated by Clover Network, Inc. (Clover), the competition is open to eligible small businesses ...",
-      "img": "",
-      "source": "search",
-      "verified": true,
-      "liveAPI": true
-    },
-    {
-      "title": "Top 5 Most Impactful Startup Pitch Competitions in 2026",
-      "type": "Competition",
-      "country": "Global",
-      "org": "Online",
-      "amt": "See listing",
-      "deadline": null,
-      "elig": "Open — see official listing",
-      "link": "https://startupsandgiants.com/events-fairs/top-5-startup-pitch-competitions-2026",
-      "desc": "Discover the top 5 most impactful startup pitch competitions in 2026 . This guide evaluates events like Startup World Cup, TechCrunch Disrupt, and Slush based on prize money, media exposure, and investor access to help founders choose the best platform for their growth.",
-      "img": "",
-      "source": "search",
-      "verified": true,
+      "checkedAt": "2026-06-02",
       "liveAPI": true
     }
   ]
