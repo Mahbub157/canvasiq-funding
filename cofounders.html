@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#4f46e5">
+<title>Co-founder Match — CanvasIQ</title>
+<meta name="description" content="Find a co-founder or teammate for your startup, hackathon or competition. Post your profile and connect.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+:root{
+  --a:#4f46e5;--ad:#3730a3;--al:#eef2ff;
+  --bg:linear-gradient(160deg,#dce8ff 0%,#ecf1ff 35%,#f5f7ff 65%,#fff 100%);
+  --sf:#fff;--br:#e2e8f0;--br2:#cbd5e1;
+  --tx:#0f172a;--sb:#475569;--mu:#94a3b8;
+  --r:14px;--rs:9px;
+  --sh:0 1px 3px rgba(15,23,42,.07),0 4px 16px rgba(15,23,42,.06);
+  --shh:0 8px 32px rgba(15,23,42,.13),0 2px 8px rgba(15,23,42,.07);
+  --shl:0 20px 60px rgba(15,23,42,.15);
+  --nav-h:58px;
+}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--bg);background-attachment:fixed;color:var(--tx);min-height:100vh;overflow-x:hidden}
+nav{position:sticky;top:0;z-index:300;height:var(--nav-h);background:rgba(255,255,255,.92);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(226,232,240,.8);display:flex;align-items:center;padding:0 20px;gap:12px}
+.logo{font-size:16px;font-weight:800;color:var(--tx);text-decoration:none;letter-spacing:-.4px}.logo span{color:var(--a)}
+.nav-sep{width:1px;height:18px;background:var(--br)}
+.nav-crumb{font-size:12px;color:var(--mu);font-weight:500;display:none}
+@media(min-width:600px){.nav-crumb{display:block}}
+.nav-r{display:flex;gap:6px;margin-left:auto;align-items:center}
+.btn-ghost{font-size:12px;font-weight:600;padding:6px 13px;border-radius:var(--rs);border:1.5px solid var(--br2);background:var(--sf);color:var(--tx);text-decoration:none;cursor:pointer;transition:.14s}
+.btn-ghost:hover{border-color:var(--a);color:var(--a)}
+
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+.hero{text-align:center;padding:36px 20px 4px;position:relative}
+.hero::before{content:"";position:absolute;top:-20px;left:50%;transform:translateX(-50%);width:min(560px,90%);height:220px;background:radial-gradient(60% 60% at 50% 40%,rgba(124,58,237,.22),rgba(79,70,229,.10) 45%,transparent 70%);filter:blur(20px);z-index:0;pointer-events:none}
+.hero>*{position:relative;z-index:1}
+.hero-badge{display:inline-flex;align-items:center;gap:7px;font-size:11px;font-weight:700;color:var(--a);background:rgba(255,255,255,.7);border:1px solid #ddd6fe;padding:5px 13px;border-radius:20px;margin-bottom:14px;backdrop-filter:blur(8px)}
+.hero-badge svg{color:#7c3aed}
+.c-loc svg{vertical-align:-2px;margin-right:3px;color:var(--mu)}
+.hero h1{font-size:28px;font-weight:900;letter-spacing:-1px;line-height:1.1}
+@media(min-width:600px){.hero h1{font-size:38px}}
+.hero h1 .g{background:linear-gradient(90deg,var(--a),#7c3aed);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.hero p{font-size:14px;color:var(--sb);margin:10px auto 0;max-width:540px;line-height:1.6}
+.hero-cta{margin-top:18px}
+
+.bar{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:26px;justify-content:center}
+.chip{font-size:12px;font-weight:700;padding:7px 14px;border-radius:20px;border:1.5px solid var(--br2);background:var(--sf);color:var(--sb);cursor:pointer;transition:.12s}
+.chip:hover{border-color:var(--a);color:var(--a)}
+.chip.on{background:var(--a);color:#fff;border-color:var(--a)}
+
+.grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:20px}
+@media(min-width:620px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:960px){.grid{grid-template-columns:repeat(3,1fr)}}
+.card{background:var(--sf);border:1px solid var(--br);border-radius:var(--r);box-shadow:var(--sh);padding:17px;display:flex;flex-direction:column;transition:box-shadow .18s,transform .14s,border-color .14s}
+.card:hover{box-shadow:var(--shh);transform:translateY(-2px);border-color:rgba(79,70,229,.2)}
+@media(hover:none){.card:hover{transform:none;box-shadow:var(--sh)}}
+.c-top{display:flex;align-items:center;gap:11px;margin-bottom:10px}
+.av{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--a),#7c3aed);color:#fff;font-size:17px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.c-name{font-size:14px;font-weight:800;line-height:1.2}
+.c-loc{font-size:11px;color:var(--mu);margin-top:2px}
+.role{font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.04em;color:var(--a);background:var(--al);padding:3px 9px;border-radius:6px;align-self:flex-start;margin-bottom:8px}
+.c-for{font-size:12.5px;color:var(--tx);line-height:1.5;font-weight:600}
+.c-for b{color:var(--a)}
+.c-bio{font-size:12px;color:var(--sb);line-height:1.5;margin-top:6px;flex:1}
+.skills{display:flex;gap:5px;flex-wrap:wrap;margin-top:10px}
+.sk{font-size:10px;font-weight:600;color:var(--sb);background:#f1f5f9;padding:3px 8px;border-radius:6px}
+.connect{margin-top:12px;font-size:12px;font-weight:700;padding:9px;border-radius:8px;border:none;background:var(--a);color:#fff;text-decoration:none;text-align:center;cursor:pointer;transition:.12s}
+.connect:hover{background:var(--ad)}
+
+/* MODAL */
+.mbg{display:none;position:fixed;inset:0;background:rgba(15,23,42,.5);z-index:400;align-items:center;justify-content:center;padding:16px;backdrop-filter:blur(6px)}
+.mbg.open{display:flex}
+.modal{background:var(--sf);border-radius:18px;width:100%;max-width:480px;max-height:92vh;overflow-y:auto;box-shadow:var(--shl)}
+.mh{padding:20px 20px 0;display:flex;justify-content:space-between;align-items:flex-start}
+.mh h2{font-size:17px;font-weight:800}.mh p{font-size:12px;color:var(--sb);margin-top:3px}
+.mx{background:none;border:none;cursor:pointer;color:var(--mu);font-size:22px;line-height:1;padding:2px 6px}
+.mb{padding:14px 20px 20px}
+.mb label{display:block;font-size:10px;font-weight:700;color:var(--sb);text-transform:uppercase;letter-spacing:.05em;margin:10px 0 4px}
+.mb input,.mb select,.mb textarea{width:100%;font-family:'Inter',sans-serif;font-size:14px;padding:10px 12px;border:1.5px solid var(--br2);border-radius:8px;outline:none;background:var(--sf);color:var(--tx);-webkit-appearance:none}
+.mb input:focus,.mb select:focus,.mb textarea:focus{border-color:var(--a);box-shadow:0 0 0 3px rgba(79,70,229,.1)}
+.mb textarea{resize:vertical;min-height:64px;line-height:1.5}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:440px){.two{grid-template-columns:1fr}}
+.sub{width:100%;margin-top:14px;padding:13px;border:none;border-radius:9px;background:var(--a);color:#fff;font-size:14px;font-weight:700;cursor:pointer;font-family:'Inter',sans-serif}
+.sub:hover{background:var(--ad)}
+.fnote{font-size:11px;color:var(--mu);margin-top:10px;text-align:center;line-height:1.5}
+.okmsg{display:none;text-align:center;padding:34px 16px}
+.okmsg h3{font-size:16px;font-weight:800;margin:8px 0 4px}.okmsg p{font-size:12px;color:var(--sb);line-height:1.6}
+
+.persist{max-width:720px;margin:30px auto 0;font-size:11.5px;color:var(--mu);line-height:1.6;background:rgba(255,255,255,.6);border:1px solid var(--br);border-radius:12px;padding:14px 18px;text-align:center}
+.foot{font-size:11px;color:var(--mu);text-align:center;padding:24px 20px 50px}
+.foot a{color:var(--a);text-decoration:none}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="./index.html" class="logo">Canvas<span>IQ</span></a>
+  <div class="nav-sep"></div>
+  <span class="nav-crumb">Co-founder Match</span>
+  <div class="nav-r">
+    <button class="btn-ghost" onclick="openModal()">+ Post your profile</button>
+  </div>
+</nav>
+
+<div class="wrap">
+  <div class="hero">
+    <div class="hero-badge"><svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M9 7a4 4 0 100 8 4 4 0 000-8zM23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>Build your team</div>
+    <h1>Find your <span class="g">co-founder</span> or teammate</h1>
+    <p>Going after a competition, hackathon or starting up? Post what you're looking for and find the people to win with.</p>
+    <div class="hero-cta"><button class="connect" style="display:inline-block;padding:11px 22px" onclick="openModal()">+ Post your profile</button></div>
+  </div>
+
+  <div class="bar" id="filterBar"></div>
+  <div class="grid" id="grid"></div>
+
+  <div class="persist">
+    <strong>Note:</strong> profiles posted here are emailed to the CanvasIQ team and added after a quick review. To make this a fully live, self-serve board, connect a lightweight database (Supabase, Airtable or Google Sheets) — I can wire that in whenever you're ready.
+  </div>
+
+  <div class="foot">
+    CanvasIQ · <a href="./funding.html">Funding</a> · <a href="./autopilot.html">Application autopilot</a> · <a href="./deadlines.html">Deadlines</a>
+  </div>
+</div>
+
+<!-- POST MODAL -->
+<div class="mbg" id="modal">
+  <div class="modal">
+    <div class="mh">
+      <div><h2>Post your profile</h2><p>Tell people what you're building and who you need.</p></div>
+      <button class="mx" onclick="closeModal()">×</button>
+    </div>
+    <div class="mb">
+      <div id="formWrap">
+        <form id="coForm" onsubmit="doPost(event)">
+          <input type="hidden" name="_subject" value="CanvasIQ: New Co-founder Profile">
+          <input type="hidden" name="_captcha" value="false">
+          <div class="two">
+            <div><label>Your name *</label><input name="name" required placeholder="Ayesha R."></div>
+            <div><label>Location</label><input name="location" placeholder="Dhaka / Remote"></div>
+          </div>
+          <label>I am a… *</label>
+          <select name="role" required>
+            <option value="">Select your role</option>
+            <option>Technical / Developer</option>
+            <option>Business / Operations</option>
+            <option>Design / Product</option>
+            <option>Marketing / Growth</option>
+            <option>Domain expert</option>
+          </select>
+          <label>Looking for *</label>
+          <input name="seeking" required placeholder="e.g. Technical co-founder for an EdTech app">
+          <label>What you're building / the competition</label>
+          <textarea name="building" placeholder="e.g. Forming a team for Hult Prize — AI tutoring for rural students"></textarea>
+          <label>Your skills (comma-separated)</label>
+          <input name="skills" placeholder="React, Python, fundraising, UI">
+          <label>Contact (email or link) *</label>
+          <input name="contact" required placeholder="you@email.com or LinkedIn URL">
+          <button type="submit" class="sub">Post profile</button>
+          <p class="fnote">Reviewed and published within 24h. Your contact is shown so people can reach you.</p>
+        </form>
+      </div>
+      <div class="okmsg" id="okMsg">
+        <svg width="44" height="44" fill="none" stroke="#22c55e" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg>
+        <h3>Profile submitted!</h3>
+        <p>We'll review and add you to the board within 24 hours.</p>
+        <button class="btn-ghost" style="margin-top:16px" onclick="closeModal()">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ── SEED PROFILES (replace/extend, or load from a DB later) ─────────────────────
+const PROFILES=[
+  {name:'Tanvir H.',loc:'Dhaka',role:'Technical / Developer',seeking:'Business co-founder',building:'EdTech app for HSC students — MVP live, 400 users. Going for Startup Bangladesh.',skills:['Flutter','Firebase','Node'],contact:'mailto:hello@example.com'},
+  {name:'Ayesha R.',loc:'Remote',role:'Design / Product',seeking:'Technical co-founder',building:'Mental-health app for university students. Forming a team for Hult Prize.',skills:['Figma','UX research','Branding'],contact:'mailto:hello@example.com'},
+  {name:'Rifat K.',loc:'Chittagong',role:'Business / Operations',seeking:'Technical teammate for hackathon',building:'NASA Space Apps Dhaka — need a dev who likes data viz.',skills:['Ops','Pitching','Finance'],contact:'mailto:hello@example.com'},
+  {name:'Sara M.',loc:'New York',role:'Marketing / Growth',seeking:'Co-founder (any)',building:'Creator-economy SaaS, pre-seed. Applying to TechCrunch Battlefield.',skills:['Growth','Content','SEO'],contact:'mailto:hello@example.com'},
+  {name:'Imran S.',loc:'Remote',role:'Technical / Developer',seeking:'Designer + business teammate',building:'AI study-buddy for competitive exams. Building MVP.',skills:['Python','LLMs','Backend'],contact:'mailto:hello@example.com'},
+  {name:'Nadia A.',loc:'Dhaka',role:'Domain expert',seeking:'Technical co-founder',building:'AgriTech for smallholder farmers — pilot with 2 unions.',skills:['Agronomy','Field ops','Bangla content'],contact:'mailto:hello@example.com'},
+];
+const ROLES=['All','Technical / Developer','Business / Operations','Design / Product','Marketing / Growth','Domain expert'];
+let activeRole='All';
+
+function initials(n){ return n.split(' ').map(x=>x[0]).join('').slice(0,2).toUpperCase(); }
+
+function renderFilters(){
+  document.getElementById('filterBar').innerHTML=ROLES.map(r=>`<button class="chip${r===activeRole?' on':''}" onclick="setRole('${r.replace(/'/g,"\\'")}')">${r}</button>`).join('');
+}
+function setRole(r){ activeRole=r; renderFilters(); renderGrid(); }
+
+function renderGrid(){
+  const list = PROFILES.filter(p=>activeRole==='All'||p.role===activeRole);
+  document.getElementById('grid').innerHTML = list.map(p=>`
+    <div class="card">
+      <div class="c-top"><div class="av">${initials(p.name)}</div><div><div class="c-name">${p.name}</div><div class="c-loc"><svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>${p.loc||'Remote'}</div></div></div>
+      <span class="role">${p.role}</span>
+      <div class="c-for">Looking for: <b>${p.seeking}</b></div>
+      <div class="c-bio">${p.building||''}</div>
+      <div class="skills">${(p.skills||[]).map(s=>`<span class="sk">${s}</span>`).join('')}</div>
+      <a class="connect" href="${p.contact.startsWith('http')||p.contact.startsWith('mailto')?p.contact:'mailto:'+p.contact}" target="_blank" rel="noopener">Connect →</a>
+    </div>`).join('') || '<p style="color:var(--mu);text-align:center;grid-column:1/-1;padding:30px">No profiles in this category yet — be the first to post!</p>';
+}
+
+function openModal(){ document.getElementById('modal').classList.add('open'); document.body.style.overflow='hidden'; }
+function closeModal(){ document.getElementById('modal').classList.remove('open'); document.body.style.overflow=''; document.getElementById('formWrap').style.display='block'; document.getElementById('okMsg').style.display='none'; }
+document.getElementById('modal').addEventListener('click',e=>{ if(e.target.id==='modal') closeModal(); });
+document.addEventListener('keydown',e=>{ if(e.key==='Escape') closeModal(); });
+
+function doPost(e){
+  e.preventDefault();
+  const data=Object.fromEntries(new FormData(document.getElementById('coForm')));
+  fetch('https://formsubmit.co/ajax/acmahbub.official@gmail.com',{method:'POST',
+    headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(data)})
+    .then(()=>showOk()).catch(()=>showOk());
+}
+function showOk(){ document.getElementById('formWrap').style.display='none'; document.getElementById('okMsg').style.display='block'; }
+
+renderFilters(); renderGrid();
+</script>
+</body>
+</html>

@@ -36,8 +36,12 @@ nav{position:sticky;top:0;z-index:300;height:var(--nav-h);background:rgba(255,25
 
 /* HERO */
 .wrap{max-width:860px;margin:0 auto;padding:0 20px}
-.hero{text-align:center;padding:40px 20px 8px}
-.hero-badge{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:700;color:var(--a);background:var(--al);padding:5px 13px;border-radius:20px;margin-bottom:16px}
+.hero{text-align:center;padding:40px 20px 8px;position:relative}
+.hero::before{content:"";position:absolute;top:-20px;left:50%;transform:translateX(-50%);width:min(560px,90%);height:230px;background:radial-gradient(60% 60% at 50% 40%,rgba(124,58,237,.22),rgba(79,70,229,.10) 45%,transparent 70%);filter:blur(20px);z-index:0;pointer-events:none}
+.hero>*{position:relative;z-index:1}
+.hero-badge{display:inline-flex;align-items:center;gap:7px;font-size:11px;font-weight:700;color:var(--a);background:rgba(255,255,255,.7);border:1px solid #ddd6fe;padding:5px 13px;border-radius:20px;margin-bottom:16px;backdrop-filter:blur(8px)}
+.hero-badge svg{color:#7c3aed}
+.cc{font-size:9px;font-weight:800;letter-spacing:.03em;color:var(--sb);background:#f1f5f9;border:1px solid var(--br);padding:2px 7px;border-radius:5px;text-transform:uppercase}
 .hero h1{font-size:30px;font-weight:900;letter-spacing:-1px;line-height:1.1}
 @media(min-width:600px){.hero h1{font-size:42px}}
 .hero h1 .g{background:linear-gradient(90deg,var(--a),#7c3aed);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
@@ -63,6 +67,7 @@ nav{position:sticky;top:0;z-index:300;height:var(--nav-h);background:rgba(255,25
 .spin{width:16px;height:16px;border:2px solid rgba(255,255,255,.4);border-top-color:#fff;border-radius:50%;animation:sp .7s linear infinite;display:none}
 @keyframes sp{to{transform:rotate(360deg)}}
 .go.loading .spin{display:inline-block}
+.go.loading .go-spark{display:none}
 .go.loading .go-txt{opacity:.85}
 
 /* RESULTS */
@@ -111,7 +116,7 @@ nav{position:sticky;top:0;z-index:300;height:var(--nav-h);background:rgba(255,25
 
 <div class="wrap">
   <div class="hero">
-    <div class="hero-badge">✦ AI-powered · Beta</div>
+    <div class="hero-badge"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l1.9 6.6L20 10l-6.1 1.4L12 18l-1.9-6.6L4 10l6.1-1.4z"/></svg>AI-powered · Beta</div>
     <h1>Tell us your idea.<br>We'll find <span class="g">your</span> opportunities.</h1>
     <p>Hundreds of grants, competitions and events is overwhelming. Describe what you're building and get only the handful that actually fit — ranked, with the reason for each match.</p>
   </div>
@@ -147,7 +152,7 @@ nav{position:sticky;top:0;z-index:300;height:var(--nav-h);background:rgba(255,25
       </div>
     </div>
     <button class="go" id="goBtn" onclick="runMatch()">
-      <span class="spin"></span><span class="go-txt">✦ Find my opportunities</span>
+      <span class="spin"></span><svg class="go-spark" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l1.9 6.6L20 10l-6.1 1.4L12 18l-1.9-6.6L4 10l6.1-1.4z"/></svg><span class="go-txt">Find my opportunities</span>
     </button>
   </div>
 
@@ -167,7 +172,8 @@ nav{position:sticky;top:0;z-index:300;height:var(--nav-h);background:rgba(255,25
 <script>
 // ── DATA SOURCES (same as funding.html — we never change the existing pipeline) ──
 const REPO_RAW = 'https://raw.githubusercontent.com/Mahbub157/canvasiq-funding/main/';
-const FLAGS = { BD:'🇧🇩', US:'🇺🇸', Bangladesh:'🇧🇩', 'United States':'🇺🇸', Global:'🌐' };
+const CC = { BD:'BD', US:'US', Bangladesh:'BD', 'United States':'US', Global:'Global' };
+function ccLabel(c){ return CC[c] || 'Global'; }
 let OPPS = [];
 
 // Normalize both schemas (data.json archive + live-events.json) into one shape.
@@ -357,12 +363,12 @@ async function runMatch(){
         <div class="mc-body">
           <div class="mc-top">
             <span class="tt tt-${o.type}">${o.type}</span>
-            <span class="mc-flag">${FLAGS[o.country]||'🌍'}</span>
+            <span class="cc">${ccLabel(o.country)}</span>
             <span class="mc-org">${o.org}</span>
           </div>
           <div class="mc-title">${o.title}</div>
           <div class="mc-amt">${o.amt}</div>
-          <div class="mc-why">✦ Why this fits: ${o.reason}</div>
+          <div class="mc-why"><b>Why this fits:</b> ${o.reason}</div>
           <div class="mc-foot">
             ${cd(o.deadline)}
             <a class="b-apply" href="${o.link}" target="_blank" rel="noopener">View &amp; apply →</a>

@@ -33,8 +33,11 @@ nav{position:sticky;top:0;z-index:300;height:var(--nav-h);background:rgba(255,25
 .btn-ghost:hover{border-color:var(--a);color:var(--a)}
 
 .wrap{max-width:1040px;margin:0 auto;padding:0 20px}
-.hero{text-align:center;padding:40px 20px 4px}
-.hero-badge{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:700;color:var(--a);background:var(--al);padding:5px 13px;border-radius:20px;margin-bottom:16px}
+.hero{text-align:center;padding:40px 20px 4px;position:relative}
+.hero::before{content:"";position:absolute;top:-30px;left:50%;transform:translateX(-50%);width:min(560px,90%);height:220px;background:radial-gradient(60% 60% at 50% 40%,rgba(124,58,237,.22),rgba(79,70,229,.10) 45%,transparent 70%);filter:blur(20px);z-index:0;pointer-events:none}
+.hero>*{position:relative;z-index:1}
+.hero-badge{display:inline-flex;align-items:center;gap:7px;font-size:11px;font-weight:700;color:var(--a);background:rgba(255,255,255,.7);border:1px solid #ddd6fe;padding:5px 13px;border-radius:20px;margin-bottom:16px;backdrop-filter:blur(8px)}
+.hero-badge svg{color:#7c3aed}
 .hero h1{font-size:30px;font-weight:900;letter-spacing:-1px;line-height:1.1}
 @media(min-width:600px){.hero h1{font-size:40px}}
 .hero h1 .g{background:linear-gradient(90deg,var(--a),#7c3aed);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
@@ -51,7 +54,8 @@ nav{position:sticky;top:0;z-index:300;height:var(--nav-h);background:rgba(255,25
 .tool:hover{box-shadow:var(--shh);transform:translateY(-2px);border-color:rgba(79,70,229,.2)}
 @media(hover:none){.tool:hover{transform:none;box-shadow:var(--sh)}}
 .tool-top{display:flex;align-items:center;gap:11px;margin-bottom:10px}
-.tool-ico{width:42px;height:42px;border-radius:11px;display:flex;align-items:center;justify-content:center;font-size:22px;background:var(--al);flex-shrink:0}
+.tool-ico{width:42px;height:42px;border-radius:11px;display:flex;align-items:center;justify-content:center;font-size:17px;font-weight:800;color:#fff;background:linear-gradient(135deg,var(--a),#7c3aed);flex-shrink:0;letter-spacing:-.5px}
+.cat-h svg{color:var(--a)}
 .tool-name{font-size:15px;font-weight:800;line-height:1.2}
 .tool-cat{font-size:10px;font-weight:600;color:var(--mu);text-transform:uppercase;letter-spacing:.04em;margin-top:2px}
 .tool-desc{font-size:12.5px;color:var(--sb);line-height:1.55;flex:1}
@@ -77,7 +81,7 @@ nav{position:sticky;top:0;z-index:300;height:var(--nav-h);background:rgba(255,25
 
 <div class="wrap">
   <div class="hero">
-    <div class="hero-badge">🧰 Curated for founders & students</div>
+    <div class="hero-badge"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l1.9 6.6L20 10l-6.1 1.4L12 18l-1.9-6.6L4 10l6.1-1.4z"/></svg>Curated for founders &amp; students</div>
     <h1>The <span class="g">Founder Stack</span></h1>
     <p>The tools, free credits and deals worth grabbing when you're building a startup on a student budget. Hand-picked, with the best offer for each.</p>
   </div>
@@ -93,11 +97,11 @@ nav{position:sticky;top:0;z-index:300;height:var(--nav-h);background:rgba(255,25
 
   <!-- ── BUILD ───────────────────────────────────────────────────────────── -->
   <div class="cat">
-    <div class="cat-h">🛠 Build your product</div>
+    <div class="cat-h"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 00-5.6 5.6l-6 6 2 2 6-6a4 4 0 005.6-5.6l-2.3 2.3-1.4-1.4z"/></svg>Build your product</div>
     <div class="grid">
 
       <div class="tool">
-        <div class="tool-top"><div class="tool-ico">📝</div><div><div class="tool-name">Notion</div><div class="tool-cat">Docs & wiki</div></div></div>
+        <div class="tool-top"><div class="tool-ico">N</div><div><div class="tool-name">Notion</div><div class="tool-cat">Docs & wiki</div></div></div>
         <div class="tool-desc">All-in-one workspace for notes, docs, tasks and your startup wiki. Free for individuals; students get Plus free.</div>
         <span class="tool-perk">Free Plus plan for students</span>
         <!-- Affiliate: Notion Affiliate Program (notion.so/affiliates) -->
@@ -105,7 +109,7 @@ nav{position:sticky;top:0;z-index:300;height:var(--nav-h);background:rgba(255,25
       </div>
 
       <div class="tool">
-        <div class="tool-top"><div class="tool-ico">🎨</div><div><div class="tool-name">Framer</div><div class="tool-cat">Website builder</div></div></div>
+        <div class="tool-top"><div class="tool-ico">Fr</div><div><div class="tool-name">Framer</div><div class="tool-cat">Website builder</div></div></div>
         <div class="tool-desc">Design and ship a stunning startup site without code — fast, modern, great for landing pages.</div>
         <span class="tool-perk">Free plan + student discount</span>
         <!-- Affiliate: Framer Partner Program (framer.com/partners) -->
@@ -113,7 +117,7 @@ nav{position:sticky;top:0;z-index:300;height:var(--nav-h);background:rgba(255,25
       </div>
 
       <div class="tool">
-        <div class="tool-top"><div class="tool-ico">📋</div><div><div class="tool-name">Airtable</div><div class="tool-cat">Database & ops</div></div></div>
+        <div class="tool-top"><div class="tool-ico">At</div><div><div class="tool-name">Airtable</div><div class="tool-cat">Database & ops</div></div></div>
         <div class="tool-desc">Spreadsheet-meets-database for tracking users, content, CRM and ops as you scale.</div>
         <span class="tool-perk">Generous free tier</span>
         <!-- Affiliate: Airtable / Impact partner program -->
@@ -125,11 +129,11 @@ nav{position:sticky;top:0;z-index:300;height:var(--nav-h);background:rgba(255,25
 
   <!-- ── LAUNCH ──────────────────────────────────────────────────────────── -->
   <div class="cat">
-    <div class="cat-h">🚀 Launch & host</div>
+    <div class="cat-h"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7M12 19l-2-2m-3-3l-2-2"/></svg>Launch &amp; host</div>
     <div class="grid">
 
       <div class="tool">
-        <div class="tool-top"><div class="tool-ico">☁️</div><div><div class="tool-name">AWS Activate</div><div class="tool-cat">Cloud credits</div></div></div>
+        <div class="tool-top"><div class="tool-ico">AW</div><div><div class="tool-name">AWS Activate</div><div class="tool-cat">Cloud credits</div></div></div>
         <div class="tool-desc">Up to $100,000 in AWS cloud credits for eligible startups — the standard backbone for early infra.</div>
         <span class="tool-perk">Up to $100K in credits</span>
         <!-- Referral: AWS Activate (aws.amazon.com/activate) — apply via an Activate Provider/partner org for higher tiers -->
@@ -137,7 +141,7 @@ nav{position:sticky;top:0;z-index:300;height:var(--nav-h);background:rgba(255,25
       </div>
 
       <div class="tool">
-        <div class="tool-top"><div class="tool-ico">🌐</div><div><div class="tool-name">Hostinger</div><div class="tool-cat">Web hosting</div></div></div>
+        <div class="tool-top"><div class="tool-ico">H</div><div><div class="tool-name">Hostinger</div><div class="tool-cat">Web hosting</div></div></div>
         <div class="tool-desc">Cheap, reliable hosting and domains for your first site — beginner-friendly with one-click setup.</div>
         <span class="tool-perk">Up to 75% off + free domain</span>
         <!-- Affiliate: Hostinger Affiliate Program (hostinger.com/affiliates) -->
@@ -145,7 +149,7 @@ nav{position:sticky;top:0;z-index:300;height:var(--nav-h);background:rgba(255,25
       </div>
 
       <div class="tool">
-        <div class="tool-top"><div class="tool-ico">🌊</div><div><div class="tool-name">DigitalOcean</div><div class="tool-cat">Cloud servers</div></div></div>
+        <div class="tool-top"><div class="tool-ico">DO</div><div><div class="tool-name">DigitalOcean</div><div class="tool-cat">Cloud servers</div></div></div>
         <div class="tool-desc">Simple, developer-friendly cloud servers — great when you outgrow basic hosting.</div>
         <span class="tool-perk">$200 free credit (60 days)</span>
         <!-- Referral: DigitalOcean referral program (digitalocean.com/referral-program) -->
@@ -157,11 +161,11 @@ nav{position:sticky;top:0;z-index:300;height:var(--nav-h);background:rgba(255,25
 
   <!-- ── GROW ────────────────────────────────────────────────────────────── -->
   <div class="cat">
-    <div class="cat-h">📈 Grow & market</div>
+    <div class="cat-h"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 7-7M14 8h5v5"/></svg>Grow &amp; market</div>
     <div class="grid">
 
       <div class="tool">
-        <div class="tool-top"><div class="tool-ico">🟠</div><div><div class="tool-name">HubSpot for Startups</div><div class="tool-cat">CRM & marketing</div></div></div>
+        <div class="tool-top"><div class="tool-ico">Hs</div><div><div class="tool-name">HubSpot for Startups</div><div class="tool-cat">CRM & marketing</div></div></div>
         <div class="tool-desc">CRM, email and marketing automation — startups get steep first-year discounts through partner programs.</div>
         <span class="tool-perk">Up to 90% off year one</span>
         <!-- Affiliate: HubSpot Affiliate / Solutions Partner (hubspot.com/partners/affiliates) -->
@@ -169,7 +173,7 @@ nav{position:sticky;top:0;z-index:300;height:var(--nav-h);background:rgba(255,25
       </div>
 
       <div class="tool">
-        <div class="tool-top"><div class="tool-ico">✉️</div><div><div class="tool-name">Brevo</div><div class="tool-cat">Email marketing</div></div></div>
+        <div class="tool-top"><div class="tool-ico">Br</div><div><div class="tool-name">Brevo</div><div class="tool-cat">Email marketing</div></div></div>
         <div class="tool-desc">Send newsletters and automated emails to your waitlist and users — free up to 300 emails/day.</div>
         <span class="tool-perk">Free plan to start</span>
         <!-- Affiliate: Brevo Affiliate Program (brevo.com/affiliate-program) -->
@@ -177,7 +181,7 @@ nav{position:sticky;top:0;z-index:300;height:var(--nav-h);background:rgba(255,25
       </div>
 
       <div class="tool">
-        <div class="tool-top"><div class="tool-ico">📊</div><div><div class="tool-name">Tally</div><div class="tool-cat">Forms & surveys</div></div></div>
+        <div class="tool-top"><div class="tool-ico">Ta</div><div><div class="tool-name">Tally</div><div class="tool-cat">Forms & surveys</div></div></div>
         <div class="tool-desc">Free, beautiful forms for waitlists, user research and applications — no limits on the free plan.</div>
         <span class="tool-perk">Free, unlimited forms</span>
         <!-- Affiliate: Tally partner / referral (tally.so) -->
@@ -189,11 +193,11 @@ nav{position:sticky;top:0;z-index:300;height:var(--nav-h);background:rgba(255,25
 
   <!-- ── OPERATE ─────────────────────────────────────────────────────────── -->
   <div class="cat">
-    <div class="cat-h">🏛 Incorporate & operate</div>
+    <div class="cat-h"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 21h18M4 21V10l8-5 8 5v11M9 21v-6h6v6"/></svg>Incorporate &amp; operate</div>
     <div class="grid">
 
       <div class="tool">
-        <div class="tool-top"><div class="tool-ico">📐</div><div><div class="tool-name">Stripe Atlas</div><div class="tool-cat">Incorporation</div></div></div>
+        <div class="tool-top"><div class="tool-ico">SA</div><div><div class="tool-name">Stripe Atlas</div><div class="tool-cat">Incorporation</div></div></div>
         <div class="tool-desc">Incorporate a US company, get a bank account and issue equity — popular path for global founders raising from US VCs.</div>
         <span class="tool-perk">Flat-fee incorporation</span>
         <!-- Referral: Stripe Atlas (stripe.com/atlas) -->
@@ -201,7 +205,7 @@ nav{position:sticky;top:0;z-index:300;height:var(--nav-h);background:rgba(255,25
       </div>
 
       <div class="tool">
-        <div class="tool-top"><div class="tool-ico">🧮</div><div><div class="tool-name">Zoho Books</div><div class="tool-cat">Accounting</div></div></div>
+        <div class="tool-top"><div class="tool-ico">Z</div><div><div class="tool-name">Zoho Books</div><div class="tool-cat">Accounting</div></div></div>
         <div class="tool-desc">Affordable invoicing and accounting for early-stage teams — free tier for the smallest businesses.</div>
         <span class="tool-perk">Free plan available</span>
         <!-- Affiliate: Zoho Affiliate Program (zoho.com/affiliates) -->
@@ -209,7 +213,7 @@ nav{position:sticky;top:0;z-index:300;height:var(--nav-h);background:rgba(255,25
       </div>
 
       <div class="tool">
-        <div class="tool-top"><div class="tool-ico">📅</div><div><div class="tool-name">Calendly</div><div class="tool-cat">Scheduling</div></div></div>
+        <div class="tool-top"><div class="tool-ico">Cal</div><div><div class="tool-name">Calendly</div><div class="tool-cat">Scheduling</div></div></div>
         <div class="tool-desc">Let investors, mentors and customers book time with you in one click — free plan covers the basics.</div>
         <span class="tool-perk">Free plan to start</span>
         <!-- Affiliate: Calendly partner / Impact program -->

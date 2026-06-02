@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#4f46e5">
+<title>Application Autopilot — CanvasIQ</title>
+<meta name="description" content="Fill your founder profile once. CanvasIQ drafts a tailored application for any grant or competition — you review and submit.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+:root{
+  --a:#4f46e5;--ad:#3730a3;--al:#eef2ff;
+  --bg:linear-gradient(160deg,#dce8ff 0%,#ecf1ff 35%,#f5f7ff 65%,#fff 100%);
+  --sf:#fff;--br:#e2e8f0;--br2:#cbd5e1;
+  --tx:#0f172a;--sb:#475569;--mu:#94a3b8;
+  --r:14px;--rs:9px;
+  --sh:0 1px 3px rgba(15,23,42,.07),0 4px 16px rgba(15,23,42,.06);
+  --shh:0 8px 32px rgba(15,23,42,.13),0 2px 8px rgba(15,23,42,.07);
+  --shl:0 20px 60px rgba(15,23,42,.15);
+  --nav-h:58px;
+}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--bg);background-attachment:fixed;color:var(--tx);min-height:100vh;overflow-x:hidden}
+nav{position:sticky;top:0;z-index:300;height:var(--nav-h);background:rgba(255,255,255,.92);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(226,232,240,.8);display:flex;align-items:center;padding:0 20px;gap:12px}
+.logo{font-size:16px;font-weight:800;color:var(--tx);text-decoration:none;letter-spacing:-.4px}.logo span{color:var(--a)}
+.nav-sep{width:1px;height:18px;background:var(--br)}
+.nav-crumb{font-size:12px;color:var(--mu);font-weight:500;display:none}
+@media(min-width:600px){.nav-crumb{display:block}}
+.nav-r{display:flex;gap:6px;margin-left:auto;align-items:center}
+.btn-ghost{font-size:12px;font-weight:600;padding:6px 13px;border-radius:var(--rs);border:1.5px solid var(--br2);background:var(--sf);color:var(--tx);text-decoration:none;transition:.14s}
+.btn-ghost:hover{border-color:var(--a);color:var(--a)}
+
+.wrap{max-width:940px;margin:0 auto;padding:0 20px}
+.hero{text-align:center;padding:36px 20px 4px;position:relative}
+.hero::before{content:"";position:absolute;top:-20px;left:50%;transform:translateX(-50%);width:min(560px,90%);height:220px;background:radial-gradient(60% 60% at 50% 40%,rgba(124,58,237,.22),rgba(79,70,229,.10) 45%,transparent 70%);filter:blur(20px);z-index:0;pointer-events:none}
+.hero>*{position:relative;z-index:1}
+.hero-badge{display:inline-flex;align-items:center;gap:7px;font-size:11px;font-weight:700;color:var(--a);background:rgba(255,255,255,.7);border:1px solid #ddd6fe;padding:5px 13px;border-radius:20px;margin-bottom:14px;backdrop-filter:blur(8px)}
+.hero-badge svg{color:#7c3aed}
+.gen.loading .gen-spark{display:none}
+.hero h1{font-size:28px;font-weight:900;letter-spacing:-1px;line-height:1.1}
+@media(min-width:600px){.hero h1{font-size:38px}}
+.hero h1 .g{background:linear-gradient(90deg,var(--a),#7c3aed);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.hero p{font-size:14px;color:var(--sb);margin-top:10px;max-width:560px;margin:10px auto 0;line-height:1.6}
+
+.steps{display:grid;grid-template-columns:1fr;gap:18px;margin-top:26px}
+@media(min-width:780px){.steps{grid-template-columns:1fr 1fr}}
+.panel{background:var(--sf);border:1px solid var(--br);border-radius:16px;box-shadow:var(--shl);padding:20px}
+.panel h2{font-size:15px;font-weight:800;display:flex;align-items:center;gap:8px;margin-bottom:4px}
+.step-num{width:22px;height:22px;border-radius:50%;background:var(--a);color:#fff;font-size:12px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.panel .sub{font-size:12px;color:var(--mu);margin-bottom:14px}
+label{display:block;font-size:10.5px;font-weight:700;color:var(--sb);text-transform:uppercase;letter-spacing:.05em;margin:12px 0 5px}
+input,select,textarea{width:100%;font-family:'Inter',sans-serif;font-size:14px;padding:10px 12px;border:1.5px solid var(--br2);border-radius:9px;outline:none;color:var(--tx);background:var(--sf);transition:.14s;-webkit-appearance:none}
+input:focus,select:focus,textarea:focus{border-color:var(--a);box-shadow:0 0 0 3px rgba(79,70,229,.1)}
+textarea{resize:vertical;min-height:64px;line-height:1.5}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:480px){.two{grid-template-columns:1fr}}
+.save-row{display:flex;align-items:center;gap:10px;margin-top:16px}
+.btn{font-size:13px;font-weight:700;padding:11px 16px;border-radius:9px;border:none;background:var(--a);color:#fff;cursor:pointer;font-family:'Inter',sans-serif;transition:.14s}
+.btn:hover{background:var(--ad)}
+.btn.sec{background:var(--al);color:var(--a)}
+.saved-tag{font-size:11px;font-weight:700;color:#047857;display:none}
+.saved-tag.show{display:inline}
+
+.gen{width:100%;margin-top:8px;padding:14px;border:none;border-radius:11px;background:linear-gradient(135deg,#4f46e5,#7c3aed);color:#fff;font-size:15px;font-weight:800;cursor:pointer;font-family:'Inter',sans-serif;display:flex;align-items:center;justify-content:center;gap:8px;transition:.14s}
+.gen:hover{transform:translateY(-1px)}
+.gen:disabled{opacity:.6;cursor:not-allowed;transform:none}
+.spin{width:16px;height:16px;border:2px solid rgba(255,255,255,.4);border-top-color:#fff;border-radius:50%;animation:sp .7s linear infinite;display:none}
+@keyframes sp{to{transform:rotate(360deg)}}
+.gen.loading .spin{display:inline-block}
+
+.out-wrap{margin-top:24px;display:none}
+.out-hdr{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:10px}
+.out-hdr h2{font-size:16px;font-weight:800}
+.mode-tag{font-size:10px;font-weight:700;padding:3px 9px;border-radius:10px;background:var(--al);color:var(--a)}
+.draft{width:100%;min-height:420px;font-size:13.5px;line-height:1.6;padding:18px;border:1px solid var(--br);border-radius:12px;background:var(--sf);box-shadow:var(--sh);font-family:'Inter',sans-serif;color:var(--tx);resize:vertical}
+.out-acts{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
+.note{font-size:11px;color:var(--mu);margin-top:10px;line-height:1.55}
+.foot{font-size:11px;color:var(--mu);text-align:center;padding:24px 20px 50px}
+.foot a{color:var(--a);text-decoration:none}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="./index.html" class="logo">Canvas<span>IQ</span></a>
+  <div class="nav-sep"></div>
+  <span class="nav-crumb">Application Autopilot</span>
+  <div class="nav-r">
+    <a href="./funding.html" class="btn-ghost">Funding →</a>
+  </div>
+</nav>
+
+<div class="wrap">
+  <div class="hero">
+    <div class="hero-badge"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l1.9 6.6L20 10l-6.1 1.4L12 18l-1.9-6.6L4 10l6.1-1.4z"/></svg>AI-powered · Beta</div>
+    <h1>Apply in minutes,<br>not <span class="g">hours</span>.</h1>
+    <p>Fill in your founder profile once. Pick any opportunity and CanvasIQ drafts a tailored application matched to it — you just review, polish and submit.</p>
+  </div>
+
+  <div class="steps">
+    <!-- STEP 1: PROFILE -->
+    <div class="panel">
+      <h2><span class="step-num">1</span> Your founder profile</h2>
+      <div class="sub">Saved on your device — fill it once, reuse it everywhere.</div>
+      <label>Startup / project name</label>
+      <input id="p_name" placeholder="e.g. LearnLeaf">
+      <label>One-line pitch</label>
+      <input id="p_oneliner" placeholder="AI maths tutor for rural students, in their own language">
+      <label>The problem you solve</label>
+      <textarea id="p_problem" placeholder="Who hurts, and how badly?"></textarea>
+      <label>Your solution</label>
+      <textarea id="p_solution" placeholder="What you built and why it works"></textarea>
+      <label>Traction so far</label>
+      <textarea id="p_traction" placeholder="Users, revenue, pilots, waitlist, awards…"></textarea>
+      <label>Team</label>
+      <textarea id="p_team" placeholder="Who you are and why you'll win"></textarea>
+      <div class="two">
+        <div><label>Stage</label>
+          <select id="p_stage"><option>Just an idea</option><option>Building MVP / prototype</option><option>Early revenue / traction</option><option>Scaling / growth</option></select>
+        </div>
+        <div><label>Location</label>
+          <select id="p_country"><option>Bangladesh</option><option>United States</option><option>Global / Remote</option></select>
+        </div>
+      </div>
+      <div class="two">
+        <div><label>Sector / focus</label><input id="p_sector" placeholder="EdTech, AI, climate…"></div>
+        <div><label>Funding ask</label><input id="p_ask" placeholder="e.g. $25,000 grant"></div>
+      </div>
+      <label>Website / link (optional)</label>
+      <input id="p_web" placeholder="https://…">
+      <div class="save-row">
+        <button class="btn" onclick="saveProfile()">Save profile</button>
+        <span class="saved-tag" id="savedTag">✓ Saved</span>
+      </div>
+    </div>
+
+    <!-- STEP 2: PICK + GENERATE -->
+    <div class="panel">
+      <h2><span class="step-num">2</span> Pick an opportunity</h2>
+      <div class="sub">Pulled live from the CanvasIQ directory.</div>
+      <label>Search opportunities</label>
+      <input id="oppSearch" placeholder="Type to filter… e.g. grant, women, AI" oninput="renderOppList()">
+      <label>Choose one</label>
+      <select id="oppSelect" size="8" style="height:auto;padding:6px"></select>
+      <label style="margin-top:14px">Or paste any other opportunity (optional)</label>
+      <textarea id="oppCustom" placeholder="Paste the program name + a line about what they fund, if it's not in our list"></textarea>
+      <button class="gen" id="genBtn" onclick="generate()" style="margin-top:16px">
+        <span class="spin"></span><svg class="gen-spark" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l1.9 6.6L20 10l-6.1 1.4L12 18l-1.9-6.6L4 10l6.1-1.4z"/></svg><span>Draft my application</span>
+      </button>
+      <div class="note">Tip: the more you fill in Step 1, the sharper the draft. Your profile never leaves your device unless the AI backend is enabled.</div>
+    </div>
+  </div>
+
+  <!-- OUTPUT -->
+  <div class="out-wrap" id="outWrap">
+    <div class="out-hdr">
+      <h2>Your draft application</h2>
+      <span class="mode-tag" id="modeTag"></span>
+    </div>
+    <textarea class="draft" id="draftText"></textarea>
+    <div class="out-acts">
+      <button class="btn" onclick="copyDraft()"><svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="vertical-align:-2px;margin-right:4px"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 012-2h10"/></svg>Copy</button>
+      <button class="btn sec" onclick="downloadDraft()"><svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="vertical-align:-2px;margin-right:4px"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>Download .txt</button>
+      <a class="btn sec" id="applyLink" href="#" target="_blank" rel="noopener" style="text-decoration:none;display:none">Open application →</a>
+    </div>
+    <div class="note">This is a first draft to react to, not a final submission — always tailor the specifics, double-check eligibility and word limits, and add real numbers before you send.</div>
+  </div>
+
+  <div class="foot">
+    CanvasIQ · <a href="./funding.html">Funding</a> · <a href="./match.html">Idea match</a> · <a href="./founder-stack.html">Founder stack</a>
+  </div>
+</div>
+
+<script>
+const REPO_RAW = 'https://raw.githubusercontent.com/Mahbub157/canvasiq-funding/main/';
+let OPPS = [], filtered = [];
+
+function normalize(o){
+  const title = o.title || o.name || ''; if(!title) return null;
+  const link = o.link || o.url || '#';
+  let country = o.country || '';
+  if(!country){ const loc=(o.loc||[]).join(' '); country = /bangladesh/i.test(loc)||o.c==='BD'?'Bangladesh':/national/i.test(loc)||o.c==='US'?'United States':'Global'; }
+  return { id:o.id ?? title.toLowerCase().slice(0,40), title, org:o.org||o.organization||'Online',
+    desc:o.desc||o.description||'', type:(o.type||'Competition'), country,
+    amt:o.amt||o.prize||'See listing', deadline:(o.deadline&&o.deadline!=='rolling')?o.deadline:null, link };
+}
+async function loadData(){
+  const grab=async f=>{try{const r=await fetch(REPO_RAW+f+'?t='+Date.now(),{cache:'no-store'});if(!r.ok)return[];const j=await r.json();return j.opportunities||[];}catch(e){return[];}};
+  const [a,l]=await Promise.all([grab('data.json'),grab('live-events.json')]);
+  const seen=new Set();
+  OPPS=[...a,...l].map(normalize).filter(Boolean).filter(o=>{const k=o.title.toLowerCase().trim();if(seen.has(k))return false;seen.add(k);return true;})
+    .filter(o=>!o.deadline||new Date(o.deadline)>=new Date());
+  renderOppList();
+}
+function renderOppList(){
+  const q=(document.getElementById('oppSearch').value||'').toLowerCase();
+  filtered = OPPS.filter(o=>!q || (o.title+' '+o.org+' '+o.type).toLowerCase().includes(q)).slice(0,200);
+  const sel=document.getElementById('oppSelect');
+  sel.innerHTML = filtered.map((o,i)=>`<option value="${i}">${o.title} — ${o.org} (${o.type})</option>`).join('') || '<option disabled>Loading… or no matches</option>';
+}
+loadData();
+
+// ── PROFILE (localStorage) ──────────────────────────────────────────────────
+const PF=['name','oneliner','problem','solution','traction','team','stage','country','sector','ask','web'];
+function loadProfile(){ try{const p=JSON.parse(localStorage.getItem('ciq_profile')||'{}');PF.forEach(k=>{const el=document.getElementById('p_'+k);if(el&&p[k]!=null)el.value=p[k];});}catch(e){} }
+function getProfile(){ const p={};PF.forEach(k=>p[k]=(document.getElementById('p_'+k).value||'').trim());return p; }
+function saveProfile(){ localStorage.setItem('ciq_profile',JSON.stringify(getProfile())); const t=document.getElementById('savedTag');t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2500); }
+loadProfile();
+
+// ── LOCAL DRAFT TEMPLATE (works with ZERO backend) ──────────────────────────
+function localDraft(p, opp){
+  const name=p.name||'Our startup';
+  const fit = opp ? `${opp.title} (${opp.org})` : 'this opportunity';
+  const blocks=[];
+  blocks.push(`APPLICATION DRAFT — ${name}\nFor: ${fit}${opp&&opp.deadline?`\nDeadline: ${opp.deadline}`:''}\n${'—'.repeat(40)}`);
+  blocks.push(`▍SHORT PITCH\n${name} — ${p.oneliner||'[one-line pitch]'}.`);
+  if(opp){ blocks.push(`▍WHY WE'RE A FIT FOR ${opp.org.toUpperCase()}\n${name} aligns with ${opp.title} because we work in ${p.sector||'[your sector]'} and are at the ${(p.stage||'early').toLowerCase()} stage${opp.amt&&opp.amt!=='See listing'?`, exactly the kind of venture the ${opp.amt} ${opp.type.toLowerCase()} is built to back`:''}. ${opp.desc?('This program '+opp.desc.charAt(0).toLowerCase()+opp.desc.slice(1)):''}`); }
+  blocks.push(`▍PROBLEM\n${p.problem||'[Describe the problem: who is affected and how painful it is. Add a number if you can.]'}`);
+  blocks.push(`▍SOLUTION\n${p.solution||'[Describe what you built and why it works better than the status quo.]'}`);
+  blocks.push(`▍TRACTION\n${p.traction||'[Users, revenue, pilots, waitlist, partnerships, awards — anything concrete.]'}`);
+  blocks.push(`▍TEAM\n${p.team||'[Who you are and the unfair advantage that makes you the team to win.]'}`);
+  blocks.push(`▍THE ASK\nWe are seeking ${p.ask||'[amount]'}. We would use it to [hire / build / pilot / go-to-market — be specific about milestones this unlocks].`);
+  if(p.web) blocks.push(`▍LINK\n${p.web}`);
+  blocks.push(`${'—'.repeat(40)}\nNOTE — Before you submit: match this to the program's exact questions and word limits, add real metrics, and cut anything generic.`);
+  return blocks.join('\n\n');
+}
+
+/* ────────────────────────────────────────────────────────────────────────────
+   BACKEND CONTRACT — wire true AI drafting here (no front-end changes needed).
+   Netlify Function: /.netlify/functions/draft   (or Cloudflare Pages Function)
+   Receives: { profile:{...}, opportunity:{title,org,type,desc,amt,deadline}, customOpp }
+   Returns:  { draft: "full tailored application text" }
+   The LLM should: tailor tone to the program, hit its likely criteria, respect
+   typical word limits, and weave the founder's profile into specific answers.
+   If missing/errors → we fall back to localDraft() so the page always works.
+──────────────────────────────────────────────────────────────────────────── */
+async function callDraft(profile, opp, customOpp){
+  try{
+    const r=await fetch('/.netlify/functions/draft',{method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({profile,opportunity:opp?{title:opp.title,org:opp.org,type:opp.type,desc:opp.desc,amt:opp.amt,deadline:opp.deadline}:null,customOpp}),
+      signal:AbortSignal.timeout(30000)});
+    if(r.ok){const j=await r.json();if(j&&j.draft&&j.draft.length>40)return{mode:'AI draft',text:j.draft};}
+  }catch(e){}
+  return {mode:'Smart draft', text:localDraft(profile, opp)};
+}
+
+// ── GENERATE ──────────────────────────────────────────────────────────────────
+async function generate(){
+  const profile=getProfile(); saveProfile();
+  const sel=document.getElementById('oppSelect');
+  const custom=document.getElementById('oppCustom').value.trim();
+  let opp=null;
+  if(sel.value!==''&&filtered[+sel.value]) opp=filtered[+sel.value];
+  if(!opp&&!custom){ document.getElementById('oppSearch').focus(); document.getElementById('oppSelect').style.borderColor='#ef4444'; return; }
+  document.getElementById('oppSelect').style.borderColor='';
+  if(!opp&&custom){ opp={title:custom.split('\n')[0].slice(0,80),org:'',type:'Opportunity',desc:custom,amt:'',deadline:null,link:''}; }
+
+  const btn=document.getElementById('genBtn'); btn.classList.add('loading'); btn.disabled=true;
+  const {mode,text}=await callDraft(profile, opp, custom);
+  btn.classList.remove('loading'); btn.disabled=false;
+
+  document.getElementById('outWrap').style.display='block';
+  document.getElementById('modeTag').textContent=mode;
+  document.getElementById('draftText').value=text;
+  const al=document.getElementById('applyLink');
+  if(opp&&opp.link&&opp.link!=='#'){ al.href=opp.link; al.style.display='inline-block'; } else { al.style.display='none'; }
+  document.getElementById('outWrap').scrollIntoView({behavior:'smooth',block:'start'});
+}
+function copyDraft(){ const t=document.getElementById('draftText'); t.select(); document.execCommand('copy'); }
+function downloadDraft(){
+  const blob=new Blob([document.getElementById('draftText').value],{type:'text/plain'});
+  const a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download='canvasiq-application-draft.txt'; a.click(); URL.revokeObjectURL(a.href);
+}
+</script>
+</body>
+</html>
