@@ -161,7 +161,7 @@ footer a{color:#a78bfa;}
         <span class="price-sale">$10<span class="price-period">/yr</span></span>
         <span class="price-save-badge">Save $139.99 (93% off)</span>
       </div>
-      <button class="btn-hero-request" onclick="document.getElementById('request').scrollIntoView({behavior:'smooth'})">Request Access</button>
+      <button class="btn-hero-request" onclick="document.getElementById('request').scrollIntoView({behavior:'smooth'})">Get Access — $10/yr</button>
     </div>
   </div>
 </div>
@@ -222,7 +222,7 @@ footer a{color:#a78bfa;}
 <section class="tool-section" id="how">
   <div class="tool-section-inner">
     <h2 class="ts-title">How to Get Access</h2>
-    <p class="ts-sub">Submit your details below and we will upgrade your Brilliant account to Premium within 24 hours of payment confirmation.</p>
+    <p class="ts-sub">Pay by bKash/Nagad or card, then submit your details — we upgrade your Brilliant account and email your setup video within 12 hours.</p>
     <div class="steps">
       <div class="step">
         <div class="step-num">1</div>
@@ -235,7 +235,7 @@ footer a{color:#a78bfa;}
         <div class="step-num">2</div>
         <div class="step-content">
           <h3>We Confirm and Send Payment Details</h3>
-          <p>Within a few hours you will receive an email with instructions for paying $10. We confirm your request first before asking for payment.</p>
+          <p>Pay $10 by bKash/Nagad (Bangladesh) or card (international), then submit the short form with your payment reference.</p>
         </div>
       </div>
       <div class="step">
@@ -279,20 +279,61 @@ footer a{color:#a78bfa;}
         <div class="pc-item"><span class="pc-check">&#10003;</span>Progress tracking and streaks</div>
         <div class="pc-item"><span class="pc-check">&#10003;</span>Access on iOS, Android, and all browsers</div>
       </div>
-      <button class="btn-request-big" onclick="document.getElementById('request').scrollIntoView({behavior:'smooth'})">Request Access — $10/yr</button>
+      <button class="btn-request-big" onclick="document.getElementById('request').scrollIntoView({behavior:'smooth'})">Get Access — $10/yr</button>
     </div>
   </div>
 </section>
 
-<!-- REQUEST FORM -->
+<!-- CHECKOUT -->
+<style>
+.pay-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:24px}
+@media(max-width:720px){.pay-grid{grid-template-columns:1fr}}
+.pay-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow);display:flex;flex-direction:column}
+.pay-tag{font-size:11px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;color:var(--tool-color);background:var(--tool-light);padding:4px 11px;border-radius:20px;align-self:flex-start;margin-bottom:12px}
+.pay-card h3{font-size:18px;font-weight:800;color:var(--text);margin-bottom:6px}
+.pay-card p{font-size:13.5px;color:var(--text2);line-height:1.6}
+.pay-steps{margin:10px 0 4px;padding-left:18px}
+.pay-steps li{font-size:13.5px;color:var(--text2);line-height:1.7;margin-bottom:4px}
+.pay-steps b{color:var(--text)}
+.pay-num{font-size:22px;font-weight:900;color:var(--tool-color);letter-spacing:-.5px;margin:2px 0 8px}
+.pay-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;margin-top:auto;padding:13px 20px;border-radius:10px;font-size:14.5px;font-weight:800;color:#fff;border:none;background:linear-gradient(135deg,var(--tool-color),var(--accent));cursor:pointer;text-decoration:none;transition:.18s}
+.pay-btn:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(15,23,42,.18)}
+.pay-small{font-size:11.5px;color:var(--muted);margin-top:8px}
+</style>
 <section class="tool-section" id="request">
   <div class="tool-section-inner">
-    <h2 class="ts-title">Request Access</h2>
-    <p class="ts-sub">Submit your details and we will reach out within a few hours to confirm and arrange your Brilliant Premium upgrade.</p>
-    <div class="form-wrap">
-      <p class="form-note">Please use the email address associated with your Brilliant account, or the one you plan to register with. No payment is collected through this form — payment instructions are sent by email after we confirm your request.</p>
+    <h2 class="ts-title">Get Access — Brilliant Premium</h2>
+    <p class="ts-sub">Choose how you'd like to pay. Access is delivered to your email within 12 hours, with a short setup video tutorial.</p>
+
+    <div class="pay-grid">
+      <div class="pay-card">
+        <span class="pay-tag">Bangladesh</span>
+        <h3>Pay with bKash / Nagad</h3>
+        <!-- Set your exact BDT price below -->
+        <div class="pay-num">৳1,200 <span style="font-size:13px;color:var(--muted);font-weight:600">(≈ $10 / yr)</span></div>
+        <ol class="pay-steps">
+          <li>Open bKash or Nagad → <b>Send Money</b> to <b>01737496705</b>.</li>
+          <li>In the reference, write your <b>email + "Brilliant"</b>.</li>
+          <li>Prefer to talk first? Call or WhatsApp <b>01737496705</b>.</li>
+          <li>Fill the short form below so we know where to send your access.</li>
+        </ol>
+        <a class="pay-btn" href="tel:01737496705">Call 01737496705</a>
+      </div>
+      <div class="pay-card">
+        <span class="pay-tag">International</span>
+        <h3>Pay by card</h3>
+        <div class="pay-num">$10 <span style="font-size:13px;color:var(--muted);font-weight:600">/ yr</span></div>
+        <p>Secure card checkout. Enter your email at checkout — we'll email your access and the setup video within 12 hours.</p>
+        <!-- Replace with your Gumroad / Lemon Squeezy product link for Brilliant -->
+        <a class="pay-btn" href="REPLACE_WITH_GUMROAD_LINK_BRILLIANT" target="_blank" rel="noopener" style="margin-top:14px">Pay $10 &amp; Get Access →</a>
+        <p class="pay-small">Secure checkout via Gumroad.</p>
+      </div>
+    </div>
+
+    <div class="form-wrap" style="margin-top:24px">
+      <p class="form-note">After paying (bKash/Nagad or card), drop your details here. Use the email tied to your Brilliant account — we upgrade it and email your setup video within 12 hours.</p>
       <form id="accessForm" onsubmit="submitForm(event)">
-        <input type="hidden" name="_subject" value="CanvasIQ Access Request: Brilliant Premium">
+        <input type="hidden" name="_subject" value="CanvasIQ Access Purchase: Brilliant Premium">
         <input type="hidden" name="tool" value="Brilliant Premium">
         <input type="hidden" name="price" value="$10/yr">
         <div class="form-row">
@@ -304,22 +345,27 @@ footer a{color:#a78bfa;}
           <input type="email" id="femail" name="email" class="form-input" placeholder="you@example.com" required>
         </div>
         <div class="form-row">
-          <label for="fphone">Phone Number</label>
-          <input type="tel" id="fphone" name="phone" class="form-input" placeholder="+1 (555) 000-0000" required>
+          <label for="fmethod">Payment Method</label>
+          <select id="fmethod" name="payment_method" class="form-input" required>
+            <option value="">Select…</option>
+            <option>bKash</option>
+            <option>Nagad</option>
+            <option>Card (Gumroad)</option>
+          </select>
         </div>
         <div class="form-row">
-          <label>Tool Requested</label>
-          <div class="form-tool-display">Brilliant Premium — $10/yr</div>
+          <label for="fref">Payment Reference / Transaction ID</label>
+          <input type="text" id="fref" name="payment_ref" class="form-input" placeholder="bKash/Nagad TrxID or card receipt #" required>
         </div>
         <div class="form-row">
           <label for="fmsg">Anything else? (optional)</label>
           <input type="text" id="fmsg" name="message" class="form-input" placeholder="Any questions or notes for us">
         </div>
-        <button type="submit" class="btn-submit" id="submitBtn">Submit Request</button>
+        <button type="submit" class="btn-submit" id="submitBtn">Confirm &amp; Get Access</button>
       </form>
       <div class="form-success" id="formSuccess">
-        <h3>Request received!</h3>
-        <p>Thank you. We will email you within a few hours with payment instructions. Your Brilliant account will be upgraded to Premium within 24 hours of payment confirmation.</p>
+        <h3>Got it — thank you!</h3>
+        <p>We've received your details. Your Brilliant Premium access and a setup video will arrive at your email within 12 hours. (This manual flow is temporary while we finish our automated checkout.)</p>
       </div>
     </div>
   </div>
