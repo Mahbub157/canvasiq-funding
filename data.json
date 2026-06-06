@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-06-05T11:24:35.790251+00:00",
-  "totalFound": 107,
+  "lastUpdated": "2026-06-06T10:01:11.366369+00:00",
+  "totalFound": 65,
   "opportunities": [
     {
       "id": 2,
@@ -46,280 +46,6 @@
       "source": "manual"
     },
     {
-      "id": 277080,
-      "name": "AgentCamp Hack-Day Ibadan",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "Open prizes",
-      "deadline": "2026-06-05",
-      "deadlineLabel": "2026-06-05",
-      "type": "competition",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://agentcamp-hack-day-hackathon.devpost.com/",
-      "country": "Global",
-      "addedDate": "2026-06-05",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-06-05"
-    },
-    {
-      "id": 355522,
-      "name": "Beyond Tomorrow Summit",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "$2,000 in prizes",
-      "deadline": "2026-06-05",
-      "deadlineLabel": "2026-06-05",
-      "type": "competition",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://beyond-tomorrow-summit.devpost.com/",
-      "country": "Global",
-      "addedDate": "2026-06-05",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-06-05"
-    },
-    {
-      "id": 10850,
-      "name": "Design4Future",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "Open prizes",
-      "deadline": "2026-06-06",
-      "deadlineLabel": "2026-06-06",
-      "type": "competition",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://design4future.devpost.com/",
-      "country": "Global",
-      "addedDate": "2026-06-05",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-06-05"
-    },
-    {
-      "id": 366059,
-      "name": "Optimization Grand Challenge 2026",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "$103,000 in prizes",
-      "deadline": "2026-06-07",
-      "deadlineLabel": "2026-06-07",
-      "type": "competition",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://ogc2026.devpost.com/",
-      "country": "Global",
-      "addedDate": "2026-06-05",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-06-05"
-    },
-    {
-      "id": 67675,
-      "name": "MATS Program Autumn 2026 ($12.5k stipend)",
-      "desc": "Deadline: June 7, 2026 Applications for the MATS Program Autumn 2026 are now open. The MATS Program is a 10 to 12-week research fellowship designed to train and support emerging researchers and field-builders working on AI alignment, interpretability, governance, and security. Fellows collaborate with world-class mentors, receive dedicated research management support, and join a vibrant [...]",
-      "prize": "$12.5k",
-      "deadline": "2026-06-07",
-      "deadlineLabel": "2026-06-07",
-      "type": "fellowship",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "ai"
-      ],
-      "url": "https://opportunitydesk.org/2026/06/04/mats-program-autumn-2026/",
-      "country": "Global",
-      "addedDate": "2026-06-05",
-      "source": "rss",
-      "verified": false,
-      "checkedAt": "2026-06-05"
-    },
-    {
-      "id": 632829,
-      "name": "MATS Program Autumn 2026: Fully Funded AI Safety Research Fellowship",
-      "desc": "Deadline: June 7, 2026 The MATS Program Autumn 2026 is now accepting applications from aspiring researchers, academics, engineers, policy professionals, and individuals interested in artificial intelligence safety and alignment. This prestigious fellowship offers participants an opportunity to work alongside leading experts in AI safety research while receiving full financial support throughout the programme. Designed to [...] The post MATS Program Autumn 2026: Fully Funded A",
-      "prize": "See listing",
-      "deadline": "2026-06-07",
-      "deadlineLabel": "2026-06-07",
-      "type": "scholarship",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "ai",
-        "fintech"
-      ],
-      "url": "https://grantsdatabase.org/2026/06/05/mats-program-autumn-2026-fully-funded-ai-safety-research-fellowship/",
-      "country": "Global",
-      "addedDate": "2026-06-05",
-      "source": "rss",
-      "verified": false,
-      "checkedAt": "2026-06-05"
-    },
-    {
-      "id": 231411,
-      "name": "AgentVerse",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "Open prizes",
-      "deadline": "2026-06-08",
-      "deadlineLabel": "2026-06-08",
-      "type": "competition",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://agentversemcp.devpost.com/",
-      "country": "Global",
-      "addedDate": "2026-06-05",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-06-05"
-    },
-    {
-      "id": 233184,
-      "name": "HackMars 3.0: NEON",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "Open prizes",
-      "deadline": "2026-06-09",
-      "deadlineLabel": "2026-06-09",
-      "type": "competition",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://hackmars-3-0-neon.devpost.com/",
-      "country": "Global",
-      "addedDate": "2026-06-05",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-06-05"
-    },
-    {
-      "id": 433208,
-      "name": "Quantumhack",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "Open prizes",
-      "deadline": "2026-06-10",
-      "deadlineLabel": "2026-06-10",
-      "type": "competition",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://quantumhack.devpost.com/",
-      "country": "Global",
-      "addedDate": "2026-06-05",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-06-05"
-    },
-    {
-      "id": 883495,
-      "name": "DeveloperWeek New York 2026 Hackathon",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "$8,500 in prizes",
-      "deadline": "2026-06-10",
-      "deadlineLabel": "2026-06-10",
-      "type": "competition",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://dwny-2026-hackathon.devpost.com/",
-      "country": "Global",
-      "addedDate": "2026-06-05",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-06-05"
-    },
-    {
-      "id": 644091,
-      "name": "GENIUS Olympiad 2026",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "Open prizes",
-      "deadline": "2026-06-10",
-      "deadlineLabel": "2026-06-10",
-      "type": "competition",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://genius-olympiad-2026-29859.devpost.com/",
-      "country": "Global",
-      "addedDate": "2026-06-05",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-06-05"
-    },
-    {
-      "id": 349423,
-      "name": "SS Hacker Team Cybersecurity GLOBAL Challenge 2026",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "Open prizes",
-      "deadline": "2026-06-10",
-      "deadlineLabel": "2026-06-10",
-      "type": "competition",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://sshackerteamglobal.devpost.com/",
-      "country": "Global",
-      "addedDate": "2026-06-05",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-06-05"
-    },
-    {
-      "id": 369654,
-      "name": "Google Cloud Rapid Agent Hackathon",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "$60,000 in prizes",
-      "deadline": "2026-06-11",
-      "deadlineLabel": "2026-06-11",
-      "type": "competition",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://rapid-agent.devpost.com/",
-      "country": "Global",
-      "addedDate": "2026-06-05",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-06-05"
-    },
-    {
       "id": 402587,
       "name": "Embassy of France in Uganda Master’s Scholarships 2026/2027",
       "desc": "Deadline: June 11, 2026 Applications are open for the Embassy of France in Uganda Master’s Scholarships 2026/2027. The scholarship is designed for young Ugandan students who already possess a Bachelor degree in one of the fields stated below and who want to pursue their studies with a Master’s degree in France, either in French or [...]",
@@ -335,136 +61,10 @@
       ],
       "url": "https://opportunitydesk.org/2026/06/05/embassy-of-france-in-uganda-masters-scholarships-2026-2027/",
       "country": "Global",
-      "addedDate": "2026-06-05",
+      "addedDate": "2026-06-06",
       "source": "rss",
       "verified": false,
-      "checkedAt": "2026-06-05"
-    },
-    {
-      "id": 531460,
-      "name": "Aar$h# CodeStorm",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "Open prizes",
-      "deadline": "2026-06-13",
-      "deadlineLabel": "2026-06-13",
-      "type": "competition",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://aar-h-codestorm.devpost.com/",
-      "country": "Global",
-      "addedDate": "2026-06-05",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-06-05"
-    },
-    {
-      "id": 792087,
-      "name": "Your idea vs 1,000 other marketers. Let’s see where you actually stand.",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "$10,000 in prizes",
-      "deadline": "2026-06-14",
-      "deadlineLabel": "2026-06-14",
-      "type": "competition",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://connectsblue.devpost.com/",
-      "country": "Global",
-      "addedDate": "2026-06-05",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-06-05"
-    },
-    {
-      "id": 63617,
-      "name": "Africa Health-Tech Accelerator 2026 – Empowering the Future of Healthcare Innovation in Africa",
-      "desc": "Deadline: June 14, 2026 The Africa Health-Tech Accelerator 2026 is a pan-African innovation programme designed to identify, support, and scale early-stage health technology startups that are building transformative solutions for Africa’s healthcare systems. As healthcare challenges continue to evolve across the continent, this accelerator provides a structured pathway for founders to refine their products, validate [...] The post Africa Health-Tech Accelerator 2026 – Empoweri",
-      "prize": "See listing",
-      "deadline": "2026-06-14",
-      "deadlineLabel": "2026-06-14",
-      "type": "competition",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://grantsdatabase.org/2026/06/04/africa-health-tech-accelerator-2026-empowering-the-future-of-healthcare-innovation-in-africa/",
-      "country": "Global",
-      "addedDate": "2026-06-05",
-      "source": "rss",
-      "verified": false,
-      "checkedAt": "2026-06-05"
-    },
-    {
-      "id": 519384,
-      "name": "DSH Hacks V1",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "$34,996 in prizes",
-      "deadline": "2026-06-15",
-      "deadlineLabel": "2026-06-15",
-      "type": "competition",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://dsh-hacks-v1.devpost.com/",
-      "country": "Global",
-      "addedDate": "2026-06-05",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-06-05"
-    },
-    {
-      "id": 573251,
-      "name": "Splunk Agentic Ops Hackathon",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "$20,000 in prizes",
-      "deadline": "2026-06-15",
-      "deadlineLabel": "2026-06-15",
-      "type": "competition",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://splunk.devpost.com/",
-      "country": "Global",
-      "addedDate": "2026-06-05",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-06-05"
-    },
-    {
-      "id": 387415,
-      "name": "FIND EVIL!",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "$22,000 in prizes",
-      "deadline": "2026-06-15",
-      "deadlineLabel": "2026-06-15",
-      "type": "competition",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://findevil.devpost.com/",
-      "country": "Global",
-      "addedDate": "2026-06-05",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-06-05"
+      "checkedAt": "2026-06-06"
     },
     {
       "id": 3,
@@ -488,10 +88,10 @@
       "source": "manual"
     },
     {
-      "id": 871735,
-      "name": "ML Empowerment Build Challenge",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "Open prizes",
+      "id": 699285,
+      "name": "The African Union ECOSOCC 5th Permanent General Assembly",
+      "desc": "Deadline: June 16, 2026 The African Union ECOSOCC 5th Permanent General Assembly represents a significant milestone in the ongoing efforts to strengthen civic participation in continental governance across Africa. As the African Union continues to deepen democratic engagement and inclusive policymaking, this Assembly serves as a structured platform for Civil Society Organisations (CSOs) to actively [...] The post The African Union ECOSOCC 5th Permanent General Assembly appear",
+      "prize": "See listing",
       "deadline": "2026-06-16",
       "deadlineLabel": "2026-06-16",
       "type": "competition",
@@ -501,33 +101,12 @@
       "sector": [
         "general"
       ],
-      "url": "https://ml-empowerment-build-challenge.devpost.com/",
+      "url": "https://grantsdatabase.org/2026/06/06/the-african-union-ecosocc-5th-permanent-general-assembly/",
       "country": "Global",
-      "addedDate": "2026-06-05",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-06-05"
-    },
-    {
-      "id": 567282,
-      "name": "Vortexa",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "Open prizes",
-      "deadline": "2026-06-17",
-      "deadlineLabel": "2026-06-17",
-      "type": "competition",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://vortexa.devpost.com/",
-      "country": "Global",
-      "addedDate": "2026-06-05",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-06-05"
+      "addedDate": "2026-06-06",
+      "source": "rss",
+      "verified": false,
+      "checkedAt": "2026-06-06"
     },
     {
       "id": 487925,
@@ -545,241 +124,10 @@
       ],
       "url": "https://grantsdatabase.org/2026/06/05/heinrich-boll-stiftung-nigeria-green-academy-2026-fully-funded-leadership-programme-for-young-nigerians/",
       "country": "Global",
-      "addedDate": "2026-06-05",
+      "addedDate": "2026-06-06",
       "source": "rss",
       "verified": false,
-      "checkedAt": "2026-06-05"
-    },
-    {
-      "id": 699868,
-      "name": "SummerBuild 2026",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "$500 in prizes",
-      "deadline": "2026-06-18",
-      "deadlineLabel": "2026-06-18",
-      "type": "competition",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://summerbuild-2026.devpost.com/",
-      "country": "Global",
-      "addedDate": "2026-06-05",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-06-05"
-    },
-    {
-      "id": 855692,
-      "name": "1st Nature's Blueprint Ideathon 2026 !!",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "Open prizes",
-      "deadline": "2026-06-18",
-      "deadlineLabel": "2026-06-18",
-      "type": "competition",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://naturesblueprint.devpost.com/",
-      "country": "Global",
-      "addedDate": "2026-06-05",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-06-05"
-    },
-    {
-      "id": 722472,
-      "name": "NextGenHacks",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "$1,000 in prizes",
-      "deadline": "2026-06-19",
-      "deadlineLabel": "2026-06-19",
-      "type": "competition",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://nextgenhacks.devpost.com/",
-      "country": "Global",
-      "addedDate": "2026-06-05",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-06-05"
-    },
-    {
-      "id": 865334,
-      "name": "Hack Days Unnao",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "Open prizes",
-      "deadline": "2026-06-20",
-      "deadlineLabel": "2026-06-20",
-      "type": "competition",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://hack-days-unnao.devpost.com/",
-      "country": "Global",
-      "addedDate": "2026-06-05",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-06-05"
-    },
-    {
-      "id": 486495,
-      "name": "Mind the Product presents World Product Day: Everyone Ships Now",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "$10,000 in prizes",
-      "deadline": "2026-06-20",
-      "deadlineLabel": "2026-06-20",
-      "type": "competition",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://mindtheproduct.devpost.com/",
-      "country": "Global",
-      "addedDate": "2026-06-05",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-06-05"
-    },
-    {
-      "id": 845014,
-      "name": "Sahara Group Asharami M.A.D Equation 2026 ($25,000 prize)",
-      "desc": "Deadline: June 20, 2026 Applications for the Asharami M.A.D Equation 2026 are now open. The Asharami M.A.D Equation is a competitive applied research initiative launched by Sahara Group in commemoration of its 30th Anniversary. It invites innovators, researchers and research teams from Nigeria and other emerging-economies in Africa to submit well researched solutions that address [...]",
-      "prize": "$25,000",
-      "deadline": "2026-06-20",
-      "deadlineLabel": "2026-06-20",
-      "type": "prize",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://opportunitydesk.org/2026/06/04/asharami-mad-equation-2026/",
-      "country": "Global",
-      "addedDate": "2026-06-05",
-      "source": "rss",
-      "verified": false,
-      "checkedAt": "2026-06-05"
-    },
-    {
-      "id": 244766,
-      "name": "CodeStorm",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "Open prizes",
-      "deadline": "2026-06-21",
-      "deadlineLabel": "2026-06-21",
-      "type": "competition",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://codestorm.devpost.com/",
-      "country": "Global",
-      "addedDate": "2026-06-05",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-06-05"
-    },
-    {
-      "id": 11664,
-      "name": "UNIDIR Outer Space Security Conference Youth Video Competition 2026 – Global Call for Young Innovators in Space Security",
-      "desc": "Deadline: June 21, 2026 The UNIDIR Outer Space Security Conference Youth Video Competition 2026 is an international initiative designed to engage young people in shaping the future of outer space governance, sustainability, and security. Organised as part of the broader Outer Space Security Conference 2026 (#OS26), the competition invites participants to present innovative ideas through [...] The post UNIDIR Outer Space Security Conference Youth Video Competition 2026 – Globa",
-      "prize": "See listing",
-      "deadline": "2026-06-21",
-      "deadlineLabel": "2026-06-21",
-      "type": "competition",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "climate"
-      ],
-      "url": "https://grantsdatabase.org/2026/06/04/unidir-outer-space-security-conference-youth-video-competition-2026-global-call-for-young-innovators-in-space-security/",
-      "country": "Global",
-      "addedDate": "2026-06-05",
-      "source": "rss",
-      "verified": false,
-      "checkedAt": "2026-06-05"
-    },
-    {
-      "id": 892663,
-      "name": "Hack Begin",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "Open prizes",
-      "deadline": "2026-06-25",
-      "deadlineLabel": "2026-06-25",
-      "type": "competition",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://hack-begin.devpost.com/",
-      "country": "Global",
-      "addedDate": "2026-06-05",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-06-05"
-    },
-    {
-      "id": 739525,
-      "name": "PhysTech 2026: Physical Activity and Technology Hack Day",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "Open prizes",
-      "deadline": "2026-06-27",
-      "deadlineLabel": "2026-06-27",
-      "type": "competition",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://phystech-2026.devpost.com/",
-      "country": "Global",
-      "addedDate": "2026-06-05",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-06-05"
-    },
-    {
-      "id": 553200,
-      "name": "elea Talent Program 2026 – South Africa",
-      "desc": "Deadline: June 28, 2026 Applications are open for the elea Talent Program 2026. The elea Talent Program (eTP) is directed towards motivated and talented university graduates. As an Associate at elea you will get exposure to the global entrepreneurship sphere and gain work experience in different countries across the globe, while at the same time [...]",
-      "prize": "See listing",
-      "deadline": "2026-06-28",
-      "deadlineLabel": "2026-06-28",
-      "type": "event",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "edtech"
-      ],
-      "url": "https://opportunitydesk.org/2026/06/04/elea-talent-program-sa-2026/",
-      "country": "Global",
-      "addedDate": "2026-06-05",
-      "source": "rss",
-      "verified": false,
-      "checkedAt": "2026-06-05"
+      "checkedAt": "2026-06-06"
     },
     {
       "id": 324277,
@@ -797,10 +145,10 @@
       ],
       "url": "https://grantsdatabase.org/2026/06/05/elea-talent-program-2026-south-africa-etp/",
       "country": "Global",
-      "addedDate": "2026-06-05",
+      "addedDate": "2026-06-06",
       "source": "rss",
       "verified": false,
-      "checkedAt": "2026-06-05"
+      "checkedAt": "2026-06-06"
     },
     {
       "id": 4,
@@ -824,6 +172,27 @@
       "source": "manual"
     },
     {
+      "id": 19357,
+      "name": "ifa Research Award on International Cultural Relations 2026",
+      "desc": "Deadline: June 30, 2026 Applications are open for the ifa Research Award on International Cultural Relations 2026. The ifa Research Award on International Cultural Relations is aimed towards young academics who explore the significance and effectiveness of soft power, international cultural relations and Foreign Cultural and Educational Policy. Its purpose is to foster academic reflection [...]",
+      "prize": "See listing",
+      "deadline": "2026-06-30",
+      "deadlineLabel": "2026-06-30",
+      "type": "prize",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "edtech"
+      ],
+      "url": "https://opportunitydesk.org/2026/06/05/ifa-research-award-on-international-cultural-relations-2026/",
+      "country": "Global",
+      "addedDate": "2026-06-06",
+      "source": "rss",
+      "verified": false,
+      "checkedAt": "2026-06-06"
+    },
+    {
       "id": 5,
       "name": "AI for Good Innovation Factory Grand Finale",
       "desc": "UN-backed ITU competition for AI startups solving real-world problems. $20K cash to top startup. Global summit in Geneva, July 7–10.",
@@ -845,67 +214,25 @@
       "source": "manual"
     },
     {
-      "id": 14149,
-      "name": "ARUA Early-career Research Fellowships 2026 (Cohort 2)",
-      "desc": "Deadline: July 15, 2026 Applications are open for the ARUA Early-career Research Fellowships 2026. The African Research Universities Alliance (ARUA), with support from the Mastercard Foundation and the Carnegie Corporation of New York, is launching this Early-Career Research Fellowship program. The initiative will fund up to forty-two (42) early-career researchers to conduct globally competitive research at [...]",
+      "id": 121774,
+      "name": "Longview Digital Minds Career Development Fellowships 2026 (Stipend available)",
+      "desc": "Deadline: July 10, 2026 Applications are open for the Longview Digital Minds Career Development Fellowships 2026. Longview Philanthropy invites applications for funding to develop a career working on the potential consciousness, sentience, moral status, or welfare of artificial intelligence systems. This year, they are partnering with Future Impact Group to administer this program. Successful applicants [...]",
       "prize": "See listing",
-      "deadline": "2026-07-15",
-      "deadlineLabel": "2026-07-15",
+      "deadline": "2026-07-10",
+      "deadlineLabel": "2026-07-10",
       "type": "fellowship",
-      "loc": [
-        "national"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://opportunitydesk.org/2026/06/04/arua-early-career-research-fellowships-2026-cohort-2/",
-      "country": "United States",
-      "addedDate": "2026-06-05",
-      "source": "rss",
-      "verified": false,
-      "checkedAt": "2026-06-05"
-    },
-    {
-      "id": 94656,
-      "name": "Mexico Fintech Canadian Technology Accelerator 2026",
-      "desc": "Deadline: July 15, 2026 Applications are open for the Mexico Fintech Canadian Technology Accelerator 2026. The Canadian Technology Accelerators (CTA) global business development program will give you the knowledge and connections you need to explore and access the Mexican market. The Mexico Fintech CTA is a 13-week program (from August 26 to November 20, 2026) which will [...]",
-      "prize": "See listing",
-      "deadline": "2026-07-15",
-      "deadlineLabel": "2026-07-15",
-      "type": "competition",
       "loc": [
         "global"
       ],
       "sector": [
-        "fintech"
-      ],
-      "url": "https://opportunitydesk.org/2026/06/04/mexico-fintech-canadian-technology-accelerator-2026/",
-      "country": "Global",
-      "addedDate": "2026-06-05",
-      "source": "rss",
-      "verified": false,
-      "checkedAt": "2026-06-05"
-    },
-    {
-      "id": 28250,
-      "name": "Silicon Valley Agentic and Enterprise AI Canadian Technology Accelerator 2026-2027",
-      "desc": "Deadline: July 15, 2026 Applications are invited for the Silicon Valley Agentic and Enterprise AI Canadian Technology Accelerator 2026-2027. Artificial intelligence (AI) is reshaping every industry and Silicon Valley remains the epicenter of innovation, investment, and adoption. This program provides Canadian AI companies with a direct pathway to scale into the United States (U.S.) market. [...]",
-      "prize": "See listing",
-      "deadline": "2026-07-15",
-      "deadlineLabel": "2026-07-15",
-      "type": "competition",
-      "loc": [
-        "national"
-      ],
-      "sector": [
         "ai"
       ],
-      "url": "https://opportunitydesk.org/2026/06/04/canadian-technology-accelerator-2026-2027/",
-      "country": "United States",
-      "addedDate": "2026-06-05",
+      "url": "https://opportunitydesk.org/2026/06/05/longview-digital-minds-career-development-fellowships-2026/",
+      "country": "Global",
+      "addedDate": "2026-06-06",
       "source": "rss",
       "verified": false,
-      "checkedAt": "2026-06-05"
+      "checkedAt": "2026-06-06"
     },
     {
       "id": 721199,
@@ -923,31 +250,10 @@
       ],
       "url": "https://grantsdatabase.org/2026/06/05/canadian-technology-accelerator-2026-2027-silicon-valley-ai-programme/",
       "country": "United States",
-      "addedDate": "2026-06-05",
+      "addedDate": "2026-06-06",
       "source": "rss",
       "verified": false,
-      "checkedAt": "2026-06-05"
-    },
-    {
-      "id": 583325,
-      "name": "ARUA Early-career Research Fellowships 2026 Cohort 2 for African Researchers",
-      "desc": "Deadline: July 15, 2026 The ARUA Early-career Research Fellowships 2026 Cohort 2 is now open for applications from outstanding African researchers seeking to advance their academic careers through collaborative research, mentorship, and international exposure. The fellowship programme is an initiative of the African Research Universities Alliance (ARUA) aimed at strengthening research excellence across the continent. [...] The post ARUA Early-career Research Fellowships 2026 ",
-      "prize": "See listing",
-      "deadline": "2026-07-15",
-      "deadlineLabel": "2026-07-15",
-      "type": "fellowship",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://grantsdatabase.org/2026/06/05/arua-early-career-research-fellowships-2026-cohort-2-for-african-researchers/",
-      "country": "Global",
-      "addedDate": "2026-06-05",
-      "source": "rss",
-      "verified": false,
-      "checkedAt": "2026-06-05"
+      "checkedAt": "2026-06-06"
     },
     {
       "id": 692194,
@@ -965,31 +271,53 @@
       ],
       "url": "https://opportunitydesk.org/2026/06/05/itto-fellowship-programme-2026/",
       "country": "Global",
-      "addedDate": "2026-06-05",
+      "addedDate": "2026-06-06",
       "source": "rss",
       "verified": false,
-      "checkedAt": "2026-06-05"
+      "checkedAt": "2026-06-06"
     },
     {
-      "id": 412473,
-      "name": "Royal Society Entrepreneur in Residence (EiR) Scheme 2026/2027",
-      "desc": "Deadline: August 19, 2026 The Royal Society Entrepreneur in Residence (EiR) Scheme 2026/2027 is a prestigious UK initiative designed to strengthen the connection between academic research and industrial innovation. It achieves this by placing experienced entrepreneurs and industry professionals within UK universities, where they work closely with researchers and students to accelerate the translation of [...] The post Royal Society Entrepreneur in Residence (EiR) Scheme 2026/",
+      "id": 49584,
+      "name": "FAO eLearning Academy Global Youth Contest 2026",
+      "desc": "Deadline: July 31, 2026 The FAO eLearning Academy Global Youth Contest 2026 is an international storytelling competition designed to highlight how young people around the world are using digital learning to create real-life impact. Organised by the Food and Agriculture Organization of the United Nations (FAO), this initiative celebrates learners who have completed FAO eLearning [...] The post FAO eLearning Academy Global Youth Contest 2026 appeared first on GrantsDatabase .",
       "prize": "See listing",
-      "deadline": "2026-08-19",
-      "deadlineLabel": "2026-08-19",
-      "type": "competition",
+      "deadline": "2026-07-31",
+      "deadlineLabel": "2026-07-31",
+      "type": "grant",
       "loc": [
         "global"
       ],
       "sector": [
         "edtech"
       ],
-      "url": "https://grantsdatabase.org/2026/06/04/royal-society-entrepreneur-in-residence-eir-scheme-2026-2027/",
+      "url": "https://grantsdatabase.org/2026/06/06/fao-elearning-academy-global-youth-contest-2026/",
       "country": "Global",
-      "addedDate": "2026-06-05",
+      "addedDate": "2026-06-06",
       "source": "rss",
       "verified": false,
-      "checkedAt": "2026-06-05"
+      "checkedAt": "2026-06-06"
+    },
+    {
+      "id": 421445,
+      "name": "ITTO Fellowship Programme 2026: Fully Funded Opportunity for Forestry and Sustainable Development Professionals",
+      "desc": "Deadline: July 31, 2026 The ITTO Fellowship Programme 2026 is now open for applications, offering professionals and students from eligible countries the opportunity to receive funding support of up to US$10,000. The fellowship is designed to strengthen human resource development and build professional expertise in tropical forestry, sustainable forest management, and related industries. Managed by [...] The post ITTO Fellowship Programme 2026: Fully Funded Opportunity for For",
+      "prize": "$10,000",
+      "deadline": "2026-07-31",
+      "deadlineLabel": "2026-07-31",
+      "type": "scholarship",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "edtech",
+        "climate"
+      ],
+      "url": "https://grantsdatabase.org/2026/06/06/itto-fellowship-programme-2026-fully-funded-opportunity-for-forestry-and-sustainable-development-professionals/",
+      "country": "Global",
+      "addedDate": "2026-06-06",
+      "source": "rss",
+      "verified": false,
+      "checkedAt": "2026-06-06"
     },
     {
       "id": 7,
@@ -1054,6 +382,48 @@
       "source": "manual"
     },
     {
+      "id": 745840,
+      "name": "Marshall Scholarships 2027 for Young Americans",
+      "desc": "Deadline: September 29, 2026 Applications are open for the Marshall Scholarships 2027. Marshall Scholarships finance young Americans of high ability to study for a degree in the United Kingdom. Up to fifty Scholars are selected each year to study at graduate level at an UK institution in any field of study. As future leaders, with [...]",
+      "prize": "See listing",
+      "deadline": "2026-09-29",
+      "deadlineLabel": "2026-09-29",
+      "type": "scholarship",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://opportunitydesk.org/2026/06/05/marshall-scholarships-2027/",
+      "country": "United States",
+      "addedDate": "2026-06-06",
+      "source": "rss",
+      "verified": false,
+      "checkedAt": "2026-06-06"
+    },
+    {
+      "id": 444501,
+      "name": "Marshall Scholarships 2027 – Marshall Scholarships 2027 Applications Now Open for Outstanding US Students",
+      "desc": "Deadline: September 29, 2026 The Marshall Scholarships 2027 have officially opened for applications, offering an exceptional opportunity for high-achieving United States students to pursue postgraduate studies in the United Kingdom. Established to strengthen academic ties between the United States and the United Kingdom, the scholarship remains one of the most prestigious and competitive international awards [...] The post Marshall Scholarships 2027 – Marshall Scholarships 20",
+      "prize": "See listing",
+      "deadline": "2026-09-29",
+      "deadlineLabel": "2026-09-29",
+      "type": "scholarship",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "edtech"
+      ],
+      "url": "https://grantsdatabase.org/2026/06/06/marshall-scholarships-2027-marshall-scholarships-2027-applications-now-open-for-outstanding-us-students/",
+      "country": "United States",
+      "addedDate": "2026-06-06",
+      "source": "rss",
+      "verified": false,
+      "checkedAt": "2026-06-06"
+    },
+    {
       "id": 9,
       "name": "Queens Tech & Innovation Challenge",
       "desc": "Five grants of up to $20K each with zero strings attached. Early-stage entrepreneurs. Includes mentorship, office hours, networking events.",
@@ -1094,6 +464,49 @@
       "equity": false,
       "addedDate": "2026-05-26",
       "source": "manual"
+    },
+    {
+      "id": 73810,
+      "name": "UNESCO-Al Fozan International Prize for the Promotion of Young Scientists in STEM 2026 ($50,000 prize)",
+      "desc": "Deadline: November 30, 2026 Applications are open for the UNESCO-Al Fozan International Prize for the Promotion of Young Scientists in STEM 2026. The UNESCO-Al Fozan International Prize for the Promotion of Young Scientists in STEM aims to boost STEM research, education, and international cooperation to tackle challenges addressed by the Sustainable Development Goals (SDGs). It recognizes young [...]",
+      "prize": "$50,000",
+      "deadline": "2026-11-30",
+      "deadlineLabel": "2026-11-30",
+      "type": "competition",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "edtech",
+        "climate"
+      ],
+      "url": "https://opportunitydesk.org/2026/06/06/unesco-al-fozan-international-prize-2026/",
+      "country": "Global",
+      "addedDate": "2026-06-06",
+      "source": "rss",
+      "verified": false,
+      "checkedAt": "2026-06-06"
+    },
+    {
+      "id": 791206,
+      "name": "UNESCO–Al Fozan International Prize for the Promotion of Young Scientists in STEM (2026 Edition)",
+      "desc": "Deadline: November 30, 2026 The UNESCO–Al Fozan International Prize for the Promotion of Young Scientists in STEM (2026 Edition) is a prestigious global recognition established by the United Nations Educational, Scientific and Cultural Organization (UNESCO) in partnership with the Al Fozan Foundation. The prize is designed to identify, celebrate, and support exceptional young scientists whose [...] The post UNESCO–Al Fozan International Prize for the Promotion of Young Scient",
+      "prize": "See listing",
+      "deadline": "2026-11-30",
+      "deadlineLabel": "2026-11-30",
+      "type": "prize",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "edtech"
+      ],
+      "url": "https://grantsdatabase.org/2026/06/06/unesco-al-fozan-international-prize-for-the-promotion-of-young-scientists-in-stem-2026-edition/",
+      "country": "Global",
+      "addedDate": "2026-06-06",
+      "source": "rss",
+      "verified": false,
+      "checkedAt": "2026-06-06"
     },
     {
       "id": 16,
@@ -1538,301 +951,6 @@
       "source": "manual"
     },
     {
-      "id": 676539,
-      "name": "GITSYNC",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "Open prizes",
-      "deadline": "rolling",
-      "deadlineLabel": "Rolling / Open",
-      "type": "competition",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://gitsync.devpost.com/",
-      "country": "Global",
-      "addedDate": "2026-06-05",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-06-05"
-    },
-    {
-      "id": 84104,
-      "name": "SUMMER HACKATHON 2026",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "Open prizes",
-      "deadline": "rolling",
-      "deadlineLabel": "Rolling / Open",
-      "type": "competition",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://sc-summer-hackathon-2026.devpost.com/",
-      "country": "Global",
-      "addedDate": "2026-06-05",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-06-05"
-    },
-    {
-      "id": 88057,
-      "name": "Health and Fitness Technology",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "$240 in prizes",
-      "deadline": "rolling",
-      "deadlineLabel": "Rolling / Open",
-      "type": "competition",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://high-school-tech-for-health.devpost.com/",
-      "country": "Global",
-      "addedDate": "2026-06-05",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-06-05"
-    },
-    {
-      "id": 399162,
-      "name": "DSOC : Summer Edition",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "Open prizes",
-      "deadline": "rolling",
-      "deadlineLabel": "Rolling / Open",
-      "type": "competition",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://dsoc-summer-edition.devpost.com/",
-      "country": "Global",
-      "addedDate": "2026-06-05",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-06-05"
-    },
-    {
-      "id": 870243,
-      "name": "Mega Agent-A-Thon",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "Open prizes",
-      "deadline": "rolling",
-      "deadlineLabel": "Rolling / Open",
-      "type": "competition",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://mega-agent-a-thon.devpost.com/",
-      "country": "Global",
-      "addedDate": "2026-06-05",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-06-05"
-    },
-    {
-      "id": 326192,
-      "name": "LovHack x BrandOye Growathon",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "Open prizes",
-      "deadline": "rolling",
-      "deadlineLabel": "Rolling / Open",
-      "type": "competition",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://lovhack-x-brandoye-growathon.devpost.com/",
-      "country": "Global",
-      "addedDate": "2026-06-05",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-06-05"
-    },
-    {
-      "id": 485722,
-      "name": "My Dream Superhero Challenge",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "Open prizes",
-      "deadline": "rolling",
-      "deadlineLabel": "Rolling / Open",
-      "type": "competition",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://my-dream-superhero-challenge.devpost.com/",
-      "country": "Global",
-      "addedDate": "2026-06-05",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-06-05"
-    },
-    {
-      "id": 192656,
-      "name": "V1TROUS Hackathon",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "Open prizes",
-      "deadline": "rolling",
-      "deadlineLabel": "Rolling / Open",
-      "type": "competition",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://v1trous-hackathon-30125.devpost.com/",
-      "country": "Global",
-      "addedDate": "2026-06-05",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-06-05"
-    },
-    {
-      "id": 585143,
-      "name": "AI for Learning & Development Build Challenge — AI Collective HR + Regent",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "Open prizes",
-      "deadline": "rolling",
-      "deadlineLabel": "Rolling / Open",
-      "type": "competition",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "edtech",
-        "ai"
-      ],
-      "url": "https://ai-challenge-regent-aichr.devpost.com/",
-      "country": "Global",
-      "addedDate": "2026-06-05",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-06-05"
-    },
-    {
-      "id": 507396,
-      "name": "InnovatorsX: Startup Sprint",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "Open prizes",
-      "deadline": "rolling",
-      "deadlineLabel": "Rolling / Open",
-      "type": "competition",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://innovatorsx.devpost.com/",
-      "country": "Global",
-      "addedDate": "2026-06-05",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-06-05"
-    },
-    {
-      "id": 677042,
-      "name": "Far Away",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "Open prizes",
-      "deadline": "rolling",
-      "deadlineLabel": "Rolling / Open",
-      "type": "competition",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://faraway.devpost.com/",
-      "country": "Global",
-      "addedDate": "2026-06-05",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-06-05"
-    },
-    {
-      "id": 322511,
-      "name": "Hack Munch",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "Open prizes",
-      "deadline": "rolling",
-      "deadlineLabel": "Rolling / Open",
-      "type": "competition",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://hack-munch-30312.devpost.com/",
-      "country": "Global",
-      "addedDate": "2026-06-05",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-06-05"
-    },
-    {
-      "id": 446592,
-      "name": "Hack-Vserse",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "Open prizes",
-      "deadline": "rolling",
-      "deadlineLabel": "Rolling / Open",
-      "type": "competition",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://hack-vserse.devpost.com/",
-      "country": "Global",
-      "addedDate": "2026-06-05",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-06-05"
-    },
-    {
-      "id": 386676,
-      "name": "Mo Ibrahim Foundation Calls for Researchers – Research Opportunity in African Governance and Policy Analysis",
-      "desc": "Deadline: On A Rolling Basis The Mo Ibrahim Foundation Calls for Researchers is an exciting opportunity for early to mid-career professionals passionate about African governance, public policy, and data-driven research. The Mo Ibrahim Foundation has opened applications for a Researcher role that will contribute directly to its high-impact programmes, including the Ibrahim Index of African [...] The post Mo Ibrahim Foundation Calls for Researchers – Research Opportunity in Afr",
-      "prize": "See listing",
-      "deadline": "rolling",
-      "deadlineLabel": "Rolling / Open",
-      "type": "competition",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://grantsdatabase.org/2026/06/04/mo-ibrahim-foundation-calls-for-researchers-research-opportunity-in-african-governance-and-policy-analysis/",
-      "country": "Global",
-      "addedDate": "2026-06-05",
-      "source": "rss",
-      "verified": false,
-      "checkedAt": "2026-06-05"
-    },
-    {
       "id": 476805,
       "name": "Top 10 Tech Startup Grants for 2026 (Non-Dilutive)",
       "desc": "Find the best tech startup grants for 2026 . Our list covers non-dilutive funding from AWS, Google, OpenAI, and more, with eligibility, tips, and links.",
@@ -1848,15 +966,15 @@
       ],
       "url": "https://creditforstartups.com/resources/tech-startup-grants",
       "country": "Global",
-      "addedDate": "2026-06-05",
+      "addedDate": "2026-06-06",
       "source": "search",
       "verified": false,
-      "checkedAt": "2026-06-05"
+      "checkedAt": "2026-06-06"
     },
     {
-      "id": 62438,
-      "name": "Top Grant Programs for Innovative Tech Startups in 2026: Complete ...",
-      "desc": "Securing non-dilutive grant funding remains a highly effective route for tech startups to launch, validate, or scale innovative products in 2026 . The landscape now offers a broader array of opportunities—from major federal programs and dynamic state-level competitions to specialized private and corporate initiatives—each with specific ...",
+      "id": 829223,
+      "name": "Startup Grants 2026: Best Opportunities, Top Providers & Expert Tips ...",
+      "desc": "Explore the ultimate guide to startup grants in 2026 . Discover top grants , providers, eligibility, and winning application tips for founders worldwide.",
       "prize": "See listing",
       "deadline": "rolling",
       "deadlineLabel": "Rolling / Open",
@@ -1867,33 +985,12 @@
       "sector": [
         "general"
       ],
-      "url": "https://grants.com/top-grant-programs-for-innovative-tech-startups-in-2026-complete-access-guide-to-funding-success/",
+      "url": "https://grants.com/startup-grants-2026-best-opportunities-top-providers-expert-tips-for-founders/",
       "country": "Global",
-      "addedDate": "2026-06-05",
+      "addedDate": "2026-06-06",
       "source": "search",
       "verified": false,
-      "checkedAt": "2026-06-05"
-    },
-    {
-      "id": 835479,
-      "name": "Startup Grants & Funding 2026 | SBIR, Venture, Non-Dilutive",
-      "desc": "Find startup grants and non-dilutive funding. SBIR/STTR programs, accelerator grants , and innovation funding for tech startups and early-stage companies.",
-      "prize": "See listing",
-      "deadline": "rolling",
-      "deadlineLabel": "Rolling / Open",
-      "type": "grant",
-      "loc": [
-        "national"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://grantnavigation.com/for-startups",
-      "country": "United States",
-      "addedDate": "2026-06-05",
-      "source": "search",
-      "verified": false,
-      "checkedAt": "2026-06-05"
+      "checkedAt": "2026-06-06"
     },
     {
       "id": 822062,
@@ -1911,10 +1008,52 @@
       ],
       "url": "https://startupmapafrica.com/guide/startup-grants-2026-us-founders",
       "country": "Global",
-      "addedDate": "2026-06-05",
+      "addedDate": "2026-06-06",
       "source": "search",
       "verified": false,
-      "checkedAt": "2026-06-05"
+      "checkedAt": "2026-06-06"
+    },
+    {
+      "id": 66239,
+      "name": "10 Best New Business Grants for Startups in 2026",
+      "desc": "Discover the top 10 new business grants for 2026 . Our guide covers eligibility, deadlines, and tips for securing non-dilutive funding for your startup .",
+      "prize": "See listing",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "grant",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://creditforstartups.com/resources/new-business-grants",
+      "country": "Global",
+      "addedDate": "2026-06-06",
+      "source": "search",
+      "verified": false,
+      "checkedAt": "2026-06-06"
+    },
+    {
+      "id": 835479,
+      "name": "Startup Grants & Funding 2026 | SBIR, Venture, Non-Dilutive",
+      "desc": "Find startup grants and non-dilutive funding. SBIR/STTR programs, accelerator grants , and innovation funding for tech startups and early-stage companies.",
+      "prize": "See listing",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "grant",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://grantnavigation.com/for-startups",
+      "country": "United States",
+      "addedDate": "2026-06-06",
+      "source": "search",
+      "verified": false,
+      "checkedAt": "2026-06-06"
     },
     {
       "id": 94770,
@@ -1932,10 +1071,10 @@
       ],
       "url": "https://www.thevccorner.com/p/non-dilutive-funding-sources-startups-database",
       "country": "Global",
-      "addedDate": "2026-06-05",
+      "addedDate": "2026-06-06",
       "source": "search",
       "verified": false,
-      "checkedAt": "2026-06-05"
+      "checkedAt": "2026-06-06"
     },
     {
       "id": 538078,
@@ -1953,10 +1092,10 @@
       ],
       "url": "https://opportunedhub.lovable.app/blog/startup-grants-united-states-2026/",
       "country": "United States",
-      "addedDate": "2026-06-05",
+      "addedDate": "2026-06-06",
       "source": "search",
       "verified": false,
-      "checkedAt": "2026-06-05"
+      "checkedAt": "2026-06-06"
     },
     {
       "id": 730655,
@@ -1974,15 +1113,15 @@
       ],
       "url": "https://successknocks.com/small-business-grants-2026-guide/",
       "country": "United States",
-      "addedDate": "2026-06-05",
+      "addedDate": "2026-06-06",
       "source": "search",
       "verified": false,
-      "checkedAt": "2026-06-05"
+      "checkedAt": "2026-06-06"
     },
     {
-      "id": 236814,
-      "name": "10 Startup Grants and Non-Dilutive Funding Sources",
-      "desc": "Free money exists. Here are grants and non-dilutive funding options for startups , with eligibility requirements and how to apply.",
+      "id": 699732,
+      "name": "The Ultimate Guide to Startup Grants: Secure Funding for Your Business ...",
+      "desc": "Explore top startup grants for 2026 . Learn about industry-specific programs, application tips, and how to win non-dilutive funding for your business.",
       "prize": "See listing",
       "deadline": "rolling",
       "deadlineLabel": "Rolling / Open",
@@ -1993,33 +1132,12 @@
       "sector": [
         "general"
       ],
-      "url": "https://www.foundra.ai/key-reads/startup-grants-non-dilutive-funding",
+      "url": "https://grants.com/the-ultimate-guide-to-startup-grants-secure-funding-for-your-business-in-2026/",
       "country": "Global",
-      "addedDate": "2026-06-05",
+      "addedDate": "2026-06-06",
       "source": "search",
       "verified": false,
-      "checkedAt": "2026-06-05"
-    },
-    {
-      "id": 60845,
-      "name": "How to Find Grants for Startups: A Practical Guide for 2026",
-      "desc": "A complete guide to finding grants for startups in 2026 , covering SBIR/STTR, state innovation funds, accelerator grants , economic development programs, and how to build a grant strategy alongside your fundraising.",
-      "prize": "See listing",
-      "deadline": "rolling",
-      "deadlineLabel": "Rolling / Open",
-      "type": "grant",
-      "loc": [
-        "national"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://www.grantlocate.com/blog/how-to-find-grants-for-startups",
-      "country": "United States",
-      "addedDate": "2026-06-05",
-      "source": "search",
-      "verified": false,
-      "checkedAt": "2026-06-05"
+      "checkedAt": "2026-06-06"
     },
     {
       "id": 176685,
@@ -2037,10 +1155,10 @@
       ],
       "url": "https://sahin.io/blog/the-best-startup-grants-and-non-dilutive-funding-in-2026",
       "country": "United States",
-      "addedDate": "2026-06-05",
+      "addedDate": "2026-06-06",
       "source": "search",
       "verified": false,
-      "checkedAt": "2026-06-05"
+      "checkedAt": "2026-06-06"
     },
     {
       "id": 541220,
@@ -2058,10 +1176,10 @@
       ],
       "url": "https://thefounderspress.com/startup-competitions/",
       "country": "Global",
-      "addedDate": "2026-06-05",
+      "addedDate": "2026-06-06",
       "source": "search",
       "verified": false,
-      "checkedAt": "2026-06-05"
+      "checkedAt": "2026-06-06"
     },
     {
       "id": 598820,
@@ -2079,10 +1197,10 @@
       ],
       "url": "https://www.f6s.com/contests",
       "country": "Global",
-      "addedDate": "2026-06-05",
+      "addedDate": "2026-06-06",
       "source": "search",
       "verified": false,
-      "checkedAt": "2026-06-05"
+      "checkedAt": "2026-06-06"
     },
     {
       "id": 828187,
@@ -2101,10 +1219,10 @@
       ],
       "url": "https://bootstrapdirectory.com/startup-competitions-2026",
       "country": "Global",
-      "addedDate": "2026-06-05",
+      "addedDate": "2026-06-06",
       "source": "search",
       "verified": false,
-      "checkedAt": "2026-06-05"
+      "checkedAt": "2026-06-06"
     },
     {
       "id": 495671,
@@ -2122,31 +1240,10 @@
       ],
       "url": "https://startupprize.com/",
       "country": "Global",
-      "addedDate": "2026-06-05",
+      "addedDate": "2026-06-06",
       "source": "search",
       "verified": false,
-      "checkedAt": "2026-06-05"
-    },
-    {
-      "id": 699533,
-      "name": "CoCreate Pitch",
-      "desc": "COCREATE PITCH 2026 The World's Largest Product-Based Startup Competition Over $1,000,000 Prize Pool Download & Install Accio Work to Apply Partner With Us Power Your Startup Journey and Streamline Your Application with",
-      "prize": "$1,000,000",
-      "deadline": "rolling",
-      "deadlineLabel": "Rolling / Open",
-      "type": "competition",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://www.alibabacocreate.com/pitch",
-      "country": "Global",
-      "addedDate": "2026-06-05",
-      "source": "search",
-      "verified": false,
-      "checkedAt": "2026-06-05"
+      "checkedAt": "2026-06-06"
     },
     {
       "id": 851808,
@@ -2164,31 +1261,10 @@
       ],
       "url": "https://www.sba.gov/article/2026/05/13/sba-launches-1-million-patriot-pitch-competition-showcase-americas-entrepreneurs",
       "country": "United States",
-      "addedDate": "2026-06-05",
+      "addedDate": "2026-06-06",
       "source": "search",
       "verified": false,
-      "checkedAt": "2026-06-05"
-    },
-    {
-      "id": 824027,
-      "name": "Best Startup Competitions of 2026 — Win Cash Without Giving Up Equity",
-      "desc": "Find the best startup competitions of 2026 . Top non-dilutive pitch contests for bootstrapped founders across sectors.",
-      "prize": "See listing",
-      "deadline": "rolling",
-      "deadlineLabel": "Rolling / Open",
-      "type": "grant",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://bootstrapdirectory.com/best-startup-competitions-2026",
-      "country": "Global",
-      "addedDate": "2026-06-05",
-      "source": "search",
-      "verified": false,
-      "checkedAt": "2026-06-05"
+      "checkedAt": "2026-06-06"
     },
     {
       "id": 531253,
@@ -2206,10 +1282,10 @@
       ],
       "url": "https://capwave.ai/blog/blog-startup-events-pitch-competitions-spring-2026",
       "country": "Global",
-      "addedDate": "2026-06-05",
+      "addedDate": "2026-06-06",
       "source": "search",
       "verified": false,
-      "checkedAt": "2026-06-05"
+      "checkedAt": "2026-06-06"
     },
     {
       "id": 225163,
@@ -2227,10 +1303,52 @@
       ],
       "url": "https://startupmountainsummit.com/pitch-competitions-startup-founders-2026/",
       "country": "Global",
-      "addedDate": "2026-06-05",
+      "addedDate": "2026-06-06",
       "source": "search",
       "verified": false,
-      "checkedAt": "2026-06-05"
+      "checkedAt": "2026-06-06"
+    },
+    {
+      "id": 699533,
+      "name": "CoCreate Pitch",
+      "desc": "COCREATE PITCH 2026 The World's Largest Product-Based Startup Competition Over $1,000,000 Prize Pool Download & Install Accio Work to Apply Partner With Us Power Your Startup Journey and Streamline Your Application with",
+      "prize": "$1,000,000",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "competition",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://www.alibabacocreate.com/pitch",
+      "country": "Global",
+      "addedDate": "2026-06-06",
+      "source": "search",
+      "verified": false,
+      "checkedAt": "2026-06-06"
+    },
+    {
+      "id": 372226,
+      "name": "PITCH '26 | StartUp Westport",
+      "desc": "The first annual StartUp Westport PITCH competition exceeded all expectations with great companies, great pitches, awesome questions from our judges and the surprise addition of cash prizes for all of the finalists. Mirabelle Medical took second place. Other finalists included Nexa Tax, Neuro Puffs and Chroma Shield.",
+      "prize": "See listing",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "competition",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://www.startupwestport.org/pitch-26",
+      "country": "Global",
+      "addedDate": "2026-06-06",
+      "source": "search",
+      "verified": false,
+      "checkedAt": "2026-06-06"
     },
     {
       "id": 405142,
@@ -2248,10 +1366,10 @@
       ],
       "url": "https://ivmf.syracuse.edu/entrepreneurship-conferences-and-pitch-competitions/",
       "country": "Global",
-      "addedDate": "2026-06-05",
+      "addedDate": "2026-06-06",
       "source": "search",
       "verified": false,
-      "checkedAt": "2026-06-05"
+      "checkedAt": "2026-06-06"
     }
   ]
 }
