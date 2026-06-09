@@ -1,7 +1,259 @@
 {
-  "lastUpdated": "2026-06-08T12:25:41.811470+00:00",
-  "totalFound": 63,
+  "lastUpdated": "2026-06-09T10:57:37.883216+00:00",
+  "totalFound": 103,
   "opportunities": [
+    {
+      "id": 433208,
+      "name": "Quantumhack",
+      "desc": "Global hackathon open worldwide.",
+      "prize": "Open prizes",
+      "deadline": "2026-06-10",
+      "deadlineLabel": "2026-06-10",
+      "type": "competition",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://quantumhack.devpost.com/",
+      "country": "Global",
+      "addedDate": "2026-06-09",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-06-09"
+    },
+    {
+      "id": 883495,
+      "name": "DeveloperWeek New York 2026 Hackathon",
+      "desc": "Global hackathon open worldwide.",
+      "prize": "$8,500 in prizes",
+      "deadline": "2026-06-10",
+      "deadlineLabel": "2026-06-10",
+      "type": "competition",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://dwny-2026-hackathon.devpost.com/",
+      "country": "Global",
+      "addedDate": "2026-06-09",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-06-09"
+    },
+    {
+      "id": 644091,
+      "name": "GENIUS Olympiad 2026",
+      "desc": "Global hackathon open worldwide.",
+      "prize": "Open prizes",
+      "deadline": "2026-06-10",
+      "deadlineLabel": "2026-06-10",
+      "type": "competition",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://genius-olympiad-2026-29859.devpost.com/",
+      "country": "Global",
+      "addedDate": "2026-06-09",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-06-09"
+    },
+    {
+      "id": 349423,
+      "name": "SS Hacker Team Cybersecurity GLOBAL Challenge 2026",
+      "desc": "Global hackathon open worldwide.",
+      "prize": "Open prizes",
+      "deadline": "2026-06-10",
+      "deadlineLabel": "2026-06-10",
+      "type": "competition",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://sshackerteamglobal.devpost.com/",
+      "country": "Global",
+      "addedDate": "2026-06-09",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-06-09"
+    },
+    {
+      "id": 369654,
+      "name": "Google Cloud Rapid Agent Hackathon",
+      "desc": "Global hackathon open worldwide.",
+      "prize": "$60,000 in prizes",
+      "deadline": "2026-06-11",
+      "deadlineLabel": "2026-06-11",
+      "type": "competition",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://rapid-agent.devpost.com/",
+      "country": "Global",
+      "addedDate": "2026-06-09",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-06-09"
+    },
+    {
+      "id": 531460,
+      "name": "Aar$h# CodeStorm",
+      "desc": "Global hackathon open worldwide.",
+      "prize": "Open prizes",
+      "deadline": "2026-06-13",
+      "deadlineLabel": "2026-06-13",
+      "type": "competition",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://aar-h-codestorm.devpost.com/",
+      "country": "Global",
+      "addedDate": "2026-06-09",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-06-09"
+    },
+    {
+      "id": 792087,
+      "name": "Your idea vs 1,000 other marketers. Let’s see where you actually stand.",
+      "desc": "Global hackathon open worldwide.",
+      "prize": "$10,000 in prizes",
+      "deadline": "2026-06-14",
+      "deadlineLabel": "2026-06-14",
+      "type": "competition",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://connectsblue.devpost.com/",
+      "country": "Global",
+      "addedDate": "2026-06-09",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-06-09"
+    },
+    {
+      "id": 781728,
+      "name": "Deloitte Photo Grant 2026 (up tp €25,000)",
+      "desc": "Deadline: June 14, 2026 Applications are open for the Deloitte Photo Grant 2026. The Deloitte Photo Grant, established in 2023 by Deloitte Italy S.p.A. S.B., under the patronage of Fondazione Deloitte ETS, is a project developed in association with Still Love srl, a company that produces corporate and communication projects for institutions and businesses and [...]",
+      "prize": "€25,000",
+      "deadline": "2026-06-14",
+      "deadlineLabel": "2026-06-14",
+      "type": "grant",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://opportunitydesk.org/2026/06/08/deloitte-photo-grant-2026/",
+      "country": "Global",
+      "addedDate": "2026-06-09",
+      "source": "rss",
+      "verified": false,
+      "checkedAt": "2026-06-09"
+    },
+    {
+      "id": 319589,
+      "name": "Deloitte Photo Grant 2026: €25,000 International Photography Grant for Emerging Photographers",
+      "desc": "Deadline: June 14, 2026 The Deloitte Photo Grant 2026 is now open for applications from emerging photographers around the world. This prestigious international photography opportunity offers young visual storytellers the chance to receive substantial funding, global recognition, and exhibition opportunities for projects that explore pressing social realities through photography. Organised by Deloitte in partnership with [...] The post Deloitte Photo Grant 2026: €25,000 Intern",
+      "prize": "€25,000",
+      "deadline": "2026-06-14",
+      "deadlineLabel": "2026-06-14",
+      "type": "grant",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://grantsdatabase.org/2026/06/09/deloitte-photo-grant-2026-e25000-international-photography-grant-for-emerging-photographers/",
+      "country": "Global",
+      "addedDate": "2026-06-09",
+      "source": "rss",
+      "verified": false,
+      "checkedAt": "2026-06-09"
+    },
+    {
+      "id": 519384,
+      "name": "DSH Hacks V1",
+      "desc": "Global hackathon open worldwide.",
+      "prize": "$34,996 in prizes",
+      "deadline": "2026-06-15",
+      "deadlineLabel": "2026-06-15",
+      "type": "competition",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://dsh-hacks-v1.devpost.com/",
+      "country": "Global",
+      "addedDate": "2026-06-09",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-06-09"
+    },
+    {
+      "id": 573251,
+      "name": "Splunk Agentic Ops Hackathon",
+      "desc": "Global hackathon open worldwide.",
+      "prize": "$20,000 in prizes",
+      "deadline": "2026-06-15",
+      "deadlineLabel": "2026-06-15",
+      "type": "competition",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://splunk.devpost.com/",
+      "country": "Global",
+      "addedDate": "2026-06-09",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-06-09"
+    },
+    {
+      "id": 387415,
+      "name": "FIND EVIL!",
+      "desc": "Global hackathon open worldwide.",
+      "prize": "$22,000 in prizes",
+      "deadline": "2026-06-15",
+      "deadlineLabel": "2026-06-15",
+      "type": "competition",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://findevil.devpost.com/",
+      "country": "Global",
+      "addedDate": "2026-06-09",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-06-09"
+    },
     {
       "id": 465589,
       "name": "Sundance Institute Documentary Fund 2026",
@@ -18,10 +270,10 @@
       ],
       "url": "https://opportunitydesk.org/2026/06/08/sundance-institute-documentary-fund-2026/",
       "country": "Global",
-      "addedDate": "2026-06-08",
+      "addedDate": "2026-06-09",
       "source": "rss",
       "verified": false,
-      "checkedAt": "2026-06-08"
+      "checkedAt": "2026-06-09"
     },
     {
       "id": 3,
@@ -45,6 +297,48 @@
       "source": "manual"
     },
     {
+      "id": 233184,
+      "name": "HackMars 3.0: NEON",
+      "desc": "Global hackathon open worldwide.",
+      "prize": "Open prizes",
+      "deadline": "2026-06-16",
+      "deadlineLabel": "2026-06-16",
+      "type": "competition",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://hackmars-3-0-neon.devpost.com/",
+      "country": "Global",
+      "addedDate": "2026-06-09",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-06-09"
+    },
+    {
+      "id": 871735,
+      "name": "ML Empowerment Build Challenge",
+      "desc": "Global hackathon open worldwide.",
+      "prize": "Open prizes",
+      "deadline": "2026-06-16",
+      "deadlineLabel": "2026-06-16",
+      "type": "competition",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://ml-empowerment-build-challenge.devpost.com/",
+      "country": "Global",
+      "addedDate": "2026-06-09",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-06-09"
+    },
+    {
       "id": 462186,
       "name": "Natural Justice Climate Litigation School 2026: Fully Funded Opportunity for Climate Justice Advocates",
       "desc": "Deadline: June 16, 2026 The Natural Justice Climate Litigation School 2026 is now open for applications from aspiring climate justice advocates, environmental lawyers, researchers, policy experts, and activists interested in advancing climate litigation and environmental governance across Africa. Organised by Natural Justice in collaboration with the Centre for Environmental Rights and the University of Pretoria’s [...] The post Natural Justice Climate Litigation School 2026:",
@@ -61,10 +355,10 @@
       ],
       "url": "https://grantsdatabase.org/2026/06/07/natural-justice-climate-litigation-school-2026-fully-funded-opportunity-for-climate-justice-advocates/",
       "country": "Global",
-      "addedDate": "2026-06-08",
+      "addedDate": "2026-06-09",
       "source": "rss",
       "verified": false,
-      "checkedAt": "2026-06-08"
+      "checkedAt": "2026-06-09"
     },
     {
       "id": 699285,
@@ -82,10 +376,199 @@
       ],
       "url": "https://grantsdatabase.org/2026/06/06/the-african-union-ecosocc-5th-permanent-general-assembly/",
       "country": "Global",
-      "addedDate": "2026-06-08",
+      "addedDate": "2026-06-09",
       "source": "rss",
       "verified": false,
-      "checkedAt": "2026-06-08"
+      "checkedAt": "2026-06-09"
+    },
+    {
+      "id": 567282,
+      "name": "Vortexa",
+      "desc": "Global hackathon open worldwide.",
+      "prize": "Open prizes",
+      "deadline": "2026-06-17",
+      "deadlineLabel": "2026-06-17",
+      "type": "competition",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://vortexa.devpost.com/",
+      "country": "Global",
+      "addedDate": "2026-06-09",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-06-09"
+    },
+    {
+      "id": 699868,
+      "name": "SummerBuild 2026",
+      "desc": "Global hackathon open worldwide.",
+      "prize": "$500 in prizes",
+      "deadline": "2026-06-18",
+      "deadlineLabel": "2026-06-18",
+      "type": "competition",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://summerbuild-2026.devpost.com/",
+      "country": "Global",
+      "addedDate": "2026-06-09",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-06-09"
+    },
+    {
+      "id": 855692,
+      "name": "1st Nature's Blueprint Ideathon 2026 !!",
+      "desc": "Global hackathon open worldwide.",
+      "prize": "Open prizes",
+      "deadline": "2026-06-18",
+      "deadlineLabel": "2026-06-18",
+      "type": "competition",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://naturesblueprint.devpost.com/",
+      "country": "Global",
+      "addedDate": "2026-06-09",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-06-09"
+    },
+    {
+      "id": 722472,
+      "name": "NextGenHacks",
+      "desc": "Global hackathon open worldwide.",
+      "prize": "$1,000 in prizes",
+      "deadline": "2026-06-19",
+      "deadlineLabel": "2026-06-19",
+      "type": "competition",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://nextgenhacks.devpost.com/",
+      "country": "Global",
+      "addedDate": "2026-06-09",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-06-09"
+    },
+    {
+      "id": 865334,
+      "name": "Hack Days Unnao",
+      "desc": "Global hackathon open worldwide.",
+      "prize": "Open prizes",
+      "deadline": "2026-06-20",
+      "deadlineLabel": "2026-06-20",
+      "type": "competition",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://hack-days-unnao.devpost.com/",
+      "country": "Global",
+      "addedDate": "2026-06-09",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-06-09"
+    },
+    {
+      "id": 486495,
+      "name": "Mind the Product presents World Product Day: Everyone Ships Now",
+      "desc": "Global hackathon open worldwide.",
+      "prize": "$10,000 in prizes",
+      "deadline": "2026-06-20",
+      "deadlineLabel": "2026-06-20",
+      "type": "competition",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://mindtheproduct.devpost.com/",
+      "country": "Global",
+      "addedDate": "2026-06-09",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-06-09"
+    },
+    {
+      "id": 244766,
+      "name": "CodeStorm",
+      "desc": "Global hackathon open worldwide.",
+      "prize": "Open prizes",
+      "deadline": "2026-06-21",
+      "deadlineLabel": "2026-06-21",
+      "type": "competition",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://codestorm.devpost.com/",
+      "country": "Global",
+      "addedDate": "2026-06-09",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-06-09"
+    },
+    {
+      "id": 892663,
+      "name": "Hack Begin",
+      "desc": "Global hackathon open worldwide.",
+      "prize": "Open prizes",
+      "deadline": "2026-06-25",
+      "deadlineLabel": "2026-06-25",
+      "type": "competition",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://hack-begin.devpost.com/",
+      "country": "Global",
+      "addedDate": "2026-06-09",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-06-09"
+    },
+    {
+      "id": 739525,
+      "name": "PhysTech 2026: Physical Activity and Technology Hack Day",
+      "desc": "Global hackathon open worldwide.",
+      "prize": "Open prizes",
+      "deadline": "2026-06-27",
+      "deadlineLabel": "2026-06-27",
+      "type": "competition",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://phystech-2026.devpost.com/",
+      "country": "Global",
+      "addedDate": "2026-06-09",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-06-09"
     },
     {
       "id": 4,
@@ -124,31 +607,31 @@
       ],
       "url": "https://opportunitydesk.org/2026/06/08/darcy-business-freedom-grant-2026/",
       "country": "Global",
-      "addedDate": "2026-06-08",
+      "addedDate": "2026-06-09",
       "source": "rss",
       "verified": false,
-      "checkedAt": "2026-06-08"
+      "checkedAt": "2026-06-09"
     },
     {
-      "id": 630139,
-      "name": "ifa Research Award on International Cultural Relations 2026",
-      "desc": "Deadline: June 30, 2026 The ifa Research Award on International Cultural Relations 2026 is now open for applications, providing an exceptional opportunity for young researchers and academics whose work contributes to the growing field of international cultural relations, cultural diplomacy, and foreign cultural policy. Organised by the Institut für Auslandsbeziehungen (ifa), the prestigious award recognises [...] The post ifa Research Award on International Cultural Relations",
-      "prize": "See listing",
+      "id": 548115,
+      "name": "Darcy Business Freedom Grant 2026: Apply for Up to $1,000 Business Funding",
+      "desc": "Deadline: June 30, 2026 The Darcy Business Freedom Grant 2026 is a global funding opportunity designed to support entrepreneurs and small business owners who are ready to launch, grow, or strengthen their business. The programme offers financial assistance of up to $1,000 USD, helping recipients cover essential startup or expansion costs and move closer to [...] The post Darcy Business Freedom Grant 2026: Apply for Up to $1,000 Business Funding appeared first on GrantsDatabas",
+      "prize": "$1,000",
       "deadline": "2026-06-30",
       "deadlineLabel": "2026-06-30",
-      "type": "prize",
+      "type": "grant",
       "loc": [
         "global"
       ],
       "sector": [
-        "general"
+        "fintech"
       ],
-      "url": "https://grantsdatabase.org/2026/06/06/ifa-research-award-on-international-cultural-relations-2026/",
+      "url": "https://grantsdatabase.org/2026/06/09/darcy-business-freedom-grant-2026-apply-for-up-to-1000-business-funding/",
       "country": "Global",
-      "addedDate": "2026-06-08",
+      "addedDate": "2026-06-09",
       "source": "rss",
       "verified": false,
-      "checkedAt": "2026-06-08"
+      "checkedAt": "2026-06-09"
     },
     {
       "id": 5,
@@ -172,68 +655,91 @@
       "source": "manual"
     },
     {
-      "id": 861207,
-      "name": "Longview Digital Minds Career Development Fellowships 2026",
-      "desc": "Deadline: July 10, 2026 The Longview Digital Minds Career Development Fellowships 2026: Full Guide & Application Details is a fully funded opportunity designed to support emerging and mid-career professionals who are passionate about shaping the future of artificial intelligence, digital consciousness, and AI governance. This fellowship is particularly focused on individuals working at the intersection [...] The post Longview Digital Minds Career Development Fellowships 2026 ",
+      "id": 729609,
+      "name": "Accelerating Business Leadership and Entrepreneurship (ABLE) Program 2026",
+      "desc": "Deadline: July 12, 2026 Applications are open for the Accelerating Business Leadership and Entrepreneurship (ABLE) Program 2026. The Accelerating Business Leadership and Entrepreneurship (ABLE) is an accelerator program designed to support impact-orientated businesses in the United States which are addressing essential community needs and driving innovative solutions. The program is committed to providing entrepreneurs from [...]",
       "prize": "See listing",
-      "deadline": "2026-07-10",
-      "deadlineLabel": "2026-07-10",
-      "type": "scholarship",
+      "deadline": "2026-07-12",
+      "deadlineLabel": "2026-07-12",
+      "type": "competition",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://opportunitydesk.org/2026/06/08/accelerating-business-leadership-and-entrepreneurship-program-2026/",
+      "country": "United States",
+      "addedDate": "2026-06-09",
+      "source": "rss",
+      "verified": false,
+      "checkedAt": "2026-06-09"
+    },
+    {
+      "id": 154731,
+      "name": "Spirit of Togetherness Award 2026 (Fully-funded to the One Young World Summit)",
+      "desc": "Deadline: July 20, 2026 Applications are open for the Spirit of Togetherness Award 2026. Building on the success of the WE Award 2025, Pernod Ricard is proud to partner once again with One Young World to launch the Spirit of Togetherness Award 2026. This award recognises five outstanding young leaders who are creating opportunities for connection [...]",
+      "prize": "See listing",
+      "deadline": "2026-07-20",
+      "deadlineLabel": "2026-07-20",
+      "type": "prize",
       "loc": [
         "global"
       ],
       "sector": [
-        "ai"
+        "general"
       ],
-      "url": "https://grantsdatabase.org/2026/06/06/longview-digital-minds-career-development-fellowships-2026/",
+      "url": "https://opportunitydesk.org/2026/06/09/spirit-of-togetherness-award-2026/",
       "country": "Global",
-      "addedDate": "2026-06-08",
+      "addedDate": "2026-06-09",
       "source": "rss",
       "verified": false,
-      "checkedAt": "2026-06-08"
+      "checkedAt": "2026-06-09"
     },
     {
-      "id": 49584,
-      "name": "FAO eLearning Academy Global Youth Contest 2026",
-      "desc": "Deadline: July 31, 2026 The FAO eLearning Academy Global Youth Contest 2026 is an international storytelling competition designed to highlight how young people around the world are using digital learning to create real-life impact. Organised by the Food and Agriculture Organization of the United Nations (FAO), this initiative celebrates learners who have completed FAO eLearning [...] The post FAO eLearning Academy Global Youth Contest 2026 appeared first on GrantsDatabase .",
-      "prize": "See listing",
-      "deadline": "2026-07-31",
-      "deadlineLabel": "2026-07-31",
-      "type": "grant",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "edtech"
-      ],
-      "url": "https://grantsdatabase.org/2026/06/06/fao-elearning-academy-global-youth-contest-2026/",
-      "country": "Global",
-      "addedDate": "2026-06-08",
-      "source": "rss",
-      "verified": false,
-      "checkedAt": "2026-06-08"
-    },
-    {
-      "id": 421445,
-      "name": "ITTO Fellowship Programme 2026: Fully Funded Opportunity for Forestry and Sustainable Development Professionals",
-      "desc": "Deadline: July 31, 2026 The ITTO Fellowship Programme 2026 is now open for applications, offering professionals and students from eligible countries the opportunity to receive funding support of up to US$10,000. The fellowship is designed to strengthen human resource development and build professional expertise in tropical forestry, sustainable forest management, and related industries. Managed by [...] The post ITTO Fellowship Programme 2026: Fully Funded Opportunity for For",
-      "prize": "$10,000",
-      "deadline": "2026-07-31",
-      "deadlineLabel": "2026-07-31",
-      "type": "scholarship",
+      "id": 21455,
+      "name": "Build with Gemini XPRIZE Hackathon 2026 ($2,000,000 in prizes)",
+      "desc": "Deadline: August 17, 2026 Applications are open for the Build with Gemini XPRIZE Hackathon 2026. The $2 million global hackathon challenges developers worldwide to use artificial intelligence tools to build solutions across five categories: Education & Human Potential, Entrepreneurship & Job Creation, Small Business Services, Money & Financial Access, and Professional Services. The Build with [...]",
+      "prize": "$2,000,000",
+      "deadline": "2026-08-17",
+      "deadlineLabel": "2026-08-17",
+      "type": "competition",
       "loc": [
         "global"
       ],
       "sector": [
         "edtech",
-        "climate"
+        "ai",
+        "fintech"
       ],
-      "url": "https://grantsdatabase.org/2026/06/06/itto-fellowship-programme-2026-fully-funded-opportunity-for-forestry-and-sustainable-development-professionals/",
+      "url": "https://opportunitydesk.org/2026/06/08/build-with-gemini-xprize-hackathon-2026/",
       "country": "Global",
-      "addedDate": "2026-06-08",
+      "addedDate": "2026-06-09",
       "source": "rss",
       "verified": false,
-      "checkedAt": "2026-06-08"
+      "checkedAt": "2026-06-09"
+    },
+    {
+      "id": 200620,
+      "name": "Build with Gemini XPRIZE Hackathon 2026: Win a Share of $2 Million in Global AI Innovation Funding",
+      "desc": "Deadline: August 17, 2026 The Build with Gemini XPRIZE Hackathon 2026 is now open for applications, offering innovators, developers, entrepreneurs, startups, students, and creators from around the world the opportunity to build impactful AI-powered businesses and compete for a share of an impressive $2 million prize pool. Organised by XPRIZE with support from Google, the [...] The post Build with Gemini XPRIZE Hackathon 2026: Win a Share of $2 Million in Global AI Innovation ",
+      "prize": "$2 Million",
+      "deadline": "2026-08-17",
+      "deadlineLabel": "2026-08-17",
+      "type": "competition",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "edtech",
+        "ai"
+      ],
+      "url": "https://grantsdatabase.org/2026/06/09/build-with-gemini-xprize-hackathon-2026-win-a-share-of-2-million-in-global-ai-innovation-funding/",
+      "country": "Global",
+      "addedDate": "2026-06-09",
+      "source": "rss",
+      "verified": false,
+      "checkedAt": "2026-06-09"
     },
     {
       "id": 7,
@@ -271,10 +777,10 @@
       ],
       "url": "https://grantsdatabase.org/2026/06/07/cambridge-africa-alborada-research-fund-2026-apply-for-up-to-25000-in-collaborative-research-funding/",
       "country": "Global",
-      "addedDate": "2026-06-08",
+      "addedDate": "2026-06-09",
       "source": "rss",
       "verified": false,
-      "checkedAt": "2026-06-08"
+      "checkedAt": "2026-06-09"
     },
     {
       "id": 8,
@@ -319,27 +825,6 @@
       "source": "manual"
     },
     {
-      "id": 444501,
-      "name": "Marshall Scholarships 2027 – Marshall Scholarships 2027 Applications Now Open for Outstanding US Students",
-      "desc": "Deadline: September 29, 2026 The Marshall Scholarships 2027 have officially opened for applications, offering an exceptional opportunity for high-achieving United States students to pursue postgraduate studies in the United Kingdom. Established to strengthen academic ties between the United States and the United Kingdom, the scholarship remains one of the most prestigious and competitive international awards [...] The post Marshall Scholarships 2027 – Marshall Scholarships 20",
-      "prize": "See listing",
-      "deadline": "2026-09-29",
-      "deadlineLabel": "2026-09-29",
-      "type": "scholarship",
-      "loc": [
-        "national"
-      ],
-      "sector": [
-        "edtech"
-      ],
-      "url": "https://grantsdatabase.org/2026/06/06/marshall-scholarships-2027-marshall-scholarships-2027-applications-now-open-for-outstanding-us-students/",
-      "country": "United States",
-      "addedDate": "2026-06-08",
-      "source": "rss",
-      "verified": false,
-      "checkedAt": "2026-06-08"
-    },
-    {
       "id": 9,
       "name": "Queens Tech & Innovation Challenge",
       "desc": "Five grants of up to $20K each with zero strings attached. Early-stage entrepreneurs. Includes mentorship, office hours, networking events.",
@@ -382,49 +867,6 @@
       "source": "manual"
     },
     {
-      "id": 73810,
-      "name": "UNESCO-Al Fozan International Prize for the Promotion of Young Scientists in STEM 2026 ($50,000 prize)",
-      "desc": "Deadline: November 30, 2026 Applications are open for the UNESCO-Al Fozan International Prize for the Promotion of Young Scientists in STEM 2026. The UNESCO-Al Fozan International Prize for the Promotion of Young Scientists in STEM aims to boost STEM research, education, and international cooperation to tackle challenges addressed by the Sustainable Development Goals (SDGs). It recognizes young [...]",
-      "prize": "$50,000",
-      "deadline": "2026-11-30",
-      "deadlineLabel": "2026-11-30",
-      "type": "competition",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "edtech",
-        "climate"
-      ],
-      "url": "https://opportunitydesk.org/2026/06/06/unesco-al-fozan-international-prize-2026/",
-      "country": "Global",
-      "addedDate": "2026-06-08",
-      "source": "rss",
-      "verified": false,
-      "checkedAt": "2026-06-08"
-    },
-    {
-      "id": 791206,
-      "name": "UNESCO–Al Fozan International Prize for the Promotion of Young Scientists in STEM (2026 Edition)",
-      "desc": "Deadline: November 30, 2026 The UNESCO–Al Fozan International Prize for the Promotion of Young Scientists in STEM (2026 Edition) is a prestigious global recognition established by the United Nations Educational, Scientific and Cultural Organization (UNESCO) in partnership with the Al Fozan Foundation. The prize is designed to identify, celebrate, and support exceptional young scientists whose [...] The post UNESCO–Al Fozan International Prize for the Promotion of Young Scient",
-      "prize": "See listing",
-      "deadline": "2026-11-30",
-      "deadlineLabel": "2026-11-30",
-      "type": "prize",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "edtech"
-      ],
-      "url": "https://grantsdatabase.org/2026/06/06/unesco-al-fozan-international-prize-for-the-promotion-of-young-scientists-in-stem-2026-edition/",
-      "country": "Global",
-      "addedDate": "2026-06-08",
-      "source": "rss",
-      "verified": false,
-      "checkedAt": "2026-06-08"
-    },
-    {
       "id": 16,
       "name": "SXSW EDU Launch Startup Competition",
       "desc": "Presented by Walton Family Foundation. Early-stage EdTech founders pitch live on stage at SXSW EDU 2027 in Austin. Three awards: Launch, Impact, and Community Choice.",
@@ -460,10 +902,10 @@
       ],
       "url": "https://expandnorthstar.com/supernova-0X",
       "country": "Global",
-      "addedDate": "2026-06-08",
+      "addedDate": "2026-06-09",
       "source": "search",
       "verified": false,
-      "checkedAt": "2026-06-08"
+      "checkedAt": "2026-06-09"
     },
     {
       "id": 20,
@@ -888,6 +1330,385 @@
       "source": "manual"
     },
     {
+      "id": 737751,
+      "name": "Codex Meetup Dhaka - UIU",
+      "desc": "Global hackathon open worldwide.",
+      "prize": "Open prizes",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "competition",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://codex-meetup-dhaka-uiu.devpost.com/",
+      "country": "Global",
+      "addedDate": "2026-06-09",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-06-09"
+    },
+    {
+      "id": 399162,
+      "name": "DSOC : Summer Edition",
+      "desc": "Global hackathon open worldwide.",
+      "prize": "Open prizes",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "competition",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://dsoc-summer-edition.devpost.com/",
+      "country": "Global",
+      "addedDate": "2026-06-09",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-06-09"
+    },
+    {
+      "id": 396069,
+      "name": "LexHack '26",
+      "desc": "Global hackathon open worldwide.",
+      "prize": "$600 in prizes",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "competition",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://lexhack-26.devpost.com/",
+      "country": "Global",
+      "addedDate": "2026-06-09",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-06-09"
+    },
+    {
+      "id": 595526,
+      "name": "STEMINATE HACKS 2026",
+      "desc": "Global hackathon open worldwide.",
+      "prize": "Open prizes",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "competition",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://steminate-hacks-2026.devpost.com/",
+      "country": "Global",
+      "addedDate": "2026-06-09",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-06-09"
+    },
+    {
+      "id": 870243,
+      "name": "Mega Agent-A-Thon",
+      "desc": "Global hackathon open worldwide.",
+      "prize": "Open prizes",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "competition",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://mega-agent-a-thon.devpost.com/",
+      "country": "Global",
+      "addedDate": "2026-06-09",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-06-09"
+    },
+    {
+      "id": 326192,
+      "name": "LovHack x BrandOye Growathon",
+      "desc": "Global hackathon open worldwide.",
+      "prize": "Open prizes",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "competition",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://lovhack-x-brandoye-growathon.devpost.com/",
+      "country": "Global",
+      "addedDate": "2026-06-09",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-06-09"
+    },
+    {
+      "id": 146399,
+      "name": "Insforge Hack",
+      "desc": "Global hackathon open worldwide.",
+      "prize": "Open prizes",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "competition",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://insforge-hack.devpost.com/",
+      "country": "Global",
+      "addedDate": "2026-06-09",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-06-09"
+    },
+    {
+      "id": 485722,
+      "name": "My Dream Superhero Challenge",
+      "desc": "Global hackathon open worldwide.",
+      "prize": "Open prizes",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "competition",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://my-dream-superhero-challenge.devpost.com/",
+      "country": "Global",
+      "addedDate": "2026-06-09",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-06-09"
+    },
+    {
+      "id": 192656,
+      "name": "V1TROUS Hackathon",
+      "desc": "Global hackathon open worldwide.",
+      "prize": "Open prizes",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "competition",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://v1trous-hackathon-30125.devpost.com/",
+      "country": "Global",
+      "addedDate": "2026-06-09",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-06-09"
+    },
+    {
+      "id": 585143,
+      "name": "AI for Learning & Development Build Challenge — AI Collective HR + Regent",
+      "desc": "Global hackathon open worldwide.",
+      "prize": "Open prizes",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "competition",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "edtech",
+        "ai"
+      ],
+      "url": "https://ai-challenge-regent-aichr.devpost.com/",
+      "country": "Global",
+      "addedDate": "2026-06-09",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-06-09"
+    },
+    {
+      "id": 81864,
+      "name": "Built with Python Hackathon",
+      "desc": "Global hackathon open worldwide.",
+      "prize": "Open prizes",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "competition",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://built-with-python-hackathon.devpost.com/",
+      "country": "Global",
+      "addedDate": "2026-06-09",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-06-09"
+    },
+    {
+      "id": 392995,
+      "name": "Hyperbloom Summer Hackathon",
+      "desc": "Global hackathon open worldwide.",
+      "prize": "Open prizes",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "competition",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://hyperbloom-summer-hackathon.devpost.com/",
+      "country": "Global",
+      "addedDate": "2026-06-09",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-06-09"
+    },
+    {
+      "id": 507396,
+      "name": "InnovatorsX: Startup Sprint",
+      "desc": "Global hackathon open worldwide.",
+      "prize": "Open prizes",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "competition",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://innovatorsx.devpost.com/",
+      "country": "Global",
+      "addedDate": "2026-06-09",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-06-09"
+    },
+    {
+      "id": 318224,
+      "name": "HACKFEST'26",
+      "desc": "Global hackathon open worldwide.",
+      "prize": "Open prizes",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "competition",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://hackfest-26.devpost.com/",
+      "country": "Global",
+      "addedDate": "2026-06-09",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-06-09"
+    },
+    {
+      "id": 677042,
+      "name": "Far Away",
+      "desc": "Global hackathon open worldwide.",
+      "prize": "Open prizes",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "competition",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://faraway.devpost.com/",
+      "country": "Global",
+      "addedDate": "2026-06-09",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-06-09"
+    },
+    {
+      "id": 744791,
+      "name": "Build with Gemini",
+      "desc": "Global hackathon open worldwide.",
+      "prize": "Open prizes",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "competition",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://build-with-gemini-0.devpost.com/",
+      "country": "Global",
+      "addedDate": "2026-06-09",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-06-09"
+    },
+    {
+      "id": 446592,
+      "name": "Hack-Vserse",
+      "desc": "Global hackathon open worldwide.",
+      "prize": "Open prizes",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "competition",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://hack-vserse.devpost.com/",
+      "country": "Global",
+      "addedDate": "2026-06-09",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-06-09"
+    },
+    {
+      "id": 257920,
+      "name": "Hack Verse",
+      "desc": "Global hackathon open worldwide.",
+      "prize": "Open prizes",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "competition",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://hack-verse-30325.devpost.com/",
+      "country": "Global",
+      "addedDate": "2026-06-09",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-06-09"
+    },
+    {
       "id": 195568,
       "name": "Women 4 Water – Swarovski Foundation Scholarships 2026/2027",
       "desc": "Deadline: Ongoing Applications are open for the Women 4 Water – Swarovski Foundation Scholarships 2026/2027. The Swarovski Foundation, through the Women 4 Water initiative, offers three full scholarships for female applicants who have been academically admitted to the regular one-year MSc programme in Water and Sustainable Development starting in November 2026. The MSc Programme in [...]",
@@ -904,10 +1725,10 @@
       ],
       "url": "https://opportunitydesk.org/2026/06/08/women-4-water-swarovski-foundation-scholarships-2026-2027/",
       "country": "Global",
-      "addedDate": "2026-06-08",
+      "addedDate": "2026-06-09",
       "source": "rss",
       "verified": false,
-      "checkedAt": "2026-06-08"
+      "checkedAt": "2026-06-09"
     },
     {
       "id": 238740,
@@ -925,10 +1746,10 @@
       ],
       "url": "https://opportunitydesk.org/2026/06/08/4th-international-youth-summit-pakistan-2026/",
       "country": "Global",
-      "addedDate": "2026-06-08",
+      "addedDate": "2026-06-09",
       "source": "rss",
       "verified": false,
-      "checkedAt": "2026-06-08"
+      "checkedAt": "2026-06-09"
     },
     {
       "id": 567720,
@@ -946,10 +1767,31 @@
       ],
       "url": "https://opportunitydesk.org/2026/06/07/grants-fellowships-and-awards-currently-open-june-7-2026/",
       "country": "Global",
-      "addedDate": "2026-06-08",
+      "addedDate": "2026-06-09",
       "source": "rss",
       "verified": false,
-      "checkedAt": "2026-06-08"
+      "checkedAt": "2026-06-09"
+    },
+    {
+      "id": 798603,
+      "name": "How to Prioritise Funding Opportunities When Everything Looks Urgent",
+      "desc": "There is a particular kind of pressure that comes with funding opportunities. A grant closes in five days. An accelerator deadline is tomorrow. A fellowship looks perfect, but the application requires references. A donor call has just been announced. A partner forwards a link with the message: “This looks good for you.” A team member [...] The post How to Prioritise Funding Opportunities When Everything Looks Urgent appeared first on GrantsDatabase .",
+      "prize": "See listing",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "fellowship",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://grantsdatabase.org/2026/06/08/how-to-prioritise-funding-opportunities-when-everything-looks-urgent/",
+      "country": "Global",
+      "addedDate": "2026-06-09",
+      "source": "rss",
+      "verified": false,
+      "checkedAt": "2026-06-09"
     },
     {
       "id": 476805,
@@ -967,94 +1809,10 @@
       ],
       "url": "https://creditforstartups.com/resources/tech-startup-grants",
       "country": "Global",
-      "addedDate": "2026-06-08",
+      "addedDate": "2026-06-09",
       "source": "search",
       "verified": false,
-      "checkedAt": "2026-06-08"
-    },
-    {
-      "id": 829223,
-      "name": "Startup Grants 2026: Best Opportunities, Top Providers & Expert Tips ...",
-      "desc": "Explore the ultimate guide to startup grants in 2026 . Discover top grants , providers, eligibility, and winning application tips for founders worldwide.",
-      "prize": "See listing",
-      "deadline": "rolling",
-      "deadlineLabel": "Rolling / Open",
-      "type": "grant",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://grants.com/startup-grants-2026-best-opportunities-top-providers-expert-tips-for-founders/",
-      "country": "Global",
-      "addedDate": "2026-06-08",
-      "source": "search",
-      "verified": false,
-      "checkedAt": "2026-06-08"
-    },
-    {
-      "id": 822062,
-      "name": "Startup Grants 2026: Every Open Grant for US Founders",
-      "desc": "50+ startup grants open to US founders in 2026 . Federal, state, and private grants with real deadlines, eligibility, and direct application links. Updated monthly.",
-      "prize": "See listing",
-      "deadline": "rolling",
-      "deadlineLabel": "Rolling / Open",
-      "type": "grant",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://startupmapafrica.com/guide/startup-grants-2026-us-founders",
-      "country": "Global",
-      "addedDate": "2026-06-08",
-      "source": "search",
-      "verified": false,
-      "checkedAt": "2026-06-08"
-    },
-    {
-      "id": 94770,
-      "name": "80+ Non-Dilutive Funding Sources for Startups (2026 Database)",
-      "desc": "He stacked four different non-dilutive sources: cloud credits, a government grant , a revenue-based financing line, and a startup program from a major tech company.",
-      "prize": "See listing",
-      "deadline": "rolling",
-      "deadlineLabel": "Rolling / Open",
-      "type": "grant",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://www.thevccorner.com/p/non-dilutive-funding-sources-startups-database",
-      "country": "Global",
-      "addedDate": "2026-06-08",
-      "source": "search",
-      "verified": false,
-      "checkedAt": "2026-06-08"
-    },
-    {
-      "id": 176685,
-      "name": "The Best Startup Grants and Non-Dilutive Funding in 2026",
-      "desc": "Discover the top startup grants and non-dilutive funding sources for 2026 . Learn how to secure capital from government programs like SBIR/STTR and private grants without giving up equity.",
-      "prize": "See listing",
-      "deadline": "rolling",
-      "deadlineLabel": "Rolling / Open",
-      "type": "grant",
-      "loc": [
-        "national"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://sahin.io/blog/the-best-startup-grants-and-non-dilutive-funding-in-2026",
-      "country": "United States",
-      "addedDate": "2026-06-08",
-      "source": "search",
-      "verified": false,
-      "checkedAt": "2026-06-08"
+      "checkedAt": "2026-06-09"
     },
     {
       "id": 699732,
@@ -1072,10 +1830,94 @@
       ],
       "url": "https://grants.com/the-ultimate-guide-to-startup-grants-secure-funding-for-your-business-in-2026/",
       "country": "Global",
-      "addedDate": "2026-06-08",
+      "addedDate": "2026-06-09",
       "source": "search",
       "verified": false,
-      "checkedAt": "2026-06-08"
+      "checkedAt": "2026-06-09"
+    },
+    {
+      "id": 829223,
+      "name": "Startup Grants 2026: Best Opportunities, Top Providers & Expert Tips ...",
+      "desc": "Explore the ultimate guide to startup grants in 2026 . Discover top grants , providers, eligibility, and winning application tips for founders worldwide.",
+      "prize": "See listing",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "grant",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://grants.com/startup-grants-2026-best-opportunities-top-providers-expert-tips-for-founders/",
+      "country": "Global",
+      "addedDate": "2026-06-09",
+      "source": "search",
+      "verified": false,
+      "checkedAt": "2026-06-09"
+    },
+    {
+      "id": 822062,
+      "name": "Startup Grants 2026: Every Open Grant for US Founders",
+      "desc": "50+ startup grants open to US founders in 2026 . Federal, state, and private grants with real deadlines, eligibility, and direct application links. Updated monthly.",
+      "prize": "See listing",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "grant",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://startupmapafrica.com/guide/startup-grants-2026-us-founders",
+      "country": "Global",
+      "addedDate": "2026-06-09",
+      "source": "search",
+      "verified": false,
+      "checkedAt": "2026-06-09"
+    },
+    {
+      "id": 730655,
+      "name": "Small Business Grants 2026 Guide 2026 - successknocks.com",
+      "desc": "Small Business Grants 2026 Guide: Discover SBIR/STTR, corporate programs, eligibility, and step-by-step application tips for US founders. Secure non-dilutive funding—start applying smarter today.",
+      "prize": "See listing",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "grant",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://successknocks.com/small-business-grants-2026-guide/",
+      "country": "United States",
+      "addedDate": "2026-06-09",
+      "source": "search",
+      "verified": false,
+      "checkedAt": "2026-06-09"
+    },
+    {
+      "id": 94770,
+      "name": "80+ Non-Dilutive Funding Sources for Startups (2026 Database)",
+      "desc": "He stacked four different non-dilutive sources: cloud credits, a government grant , a revenue-based financing line, and a startup program from a major tech company.",
+      "prize": "See listing",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "grant",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://www.thevccorner.com/p/non-dilutive-funding-sources-startups-database",
+      "country": "Global",
+      "addedDate": "2026-06-09",
+      "source": "search",
+      "verified": false,
+      "checkedAt": "2026-06-09"
     },
     {
       "id": 538078,
@@ -1093,16 +1935,16 @@
       ],
       "url": "https://opportunedhub.lovable.app/blog/startup-grants-united-states-2026/",
       "country": "United States",
-      "addedDate": "2026-06-08",
+      "addedDate": "2026-06-09",
       "source": "search",
       "verified": false,
-      "checkedAt": "2026-06-08"
+      "checkedAt": "2026-06-09"
     },
     {
-      "id": 156852,
-      "name": "Government Funding Programs for Tech Startups 2026",
-      "desc": "Discover top government funding programs for tech startups in 2026 , including SBIR/STTR grants up to $2M+. Get step-by-step application tips and avoid common mistakes. Start your non-dilutive funding journey today.",
-      "prize": "$2M",
+      "id": 176685,
+      "name": "The Best Startup Grants and Non-Dilutive Funding in 2026",
+      "desc": "Discover the top startup grants and non-dilutive funding sources for 2026 . Learn how to secure capital from government programs like SBIR/STTR and private grants without giving up equity.",
+      "prize": "See listing",
       "deadline": "rolling",
       "deadlineLabel": "Rolling / Open",
       "type": "grant",
@@ -1112,54 +1954,33 @@
       "sector": [
         "general"
       ],
-      "url": "https://successknocks.com/government-funding-programs-for-tech-startups/",
+      "url": "https://sahin.io/blog/the-best-startup-grants-and-non-dilutive-funding-in-2026",
       "country": "United States",
-      "addedDate": "2026-06-08",
+      "addedDate": "2026-06-09",
       "source": "search",
       "verified": false,
-      "checkedAt": "2026-06-08"
+      "checkedAt": "2026-06-09"
     },
     {
-      "id": 236814,
-      "name": "10 Startup Grants and Non-Dilutive Funding Sources",
-      "desc": "Free money exists. Here are grants and non-dilutive funding options for startups , with eligibility requirements and how to apply.",
+      "id": 879608,
+      "name": "SBIR & STTR Grants for Startups: Your First Application in 2026",
+      "desc": "A practical guide for startups applying to SBIR and STTR grants for the first time in 2026 , covering eligibility, agencies, Phase I vs Phase II, and proposal tips.",
       "prize": "See listing",
       "deadline": "rolling",
       "deadlineLabel": "Rolling / Open",
       "type": "grant",
       "loc": [
-        "global"
+        "national"
       ],
       "sector": [
         "general"
       ],
-      "url": "https://www.foundra.ai/key-reads/startup-grants-non-dilutive-funding",
-      "country": "Global",
-      "addedDate": "2026-06-08",
+      "url": "https://grantedai.com/blog/sbir-sttr-grants-startups-first-application-2026",
+      "country": "United States",
+      "addedDate": "2026-06-09",
       "source": "search",
       "verified": false,
-      "checkedAt": "2026-06-08"
-    },
-    {
-      "id": 541220,
-      "name": "Top 100 Startup Competitions: Complete 2026 Guide",
-      "desc": "Discover the top 100 startup competitions worldwide to help you pitch , gain funding, and grow your business. Find the best opportunities...",
-      "prize": "See listing",
-      "deadline": "rolling",
-      "deadlineLabel": "Rolling / Open",
-      "type": "competition",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://thefounderspress.com/startup-competitions/",
-      "country": "Global",
-      "addedDate": "2026-06-08",
-      "source": "search",
-      "verified": false,
-      "checkedAt": "2026-06-08"
+      "checkedAt": "2026-06-09"
     },
     {
       "id": 598820,
@@ -1177,16 +1998,16 @@
       ],
       "url": "https://www.f6s.com/contests",
       "country": "Global",
-      "addedDate": "2026-06-08",
+      "addedDate": "2026-06-09",
       "source": "search",
       "verified": false,
-      "checkedAt": "2026-06-08"
+      "checkedAt": "2026-06-09"
     },
     {
       "id": 828187,
       "name": "Startup Competitions 2026 — Complete Directory",
-      "desc": "What startup competitions are happening in 2026 ? Major competitions include Techstars, Y Combinator's Demo Day-adjacent events, regional pitch competitions (in every state and major metro), industry-specific competitions (SaaS, fintech, climate tech), and corporate-sponsored contests from companies like Google, Amazon, and Microsoft. Prize pools range from $25,000 for local competitions to $1 ...",
-      "prize": "$25,000",
+      "desc": "Startup Competitions 2026 — Complete Directory Startup competitions offer more than just prize money—they're visibility, credibility, and a structured path to funding for bootstrapped founders. In 2026 , corporate sponsors and organizations are running hundreds of pitch contests and accelerator programs with prize pools reaching into the ...",
+      "prize": "See listing",
       "deadline": "rolling",
       "deadlineLabel": "Rolling / Open",
       "type": "competition",
@@ -1194,15 +2015,35 @@
         "global"
       ],
       "sector": [
-        "climate",
-        "fintech"
+        "general"
       ],
       "url": "https://bootstrapdirectory.com/startup-competitions-2026",
       "country": "Global",
-      "addedDate": "2026-06-08",
+      "addedDate": "2026-06-09",
       "source": "search",
       "verified": false,
-      "checkedAt": "2026-06-08"
+      "checkedAt": "2026-06-09"
+    },
+    {
+      "id": 541220,
+      "name": "Top 100 Startup Competitions: Complete 2026 Guide",
+      "desc": "Discover the top 100 startup competitions worldwide to help you pitch , gain funding, and grow your business. Find the best opportunities...",
+      "prize": "See listing",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "competition",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://thefounderspress.com/startup-competitions/",
+      "country": "Global",
+      "addedDate": "2026-06-09",
+      "source": "search",
+      "verified": false,
+      "checkedAt": "2026-06-09"
     },
     {
       "id": 495671,
@@ -1220,10 +2061,10 @@
       ],
       "url": "https://startupprize.com/",
       "country": "Global",
-      "addedDate": "2026-06-08",
+      "addedDate": "2026-06-09",
       "source": "search",
       "verified": false,
-      "checkedAt": "2026-06-08"
+      "checkedAt": "2026-06-09"
     },
     {
       "id": 531253,
@@ -1241,31 +2082,10 @@
       ],
       "url": "https://capwave.ai/blog/blog-startup-events-pitch-competitions-spring-2026",
       "country": "Global",
-      "addedDate": "2026-06-08",
+      "addedDate": "2026-06-09",
       "source": "search",
       "verified": false,
-      "checkedAt": "2026-06-08"
-    },
-    {
-      "id": 851808,
-      "name": "SBA Launches $1 Million Patriot Pitch Competition to Showcase America's ...",
-      "desc": "WASHINGTON — Today, the U.S. Small Business Administration (SBA) launched the Patriot Pitch Competition , a national celebration of 250 years of American free enterprise and the small businesses that drive innovation, create jobs, and generate economic growth. Featuring a $1 million cash prize pool donated by Clover Network, Inc. (Clover), the competition is open to eligible small businesses ...",
-      "prize": "$1 Million",
-      "deadline": "rolling",
-      "deadlineLabel": "Rolling / Open",
-      "type": "competition",
-      "loc": [
-        "national"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://www.sba.gov/article/2026/05/13/sba-launches-1-million-patriot-pitch-competition-showcase-americas-entrepreneurs",
-      "country": "United States",
-      "addedDate": "2026-06-08",
-      "source": "search",
-      "verified": false,
-      "checkedAt": "2026-06-08"
+      "checkedAt": "2026-06-09"
     },
     {
       "id": 225163,
@@ -1283,31 +2103,31 @@
       ],
       "url": "https://startupmountainsummit.com/pitch-competitions-startup-founders-2026/",
       "country": "Global",
-      "addedDate": "2026-06-08",
+      "addedDate": "2026-06-09",
       "source": "search",
       "verified": false,
-      "checkedAt": "2026-06-08"
+      "checkedAt": "2026-06-09"
     },
     {
-      "id": 699533,
-      "name": "CoCreate Pitch",
-      "desc": "COCREATE PITCH 2026 The World's Largest Product-Based Startup Competition Over $1,000,000 Prize Pool Download & Install Accio Work to Apply Partner With Us Power Your Startup Journey and Streamline Your Application with",
-      "prize": "$1,000,000",
+      "id": 851808,
+      "name": "SBA Launches $1 Million Patriot Pitch Competition to Showcase America's ...",
+      "desc": "WASHINGTON — Today, the U.S. Small Business Administration (SBA) launched the Patriot Pitch Competition , a national celebration of 250 years of American free enterprise and the small businesses that drive innovation, create jobs, and generate economic growth. Featuring a $1 million cash prize pool donated by Clover Network, Inc. (Clover), the competition is open to eligible small businesses ...",
+      "prize": "$1 Million",
       "deadline": "rolling",
       "deadlineLabel": "Rolling / Open",
       "type": "competition",
       "loc": [
-        "global"
+        "national"
       ],
       "sector": [
         "general"
       ],
-      "url": "https://www.alibabacocreate.com/pitch",
-      "country": "Global",
-      "addedDate": "2026-06-08",
+      "url": "https://www.sba.gov/article/2026/05/13/sba-launches-1-million-patriot-pitch-competition-showcase-americas-entrepreneurs",
+      "country": "United States",
+      "addedDate": "2026-06-09",
       "source": "search",
       "verified": false,
-      "checkedAt": "2026-06-08"
+      "checkedAt": "2026-06-09"
     },
     {
       "id": 462499,
@@ -1325,10 +2145,31 @@
       ],
       "url": "https://www.foundersbeta.com/startup-competitions/",
       "country": "Global",
-      "addedDate": "2026-06-08",
+      "addedDate": "2026-06-09",
       "source": "search",
       "verified": false,
-      "checkedAt": "2026-06-08"
+      "checkedAt": "2026-06-09"
+    },
+    {
+      "id": 699533,
+      "name": "CoCreate Pitch",
+      "desc": "COCREATE PITCH 2026 The World's Largest Product-Based Startup Competition Over $1,000,000 Prize Pool Download & Install Accio Work to Apply Partner With Us Power Your Startup Journey and Streamline Your Application with",
+      "prize": "$1,000,000",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "competition",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://www.alibabacocreate.com/pitch",
+      "country": "Global",
+      "addedDate": "2026-06-09",
+      "source": "search",
+      "verified": false,
+      "checkedAt": "2026-06-09"
     }
   ]
 }
