@@ -54,7 +54,7 @@ MAX_LIVE = 120                     # cap entries written to live-events.json
 # API, so only they are trusted enough to publish to the live site. RSS + web
 # search are kept for discovery but never published unverified (they're the
 # source of wrong dates / non-existent events).
-VERIFIED_SOURCES = {"devpost", "challengegov", "herox", "grantsgov"}
+VERIFIED_SOURCES = {"devpost", "challengegov", "herox", "grantsgov", "codeforces"}
 PUBLISH_UNVERIFIED = False         # keep False so nothing unverified hits the site
 
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
@@ -65,6 +65,7 @@ DEVPOST_URL = "https://devpost.com/api/hackathons?status[]=upcoming&status[]=ope
 CHALLENGEGOV_URL = "https://api.challenge.gov/api/challenges?status=active&limit=40"
 HEROX_URL = "https://www.herox.com/api/v1/challenges?status=active&page_size=30"
 GRANTSGOV_URL = "https://api.grants.gov/v1/api/search2"
+CODEFORCES_URL = "https://codeforces.com/api/contest.list?gym=false"
 
 RSS_FEEDS = [
     "https://opportunitydesk.org/feed/",
@@ -410,6 +411,31 @@ def from_grantsgov() -> list:
     return out
 
 
+def from_codeforces() -> list:
+    """Upcoming competitive-programming contests from the public Codeforces API."""
+    out = []
+    data = fetch_json(CODEFORCES_URL)
+    if not data or data.get("status") != "OK":
+        return out
+    for c in data.get("result", [])[:60]:
+        if c.get("phase") != "BEFORE":          # upcoming contests only
+            continue
+        st = c.get("startTimeSeconds")
+        if not st:
+            continue
+        iso = datetime.fromtimestamp(st, tz=timezone.utc).strftime("%Y-%m-%d")
+        rec = make_record(
+            c.get("name", ""),
+            "Competitive programming contest on Codeforces, open to everyone. Great for students sharpening problem-solving and global ranking.",
+            f"https://codeforces.com/contest/{c.get('id')}",
+            org="Codeforces", amt="Rating + recognition", deadline=iso,
+            country="Global", source="codeforces", opp_type="Competition")
+        if rec:
+            out.append(rec)
+    print(f"  ✓ Codeforces: {len(out)}")
+    return out
+
+
 # ── RSS + web search ────────────────────────────────────────────────────────────
 
 def from_rss() -> list:
@@ -538,7 +564,7 @@ def run():
     sources_ok, records = [], []
 
     print("── Live APIs ──")
-    for name, fn in [("Devpost", from_devpost), ("Challenge.gov", from_challengegov), ("HeroX", from_herox), ("Grants.gov", from_grantsgov)]:
+    for name, fn in [("Devpost", from_devpost), ("Challenge.gov", from_challengegov), ("HeroX", from_herox), ("Grants.gov", from_grantsgov), ("Codeforces", from_codeforces)]:
         try:
             got = fn(); records += got; sources_ok.append(f"{name}: {len(got)}")
         except Exception as e:
