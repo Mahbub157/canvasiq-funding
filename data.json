@@ -1,88 +1,25 @@
 {
-  "lastUpdated": "2026-06-10T11:36:26.110872+00:00",
-  "totalFound": 104,
+  "lastUpdated": "2026-06-10T18:06:06.627148+00:00",
+  "totalFound": 144,
   "opportunities": [
     {
-      "id": 433208,
-      "name": "Quantumhack",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "Open prizes",
+      "id": 566131,
+      "name": "FY 2026 Strengthening Talent, Research, Innovation and Vital Engagement (STRIVE) Program",
+      "desc": "US federal grant from DOS-ECA. Opportunity #DFOP0018335.",
+      "prize": "Federal grant",
       "deadline": "2026-06-10",
       "deadlineLabel": "2026-06-10",
-      "type": "competition",
+      "type": "grant",
       "loc": [
-        "global"
+        "national"
       ],
       "sector": [
         "general"
       ],
-      "url": "https://quantumhack.devpost.com/",
-      "country": "Global",
+      "url": "https://www.grants.gov/search-results-detail/362356",
+      "country": "United States",
       "addedDate": "2026-06-10",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-06-10"
-    },
-    {
-      "id": 883495,
-      "name": "DeveloperWeek New York 2026 Hackathon",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "$8,500 in prizes",
-      "deadline": "2026-06-10",
-      "deadlineLabel": "2026-06-10",
-      "type": "competition",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://dwny-2026-hackathon.devpost.com/",
-      "country": "Global",
-      "addedDate": "2026-06-10",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-06-10"
-    },
-    {
-      "id": 644091,
-      "name": "GENIUS Olympiad 2026",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "Open prizes",
-      "deadline": "2026-06-10",
-      "deadlineLabel": "2026-06-10",
-      "type": "competition",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://genius-olympiad-2026-29859.devpost.com/",
-      "country": "Global",
-      "addedDate": "2026-06-10",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-06-10"
-    },
-    {
-      "id": 349423,
-      "name": "SS Hacker Team Cybersecurity GLOBAL Challenge 2026",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "Open prizes",
-      "deadline": "2026-06-10",
-      "deadlineLabel": "2026-06-10",
-      "type": "competition",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://sshackerteamglobal.devpost.com/",
-      "country": "Global",
-      "addedDate": "2026-06-10",
-      "source": "devpost",
+      "source": "grantsgov",
       "verified": true,
       "checkedAt": "2026-06-10"
     },
@@ -109,65 +46,44 @@
       "checkedAt": "2026-06-10"
     },
     {
-      "id": 369654,
-      "name": "Google Cloud Rapid Agent Hackathon",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "$60,000 in prizes",
-      "deadline": "2026-06-11",
-      "deadlineLabel": "2026-06-11",
+      "id": 343766,
+      "name": "Codeforces Round 1103 (Div. 3)",
+      "desc": "Competitive programming contest on Codeforces, open to everyone. Great for students sharpening problem-solving and global ranking.",
+      "prize": "Rating + recognition",
+      "deadline": "2026-06-12",
+      "deadlineLabel": "2026-06-12",
       "type": "competition",
       "loc": [
         "global"
       ],
       "sector": [
-        "general"
+        "edtech"
       ],
-      "url": "https://rapid-agent.devpost.com/",
+      "url": "https://codeforces.com/contest/2236",
       "country": "Global",
       "addedDate": "2026-06-10",
-      "source": "devpost",
+      "source": "codeforces",
       "verified": true,
       "checkedAt": "2026-06-10"
     },
     {
-      "id": 531460,
-      "name": "Aar$h# CodeStorm",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "Open prizes",
-      "deadline": "2026-06-13",
-      "deadlineLabel": "2026-06-13",
-      "type": "competition",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://aar-h-codestorm.devpost.com/",
-      "country": "Global",
-      "addedDate": "2026-06-10",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-06-10"
-    },
-    {
-      "id": 792087,
-      "name": "Your idea vs 1,000 other marketers. Let’s see where you actually stand.",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "$10,000 in prizes",
+      "id": 556344,
+      "name": "Freedom 250 Poland 2026",
+      "desc": "US federal grant from DOS-POL. Opportunity #WAW-NOFO-FY26-01.",
+      "prize": "Federal grant",
       "deadline": "2026-06-14",
       "deadlineLabel": "2026-06-14",
-      "type": "competition",
+      "type": "grant",
       "loc": [
-        "global"
+        "national"
       ],
       "sector": [
         "general"
       ],
-      "url": "https://connectsblue.devpost.com/",
-      "country": "Global",
+      "url": "https://www.grants.gov/search-results-detail/362220",
+      "country": "United States",
       "addedDate": "2026-06-10",
-      "source": "devpost",
+      "source": "grantsgov",
       "verified": true,
       "checkedAt": "2026-06-10"
     },
@@ -235,65 +151,65 @@
       "checkedAt": "2026-06-10"
     },
     {
-      "id": 519384,
-      "name": "DSH Hacks V1",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "$34,771 in prizes",
+      "id": 640735,
+      "name": "Innovation and Tech Lab",
+      "desc": "US federal grant from DOS-UKR. Opportunity #PDS-UKRAINE-FY26-01.",
+      "prize": "Federal grant",
       "deadline": "2026-06-15",
       "deadlineLabel": "2026-06-15",
-      "type": "competition",
+      "type": "grant",
       "loc": [
-        "global"
+        "national"
       ],
       "sector": [
         "general"
       ],
-      "url": "https://dsh-hacks-v1.devpost.com/",
-      "country": "Global",
+      "url": "https://www.grants.gov/search-results-detail/362409",
+      "country": "United States",
       "addedDate": "2026-06-10",
-      "source": "devpost",
+      "source": "grantsgov",
       "verified": true,
       "checkedAt": "2026-06-10"
     },
     {
-      "id": 573251,
-      "name": "Splunk Agentic Ops Hackathon",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "$20,000 in prizes",
+      "id": 720617,
+      "name": "U.S. Embassy Sofia PDS Annual Program Statement",
+      "desc": "US federal grant from DOS-BGR. Opportunity #PDS-APS-FY26-01-SOFIA.",
+      "prize": "Federal grant",
       "deadline": "2026-06-15",
       "deadlineLabel": "2026-06-15",
-      "type": "competition",
+      "type": "grant",
       "loc": [
-        "global"
+        "national"
       ],
       "sector": [
         "general"
       ],
-      "url": "https://splunk.devpost.com/",
-      "country": "Global",
+      "url": "https://www.grants.gov/search-results-detail/361886",
+      "country": "United States",
       "addedDate": "2026-06-10",
-      "source": "devpost",
+      "source": "grantsgov",
       "verified": true,
       "checkedAt": "2026-06-10"
     },
     {
-      "id": 387415,
-      "name": "FIND EVIL!",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "$22,000 in prizes",
+      "id": 479277,
+      "name": "Novel Approaches to Support Therapeutic Development in Ultra-Rare Cancers",
+      "desc": "US federal grant from HHS-FDA. Opportunity #RFA-FD-26-004.",
+      "prize": "Federal grant",
       "deadline": "2026-06-15",
       "deadlineLabel": "2026-06-15",
-      "type": "competition",
+      "type": "grant",
       "loc": [
-        "global"
+        "national"
       ],
       "sector": [
         "general"
       ],
-      "url": "https://findevil.devpost.com/",
-      "country": "Global",
+      "url": "https://www.grants.gov/search-results-detail/362217",
+      "country": "United States",
       "addedDate": "2026-06-10",
-      "source": "devpost",
+      "source": "grantsgov",
       "verified": true,
       "checkedAt": "2026-06-10"
     },
@@ -340,73 +256,10 @@
       "source": "manual"
     },
     {
-      "id": 233184,
-      "name": "HackMars 3.0: NEON",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "Open prizes",
-      "deadline": "2026-06-16",
-      "deadlineLabel": "2026-06-16",
-      "type": "competition",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://hackmars-3-0-neon.devpost.com/",
-      "country": "Global",
-      "addedDate": "2026-06-10",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-06-10"
-    },
-    {
-      "id": 871735,
-      "name": "ML Empowerment Build Challenge",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "Open prizes",
-      "deadline": "2026-06-16",
-      "deadlineLabel": "2026-06-16",
-      "type": "competition",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://ml-empowerment-build-challenge.devpost.com/",
-      "country": "Global",
-      "addedDate": "2026-06-10",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-06-10"
-    },
-    {
-      "id": 567282,
-      "name": "Vortexa",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "Open prizes",
-      "deadline": "2026-06-17",
-      "deadlineLabel": "2026-06-17",
-      "type": "competition",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://vortexa.devpost.com/",
-      "country": "Global",
-      "addedDate": "2026-06-10",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-06-10"
-    },
-    {
-      "id": 699868,
-      "name": "SummerBuild 2026",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "$500 in prizes",
+      "id": 201663,
+      "name": "Order Capital Round 2 (Codeforces Round, Div. 1 + Div. 2)",
+      "desc": "Competitive programming contest on Codeforces, open to everyone. Great for students sharpening problem-solving and global ranking.",
+      "prize": "Rating + recognition",
       "deadline": "2026-06-18",
       "deadlineLabel": "2026-06-18",
       "type": "competition",
@@ -414,138 +267,117 @@
         "global"
       ],
       "sector": [
-        "general"
+        "edtech"
       ],
-      "url": "https://summerbuild-2026.devpost.com/",
+      "url": "https://codeforces.com/contest/2237",
       "country": "Global",
       "addedDate": "2026-06-10",
-      "source": "devpost",
+      "source": "codeforces",
       "verified": true,
       "checkedAt": "2026-06-10"
     },
     {
-      "id": 855692,
-      "name": "1st Nature's Blueprint Ideathon 2026 !!",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "Open prizes",
-      "deadline": "2026-06-18",
-      "deadlineLabel": "2026-06-18",
-      "type": "competition",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://naturesblueprint.devpost.com/",
-      "country": "Global",
-      "addedDate": "2026-06-10",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-06-10"
-    },
-    {
-      "id": 722472,
-      "name": "NextGenHacks",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "$1,000 in prizes",
+      "id": 857212,
+      "name": "Public Diplomacy Section Praia: Small Grants Program",
+      "desc": "US federal grant from DOS-CPV. Opportunity #PAS-PRAIA-FY26-01.",
+      "prize": "Federal grant",
       "deadline": "2026-06-19",
       "deadlineLabel": "2026-06-19",
-      "type": "competition",
+      "type": "grant",
       "loc": [
-        "global"
+        "national"
       ],
       "sector": [
         "general"
       ],
-      "url": "https://nextgenhacks.devpost.com/",
-      "country": "Global",
+      "url": "https://www.grants.gov/search-results-detail/361927",
+      "country": "United States",
       "addedDate": "2026-06-10",
-      "source": "devpost",
+      "source": "grantsgov",
       "verified": true,
       "checkedAt": "2026-06-10"
     },
     {
-      "id": 865334,
-      "name": "Hack Days Unnao",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "Open prizes",
+      "id": 29062,
+      "name": "Advancing NATO’s Collective Defense and Industrial Capacity",
+      "desc": "US federal grant from DOS-BEL. Opportunity #OFOP0002706.",
+      "prize": "Federal grant",
       "deadline": "2026-06-20",
       "deadlineLabel": "2026-06-20",
-      "type": "competition",
+      "type": "grant",
       "loc": [
-        "global"
+        "national"
       ],
       "sector": [
         "general"
       ],
-      "url": "https://hack-days-unnao.devpost.com/",
-      "country": "Global",
+      "url": "https://www.grants.gov/search-results-detail/362095",
+      "country": "United States",
       "addedDate": "2026-06-10",
-      "source": "devpost",
+      "source": "grantsgov",
       "verified": true,
       "checkedAt": "2026-06-10"
     },
     {
-      "id": 486495,
-      "name": "Mind the Product presents World Product Day: Everyone Ships Now",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "$10,000 in prizes",
+      "id": 150710,
+      "name": "Alumni United Conference 2027",
+      "desc": "US federal grant from DOS-IDN. Opportunity #PAS-JAKARTA-FY26-03.",
+      "prize": "Federal grant",
       "deadline": "2026-06-20",
       "deadlineLabel": "2026-06-20",
-      "type": "competition",
+      "type": "grant",
       "loc": [
-        "global"
+        "national"
       ],
       "sector": [
         "general"
       ],
-      "url": "https://mindtheproduct.devpost.com/",
-      "country": "Global",
+      "url": "https://www.grants.gov/search-results-detail/362425",
+      "country": "United States",
       "addedDate": "2026-06-10",
-      "source": "devpost",
+      "source": "grantsgov",
       "verified": true,
       "checkedAt": "2026-06-10"
     },
     {
-      "id": 244766,
-      "name": "CodeStorm",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "Open prizes",
-      "deadline": "2026-06-21",
-      "deadlineLabel": "2026-06-21",
-      "type": "competition",
+      "id": 175170,
+      "name": "U.S. STEM Summer Exchange for Youth",
+      "desc": "US federal grant from DOS-DOM. Opportunity #S-DR860-26-NOFO-0004.",
+      "prize": "Federal grant",
+      "deadline": "2026-06-24",
+      "deadlineLabel": "2026-06-24",
+      "type": "grant",
       "loc": [
-        "global"
+        "national"
       ],
       "sector": [
         "general"
       ],
-      "url": "https://codestorm.devpost.com/",
-      "country": "Global",
+      "url": "https://www.grants.gov/search-results-detail/362621",
+      "country": "United States",
       "addedDate": "2026-06-10",
-      "source": "devpost",
+      "source": "grantsgov",
       "verified": true,
       "checkedAt": "2026-06-10"
     },
     {
-      "id": 892663,
-      "name": "Hack Begin",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "Open prizes",
-      "deadline": "2026-06-25",
-      "deadlineLabel": "2026-06-25",
-      "type": "competition",
+      "id": 80189,
+      "name": "Launching the Next 250 Years of American and European Innovation and Growth",
+      "desc": "US federal grant from DOS-BEL. Opportunity #OFOP0002797.",
+      "prize": "Federal grant",
+      "deadline": "2026-06-26",
+      "deadlineLabel": "2026-06-26",
+      "type": "grant",
       "loc": [
-        "global"
+        "national"
       ],
       "sector": [
         "general"
       ],
-      "url": "https://hack-begin.devpost.com/",
-      "country": "Global",
+      "url": "https://www.grants.gov/search-results-detail/362585",
+      "country": "United States",
       "addedDate": "2026-06-10",
-      "source": "devpost",
+      "source": "grantsgov",
       "verified": true,
       "checkedAt": "2026-06-10"
     },
@@ -569,6 +401,90 @@
       "equity": false,
       "addedDate": "2026-05-26",
       "source": "manual"
+    },
+    {
+      "id": 893831,
+      "name": "FY 2027 Fulbright Specialist Program",
+      "desc": "US federal grant from DOS-ECA. Opportunity #DFOP0018215.",
+      "prize": "Federal grant",
+      "deadline": "2026-06-29",
+      "deadlineLabel": "2026-06-29",
+      "type": "grant",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://www.grants.gov/search-results-detail/362122",
+      "country": "United States",
+      "addedDate": "2026-06-10",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-06-10"
+    },
+    {
+      "id": 812028,
+      "name": "Operation and Management of the Edward M. Kennedy Center",
+      "desc": "US federal grant from DOS-BGD. Opportunity #PD-DHAKA-NOFO-FY2026-02.",
+      "prize": "Federal grant",
+      "deadline": "2026-06-30",
+      "deadlineLabel": "2026-06-30",
+      "type": "grant",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://www.grants.gov/search-results-detail/362107",
+      "country": "United States",
+      "addedDate": "2026-06-10",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-06-10"
+    },
+    {
+      "id": 834266,
+      "name": "U.S. Embassy Lome Public Diplomacy Small Grants Program",
+      "desc": "US federal grant from DOS-TGO. Opportunity #LOME-FY26-APS-0001.",
+      "prize": "Federal grant",
+      "deadline": "2026-06-30",
+      "deadlineLabel": "2026-06-30",
+      "type": "grant",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://www.grants.gov/search-results-detail/362084",
+      "country": "United States",
+      "addedDate": "2026-06-10",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-06-10"
+    },
+    {
+      "id": 540783,
+      "name": "EnglishxSTEM",
+      "desc": "US federal grant from DOS-DOM. Opportunity #S-DR860-26-NOFO-0006.",
+      "prize": "Federal grant",
+      "deadline": "2026-06-30",
+      "deadlineLabel": "2026-06-30",
+      "type": "grant",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://www.grants.gov/search-results-detail/362626",
+      "country": "United States",
+      "addedDate": "2026-06-10",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-06-10"
     },
     {
       "id": 548115,
@@ -676,6 +592,90 @@
       "checkedAt": "2026-06-10"
     },
     {
+      "id": 643486,
+      "name": "Tech Innovation Lab",
+      "desc": "US federal grant from DOS-MAR. Opportunity #PAS-MOROCCO-FY26-03.",
+      "prize": "Federal grant",
+      "deadline": "2026-07-13",
+      "deadlineLabel": "2026-07-13",
+      "type": "grant",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://www.grants.gov/search-results-detail/362392",
+      "country": "United States",
+      "addedDate": "2026-06-10",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-06-10"
+    },
+    {
+      "id": 769790,
+      "name": "U.S. Mission UAE PDS Annual Program Statement",
+      "desc": "US federal grant from DOS-ARE. Opportunity #PDS-UAE-01-FY2026.",
+      "prize": "Federal grant",
+      "deadline": "2026-07-15",
+      "deadlineLabel": "2026-07-15",
+      "type": "grant",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://www.grants.gov/search-results-detail/362624",
+      "country": "United States",
+      "addedDate": "2026-06-10",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-06-10"
+    },
+    {
+      "id": 151205,
+      "name": "ScaleUp Bolivia",
+      "desc": "US federal grant from DOS-BOL. Opportunity #PD-LAPAZ-FY26-02.",
+      "prize": "Federal grant",
+      "deadline": "2026-07-15",
+      "deadlineLabel": "2026-07-15",
+      "type": "grant",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://www.grants.gov/search-results-detail/362385",
+      "country": "United States",
+      "addedDate": "2026-06-10",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-06-10"
+    },
+    {
+      "id": 110907,
+      "name": "U.S. Mission New Zealand Annual Program Statement",
+      "desc": "US federal grant from DOS-NZL. Opportunity #PDS-NEWZEALAND-2026-01.",
+      "prize": "Federal grant",
+      "deadline": "2026-07-15",
+      "deadlineLabel": "2026-07-15",
+      "type": "grant",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://www.grants.gov/search-results-detail/361866",
+      "country": "United States",
+      "addedDate": "2026-06-10",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-06-10"
+    },
+    {
       "id": 659175,
       "name": "HAIDI Inclusive AI Innovations in Africa Program 2026",
       "desc": "Deadline: July 17, 2026 Applications are invited for the HAIDI Inclusive AI Innovations in Africa Program 2026. The Hub for Artificial Intelligence and Disability Inclusion (HAIDI) Innovation Track is inviting African innovators, researchers, developers, startups, and organizations to apply for an 18-month catalytic support programme designed to scale responsible AI solutions that advance disability inclusion [...]",
@@ -697,6 +697,27 @@
       "checkedAt": "2026-06-10"
     },
     {
+      "id": 286183,
+      "name": "Prosperity through Partnership: Catalyzing U.S.-Algerian Collaboration in Innovation, Commerce and English Language",
+      "desc": "US federal grant from DOS-DZA. Opportunity #OFOP0002813.",
+      "prize": "Federal grant",
+      "deadline": "2026-07-20",
+      "deadlineLabel": "2026-07-20",
+      "type": "grant",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://www.grants.gov/search-results-detail/362492",
+      "country": "United States",
+      "addedDate": "2026-06-10",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-06-10"
+    },
+    {
       "id": 405745,
       "name": "Spirit of Togetherness Award 2026: Fully Funded Opportunity to Attend One Young World Summit 2026",
       "desc": "Deadline: July 20, 2026 The Spirit of Togetherness Award 2026 is a prestigious global initiative designed to identify and support exceptional young leaders who are actively fostering unity, inclusion, and stronger community bonds across the world. This award recognises individuals who are using innovative, community-driven approaches to bring people together across cultural, social, and generational [...] The post Spirit of Togetherness Award 2026: Fully Funded Opportunity to",
@@ -711,6 +732,111 @@
         "general"
       ],
       "url": "https://grantsdatabase.org/2026/06/10/spirit-of-togetherness-award-2026-fully-funded-opportunity-to-attend-one-young-world-summit-2026/",
+      "country": "Global",
+      "addedDate": "2026-06-10",
+      "source": "rss",
+      "verified": false,
+      "checkedAt": "2026-06-10"
+    },
+    {
+      "id": 781848,
+      "name": "EPSCoR Research Infrastructure Improvement Program: EPSCoR Collaborations for Optimizing Research Ecosystems",
+      "desc": "US federal grant from NSF. Opportunity #25-523.",
+      "prize": "Federal grant",
+      "deadline": "2026-07-21",
+      "deadlineLabel": "2026-07-21",
+      "type": "grant",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://www.grants.gov/search-results-detail/357725",
+      "country": "United States",
+      "addedDate": "2026-06-10",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-06-10"
+    },
+    {
+      "id": 442102,
+      "name": "BIA-IBIP-OIED-2026",
+      "desc": "US federal grant from DOI-BIA. Opportunity #BIA-IBIP-OIED-2026.",
+      "prize": "Federal grant",
+      "deadline": "2026-07-24",
+      "deadlineLabel": "2026-07-24",
+      "type": "grant",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://www.grants.gov/search-results-detail/362728",
+      "country": "United States",
+      "addedDate": "2026-06-10",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-06-10"
+    },
+    {
+      "id": 470925,
+      "name": "Small Business Innovation Research / Small Business Technology Transfer Phase I, Phase II, Fast-Track Programs (SBIR/STTR): A Pilot Emphasis",
+      "desc": "US federal grant from NSF. Opportunity #26-511.",
+      "prize": "Federal grant",
+      "deadline": "2026-07-27",
+      "deadlineLabel": "2026-07-27",
+      "type": "grant",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://www.grants.gov/search-results-detail/362551",
+      "country": "United States",
+      "addedDate": "2026-06-10",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-06-10"
+    },
+    {
+      "id": 444156,
+      "name": "FY26 Law Enforcement Mental Health and Wellness Act Program",
+      "desc": "US federal grant from USDOJ-OJP-COPS. Opportunity #O-COPS-2026-172553.",
+      "prize": "Federal grant",
+      "deadline": "2026-07-30",
+      "deadlineLabel": "2026-07-30",
+      "type": "grant",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://www.grants.gov/search-results-detail/362726",
+      "country": "United States",
+      "addedDate": "2026-06-10",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-06-10"
+    },
+    {
+      "id": 689158,
+      "name": "Professor Tagirin A. Fregene Scholarship Fund for Masters in Medical Physics 2026",
+      "desc": "Deadline: July 31, 2026 Applications are open for the Professor Tagirin A. Fregene Scholarship Fund for Masters in Medical Physics 2026. The Professor Tagirin A. Fregene Scholarship Fund, was established in honour of the first National Association of Medical Physicists (NAMP) president, to support aspiring medical physicists in their pursuit of excellence. The fund is currently [...]",
+      "prize": "See listing",
+      "deadline": "2026-07-31",
+      "deadlineLabel": "2026-07-31",
+      "type": "scholarship",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://opportunitydesk.org/2026/06/10/professor-tagirin-a-fregene-scholarship-fund-2026/",
       "country": "Global",
       "addedDate": "2026-06-10",
       "source": "rss",
@@ -739,24 +865,67 @@
       "checkedAt": "2026-06-10"
     },
     {
-      "id": 501433,
-      "name": "New Voters x ChallengeUS Future Leaders Competition Summer 2026 ($1,000 prize)",
-      "desc": "Deadline: August 7, 2026 Applications are invited for the New Voters x ChallengeUS Future Leaders Competition Summer 2026. The ChallengeUS Future Leaders Competition aims to critically engage and amplify youth voices from all over the world in civic ideas and challenges. The competition seeks to find, spotlight, and reward promising future leaders through scholarship prizes [...]",
-      "prize": "$1,000",
+      "id": 14990,
+      "name": "New Voters x ChallengeUS Future Leaders Competition Summer 2026",
+      "desc": "Deadline: August 7, 2026 The New Voters x ChallengeUS Future Leaders Competition Summer 2026 is an international opportunity designed to inspire young people to reflect deeply on leadership, civic responsibility, and personal impact. The programme is delivered in partnership with ChallengeUS and New Voters, both of which are committed to encouraging youth engagement in civic [...] The post New Voters x ChallengeUS Future Leaders Competition Summer 2026 appeared first on Grant",
+      "prize": "See listing",
       "deadline": "2026-08-07",
       "deadlineLabel": "2026-08-07",
-      "type": "scholarship",
+      "type": "grant",
       "loc": [
         "global"
       ],
       "sector": [
         "general"
       ],
-      "url": "https://opportunitydesk.org/2026/06/09/new-voters-x-challengeus-future-leaders-competition-summer-2026/",
+      "url": "https://grantsdatabase.org/2026/06/10/new-voters-x-challengeus-future-leaders-competition-summer-2026/",
       "country": "Global",
       "addedDate": "2026-06-10",
       "source": "rss",
       "verified": false,
+      "checkedAt": "2026-06-10"
+    },
+    {
+      "id": 621698,
+      "name": "Research and Education Program for Historically Black Colleges and Universities (HBCU) and Tribal Colleges and Universities (TCU)",
+      "desc": "US federal grant from DOD-AMC. Opportunity #W911NF26S0085.",
+      "prize": "Federal grant",
+      "deadline": "2026-08-11",
+      "deadlineLabel": "2026-08-11",
+      "type": "grant",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "edtech",
+        "bipoc"
+      ],
+      "url": "https://www.grants.gov/search-results-detail/362711",
+      "country": "United States",
+      "addedDate": "2026-06-10",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-06-10"
+    },
+    {
+      "id": 10627,
+      "name": "PD ANNUAL PROGRAM STATEMENT",
+      "desc": "US federal grant from DOS-BOL. Opportunity #PD-LAPAZ-FY26-01.",
+      "prize": "Federal grant",
+      "deadline": "2026-08-15",
+      "deadlineLabel": "2026-08-15",
+      "type": "grant",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://www.grants.gov/search-results-detail/362383",
+      "country": "United States",
+      "addedDate": "2026-06-10",
+      "source": "grantsgov",
+      "verified": true,
       "checkedAt": "2026-06-10"
     },
     {
@@ -782,6 +951,48 @@
       "checkedAt": "2026-06-10"
     },
     {
+      "id": 663904,
+      "name": "Africa Regional Services Paris Annual Program Statement: ARS Speaker Program",
+      "desc": "US federal grant from DOS-FRA-ARS. Opportunity #AF-PDPA-FY26-01.",
+      "prize": "Federal grant",
+      "deadline": "2026-08-31",
+      "deadlineLabel": "2026-08-31",
+      "type": "grant",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://www.grants.gov/search-results-detail/362065",
+      "country": "United States",
+      "addedDate": "2026-06-10",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-06-10"
+    },
+    {
+      "id": 116705,
+      "name": "Tribal Colleges and Universities Program",
+      "desc": "US federal grant from NSF. Opportunity #21-595.",
+      "prize": "Federal grant",
+      "deadline": "2026-09-01",
+      "deadlineLabel": "2026-09-01",
+      "type": "grant",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://www.grants.gov/search-results-detail/334326",
+      "country": "United States",
+      "addedDate": "2026-06-10",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-06-10"
+    },
+    {
       "id": 7,
       "name": "EdTech Week — Shark Tank NYC",
       "desc": "Purpose-built for early-stage EdTech with MVP. Panel of top EdTech investors pledge up to $250K collectively. Applications reviewed through Sep 2 for Oct 20–22 event.",
@@ -800,6 +1011,27 @@
       "equity": true,
       "addedDate": "2026-05-26",
       "source": "manual"
+    },
+    {
+      "id": 641771,
+      "name": "IUSE/Professional Formation of Engineers: Revolutionizing Engineering Departments",
+      "desc": "US federal grant from NSF. Opportunity #24-564.",
+      "prize": "Federal grant",
+      "deadline": "2026-09-08",
+      "deadlineLabel": "2026-09-08",
+      "type": "grant",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://www.grants.gov/search-results-detail/353413",
+      "country": "United States",
+      "addedDate": "2026-06-10",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-06-10"
     },
     {
       "id": 8,
@@ -844,6 +1076,27 @@
       "source": "manual"
     },
     {
+      "id": 307398,
+      "name": "National Science Foundation Translation to Practice",
+      "desc": "US federal grant from NSF. Opportunity #25-540.",
+      "prize": "Federal grant",
+      "deadline": "2026-09-15",
+      "deadlineLabel": "2026-09-15",
+      "type": "grant",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://www.grants.gov/search-results-detail/359966",
+      "country": "United States",
+      "addedDate": "2026-06-10",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-06-10"
+    },
+    {
       "id": 9,
       "name": "Queens Tech & Innovation Challenge",
       "desc": "Five grants of up to $20K each with zero strings attached. Early-stage entrepreneurs. Includes mentorship, office hours, networking events.",
@@ -862,6 +1115,27 @@
       "equity": false,
       "addedDate": "2026-05-26",
       "source": "manual"
+    },
+    {
+      "id": 635032,
+      "name": "NRL Long Range Broad Agency Announcement (BAA) for Basic and Applied Research",
+      "desc": "US federal grant from DOD-ONR-NRL. Opportunity #N00173-24-S-BA01.",
+      "prize": "Federal grant",
+      "deadline": "2026-09-30",
+      "deadlineLabel": "2026-09-30",
+      "type": "grant",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://www.grants.gov/search-results-detail/352741",
+      "country": "United States",
+      "addedDate": "2026-06-10",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-06-10"
     },
     {
       "id": 15,
@@ -884,6 +1158,48 @@
       "equity": false,
       "addedDate": "2026-05-26",
       "source": "manual"
+    },
+    {
+      "id": 103761,
+      "name": "NSF's Eddie Bernice Johnson Inclusion across the Nation of Communities of Learners of Underrepresented Discoverers in Engineering and Scienc",
+      "desc": "US federal grant from NSF. Opportunity #22-622.",
+      "prize": "Federal grant",
+      "deadline": "2026-10-27",
+      "deadlineLabel": "2026-10-27",
+      "type": "grant",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "bipoc"
+      ],
+      "url": "https://www.grants.gov/search-results-detail/359103",
+      "country": "United States",
+      "addedDate": "2026-06-10",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-06-10"
+    },
+    {
+      "id": 471464,
+      "name": "Plasma Physics",
+      "desc": "US federal grant from NSF. Opportunity #PD-23-1242.",
+      "prize": "Federal grant",
+      "deadline": "2026-11-16",
+      "deadlineLabel": "2026-11-16",
+      "type": "grant",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://www.grants.gov/search-results-detail/350018",
+      "country": "United States",
+      "addedDate": "2026-06-10",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-06-10"
     },
     {
       "id": 16,
@@ -945,6 +1261,27 @@
       "equity": false,
       "addedDate": "2026-05-26",
       "source": "manual"
+    },
+    {
+      "id": 631492,
+      "name": "The Genesis Mission: Transforming Science and Energy with AI",
+      "desc": "US federal grant from PAMS-SC. Opportunity #DE-FOA-0003612.",
+      "prize": "Federal grant",
+      "deadline": "2026-12-17",
+      "deadlineLabel": "2026-12-17",
+      "type": "grant",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "ai"
+      ],
+      "url": "https://www.grants.gov/search-results-detail/361526",
+      "country": "United States",
+      "addedDate": "2026-06-10",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-06-10"
     },
     {
       "id": 10,
@@ -1010,6 +1347,27 @@
       "source": "manual"
     },
     {
+      "id": 786186,
+      "name": "NSF Scholarships in Science, Technology, Engineering, and Mathematics Program",
+      "desc": "US federal grant from NSF. Opportunity #25-514.",
+      "prize": "Federal grant",
+      "deadline": "2027-03-02",
+      "deadlineLabel": "2027-03-02",
+      "type": "grant",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://www.grants.gov/search-results-detail/357498",
+      "country": "United States",
+      "addedDate": "2026-06-10",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-06-10"
+    },
+    {
       "id": 18,
       "name": "LearnLaunch Breakthrough to Scale",
       "desc": "The leading EdTech-only accelerator in the US. $50K initial investment + up to $150K milestone-based follow-on. Backed 91 companies raising $300M+.",
@@ -1028,6 +1386,48 @@
       "equity": true,
       "addedDate": "2026-05-26",
       "source": "manual"
+    },
+    {
+      "id": 83496,
+      "name": "UNITED STATES MILITARY ACADEMY Broad Agency Announcement",
+      "desc": "US federal grant from DOD-AMC. Opportunity #W911NF-20-S-0008.",
+      "prize": "Federal grant",
+      "deadline": "2027-03-31",
+      "deadlineLabel": "2027-03-31",
+      "type": "grant",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://www.grants.gov/search-results-detail/325932",
+      "country": "United States",
+      "addedDate": "2026-06-10",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-06-10"
+    },
+    {
+      "id": 474778,
+      "name": "Expeditions in Computing",
+      "desc": "US federal grant from NSF. Opportunity #20-544.",
+      "prize": "Federal grant",
+      "deadline": "2027-03-31",
+      "deadlineLabel": "2027-03-31",
+      "type": "grant",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://www.grants.gov/search-results-detail/324456",
+      "country": "United States",
+      "addedDate": "2026-06-10",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-06-10"
     },
     {
       "id": 19,
@@ -1069,6 +1469,111 @@
       "equity": false,
       "addedDate": "2026-05-26",
       "source": "manual"
+    },
+    {
+      "id": 615169,
+      "name": "NIH Small Business Technology Transfer Grant (Parent STTR [R41/R42] Clinical Trial Optional)",
+      "desc": "US federal grant from HHS-NIH11. Opportunity #PA-27-102.",
+      "prize": "Federal grant",
+      "deadline": "2027-04-05",
+      "deadlineLabel": "2027-04-05",
+      "type": "grant",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://www.grants.gov/search-results-detail/359757",
+      "country": "United States",
+      "addedDate": "2026-06-10",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-06-10"
+    },
+    {
+      "id": 778334,
+      "name": "NIH, CDC and FDA Small Business Innovation Research Grant (Parent SBIR [R43/R44] Clinical Trial Optional)",
+      "desc": "US federal grant from HHS-NIH11. Opportunity #PA-27-100.",
+      "prize": "Federal grant",
+      "deadline": "2027-04-05",
+      "deadlineLabel": "2027-04-05",
+      "type": "grant",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://www.grants.gov/search-results-detail/359671",
+      "country": "United States",
+      "addedDate": "2026-06-10",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-06-10"
+    },
+    {
+      "id": 563235,
+      "name": "DEVCOM ANALYSIS CENTER BROAD AGENCY ANNOUNCEMENT FOR APPLIED RESEARCH",
+      "desc": "US federal grant from DOD-AMC. Opportunity #W911NF-23-S-0003.",
+      "prize": "Federal grant",
+      "deadline": "2028-01-04",
+      "deadlineLabel": "2028-01-04",
+      "type": "grant",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://www.grants.gov/search-results-detail/345241",
+      "country": "United States",
+      "addedDate": "2026-06-10",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-06-10"
+    },
+    {
+      "id": 119823,
+      "name": "NIH Small Business Innovation Research (SBIR) Phase IIB Strategic Breakthrough Award (Parent [R44] Clinical Trial Optional)",
+      "desc": "US federal grant from HHS-NIH11. Opportunity #PA-27-101.",
+      "prize": "Federal grant",
+      "deadline": "2029-04-05",
+      "deadlineLabel": "2029-04-05",
+      "type": "grant",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://www.grants.gov/search-results-detail/359758",
+      "country": "United States",
+      "addedDate": "2026-06-10",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-06-10"
+    },
+    {
+      "id": 454414,
+      "name": "University Nuclear Leadership Program– Scholarship and Fellowship Support",
+      "desc": "US federal grant from DOE-ID. Opportunity #DE-FOA-0002265.",
+      "prize": "Federal grant",
+      "deadline": "2030-10-14",
+      "deadlineLabel": "2030-10-14",
+      "type": "grant",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "edtech"
+      ],
+      "url": "https://www.grants.gov/search-results-detail/329436",
+      "country": "United States",
+      "addedDate": "2026-06-10",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-06-10"
     },
     {
       "id": 11,
@@ -1349,423 +1854,760 @@
       "source": "manual"
     },
     {
-      "id": 737751,
-      "name": "Codex Meetup Dhaka - UIU",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "Open prizes",
+      "id": 262488,
+      "name": "Annual Program Statement (APS) For Fiscal Year 2026",
+      "desc": "US federal grant from DOS-TUN. Opportunity #PAS-TUNIS- APS FY2026.",
+      "prize": "Federal grant",
       "deadline": "rolling",
       "deadlineLabel": "Rolling / Open",
-      "type": "competition",
+      "type": "grant",
       "loc": [
-        "global"
+        "national"
       ],
       "sector": [
         "general"
       ],
-      "url": "https://codex-meetup-dhaka-uiu.devpost.com/",
-      "country": "Global",
+      "url": "https://www.grants.gov/search-results-detail/362086",
+      "country": "United States",
       "addedDate": "2026-06-10",
-      "source": "devpost",
+      "source": "grantsgov",
       "verified": true,
       "checkedAt": "2026-06-10"
     },
     {
-      "id": 90601,
-      "name": "Hack Days Varanasi",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "Open prizes",
+      "id": 220657,
+      "name": "U.S. Embassy Praia Ambassador’s Special Self-Help (SSH) Program",
+      "desc": "US federal grant from DOS-CPV. Opportunity #AFPRA-20-04.",
+      "prize": "Federal grant",
       "deadline": "rolling",
       "deadlineLabel": "Rolling / Open",
-      "type": "competition",
+      "type": "grant",
       "loc": [
-        "global"
+        "national"
       ],
       "sector": [
         "general"
       ],
-      "url": "https://hack-days-varanasi.devpost.com/",
-      "country": "Global",
+      "url": "https://www.grants.gov/search-results-detail/325599",
+      "country": "United States",
       "addedDate": "2026-06-10",
-      "source": "devpost",
+      "source": "grantsgov",
       "verified": true,
       "checkedAt": "2026-06-10"
     },
     {
-      "id": 396069,
-      "name": "LexHack '26",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "$600 in prizes",
+      "id": 181705,
+      "name": "GameON: U.S.-Albania E-Sports and Innovation",
+      "desc": "US federal grant from DOS-ALB. Opportunity #AMERICANSPACESGAMEON-2026.",
+      "prize": "Federal grant",
       "deadline": "rolling",
       "deadlineLabel": "Rolling / Open",
-      "type": "competition",
+      "type": "grant",
       "loc": [
-        "global"
+        "national"
       ],
       "sector": [
         "general"
       ],
-      "url": "https://lexhack-26.devpost.com/",
-      "country": "Global",
+      "url": "https://www.grants.gov/search-results-detail/362664",
+      "country": "United States",
       "addedDate": "2026-06-10",
-      "source": "devpost",
+      "source": "grantsgov",
       "verified": true,
       "checkedAt": "2026-06-10"
     },
     {
-      "id": 595526,
-      "name": "STEMINATE HACKS 2026",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "Open prizes",
+      "id": 285954,
+      "name": "Partnership Intermediary Agreement (PIA)",
+      "desc": "US federal grant from DOD-AFRL-RW. Opportunity #FA8651-22-S0021.",
+      "prize": "Federal grant",
       "deadline": "rolling",
       "deadlineLabel": "Rolling / Open",
-      "type": "competition",
+      "type": "grant",
       "loc": [
-        "global"
+        "national"
       ],
       "sector": [
         "general"
       ],
-      "url": "https://steminate-hacks-2026.devpost.com/",
-      "country": "Global",
+      "url": "https://www.grants.gov/search-results-detail/336962",
+      "country": "United States",
       "addedDate": "2026-06-10",
-      "source": "devpost",
+      "source": "grantsgov",
       "verified": true,
       "checkedAt": "2026-06-10"
     },
     {
-      "id": 870243,
-      "name": "Mega Agent-A-Thon",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "Open prizes",
+      "id": 416033,
+      "name": "EONS 2018: Appendix E Minority University Research and Education Project (MUREP) for Sustainability and Innovation Collaborative – (MUSIC)",
+      "desc": "US federal grant from NASA. Opportunity #NNH18ZHA002N-MUSIC.",
+      "prize": "Federal grant",
       "deadline": "rolling",
       "deadlineLabel": "Rolling / Open",
-      "type": "competition",
+      "type": "grant",
       "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://mega-agent-a-thon.devpost.com/",
-      "country": "Global",
-      "addedDate": "2026-06-10",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-06-10"
-    },
-    {
-      "id": 326192,
-      "name": "LovHack x BrandOye Growathon",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "Open prizes",
-      "deadline": "rolling",
-      "deadlineLabel": "Rolling / Open",
-      "type": "competition",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://lovhack-x-brandoye-growathon.devpost.com/",
-      "country": "Global",
-      "addedDate": "2026-06-10",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-06-10"
-    },
-    {
-      "id": 146399,
-      "name": "Insforge Hack",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "Open prizes",
-      "deadline": "rolling",
-      "deadlineLabel": "Rolling / Open",
-      "type": "competition",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://insforge-hack.devpost.com/",
-      "country": "Global",
-      "addedDate": "2026-06-10",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-06-10"
-    },
-    {
-      "id": 485722,
-      "name": "My Dream Superhero Challenge",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "Open prizes",
-      "deadline": "rolling",
-      "deadlineLabel": "Rolling / Open",
-      "type": "competition",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://my-dream-superhero-challenge.devpost.com/",
-      "country": "Global",
-      "addedDate": "2026-06-10",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-06-10"
-    },
-    {
-      "id": 740785,
-      "name": "Reality Hack at AWE 2026",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "$33,000 in prizes",
-      "deadline": "rolling",
-      "deadlineLabel": "Rolling / Open",
-      "type": "competition",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://reality-hack-at-awe-2026.devpost.com/",
-      "country": "Global",
-      "addedDate": "2026-06-10",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-06-10"
-    },
-    {
-      "id": 192656,
-      "name": "V1TROUS Hackathon",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "Open prizes",
-      "deadline": "rolling",
-      "deadlineLabel": "Rolling / Open",
-      "type": "competition",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://v1trous-hackathon-30125.devpost.com/",
-      "country": "Global",
-      "addedDate": "2026-06-10",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-06-10"
-    },
-    {
-      "id": 797263,
-      "name": "AI for Civic Innovation Hackathon",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "$890 in prizes",
-      "deadline": "rolling",
-      "deadlineLabel": "Rolling / Open",
-      "type": "competition",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://ai-for-civic-innovation.devpost.com/",
-      "country": "Global",
-      "addedDate": "2026-06-10",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-06-10"
-    },
-    {
-      "id": 585143,
-      "name": "AI for Learning & Development Build Challenge — AI Collective HR + Regent",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "Open prizes",
-      "deadline": "rolling",
-      "deadlineLabel": "Rolling / Open",
-      "type": "competition",
-      "loc": [
-        "global"
+        "national"
       ],
       "sector": [
         "edtech",
-        "ai"
+        "bipoc",
+        "climate"
       ],
-      "url": "https://ai-challenge-regent-aichr.devpost.com/",
-      "country": "Global",
+      "url": "https://www.grants.gov/search-results-detail/300997",
+      "country": "United States",
       "addedDate": "2026-06-10",
-      "source": "devpost",
+      "source": "grantsgov",
       "verified": true,
       "checkedAt": "2026-06-10"
     },
     {
-      "id": 81864,
-      "name": "Built with Python Hackathon",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "Open prizes",
+      "id": 312080,
+      "name": "Growing Great Ideas: Research Education Course in Product Development and Entrepreneurship for Life Science Researchers",
+      "desc": "US federal grant from HHS-NIH11. Opportunity #RFA-DA-27-007.",
+      "prize": "Federal grant",
       "deadline": "rolling",
       "deadlineLabel": "Rolling / Open",
-      "type": "competition",
+      "type": "grant",
       "loc": [
-        "global"
+        "national"
       ],
       "sector": [
-        "general"
+        "edtech"
       ],
-      "url": "https://built-with-python-hackathon.devpost.com/",
-      "country": "Global",
+      "url": "https://www.grants.gov/search-results-detail/360561",
+      "country": "United States",
       "addedDate": "2026-06-10",
-      "source": "devpost",
+      "source": "grantsgov",
       "verified": true,
       "checkedAt": "2026-06-10"
     },
     {
-      "id": 418081,
-      "name": "IntelliShift Hackathon",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "Open prizes",
+      "id": 248668,
+      "name": "NIEHS Worker Training Program’s SBIR E-Learning for HAZMAT and Emergency Response (R43/R44 Clinical Trial Not Allowed)",
+      "desc": "US federal grant from HHS-NIH11. Opportunity #TEMP-30794.",
+      "prize": "Federal grant",
       "deadline": "rolling",
       "deadlineLabel": "Rolling / Open",
-      "type": "competition",
+      "type": "grant",
       "loc": [
-        "global"
+        "national"
       ],
       "sector": [
-        "general"
+        "edtech"
       ],
-      "url": "https://intellishift-hackathon.devpost.com/",
-      "country": "Global",
+      "url": "https://www.grants.gov/search-results-detail/358912",
+      "country": "United States",
       "addedDate": "2026-06-10",
-      "source": "devpost",
+      "source": "grantsgov",
       "verified": true,
       "checkedAt": "2026-06-10"
     },
     {
-      "id": 392995,
-      "name": "Hyperbloom Summer Hackathon",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "Open prizes",
+      "id": 617479,
+      "name": "U.S. Embassy Luanda Public Diplomacy Section Request for a Full Proposal Application",
+      "desc": "US federal grant from DOS-AGO. Opportunity #DOS-PAS-ANG-FY25-01.",
+      "prize": "Federal grant",
       "deadline": "rolling",
       "deadlineLabel": "Rolling / Open",
-      "type": "competition",
+      "type": "grant",
       "loc": [
-        "global"
+        "national"
       ],
       "sector": [
         "general"
       ],
-      "url": "https://hyperbloom-summer-hackathon.devpost.com/",
-      "country": "Global",
+      "url": "https://www.grants.gov/search-results-detail/358783",
+      "country": "United States",
       "addedDate": "2026-06-10",
-      "source": "devpost",
+      "source": "grantsgov",
       "verified": true,
       "checkedAt": "2026-06-10"
     },
     {
-      "id": 507396,
-      "name": "InnovatorsX: Startup Sprint",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "Open prizes",
+      "id": 45417,
+      "name": "National Defense Education Program (NDEP) Science, Technology, Engineering, and Mathematics (STEM) Consortia Request for Information (RFI) f",
+      "desc": "US federal grant from DOD. Opportunity #RANDENDEPSTEMFY22RFI.",
+      "prize": "Federal grant",
       "deadline": "rolling",
       "deadlineLabel": "Rolling / Open",
-      "type": "competition",
+      "type": "grant",
       "loc": [
-        "global"
+        "national"
       ],
       "sector": [
-        "general"
+        "edtech"
       ],
-      "url": "https://innovatorsx.devpost.com/",
-      "country": "Global",
+      "url": "https://www.grants.gov/search-results-detail/334905",
+      "country": "United States",
       "addedDate": "2026-06-10",
-      "source": "devpost",
+      "source": "grantsgov",
       "verified": true,
       "checkedAt": "2026-06-10"
     },
     {
-      "id": 318224,
-      "name": "HACKFEST'26",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "Open prizes",
+      "id": 872370,
+      "name": "Forecast to Publish a Notice of Funding Opportunity for Small Business Transition Grant For Early Career Scientists (R41/R42 Clinical Trial ",
+      "desc": "US federal grant from HHS-NIH11. Opportunity #FOR-CA-25-087.",
+      "prize": "Federal grant",
       "deadline": "rolling",
       "deadlineLabel": "Rolling / Open",
-      "type": "competition",
+      "type": "grant",
       "loc": [
-        "global"
+        "national"
       ],
       "sector": [
         "general"
       ],
-      "url": "https://hackfest-26.devpost.com/",
-      "country": "Global",
+      "url": "https://www.grants.gov/search-results-detail/359724",
+      "country": "United States",
       "addedDate": "2026-06-10",
-      "source": "devpost",
+      "source": "grantsgov",
       "verified": true,
       "checkedAt": "2026-06-10"
     },
     {
-      "id": 677042,
-      "name": "Far Away",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "Open prizes",
+      "id": 91457,
+      "name": "U.S. Embassy Djibouti PDS Annual Program Statement",
+      "desc": "US federal grant from DOS-DJI. Opportunity #PDS-24-01.",
+      "prize": "Federal grant",
       "deadline": "rolling",
       "deadlineLabel": "Rolling / Open",
-      "type": "competition",
+      "type": "grant",
       "loc": [
-        "global"
+        "national"
       ],
       "sector": [
         "general"
       ],
-      "url": "https://faraway.devpost.com/",
-      "country": "Global",
+      "url": "https://www.grants.gov/search-results-detail/352290",
+      "country": "United States",
       "addedDate": "2026-06-10",
-      "source": "devpost",
+      "source": "grantsgov",
       "verified": true,
       "checkedAt": "2026-06-10"
     },
     {
-      "id": 359700,
-      "name": "AQX Sports Analytics Hackathon",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "Open prizes",
+      "id": 547082,
+      "name": "Alumni Engagement Innovation Fund 2024",
+      "desc": "US federal grant from DOS-LVA. Opportunity #2024-01.",
+      "prize": "Federal grant",
       "deadline": "rolling",
       "deadlineLabel": "Rolling / Open",
-      "type": "competition",
+      "type": "grant",
       "loc": [
-        "global"
+        "national"
       ],
       "sector": [
         "general"
       ],
-      "url": "https://aqxanalytics.devpost.com/",
-      "country": "Global",
+      "url": "https://www.grants.gov/search-results-detail/350831",
+      "country": "United States",
       "addedDate": "2026-06-10",
-      "source": "devpost",
+      "source": "grantsgov",
       "verified": true,
       "checkedAt": "2026-06-10"
     },
     {
-      "id": 744791,
-      "name": "Build with Gemini",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "Open prizes",
+      "id": 260735,
+      "name": "Sociology",
+      "desc": "US federal grant from NSF. Opportunity #PD-98-1331.",
+      "prize": "Federal grant",
       "deadline": "rolling",
       "deadlineLabel": "Rolling / Open",
-      "type": "competition",
+      "type": "grant",
       "loc": [
-        "global"
+        "national"
       ],
       "sector": [
         "general"
       ],
-      "url": "https://build-with-gemini-0.devpost.com/",
-      "country": "Global",
+      "url": "https://www.grants.gov/search-results-detail/45810",
+      "country": "United States",
       "addedDate": "2026-06-10",
-      "source": "devpost",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-06-10"
+    },
+    {
+      "id": 105198,
+      "name": "Research in the Formation of Engineers",
+      "desc": "US federal grant from NSF. Opportunity #PD-24-1340.",
+      "prize": "Federal grant",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "grant",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://www.grants.gov/search-results-detail/350230",
+      "country": "United States",
+      "addedDate": "2026-06-10",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-06-10"
+    },
+    {
+      "id": 322124,
+      "name": "NSF National Innovation Corps Teams (NSF National I-Corps (TM) Teams) program",
+      "desc": "US federal grant from NSF. Opportunity #25-549.",
+      "prize": "Federal grant",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "grant",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://www.grants.gov/search-results-detail/360664",
+      "country": "United States",
+      "addedDate": "2026-06-10",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-06-10"
+    },
+    {
+      "id": 661392,
+      "name": "Embassy Belgrade PAS - University Partnership",
+      "desc": "US federal grant from DOS-SRB. Opportunity #SRB10020FO006.",
+      "prize": "Federal grant",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "grant",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "edtech"
+      ],
+      "url": "https://www.grants.gov/search-results-detail/327658",
+      "country": "United States",
+      "addedDate": "2026-06-10",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-06-10"
+    },
+    {
+      "id": 667061,
+      "name": "Small Business Innovation Research (SBIR) program, Phase I",
+      "desc": "US federal grant from HHS-ACL. Opportunity #HHS-2026-ACL-NIDILRR-BISA-0207.",
+      "prize": "Federal grant",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "grant",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://www.grants.gov/search-results-detail/360528",
+      "country": "United States",
+      "addedDate": "2026-06-10",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-06-10"
+    },
+    {
+      "id": 617118,
+      "name": "Small Business Innovation Research Program (SBIR) Phase II",
+      "desc": "US federal grant from HHS-ACL. Opportunity #HHS-2026-ACL-NIDILRR-BISB-0208.",
+      "prize": "Federal grant",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "grant",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://www.grants.gov/search-results-detail/360495",
+      "country": "United States",
+      "addedDate": "2026-06-10",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-06-10"
+    },
+    {
+      "id": 412583,
+      "name": "Small Business Transition Grant for New Entrepreneurs (Parent R43/R44 Clinical Trial Optional)",
+      "desc": "US federal grant from HHS-NIH11. Opportunity #PAR-27-039.",
+      "prize": "Federal grant",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "grant",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://www.grants.gov/search-results-detail/362576",
+      "country": "United States",
+      "addedDate": "2026-06-10",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-06-10"
+    },
+    {
+      "id": 535137,
+      "name": "Geospace Cluster",
+      "desc": "US federal grant from NSF. Opportunity #PD-24-7789.",
+      "prize": "Federal grant",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "grant",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://www.grants.gov/search-results-detail/356536",
+      "country": "United States",
+      "addedDate": "2026-06-10",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-06-10"
+    },
+    {
+      "id": 249607,
+      "name": "Small Business Translator: MedTech and Digital Health Technologies",
+      "desc": "US federal grant from HHS-NIH11. Opportunity #FOR-NS-25-017.",
+      "prize": "Federal grant",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "grant",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "edtech"
+      ],
+      "url": "https://www.grants.gov/search-results-detail/359156",
+      "country": "United States",
+      "addedDate": "2026-06-10",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-06-10"
+    },
+    {
+      "id": 296800,
+      "name": "Science of Organizations",
+      "desc": "US federal grant from NSF. Opportunity #PD-11-8031.",
+      "prize": "Federal grant",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "grant",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://www.grants.gov/search-results-detail/112354",
+      "country": "United States",
+      "addedDate": "2026-06-10",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-06-10"
+    },
+    {
+      "id": 439571,
+      "name": "Supporting Interventions with Technical Assistance",
+      "desc": "US federal grant from HHS-HRSA. Opportunity #HRSA-26-101.",
+      "prize": "Federal grant",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "grant",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://www.grants.gov/search-results-detail/361601",
+      "country": "United States",
+      "addedDate": "2026-06-10",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-06-10"
+    },
+    {
+      "id": 560550,
+      "name": "STARBASE Wright Patt",
+      "desc": "US federal grant from DOD-AFRL. Opportunity #FOA-AFRL-PZLDA-2021-0001.",
+      "prize": "Federal grant",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "grant",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://www.grants.gov/search-results-detail/329806",
+      "country": "United States",
+      "addedDate": "2026-06-10",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-06-10"
+    },
+    {
+      "id": 107545,
+      "name": "Space Technology Research, Development, Demonstration, and Infusion (SpaceTech REDDI-2026)",
+      "desc": "US federal grant from NASA-HQ. Opportunity #NNH26ZTR001N.",
+      "prize": "Federal grant",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "grant",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://www.grants.gov/search-results-detail/360954",
+      "country": "United States",
+      "addedDate": "2026-06-10",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-06-10"
+    },
+    {
+      "id": 29049,
+      "name": "Autism Centers of Excellence R01",
+      "desc": "US federal grant from HHS-NIH11. Opportunity #RFA-HD-27-001.",
+      "prize": "Federal grant",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "grant",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://www.grants.gov/search-results-detail/360643",
+      "country": "United States",
+      "addedDate": "2026-06-10",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-06-10"
+    },
+    {
+      "id": 656451,
+      "name": "Autism Centers of Excellence P50",
+      "desc": "US federal grant from HHS-NIH11. Opportunity #RFA-HD-27-002.",
+      "prize": "Federal grant",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "grant",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://www.grants.gov/search-results-detail/360644",
+      "country": "United States",
+      "addedDate": "2026-06-10",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-06-10"
+    },
+    {
+      "id": 23159,
+      "name": "Catalysis",
+      "desc": "US federal grant from NSF. Opportunity #PD-23-1401.",
+      "prize": "Federal grant",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "grant",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://www.grants.gov/search-results-detail/348932",
+      "country": "United States",
+      "addedDate": "2026-06-10",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-06-10"
+    },
+    {
+      "id": 505944,
+      "name": "Disability and Rehabilitation Engineering",
+      "desc": "US federal grant from NSF. Opportunity #PD-23-5342.",
+      "prize": "Federal grant",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "grant",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://www.grants.gov/search-results-detail/348795",
+      "country": "United States",
+      "addedDate": "2026-06-10",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-06-10"
+    },
+    {
+      "id": 600254,
+      "name": "Collaboratory to Advance Mathematics Education and Learning (CAMEL) for K-12",
+      "desc": "US federal grant from NSF. Opportunity #26-501.",
+      "prize": "Federal grant",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "grant",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "edtech"
+      ],
+      "url": "https://www.grants.gov/search-results-detail/361008",
+      "country": "United States",
+      "addedDate": "2026-06-10",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-06-10"
+    },
+    {
+      "id": 81093,
+      "name": "Tactical Behaviors for Autonomous Maneuver",
+      "desc": "US federal grant from DOD-AMC. Opportunity #W911NF-22-S-0011.",
+      "prize": "Federal grant",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "grant",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://www.grants.gov/search-results-detail/339728",
+      "country": "United States",
+      "addedDate": "2026-06-10",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-06-10"
+    },
+    {
+      "id": 71681,
+      "name": "Bioengineering Research, Innovation and Technology Education (BRITE) Program (R25 Clinical Trial Not Allowed)",
+      "desc": "US federal grant from HHS-NIH11. Opportunity #PAR-26-025.",
+      "prize": "Federal grant",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "grant",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "edtech"
+      ],
+      "url": "https://www.grants.gov/search-results-detail/360634",
+      "country": "United States",
+      "addedDate": "2026-06-10",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-06-10"
+    },
+    {
+      "id": 314683,
+      "name": "Biomedical Engineering, Imaging, and Technology Acceleration (BEITA) at Historically Black Colleges and Universities",
+      "desc": "US federal grant from HHS-NIH11. Opportunity #RFA-EB-26-003.",
+      "prize": "Federal grant",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "grant",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "bipoc"
+      ],
+      "url": "https://www.grants.gov/search-results-detail/360592",
+      "country": "United States",
+      "addedDate": "2026-06-10",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-06-10"
+    },
+    {
+      "id": 59756,
+      "name": "Annual Program Statement (APS)",
+      "desc": "US federal grant from DOS-GRC. Opportunity #PDS-ATHENS-FY25-01.",
+      "prize": "Federal grant",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "grant",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://www.grants.gov/search-results-detail/359266",
+      "country": "United States",
+      "addedDate": "2026-06-10",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-06-10"
+    },
+    {
+      "id": 444950,
+      "name": "Cyberinfrastructure for Public Access and Open Science",
+      "desc": "US federal grant from NSF. Opportunity #PD-24-7414.",
+      "prize": "Federal grant",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "grant",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://www.grants.gov/search-results-detail/353475",
+      "country": "United States",
+      "addedDate": "2026-06-10",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-06-10"
+    },
+    {
+      "id": 707560,
+      "name": "Mission Spain Public Diplomacy 2022 Annual Program Statement",
+      "desc": "US federal grant from DOS-ESP. Opportunity #ESP22APS.",
+      "prize": "Federal grant",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "grant",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://www.grants.gov/search-results-detail/336244",
+      "country": "United States",
+      "addedDate": "2026-06-10",
+      "source": "grantsgov",
       "verified": true,
       "checkedAt": "2026-06-10"
     },
@@ -1833,48 +2675,6 @@
       "checkedAt": "2026-06-10"
     },
     {
-      "id": 829223,
-      "name": "Startup Grants 2026: Best Opportunities, Top Providers & Expert Tips ...",
-      "desc": "Explore the ultimate guide to startup grants in 2026 . Discover top grants , providers, eligibility, and winning application tips for founders worldwide.",
-      "prize": "See listing",
-      "deadline": "rolling",
-      "deadlineLabel": "Rolling / Open",
-      "type": "grant",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://grants.com/startup-grants-2026-best-opportunities-top-providers-expert-tips-for-founders/",
-      "country": "Global",
-      "addedDate": "2026-06-10",
-      "source": "search",
-      "verified": false,
-      "checkedAt": "2026-06-10"
-    },
-    {
-      "id": 835479,
-      "name": "Startup Grants & Funding 2026 | SBIR, Venture, Non-Dilutive",
-      "desc": "Find startup grants and non-dilutive funding. SBIR/STTR programs, accelerator grants , and innovation funding for tech startups and early-stage companies.",
-      "prize": "See listing",
-      "deadline": "rolling",
-      "deadlineLabel": "Rolling / Open",
-      "type": "grant",
-      "loc": [
-        "national"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://grantnavigation.com/for-startups",
-      "country": "United States",
-      "addedDate": "2026-06-10",
-      "source": "search",
-      "verified": false,
-      "checkedAt": "2026-06-10"
-    },
-    {
       "id": 699732,
       "name": "The Ultimate Guide to Startup Grants: Secure Funding for Your Business ...",
       "desc": "Explore top startup grants for 2026 . Learn about industry-specific programs, application tips, and how to win non-dilutive funding for your business.",
@@ -1898,7 +2698,7 @@
     {
       "id": 538078,
       "name": "Startup Grants in the United States 2026",
-      "desc": "FAQ The United States is the world's largest source of non-dilutive funding for startups , with federal agencies awarding over $4 billion annually through programs like the Small Business Innovation Research (SBIR) and Small Business Technology Transfer (STTR) programs. Unlike venture capital, these grants do not require founders to give up equity.",
+      "desc": "Startup Grants in the United States 2026 Table of Contents Overview Eligibility Benefits Application Process Required Documents Deadline FAQ The United States is the world's largest source of non-dilutive funding for startups , with federal agencies awarding over $4 billion annually through programs like the Small Business Innovation Research (SBIR) and Small Business Technology Transfer (STTR ...",
       "prize": "$4",
       "deadline": "rolling",
       "deadlineLabel": "Rolling / Open",
@@ -1938,9 +2738,9 @@
       "checkedAt": "2026-06-10"
     },
     {
-      "id": 600299,
-      "name": "Best Startup Grants of 2026 — Top 25 Opportunities for Founders",
-      "desc": "Discover the best startup grants of 2026 . Top non-dilutive funding programs for bootstrapped founders across sectors and stages.",
+      "id": 829223,
+      "name": "Startup Grants 2026: Best Opportunities, Top Providers & Expert Tips ...",
+      "desc": "Explore the ultimate guide to startup grants in 2026 . Discover top grants , providers, eligibility, and winning application tips for founders worldwide.",
       "prize": "See listing",
       "deadline": "rolling",
       "deadlineLabel": "Rolling / Open",
@@ -1951,28 +2751,7 @@
       "sector": [
         "general"
       ],
-      "url": "https://bootstrapdirectory.com/best-startup-grants-2026",
-      "country": "Global",
-      "addedDate": "2026-06-10",
-      "source": "search",
-      "verified": false,
-      "checkedAt": "2026-06-10"
-    },
-    {
-      "id": 476805,
-      "name": "Top 10 Tech Startup Grants for 2026 (Non-Dilutive)",
-      "desc": "Find the best tech startup grants for 2026 . Our list covers non-dilutive funding from AWS, Google, OpenAI, and more, with eligibility, tips, and links.",
-      "prize": "See listing",
-      "deadline": "rolling",
-      "deadlineLabel": "Rolling / Open",
-      "type": "grant",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://creditforstartups.com/resources/tech-startup-grants",
+      "url": "https://grants.com/startup-grants-2026-best-opportunities-top-providers-expert-tips-for-founders/",
       "country": "Global",
       "addedDate": "2026-06-10",
       "source": "search",
@@ -2001,9 +2780,72 @@
       "checkedAt": "2026-06-10"
     },
     {
-      "id": 531253,
-      "name": "Best Startup Events and Pitch Competitions for Founders in Spring 2026",
-      "desc": "The best startup events and pitch competitions for founders in spring 2026 , from Startup Grind to YC deadlines. Dates, prep tips, and what to prioritize.",
+      "id": 476805,
+      "name": "Top 10 Tech Startup Grants for 2026 (Non-Dilutive)",
+      "desc": "Find the best tech startup grants for 2026 . Our list covers non-dilutive funding from AWS, Google, OpenAI, and more, with eligibility, tips, and links.",
+      "prize": "See listing",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "grant",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://creditforstartups.com/resources/tech-startup-grants",
+      "country": "Global",
+      "addedDate": "2026-06-10",
+      "source": "search",
+      "verified": false,
+      "checkedAt": "2026-06-10"
+    },
+    {
+      "id": 94770,
+      "name": "80+ Non-Dilutive Funding Sources for Startups (2026 Database)",
+      "desc": "He stacked four different non-dilutive sources: cloud credits, a government grant , a revenue-based financing line, and a startup program from a major tech company.",
+      "prize": "See listing",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "grant",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://www.thevccorner.com/p/non-dilutive-funding-sources-startups-database",
+      "country": "Global",
+      "addedDate": "2026-06-10",
+      "source": "search",
+      "verified": false,
+      "checkedAt": "2026-06-10"
+    },
+    {
+      "id": 879608,
+      "name": "SBIR & STTR Grants for Startups: Your First Application in 2026",
+      "desc": "A practical guide for startups applying to SBIR and STTR grants for the first time in 2026 , covering eligibility, agencies, Phase I vs Phase II, and proposal tips.",
+      "prize": "See listing",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "grant",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://grantedai.com/blog/sbir-sttr-grants-startups-first-application-2026",
+      "country": "United States",
+      "addedDate": "2026-06-10",
+      "source": "search",
+      "verified": false,
+      "checkedAt": "2026-06-10"
+    },
+    {
+      "id": 541220,
+      "name": "Top 100 Startup Competitions: Complete 2026 Guide",
+      "desc": "Discover the top 100 startup competitions worldwide to help you pitch , gain funding, and grow your business. Find the best opportunities...",
       "prize": "See listing",
       "deadline": "rolling",
       "deadlineLabel": "Rolling / Open",
@@ -2014,7 +2856,7 @@
       "sector": [
         "general"
       ],
-      "url": "https://capwave.ai/blog/blog-startup-events-pitch-competitions-spring-2026",
+      "url": "https://thefounderspress.com/startup-competitions/",
       "country": "Global",
       "addedDate": "2026-06-10",
       "source": "search",
@@ -2043,27 +2885,6 @@
       "checkedAt": "2026-06-10"
     },
     {
-      "id": 541220,
-      "name": "Top 100 Startup Competitions: Complete 2026 Guide",
-      "desc": "Discover the top 100 startup competitions worldwide to help you pitch , gain funding, and grow your business. Find the best opportunities...",
-      "prize": "See listing",
-      "deadline": "rolling",
-      "deadlineLabel": "Rolling / Open",
-      "type": "competition",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://thefounderspress.com/startup-competitions/",
-      "country": "Global",
-      "addedDate": "2026-06-10",
-      "source": "search",
-      "verified": false,
-      "checkedAt": "2026-06-10"
-    },
-    {
       "id": 598820,
       "name": "Get funding and prizes from 2026 startup competitions | F6S Startup ...",
       "desc": "Find and enter top 2026 startup competitions , funding competitions , pitch contests, business plan competitions to get prizes , increase awareness and win money",
@@ -2085,9 +2906,9 @@
       "checkedAt": "2026-06-10"
     },
     {
-      "id": 225163,
-      "name": "Pitch Competitions for Startup Founders 2026",
-      "desc": "The best pitch competitions for startup founders in 2026 — what to look for, how to prepare, and why the right pitch contest can change your trajectory.",
+      "id": 531253,
+      "name": "Best Startup Events and Pitch Competitions for Founders in Spring 2026",
+      "desc": "The best startup events and pitch competitions for founders in spring 2026 , from Startup Grind to YC deadlines. Dates, prep tips, and what to prioritize.",
       "prize": "See listing",
       "deadline": "rolling",
       "deadlineLabel": "Rolling / Open",
@@ -2098,7 +2919,7 @@
       "sector": [
         "general"
       ],
-      "url": "https://startupmountainsummit.com/pitch-competitions-startup-founders-2026/",
+      "url": "https://capwave.ai/blog/blog-startup-events-pitch-competitions-spring-2026",
       "country": "Global",
       "addedDate": "2026-06-10",
       "source": "search",
@@ -2127,10 +2948,10 @@
       "checkedAt": "2026-06-10"
     },
     {
-      "id": 699533,
-      "name": "CoCreate Pitch",
-      "desc": "COCREATE PITCH 2026 The World's Largest Product-Based Startup Competition Over $1,000,000 Prize Pool Download & Install Accio Work to Apply Partner With Us Power Your Startup Journey and Streamline Your Application with",
-      "prize": "$1,000,000",
+      "id": 225163,
+      "name": "Pitch Competitions for Startup Founders 2026",
+      "desc": "The best pitch competitions for startup founders in 2026 — what to look for, how to prepare, and why the right pitch contest can change your trajectory.",
+      "prize": "See listing",
       "deadline": "rolling",
       "deadlineLabel": "Rolling / Open",
       "type": "competition",
@@ -2140,8 +2961,29 @@
       "sector": [
         "general"
       ],
-      "url": "https://www.alibabacocreate.com/pitch",
+      "url": "https://startupmountainsummit.com/pitch-competitions-startup-founders-2026/",
       "country": "Global",
+      "addedDate": "2026-06-10",
+      "source": "search",
+      "verified": false,
+      "checkedAt": "2026-06-10"
+    },
+    {
+      "id": 851808,
+      "name": "SBA Launches $1 Million Patriot Pitch Competition to Showcase America's ...",
+      "desc": "WASHINGTON — Today, the U.S. Small Business Administration (SBA) launched the Patriot Pitch Competition , a national celebration of 250 years of American free enterprise and the small businesses that drive innovation, create jobs, and generate economic growth. Featuring a $1 million cash prize pool donated by Clover Network, Inc. (Clover), the competition is open to eligible small businesses ...",
+      "prize": "$1 Million",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "competition",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://www.sba.gov/article/2026/05/13/sba-launches-1-million-patriot-pitch-competition-showcase-americas-entrepreneurs",
+      "country": "United States",
       "addedDate": "2026-06-10",
       "source": "search",
       "verified": false,
@@ -2169,21 +3011,21 @@
       "checkedAt": "2026-06-10"
     },
     {
-      "id": 851808,
-      "name": "SBA Launches $1 Million Patriot Pitch Competition to Showcase America's ...",
-      "desc": "WASHINGTON — Today, the U.S. Small Business Administration (SBA) launched the Patriot Pitch Competition , a national celebration of 250 years of American free enterprise and the small businesses that drive innovation, create jobs, and generate economic growth. Featuring a $1 million cash prize pool donated by Clover Network, Inc. (Clover), the competition is open to eligible small businesses ...",
-      "prize": "$1 Million",
+      "id": 699533,
+      "name": "CoCreate Pitch",
+      "desc": "COCREATE PITCH 2026 The World's Largest Product-Based Startup Competition Over $1,000,000 Prize Pool Download & Install Accio Work to Apply Partner With Us Power Your Startup Journey and Streamline Your Application with",
+      "prize": "$1,000,000",
       "deadline": "rolling",
       "deadlineLabel": "Rolling / Open",
       "type": "competition",
       "loc": [
-        "national"
+        "global"
       ],
       "sector": [
         "general"
       ],
-      "url": "https://www.sba.gov/article/2026/05/13/sba-launches-1-million-patriot-pitch-competition-showcase-americas-entrepreneurs",
-      "country": "United States",
+      "url": "https://www.alibabacocreate.com/pitch",
+      "country": "Global",
       "addedDate": "2026-06-10",
       "source": "search",
       "verified": false,
