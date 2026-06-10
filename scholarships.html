@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#4f46e5">
+<title>Study Abroad Scholarships - CanvasIQ</title>
+<meta name="description" content="Verified, fully funded scholarships to study abroad, organised by country and by university. Government and university programs in one place.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+:root{
+  --a:#4f46e5;--ad:#3730a3;--al:#eef2ff;
+  --bg:linear-gradient(160deg,#dce8ff 0%,#ecf1ff 35%,#f5f7ff 65%,#fff 100%);
+  --sf:#fff;--br:#e2e8f0;--br2:#cbd5e1;
+  --tx:#0f172a;--sb:#475569;--mu:#94a3b8;
+  --r:14px;--rs:9px;
+  --sh:0 1px 3px rgba(15,23,42,.07),0 4px 16px rgba(15,23,42,.06);
+  --shh:0 8px 32px rgba(15,23,42,.13),0 2px 8px rgba(15,23,42,.07);
+  --shl:0 20px 60px rgba(15,23,42,.15);
+  --nav-h:58px;
+}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--bg);background-attachment:fixed;color:var(--tx);min-height:100vh;overflow-x:hidden}
+nav{position:sticky;top:0;z-index:300;height:var(--nav-h);background:rgba(255,255,255,.92);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(226,232,240,.8);display:flex;align-items:center;padding:0 20px;gap:12px}
+.logo{font-size:16px;font-weight:800;color:var(--tx);text-decoration:none;letter-spacing:-.4px}.logo span{color:var(--a)}
+.nav-sep{width:1px;height:18px;background:var(--br)}
+.nav-crumb{font-size:12px;color:var(--mu);font-weight:500;display:none}
+@media(min-width:600px){.nav-crumb{display:block}}
+.nav-r{display:flex;gap:6px;margin-left:auto;align-items:center}
+.btn-ghost{font-size:12px;font-weight:600;padding:6px 13px;border-radius:var(--rs);border:1.5px solid var(--br2);background:var(--sf);color:var(--tx);text-decoration:none;transition:.14s}
+.btn-ghost:hover{border-color:var(--a);color:var(--a)}
+
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+.hero{text-align:center;padding:38px 20px 4px;position:relative}
+.hero::before{content:"";position:absolute;top:-20px;left:50%;transform:translateX(-50%);width:min(560px,90%);height:220px;background:radial-gradient(60% 60% at 50% 40%,rgba(124,58,237,.22),rgba(79,70,229,.10) 45%,transparent 70%);filter:blur(20px);z-index:0;pointer-events:none}
+.hero>*{position:relative;z-index:1}
+.hero-badge{display:inline-flex;align-items:center;gap:7px;font-size:11px;font-weight:700;color:var(--a);background:rgba(255,255,255,.7);border:1px solid #ddd6fe;padding:5px 13px;border-radius:20px;margin-bottom:14px;backdrop-filter:blur(8px)}
+.hero-badge svg{color:#7c3aed}
+.hero h1{font-size:28px;font-weight:900;letter-spacing:-1px;line-height:1.1}
+@media(min-width:600px){.hero h1{font-size:38px}}
+.hero h1 .g{background:linear-gradient(90deg,var(--a),#7c3aed);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.hero p{font-size:14px;color:var(--sb);margin:10px auto 0;max-width:560px;line-height:1.6}
+
+.controls{margin-top:22px}
+.ctl-row{display:flex;gap:8px;flex-wrap:wrap;align-items:center;justify-content:center;margin-bottom:10px}
+.search{flex:1;min-width:200px;max-width:340px;display:flex;align-items:center;gap:8px;background:var(--sf);border:1.5px solid var(--br2);border-radius:24px;padding:8px 14px}
+.search input{flex:1;border:none;outline:none;font-family:'Inter',sans-serif;font-size:13px;background:transparent;color:var(--tx);min-width:0}
+.search svg{color:var(--mu);flex-shrink:0}
+.seg{display:inline-flex;background:var(--sf);border:1.5px solid var(--br2);border-radius:22px;padding:3px;gap:2px}
+.seg button{font-size:12px;font-weight:700;padding:6px 14px;border-radius:18px;border:none;background:transparent;color:var(--sb);cursor:pointer;font-family:'Inter',sans-serif;transition:.12s}
+.seg button.on{background:var(--a);color:#fff}
+.ctl-label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--mu);margin:6px 2px}
+.chips{display:flex;gap:6px;flex-wrap:wrap;justify-content:center}
+.chip{font-size:12px;font-weight:700;padding:6px 13px;border-radius:20px;border:1.5px solid var(--br2);background:var(--sf);color:var(--sb);cursor:pointer;transition:.12s}
+.chip:hover{border-color:var(--a);color:var(--a)}
+.chip.on{background:var(--a);color:#fff;border-color:var(--a)}
+
+.count{text-align:center;font-size:12px;color:var(--mu);margin-top:14px;font-weight:600}
+.grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:14px}
+@media(min-width:620px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:980px){.grid{grid-template-columns:repeat(3,1fr)}}
+.card{background:var(--sf);border:1px solid var(--br);border-radius:var(--r);box-shadow:var(--sh);overflow:hidden;display:flex;flex-direction:column;transition:box-shadow .18s,transform .14s,border-color .14s}
+.card:hover{box-shadow:var(--shh);transform:translateY(-2px);border-color:rgba(79,70,229,.2)}
+@media(hover:none){.card:hover{transform:none;box-shadow:var(--sh)}}
+.c-img{position:relative;height:130px;overflow:hidden;flex-shrink:0}
+.c-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s}
+.card:hover .c-photo{transform:scale(1.05)}
+@media(hover:none){.card:hover .c-photo{transform:none}}
+.c-ov{position:absolute;inset:0;background:linear-gradient(160deg,rgba(79,70,229,.34),rgba(15,23,42,.55))}
+.c-badges{position:absolute;top:10px;left:10px;right:10px;display:flex;gap:5px;align-items:center;flex-wrap:wrap}
+.cc{font-size:9px;font-weight:800;letter-spacing:.03em;color:#0f172a;background:rgba(255,255,255,.92);padding:3px 8px;border-radius:5px;text-transform:uppercase}
+.vb{font-size:9px;font-weight:800;padding:3px 8px;border-radius:5px;display:inline-flex;align-items:center;gap:3px;background:rgba(34,197,94,.92);color:#fff}
+.fund{position:absolute;bottom:10px;left:10px;font-size:9.5px;font-weight:800;text-transform:uppercase;letter-spacing:.03em;padding:3px 8px;border-radius:5px}
+.fund-full{background:rgba(16,185,129,.95);color:#fff}
+.fund-part{background:rgba(245,158,11,.95);color:#fff}
+.cb{padding:14px;display:flex;flex-direction:column;gap:4px;flex:1}
+.c-org{font-size:10px;font-weight:600;color:var(--mu);text-transform:uppercase;letter-spacing:.05em}
+.c-title{font-size:15px;font-weight:800;line-height:1.25}
+.c-level{font-size:11px;font-weight:700;color:var(--a)}
+.c-desc{font-size:12px;color:var(--sb);line-height:1.5;flex:1}
+.c-window{font-size:11px;color:var(--mu);display:flex;align-items:center;gap:5px;margin-top:4px}
+.c-window svg{flex-shrink:0}
+.c-cta{display:inline-flex;align-items:center;justify-content:center;gap:6px;font-size:12.5px;font-weight:700;padding:9px 14px;border-radius:9px;border:none;background:var(--a);color:#fff;text-decoration:none;transition:.14s;margin-top:10px}
+.c-cta:hover{background:var(--ad)}
+.utag{font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.03em;color:#7c3aed;background:#f3f0ff;padding:2px 7px;border-radius:5px}
+.empty{text-align:center;padding:40px;color:var(--mu);grid-column:1/-1}
+
+.res-wrap{margin-top:42px}
+.res-h{font-size:19px;font-weight:800;text-align:center;letter-spacing:-.3px}
+.res-sub{font-size:13px;color:var(--sb);text-align:center;margin:6px 0 16px}
+.res-grid{display:grid;grid-template-columns:1fr;gap:12px}
+@media(min-width:620px){.res-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:980px){.res-grid{grid-template-columns:repeat(4,1fr)}}
+.res-card{background:var(--sf);border:1px solid var(--br);border-radius:12px;box-shadow:var(--sh);padding:15px;display:flex;flex-direction:column;text-decoration:none;color:var(--tx);transition:box-shadow .16s,transform .14s,border-color .14s}
+.res-card:hover{box-shadow:var(--shh);transform:translateY(-2px);border-color:rgba(79,70,229,.2)}
+.res-top{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.res-logo{width:34px;height:34px;border-radius:8px;background:#fff;border:1px solid var(--br);display:flex;align-items:center;justify-content:center;overflow:hidden;flex-shrink:0;font-size:13px;font-weight:800;color:var(--a)}
+.res-logo img{width:22px;height:22px;object-fit:contain}
+.res-name{font-size:13.5px;font-weight:800}
+.res-desc{font-size:11.5px;color:var(--sb);line-height:1.5;flex:1}
+.res-link{font-size:11px;font-weight:700;color:var(--a);margin-top:8px}
+.note{max-width:760px;margin:24px auto 0;font-size:11.5px;color:var(--sb);line-height:1.6;background:var(--al);border:1px solid #ddd6fe;border-radius:12px;padding:14px 18px;text-align:center}
+.foot{font-size:11px;color:var(--mu);text-align:center;padding:24px 20px 50px}
+.foot a{color:var(--a);text-decoration:none}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="./index.html" class="logo">Canvas<span>IQ</span></a>
+  <div class="nav-sep"></div>
+  <span class="nav-crumb">Study Abroad Scholarships</span>
+  <div class="nav-r">
+    <a href="./funding.html" class="btn-ghost">Funding</a>
+  </div>
+</nav>
+
+<div class="wrap">
+  <div class="hero">
+    <div class="hero-badge"><svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 10L12 5 2 10l10 5 10-5zM6 12v5c0 1 2.7 2.5 6 2.5s6-1.5 6-2.5v-5"/></svg>Higher studies abroad</div>
+    <h1>Scholarships to <span class="g">study abroad</span></h1>
+    <p>Verified, fully funded scholarships, organised by country and by university. Government programs and university awards, all in one place.</p>
+  </div>
+
+  <div class="controls">
+    <div class="ctl-row">
+      <div class="search">
+        <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+        <input id="q" placeholder="Search scholarships..." oninput="render()">
+      </div>
+      <div class="seg" id="seg"></div>
+    </div>
+    <div class="ctl-label" style="text-align:center">Filter by country</div>
+    <div class="chips" id="chips"></div>
+  </div>
+
+  <div class="count" id="count"></div>
+  <div class="grid" id="grid"></div>
+
+  <div class="res-wrap">
+    <h2 class="res-h">Search thousands more scholarships</h2>
+    <p class="res-sub">Free databases and official advising to find awards matched to your profile.</p>
+    <div class="res-grid" id="resGrid"></div>
+  </div>
+
+  <div class="note">
+    All listings link to the official provider. Application windows are shown as guidance because exact dates change each cycle, so always confirm the current deadline on the official site before applying.
+  </div>
+
+  <div class="foot">
+    CanvasIQ &middot; <a href="./funding.html">Funding</a> &middot; <a href="./founder-stack.html">Student deals</a> &middot; <a href="./index.html">Home</a>
+  </div>
+</div>
+
+<script>
+// ====== VERIFIED SCHOLARSHIP DATA (checked Jun 2026; confirm exact deadlines on official sites) ======
+const PHOTOS = ['1523050854058-8df90110c9f1','1541339907198-e08756dedf3f','1562774053-701939374585','1456513080510-7bf3a84b82f8','1488646953014-85cb44e25828','1532012197267-da84d127e765','1523240795612-9a054b0db644','1498243691581-b145c3f54a5a'];
+function img(i){ return 'https://images.unsplash.com/photo-' + PHOTOS[i % PHOTOS.length] + '?w=560&h=300&fit=crop&q=75&auto=format'; }
+
+const DATA = [
+  // ---- GOVERNMENT / NATIONAL ----
+  {name:'Fulbright Foreign Student Program', org:'US Department of State', country:'USA', cat:'Government', level:'Masters, PhD', fund:'full', window:'Opens Feb-Oct (varies by country)', url:'https://foreign.fulbrightonline.org/', desc:'Flagship US government scholarship covering tuition, airfare, a living stipend and health insurance for graduate study in the United States.'},
+  {name:'Aga Khan Foundation ISP', org:'Aga Khan Foundation', country:'Global', cat:'Government', level:'Masters, PhD', fund:'part', window:'Applications around Jan-Mar', url:'https://akf.org/international-scholarship-programme/', desc:'Postgraduate scholarship for outstanding students from selected developing countries (incl. Bangladesh). Awarded as 50% grant and 50% loan.'},
+  {name:'MEXT Scholarship', org:'Government of Japan', country:'Japan', cat:'Government', level:'Undergrad, Masters, PhD', fund:'full', window:'Embassy route opens in spring; university route varies', url:'https://www.studyinjapan.go.jp/en/planning/scholarships/mext-scholarships/', desc:'Fully funded Japanese government scholarship: tuition waived, 117,000 yen monthly allowance and round-trip airfare.'},
+  {name:'Turkiye Burslari', org:'Government of Turkiye', country:'Turkey', cat:'Government', level:'Undergrad, Masters, PhD', fund:'full', window:'Jan 10 to Feb 20 (annual)', url:'https://www.turkiyeburslari.gov.tr/', desc:'Fully funded Turkish government scholarship: full tuition, monthly stipend, free accommodation, airfare, health insurance and a one-year Turkish course.'},
+  {name:'DAAD Scholarships', org:'German Academic Exchange Service', country:'Germany', cat:'Government', level:'Masters, PhD', fund:'full', window:'Varies by program; many close Aug-Nov', url:'https://www.daad.de/en/studying-in-germany/scholarships/daad-scholarships/', desc:'Germany\'s flagship funding body. Monthly payment (around 992 euros for students, 1,300 for PhD), travel allowance and insurance.'},
+  {name:'Chevening Scholarship', org:'UK Government (FCDO)', country:'UK', cat:'Government', level:'Masters', fund:'full', window:'Opens August, closes early November', url:'https://www.chevening.org/', desc:'Fully funded UK government scholarship for one-year master\'s degrees: tuition, monthly stipend and return airfare.'},
+  {name:'Commonwealth Scholarship', org:'Commonwealth Scholarship Commission', country:'UK', cat:'Government', level:'Masters, PhD', fund:'full', window:'Opens around September, closes October', url:'https://cscuk.fcdo.gov.uk/', desc:'UK government scholarship for citizens of Commonwealth countries (incl. Bangladesh) for fully funded postgraduate study.'},
+  {name:'Global Korea Scholarship (GKS)', org:'NIIED, Government of Korea', country:'South Korea', cat:'Government', level:'Undergrad, Graduate', fund:'full', window:'Embassy track around Feb; university track around Sep', url:'https://www.studyinkorea.go.kr/', desc:'Fully funded Korean government scholarship: tuition, 1,000,000 KRW monthly allowance, airfare, insurance and a Korean language year.'},
+  {name:'Erasmus Mundus Joint Masters', org:'European Commission', country:'Europe', cat:'Government', level:'Masters', fund:'full', window:'Opens October, closes January (per program)', url:'https://erasmus-plus.ec.europa.eu/opportunities/individuals/students/erasmus-mundus-joint-masters', desc:'EU flagship scholarship for joint master\'s across multiple European universities. Full tuition plus roughly 1,400 euros monthly.'},
+  {name:'Chinese Government Scholarship (CSC)', org:'China Scholarship Council', country:'China', cat:'Government', level:'Undergrad, Graduate', fund:'full', window:'December to April (per university)', url:'https://www.campuschina.org/', desc:'Full funding at 270+ Chinese universities: tuition, free dormitory, monthly stipend and health insurance.'},
+  {name:'Australia Awards Scholarships', org:'Australian Government (DFAT)', country:'Australia', cat:'Government', level:'Undergrad, Graduate', fund:'full', window:'Opens Feb, closes Apr (per country)', url:'https://www.dfat.gov.au/people-to-people/australia-awards', desc:'Fully funded scholarships for students from developing countries: tuition, airfare, living allowance and health cover.'},
+  {name:'Eiffel Excellence Scholarship', org:'Government of France', country:'France', cat:'Government', level:'Masters, PhD', fund:'part', window:'Nominated by institution; closes around January', url:'https://www.campusfrance.org/en/eiffel-scholarship-program-of-excellence', desc:'French government scholarship offering a monthly allowance and benefits for top international students at French institutions.'},
+  {name:'Swiss Government Excellence', org:'Government of Switzerland', country:'Switzerland', cat:'Government', level:'PhD, Research', fund:'full', window:'Closes around Nov-Dec (per country)', url:'https://www.sbfi.admin.ch/sbfi/en/home/education/scholarships-and-grants/swiss-government-excellence-scholarships.html', desc:'Research and PhD scholarships for outstanding international researchers, covering a monthly stipend, tuition and more.'},
+  {name:'Vanier Canada Graduate Scholarship', org:'Government of Canada', country:'Canada', cat:'Government', level:'PhD', fund:'full', window:'Closes around November (via university)', url:'https://vanier.gc.ca/', desc:'CAD 50,000 per year for three years for world-class doctoral students studying in Canada.'},
+  {name:'Holland Scholarship', org:'Dutch Government & universities', country:'Netherlands', cat:'Government', level:'Undergrad, Masters', fund:'part', window:'Closes around Feb-May (per university)', url:'https://www.studyinnl.org/finances/holland-scholarship', desc:'One-time 5,000 euro award for non-EEA students starting a degree at a participating Dutch university.'},
+  {name:'Stipendium Hungaricum', org:'Government of Hungary', country:'Hungary', cat:'Government', level:'Undergrad, Graduate', fund:'full', window:'Closes around January', url:'https://stipendiumhungaricum.hu/', desc:'Fully funded Hungarian government scholarship: tuition, monthly stipend, accommodation contribution and health insurance.'},
+
+  // ---- UNIVERSITY-SPECIFIC ----
+  {name:'Knight-Hennessy Scholars', org:'Stanford University', country:'USA', cat:'University', level:'Graduate', fund:'full', window:'Closes around October', url:'https://knight-hennessy.stanford.edu/', desc:'The largest fully endowed graduate fellowship in the world. Full funding for up to three years of any Stanford graduate program.'},
+  {name:'Clarendon Scholarship', org:'University of Oxford', country:'UK', cat:'University', level:'Masters, DPhil', fund:'full', window:'Apply by your course deadline (Dec-Jan)', url:'https://www.ox.ac.uk/clarendon', desc:'Over 200 fully funded awards yearly at Oxford: full tuition and a generous living stipend. Automatic consideration for most courses.'},
+  {name:'Gates Cambridge Scholarship', org:'University of Cambridge', country:'UK', cat:'University', level:'Masters, PhD', fund:'full', window:'Closes around Dec (US) / Jan (international)', url:'https://www.gatescambridge.org/', desc:'Full-cost scholarship and living stipend for outstanding graduate students in any subject at Cambridge.'},
+  {name:'Rhodes Scholarship', org:'University of Oxford', country:'UK', cat:'University', level:'Graduate', fund:'full', window:'Closes around Jul-Oct (per country)', url:'https://www.rhodeshouse.ox.ac.uk/', desc:'The world\'s oldest international graduate scholarship: full funding for postgraduate study at Oxford.'},
+  {name:'Schwarzman Scholars', org:'Tsinghua University', country:'China', cat:'University', level:'Masters', fund:'full', window:'Closes around September', url:'https://www.schwarzmanscholars.org/', desc:'Fully funded one-year master\'s in Global Affairs at Tsinghua, designed to build future global leaders.'},
+  {name:'ETH Excellence Scholarship', org:'ETH Zurich', country:'Switzerland', cat:'University', level:'Masters', fund:'full', window:'Closes around December', url:'https://ethz.ch/en/studies/financial/scholarships.html', desc:'Covers tuition plus a living stipend for top master\'s applicants at one of the world\'s leading science and technology universities.'},
+  {name:'Harvard Financial Aid', org:'Harvard University', country:'USA', cat:'University', level:'Undergrad', fund:'full', window:'Submitted with your admission application', url:'https://college.harvard.edu/financial-aid', desc:'Need-based aid that can cover the full cost for admitted students. Families below set income thresholds pay nothing.'},
+  {name:'University of Tokyo Fellowship', org:'University of Tokyo', country:'Japan', cat:'University', level:'Graduate', fund:'part', window:'Applied through graduate admission', url:'https://www.u-tokyo.ac.jp/en/prospective-students/scholarships.html', desc:'Tuition support and stipends for international graduate students at Japan\'s top-ranked research university.'},
+
+  // ---- USA FOUNDATION / NATIONAL (mostly for US citizens or permanent residents) ----
+  {name:'Jack Kent Cooke College Scholarship', org:'Jack Kent Cooke Foundation', country:'USA', cat:'Foundation', level:'Undergrad', fund:'full', window:'Opens around Aug, closes November', url:'https://www.jkcf.org/our-scholarships/college-scholarship-program/', desc:'Up to $55,000 per year (last-dollar) for high-achieving students with financial need. Requires GPA 3.75+ and income under $95,000. Includes advising and grad funding.'},
+  {name:'Dell Scholars Program', org:'Michael & Susan Dell Foundation', country:'USA', cat:'Foundation', level:'Undergrad', fund:'part', window:'Opens Oct, closes around Dec', url:'https://www.dellscholars.org/students/', desc:'$20,000 plus support services for 500 students who show determination to succeed. Pell-eligible US citizens or permanent residents with GPA 2.4+.'},
+  {name:'Horatio Alger National Scholarship', org:'Horatio Alger Association', country:'USA', cat:'Foundation', level:'Undergrad', fund:'part', window:'Closes around October', url:'https://scholars.horatioalger.org/scholarships/', desc:'$25,000 for students who have overcome adversity and have financial need (household income under ~$55,000). Includes a Washington DC conference.'},
+  {name:'Coca-Cola Scholars Program', org:'Coca-Cola Scholars Foundation', country:'USA', cat:'Foundation', level:'Undergrad', fund:'part', window:'Opens Aug, closes October', url:'https://www.coca-colascholarsfoundation.org/apply/', desc:'$20,000 awarded to 150 high school seniors for leadership, academics and community impact. Must be eligible for US federal financial aid.'},
+  {name:'The Gates Scholarship', org:'Bill & Melinda Gates Foundation', country:'USA', cat:'Foundation', level:'Undergrad', fund:'full', window:'Opens Jul, closes September', url:'https://www.thegatesscholarship.org/', desc:'Covers the full cost of attendance for 300 outstanding minority, Pell-eligible high school seniors from low-income backgrounds.'},
+  {name:'QuestBridge National College Match', org:'QuestBridge', country:'USA', cat:'Foundation', level:'Undergrad', fund:'full', window:'Closes late September', url:'https://www.questbridge.org/', desc:'Matches high-achieving, low-income students with full four-year scholarships to top partner colleges, worth over $360,000.'},
+  {name:'National Merit Scholarship', org:'National Merit Scholarship Corporation', country:'USA', cat:'Foundation', level:'Undergrad', fund:'part', window:'Enter via PSAT/NMSQT in junior year', url:'https://www.nationalmerit.org/', desc:'Recognises top PSAT/NMSQT scorers; finalists can win National Merit, corporate-sponsored, or college-sponsored awards.'},
+  {name:'Burger King Scholars Program', org:'BK McLamore Foundation', country:'USA', cat:'Foundation', level:'Undergrad', fund:'part', window:'Opens Oct 15, closes Dec 15', url:'https://burgerking.scholarsapply.org/', desc:'$1,000 to $60,000 based on GPA, work experience, activities, financial need and community service. Open to US, Canada and Puerto Rico seniors.'},
+  {name:'Elks Most Valuable Student', org:'Elks National Foundation', country:'USA', cat:'Foundation', level:'Undergrad', fund:'part', window:'Closes around November', url:'https://www.elks.org/scholars/scholarships/mvs.cfm', desc:'500 awards of $1,000 to $7,500 per year for graduating high school seniors. No Elks membership required.'},
+  {name:'Davidson Fellows Scholarship', org:'Davidson Institute', country:'USA', cat:'Foundation', level:'Undergrad', fund:'part', window:'Closes around February', url:'https://www.davidsongifted.org/gifted-programs/fellows-scholarship/', desc:'$25,000 to $100,000 for students 18 or under who completed a significant project in STEM, literature, music, philosophy or "outside the box". US citizens or permanent residents.'},
+];
+
+const COUNTRIES = ['All','USA','UK','Germany','Japan','Turkey','South Korea','China','Australia','Europe','Canada','France','Switzerland','Netherlands','Hungary','Global'];
+
+// Where to search for thousands more scholarships (free aggregator sites).
+const RESOURCES = [
+  {name:'EducationUSA', d:'educationusa.state.gov', url:'https://educationusa.state.gov/', desc:'Official US State Department network advising international students on studying and funding in the USA.'},
+  {name:'Fastweb', d:'fastweb.com', url:'https://www.fastweb.com/', desc:'One of the largest free scholarship search engines, matching you to awards by profile.'},
+  {name:'Bold.org', d:'bold.org', url:'https://bold.org/', desc:'Modern scholarship platform with exclusive awards you apply to directly, many low-competition.'},
+  {name:'Scholarships.com', d:'scholarships.com', url:'https://www.scholarships.com/', desc:'Huge free database of scholarships and grants with a personalised matching tool.'},
+  {name:'College Board BigFuture', d:'collegeboard.org', url:'https://bigfuture.collegeboard.org/scholarship-search', desc:'Free scholarship search from the College Board covering billions in awards.'},
+  {name:'US News Education', d:'usnews.com', url:'https://www.usnews.com/education', desc:'University rankings, scholarship guides and study-abroad advice.'},
+  {name:'Scholarship America', d:'scholarshipamerica.org', url:'https://scholarshipamerica.org/', desc:'Runs and lists many national programs (Dream Award, Burger King Scholars and more).'},
+  {name:'Peterson\'s', d:'petersons.com', url:'https://www.petersons.com/scholarship-search.aspx', desc:'Long-running scholarship and graduate program search directory.'},
+];
+let country = 'All', cat = 'All';
+
+function buildControls(){
+  document.getElementById('seg').innerHTML = ['All','Government','University','Foundation']
+    .map(c => `<button class="${c===cat?'on':''}" onclick="setCat('${c}')">${c}</button>`).join('');
+  document.getElementById('chips').innerHTML = COUNTRIES
+    .map(c => `<button class="chip${c===country?' on':''}" onclick="setCountry('${c.replace(/'/g,"\\'")}')">${c}</button>`).join('');
+}
+function setCat(c){ cat=c; buildControls(); render(); }
+function setCountry(c){ country=c; buildControls(); render(); }
+
+function render(){
+  const q = (document.getElementById('q').value||'').toLowerCase();
+  const list = DATA.filter(s =>
+    (country==='All' || s.country===country) &&
+    (cat==='All' || s.cat===cat) &&
+    (!q || (s.name+' '+s.org+' '+s.desc+' '+s.country).toLowerCase().includes(q)));
+  document.getElementById('count').textContent = `${list.length} verified scholarship${list.length!==1?'s':''}`;
+  const g = document.getElementById('grid');
+  g.innerHTML = list.length ? list.map((s,i)=>`
+    <div class="card">
+      <div class="c-img">
+        <img class="c-photo" src="${img(i)}" alt="${s.name}" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=560&h=300&fit=crop&q=75'">
+        <div class="c-ov"></div>
+        <div class="c-badges">
+          <span class="cc">${s.country}</span>
+          <span class="vb"><svg width="9" height="9" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Verified</span>
+        </div>
+        <span class="fund ${s.fund==='full'?'fund-full':'fund-part'}">${s.fund==='full'?'Fully funded':'Partial funding'}</span>
+      </div>
+      <div class="cb">
+        <div class="c-org">${s.org}${s.cat==='University'?' &middot; <span class="utag">University</span>':''}</div>
+        <div class="c-title">${s.name}</div>
+        <div class="c-level">${s.level}</div>
+        <div class="c-desc">${s.desc}</div>
+        <div class="c-window"><svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>${s.window}</div>
+        <a class="c-cta" href="${s.url}" target="_blank" rel="noopener">Official site and apply</a>
+      </div>
+    </div>`).join('') : '<div class="empty">No scholarships match these filters yet. Try another country or category.</div>';
+}
+function renderResources(){
+  document.getElementById('resGrid').innerHTML = RESOURCES.map(r=>`
+    <a class="res-card" href="${r.url}" target="_blank" rel="noopener">
+      <div class="res-top">
+        <div class="res-logo" data-fb="${r.name[0]}"><img src="https://logo.clearbit.com/${r.d}" alt="" loading="lazy" onerror="this.style.display='none';this.parentElement.textContent=this.parentElement.dataset.fb"></div>
+        <div class="res-name">${r.name}</div>
+      </div>
+      <div class="res-desc">${r.desc}</div>
+      <div class="res-link">Visit ${r.name}</div>
+    </a>`).join('');
+}
+buildControls(); render(); renderResources();
+</script>
+</body>
+</html>
