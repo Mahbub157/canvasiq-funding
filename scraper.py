@@ -54,7 +54,44 @@ MAX_LIVE = 120                     # cap entries written to live-events.json
 # API, so only they are trusted enough to publish to the live site. RSS + web
 # search are kept for discovery but never published unverified (they're the
 # source of wrong dates / non-existent events).
-VERIFIED_SOURCES = {"devpost", "challengegov", "herox", "grantsgov", "codeforces"}
+VERIFIED_SOURCES = {"devpost", "challengegov", "herox", "grantsgov", "codeforces", "curated"}
+
+# Hand-verified flagship programs that accept applications on a ROLLING basis
+# (always open). Date-specific annual competitions are deliberately NOT hardcoded
+# here, because their deadlines change yearly and stale dates would mislead - those
+# come from the live APIs instead. Re-check these URLs occasionally.
+CURATED = [
+    {"title": "Y Combinator", "org": "Y Combinator", "type": "Competition", "country": "Global",
+     "amt": "$500K standard deal", "url": "https://www.ycombinator.com/apply",
+     "desc": "The world's leading startup accelerator: $500K for 7% on standard terms. Rolling applications for the next batch."},
+    {"title": "Techstars Accelerator", "org": "Techstars", "type": "Competition", "country": "Global",
+     "amt": "~$120K investment", "url": "https://www.techstars.com/apply",
+     "desc": "Global mentorship-driven accelerator running programs year-round across many cities and verticals."},
+    {"title": "Antler", "org": "Antler", "type": "Competition", "country": "Global",
+     "amt": "Pre-seed funding", "url": "https://www.antler.co/apply",
+     "desc": "Day-zero investor that backs founders from the earliest stage and helps you find a co-founder. Rolling cohorts worldwide."},
+    {"title": "Microsoft for Startups Founders Hub", "org": "Microsoft", "type": "Grant", "country": "Global",
+     "amt": "Up to $150K Azure credits", "url": "https://www.microsoft.com/en-us/startups",
+     "desc": "Free program: up to $150K in Azure credits plus tools and mentorship. No equity, rolling sign-up."},
+    {"title": "NVIDIA Inception", "org": "NVIDIA", "type": "Grant", "country": "Global",
+     "amt": "Credits + GPU access", "url": "https://www.nvidia.com/en-us/startups/",
+     "desc": "Free program for AI and deep-tech startups: compute credits, technical support and go-to-market help. Rolling."},
+    {"title": "AWS Activate", "org": "Amazon Web Services", "type": "Grant", "country": "Global",
+     "amt": "Up to $100K credits", "url": "https://aws.amazon.com/activate/",
+     "desc": "Up to $100,000 in AWS cloud credits for eligible startups, plus support. Rolling applications."},
+    {"title": "Google for Startups Cloud Program", "org": "Google", "type": "Grant", "country": "Global",
+     "amt": "Up to $200K credits", "url": "https://cloud.google.com/startup",
+     "desc": "Up to $200,000 in Google Cloud credits (more for AI startups) plus mentorship. Rolling."},
+    {"title": "NSF SBIR / STTR", "org": "US National Science Foundation", "type": "Grant", "country": "United States",
+     "amt": "Up to $305K (Phase I)", "url": "https://seedfund.nsf.gov/",
+     "desc": "Non-dilutive federal seed funding for deep-tech and science-based startups. Rolling submission windows."},
+    {"title": "Startup Bangladesh", "org": "Startup Bangladesh Limited (Govt)", "type": "Competition", "country": "Bangladesh",
+     "amt": "Equity investment", "url": "https://startupbangladesh.gov.bd/",
+     "desc": "The government venture fund and accelerator investing in Bangladesh-registered startups. Rolling intake across programs."},
+    {"title": "IDEA Project Innovation Fund", "org": "ICT Division, Government of Bangladesh", "type": "Grant", "country": "Bangladesh",
+     "amt": "Grants up to BDT 1 crore", "url": "https://idea.gov.bd/",
+     "desc": "Government innovation fund offering grants and incubation to Bangladeshi startups and innovators. Rolling."},
+]
 PUBLISH_UNVERIFIED = False         # keep False so nothing unverified hits the site
 
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
@@ -436,6 +473,18 @@ def from_codeforces() -> list:
     return out
 
 
+def from_curated() -> list:
+    """Hand-verified, always-open flagship programs (rolling deadlines)."""
+    out = []
+    for c in CURATED:
+        rec = make_record(c["title"], c["desc"], c["url"], org=c["org"], amt=c["amt"],
+                          deadline=None, country=c["country"], source="curated", opp_type=c["type"])
+        if rec:
+            out.append(rec)
+    print(f"  ✓ Curated flagship: {len(out)}")
+    return out
+
+
 # ── RSS + web search ────────────────────────────────────────────────────────────
 
 def from_rss() -> list:
@@ -564,7 +613,7 @@ def run():
     sources_ok, records = [], []
 
     print("── Live APIs ──")
-    for name, fn in [("Devpost", from_devpost), ("Challenge.gov", from_challengegov), ("HeroX", from_herox), ("Grants.gov", from_grantsgov), ("Codeforces", from_codeforces)]:
+    for name, fn in [("Devpost", from_devpost), ("Challenge.gov", from_challengegov), ("HeroX", from_herox), ("Grants.gov", from_grantsgov), ("Codeforces", from_codeforces), ("Curated", from_curated)]:
         try:
             got = fn(); records += got; sources_ok.append(f"{name}: {len(got)}")
         except Exception as e:
