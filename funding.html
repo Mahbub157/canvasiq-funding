@@ -67,6 +67,7 @@ nav{position:sticky;top:0;z-index:300;height:var(--nav-h);background:rgba(255,25
 .cst-Prize{background:rgba(219,39,119,.9);color:#fff}
 .cst-Event{background:rgba(5,150,105,.9);color:#fff}
 .cst-Scholarship{background:rgba(234,88,12,.9);color:#fff}
+.cst-Hackathon{background:rgba(8,145,178,.92);color:#fff}
 .cs-flag{font-size:16px;background:rgba(255,255,255,.15);backdrop-filter:blur(4px);padding:2px 6px;border-radius:5px}
 .cs-live{font-size:9px;font-weight:800;background:rgba(79,70,229,.9);color:#fff;padding:3px 8px;border-radius:5px;display:flex;align-items:center;gap:3px}
 .cs-org{font-size:10px;font-weight:600;color:rgba(255,255,255,.7);text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px}
@@ -111,6 +112,7 @@ nav{position:sticky;top:0;z-index:300;height:var(--nav-h);background:rgba(255,25
 .thp-Prize.on{background:#db2777}
 .thp-Event.on{background:#059669}
 .thp-Scholarship.on{background:#ea580c}
+.thp-Hackathon.on{background:#0891b2}
 .th-sep{height:1px;background:var(--br);margin:10px 0}
 .th-cc{display:flex;gap:6px;flex-wrap:wrap}
 .th-c{font-size:11px;font-weight:600;padding:5px 12px;border-radius:20px;border:1.5px solid var(--br);background:var(--sf);color:var(--sb);cursor:pointer;transition:.12s}
@@ -172,6 +174,7 @@ nav{position:sticky;top:0;z-index:300;height:var(--nav-h);background:rgba(255,25
 .tt-Prize{background:rgba(219,39,119,.9);color:#fff}
 .tt-Event{background:rgba(5,150,105,.9);color:#fff}
 .tt-Scholarship{background:rgba(234,88,12,.9);color:#fff}
+.tt-Hackathon{background:rgba(8,145,178,.9);color:#fff}
 .cflag{font-size:14px;background:rgba(255,255,255,.88);padding:2px 6px;border-radius:5px;backdrop-filter:blur(4px)}
 .new-t{font-size:9px;font-weight:800;background:#22c55e;color:#fff;padding:3px 7px;border-radius:5px;text-transform:uppercase}
 .live-t{font-size:9px;font-weight:800;background:rgba(79,70,229,.9);color:#fff;padding:3px 7px;border-radius:5px;display:flex;align-items:center;gap:3px}
@@ -347,6 +350,7 @@ nav{position:sticky;top:0;z-index:300;height:var(--nav-h);background:rgba(255,25
       <button class="thp thp-Prize" data-t="Prize" onclick="setType(this)">Prizes</button>
       <button class="thp thp-Event" data-t="Event" onclick="setType(this)">Events</button>
       <button class="thp thp-Scholarship" data-t="Scholarship" onclick="setType(this)">Scholarships</button>
+      <button class="thp thp-Hackathon" data-t="Hackathon" onclick="setType(this)">Hackathons</button>
     </div>
     <div class="th-sep"></div>
     <div class="th-label">Country</div>
@@ -377,6 +381,7 @@ nav{position:sticky;top:0;z-index:300;height:var(--nav-h);background:rgba(255,25
       <button class="sbi" data-t="Prize" onclick="setSBType(this)"><span class="sbd" style="background:#db2777"></span>Prizes<span class="sbn" id="sn-Prize">—</span></button>
       <button class="sbi" data-t="Event" onclick="setSBType(this)"><span class="sbd" style="background:#059669"></span>Events<span class="sbn" id="sn-Event">—</span></button>
       <button class="sbi" data-t="Scholarship" onclick="setSBType(this)"><span class="sbd" style="background:#ea580c"></span>Scholarships<span class="sbn" id="sn-Scholarship">—</span></button>
+      <button class="sbi" data-t="Hackathon" onclick="setSBType(this)"><span class="sbd" style="background:#0891b2"></span>Hackathons<span class="sbn" id="sn-Hackathon">—</span></button>
     </div>
     <div class="sbc">
       <div class="sbh">Deadline</div>
@@ -532,7 +537,7 @@ nav{position:sticky;top:0;z-index:300;height:var(--nav-h);background:rgba(255,25
 
 <script>
 // ── OVERLAY COLORS ────────────────────────────────────────────────────────────
-const OVR={Competition:'rgba(79,46,220,.52)',Grant:'rgba(29,78,216,.52)',Fellowship:'rgba(146,64,14,.52)',Prize:'rgba(157,23,77,.52)',Event:'rgba(6,78,59,.52)',Scholarship:'rgba(154,52,18,.52)'};
+const OVR={Competition:'rgba(79,46,220,.52)',Grant:'rgba(29,78,216,.52)',Fellowship:'rgba(146,64,14,.52)',Prize:'rgba(157,23,77,.52)',Event:'rgba(6,78,59,.52)',Scholarship:'rgba(154,52,18,.52)',Hackathon:'rgba(8,116,134,.52)'};
 
 // ── TYPE IMAGES ───────────────────────────────────────────────────────────────
 const TIMGS={
@@ -542,6 +547,7 @@ const TIMGS={
   Prize:['photo-1567427017947-545c5f8d16ad','photo-1524592094714-0f0654e20314','photo-1593642632559-0c6d3fc62b89'],
   Event:['photo-1540575467063-178a50c2df87','photo-1475721027785-f74eccf877e2','photo-1505373877841-8d25f7d46678','photo-1523580494863-6f3031224c42','photo-1559136555-9303baea8ebd'],
   Scholarship:['photo-1523050854058-8df90110c9f1','photo-1427504494785-3a9ca7044f45','photo-1497633762265-9d179a990aa6','photo-1541339907198-e08756dedf3f'],
+  Hackathon:['photo-1504384308090-c894fdcc538d','photo-1531482615713-2afd69097998','photo-1551434678-e076c223a692','photo-1517245386807-bb43f82c33c4'],
 };
 const iidx={};
 function getImg(type){const a=TIMGS[type]||TIMGS.Event;iidx[type]=(iidx[type]||0);const p=a[iidx[type]%a.length];iidx[type]++;return`https://images.unsplash.com/${p}?w=560&h=320&fit=crop&q=75&auto=format`;}
@@ -934,7 +940,7 @@ function renderAll() {
   // Sidebar counts
   const base = allData.filter(o => { if (o.dl && dl2days(o.dl) < 0) return false; if (activeCountry !== 'all' && o.c !== activeCountry) return false; if (q) { const s=(o.title+' '+o.org).toLowerCase(); if(!s.includes(q)) return false; } return true; });
   document.getElementById('sn-all').textContent = base.length;
-  ['Competition','Grant','Fellowship','Prize','Event','Scholarship'].forEach(t => { const el=document.getElementById('sn-'+t); if(el) el.textContent=base.filter(o=>o.type===t).length; });
+  ['Competition','Grant','Fellowship','Prize','Event','Scholarship','Hackathon'].forEach(t => { const el=document.getElementById('sn-'+t); if(el) el.textContent=base.filter(o=>o.type===t).length; });
   document.getElementById('sn-saved').textContent = saved.length;
 
   const liveFull = allData.filter(o => !o.dl || dl2days(o.dl) >= 0);

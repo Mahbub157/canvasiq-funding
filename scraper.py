@@ -307,7 +307,7 @@ def from_devpost() -> list:
             h.get("url", ""), org=h.get("organization_name") or "Devpost",
             amt=f"${prize_n:,} in prizes" if prize_n else "Open prizes",
             deadline=dl, country="Global", img=h.get("thumbnail_url", ""),
-            source="devpost", opp_type="Competition")
+            source="devpost", opp_type="Hackathon")
         if rec:
             out.append(rec)
     print(f"  ✓ Devpost: {len(out)}")
@@ -531,19 +531,37 @@ def run():
 
     # ── write live-events.json (what the site reads) ──────────────────────────
     # Publish ONLY verified entries (real deadlines from official APIs) unless
-    # PUBLISH_UNVERIFIED is explicitly turned on. This is what stops fake events
-    # and guessed deadlines from ever reaching the live site.
+    # PUBLISH_UNVERIFIED is explicitly turned on.
     publishable = [r for r in records if r["verified"] or PUBLISH_UNVERIFIED]
-    live = [to_live_entry(r) for r in publishable[:MAX_LIVE]]
-    verified_n = sum(1 for r in publishable if r["verified"])
+    new_live = [to_live_entry(r) for r in publishable]
+
+    # PERSISTENCE: don't wipe what we found before. Keep every previously-saved
+    # event that is still verified and not past its deadline (i.e. running or
+    # upcoming), then add today's newly discovered verified events on top.
+    prev = load_json(LIVE_FILE, {"opportunities": []}).get("opportunities", [])
+    prev_keep = [o for o in prev
+                 if o.get("verified") and not_expired(o.get("deadline"), cutoff)]
+
+    merged_live, seen_u, seen_t = [], set(), set()
+    for o in prev_keep + new_live:           # previous first, so running events stick
+        u = (o.get("link", "") or "").lower().rstrip("/")
+        t = (o.get("title", "") or "").lower().strip()[:50]
+        if (u and u in seen_u) or (t and t in seen_t):
+            continue
+        seen_u.add(u); seen_t.add(t); merged_live.append(o)
+
+    merged_live.sort(key=lambda o: o.get("deadline") or "9999-99-99")
+    live = merged_live[:MAX_LIVE]
+    kept = len(prev_keep); added = len(live) - sum(1 for o in live if o in prev_keep)
     live_out = {
         "updated": started.isoformat(),
         "count": len(live),
-        "verifiedCount": verified_n,
-        "policy": "verified-only" if not PUBLISH_UNVERIFIED else "includes-unverified",
+        "verifiedCount": len(live),
+        "policy": "verified-only · persistent" if not PUBLISH_UNVERIFIED else "includes-unverified",
         "sources": sources_ok,
         "opportunities": live,
     }
+    print(f"   kept {kept} prior verified · merged to {len(live)} total")
     with open(LIVE_FILE, "w", encoding="utf-8") as f:
         json.dump(live_out, f, indent=2, ensure_ascii=False)
     print(f"\n💾 {LIVE_FILE}: {len(live)} live opportunities")
