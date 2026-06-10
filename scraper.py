@@ -54,7 +54,7 @@ MAX_LIVE = 120                     # cap entries written to live-events.json
 # API, so only they are trusted enough to publish to the live site. RSS + web
 # search are kept for discovery but never published unverified (they're the
 # source of wrong dates / non-existent events).
-VERIFIED_SOURCES = {"devpost", "challengegov", "herox"}
+VERIFIED_SOURCES = {"devpost", "challengegov", "herox", "grantsgov"}
 PUBLISH_UNVERIFIED = False         # keep False so nothing unverified hits the site
 
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
@@ -64,6 +64,7 @@ UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
 DEVPOST_URL = "https://devpost.com/api/hackathons?status[]=upcoming&status[]=open&order_by=deadline&per_page=48"
 CHALLENGEGOV_URL = "https://api.challenge.gov/api/challenges?status=active&limit=40"
 HEROX_URL = "https://www.herox.com/api/v1/challenges?status=active&page_size=30"
+GRANTSGOV_URL = "https://api.grants.gov/v1/api/search2"
 
 RSS_FEEDS = [
     "https://opportunitydesk.org/feed/",
@@ -369,6 +370,46 @@ def from_herox() -> list:
     return out
 
 
+def from_grantsgov() -> list:
+    """US federal grants from the official Grants.gov search2 API (real close dates)."""
+    out = []
+    try:
+        body = json.dumps({
+            "rows": 80,
+            "keyword": "startup OR innovation OR technology OR education OR research OR small business",
+            "oppStatuses": "posted|forecasted",
+        }).encode("utf-8")
+        req = urllib.request.Request(GRANTSGOV_URL, data=body,
+                                     headers={"User-Agent": UA, "Content-Type": "application/json"})
+        with urllib.request.urlopen(req, timeout=15) as r:
+            data = json.loads(r.read().decode("utf-8", errors="ignore"))
+    except Exception as e:
+        print(f"  ⚠  Grants.gov error: {e}")
+        return out
+    hits = (data.get("data") or {}).get("oppHits") or []
+    for h in hits:
+        iso = None
+        raw = h.get("closeDate") or ""
+        if raw:
+            for fmt in ("%m/%d/%Y", "%Y-%m-%d"):
+                try:
+                    iso = datetime.strptime(raw, fmt).strftime("%Y-%m-%d"); break
+                except ValueError:
+                    pass
+        opp_id = h.get("id") or ""
+        rec = make_record(
+            h.get("title", ""),
+            f"US federal grant from {h.get('agencyCode', 'a federal agency')}. Opportunity #{h.get('number', '')}.",
+            f"https://www.grants.gov/search-results-detail/{opp_id}" if opp_id else "https://www.grants.gov",
+            org=h.get("agency") or h.get("agencyCode") or "Grants.gov",
+            amt="Federal grant", deadline=iso, country="United States",
+            source="grantsgov", opp_type="Grant")
+        if rec:
+            out.append(rec)
+    print(f"  ✓ Grants.gov: {len(out)}")
+    return out
+
+
 # ── RSS + web search ────────────────────────────────────────────────────────────
 
 def from_rss() -> list:
@@ -497,7 +538,7 @@ def run():
     sources_ok, records = [], []
 
     print("── Live APIs ──")
-    for name, fn in [("Devpost", from_devpost), ("Challenge.gov", from_challengegov), ("HeroX", from_herox)]:
+    for name, fn in [("Devpost", from_devpost), ("Challenge.gov", from_challengegov), ("HeroX", from_herox), ("Grants.gov", from_grantsgov)]:
         try:
             got = fn(); records += got; sources_ok.append(f"{name}: {len(got)}")
         except Exception as e:
