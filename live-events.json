@@ -1,15 +1,16 @@
 {
-  "updated": "2026-06-10T18:06:06.627148+00:00",
-  "count": 119,
-  "verifiedCount": 119,
+  "updated": "2026-06-11T12:07:49.765581+00:00",
+  "count": 120,
+  "verifiedCount": 120,
   "policy": "verified-only · persistent",
   "sources": [
-    "Devpost: 0",
+    "Devpost: 40",
     "Challenge.gov: 0",
     "HeroX: 0",
     "Grants.gov: 80",
     "Codeforces: 2",
-    "RSS: 17",
+    "Curated: 10",
+    "RSS: 16",
     "Search: 19"
   ],
   "opportunities": [
@@ -526,6 +527,22 @@
       "liveAPI": true
     },
     {
+      "title": "PhysTech 2026: Physical Activity and Technology Hack Day",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "Binnovative",
+      "amt": "Open prizes",
+      "deadline": "2026-06-27",
+      "elig": "Open — see official listing",
+      "link": "https://phystech-2026.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/273/831/datas/medium_square.png",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-06-11",
+      "liveAPI": true
+    },
+    {
       "title": "FY 2027 Fulbright Specialist Program",
       "type": "Grant",
       "country": "United States",
@@ -603,6 +620,22 @@
       "source": "grantsgov",
       "verified": true,
       "checkedAt": "2026-06-10",
+      "liveAPI": true
+    },
+    {
+      "title": "Prosperity Stack Fellowship",
+      "type": "Grant",
+      "country": "United States",
+      "org": "U.S. Mission to South Korea",
+      "amt": "Federal grant",
+      "deadline": "2026-07-13",
+      "elig": "Open — see official listing",
+      "link": "https://www.grants.gov/search-results-detail/362757",
+      "desc": "US federal grant from DOS-KOR. Opportunity #PD-SEOUL-FY26-03.",
+      "img": "",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-06-11",
       "liveAPI": true
     },
     {
@@ -1895,22 +1928,6 @@
       "elig": "Open — see official listing",
       "link": "https://www.grants.gov/search-results-detail/353475",
       "desc": "US federal grant from NSF. Opportunity #PD-24-7414.",
-      "img": "",
-      "source": "grantsgov",
-      "verified": true,
-      "checkedAt": "2026-06-10",
-      "liveAPI": true
-    },
-    {
-      "title": "Mission Spain Public Diplomacy 2022 Annual Program Statement",
-      "type": "Grant",
-      "country": "United States",
-      "org": "U.S. Mission to Spain",
-      "amt": "Federal grant",
-      "deadline": null,
-      "elig": "Open — see official listing",
-      "link": "https://www.grants.gov/search-results-detail/336244",
-      "desc": "US federal grant from DOS-ESP. Opportunity #ESP22APS.",
       "img": "",
       "source": "grantsgov",
       "verified": true,
