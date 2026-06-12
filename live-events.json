@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-11T12:07:49.765581+00:00",
+  "updated": "2026-06-12T11:41:39.672549+00:00",
   "count": 120,
   "verifiedCount": 120,
   "policy": "verified-only · persistent",
@@ -10,8 +10,8 @@
     "Grants.gov: 80",
     "Codeforces: 2",
     "Curated: 10",
-    "RSS: 16",
-    "Search: 19"
+    "RSS: 19",
+    "Search: 0"
   ],
   "opportunities": [
     {
@@ -604,6 +604,22 @@
       "source": "grantsgov",
       "verified": true,
       "checkedAt": "2026-06-10",
+      "liveAPI": true
+    },
+    {
+      "title": "U.S.-D.R. Technology and Science Fair",
+      "type": "Grant",
+      "country": "United States",
+      "org": "U.S. Mission to the Dominican Republic",
+      "amt": "Federal grant",
+      "deadline": "2026-07-10",
+      "elig": "Open — see official listing",
+      "link": "https://www.grants.gov/search-results-detail/362758",
+      "desc": "US federal grant from DOS-DOM. Opportunity #S-DR860-26-NOFO-0003.",
+      "img": "",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-06-12",
       "liveAPI": true
     },
     {
@@ -1912,22 +1928,6 @@
       "elig": "Open — see official listing",
       "link": "https://www.grants.gov/search-results-detail/359266",
       "desc": "US federal grant from DOS-GRC. Opportunity #PDS-ATHENS-FY25-01.",
-      "img": "",
-      "source": "grantsgov",
-      "verified": true,
-      "checkedAt": "2026-06-10",
-      "liveAPI": true
-    },
-    {
-      "title": "Cyberinfrastructure for Public Access and Open Science",
-      "type": "Grant",
-      "country": "United States",
-      "org": "U.S. National Science Foundation",
-      "amt": "Federal grant",
-      "deadline": null,
-      "elig": "Open — see official listing",
-      "link": "https://www.grants.gov/search-results-detail/353475",
-      "desc": "US federal grant from NSF. Opportunity #PD-24-7414.",
       "img": "",
       "source": "grantsgov",
       "verified": true,
