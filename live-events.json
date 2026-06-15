@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-14T10:46:45.979174+00:00",
+  "updated": "2026-06-15T13:52:07.324708+00:00",
   "count": 120,
   "verifiedCount": 120,
   "policy": "verified-only · persistent",
@@ -10,7 +10,7 @@
     "Grants.gov: 80",
     "Codeforces: 1",
     "Curated: 10",
-    "RSS: 18",
+    "RSS: 17",
     "Search: 20"
   ],
   "opportunities": [
@@ -620,6 +620,22 @@
       "source": "grantsgov",
       "verified": true,
       "checkedAt": "2026-06-10",
+      "liveAPI": true
+    },
+    {
+      "title": "H0: Hack the Zero Stack with Vercel v0 and AWS Databases",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "Amazon",
+      "amt": "$80,000 in prizes",
+      "deadline": "2026-06-29",
+      "elig": "Open — see official listing",
+      "link": "https://h01.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/686/189/datas/medium_square.png",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-06-15",
       "liveAPI": true
     },
     {
@@ -1912,22 +1928,6 @@
       "elig": "Open — see official listing",
       "link": "https://www.grants.gov/search-results-detail/348795",
       "desc": "US federal grant from NSF. Opportunity #PD-23-5342.",
-      "img": "",
-      "source": "grantsgov",
-      "verified": true,
-      "checkedAt": "2026-06-10",
-      "liveAPI": true
-    },
-    {
-      "title": "Collaboratory to Advance Mathematics Education and Learning (CAMEL) for K-12",
-      "type": "Grant",
-      "country": "United States",
-      "org": "U.S. National Science Foundation",
-      "amt": "Federal grant",
-      "deadline": null,
-      "elig": "Open — see official listing",
-      "link": "https://www.grants.gov/search-results-detail/361008",
-      "desc": "US federal grant from NSF. Opportunity #26-501.",
       "img": "",
       "source": "grantsgov",
       "verified": true,
