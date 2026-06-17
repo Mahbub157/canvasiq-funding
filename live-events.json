@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-16T12:50:33.920399+00:00",
+  "updated": "2026-06-17T12:13:48.058472+00:00",
   "count": 120,
   "verifiedCount": 120,
   "policy": "verified-only · persistent",
@@ -10,8 +10,8 @@
     "Grants.gov: 80",
     "Codeforces: 1",
     "Curated: 10",
-    "RSS: 19",
-    "Search: 26"
+    "RSS: 18",
+    "Search: 19"
   ],
   "opportunities": [
     {
@@ -732,6 +732,22 @@
       "source": "devpost",
       "verified": true,
       "checkedAt": "2026-06-16",
+      "liveAPI": true
+    },
+    {
+      "title": "Creator Colosseum Startup Competition: Student Founders. Real Startups.",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "Creator Colosseum",
+      "amt": "$575 in prizes",
+      "deadline": "2026-06-30",
+      "elig": "Open — see official listing",
+      "link": "https://creatorcolosseum.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/601/771/datas/medium_square.png",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-06-17",
       "liveAPI": true
     },
     {
@@ -1912,22 +1928,6 @@
       "elig": "Open — see official listing",
       "link": "https://www.grants.gov/search-results-detail/112354",
       "desc": "US federal grant from NSF. Opportunity #PD-11-8031.",
-      "img": "",
-      "source": "grantsgov",
-      "verified": true,
-      "checkedAt": "2026-06-10",
-      "liveAPI": true
-    },
-    {
-      "title": "Supporting Interventions with Technical Assistance",
-      "type": "Grant",
-      "country": "United States",
-      "org": "Health Resources and Services Administration",
-      "amt": "Federal grant",
-      "deadline": null,
-      "elig": "Open — see official listing",
-      "link": "https://www.grants.gov/search-results-detail/361601",
-      "desc": "US federal grant from HHS-HRSA. Opportunity #HRSA-26-101.",
       "img": "",
       "source": "grantsgov",
       "verified": true,
