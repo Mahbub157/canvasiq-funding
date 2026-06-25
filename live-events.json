@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-24T10:45:33.315802+00:00",
+  "updated": "2026-06-25T10:39:00.249647+00:00",
   "count": 120,
   "verifiedCount": 120,
   "policy": "verified-only · persistent",
@@ -8,28 +8,12 @@
     "Challenge.gov: 0",
     "HeroX: 0",
     "Grants.gov: 80",
-    "Codeforces: 5",
+    "Codeforces: 6",
     "Curated: 10",
-    "RSS: 20",
+    "RSS: 19",
     "Search: 19"
   ],
   "opportunities": [
-    {
-      "title": "Vortexa",
-      "type": "Competition",
-      "country": "Global",
-      "org": "hackhere",
-      "amt": "Open prizes",
-      "deadline": "2026-06-17",
-      "elig": "Open — see official listing",
-      "link": "https://vortexa.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/712/573/datas/medium_square.jpeg",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-06-10",
-      "liveAPI": true
-    },
     {
       "title": "SummerBuild 2026",
       "type": "Competition",
@@ -796,6 +780,22 @@
       "source": "grantsgov",
       "verified": true,
       "checkedAt": "2026-06-10",
+      "liveAPI": true
+    },
+    {
+      "title": "FY 2026 Community Solutions Program",
+      "type": "Grant",
+      "country": "United States",
+      "org": "Bureau Of Educational and Cultural Affairs",
+      "amt": "Federal grant",
+      "deadline": "2026-07-23",
+      "elig": "Open — see official listing",
+      "link": "https://www.grants.gov/search-results-detail/362944",
+      "desc": "US federal grant from DOS-ECA. Opportunity #DFOP0018816.",
+      "img": "",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-06-25",
       "liveAPI": true
     },
     {
