@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-26T10:47:55.146371+00:00",
+  "updated": "2026-06-27T10:03:24.019075+00:00",
   "count": 120,
   "verifiedCount": 120,
   "policy": "verified-only · persistent",
@@ -14,38 +14,6 @@
     "Search: 19"
   ],
   "opportunities": [
-    {
-      "title": "NextGenHacks",
-      "type": "Competition",
-      "country": "Global",
-      "org": "NextGenHacks",
-      "amt": "$1,000 in prizes",
-      "deadline": "2026-06-19",
-      "elig": "Open — see official listing",
-      "link": "https://nextgenhacks.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/596/347/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-06-10",
-      "liveAPI": true
-    },
-    {
-      "title": "Public Diplomacy Section Praia: Small Grants Program",
-      "type": "Grant",
-      "country": "United States",
-      "org": "U.S. Mission to Cape Verde",
-      "amt": "Federal grant",
-      "deadline": "2026-06-19",
-      "elig": "Open — see official listing",
-      "link": "https://www.grants.gov/search-results-detail/361927",
-      "desc": "US federal grant from DOS-CPV. Opportunity #PAS-PRAIA-FY26-01.",
-      "img": "",
-      "source": "grantsgov",
-      "verified": true,
-      "checkedAt": "2026-06-10",
-      "liveAPI": true
-    },
     {
       "title": "Hack Days Unnao",
       "type": "Competition",
@@ -1932,6 +1900,38 @@
       "source": "devpost",
       "verified": true,
       "checkedAt": "2026-06-23",
+      "liveAPI": true
+    },
+    {
+      "title": "AI COMMUNICATION BRIDGE HACKATHON",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "Bricklabs AI",
+      "amt": "Open prizes",
+      "deadline": null,
+      "elig": "Open — see official listing",
+      "link": "https://ai-communication-bridge.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "https://d2dmyh35ffsxbl.cloudfront.net/assets/defaults/thumbnail-placeholder-8c916ef4da99a222ce6ece077c71c7e282f071f830747b2abb5718018cbfa699.gif",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-06-27",
+      "liveAPI": true
+    },
+    {
+      "title": "BlairHacks 8",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "BlairHacks",
+      "amt": "$300 in prizes",
+      "deadline": null,
+      "elig": "Open — see official listing",
+      "link": "https://8-blairhacks.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/400/298/datas/medium_square.jpg",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-06-27",
       "liveAPI": true
     }
   ]
