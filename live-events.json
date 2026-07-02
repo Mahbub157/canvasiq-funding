@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-01T11:20:49.215464+00:00",
+  "updated": "2026-07-02T10:34:31.462147+00:00",
   "count": 120,
   "verifiedCount": 120,
   "policy": "verified-only · persistent",
@@ -14,22 +14,6 @@
     "Search: 20"
   ],
   "opportunities": [
-    {
-      "title": "U.S. STEM Summer Exchange for Youth",
-      "type": "Grant",
-      "country": "United States",
-      "org": "U.S. Mission to the Dominican Republic",
-      "amt": "Federal grant",
-      "deadline": "2026-06-24",
-      "elig": "Open — see official listing",
-      "link": "https://www.grants.gov/search-results-detail/362621",
-      "desc": "US federal grant from DOS-DOM. Opportunity #S-DR860-26-NOFO-0004.",
-      "img": "",
-      "source": "grantsgov",
-      "verified": true,
-      "checkedAt": "2026-06-10",
-      "liveAPI": true
-    },
     {
       "title": "Hack Begin",
       "type": "Competition",
@@ -508,6 +492,22 @@
       "source": "devpost",
       "verified": true,
       "checkedAt": "2026-06-29",
+      "liveAPI": true
+    },
+    {
+      "title": "Moonshot Hackathon",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "Aethra",
+      "amt": "$33,532 in prizes",
+      "deadline": "2026-07-05",
+      "elig": "Open — see official listing",
+      "link": "https://moonshot-aethra.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/714/753/datas/medium_square.png",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-07-02",
       "liveAPI": true
     },
     {
@@ -1247,6 +1247,22 @@
       "liveAPI": true
     },
     {
+      "title": "ML Empowerment Build Challenge 2.0",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "ML Empowerment Foundation",
+      "amt": "Open prizes",
+      "deadline": "2026-07-31",
+      "elig": "Open — see official listing",
+      "link": "https://ml-empowerment-2.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/851/313/datas/medium_square.png",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-07-02",
+      "liveAPI": true
+    },
+    {
       "title": "Young Southeast Asian Leaders Initiative (YSEALI) Summit 2027",
       "type": "Grant",
       "country": "United States",
@@ -1404,6 +1420,22 @@
       "source": "grantsgov",
       "verified": true,
       "checkedAt": "2026-06-10",
+      "liveAPI": true
+    },
+    {
+      "title": "Limited Competition: Growing Great Ideas: Research Education Course in Entrepreneurship and Product Development for Researchers Studying Dru",
+      "type": "Grant",
+      "country": "United States",
+      "org": "National Institutes of Health",
+      "amt": "Federal grant",
+      "deadline": "2026-10-01",
+      "elig": "Open — see official listing",
+      "link": "https://www.grants.gov/search-results-detail/360561",
+      "desc": "US federal grant from HHS-NIH11. Opportunity #RFA-DA-27-007.",
+      "img": "",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-07-02",
       "liveAPI": true
     },
     {
@@ -1898,38 +1930,6 @@
       "desc": "Global hackathon open worldwide.",
       "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/743/224/datas/medium_square.png",
       "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-06-10",
-      "liveAPI": true
-    },
-    {
-      "title": "Build with Gemini",
-      "type": "Competition",
-      "country": "Global",
-      "org": "MLH",
-      "amt": "Open prizes",
-      "deadline": null,
-      "elig": "Open — see official listing",
-      "link": "https://build-with-gemini-0.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/709/147/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-06-10",
-      "liveAPI": true
-    },
-    {
-      "title": "Annual Program Statement (APS) For Fiscal Year 2026",
-      "type": "Grant",
-      "country": "United States",
-      "org": "U.S. Mission to Tunisia",
-      "amt": "Federal grant",
-      "deadline": null,
-      "elig": "Open — see official listing",
-      "link": "https://www.grants.gov/search-results-detail/362086",
-      "desc": "US federal grant from DOS-TUN. Opportunity #PAS-TUNIS- APS FY2026.",
-      "img": "",
-      "source": "grantsgov",
       "verified": true,
       "checkedAt": "2026-06-10",
       "liveAPI": true
