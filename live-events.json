@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-03T10:32:01.914291+00:00",
+  "updated": "2026-07-04T10:05:29.525843+00:00",
   "count": 120,
   "verifiedCount": 120,
   "policy": "verified-only · persistent",
@@ -8,28 +8,12 @@
     "Challenge.gov: 0",
     "HeroX: 0",
     "Grants.gov: 80",
-    "Codeforces: 3",
+    "Codeforces: 4",
     "Curated: 10",
-    "RSS: 18",
-    "Search: 20"
+    "RSS: 19",
+    "Search: 19"
   ],
   "opportunities": [
-    {
-      "title": "Launching the Next 250 Years of American and European Innovation and Growth",
-      "type": "Grant",
-      "country": "United States",
-      "org": "U.S. Mission to Belgium",
-      "amt": "Federal grant",
-      "deadline": "2026-06-26",
-      "elig": "Open — see official listing",
-      "link": "https://www.grants.gov/search-results-detail/362585",
-      "desc": "US federal grant from DOS-BEL. Opportunity #OFOP0002797.",
-      "img": "",
-      "source": "grantsgov",
-      "verified": true,
-      "checkedAt": "2026-06-10",
-      "liveAPI": true
-    },
     {
       "title": "PhysTech 2026: Physical Activity and Technology Hack Day",
       "type": "Hackathon",
@@ -1292,6 +1276,22 @@
       "source": "devpost",
       "verified": true,
       "checkedAt": "2026-07-03",
+      "liveAPI": true
+    },
+    {
+      "title": "Sound for All",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "TechElevate",
+      "amt": "Open prizes",
+      "deadline": "2026-07-31",
+      "elig": "Open — see official listing",
+      "link": "https://sound-for-all.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/815/741/datas/medium_square.png",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-07-04",
       "liveAPI": true
     },
     {
