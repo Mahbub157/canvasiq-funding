@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-10T10:49:49.269649+00:00",
+  "updated": "2026-07-11T09:24:27.742832+00:00",
   "count": 120,
   "verifiedCount": 120,
   "policy": "verified-only · persistent",
@@ -10,42 +10,10 @@
     "Grants.gov: 80",
     "Codeforces: 4",
     "Curated: 10",
-    "RSS: 16",
-    "Search: 19"
+    "RSS: 15",
+    "Search: 20"
   ],
   "opportunities": [
-    {
-      "title": "ACC Workshop June 26th",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "Sustainable Living Lab",
-      "amt": "Open prizes",
-      "deadline": "2026-07-03",
-      "elig": "Open — see official listing",
-      "link": "https://accjune26.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "https://d2dmyh35ffsxbl.cloudfront.net/assets/defaults/thumbnail-placeholder-8c916ef4da99a222ce6ece077c71c7e282f071f830747b2abb5718018cbfa699.gif",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-06-28",
-      "liveAPI": true
-    },
-    {
-      "title": "The Mastery Mentors Hackathon",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "The Mastery Mentors",
-      "amt": "Open prizes",
-      "deadline": "2026-07-03",
-      "elig": "Open — see official listing",
-      "link": "https://themasterymentorshackathon.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/752/595/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-06-28",
-      "liveAPI": true
-    },
     {
       "title": "LECATHON 2.0",
       "type": "Hackathon",
@@ -1932,6 +1900,38 @@
       "source": "devpost",
       "verified": true,
       "checkedAt": "2026-07-09",
+      "liveAPI": true
+    },
+    {
+      "title": "Hackiwha3.0",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "Micro Club",
+      "amt": "Open prizes",
+      "deadline": null,
+      "elig": "Open — see official listing",
+      "link": "https://hackiwha3-0.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/877/205/datas/medium_square.png",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-07-11",
+      "liveAPI": true
+    },
+    {
+      "title": "OpenAI x START Warsaw",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "START Warsaw",
+      "amt": "Open prizes",
+      "deadline": null,
+      "elig": "Open — see official listing",
+      "link": "https://openai-x-start-warsaw.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/871/825/datas/medium_square.png",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-07-11",
       "liveAPI": true
     }
   ]
