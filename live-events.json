@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-11T09:24:27.742832+00:00",
+  "updated": "2026-07-12T09:47:39.060135+00:00",
   "count": 120,
   "verifiedCount": 120,
   "policy": "verified-only · persistent",
@@ -11,57 +11,9 @@
     "Codeforces: 4",
     "Curated: 10",
     "RSS: 15",
-    "Search: 20"
+    "Search: 19"
   ],
   "opportunities": [
-    {
-      "title": "LECATHON 2.0",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "Robotics Club of LEC",
-      "amt": "$1,000 in prizes",
-      "deadline": "2026-07-04",
-      "elig": "Open — see official listing",
-      "link": "https://lecathon.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/814/077/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-06-23",
-      "liveAPI": true
-    },
-    {
-      "title": "Pixel Forge Jam #2 [Haunted Edition]",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "Pixel Forge",
-      "amt": "Open prizes",
-      "deadline": "2026-07-04",
-      "elig": "Open — see official listing",
-      "link": "https://pixel-forge-jam-2.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/624/602/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-06-29",
-      "liveAPI": true
-    },
-    {
-      "title": "Kiro Buildfest 2026 Singapore",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "Amazon Web Services",
-      "amt": "Open prizes",
-      "deadline": "2026-07-04",
-      "elig": "Open — see official listing",
-      "link": "https://sg-kiro-buildfest.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/819/978/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-06-29",
-      "liveAPI": true
-    },
     {
       "title": "FutureAI Global Hackathon 2026",
       "type": "Hackathon",
@@ -319,6 +271,22 @@
       "liveAPI": true
     },
     {
+      "title": "HackNomics",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "hacknomics",
+      "amt": "Open prizes",
+      "deadline": "2026-07-12",
+      "elig": "Open — see official listing",
+      "link": "https://hacknomicshack.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/700/132/datas/medium_square.png",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-07-12",
+      "liveAPI": true
+    },
+    {
       "title": "Tech Innovation Lab",
       "type": "Grant",
       "country": "United States",
@@ -396,6 +364,22 @@
       "source": "devpost",
       "verified": true,
       "checkedAt": "2026-06-29",
+      "liveAPI": true
+    },
+    {
+      "title": "Technoviz Summer of Code",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "Tecnoviz Dev Comm",
+      "amt": "Open prizes",
+      "deadline": "2026-07-13",
+      "elig": "Open — see official listing",
+      "link": "https://technoviz-summer-of-code.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/836/441/datas/medium_square.png",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-07-12",
       "liveAPI": true
     },
     {
@@ -1932,6 +1916,22 @@
       "source": "devpost",
       "verified": true,
       "checkedAt": "2026-07-11",
+      "liveAPI": true
+    },
+    {
+      "title": "cuHacking7",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "cuHacking",
+      "amt": "Open prizes",
+      "deadline": null,
+      "elig": "Open — see official listing",
+      "link": "https://cuhacking07.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/879/961/datas/medium_square.png",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-07-12",
       "liveAPI": true
     }
   ]
