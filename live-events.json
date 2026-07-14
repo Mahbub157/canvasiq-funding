@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-13T10:56:28.946509+00:00",
+  "updated": "2026-07-14T09:54:20.034901+00:00",
   "count": 120,
   "verifiedCount": 120,
   "policy": "verified-only · persistent",
@@ -8,44 +8,12 @@
     "Challenge.gov: 0",
     "HeroX: 0",
     "Grants.gov: 80",
-    "Codeforces: 3",
+    "Codeforces: 4",
     "Curated: 10",
-    "RSS: 15",
+    "RSS: 17",
     "Search: 20"
   ],
   "opportunities": [
-    {
-      "title": "Educational Codeforces Round 192 (Rated for Div. 2)",
-      "type": "Competition",
-      "country": "Global",
-      "org": "Codeforces",
-      "amt": "Rating + recognition",
-      "deadline": "2026-07-06",
-      "elig": "Open — see official listing",
-      "link": "https://codeforces.com/contest/2242",
-      "desc": "Competitive programming contest on Codeforces, open to everyone. Great for students sharpening problem-solving and global ranking.",
-      "img": "",
-      "source": "codeforces",
-      "verified": true,
-      "checkedAt": "2026-06-23",
-      "liveAPI": true
-    },
-    {
-      "title": "Github readme generation",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "presentme",
-      "amt": "Open prizes",
-      "deadline": "2026-07-06",
-      "elig": "Open — see official listing",
-      "link": "https://github-readme-generation.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/601/116/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-06-29",
-      "liveAPI": true
-    },
     {
       "title": "Brain Blitz 2026",
       "type": "Hackathon",
@@ -1199,6 +1167,22 @@
       "liveAPI": true
     },
     {
+      "title": "CSC Summer Impactathon",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "The Webb Schools CSC",
+      "amt": "$80 in prizes",
+      "deadline": "2026-08-10",
+      "elig": "Open — see official listing",
+      "link": "https://csc-summer-impactathon.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/870/405/datas/medium_square.png",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-07-14",
+      "liveAPI": true
+    },
+    {
       "title": "Research and Education Program for Historically Black Colleges and Universities (HBCU) and Tribal Colleges and Universities (TCU)",
       "type": "Grant",
       "country": "United States",
@@ -1244,6 +1228,22 @@
       "source": "grantsgov",
       "verified": true,
       "checkedAt": "2026-07-07",
+      "liveAPI": true
+    },
+    {
+      "title": "Fiscal Year 2026 National Earthquake Hazards Reduction Program Multi-State and National Earthquake Assistance",
+      "type": "Grant",
+      "country": "United States",
+      "org": "Department of Homeland Security - FEMA",
+      "amt": "Federal grant",
+      "deadline": "2026-08-14",
+      "elig": "Open — see official listing",
+      "link": "https://www.grants.gov/search-results-detail/363128",
+      "desc": "US federal grant from DHS-DHS. Opportunity #DHS-26-MT-082-00-99.",
+      "img": "",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-07-14",
       "liveAPI": true
     },
     {
