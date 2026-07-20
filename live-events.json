@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-19T09:48:45.226684+00:00",
+  "updated": "2026-07-20T10:48:04.209998+00:00",
   "count": 120,
   "verifiedCount": 120,
   "policy": "verified-only · persistent",
@@ -10,42 +10,10 @@
     "Grants.gov: 80",
     "Codeforces: 3",
     "Curated: 10",
-    "RSS: 17",
+    "RSS: 16",
     "Search: 20"
   ],
   "opportunities": [
-    {
-      "title": "Codeforces Round 1108 (Div. 2)",
-      "type": "Competition",
-      "country": "Global",
-      "org": "Codeforces",
-      "amt": "Rating + recognition",
-      "deadline": "2026-07-12",
-      "elig": "Open — see official listing",
-      "link": "https://codeforces.com/contest/2246",
-      "desc": "Competitive programming contest on Codeforces, open to everyone. Great for students sharpening problem-solving and global ranking.",
-      "img": "",
-      "source": "codeforces",
-      "verified": true,
-      "checkedAt": "2026-07-09",
-      "liveAPI": true
-    },
-    {
-      "title": "HackNomics",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "hacknomics",
-      "amt": "Open prizes",
-      "deadline": "2026-07-12",
-      "elig": "Open — see official listing",
-      "link": "https://hacknomicshack.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/700/132/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-07-12",
-      "liveAPI": true
-    },
     {
       "title": "Tech Innovation Lab",
       "type": "Grant",
@@ -428,6 +396,22 @@
       "source": "devpost",
       "verified": true,
       "checkedAt": "2026-07-17",
+      "liveAPI": true
+    },
+    {
+      "title": "Google x IITG AI Hackathon",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "google build with ai",
+      "amt": "$40,500 in prizes",
+      "deadline": "2026-07-20",
+      "elig": "Open — see official listing",
+      "link": "https://google-ai-workshop-hackathon.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/942/985/datas/medium_square.jpg",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-07-20",
       "liveAPI": true
     },
     {
@@ -1932,6 +1916,22 @@
       "source": "devpost",
       "verified": true,
       "checkedAt": "2026-07-19",
+      "liveAPI": true
+    },
+    {
+      "title": "TechCommons Hacks",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "TechCommons",
+      "amt": "$2,800 in prizes",
+      "deadline": null,
+      "elig": "Open — see official listing",
+      "link": "https://techcommons-hacks.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/867/957/datas/medium_square.png",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-07-20",
       "liveAPI": true
     }
   ]
