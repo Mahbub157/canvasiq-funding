@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-24T10:13:07.872771+00:00",
+  "updated": "2026-07-25T09:42:24.063460+00:00",
   "count": 120,
   "verifiedCount": 120,
   "policy": "verified-only · persistent",
@@ -10,8 +10,8 @@
     "Grants.gov: 80",
     "Codeforces: 3",
     "Curated: 10",
-    "RSS: 18",
-    "Search: 19"
+    "RSS: 16",
+    "Search: 20"
   ],
   "opportunities": [
     {
@@ -668,6 +668,22 @@
       "source": "devpost",
       "verified": true,
       "checkedAt": "2026-07-15",
+      "liveAPI": true
+    },
+    {
+      "title": "The Email Game",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "WithAI Research",
+      "amt": "$1,700 in prizes",
+      "deadline": "2026-08-01",
+      "elig": "Open — see official listing",
+      "link": "https://the-email-game.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/022/311/datas/medium_square.png",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-07-25",
       "liveAPI": true
     },
     {
@@ -1913,22 +1929,6 @@
       "link": "https://prompt-insights-news.devpost.com/",
       "desc": "Global hackathon open worldwide.",
       "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/860/476/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-07-23",
-      "liveAPI": true
-    },
-    {
-      "title": "Measure up",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "snap2measure",
-      "amt": "Open prizes",
-      "deadline": null,
-      "elig": "Open — see official listing",
-      "link": "https://measureme-up.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/891/556/datas/medium_square.png",
       "source": "devpost",
       "verified": true,
       "checkedAt": "2026-07-23",
