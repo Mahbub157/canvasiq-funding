@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-28T10:30:31.418399+00:00",
+  "updated": "2026-07-29T10:34:32.317453+00:00",
   "count": 120,
   "verifiedCount": 120,
   "policy": "verified-only · persistent",
@@ -10,58 +10,10 @@
     "Grants.gov: 80",
     "Codeforces: 3",
     "Curated: 10",
-    "RSS: 17",
+    "RSS: 15",
     "Search: 19"
   ],
   "opportunities": [
-    {
-      "title": "EPSCoR Research Infrastructure Improvement Program: EPSCoR Collaborations for Optimizing Research Ecosystems",
-      "type": "Grant",
-      "country": "United States",
-      "org": "U.S. National Science Foundation",
-      "amt": "Federal grant",
-      "deadline": "2026-07-21",
-      "elig": "Open — see official listing",
-      "link": "https://www.grants.gov/search-results-detail/357725",
-      "desc": "US federal grant from NSF. Opportunity #25-523.",
-      "img": "",
-      "source": "grantsgov",
-      "verified": true,
-      "checkedAt": "2026-06-10",
-      "liveAPI": true
-    },
-    {
-      "title": "HTCJ Aviation Futures Innovation Challenge",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "hacktheconcretejungle",
-      "amt": "Open prizes",
-      "deadline": "2026-07-21",
-      "elig": "Open — see official listing",
-      "link": "https://htcj-aviation-futures.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "https://d2dmyh35ffsxbl.cloudfront.net/assets/defaults/thumbnail-placeholder-8c916ef4da99a222ce6ece077c71c7e282f071f830747b2abb5718018cbfa699.gif",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-07-01",
-      "liveAPI": true
-    },
-    {
-      "title": "Technoviz Summer of Code",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "Tecnoviz Dev Comm",
-      "amt": "Open prizes",
-      "deadline": "2026-07-21",
-      "elig": "Open — see official listing",
-      "link": "https://technoviz-summer-of-code.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/836/441/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-07-21",
-      "liveAPI": true
-    },
     {
       "title": "Pinch Me! I Want 50K",
       "type": "Hackathon",
@@ -1359,6 +1311,22 @@
       "liveAPI": true
     },
     {
+      "title": "FY26 Bureau of Land Management Plant Conservation and Restoration Management - Bureau wide",
+      "type": "Grant",
+      "country": "United States",
+      "org": "Bureau of Land Management",
+      "amt": "Federal grant",
+      "deadline": "2026-09-28",
+      "elig": "Open — see official listing",
+      "link": "https://www.grants.gov/search-results-detail/363355",
+      "desc": "US federal grant from DOI-BLM. Opportunity #L26AS00050.",
+      "img": "",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-07-29",
+      "liveAPI": true
+    },
+    {
       "title": "NRL Long Range Broad Agency Announcement (BAA) for Basic and Applied Research",
       "type": "Grant",
       "country": "United States",
@@ -1932,6 +1900,38 @@
       "source": "devpost",
       "verified": true,
       "checkedAt": "2026-07-18",
+      "liveAPI": true
+    },
+    {
+      "title": "Zero to Query: LingoQL Hackathon",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "LingoQL",
+      "amt": "$500 in prizes",
+      "deadline": null,
+      "elig": "Open — see official listing",
+      "link": "https://ztq.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/721/975/datas/medium_square.png",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-07-29",
+      "liveAPI": true
+    },
+    {
+      "title": "Prometheus July AI Challenge",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "Prometheus",
+      "amt": "$1,500 in prizes",
+      "deadline": null,
+      "elig": "Open — see official listing",
+      "link": "https://prometheus-july-ai-challenge.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/829/207/datas/medium_square.png",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-07-29",
       "liveAPI": true
     }
   ]
