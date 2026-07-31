@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-30T10:21:00.680930+00:00",
+  "updated": "2026-07-31T10:34:29.860328+00:00",
   "count": 120,
   "verifiedCount": 120,
   "policy": "verified-only · persistent",
@@ -10,26 +10,10 @@
     "Grants.gov: 80",
     "Codeforces: 4",
     "Curated: 10",
-    "RSS: 19",
-    "Search: 20"
+    "RSS: 20",
+    "Search: 19"
   ],
   "opportunities": [
-    {
-      "title": "FY 2026 Community Solutions Program",
-      "type": "Grant",
-      "country": "United States",
-      "org": "Bureau Of Educational and Cultural Affairs",
-      "amt": "Federal grant",
-      "deadline": "2026-07-23",
-      "elig": "Open — see official listing",
-      "link": "https://www.grants.gov/search-results-detail/362944",
-      "desc": "US federal grant from DOS-ECA. Opportunity #DFOP0018816.",
-      "img": "",
-      "source": "grantsgov",
-      "verified": true,
-      "checkedAt": "2026-06-25",
-      "liveAPI": true
-    },
     {
       "title": "BIA-IBIP-OIED-2026",
       "type": "Grant",
@@ -479,6 +463,22 @@
       "liveAPI": true
     },
     {
+      "title": "Technoviz Summer of Code",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "Tecnoviz Dev Comm",
+      "amt": "Open prizes",
+      "deadline": "2026-07-31",
+      "elig": "Open — see official listing",
+      "link": "https://technoviz-summer-of-code.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/836/441/datas/medium_square.png",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-07-31",
+      "liveAPI": true
+    },
+    {
       "title": "Assistive Innovation Challenge 2026",
       "type": "Hackathon",
       "country": "Global",
@@ -556,6 +556,38 @@
       "source": "codeforces",
       "verified": true,
       "checkedAt": "2026-07-26",
+      "liveAPI": true
+    },
+    {
+      "title": "Neuu Hack DAy",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "Teclaws",
+      "amt": "Open prizes",
+      "deadline": "2026-08-01",
+      "elig": "Open — see official listing",
+      "link": "https://neuu-hack-day.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "https://d2dmyh35ffsxbl.cloudfront.net/assets/defaults/thumbnail-placeholder-8c916ef4da99a222ce6ece077c71c7e282f071f830747b2abb5718018cbfa699.gif",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-07-31",
+      "liveAPI": true
+    },
+    {
+      "title": "Hack Days in Delhi",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "MLH",
+      "amt": "Open prizes",
+      "deadline": "2026-08-02",
+      "elig": "Open — see official listing",
+      "link": "https://hack-days-in-delhi-30766.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "https://d2dmyh35ffsxbl.cloudfront.net/assets/defaults/thumbnail-placeholder-8c916ef4da99a222ce6ece077c71c7e282f071f830747b2abb5718018cbfa699.gif",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-07-31",
       "liveAPI": true
     },
     {
@@ -1900,38 +1932,6 @@
       "source": "devpost",
       "verified": true,
       "checkedAt": "2026-07-18",
-      "liveAPI": true
-    },
-    {
-      "title": "Hackathon New Delhi: Build AI Agents",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "Elastic",
-      "amt": "Open prizes",
-      "deadline": null,
-      "elig": "Open — see official listing",
-      "link": "https://hackathon-elk-gcp.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/819/982/datas/medium_square.jpg",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-07-18",
-      "liveAPI": true
-    },
-    {
-      "title": "Zero to Query: LingoQL Hackathon",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "LingoQL",
-      "amt": "$500 in prizes",
-      "deadline": null,
-      "elig": "Open — see official listing",
-      "link": "https://ztq.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/721/975/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-07-29",
       "liveAPI": true
     }
   ]
