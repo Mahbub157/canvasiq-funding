@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-01T09:54:37.166258+00:00",
+  "updated": "2026-08-02T09:52:24.681521+00:00",
   "count": 120,
   "verifiedCount": 120,
   "policy": "verified-only · persistent",
@@ -8,28 +8,12 @@
     "Challenge.gov: 0",
     "HeroX: 0",
     "Grants.gov: 80",
-    "Codeforces: 4",
+    "Codeforces: 5",
     "Curated: 10",
-    "RSS: 18",
-    "Search: 28"
+    "RSS: 17",
+    "Search: 19"
   ],
   "opportunities": [
-    {
-      "title": "Girls In STEM Global Hackathon",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "Girls In Stem MENA&Central Asia",
-      "amt": "Open prizes",
-      "deadline": "2026-07-25",
-      "elig": "Open — see official listing",
-      "link": "https://girlsinstemhackathon.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/817/076/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-07-01",
-      "liveAPI": true
-    },
     {
       "title": "Codeforces Round (Div. 1)",
       "type": "Competition",
@@ -623,6 +607,22 @@
       "liveAPI": true
     },
     {
+      "title": "Girls In STEM Global Hackathon",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "Girls In Stem MENA&Central Asia",
+      "amt": "Open prizes",
+      "deadline": "2026-08-05",
+      "elig": "Open — see official listing",
+      "link": "https://girlsinstemhackathon.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/817/076/datas/medium_square.png",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-08-02",
+      "liveAPI": true
+    },
+    {
       "title": "Creative Industries Film Lab and Residency - American Film Showcase 2026",
       "type": "Grant",
       "country": "United States",
@@ -652,6 +652,22 @@
       "source": "codeforces",
       "verified": true,
       "checkedAt": "2026-07-28",
+      "liveAPI": true
+    },
+    {
+      "title": "Hackonomics 2027",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "hackonomics",
+      "amt": "Open prizes",
+      "deadline": "2026-08-07",
+      "elig": "Open — see official listing",
+      "link": "https://hackonomics27.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/547/380/datas/medium_square.png",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-08-02",
       "liveAPI": true
     },
     {
@@ -1913,22 +1929,6 @@
       "link": "https://hyperbloom-summer-hackathon.devpost.com/",
       "desc": "Global hackathon open worldwide.",
       "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/731/729/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-06-10",
-      "liveAPI": true
-    },
-    {
-      "title": "InnovatorsX: Startup Sprint",
-      "type": "Competition",
-      "country": "Global",
-      "org": "InnovatorsX",
-      "amt": "Open prizes",
-      "deadline": null,
-      "elig": "Open — see official listing",
-      "link": "https://innovatorsx.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/734/095/datas/medium_square.png",
       "source": "devpost",
       "verified": true,
       "checkedAt": "2026-06-10",
