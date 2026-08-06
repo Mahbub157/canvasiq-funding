@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-05T10:30:15.240904+00:00",
+  "updated": "2026-08-06T10:34:33.339616+00:00",
   "count": 120,
   "verifiedCount": 120,
   "policy": "verified-only · persistent",
@@ -10,42 +10,10 @@
     "Grants.gov: 80",
     "Codeforces: 5",
     "Curated: 10",
-    "RSS: 19",
-    "Search: 0"
+    "RSS: 15",
+    "Search: 20"
   ],
   "opportunities": [
-    {
-      "title": "Ventura Challenge",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "Student Council",
-      "amt": "Open prizes",
-      "deadline": "2026-07-29",
-      "elig": "Open — see official listing",
-      "link": "https://ventura-challenge.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/522/870/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-07-01",
-      "liveAPI": true
-    },
-    {
-      "title": "AICOO HACKATHON",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "AICOO",
-      "amt": "Open prizes",
-      "deadline": "2026-07-29",
-      "elig": "Open — see official listing",
-      "link": "https://aicoo-hackathon.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/819/165/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-07-26",
-      "liveAPI": true
-    },
     {
       "title": "FY26 Law Enforcement Mental Health and Wellness Act Program",
       "type": "Grant",
@@ -1551,6 +1519,22 @@
       "liveAPI": true
     },
     {
+      "title": "NSF Small Business Innovation Research / Small Business Technology Transfer Phase I, Phase II, Fast-Track Programs: A Pilot Emphasis on Scie",
+      "type": "Grant",
+      "country": "United States",
+      "org": "U.S. National Science Foundation",
+      "amt": "Federal grant",
+      "deadline": "2026-11-04",
+      "elig": "Open — see official listing",
+      "link": "https://www.grants.gov/search-results-detail/362551",
+      "desc": "US federal grant from NSF. Opportunity #26-511.",
+      "img": "",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-08-06",
+      "liveAPI": true
+    },
+    {
       "title": "Plasma Physics",
       "type": "Grant",
       "country": "United States",
@@ -1932,6 +1916,22 @@
       "source": "devpost",
       "verified": true,
       "checkedAt": "2026-06-10",
+      "liveAPI": true
+    },
+    {
+      "title": "DPI CS Innovators Hackathon",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "Discovery Partners Institute",
+      "amt": "Open prizes",
+      "deadline": null,
+      "elig": "Open — see official listing",
+      "link": "https://dpi-cs-innovators-hackathon.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/060/740/datas/medium_square.png",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-08-06",
       "liveAPI": true
     }
   ]
