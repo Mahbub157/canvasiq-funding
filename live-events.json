@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-11T08:49:16.967047+00:00",
+  "updated": "2026-08-12T09:07:28.682862+00:00",
   "count": 120,
   "verifiedCount": 120,
   "policy": "verified-only · persistent",
@@ -10,58 +10,10 @@
     "Grants.gov: 80",
     "Codeforces: 2",
     "Curated: 10",
-    "RSS: 17",
+    "RSS: 15",
     "Search: 20"
   ],
   "opportunities": [
-    {
-      "title": "Creation Code",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "Trainzex AI",
-      "amt": "Open prizes",
-      "deadline": "2026-08-04",
-      "elig": "Open — see official listing",
-      "link": "https://creation-code-30750.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/910/851/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-07-17",
-      "liveAPI": true
-    },
-    {
-      "title": "RLC Hacks 2026",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "Resera",
-      "amt": "Open prizes",
-      "deadline": "2026-08-04",
-      "elig": "Open — see official listing",
-      "link": "https://rlc-hacks-30705.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/880/427/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-07-27",
-      "liveAPI": true
-    },
-    {
-      "title": "Codeforces Round (Div. 3)",
-      "type": "Competition",
-      "country": "Global",
-      "org": "Codeforces",
-      "amt": "Rating + recognition",
-      "deadline": "2026-08-04",
-      "elig": "Open — see official listing",
-      "link": "https://codeforces.com/contest/2254",
-      "desc": "Competitive programming contest on Codeforces, open to everyone. Great for students sharpening problem-solving and global ranking.",
-      "img": "",
-      "source": "codeforces",
-      "verified": true,
-      "checkedAt": "2026-07-30",
-      "liveAPI": true
-    },
     {
       "title": "Young Southeast Asian Leaders Initiative (YSEALI) Summit 2027",
       "type": "Grant",
@@ -1183,6 +1135,22 @@
       "liveAPI": true
     },
     {
+      "title": "Enhancing and Supporting the Network of American Spaces in Armenia",
+      "type": "Grant",
+      "country": "United States",
+      "org": "U.S. Mission to Armenia",
+      "amt": "Federal grant",
+      "deadline": "2026-09-10",
+      "elig": "Open — see official listing",
+      "link": "https://www.grants.gov/search-results-detail/363541",
+      "desc": "US federal grant from DOS-ARM. Opportunity #ASSF-FY26-ARM-2.",
+      "img": "",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-08-12",
+      "liveAPI": true
+    },
+    {
       "title": "National Science Foundation Translation to Practice",
       "type": "Grant",
       "country": "United States",
@@ -1932,6 +1900,38 @@
       "source": "devpost",
       "verified": true,
       "checkedAt": "2026-08-11",
+      "liveAPI": true
+    },
+    {
+      "title": "Hack RenderATL",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "Major League Hacking",
+      "amt": "Open prizes",
+      "deadline": null,
+      "elig": "Open — see official listing",
+      "link": "https://hack-renderatl.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/082/042/datas/medium_square.png",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-08-12",
+      "liveAPI": true
+    },
+    {
+      "title": "AI Passport Ideathon",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "egoist machines @ cambridge university",
+      "amt": "Open prizes",
+      "deadline": null,
+      "elig": "Open — see official listing",
+      "link": "https://ai-passport-ideathon.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/070/871/datas/medium_square.png",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-08-12",
       "liveAPI": true
     }
   ]
