@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-13T09:07:26.558561+00:00",
+  "updated": "2026-08-14T09:03:40.695250+00:00",
   "count": 120,
   "verifiedCount": 120,
   "policy": "verified-only · persistent",
@@ -10,26 +10,10 @@
     "Grants.gov: 80",
     "Codeforces: 2",
     "Curated: 10",
-    "RSS: 13",
+    "RSS: 15",
     "Search: 20"
   ],
   "opportunities": [
-    {
-      "title": "Codeforces Round 1115 (Div. 2)",
-      "type": "Competition",
-      "country": "Global",
-      "org": "Codeforces",
-      "amt": "Rating + recognition",
-      "deadline": "2026-08-06",
-      "elig": "Open — see official listing",
-      "link": "https://codeforces.com/contest/2252",
-      "desc": "Competitive programming contest on Codeforces, open to everyone. Great for students sharpening problem-solving and global ranking.",
-      "img": "",
-      "source": "codeforces",
-      "verified": true,
-      "checkedAt": "2026-08-05",
-      "liveAPI": true
-    },
     {
       "title": "Creative Industries Film Lab and Residency - American Film Showcase 2026",
       "type": "Grant",
@@ -463,6 +447,22 @@
       "liveAPI": true
     },
     {
+      "title": "SERVICE CORP OF RET EXECUTIVES (SCORE) 2026-01",
+      "type": "Grant",
+      "country": "United States",
+      "org": "Small Business Administration",
+      "amt": "Federal grant",
+      "deadline": "2026-08-14",
+      "elig": "Open — see official listing",
+      "link": "https://www.grants.gov/search-results-detail/363127",
+      "desc": "US federal grant from SBA. Opportunity #SB-OEDSC-26-001.",
+      "img": "",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-08-14",
+      "liveAPI": true
+    },
+    {
       "title": "PD ANNUAL PROGRAM STATEMENT",
       "type": "Grant",
       "country": "United States",
@@ -652,6 +652,22 @@
       "source": "codeforces",
       "verified": true,
       "checkedAt": "2026-08-09",
+      "liveAPI": true
+    },
+    {
+      "title": "Center for Foundational Academic Research and Strategic Innovation for the Defense Enterprise (C-FARSIDE)",
+      "type": "Grant",
+      "country": "United States",
+      "org": "Washington Headquarters Services",
+      "amt": "Federal grant",
+      "deadline": "2026-08-17",
+      "elig": "Open — see official listing",
+      "link": "https://www.grants.gov/search-results-detail/363091",
+      "desc": "US federal grant from DOD-WHS. Opportunity #HQ003426NFOECAD04.",
+      "img": "",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-08-14",
       "liveAPI": true
     },
     {
@@ -1913,22 +1929,6 @@
       "link": "https://gdgoc-summer-devsprint.devpost.com/",
       "desc": "Global hackathon open worldwide.",
       "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/029/461/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-08-13",
-      "liveAPI": true
-    },
-    {
-      "title": "INNOVIK 6.0 – International Hackathon 2026 | Indore Edition",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "VITM",
-      "amt": "$200,000 in prizes",
-      "deadline": null,
-      "elig": "Open — see official listing",
-      "link": "https://innovik6-indore.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/083/435/datas/medium_square.png",
       "source": "devpost",
       "verified": true,
       "checkedAt": "2026-08-13",
