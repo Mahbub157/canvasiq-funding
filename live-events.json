@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-14T09:03:40.695250+00:00",
+  "updated": "2026-08-15T08:22:09.332133+00:00",
   "count": 120,
   "verifiedCount": 120,
   "policy": "verified-only · persistent",
@@ -8,60 +8,12 @@
     "Challenge.gov: 0",
     "HeroX: 0",
     "Grants.gov: 80",
-    "Codeforces: 2",
+    "Codeforces: 1",
     "Curated: 10",
-    "RSS: 15",
-    "Search: 20"
+    "RSS: 14",
+    "Search: 0"
   ],
   "opportunities": [
-    {
-      "title": "Creative Industries Film Lab and Residency - American Film Showcase 2026",
-      "type": "Grant",
-      "country": "United States",
-      "org": "U.S. Mission to Indonesia",
-      "amt": "Federal grant",
-      "deadline": "2026-08-07",
-      "elig": "Open — see official listing",
-      "link": "https://www.grants.gov/search-results-detail/362939",
-      "desc": "US federal grant from DOS-IDN. Opportunity #PAS-JAKARTA-FY26-05.",
-      "img": "",
-      "source": "grantsgov",
-      "verified": true,
-      "checkedAt": "2026-06-24",
-      "liveAPI": true
-    },
-    {
-      "title": "Educational Codeforces Round 193 (Rated for Div. 2)",
-      "type": "Competition",
-      "country": "Global",
-      "org": "Codeforces",
-      "amt": "Rating + recognition",
-      "deadline": "2026-08-07",
-      "elig": "Open — see official listing",
-      "link": "https://codeforces.com/contest/2253",
-      "desc": "Competitive programming contest on Codeforces, open to everyone. Great for students sharpening problem-solving and global ranking.",
-      "img": "",
-      "source": "codeforces",
-      "verified": true,
-      "checkedAt": "2026-07-28",
-      "liveAPI": true
-    },
-    {
-      "title": "Hackonomics 2027",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "hackonomics",
-      "amt": "Open prizes",
-      "deadline": "2026-08-07",
-      "elig": "Open — see official listing",
-      "link": "https://hackonomics27.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/547/380/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-08-02",
-      "liveAPI": true
-    },
     {
       "title": "U.S. Embassy Suva Annual Program Statement for Fiji, Kiribati, Nauru, and Tuvalu",
       "type": "Grant",
@@ -671,6 +623,22 @@
       "liveAPI": true
     },
     {
+      "title": "Hackonomics 2027",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "hackonomics",
+      "amt": "Open prizes",
+      "deadline": "2026-08-17",
+      "elig": "Open — see official listing",
+      "link": "https://hackonomics27.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/547/380/datas/medium_square.png",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-08-15",
+      "liveAPI": true
+    },
+    {
       "title": "CockroachDB × AWS Hackathon - Build with Agentic Memory",
       "type": "Hackathon",
       "country": "Global",
@@ -1135,6 +1103,22 @@
       "liveAPI": true
     },
     {
+      "title": "ECosystem for Leading Innovation in Plasma Science and Engineering (ECLIPSE)",
+      "type": "Grant",
+      "country": "United States",
+      "org": "U.S. National Science Foundation",
+      "amt": "Federal grant",
+      "deadline": "2026-09-29",
+      "elig": "Open — see official listing",
+      "link": "https://www.grants.gov/search-results-detail/351715",
+      "desc": "US federal grant from NSF. Opportunity #PD-24-110Z.",
+      "img": "",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-08-15",
+      "liveAPI": true
+    },
+    {
       "title": "NRL Long Range Broad Agency Announcement (BAA) for Basic and Applied Research",
       "type": "Grant",
       "country": "United States",
@@ -1164,6 +1148,22 @@
       "source": "grantsgov",
       "verified": true,
       "checkedAt": "2026-07-02",
+      "liveAPI": true
+    },
+    {
+      "title": "Novel Experiential Technologies Assisting Individual Learning (NExT AI) Hubs (P20 Clinical Trial Optional)",
+      "type": "Grant",
+      "country": "United States",
+      "org": "National Institutes of Health",
+      "amt": "Federal grant",
+      "deadline": "2026-10-02",
+      "elig": "Open — see official listing",
+      "link": "https://www.grants.gov/search-results-detail/359949",
+      "desc": "US federal grant from HHS-NIH11. Opportunity #RFA-HD-27-006.",
+      "img": "",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-08-15",
       "liveAPI": true
     },
     {
