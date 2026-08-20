@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-19T08:31:56.442142+00:00",
+  "updated": "2026-08-20T08:33:12.233196+00:00",
   "count": 120,
   "verifiedCount": 120,
   "policy": "verified-only · persistent",
@@ -8,28 +8,12 @@
     "Challenge.gov: 0",
     "HeroX: 0",
     "Grants.gov: 80",
-    "Codeforces: 0",
+    "Codeforces: 1",
     "Curated: 10",
-    "RSS: 15",
+    "RSS: 16",
     "Search: 20"
   ],
   "opportunities": [
-    {
-      "title": "Caspian Buildathon: Build agents that can reach anyone",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "BITS Pilani",
-      "amt": "$1,700 in prizes",
-      "deadline": "2026-08-12",
-      "elig": "Open — see official listing",
-      "link": "https://caspian.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/029/648/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-07-28",
-      "liveAPI": true
-    },
     {
       "title": "EARLY STAGE INNOVATIONS (ESI26)",
       "type": "Grant",
@@ -1308,6 +1292,22 @@
       "source": "grantsgov",
       "verified": true,
       "checkedAt": "2026-06-16",
+      "liveAPI": true
+    },
+    {
+      "title": "Limited Competition: Centers of Biomedical Research Excellence: Development Phase (COBRE-D) (P30 - Clinical Trial Not Allowed)",
+      "type": "Grant",
+      "country": "United States",
+      "org": "National Institutes of Health",
+      "amt": "Federal grant",
+      "deadline": "2029-05-26",
+      "elig": "Open — see official listing",
+      "link": "https://www.grants.gov/search-results-detail/360611",
+      "desc": "US federal grant from HHS-NIH11. Opportunity #PAR-27-054.",
+      "img": "",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-08-20",
       "liveAPI": true
     },
     {
