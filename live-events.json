@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-20T08:33:12.233196+00:00",
+  "updated": "2026-08-21T08:35:15.884103+00:00",
   "count": 120,
   "verifiedCount": 120,
   "policy": "verified-only · persistent",
@@ -10,42 +10,10 @@
     "Grants.gov: 80",
     "Codeforces: 1",
     "Curated: 10",
-    "RSS: 16",
+    "RSS: 13",
     "Search: 20"
   ],
   "opportunities": [
-    {
-      "title": "EARLY STAGE INNOVATIONS (ESI26)",
-      "type": "Grant",
-      "country": "United States",
-      "org": "NASA Headquarters",
-      "amt": "Federal grant",
-      "deadline": "2026-08-13",
-      "elig": "Open — see official listing",
-      "link": "https://www.grants.gov/search-results-detail/363066",
-      "desc": "US federal grant from NASA-HQ. Opportunity #NNH26ZTR001N-26ESI-B2.",
-      "img": "",
-      "source": "grantsgov",
-      "verified": true,
-      "checkedAt": "2026-07-07",
-      "liveAPI": true
-    },
-    {
-      "title": "EARLY STAGE INNOVATIONS FOR IN SITU RESOURCE UTILIZATION (ESI26-ISRU)",
-      "type": "Grant",
-      "country": "United States",
-      "org": "NASA Headquarters",
-      "amt": "Federal grant",
-      "deadline": "2026-08-13",
-      "elig": "Open — see official listing",
-      "link": "https://www.grants.gov/search-results-detail/363067",
-      "desc": "US federal grant from NASA-HQ. Opportunity #NNH26ZTR001N-26ESI-B7.",
-      "img": "",
-      "source": "grantsgov",
-      "verified": true,
-      "checkedAt": "2026-07-07",
-      "liveAPI": true
-    },
     {
       "title": "Fiscal Year 2026 National Earthquake Hazards Reduction Program Multi-State and National Earthquake Assistance",
       "type": "Grant",
@@ -620,6 +588,22 @@
       "source": "devpost",
       "verified": true,
       "checkedAt": "2026-08-03",
+      "liveAPI": true
+    },
+    {
+      "title": "Building Skills, Strengthening Communities, and Advancing Innovation in Northwest Mexico",
+      "type": "Grant",
+      "country": "United States",
+      "org": "U.S. Mission to Mexico",
+      "amt": "Federal grant",
+      "deadline": "2026-08-27",
+      "elig": "Open — see official listing",
+      "link": "https://www.grants.gov/search-results-detail/363347",
+      "desc": "US federal grant from DOS-MEX. Opportunity #PD-TIJUANA-NOGALES-HERMOSILLO-FY2026-01.",
+      "img": "",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-08-21",
       "liveAPI": true
     },
     {
@@ -1215,6 +1199,22 @@
       "liveAPI": true
     },
     {
+      "title": "LPS Qubit Collaboratory (LQC)",
+      "type": "Grant",
+      "country": "United States",
+      "org": "Dept of the Army -- Materiel Command",
+      "amt": "Federal grant",
+      "deadline": "2027-04-30",
+      "elig": "Open — see official listing",
+      "link": "https://www.grants.gov/search-results-detail/332894",
+      "desc": "US federal grant from DOD-AMC. Opportunity #W911NF21S0009.",
+      "img": "",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-08-21",
+      "liveAPI": true
+    },
+    {
       "title": "EPSCoR Research Infrastructure Improvement Program: EPSCoR Collaborations for Optimizing Research Ecosystems",
       "type": "Grant",
       "country": "United States",
@@ -1308,6 +1308,22 @@
       "source": "grantsgov",
       "verified": true,
       "checkedAt": "2026-08-20",
+      "liveAPI": true
+    },
+    {
+      "title": "Limited Competition: Small Grant Program for Mentored Research Career Development Award Recipients (R03) (Clinical Trials Not Allowed)",
+      "type": "Grant",
+      "country": "United States",
+      "org": "National Institutes of Health",
+      "amt": "Federal grant",
+      "deadline": "2029-07-16",
+      "elig": "Open — see official listing",
+      "link": "https://www.grants.gov/search-results-detail/358824",
+      "desc": "US federal grant from HHS-NIH11. Opportunity #PAR-27-074.",
+      "img": "",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-08-21",
       "liveAPI": true
     },
     {
@@ -1913,22 +1929,6 @@
       "link": "https://build-with-ai-hack-days-emk.devpost.com/",
       "desc": "Global hackathon open worldwide.",
       "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/064/977/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-08-17",
-      "liveAPI": true
-    },
-    {
-      "title": "CISSA Product-thon 2026",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "CISSA",
-      "amt": "$550 in prizes",
-      "deadline": null,
-      "elig": "Open — see official listing",
-      "link": "https://cissa-product-thon-2026.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/085/343/datas/medium_square.png",
       "source": "devpost",
       "verified": true,
       "checkedAt": "2026-08-17",
