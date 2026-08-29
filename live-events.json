@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-28T19:51:14.056808+00:00",
+  "updated": "2026-08-29T13:34:10.313438+00:00",
   "count": 120,
   "verifiedCount": 120,
   "policy": "verified-only · persistent",
@@ -11,7 +11,7 @@
     "Codeforces: 4",
     "Curated: 10",
     "RSS: 15",
-    "Search: 29"
+    "Search: 20"
   ],
   "opportunities": [
     {
@@ -300,6 +300,22 @@
       "source": "devpost",
       "verified": true,
       "checkedAt": "2026-08-10",
+      "liveAPI": true
+    },
+    {
+      "title": "TikTok TechJam 2026",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "TikTok",
+      "amt": "$34,500 in prizes",
+      "deadline": "2026-09-01",
+      "elig": "Open — see official listing",
+      "link": "https://tiktoktechjam2026.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/031/051/datas/medium_square.png",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-08-29",
       "liveAPI": true
     },
     {
@@ -1913,22 +1929,6 @@
       "link": "https://practice-submission.devpost.com/",
       "desc": "Global hackathon open worldwide.",
       "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/126/819/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-08-28",
-      "liveAPI": true
-    },
-    {
-      "title": "Hack the Habitat",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "Hack the Habitat",
-      "amt": "$1,000 in prizes",
-      "deadline": null,
-      "elig": "Open — see official listing",
-      "link": "https://hack-the-habitat-2026.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/055/409/datas/medium_square.png",
       "source": "devpost",
       "verified": true,
       "checkedAt": "2026-08-28",
