@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-31T15:47:32.322155+00:00",
+  "updated": "2026-09-01T13:01:01.062990+00:00",
   "count": 120,
   "verifiedCount": 120,
   "policy": "verified-only · persistent",
@@ -10,42 +10,10 @@
     "Grants.gov: 80",
     "Codeforces: 3",
     "Curated: 10",
-    "RSS: 15",
+    "RSS: 11",
     "Search: 20"
   ],
   "opportunities": [
-    {
-      "title": "NeuralSprint",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "NeuralSprint",
-      "amt": "$150 in prizes",
-      "deadline": "2026-08-24",
-      "elig": "Open — see official listing",
-      "link": "https://neuralsprint.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/789/176/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-08-01",
-      "liveAPI": true
-    },
-    {
-      "title": "ImpactForge",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "ImpactForge",
-      "amt": "$300 in prizes",
-      "deadline": "2026-08-24",
-      "elig": "Open — see official listing",
-      "link": "https://impactforge.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/789/980/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-08-03",
-      "liveAPI": true
-    },
     {
       "title": "Africa Deep Tech Challenge 2026",
       "type": "Hackathon",
@@ -300,6 +268,38 @@
       "source": "devpost",
       "verified": true,
       "checkedAt": "2026-08-31",
+      "liveAPI": true
+    },
+    {
+      "title": "Smart City Hackathon Lahore",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "Code for Pakistan",
+      "amt": "$642 in prizes",
+      "deadline": "2026-09-01",
+      "elig": "Open — see official listing",
+      "link": "https://smart-city-hackathon-lahore.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/144/526/datas/medium_square.png",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-09-01",
+      "liveAPI": true
+    },
+    {
+      "title": "Graphiques Innovation Challenge",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "Hack Club",
+      "amt": "Open prizes",
+      "deadline": "2026-09-01",
+      "elig": "Open — see official listing",
+      "link": "https://graphiques-challenge.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/155/608/datas/medium_square.png",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-09-01",
       "liveAPI": true
     },
     {
@@ -959,6 +959,22 @@
       "liveAPI": true
     },
     {
+      "title": "Prom Fall Classic",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "Prometheus CS",
+      "amt": "$1,500 in prizes",
+      "deadline": "2026-09-26",
+      "elig": "Open — see official listing",
+      "link": "https://prometheus-fall-classic.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/183/667/datas/medium_square.png",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-09-01",
+      "liveAPI": true
+    },
+    {
       "title": "3rd-Web-Hack",
       "type": "Hackathon",
       "country": "Global",
@@ -972,6 +988,22 @@
       "source": "devpost",
       "verified": true,
       "checkedAt": "2026-08-25",
+      "liveAPI": true
+    },
+    {
+      "title": "Prometheus September AI Challenge (Hybrid)",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "Prometheus CS",
+      "amt": "$1,500 in prizes",
+      "deadline": "2026-09-27",
+      "elig": "Open — see official listing",
+      "link": "https://prometheus-aug-ml-hackathon.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/150/280/datas/medium_square.jpeg",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-09-01",
       "liveAPI": true
     },
     {
@@ -1340,6 +1372,22 @@
       "source": "grantsgov",
       "verified": true,
       "checkedAt": "2026-06-10",
+      "liveAPI": true
+    },
+    {
+      "title": "NIH Small Research Grant Program (Parent R03 Clinical Trial Not Allowed)",
+      "type": "Grant",
+      "country": "United States",
+      "org": "National Institutes of Health",
+      "amt": "Federal grant",
+      "deadline": "2028-01-07",
+      "elig": "Open — see official listing",
+      "link": "https://www.grants.gov/search-results-detail/357805",
+      "desc": "US federal grant from HHS-NIH11. Opportunity #PA-25-302.",
+      "img": "",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-09-01",
       "liveAPI": true
     },
     {
@@ -1884,54 +1932,6 @@
       "source": "devpost",
       "verified": true,
       "checkedAt": "2026-08-11",
-      "liveAPI": true
-    },
-    {
-      "title": "Hack RenderATL",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "Major League Hacking",
-      "amt": "Open prizes",
-      "deadline": null,
-      "elig": "Open — see official listing",
-      "link": "https://hack-renderatl.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/082/042/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-08-12",
-      "liveAPI": true
-    },
-    {
-      "title": "AI Passport Ideathon",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "egoist machines @ cambridge university",
-      "amt": "Open prizes",
-      "deadline": null,
-      "elig": "Open — see official listing",
-      "link": "https://ai-passport-ideathon.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/070/871/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-08-12",
-      "liveAPI": true
-    },
-    {
-      "title": "The Orchestra",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "agent orchestrator",
-      "amt": "$200 in prizes",
-      "deadline": null,
-      "elig": "Open — see official listing",
-      "link": "https://ao-orchestra.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/084/671/datas/medium_square.jpg",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-08-13",
       "liveAPI": true
     }
   ]
