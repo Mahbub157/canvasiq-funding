@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-02T12:29:40.160177+00:00",
+  "updated": "2026-09-03T12:32:23.675177+00:00",
   "count": 120,
   "verifiedCount": 120,
   "policy": "verified-only · persistent",
@@ -10,8 +10,8 @@
     "Grants.gov: 80",
     "Codeforces: 3",
     "Curated: 10",
-    "RSS: 15",
-    "Search: 0"
+    "RSS: 16",
+    "Search: 20"
   ],
   "opportunities": [
     {
@@ -1023,6 +1023,38 @@
       "liveAPI": true
     },
     {
+      "title": "Likelion Hackathon",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "SPEED",
+      "amt": "$1 in prizes",
+      "deadline": "2026-09-30",
+      "elig": "Open — see official listing",
+      "link": "https://likelion-hackathon.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "https://d2dmyh35ffsxbl.cloudfront.net/assets/defaults/thumbnail-placeholder-8c916ef4da99a222ce6ece077c71c7e282f071f830747b2abb5718018cbfa699.gif",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-09-03",
+      "liveAPI": true
+    },
+    {
+      "title": "Beginner's Paradise - FirstCommit",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "FirstCommit",
+      "amt": "$880 in prizes",
+      "deadline": "2026-09-30",
+      "elig": "Open — see official listing",
+      "link": "https://firstcommit.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/152/414/datas/medium_square.png",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-09-03",
+      "liveAPI": true
+    },
+    {
       "title": "Limited Competition: Growing Great Ideas: Research Education Course in Entrepreneurship and Product Development for Researchers Studying Dru",
       "type": "Grant",
       "country": "United States",
@@ -1036,6 +1068,38 @@
       "source": "grantsgov",
       "verified": true,
       "checkedAt": "2026-07-02",
+      "liveAPI": true
+    },
+    {
+      "title": "ML Empowerment Build Challenge 3.0",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "ML Empowerment Foundation",
+      "amt": "$53,500 in prizes",
+      "deadline": "2026-10-01",
+      "elig": "Open — see official listing",
+      "link": "https://ml--build-challenge-3-0.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/210/558/datas/medium_square.jpg",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-09-03",
+      "liveAPI": true
+    },
+    {
+      "title": "RevenueCat Shipaton 2026",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "RevenueCat",
+      "amt": "$740,000 in prizes",
+      "deadline": "2026-10-01",
+      "elig": "Open — see official listing",
+      "link": "https://revenuecat-shipaton-2026.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/663/632/datas/medium_square.jpg",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-09-03",
       "liveAPI": true
     },
     {
@@ -1868,70 +1932,6 @@
       "source": "devpost",
       "verified": true,
       "checkedAt": "2026-08-09",
-      "liveAPI": true
-    },
-    {
-      "title": "PIXEL.GEMINI 3.0",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "MLH",
-      "amt": "Open prizes",
-      "deadline": null,
-      "elig": "Open — see official listing",
-      "link": "https://pixel-gemini-3-0.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "https://d2dmyh35ffsxbl.cloudfront.net/assets/defaults/thumbnail-placeholder-8c916ef4da99a222ce6ece077c71c7e282f071f830747b2abb5718018cbfa699.gif",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-08-11",
-      "liveAPI": true
-    },
-    {
-      "title": "sloptic test",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "sloptic",
-      "amt": "Open prizes",
-      "deadline": null,
-      "elig": "Open — see official listing",
-      "link": "https://sloptic-test.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "https://d2dmyh35ffsxbl.cloudfront.net/assets/defaults/thumbnail-placeholder-8c916ef4da99a222ce6ece077c71c7e282f071f830747b2abb5718018cbfa699.gif",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-09-02",
-      "liveAPI": true
-    },
-    {
-      "title": "BoxLang + AI Hackathon at FIU",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "Ortus Solutions",
-      "amt": "Open prizes",
-      "deadline": null,
-      "elig": "Open — see official listing",
-      "link": "https://fiu-boxlang-ai-2026.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/233/962/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-09-02",
-      "liveAPI": true
-    },
-    {
-      "title": "AI Content Engine Hackathon",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "NA",
-      "amt": "$2,000 in prizes",
-      "deadline": null,
-      "elig": "Open — see official listing",
-      "link": "https://ai-content-engine-hacks.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/209/377/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-09-02",
       "liveAPI": true
     }
   ]
