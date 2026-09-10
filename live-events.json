@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-09T12:41:19.354717+00:00",
+  "updated": "2026-09-10T12:39:51.502638+00:00",
   "count": 120,
   "verifiedCount": 120,
   "policy": "verified-only · persistent",
@@ -10,8 +10,8 @@
     "Grants.gov: 80",
     "Codeforces: 4",
     "Curated: 10",
-    "RSS: 16",
-    "Search: 0"
+    "RSS: 15",
+    "Search: 20"
   ],
   "opportunities": [
     {
@@ -428,6 +428,22 @@
       "source": "codeforces",
       "verified": true,
       "checkedAt": "2026-09-05",
+      "liveAPI": true
+    },
+    {
+      "title": "Codeforces Round 1120 (Div. 2)",
+      "type": "Competition",
+      "country": "Global",
+      "org": "Codeforces",
+      "amt": "Rating + recognition",
+      "deadline": "2026-09-12",
+      "elig": "Open — see official listing",
+      "link": "https://codeforces.com/contest/2263",
+      "desc": "Competitive programming contest on Codeforces, open to everyone. Great for students sharpening problem-solving and global ranking.",
+      "img": "",
+      "source": "codeforces",
+      "verified": true,
+      "checkedAt": "2026-09-10",
       "liveAPI": true
     },
     {
@@ -959,6 +975,22 @@
       "liveAPI": true
     },
     {
+      "title": "HackSprint",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "commudle",
+      "amt": "$300,000 in prizes",
+      "deadline": "2026-10-05",
+      "elig": "Open — see official listing",
+      "link": "https://hacksprint.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/287/216/datas/medium_square.jpeg",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-09-10",
+      "liveAPI": true
+    },
+    {
       "title": "UnivaBio",
       "type": "Hackathon",
       "country": "Global",
@@ -1324,6 +1356,22 @@
       "source": "grantsgov",
       "verified": true,
       "checkedAt": "2026-09-01",
+      "liveAPI": true
+    },
+    {
+      "title": "Focused Technology Research and Development (R01 Clinical Trial Not Allowed)",
+      "type": "Grant",
+      "country": "United States",
+      "org": "National Institutes of Health",
+      "amt": "Federal grant",
+      "deadline": "2028-01-07",
+      "elig": "Open — see official listing",
+      "link": "https://www.grants.gov/search-results-detail/357112",
+      "desc": "US federal grant from HHS-NIH11. Opportunity #PAR-25-203.",
+      "img": "",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-09-10",
       "liveAPI": true
     },
     {
@@ -1884,54 +1932,6 @@
       "source": "devpost",
       "verified": true,
       "checkedAt": "2026-09-08",
-      "liveAPI": true
-    },
-    {
-      "title": "GatewayGS Hackathon 2",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "GatewayGS",
-      "amt": "Open prizes",
-      "deadline": null,
-      "elig": "Open — see official listing",
-      "link": "https://gatewaygs-hackathon-2.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/030/054/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-09-09",
-      "liveAPI": true
-    },
-    {
-      "title": "DFA Design Sprint",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "DFA Yale",
-      "amt": "Open prizes",
-      "deadline": null,
-      "elig": "Open — see official listing",
-      "link": "https://dfa-kickoff.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/278/294/datas/medium_square.jpeg",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-09-09",
-      "liveAPI": true
-    },
-    {
-      "title": "CAST-GNY Startup Pitch Competition 2026",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "CAST-GNY",
-      "amt": "Open prizes",
-      "deadline": null,
-      "elig": "Open — see official listing",
-      "link": "https://castgnypitch2026.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/233/307/datas/medium_square.jpg",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-09-09",
       "liveAPI": true
     }
   ]
