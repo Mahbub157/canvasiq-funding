@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-11T12:32:54.939836+00:00",
+  "updated": "2026-09-12T11:56:21.851437+00:00",
   "count": 120,
   "verifiedCount": 120,
   "policy": "verified-only · persistent",
@@ -14,22 +14,6 @@
     "Search: 20"
   ],
   "opportunities": [
-    {
-      "title": "Hack for Humanity | Summer 2026 (+13 non-cash prizes)",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "Hack for Humanity",
-      "amt": "$100 in prizes",
-      "deadline": "2026-09-04",
-      "elig": "Open — see official listing",
-      "link": "https://hack-for-humanity-summer-26.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/429/605/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-08-17",
-      "liveAPI": true
-    },
     {
       "title": "Gemini Event - HackMatrix",
       "type": "Hackathon",
@@ -1932,6 +1916,22 @@
       "source": "devpost",
       "verified": true,
       "checkedAt": "2026-09-11",
+      "liveAPI": true
+    },
+    {
+      "title": "WORLDS London",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "Multic",
+      "amt": "$1,000 in prizes",
+      "deadline": null,
+      "elig": "Open — see official listing",
+      "link": "https://worlds.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/298/493/datas/medium_square.png",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-09-12",
       "liveAPI": true
     }
   ]
