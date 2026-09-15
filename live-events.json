@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-14T14:40:59.003490+00:00",
+  "updated": "2026-09-15T13:05:35.778119+00:00",
   "count": 120,
   "verifiedCount": 120,
   "policy": "verified-only · persistent",
@@ -8,9 +8,9 @@
     "Challenge.gov: 0",
     "HeroX: 0",
     "Grants.gov: 80",
-    "Codeforces: 1",
+    "Codeforces: 3",
     "Curated: 10",
-    "RSS: 16",
+    "RSS: 17",
     "Search: 20"
   ],
   "opportunities": [
@@ -543,6 +543,22 @@
       "liveAPI": true
     },
     {
+      "title": "Codeforces Round (Div. 3)",
+      "type": "Competition",
+      "country": "Global",
+      "org": "Codeforces",
+      "amt": "Rating + recognition",
+      "deadline": "2026-09-21",
+      "elig": "Open — see official listing",
+      "link": "https://codeforces.com/contest/2266",
+      "desc": "Competitive programming contest on Codeforces, open to everyone. Great for students sharpening problem-solving and global ranking.",
+      "img": "",
+      "source": "codeforces",
+      "verified": true,
+      "checkedAt": "2026-09-15",
+      "liveAPI": true
+    },
+    {
       "title": "BunnieX Hackathon",
       "type": "Hackathon",
       "country": "Global",
@@ -767,6 +783,22 @@
       "liveAPI": true
     },
     {
+      "title": "OneAquaHealth IEEE Global Hackathon",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "OneAquaHealth",
+      "amt": "$3,500 in prizes",
+      "deadline": "2026-10-01",
+      "elig": "Open — see official listing",
+      "link": "https://oneaquahealth-ieee-hackathon.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/514/502/datas/medium_square.png",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-09-15",
+      "liveAPI": true
+    },
+    {
       "title": "Novel Experiential Technologies Assisting Individual Learning (NExT AI) Hubs (P20 Clinical Trial Optional)",
       "type": "Grant",
       "country": "United States",
@@ -892,6 +924,22 @@
       "source": "devpost",
       "verified": true,
       "checkedAt": "2026-09-05",
+      "liveAPI": true
+    },
+    {
+      "title": "HACK47: OFFGRID",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "Hack47",
+      "amt": "Open prizes",
+      "deadline": "2026-10-15",
+      "elig": "Open — see official listing",
+      "link": "https://hack47-offgrid.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/109/822/datas/medium_square.jpeg",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-09-15",
       "liveAPI": true
     },
     {
@@ -1292,6 +1340,22 @@
       "source": "grantsgov",
       "verified": true,
       "checkedAt": "2026-09-10",
+      "liveAPI": true
+    },
+    {
+      "title": "Limited Competition: Small Grant Program for NIDDK K01/K08/K23/K25 Recipients (R03 Clinical Trial Optional)",
+      "type": "Grant",
+      "country": "United States",
+      "org": "National Institutes of Health",
+      "amt": "Federal grant",
+      "deadline": "2028-01-07",
+      "elig": "Open — see official listing",
+      "link": "https://www.grants.gov/search-results-detail/358116",
+      "desc": "US federal grant from HHS-NIH11. Opportunity #PAR-25-091.",
+      "img": "",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-09-15",
       "liveAPI": true
     },
     {
@@ -1868,70 +1932,6 @@
       "source": "devpost",
       "verified": true,
       "checkedAt": "2026-09-11",
-      "liveAPI": true
-    },
-    {
-      "title": "AI 4 Infra Challenge – Beginner Track",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "AI Student Association",
-      "amt": "$1,000 in prizes",
-      "deadline": null,
-      "elig": "Open — see official listing",
-      "link": "https://ai-4-infra-challenge-begginer.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/280/113/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-09-11",
-      "liveAPI": true
-    },
-    {
-      "title": "Hack CMU",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "Carnegie Mellon University",
-      "amt": "Open prizes",
-      "deadline": null,
-      "elig": "Open — see official listing",
-      "link": "https://hack-cmu-2026.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/146/353/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-09-11",
-      "liveAPI": true
-    },
-    {
-      "title": "internal hackathon | Elevate Ecosystem",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "uniplay",
-      "amt": "Open prizes",
-      "deadline": null,
-      "elig": "Open — see official listing",
-      "link": "https://internal-ee-hackathon.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "https://d2dmyh35ffsxbl.cloudfront.net/assets/defaults/thumbnail-placeholder-8c916ef4da99a222ce6ece077c71c7e282f071f830747b2abb5718018cbfa699.gif",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-09-11",
-      "liveAPI": true
-    },
-    {
-      "title": "WORLDS London",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "Multic",
-      "amt": "$1,000 in prizes",
-      "deadline": null,
-      "elig": "Open — see official listing",
-      "link": "https://worlds.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/298/493/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-09-12",
       "liveAPI": true
     }
   ]
