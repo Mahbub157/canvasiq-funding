@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-15T13:05:35.778119+00:00",
+  "updated": "2026-09-16T13:03:37.761953+00:00",
   "count": 120,
   "verifiedCount": 120,
   "policy": "verified-only · persistent",
@@ -10,58 +10,10 @@
     "Grants.gov: 80",
     "Codeforces: 3",
     "Curated: 10",
-    "RSS: 17",
+    "RSS: 14",
     "Search: 20"
   ],
   "opportunities": [
-    {
-      "title": "IUSE/Professional Formation of Engineers: Revolutionizing Engineering Departments",
-      "type": "Grant",
-      "country": "United States",
-      "org": "U.S. National Science Foundation",
-      "amt": "Federal grant",
-      "deadline": "2026-09-08",
-      "elig": "Open — see official listing",
-      "link": "https://www.grants.gov/search-results-detail/353413",
-      "desc": "US federal grant from NSF. Opportunity #24-564.",
-      "img": "",
-      "source": "grantsgov",
-      "verified": true,
-      "checkedAt": "2026-06-10",
-      "liveAPI": true
-    },
-    {
-      "title": "DIALED IN Builder Challenge",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "CreateHER Fest",
-      "amt": "$5,000 in prizes",
-      "deadline": "2026-09-08",
-      "elig": "Open — see official listing",
-      "link": "https://dialedin.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/047/648/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-08-18",
-      "liveAPI": true
-    },
-    {
-      "title": "Educational Codeforces Round 194 (Rated for Div. 2)",
-      "type": "Competition",
-      "country": "Global",
-      "org": "Codeforces",
-      "amt": "Rating + recognition",
-      "deadline": "2026-09-08",
-      "elig": "Open — see official listing",
-      "link": "https://codeforces.com/contest/2260",
-      "desc": "Competitive programming contest on Codeforces, open to everyone. Great for students sharpening problem-solving and global ranking.",
-      "img": "",
-      "source": "codeforces",
-      "verified": true,
-      "checkedAt": "2026-08-27",
-      "liveAPI": true
-    },
     {
       "title": "Agentic Cinema: The Blockbuster Hackathon",
       "type": "Hackathon",
@@ -879,6 +831,22 @@
       "liveAPI": true
     },
     {
+      "title": "Databricks AI Social Impact (DAISI) Challenge - Singapore",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "Databricks",
+      "amt": "Open prizes",
+      "deadline": "2026-10-06",
+      "elig": "Open — see official listing",
+      "link": "https://daisisg26.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/326/748/datas/medium_square.png",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-09-16",
+      "liveAPI": true
+    },
+    {
       "title": "Hack Away Hunger: Food Insecurity Challenge",
       "type": "Hackathon",
       "country": "Global",
@@ -1228,6 +1196,22 @@
       "source": "grantsgov",
       "verified": true,
       "checkedAt": "2026-06-10",
+      "liveAPI": true
+    },
+    {
+      "title": "IUSE / Professional Formation of Engineers: Revolutionizing Engineering Departments (IUSE/PFE: RED)",
+      "type": "Grant",
+      "country": "United States",
+      "org": "U.S. National Science Foundation",
+      "amt": "Federal grant",
+      "deadline": "2027-04-13",
+      "elig": "Open — see official listing",
+      "link": "https://www.grants.gov/search-results-detail/353413",
+      "desc": "US federal grant from NSF. Opportunity #24-564.",
+      "img": "",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-09-16",
       "liveAPI": true
     },
     {
@@ -1932,6 +1916,22 @@
       "source": "devpost",
       "verified": true,
       "checkedAt": "2026-09-11",
+      "liveAPI": true
+    },
+    {
+      "title": "GatewayGS Hackathon 2",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "GatewayGS",
+      "amt": "Open prizes",
+      "deadline": null,
+      "elig": "Open — see official listing",
+      "link": "https://gatewaygs-hackathon-2.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/030/054/datas/medium_square.png",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-09-16",
       "liveAPI": true
     }
   ]
