@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-18T12:39:33.128921+00:00",
+  "updated": "2026-09-19T12:14:27.663795+00:00",
   "count": 120,
   "verifiedCount": 120,
   "policy": "verified-only · persistent",
@@ -11,25 +11,9 @@
     "Codeforces: 9",
     "Curated: 10",
     "RSS: 15",
-    "Search: 20"
+    "Search: 29"
   ],
   "opportunities": [
-    {
-      "title": "CSH Social Impact Ideathon",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "CyberSyntax Hub",
-      "amt": "Open prizes",
-      "deadline": "2026-09-11",
-      "elig": "Open — see official listing",
-      "link": "https://csh-social-impact-ideathon.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/181/506/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-08-31",
-      "liveAPI": true
-    },
     {
       "title": "AnimalHack 2026",
       "type": "Hackathon",
@@ -1932,6 +1916,22 @@
       "source": "devpost",
       "verified": true,
       "checkedAt": "2026-09-17",
+      "liveAPI": true
+    },
+    {
+      "title": "HackHERS 2026",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "Girls Who Code Hackathon",
+      "amt": "Open prizes",
+      "deadline": null,
+      "elig": "Open — see official listing",
+      "link": "https://gwc-hackhers-2026.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/283/488/datas/medium_square.png",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-09-19",
       "liveAPI": true
     }
   ]
