@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-20T12:49:32.006565+00:00",
+  "updated": "2026-09-21T14:48:08.914384+00:00",
   "count": 120,
   "verifiedCount": 120,
   "policy": "verified-only · persistent",
@@ -8,92 +8,12 @@
     "Challenge.gov: 0",
     "HeroX: 0",
     "Grants.gov: 80",
-    "Codeforces: 9",
+    "Codeforces: 8",
     "Curated: 10",
     "RSS: 15",
-    "Search: 0"
+    "Search: 18"
   ],
   "opportunities": [
-    {
-      "title": "NextStep Hacks 2026",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "HackAlphaX",
-      "amt": "$1,750 in prizes",
-      "deadline": "2026-09-13",
-      "elig": "Open — see official listing",
-      "link": "https://nextstep2026.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/044/459/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-08-24",
-      "liveAPI": true
-    },
-    {
-      "title": "Annual Program Statement",
-      "type": "Grant",
-      "country": "United States",
-      "org": "U.S. Mission to Zimbabwe",
-      "amt": "Federal grant",
-      "deadline": "2026-09-13",
-      "elig": "Open — see official listing",
-      "link": "https://www.grants.gov/search-results-detail/363723",
-      "desc": "US federal grant from DOS-ZWE. Opportunity #AF-HAR-FY26-03.",
-      "img": "",
-      "source": "grantsgov",
-      "verified": true,
-      "checkedAt": "2026-08-27",
-      "liveAPI": true
-    },
-    {
-      "title": "VentureFix",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "PropNote AI",
-      "amt": "Open prizes",
-      "deadline": "2026-09-13",
-      "elig": "Open — see official listing",
-      "link": "https://venturefix.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/940/122/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-08-30",
-      "liveAPI": true
-    },
-    {
-      "title": "Codeforces Round (Div. 2)",
-      "type": "Competition",
-      "country": "Global",
-      "org": "Codeforces",
-      "amt": "Rating + recognition",
-      "deadline": "2026-09-13",
-      "elig": "Open — see official listing",
-      "link": "https://codeforces.com/contest/2264",
-      "desc": "Competitive programming contest on Codeforces, open to everyone. Great for students sharpening problem-solving and global ranking.",
-      "img": "",
-      "source": "codeforces",
-      "verified": true,
-      "checkedAt": "2026-09-06",
-      "liveAPI": true
-    },
-    {
-      "title": "VoltHacks",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "Dialogate",
-      "amt": "$35,785 in prizes",
-      "deadline": "2026-09-13",
-      "elig": "Open — see official listing",
-      "link": "https://volthacks.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/620/967/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-09-13",
-      "liveAPI": true
-    },
     {
       "title": "CALL-E: Your Code Is Calling",
       "type": "Hackathon",
@@ -719,6 +639,22 @@
       "liveAPI": true
     },
     {
+      "title": "Creator Colosseum: The Startup Showdown",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "Creator Colosseum",
+      "amt": "$29,900 in prizes",
+      "deadline": "2026-10-10",
+      "elig": "Open — see official listing",
+      "link": "https://creatorcolosseumshowdown.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/332/009/datas/medium_square.jpg",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-09-21",
+      "liveAPI": true
+    },
+    {
       "title": "Codeforces Round (Div. 1)",
       "type": "Competition",
       "country": "Global",
@@ -732,6 +668,22 @@
       "source": "codeforces",
       "verified": true,
       "checkedAt": "2026-09-20",
+      "liveAPI": true
+    },
+    {
+      "title": "Codeforces Round (Div. 2)",
+      "type": "Competition",
+      "country": "Global",
+      "org": "Codeforces",
+      "amt": "Rating + recognition",
+      "deadline": "2026-10-11",
+      "elig": "Open — see official listing",
+      "link": "https://codeforces.com/contest/2274",
+      "desc": "Competitive programming contest on Codeforces, open to everyone. Great for students sharpening problem-solving and global ranking.",
+      "img": "",
+      "source": "codeforces",
+      "verified": true,
+      "checkedAt": "2026-09-21",
       "liveAPI": true
     },
     {
@@ -783,6 +735,22 @@
       "liveAPI": true
     },
     {
+      "title": "MLAI Hackathon 2026",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "Mạng Lưới AI",
+      "amt": "Open prizes",
+      "deadline": "2026-10-16",
+      "elig": "Open — see official listing",
+      "link": "https://mlai-hackathon.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/165/208/datas/medium_square.jpg",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-09-21",
+      "liveAPI": true
+    },
+    {
       "title": "Codeforces Round (Div. 1 + Div. 2)",
       "type": "Competition",
       "country": "Global",
@@ -796,6 +764,22 @@
       "source": "codeforces",
       "verified": true,
       "checkedAt": "2026-08-27",
+      "liveAPI": true
+    },
+    {
+      "title": "SVYCA Youth for Earth (Y4E) Hackathon",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "Silicon Valley Youth Climate Action",
+      "amt": "$2,700 in prizes",
+      "deadline": "2026-10-18",
+      "elig": "Open — see official listing",
+      "link": "https://svycay4e.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/173/428/datas/medium_square.png",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-09-21",
       "liveAPI": true
     },
     {
@@ -1932,6 +1916,22 @@
       "source": "devpost",
       "verified": true,
       "checkedAt": "2026-09-20",
+      "liveAPI": true
+    },
+    {
+      "title": "Hack The Weather",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "JHUB Africa",
+      "amt": "$309 in prizes",
+      "deadline": null,
+      "elig": "Open — see official listing",
+      "link": "https://hack-the-weather.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/174/725/datas/medium_square.jpg",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-09-21",
       "liveAPI": true
     }
   ]
