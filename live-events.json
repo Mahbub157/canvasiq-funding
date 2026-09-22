@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-21T14:48:08.914384+00:00",
+  "updated": "2026-09-22T13:02:19.584478+00:00",
   "count": 120,
   "verifiedCount": 120,
   "policy": "verified-only · persistent",
@@ -11,73 +11,9 @@
     "Codeforces: 8",
     "Curated: 10",
     "RSS: 15",
-    "Search: 18"
+    "Search: 19"
   ],
   "opportunities": [
-    {
-      "title": "CALL-E: Your Code Is Calling",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "CALL-E",
-      "amt": "$10,000 in prizes",
-      "deadline": "2026-09-14",
-      "elig": "Open — see official listing",
-      "link": "https://call-e.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/977/426/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-08-24",
-      "liveAPI": true
-    },
-    {
-      "title": "Agents for Humans Hackathon",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "Amazon",
-      "amt": "$40,000 in prizes",
-      "deadline": "2026-09-14",
-      "elig": "Open — see official listing",
-      "link": "https://agentsforhumans.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/064/760/datas/medium_square.jpg",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-08-24",
-      "liveAPI": true
-    },
-    {
-      "title": "Hyperbloom September - AI/ML",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "hyperbloom hacks",
-      "amt": "$710 in prizes",
-      "deadline": "2026-09-14",
-      "elig": "Open — see official listing",
-      "link": "https://hyperbloom-september.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/154/754/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-08-25",
-      "liveAPI": true
-    },
-    {
-      "title": "U.S-Saudi AI Research Commercialization Accelerator Program (ReCAP)",
-      "type": "Grant",
-      "country": "United States",
-      "org": "U.S. Mission to Saudi Arabia",
-      "amt": "Federal grant",
-      "deadline": "2026-09-14",
-      "elig": "Open — see official listing",
-      "link": "https://www.grants.gov/search-results-detail/363744",
-      "desc": "US federal grant from DOS-SAU. Opportunity #DOS-SAU-2605-PD.",
-      "img": "",
-      "source": "grantsgov",
-      "verified": true,
-      "checkedAt": "2026-08-31",
-      "liveAPI": true
-    },
     {
       "title": "National Science Foundation Translation to Practice",
       "type": "Grant",
@@ -284,6 +220,22 @@
       "source": "devpost",
       "verified": true,
       "checkedAt": "2026-08-31",
+      "liveAPI": true
+    },
+    {
+      "title": "Codeforces Round 1123 (Div. 2)",
+      "type": "Competition",
+      "country": "Global",
+      "org": "Codeforces",
+      "amt": "Rating + recognition",
+      "deadline": "2026-09-25",
+      "elig": "Open — see official listing",
+      "link": "https://codeforces.com/contest/2267",
+      "desc": "Competitive programming contest on Codeforces, open to everyone. Great for students sharpening problem-solving and global ranking.",
+      "img": "",
+      "source": "codeforces",
+      "verified": true,
+      "checkedAt": "2026-09-22",
       "liveAPI": true
     },
     {
@@ -572,6 +524,22 @@
       "source": "devpost",
       "verified": true,
       "checkedAt": "2026-09-10",
+      "liveAPI": true
+    },
+    {
+      "title": "ML Empowerment Build Challenge 3.0 - FREE Prizes for EVERYONE",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "ML Empowerment Foundation",
+      "amt": "Open prizes",
+      "deadline": "2026-10-05",
+      "elig": "Open — see official listing",
+      "link": "https://ml-build-challenge-3.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/267/891/datas/medium_square.jpg",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-09-22",
       "liveAPI": true
     },
     {
@@ -1932,6 +1900,38 @@
       "source": "devpost",
       "verified": true,
       "checkedAt": "2026-09-21",
+      "liveAPI": true
+    },
+    {
+      "title": "CAST-GNY Startup Pitch Competition 2026",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "CAST-GNY",
+      "amt": "Open prizes",
+      "deadline": null,
+      "elig": "Open — see official listing",
+      "link": "https://castgnypitch2026.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/233/307/datas/medium_square.jpg",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-09-22",
+      "liveAPI": true
+    },
+    {
+      "title": "YC Fall 2026 x Moss: The Zero Latency Builder Sprint",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "hidevs",
+      "amt": "$50,000 in prizes",
+      "deadline": null,
+      "elig": "Open — see official listing",
+      "link": "https://yc-fall-2026-x-moss.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/170/961/datas/medium_square.jpg",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-09-22",
       "liveAPI": true
     }
   ]
