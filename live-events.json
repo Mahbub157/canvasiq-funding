@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-22T13:02:19.584478+00:00",
+  "updated": "2026-09-23T13:18:22.307199+00:00",
   "count": 120,
   "verifiedCount": 120,
   "policy": "verified-only · persistent",
@@ -10,42 +10,10 @@
     "Grants.gov: 80",
     "Codeforces: 8",
     "Curated: 10",
-    "RSS: 15",
-    "Search: 19"
+    "RSS: 18",
+    "Search: 20"
   ],
   "opportunities": [
-    {
-      "title": "National Science Foundation Translation to Practice",
-      "type": "Grant",
-      "country": "United States",
-      "org": "U.S. National Science Foundation",
-      "amt": "Federal grant",
-      "deadline": "2026-09-15",
-      "elig": "Open — see official listing",
-      "link": "https://www.grants.gov/search-results-detail/359966",
-      "desc": "US federal grant from NSF. Opportunity #25-540.",
-      "img": "",
-      "source": "grantsgov",
-      "verified": true,
-      "checkedAt": "2026-06-10",
-      "liveAPI": true
-    },
-    {
-      "title": "AI Builders Hackathon",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "OSC",
-      "amt": "$33,900 in prizes",
-      "deadline": "2026-09-15",
-      "elig": "Open — see official listing",
-      "link": "https://ai-builders-hackathon-2026.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/783/650/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-08-24",
-      "liveAPI": true
-    },
     {
       "title": "COMPSPHERE 12",
       "type": "Hackathon",
@@ -703,6 +671,22 @@
       "liveAPI": true
     },
     {
+      "title": "INDUX 5.0-2026",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "vikrant university, gwalior",
+      "amt": "$225,000 in prizes",
+      "deadline": "2026-10-15",
+      "elig": "Open — see official listing",
+      "link": "https://indux-5-0-2026.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/367/159/datas/medium_square.jpeg",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-09-23",
+      "liveAPI": true
+    },
+    {
       "title": "MLAI Hackathon 2026",
       "type": "Hackathon",
       "country": "Global",
@@ -751,6 +735,22 @@
       "liveAPI": true
     },
     {
+      "title": "AI Lodge Hackathon 2026",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "SMU Business Intelligence & Analytics",
+      "amt": "Open prizes",
+      "deadline": "2026-10-19",
+      "elig": "Open — see official listing",
+      "link": "https://ai-lodge-hackathon-2026.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/362/031/datas/medium_square.jpg",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-09-23",
+      "liveAPI": true
+    },
+    {
       "title": "HackIT 2026",
       "type": "Hackathon",
       "country": "Global",
@@ -796,6 +796,22 @@
       "source": "devpost",
       "verified": true,
       "checkedAt": "2026-09-14",
+      "liveAPI": true
+    },
+    {
+      "title": "Build With AI: Basics",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "Devpost",
+      "amt": "$2,500 in prizes",
+      "deadline": "2026-10-26",
+      "elig": "Open — see official listing",
+      "link": "https://learn-ai-basics.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/366/318/datas/medium_square.png",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-09-23",
       "liveAPI": true
     },
     {
@@ -876,6 +892,22 @@
       "source": "grantsgov",
       "verified": true,
       "checkedAt": "2026-06-10",
+      "liveAPI": true
+    },
+    {
+      "title": "National Science Foundation Translation to Practice",
+      "type": "Grant",
+      "country": "United States",
+      "org": "U.S. National Science Foundation",
+      "amt": "Federal grant",
+      "deadline": "2026-11-17",
+      "elig": "Open — see official listing",
+      "link": "https://www.grants.gov/search-results-detail/359966",
+      "desc": "US federal grant from NSF. Opportunity #25-540.",
+      "img": "",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-09-23",
       "liveAPI": true
     },
     {
@@ -1900,38 +1932,6 @@
       "source": "devpost",
       "verified": true,
       "checkedAt": "2026-09-21",
-      "liveAPI": true
-    },
-    {
-      "title": "CAST-GNY Startup Pitch Competition 2026",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "CAST-GNY",
-      "amt": "Open prizes",
-      "deadline": null,
-      "elig": "Open — see official listing",
-      "link": "https://castgnypitch2026.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/233/307/datas/medium_square.jpg",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-09-22",
-      "liveAPI": true
-    },
-    {
-      "title": "YC Fall 2026 x Moss: The Zero Latency Builder Sprint",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "hidevs",
-      "amt": "$50,000 in prizes",
-      "deadline": null,
-      "elig": "Open — see official listing",
-      "link": "https://yc-fall-2026-x-moss.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/170/961/datas/medium_square.jpg",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-09-22",
       "liveAPI": true
     }
   ]
