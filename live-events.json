@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-24T13:07:28.506493+00:00",
+  "updated": "2026-09-25T13:12:56.510951+00:00",
   "count": 120,
   "verifiedCount": 120,
   "policy": "verified-only · persistent",
@@ -8,28 +8,12 @@
     "Challenge.gov: 0",
     "HeroX: 0",
     "Grants.gov: 80",
-    "Codeforces: 8",
+    "Codeforces: 7",
     "Curated: 10",
-    "RSS: 18",
-    "Search: 20"
+    "RSS: 14",
+    "Search: 19"
   ],
   "opportunities": [
-    {
-      "title": "COMPSPHERE 12",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "President University",
-      "amt": "$1,247 in prizes",
-      "deadline": "2026-09-17",
-      "elig": "Open — see official listing",
-      "link": "https://compsphere12.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/169/502/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-08-24",
-      "liveAPI": true
-    },
     {
       "title": "The Rice University Urban Sustainability Hackathon",
       "type": "Hackathon",
@@ -396,6 +380,22 @@
       "source": "devpost",
       "verified": true,
       "checkedAt": "2026-09-03",
+      "liveAPI": true
+    },
+    {
+      "title": "COMPSPHERE 12",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "President University",
+      "amt": "$1,247 in prizes",
+      "deadline": "2026-09-30",
+      "elig": "Open — see official listing",
+      "link": "https://compsphere12.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/170/129/datas/medium_square.jpeg",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-09-25",
       "liveAPI": true
     },
     {
@@ -908,6 +908,22 @@
       "source": "grantsgov",
       "verified": true,
       "checkedAt": "2026-08-06",
+      "liveAPI": true
+    },
+    {
+      "title": "Limited Competition: NIH Research Evaluation and Commercialization Hubs (REACH) (SB0 Clinical Trial Optional)",
+      "type": "Grant",
+      "country": "United States",
+      "org": "National Institutes of Health",
+      "amt": "Federal grant",
+      "deadline": "2026-11-10",
+      "elig": "Open — see official listing",
+      "link": "https://www.grants.gov/search-results-detail/362965",
+      "desc": "US federal grant from HHS-NIH11. Opportunity #RFA-OD-27-009.",
+      "img": "",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-09-25",
       "liveAPI": true
     },
     {
@@ -1913,22 +1929,6 @@
       "link": "https://munichtech-expo.devpost.com/",
       "desc": "Global hackathon open worldwide.",
       "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/191/948/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-09-20",
-      "liveAPI": true
-    },
-    {
-      "title": "SteelHacks XIII",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "PittCSC",
-      "amt": "Open prizes",
-      "deadline": null,
-      "elig": "Open — see official listing",
-      "link": "https://steelhacksxiii.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/092/366/datas/medium_square.png",
       "source": "devpost",
       "verified": true,
       "checkedAt": "2026-09-20",
