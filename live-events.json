@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-27T13:30:06.165320+00:00",
+  "updated": "2026-09-28T16:24:19.504419+00:00",
   "count": 120,
   "verifiedCount": 120,
   "policy": "verified-only · persistent",
@@ -10,26 +10,10 @@
     "Grants.gov: 80",
     "Codeforces: 4",
     "Curated: 10",
-    "RSS: 17",
-    "Search: 0"
+    "RSS: 18",
+    "Search: 19"
   ],
   "opportunities": [
-    {
-      "title": "Evorozen Apex: NextGen AI Buildathon",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "Evorozen",
-      "amt": "Open prizes",
-      "deadline": "2026-09-20",
-      "elig": "Open — see official listing",
-      "link": "https://evorozen-apex.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/909/345/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-08-24",
-      "liveAPI": true
-    },
     {
       "title": "Global Innovation Build Challenge V2",
       "type": "Hackathon",
@@ -335,6 +319,22 @@
       "liveAPI": true
     },
     {
+      "title": "Evorozen Apex: NextGen AI Buildathon",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "Evorozen",
+      "amt": "Open prizes",
+      "deadline": "2026-09-30",
+      "elig": "Open — see official listing",
+      "link": "https://evorozen-apex.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/909/345/datas/medium_square.png",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-09-28",
+      "liveAPI": true
+    },
+    {
       "title": "Limited Competition: Growing Great Ideas: Research Education Course in Entrepreneurship and Product Development for Researchers Studying Dru",
       "type": "Grant",
       "country": "United States",
@@ -396,6 +396,22 @@
       "source": "devpost",
       "verified": true,
       "checkedAt": "2026-09-15",
+      "liveAPI": true
+    },
+    {
+      "title": "Planet Resilience: Innovation for Sustainable Impact Hackathon",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "Singapore University of Social Sciences",
+      "amt": "$1,700 in prizes",
+      "deadline": "2026-10-01",
+      "elig": "Open — see official listing",
+      "link": "https://uob-suss-planet-resilience.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/293/800/datas/medium_square.jpg",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-09-28",
       "liveAPI": true
     },
     {
@@ -623,6 +639,22 @@
       "liveAPI": true
     },
     {
+      "title": "WarriorHacks 2.0",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "Westwood Computer Science Club",
+      "amt": "Open prizes",
+      "deadline": "2026-10-13",
+      "elig": "Open — see official listing",
+      "link": "https://warriorhacks-2-0.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/267/082/datas/medium_square.png",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-09-28",
+      "liveAPI": true
+    },
+    {
       "title": "Tribal Colleges and Universities Program (TCUP)",
       "type": "Grant",
       "country": "United States",
@@ -767,6 +799,22 @@
       "liveAPI": true
     },
     {
+      "title": "EurekaDev 2026",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "Eureka Institute and UnivaDev",
+      "amt": "$19,122 in prizes",
+      "deadline": "2026-10-20",
+      "elig": "Open — see official listing",
+      "link": "https://eurekadev.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/909/442/datas/medium_square.png",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-09-28",
+      "liveAPI": true
+    },
+    {
       "title": "Next Gen Hackathon 2026 -Bengaluru",
       "type": "Hackathon",
       "country": "Global",
@@ -860,6 +908,22 @@
       "source": "devpost",
       "verified": true,
       "checkedAt": "2026-09-14",
+      "liveAPI": true
+    },
+    {
+      "title": "AWS Communication Developer Services (CDS) Agentic AI Partner Hackathon",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "AWS",
+      "amt": "$40,000 in prizes",
+      "deadline": "2026-10-28",
+      "elig": "Open — see official listing",
+      "link": "https://aws-cds-partner.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/155/384/datas/medium_square.png",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-09-28",
       "liveAPI": true
     },
     {
@@ -1868,70 +1932,6 @@
       "source": "devpost",
       "verified": true,
       "checkedAt": "2026-09-20",
-      "liveAPI": true
-    },
-    {
-      "title": "TLN Hackathon 2026",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "Tech Literacy Network",
-      "amt": "$207,193 in prizes",
-      "deadline": null,
-      "elig": "Open — see official listing",
-      "link": "https://tln-cybersecurity-challenge.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/182/052/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-09-20",
-      "liveAPI": true
-    },
-    {
-      "title": "Hack the Hill III",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "Capital Technology Network",
-      "amt": "$3,800 in prizes",
-      "deadline": null,
-      "elig": "Open — see official listing",
-      "link": "https://hack-the-hill-iii.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/314/763/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-09-27",
-      "liveAPI": true
-    },
-    {
-      "title": "OwlHacks 2026",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "Major League Hacking",
-      "amt": "Open prizes",
-      "deadline": null,
-      "elig": "Open — see official listing",
-      "link": "https://owlhacks-2026.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/341/390/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-09-27",
-      "liveAPI": true
-    },
-    {
-      "title": "TigerHacks 2026",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "Mizzou Computing Association",
-      "amt": "$5,200 in prizes",
-      "deadline": null,
-      "elig": "Open — see official listing",
-      "link": "https://tigerhacks-2026.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/221/927/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-09-27",
       "liveAPI": true
     }
   ]
