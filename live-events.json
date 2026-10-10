@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-09T14:55:36.774922+00:00",
+  "updated": "2026-10-10T14:10:42.231980+00:00",
   "count": 120,
   "verifiedCount": 120,
   "policy": "verified-only · persistent",
@@ -14,54 +14,6 @@
     "Search: 20"
   ],
   "opportunities": [
-    {
-      "title": "Novel Experiential Technologies Assisting Individual Learning (NExT AI) Hubs (P20 Clinical Trial Optional)",
-      "type": "Grant",
-      "country": "United States",
-      "org": "National Institutes of Health",
-      "amt": "Federal grant",
-      "deadline": "2026-10-02",
-      "elig": "Open — see official listing",
-      "link": "https://www.grants.gov/search-results-detail/359949",
-      "desc": "US federal grant from HHS-NIH11. Opportunity #RFA-HD-27-006.",
-      "img": "",
-      "source": "grantsgov",
-      "verified": true,
-      "checkedAt": "2026-08-15",
-      "liveAPI": true
-    },
-    {
-      "title": "GatewayHacks 2026 | Software & AI",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "GatewayGS",
-      "amt": "$814,585 in prizes",
-      "deadline": "2026-10-02",
-      "elig": "Open — see official listing",
-      "link": "https://gatewayhacks-2026.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/932/136/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-09-04",
-      "liveAPI": true
-    },
-    {
-      "title": "Bharat Innovation Challenge 2.0",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "Lovely Professional University",
-      "amt": "$10,600 in prizes",
-      "deadline": "2026-10-02",
-      "elig": "Open — see official listing",
-      "link": "https://bic.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/288/676/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-09-30",
-      "liveAPI": true
-    },
     {
       "title": "UIUC Product Hackathon - Hack to the Future",
       "type": "Hackathon",
@@ -300,6 +252,22 @@
       "source": "codeforces",
       "verified": true,
       "checkedAt": "2026-09-29",
+      "liveAPI": true
+    },
+    {
+      "title": "Bharat Innovation Challenge 2.0",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "Lovely Professional University",
+      "amt": "$10,600 in prizes",
+      "deadline": "2026-10-10",
+      "elig": "Open — see official listing",
+      "link": "https://bic.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/288/676/datas/medium_square.png",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-10-10",
       "liveAPI": true
     },
     {
@@ -1932,6 +1900,38 @@
       "source": "devpost",
       "verified": true,
       "checkedAt": "2026-10-09",
+      "liveAPI": true
+    },
+    {
+      "title": "HackUCD x Stripe",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "HackUCD",
+      "amt": "$4,000 in prizes",
+      "deadline": null,
+      "elig": "Open — see official listing",
+      "link": "https://hackucd.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/340/589/datas/medium_square.png",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-10-10",
+      "liveAPI": true
+    },
+    {
+      "title": "QMUL AI Hackathon",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "Queen Mary AI Soc, Queen Mary CS Soc",
+      "amt": "Open prizes",
+      "deadline": null,
+      "elig": "Open — see official listing",
+      "link": "https://qmul-ai-hackathon.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/485/812/datas/medium_square.png",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-10-10",
       "liveAPI": true
     }
   ]
