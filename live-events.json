@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-10T14:10:42.231980+00:00",
+  "updated": "2026-10-11T14:35:39.107106+00:00",
   "count": 120,
   "verifiedCount": 120,
   "policy": "verified-only · persistent",
@@ -8,28 +8,12 @@
     "Challenge.gov: 0",
     "HeroX: 0",
     "Grants.gov: 80",
-    "Codeforces: 5",
+    "Codeforces: 4",
     "Curated: 10",
     "RSS: 16",
     "Search: 20"
   ],
   "opportunities": [
-    {
-      "title": "UIUC Product Hackathon - Hack to the Future",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "Product Space UIUC",
-      "amt": "Open prizes",
-      "deadline": "2026-10-03",
-      "elig": "Open — see official listing",
-      "link": "https://product-hackathon-uiuc.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/394/061/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-09-30",
-      "liveAPI": true
-    },
     {
       "title": "LovHack Season 3",
       "type": "Hackathon",
@@ -1932,6 +1916,22 @@
       "source": "devpost",
       "verified": true,
       "checkedAt": "2026-10-10",
+      "liveAPI": true
+    },
+    {
+      "title": "Knight Hacks IX",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "Knight Hacks",
+      "amt": "$317,784 in prizes",
+      "deadline": null,
+      "elig": "Open — see official listing",
+      "link": "https://knight-hacks-ix.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/295/213/datas/medium_square.png",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-10-11",
       "liveAPI": true
     }
   ]
