@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-11T14:35:39.107106+00:00",
+  "updated": "2026-10-12T17:18:14.793103+00:00",
   "count": 120,
   "verifiedCount": 120,
   "policy": "verified-only · persistent",
@@ -8,44 +8,12 @@
     "Challenge.gov: 0",
     "HeroX: 0",
     "Grants.gov: 80",
-    "Codeforces: 4",
+    "Codeforces: 2",
     "Curated: 10",
     "RSS: 16",
     "Search: 20"
   ],
   "opportunities": [
-    {
-      "title": "LovHack Season 3",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "Lovhack",
-      "amt": "$250 in prizes",
-      "deadline": "2026-10-04",
-      "elig": "Open — see official listing",
-      "link": "https://lovhack-season-3.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/360/525/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-09-26",
-      "liveAPI": true
-    },
-    {
-      "title": "FIK FAIR 2026",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "UPN \"Veteran\" Jakarta",
-      "amt": "$360 in prizes",
-      "deadline": "2026-10-04",
-      "elig": "Open — see official listing",
-      "link": "https://fik-fair-2026.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "https://d2dmyh35ffsxbl.cloudfront.net/assets/defaults/thumbnail-placeholder-8c916ef4da99a222ce6ece077c71c7e282f071f830747b2abb5718018cbfa699.gif",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-09-29",
-      "liveAPI": true
-    },
     {
       "title": "CSC Back-to-School Hackathon",
       "type": "Hackathon",
@@ -879,6 +847,22 @@
       "liveAPI": true
     },
     {
+      "title": "Hackathon Agéntico SoftwareChido 2026B",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "ITESO",
+      "amt": "Open prizes",
+      "deadline": "2026-11-25",
+      "elig": "Open — see official listing",
+      "link": "https://hackathon-agentico-2026b.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "https://assets.devpost.com/assets/defaults/thumbnail-placeholder-8c916ef4da99a222ce6ece077c71c7e282f071f830747b2abb5718018cbfa699.gif",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-10-12",
+      "liveAPI": true
+    },
+    {
       "title": "Dairy Business Innovation Initiatives Program (DBI) Fiscal Year 2026",
       "type": "Grant",
       "country": "United States",
@@ -892,6 +876,22 @@
       "source": "grantsgov",
       "verified": true,
       "checkedAt": "2026-10-01",
+      "liveAPI": true
+    },
+    {
+      "title": "2026-2027 Fall ESE Senior Design",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "university of pennsylvania",
+      "amt": "Open prizes",
+      "deadline": "2026-12-07",
+      "elig": "Open — see official listing",
+      "link": "https://ese4500f26.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "https://assets.devpost.com/assets/defaults/thumbnail-placeholder-8c916ef4da99a222ce6ece077c71c7e282f071f830747b2abb5718018cbfa699.gif",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-10-12",
       "liveAPI": true
     },
     {
