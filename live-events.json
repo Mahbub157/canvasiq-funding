@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-13T15:31:38.502660+00:00",
+  "updated": "2026-10-14T13:16:51.444404+00:00",
   "count": 120,
   "verifiedCount": 120,
   "policy": "verified-only · persistent",
@@ -8,44 +8,12 @@
     "Challenge.gov: 0",
     "HeroX: 0",
     "Grants.gov: 80",
-    "Codeforces: 3",
+    "Codeforces: 4",
     "Curated: 10",
     "RSS: 16",
     "Search: 20"
   ],
   "opportunities": [
-    {
-      "title": "UnivaBio",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "BioCataalysis",
-      "amt": "$38,245 in prizes",
-      "deadline": "2026-10-06",
-      "elig": "Open — see official listing",
-      "link": "https://univabio.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/956/477/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-09-05",
-      "liveAPI": true
-    },
-    {
-      "title": "Databricks AI Social Impact (DAISI) Challenge - Singapore",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "Databricks",
-      "amt": "Open prizes",
-      "deadline": "2026-10-06",
-      "elig": "Open — see official listing",
-      "link": "https://daisisg26.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/326/748/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-09-16",
-      "liveAPI": true
-    },
     {
       "title": "SUSTAIN-A-THON 2.0",
       "type": "Hackathon",
@@ -428,6 +396,22 @@
       "source": "devpost",
       "verified": true,
       "checkedAt": "2026-09-28",
+      "liveAPI": true
+    },
+    {
+      "title": "UnivaBio ($40,000 in prizes)",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "BioCataalysis",
+      "amt": "Open prizes",
+      "deadline": "2026-10-20",
+      "elig": "Open — see official listing",
+      "link": "https://univabio.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/429/151/datas/medium_square.png",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-10-14",
       "liveAPI": true
     },
     {
@@ -1932,6 +1916,22 @@
       "source": "devpost",
       "verified": true,
       "checkedAt": "2026-10-13",
+      "liveAPI": true
+    },
+    {
+      "title": "HackGB",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "Google Developers Group on Campus- UWGB",
+      "amt": "Open prizes",
+      "deadline": null,
+      "elig": "Open — see official listing",
+      "link": "https://hackgb-2026.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/020/622/datas/medium_square.png",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-10-14",
       "liveAPI": true
     }
   ]
