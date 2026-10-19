@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-18T12:24:45.030024+00:00",
+  "updated": "2026-10-19T15:14:09.021603+00:00",
   "count": 120,
   "verifiedCount": 120,
   "policy": "verified-only · persistent",
@@ -10,42 +10,10 @@
     "Grants.gov: 80",
     "Codeforces: 3",
     "Curated: 10",
-    "RSS: 17",
+    "RSS: 18",
     "Search: 19"
   ],
   "opportunities": [
-    {
-      "title": "Codeforces Round (Div. 1)",
-      "type": "Competition",
-      "country": "Global",
-      "org": "Codeforces",
-      "amt": "Rating + recognition",
-      "deadline": "2026-10-11",
-      "elig": "Open — see official listing",
-      "link": "https://codeforces.com/contest/2273",
-      "desc": "Competitive programming contest on Codeforces, open to everyone. Great for students sharpening problem-solving and global ranking.",
-      "img": "",
-      "source": "codeforces",
-      "verified": true,
-      "checkedAt": "2026-09-20",
-      "liveAPI": true
-    },
-    {
-      "title": "Codeforces Round (Div. 2)",
-      "type": "Competition",
-      "country": "Global",
-      "org": "Codeforces",
-      "amt": "Rating + recognition",
-      "deadline": "2026-10-11",
-      "elig": "Open — see official listing",
-      "link": "https://codeforces.com/contest/2274",
-      "desc": "Competitive programming contest on Codeforces, open to everyone. Great for students sharpening problem-solving and global ranking.",
-      "img": "",
-      "source": "codeforces",
-      "verified": true,
-      "checkedAt": "2026-09-21",
-      "liveAPI": true
-    },
     {
       "title": "AIC Internal Competition -2026 (Agentic AI)",
       "type": "Hackathon",
@@ -348,6 +316,22 @@
       "source": "devpost",
       "verified": true,
       "checkedAt": "2026-09-23",
+      "liveAPI": true
+    },
+    {
+      "title": "Codeforces Round (Div. 2)",
+      "type": "Competition",
+      "country": "Global",
+      "org": "Codeforces",
+      "amt": "Rating + recognition",
+      "deadline": "2026-10-26",
+      "elig": "Open — see official listing",
+      "link": "https://codeforces.com/contest/2272",
+      "desc": "Competitive programming contest on Codeforces, open to everyone. Great for students sharpening problem-solving and global ranking.",
+      "img": "",
+      "source": "codeforces",
+      "verified": true,
+      "checkedAt": "2026-10-19",
       "liveAPI": true
     },
     {
@@ -1932,6 +1916,22 @@
       "source": "devpost",
       "verified": true,
       "checkedAt": "2026-10-18",
+      "liveAPI": true
+    },
+    {
+      "title": "InternWell Hack 2.0",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "InternWell-SLIET",
+      "amt": "$1,000 in prizes",
+      "deadline": null,
+      "elig": "Open — see official listing",
+      "link": "https://interwell-hack2-0.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/494/543/datas/medium_square.jpg",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-10-19",
       "liveAPI": true
     }
   ]
