@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-19T15:14:09.021603+00:00",
+  "updated": "2026-10-20T13:16:16.720065+00:00",
   "count": 120,
   "verifiedCount": 120,
   "policy": "verified-only · persistent",
@@ -8,28 +8,12 @@
     "Challenge.gov: 0",
     "HeroX: 0",
     "Grants.gov: 80",
-    "Codeforces: 3",
+    "Codeforces: 6",
     "Curated: 10",
-    "RSS: 18",
-    "Search: 19"
+    "RSS: 16",
+    "Search: 20"
   ],
   "opportunities": [
-    {
-      "title": "AIC Internal Competition -2026 (Agentic AI)",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "AI Community @ SBU",
-      "amt": "Open prizes",
-      "deadline": "2026-10-12",
-      "elig": "Open — see official listing",
-      "link": "https://aic-ic-2026.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/442/479/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-10-01",
-      "liveAPI": true
-    },
     {
       "title": "WarriorHacks 2.0",
       "type": "Hackathon",
@@ -511,6 +495,22 @@
       "liveAPI": true
     },
     {
+      "title": "AQX Sports Analytics Data Bowl 4.0",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "Devpost",
+      "amt": "$50 in prizes",
+      "deadline": "2026-11-01",
+      "elig": "Open — see official listing",
+      "link": "https://aqxanalyticsfour.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/602/547/datas/medium_square.png",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-10-20",
+      "liveAPI": true
+    },
+    {
       "title": "YouCam API Skin AI & eCommerce VTO Hackathon",
       "type": "Hackathon",
       "country": "Global",
@@ -556,6 +556,38 @@
       "source": "grantsgov",
       "verified": true,
       "checkedAt": "2026-08-06",
+      "liveAPI": true
+    },
+    {
+      "title": "ICPC 2026 Online Challenge 2 powered by Huawei",
+      "type": "Competition",
+      "country": "Global",
+      "org": "Codeforces",
+      "amt": "Rating + recognition",
+      "deadline": "2026-11-05",
+      "elig": "Open — see official listing",
+      "link": "https://codeforces.com/contest/2281",
+      "desc": "Competitive programming contest on Codeforces, open to everyone. Great for students sharpening problem-solving and global ranking.",
+      "img": "",
+      "source": "codeforces",
+      "verified": true,
+      "checkedAt": "2026-10-20",
+      "liveAPI": true
+    },
+    {
+      "title": "Codeforces Round (Div. 1)",
+      "type": "Competition",
+      "country": "Global",
+      "org": "Codeforces",
+      "amt": "Rating + recognition",
+      "deadline": "2026-11-07",
+      "elig": "Open — see official listing",
+      "link": "https://codeforces.com/contest/2279",
+      "desc": "Competitive programming contest on Codeforces, open to everyone. Great for students sharpening problem-solving and global ranking.",
+      "img": "",
+      "source": "codeforces",
+      "verified": true,
+      "checkedAt": "2026-10-20",
       "liveAPI": true
     },
     {
@@ -1900,38 +1932,6 @@
       "source": "devpost",
       "verified": true,
       "checkedAt": "2026-10-18",
-      "liveAPI": true
-    },
-    {
-      "title": "Hack Like W@CC 2026",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "Women at College of Computing @ GT",
-      "amt": "Open prizes",
-      "deadline": null,
-      "elig": "Open — see official listing",
-      "link": "https://hack-like-wacc-26.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/191/956/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-10-18",
-      "liveAPI": true
-    },
-    {
-      "title": "InternWell Hack 2.0",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "InternWell-SLIET",
-      "amt": "$1,000 in prizes",
-      "deadline": null,
-      "elig": "Open — see official listing",
-      "link": "https://interwell-hack2-0.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/494/543/datas/medium_square.jpg",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-10-19",
       "liveAPI": true
     }
   ]
