@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-21T13:22:58.642805+00:00",
+  "updated": "2026-10-22T13:23:48.084649+00:00",
   "count": 120,
   "verifiedCount": 120,
   "policy": "verified-only · persistent",
@@ -14,54 +14,6 @@
     "Search: 20"
   ],
   "opportunities": [
-    {
-      "title": "Tribal Colleges and Universities Program (TCUP)",
-      "type": "Grant",
-      "country": "United States",
-      "org": "U.S. National Science Foundation",
-      "amt": "Federal grant",
-      "deadline": "2026-10-14",
-      "elig": "Open — see official listing",
-      "link": "https://www.grants.gov/search-results-detail/334326",
-      "desc": "US federal grant from NSF. Opportunity #21-595.",
-      "img": "",
-      "source": "grantsgov",
-      "verified": true,
-      "checkedAt": "2026-09-09",
-      "liveAPI": true
-    },
-    {
-      "title": "Multimodal AI Hackathon 2026",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "Kamand Prompt, IIT Mandi",
-      "amt": "$100,000 in prizes",
-      "deadline": "2026-10-14",
-      "elig": "Open — see official listing",
-      "link": "https://multimodal-ai-hackathon-2026-7.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/366/176/datas/medium_square.jpg",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-09-30",
-      "liveAPI": true
-    },
-    {
-      "title": "Educational Codeforces Round 195 (Rated for Div. 2)",
-      "type": "Competition",
-      "country": "Global",
-      "org": "Codeforces",
-      "amt": "Rating + recognition",
-      "deadline": "2026-10-14",
-      "elig": "Open — see official listing",
-      "link": "https://codeforces.com/contest/2276",
-      "desc": "Competitive programming contest on Codeforces, open to everyone. Great for students sharpening problem-solving and global ranking.",
-      "img": "",
-      "source": "codeforces",
-      "verified": true,
-      "checkedAt": "2026-10-08",
-      "liveAPI": true
-    },
     {
       "title": "Next Founders Hackathon",
       "type": "Hackathon",
@@ -751,6 +703,22 @@
       "liveAPI": true
     },
     {
+      "title": "Unlocking New Levels of Output and Capacity for Key Subsurface Resources SBIR/STTR (UNLOCK SBIR/STTR)",
+      "type": "Grant",
+      "country": "United States",
+      "org": "Advanced Research Projects Agency Energy",
+      "amt": "Federal grant",
+      "deadline": "2026-11-20",
+      "elig": "Open — see official listing",
+      "link": "https://www.grants.gov/search-results-detail/364135",
+      "desc": "US federal grant from DOE-ARPAE. Opportunity #DE-FOA-0003631.",
+      "img": "",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-10-22",
+      "liveAPI": true
+    },
+    {
       "title": "Hackathon Agéntico SoftwareChido 2026B",
       "type": "Hackathon",
       "country": "Global",
@@ -780,6 +748,22 @@
       "source": "grantsgov",
       "verified": true,
       "checkedAt": "2026-10-01",
+      "liveAPI": true
+    },
+    {
+      "title": "2027 Small Business Development Centers CORE",
+      "type": "Grant",
+      "country": "United States",
+      "org": "Small Business Administration",
+      "amt": "Federal grant",
+      "deadline": "2026-12-03",
+      "elig": "Open — see official listing",
+      "link": "https://www.grants.gov/search-results-detail/364137",
+      "desc": "US federal grant from SBA. Opportunity #SB-OEDSB-26-002.",
+      "img": "",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-10-22",
       "liveAPI": true
     },
     {
@@ -828,6 +812,22 @@
       "source": "grantsgov",
       "verified": true,
       "checkedAt": "2026-10-08",
+      "liveAPI": true
+    },
+    {
+      "title": "Tribal Colleges and Universities Program (TCUP)",
+      "type": "Grant",
+      "country": "United States",
+      "org": "U.S. National Science Foundation",
+      "amt": "Federal grant",
+      "deadline": "2027-01-11",
+      "elig": "Open — see official listing",
+      "link": "https://www.grants.gov/search-results-detail/334326",
+      "desc": "US federal grant from NSF. Opportunity #21-595.",
+      "img": "",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-10-22",
       "liveAPI": true
     },
     {
