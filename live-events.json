@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-23T13:02:18.214020+00:00",
+  "updated": "2026-10-24T12:25:11.874378+00:00",
   "count": 120,
   "verifiedCount": 120,
   "policy": "verified-only · persistent",
@@ -8,28 +8,12 @@
     "Challenge.gov: 0",
     "HeroX: 0",
     "Grants.gov: 80",
-    "Codeforces: 6",
+    "Codeforces: 5",
     "Curated: 10",
-    "RSS: 14",
-    "Search: 19"
+    "RSS: 13",
+    "Search: 20"
   ],
   "opportunities": [
-    {
-      "title": "MLAI Hackathon 2026",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "Mạng Lưới AI",
-      "amt": "Open prizes",
-      "deadline": "2026-10-16",
-      "elig": "Open — see official listing",
-      "link": "https://mlai-hackathon.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/165/208/datas/medium_square.jpg",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-09-21",
-      "liveAPI": true
-    },
     {
       "title": "Codeforces Round (Div. 1 + Div. 2)",
       "type": "Competition",
@@ -1932,6 +1916,22 @@
       "source": "devpost",
       "verified": true,
       "checkedAt": "2026-10-23",
+      "liveAPI": true
+    },
+    {
+      "title": "REPLIT UG Hackathon",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "Software Engineering Club",
+      "amt": "Open prizes",
+      "deadline": null,
+      "elig": "Open — see official listing",
+      "link": "https://replit-ug-hackathon.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/668/067/datas/medium_square.jpeg",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-10-24",
       "liveAPI": true
     }
   ]
