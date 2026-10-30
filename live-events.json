@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-29T14:54:23.850713+00:00",
+  "updated": "2026-10-30T14:47:00.461575+00:00",
   "count": 120,
   "verifiedCount": 120,
   "policy": "verified-only · persistent",
@@ -10,7 +10,7 @@
     "Grants.gov: 80",
     "Codeforces: 9",
     "Curated: 10",
-    "RSS: 18",
+    "RSS: 15",
     "Search: 19"
   ],
   "opportunities": [
@@ -316,6 +316,22 @@
       "source": "devpost",
       "verified": true,
       "checkedAt": "2026-10-21",
+      "liveAPI": true
+    },
+    {
+      "title": "Hack With Karthik",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "None",
+      "amt": "Open prizes",
+      "deadline": "2026-11-01",
+      "elig": "Open — see official listing",
+      "link": "https://hack-with-karthik.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/706/163/datas/medium_square.png",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-10-30",
       "liveAPI": true
     },
     {
@@ -1913,22 +1929,6 @@
       "link": "https://all-you-can-do-with-ai.devpost.com/",
       "desc": "Global hackathon open worldwide.",
       "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/500/153/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-10-09",
-      "liveAPI": true
-    },
-    {
-      "title": "Hack Apertus",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "aiLights Association",
-      "amt": "$10,680 in prizes",
-      "deadline": null,
-      "elig": "Open — see official listing",
-      "link": "https://hackapertus.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/004/992/867/datas/medium_square.png",
       "source": "devpost",
       "verified": true,
       "checkedAt": "2026-10-09",
