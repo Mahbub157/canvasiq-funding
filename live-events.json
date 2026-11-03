@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02T17:45:04.383851+00:00",
+  "updated": "2026-11-03T15:46:10.579824+00:00",
   "count": 120,
   "verifiedCount": 120,
   "policy": "verified-only · persistent",
@@ -8,44 +8,12 @@
     "Challenge.gov: 0",
     "HeroX: 0",
     "Grants.gov: 80",
-    "Codeforces: 7",
+    "Codeforces: 9",
     "Curated: 10",
-    "RSS: 12",
-    "Search: 19"
+    "RSS: 15",
+    "Search: 0"
   ],
   "opportunities": [
-    {
-      "title": "Build With AI: Basics",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "Devpost",
-      "amt": "$2,500 in prizes",
-      "deadline": "2026-10-26",
-      "elig": "Open — see official listing",
-      "link": "https://learn-ai-basics.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/366/318/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-09-23",
-      "liveAPI": true
-    },
-    {
-      "title": "Codeforces Round (Div. 2)",
-      "type": "Competition",
-      "country": "Global",
-      "org": "Codeforces",
-      "amt": "Rating + recognition",
-      "deadline": "2026-10-26",
-      "elig": "Open — see official listing",
-      "link": "https://codeforces.com/contest/2272",
-      "desc": "Competitive programming contest on Codeforces, open to everyone. Great for students sharpening problem-solving and global ranking.",
-      "img": "",
-      "source": "codeforces",
-      "verified": true,
-      "checkedAt": "2026-10-19",
-      "liveAPI": true
-    },
     {
       "title": "NSF's Eddie Bernice Johnson Inclusion across the Nation of Communities of Learners of Underrepresented Discoverers in Engineering and Scienc",
       "type": "Grant",
@@ -847,6 +815,22 @@
       "liveAPI": true
     },
     {
+      "title": "Codeforces Round (Div. 2)",
+      "type": "Competition",
+      "country": "Global",
+      "org": "Codeforces",
+      "amt": "Rating + recognition",
+      "deadline": "2026-11-21",
+      "elig": "Open — see official listing",
+      "link": "https://codeforces.com/contest/2288",
+      "desc": "Competitive programming contest on Codeforces, open to everyone. Great for students sharpening problem-solving and global ranking.",
+      "img": "",
+      "source": "codeforces",
+      "verified": true,
+      "checkedAt": "2026-11-03",
+      "liveAPI": true
+    },
+    {
       "title": "SafeSpace Hacks",
       "type": "Hackathon",
       "country": "Global",
@@ -1036,6 +1020,22 @@
       "source": "devpost",
       "verified": true,
       "checkedAt": "2026-10-12",
+      "liveAPI": true
+    },
+    {
+      "title": "AWS MSP AI Hackathon",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "AWS",
+      "amt": "$64,000 in prizes",
+      "deadline": "2026-12-11",
+      "elig": "Open — see official listing",
+      "link": "https://aws-agentic-msp.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/715/013/datas/medium_square.png",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-11-03",
       "liveAPI": true
     },
     {
