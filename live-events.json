@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T15:46:10.579824+00:00",
+  "updated": "2026-11-04T15:55:51.777837+00:00",
   "count": 120,
   "verifiedCount": 120,
   "policy": "verified-only · persistent",
@@ -8,60 +8,12 @@
     "Challenge.gov: 0",
     "HeroX: 0",
     "Grants.gov: 80",
-    "Codeforces: 9",
+    "Codeforces: 8",
     "Curated: 10",
-    "RSS: 15",
-    "Search: 0"
+    "RSS: 13",
+    "Search: 20"
   ],
   "opportunities": [
-    {
-      "title": "NSF's Eddie Bernice Johnson Inclusion across the Nation of Communities of Learners of Underrepresented Discoverers in Engineering and Scienc",
-      "type": "Grant",
-      "country": "United States",
-      "org": "U.S. National Science Foundation",
-      "amt": "Federal grant",
-      "deadline": "2026-10-27",
-      "elig": "Open — see official listing",
-      "link": "https://www.grants.gov/search-results-detail/359103",
-      "desc": "US federal grant from NSF. Opportunity #22-622.",
-      "img": "",
-      "source": "grantsgov",
-      "verified": true,
-      "checkedAt": "2026-06-10",
-      "liveAPI": true
-    },
-    {
-      "title": "OpenCV AI Competition 2026, powered by AWS",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "OpenCV",
-      "amt": "$20,250 in prizes",
-      "deadline": "2026-10-27",
-      "elig": "Open — see official listing",
-      "link": "https://opencv26.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/087/526/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-09-14",
-      "liveAPI": true
-    },
-    {
-      "title": "HTCJ × PROOF Aviation Futures Challenge",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "hacktheconcretejungle",
-      "amt": "Open prizes",
-      "deadline": "2026-10-27",
-      "elig": "Open — see official listing",
-      "link": "https://htcj-aviation-futures.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/314/895/datas/medium_square.jpg",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-09-14",
-      "liveAPI": true
-    },
     {
       "title": "AWS Communication Developer Services (CDS) Agentic AI Partner Hackathon",
       "type": "Hackathon",
@@ -463,6 +415,22 @@
       "liveAPI": true
     },
     {
+      "title": "Codeforces Round 1132 (Div. 2)",
+      "type": "Competition",
+      "country": "Global",
+      "org": "Codeforces",
+      "amt": "Rating + recognition",
+      "deadline": "2026-11-06",
+      "elig": "Open — see official listing",
+      "link": "https://codeforces.com/contest/2284",
+      "desc": "Competitive programming contest on Codeforces, open to everyone. Great for students sharpening problem-solving and global ranking.",
+      "img": "",
+      "source": "codeforces",
+      "verified": true,
+      "checkedAt": "2026-11-04",
+      "liveAPI": true
+    },
+    {
       "title": "Codeforces Round (Div. 1)",
       "type": "Competition",
       "country": "Global",
@@ -492,6 +460,22 @@
       "source": "devpost",
       "verified": true,
       "checkedAt": "2026-11-01",
+      "liveAPI": true
+    },
+    {
+      "title": "Codeforces Round 1133 (Div. 2)",
+      "type": "Competition",
+      "country": "Global",
+      "org": "Codeforces",
+      "amt": "Rating + recognition",
+      "deadline": "2026-11-07",
+      "elig": "Open — see official listing",
+      "link": "https://codeforces.com/contest/2280",
+      "desc": "Competitive programming contest on Codeforces, open to everyone. Great for students sharpening problem-solving and global ranking.",
+      "img": "",
+      "source": "codeforces",
+      "verified": true,
+      "checkedAt": "2026-11-04",
       "liveAPI": true
     },
     {
@@ -844,6 +828,22 @@
       "source": "devpost",
       "verified": true,
       "checkedAt": "2026-10-27",
+      "liveAPI": true
+    },
+    {
+      "title": "Taskforge",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "HackathonForEveryone",
+      "amt": "Open prizes",
+      "deadline": "2026-11-24",
+      "elig": "Open — see official listing",
+      "link": "https://taskforge.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/618/083/datas/medium_square.png",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-11-04",
       "liveAPI": true
     },
     {
