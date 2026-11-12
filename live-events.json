@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T15:48:55.403299+00:00",
+  "updated": "2026-11-12T16:31:04.109481+00:00",
   "count": 120,
   "verifiedCount": 120,
   "policy": "verified-only · persistent",
@@ -8,44 +8,12 @@
     "Challenge.gov: 0",
     "HeroX: 0",
     "Grants.gov: 80",
-    "Codeforces: 6",
+    "Codeforces: 5",
     "Curated: 10",
     "RSS: 15",
     "Search: 29"
   ],
   "opportunities": [
-    {
-      "title": "NSF Small Business Innovation Research / Small Business Technology Transfer Phase I, Phase II, Fast-Track Programs: A Pilot Emphasis on Scie",
-      "type": "Grant",
-      "country": "United States",
-      "org": "U.S. National Science Foundation",
-      "amt": "Federal grant",
-      "deadline": "2026-11-04",
-      "elig": "Open — see official listing",
-      "link": "https://www.grants.gov/search-results-detail/362551",
-      "desc": "US federal grant from NSF. Opportunity #26-511.",
-      "img": "",
-      "source": "grantsgov",
-      "verified": true,
-      "checkedAt": "2026-08-06",
-      "liveAPI": true
-    },
-    {
-      "title": "Educational Codeforces Round 196 (Rated for Div. 2)",
-      "type": "Competition",
-      "country": "Global",
-      "org": "Codeforces",
-      "amt": "Rating + recognition",
-      "deadline": "2026-11-04",
-      "elig": "Open — see official listing",
-      "link": "https://codeforces.com/contest/2283",
-      "desc": "Competitive programming contest on Codeforces, open to everyone. Great for students sharpening problem-solving and global ranking.",
-      "img": "",
-      "source": "codeforces",
-      "verified": true,
-      "checkedAt": "2026-10-26",
-      "liveAPI": true
-    },
     {
       "title": "ICPC 2026 Online Challenge 2 powered by Huawei",
       "type": "Competition",
@@ -1007,6 +975,22 @@
       "liveAPI": true
     },
     {
+      "title": "NSF Small Business Innovation Research / Small Business Technology Transfer Phase I, Phase II, Fast-Track Programs: A Pilot Emphasis on Scie",
+      "type": "Grant",
+      "country": "United States",
+      "org": "U.S. National Science Foundation",
+      "amt": "Federal grant",
+      "deadline": "2027-03-04",
+      "elig": "Open — see official listing",
+      "link": "https://www.grants.gov/search-results-detail/362551",
+      "desc": "US federal grant from NSF. Opportunity #26-511.",
+      "img": "",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-11-12",
+      "liveAPI": true
+    },
+    {
       "title": "Innovations in Graduate Education (IGE) Program",
       "type": "Grant",
       "country": "United States",
@@ -1932,6 +1916,22 @@
       "source": "devpost",
       "verified": true,
       "checkedAt": "2026-11-10",
+      "liveAPI": true
+    },
+    {
+      "title": "Deltahacks X Backboard.io",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "DeltaHacks",
+      "amt": "Open prizes",
+      "deadline": null,
+      "elig": "Open — see official listing",
+      "link": "https://deltahacksxbackboard.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/853/033/datas/medium_square.png",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-11-12",
       "liveAPI": true
     }
   ]
