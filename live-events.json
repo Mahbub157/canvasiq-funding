@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12T16:31:04.109481+00:00",
+  "updated": "2026-11-13T15:52:45.749505+00:00",
   "count": 120,
   "verifiedCount": 120,
   "policy": "verified-only · persistent",
@@ -14,70 +14,6 @@
     "Search: 29"
   ],
   "opportunities": [
-    {
-      "title": "ICPC 2026 Online Challenge 2 powered by Huawei",
-      "type": "Competition",
-      "country": "Global",
-      "org": "Codeforces",
-      "amt": "Rating + recognition",
-      "deadline": "2026-11-05",
-      "elig": "Open — see official listing",
-      "link": "https://codeforces.com/contest/2281",
-      "desc": "Competitive programming contest on Codeforces, open to everyone. Great for students sharpening problem-solving and global ranking.",
-      "img": "",
-      "source": "codeforces",
-      "verified": true,
-      "checkedAt": "2026-10-20",
-      "liveAPI": true
-    },
-    {
-      "title": "Pumpkin Playground",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "ACM Long Beach",
-      "amt": "$30 in prizes",
-      "deadline": "2026-11-05",
-      "elig": "Open — see official listing",
-      "link": "https://pumpkin-playground.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/518/869/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-10-27",
-      "liveAPI": true
-    },
-    {
-      "title": "Girls Who Code HHS Hackathon 2026",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "Girls Who Code HHS",
-      "amt": "$50 in prizes",
-      "deadline": "2026-11-05",
-      "elig": "Open — see official listing",
-      "link": "https://gwchhs-hackathon-2026.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/585/864/datas/medium_square.jpg",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-10-28",
-      "liveAPI": true
-    },
-    {
-      "title": "Remote Control AI",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "avacado",
-      "amt": "Open prizes",
-      "deadline": "2026-11-05",
-      "elig": "Open — see official listing",
-      "link": "https://remote-control-ai.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/757/452/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-10-31",
-      "liveAPI": true
-    },
     {
       "title": "Codeforces Round 1132 (Div. 2)",
       "type": "Competition",
@@ -284,6 +220,22 @@
       "source": "devpost",
       "verified": true,
       "checkedAt": "2026-11-10",
+      "liveAPI": true
+    },
+    {
+      "title": "Codeforces Round 1135 (Div. 2)",
+      "type": "Competition",
+      "country": "Global",
+      "org": "Codeforces",
+      "amt": "Rating + recognition",
+      "deadline": "2026-11-15",
+      "elig": "Open — see official listing",
+      "link": "https://codeforces.com/contest/2285",
+      "desc": "Competitive programming contest on Codeforces, open to everyone. Great for students sharpening problem-solving and global ranking.",
+      "img": "",
+      "source": "codeforces",
+      "verified": true,
+      "checkedAt": "2026-11-13",
       "liveAPI": true
     },
     {
@@ -988,6 +940,22 @@
       "source": "grantsgov",
       "verified": true,
       "checkedAt": "2026-11-12",
+      "liveAPI": true
+    },
+    {
+      "title": "Small Business Innovation Research / Small Business Technology Transfer Phase I, Phase II, Fast-Track Programs: Developing Deep Technologies",
+      "type": "Grant",
+      "country": "United States",
+      "org": "U.S. National Science Foundation",
+      "amt": "Federal grant",
+      "deadline": "2027-03-04",
+      "elig": "Open — see official listing",
+      "link": "https://www.grants.gov/search-results-detail/364255",
+      "desc": "US federal grant from NSF. Opportunity #26-510.",
+      "img": "",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-11-13",
       "liveAPI": true
     },
     {
@@ -1932,6 +1900,38 @@
       "source": "devpost",
       "verified": true,
       "checkedAt": "2026-11-12",
+      "liveAPI": true
+    },
+    {
+      "title": "CodeCoogs x CenterPoint Hackathon",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "CenterPoint",
+      "amt": "Open prizes",
+      "deadline": null,
+      "elig": "Open — see official listing",
+      "link": "https://codecoogsxcenterpointhackathon.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/853/579/datas/medium_square.png",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-11-13",
+      "liveAPI": true
+    },
+    {
+      "title": "Hackperimeter",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "Georgia State University",
+      "amt": "$1,000 in prizes",
+      "deadline": null,
+      "elig": "Open — see official listing",
+      "link": "https://hackperimeter.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/534/551/datas/medium_square.png",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-11-13",
       "liveAPI": true
     }
   ]
