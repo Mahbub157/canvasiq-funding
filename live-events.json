@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-14T14:43:51.053099+00:00",
+  "updated": "2026-11-15T15:15:59.160323+00:00",
   "count": 120,
   "verifiedCount": 120,
   "policy": "verified-only · persistent",
@@ -10,58 +10,10 @@
     "Grants.gov: 80",
     "Codeforces: 5",
     "Curated: 10",
-    "RSS: 12",
-    "Search: 29"
+    "RSS: 5",
+    "Search: 0"
   ],
   "opportunities": [
-    {
-      "title": "Codeforces Round (Div. 1)",
-      "type": "Competition",
-      "country": "Global",
-      "org": "Codeforces",
-      "amt": "Rating + recognition",
-      "deadline": "2026-11-07",
-      "elig": "Open — see official listing",
-      "link": "https://codeforces.com/contest/2279",
-      "desc": "Competitive programming contest on Codeforces, open to everyone. Great for students sharpening problem-solving and global ranking.",
-      "img": "",
-      "source": "codeforces",
-      "verified": true,
-      "checkedAt": "2026-10-20",
-      "liveAPI": true
-    },
-    {
-      "title": "Next Byte Hacks V5",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "Next Byte Hacks",
-      "amt": "$100 in prizes",
-      "deadline": "2026-11-07",
-      "elig": "Open — see official listing",
-      "link": "https://next-byte-hacks-v5.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/524/008/datas/medium_square.jpg",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-11-01",
-      "liveAPI": true
-    },
-    {
-      "title": "Codeforces Round 1133 (Div. 2)",
-      "type": "Competition",
-      "country": "Global",
-      "org": "Codeforces",
-      "amt": "Rating + recognition",
-      "deadline": "2026-11-07",
-      "elig": "Open — see official listing",
-      "link": "https://codeforces.com/contest/2280",
-      "desc": "Competitive programming contest on Codeforces, open to everyone. Great for students sharpening problem-solving and global ranking.",
-      "img": "",
-      "source": "codeforces",
-      "verified": true,
-      "checkedAt": "2026-11-04",
-      "liveAPI": true
-    },
     {
       "title": "Learn AR with SPECS",
       "type": "Hackathon",
@@ -444,6 +396,22 @@
       "source": "codeforces",
       "verified": true,
       "checkedAt": "2026-11-03",
+      "liveAPI": true
+    },
+    {
+      "title": "Codeforces Round (Div. 1)",
+      "type": "Competition",
+      "country": "Global",
+      "org": "Codeforces",
+      "amt": "Rating + recognition",
+      "deadline": "2026-11-21",
+      "elig": "Open — see official listing",
+      "link": "https://codeforces.com/contest/2287",
+      "desc": "Competitive programming contest on Codeforces, open to everyone. Great for students sharpening problem-solving and global ranking.",
+      "img": "",
+      "source": "codeforces",
+      "verified": true,
+      "checkedAt": "2026-11-15",
       "liveAPI": true
     },
     {
@@ -1932,6 +1900,38 @@
       "source": "devpost",
       "verified": true,
       "checkedAt": "2026-11-14",
+      "liveAPI": true
+    },
+    {
+      "title": "HackPrinceton Fall '26",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "Princeton University",
+      "amt": "$10,312 in prizes",
+      "deadline": null,
+      "elig": "Open — see official listing",
+      "link": "https://hackprinceton-fall-26.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/789/397/datas/medium_square.png",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-11-15",
+      "liveAPI": true
+    },
+    {
+      "title": "NorCal Hacks 27",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "Lynbrook Engineering Club",
+      "amt": "Open prizes",
+      "deadline": null,
+      "elig": "Open — see official listing",
+      "link": "https://norcal-hacks-27.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/716/043/datas/medium_square.png",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-11-15",
       "liveAPI": true
     }
   ]
