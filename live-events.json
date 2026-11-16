@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-15T15:15:59.160323+00:00",
+  "updated": "2026-11-16T17:51:50.937046+00:00",
   "count": 120,
   "verifiedCount": 120,
   "policy": "verified-only · persistent",
@@ -10,8 +10,8 @@
     "Grants.gov: 80",
     "Codeforces: 5",
     "Curated: 10",
-    "RSS: 5",
-    "Search: 0"
+    "RSS: 13",
+    "Search: 29"
   ],
   "opportunities": [
     {
@@ -684,6 +684,54 @@
       "source": "devpost",
       "verified": true,
       "checkedAt": "2026-11-11",
+      "liveAPI": true
+    },
+    {
+      "title": "Reddit’s Game of the Day Hackathon",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "reddit",
+      "amt": "$35,000 in prizes",
+      "deadline": "2026-12-08",
+      "elig": "Open — see official listing",
+      "link": "https://redditgameofday2026.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/533/494/datas/medium_square.png",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-11-16",
+      "liveAPI": true
+    },
+    {
+      "title": "Peninsula Innovation Hackathon",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "bayhacks",
+      "amt": "Open prizes",
+      "deadline": "2026-12-10",
+      "elig": "Open — see official listing",
+      "link": "https://peninsula-innovation-hackathon.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/825/212/datas/medium_square.png",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-11-16",
+      "liveAPI": true
+    },
+    {
+      "title": "AI OpenBuild",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "AI OpenBuild",
+      "amt": "$150 in prizes",
+      "deadline": "2026-12-10",
+      "elig": "Open — see official listing",
+      "link": "https://ai-openbuild.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/785/560/datas/medium_square.png",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-11-16",
       "liveAPI": true
     },
     {
@@ -1884,54 +1932,6 @@
       "source": "devpost",
       "verified": true,
       "checkedAt": "2026-11-13",
-      "liveAPI": true
-    },
-    {
-      "title": "CIVIC Hack 2026",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "Future Cities Institute",
-      "amt": "$1,500 in prizes",
-      "deadline": null,
-      "elig": "Open — see official listing",
-      "link": "https://civic-hack-2026.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/779/857/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-11-14",
-      "liveAPI": true
-    },
-    {
-      "title": "HackPrinceton Fall '26",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "Princeton University",
-      "amt": "$10,312 in prizes",
-      "deadline": null,
-      "elig": "Open — see official listing",
-      "link": "https://hackprinceton-fall-26.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/789/397/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-11-15",
-      "liveAPI": true
-    },
-    {
-      "title": "NorCal Hacks 27",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "Lynbrook Engineering Club",
-      "amt": "Open prizes",
-      "deadline": null,
-      "elig": "Open — see official listing",
-      "link": "https://norcal-hacks-27.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/716/043/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-11-15",
       "liveAPI": true
     }
   ]
