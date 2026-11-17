@@ -1,49 +1,7 @@
 {
-  "lastUpdated": "2026-11-16T17:51:50.937046+00:00",
-  "totalFound": 190,
+  "lastUpdated": "2026-11-17T17:19:36.384772+00:00",
+  "totalFound": 191,
   "opportunities": [
-    {
-      "id": 471464,
-      "name": "Plasma Physics",
-      "desc": "US federal grant from NSF. Opportunity #PD-23-1242.",
-      "prize": "Federal grant",
-      "deadline": "2026-11-16",
-      "deadlineLabel": "2026-11-16",
-      "type": "grant",
-      "loc": [
-        "national"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://www.grants.gov/search-results-detail/350018",
-      "country": "United States",
-      "addedDate": "2026-11-16",
-      "source": "grantsgov",
-      "verified": true,
-      "checkedAt": "2026-11-16"
-    },
-    {
-      "id": 767064,
-      "name": "National Science Foundation Translation to Practice (NSF TTP)",
-      "desc": "US federal grant from NSF. Opportunity #25-540.",
-      "prize": "Federal grant",
-      "deadline": "2026-11-17",
-      "deadlineLabel": "2026-11-17",
-      "type": "grant",
-      "loc": [
-        "national"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://www.grants.gov/search-results-detail/359966",
-      "country": "United States",
-      "addedDate": "2026-11-16",
-      "source": "grantsgov",
-      "verified": true,
-      "checkedAt": "2026-11-16"
-    },
     {
       "id": 545858,
       "name": "Small Business Innovation Research and Small Business Technology Transfer Programs Phase II",
@@ -60,31 +18,10 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/364020",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
-    },
-    {
-      "id": 279913,
-      "name": "Ocean Futures Fellowship 2027: Building Ocean Career Pathways",
-      "desc": "Deadline: November 17, 2026 Applications are open for the Ocean Futures Fellowship 2027. The Ocean Futures Fellowship empowers the next generation of ocean professionals, equipping them to address pressing ocean challenges while strengthening their own career pathways. Through training, educational projects, professional development and mentorship over a twelve-month program, Fellows will gain advanced skills, hands-on [...]",
-      "prize": "See listing",
-      "deadline": "2026-11-17",
-      "deadlineLabel": "2026-11-17",
-      "type": "fellowship",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "edtech"
-      ],
-      "url": "https://opportunitydesk.org/2026/11/14/ocean-futures-fellowship-2027-building-ocean-career-pathways/",
-      "country": "Global",
-      "addedDate": "2026-11-16",
-      "source": "rss",
-      "verified": false,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 841544,
@@ -102,10 +39,10 @@
       ],
       "url": "https://start-developer-competition-26.devpost.com/",
       "country": "Global",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "devpost",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 492110,
@@ -123,10 +60,10 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/364132",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 681277,
@@ -144,10 +81,10 @@
       ],
       "url": "https://dakar-bitcoin-hack-2026.devpost.com/",
       "country": "Global",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "devpost",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 352889,
@@ -165,10 +102,32 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/364135",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
+    },
+    {
+      "id": 356980,
+      "name": "Nigeria Sustainability Competition 2026 (₦1,000,000 prize)",
+      "desc": "Deadline: November 20, 2026 Applications are open for the Nigeria Sustainability Competition 2026. The Nigeria Sustainability Competition is an initiative by Sterling Bank, Alt bank, Sterling One Foundation and SDSN Nigeria to promote environmental awareness, sustainability education and practical environmental action among Nigerian students and schools. The competition features two pathways: Prizes Grand prizes and [...]",
+      "prize": "See listing",
+      "deadline": "2026-11-20",
+      "deadlineLabel": "2026-11-20",
+      "type": "competition",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "edtech",
+        "climate"
+      ],
+      "url": "https://opportunitydesk.org/2026/11/17/nigeria-sustainability-competition-2026/",
+      "country": "Global",
+      "addedDate": "2026-11-17",
+      "source": "rss",
+      "verified": false,
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 823337,
@@ -186,10 +145,10 @@
       ],
       "url": "https://stem2connect-online-hackathon.devpost.com/",
       "country": "Global",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "devpost",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 162529,
@@ -207,10 +166,10 @@
       ],
       "url": "https://codeforces.com/contest/2287",
       "country": "Global",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "codeforces",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 499250,
@@ -228,10 +187,10 @@
       ],
       "url": "https://codeforces.com/contest/2289",
       "country": "Global",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "codeforces",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 267467,
@@ -249,10 +208,10 @@
       ],
       "url": "https://taskforge.devpost.com/",
       "country": "Global",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "devpost",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 893631,
@@ -270,10 +229,10 @@
       ],
       "url": "https://hackathon-agentico-2026b.devpost.com/",
       "country": "Global",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "devpost",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 132941,
@@ -291,10 +250,10 @@
       ],
       "url": "https://hackwithaditya.devpost.com/",
       "country": "Global",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "devpost",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 162759,
@@ -312,10 +271,10 @@
       ],
       "url": "https://code-for-dfw.devpost.com/",
       "country": "Global",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "devpost",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 492012,
@@ -333,31 +292,10 @@
       ],
       "url": "https://build-your-first-ai-app.devpost.com/",
       "country": "Global",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "devpost",
       "verified": true,
-      "checkedAt": "2026-11-16"
-    },
-    {
-      "id": 831703,
-      "name": "BusinessDay Young Economists Writing Challenge 2026 (N450,000 in prizes)",
-      "desc": "Deadline: November 27, 2026 Applications are invited for the BusinessDay Young Economists Writing Challenge 2026. Are you an Economics student with a bold perspective on the issues shaping Nigeria and Africa’s economic future? BusinessDay is inviting the next generation of economists to move beyond the classroom and put their ideas, research and analytical skills to [...]",
-      "prize": "See listing",
-      "deadline": "2026-11-27",
-      "deadlineLabel": "2026-11-27",
-      "type": "competition",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "edtech"
-      ],
-      "url": "https://opportunitydesk.org/2026/11/14/businessday-young-economists-writing-challenge-2026/",
-      "country": "Global",
-      "addedDate": "2026-11-16",
-      "source": "rss",
-      "verified": false,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 198485,
@@ -375,10 +313,10 @@
       ],
       "url": "https://csc-winter-sparkathon.devpost.com/",
       "country": "Global",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "devpost",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 16,
@@ -416,10 +354,10 @@
       ],
       "url": "https://code-for-change-global.devpost.com/",
       "country": "Global",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "devpost",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 581335,
@@ -437,10 +375,31 @@
       ],
       "url": "https://codeforces.com/contest/2286",
       "country": "Global",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "codeforces",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
+    },
+    {
+      "id": 388015,
+      "name": "EJN Story Grants to Report on Mining, Environment and Human Rights in Africa 2027 (up to $2,000)",
+      "desc": "Deadline: December 1, 2026 Applications are open for the EJN Story Grants to Report on Mining, Environment and Human Rights in Africa 2027. EJN is offering reporting grants to journalists in Ghana, DRC, Uganda and South Africa to support the production of in-depth stories on mining, environment and human rights in Africa. They welcome story [...]",
+      "prize": "$2,000",
+      "deadline": "2026-12-01",
+      "deadlineLabel": "2026-12-01",
+      "type": "grant",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://opportunitydesk.org/2026/11/17/ejn-story-grants-to-report-on-mining-environment-and-human-rights-in-africa-2027/",
+      "country": "Global",
+      "addedDate": "2026-11-17",
+      "source": "rss",
+      "verified": false,
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 187987,
@@ -458,52 +417,10 @@
       ],
       "url": "https://ml-build-challenge-4.devpost.com/",
       "country": "Global",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "devpost",
       "verified": true,
-      "checkedAt": "2026-11-16"
-    },
-    {
-      "id": 605639,
-      "name": "Council of Europe Grants for Civil Society Organisations 2026 (up to €20,000)",
-      "desc": "Deadline: December 2, 2026 Applications are open for the Council of Europe Grants for Civil Society Organisations 2026. The Council of Europe’s democratic institutions and civil society division is giving out grants to strengthen democracy and support civil society to engage with the Council of Europe. The grants aim to co-fund projects that: Grant Eligibility [...]",
-      "prize": "€20,000",
-      "deadline": "2026-12-02",
-      "deadlineLabel": "2026-12-02",
-      "type": "grant",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://opportunitydesk.org/2026/11/14/council-of-europe-grants-for-civil-society-organisations-2026/",
-      "country": "Global",
-      "addedDate": "2026-11-16",
-      "source": "rss",
-      "verified": false,
-      "checkedAt": "2026-11-16"
-    },
-    {
-      "id": 484314,
-      "name": "Kiroween 2026",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "$100,000 in prizes",
-      "deadline": "2026-12-04",
-      "deadlineLabel": "2026-12-04",
-      "type": "hackathon",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://kiroween.devpost.com/",
-      "country": "Global",
-      "addedDate": "2026-11-16",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 58977,
@@ -521,10 +438,31 @@
       ],
       "url": "https://launchpad-hacks.devpost.com/",
       "country": "Global",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "devpost",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
+    },
+    {
+      "id": 484314,
+      "name": "Kiroween 2026",
+      "desc": "Global hackathon open worldwide.",
+      "prize": "$100,000 in prizes",
+      "deadline": "2026-12-04",
+      "deadlineLabel": "2026-12-04",
+      "type": "hackathon",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://kiroween.devpost.com/",
+      "country": "Global",
+      "addedDate": "2026-11-17",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 542603,
@@ -542,10 +480,10 @@
       ],
       "url": "https://ai-for-medicine.devpost.com/",
       "country": "Global",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "devpost",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 783297,
@@ -563,10 +501,10 @@
       ],
       "url": "https://deckthepixels.devpost.com/",
       "country": "Global",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "devpost",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 520378,
@@ -584,10 +522,10 @@
       ],
       "url": "https://ese4500f26.devpost.com/",
       "country": "Global",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "devpost",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 120113,
@@ -605,10 +543,10 @@
       ],
       "url": "https://slayy-hacks.devpost.com/",
       "country": "Global",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "devpost",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 832235,
@@ -626,31 +564,10 @@
       ],
       "url": "https://learn-specs.devpost.com/",
       "country": "Global",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "devpost",
       "verified": true,
-      "checkedAt": "2026-11-16"
-    },
-    {
-      "id": 227653,
-      "name": "Digispace Africa Research Fellowship 2027",
-      "desc": "Deadline: December 7, 2026 Are you curious about how technology is shaping Africa’s future? Do you have ideas about digital rights, emerging technologies or the policies affecting our connected societies? Apply for the Digispace Africa Research Fellowship 2027. The Digispace Africa Research Fellowship brings together emerging African researchers, professionals and changemakers to explore digital challenges [...]",
-      "prize": "See listing",
-      "deadline": "2026-12-07",
-      "deadlineLabel": "2026-12-07",
-      "type": "fellowship",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://opportunitydesk.org/2026/11/16/digispace-africa-research-fellowship-2027/",
-      "country": "Global",
-      "addedDate": "2026-11-16",
-      "source": "rss",
-      "verified": false,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 671931,
@@ -668,10 +585,10 @@
       ],
       "url": "https://redditgameofday2026.devpost.com/",
       "country": "Global",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "devpost",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 425912,
@@ -689,10 +606,10 @@
       ],
       "url": "https://codeforces.com/contest/2282",
       "country": "Global",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "codeforces",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 768726,
@@ -710,31 +627,10 @@
       ],
       "url": "https://safespace-hacks.devpost.com/",
       "country": "Global",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "devpost",
       "verified": true,
-      "checkedAt": "2026-11-16"
-    },
-    {
-      "id": 674997,
-      "name": "Peninsula Innovation Hackathon",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "Open prizes",
-      "deadline": "2026-12-10",
-      "deadlineLabel": "2026-12-10",
-      "type": "hackathon",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://peninsula-innovation-hackathon.devpost.com/",
-      "country": "Global",
-      "addedDate": "2026-11-16",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 886622,
@@ -752,10 +648,31 @@
       ],
       "url": "https://green-shift-hacks.devpost.com/",
       "country": "Global",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "devpost",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
+    },
+    {
+      "id": 674997,
+      "name": "Peninsula Innovation Hackathon",
+      "desc": "Global hackathon open worldwide.",
+      "prize": "Open prizes",
+      "deadline": "2026-12-10",
+      "deadlineLabel": "2026-12-10",
+      "type": "hackathon",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://peninsula-innovation-hackathon.devpost.com/",
+      "country": "Global",
+      "addedDate": "2026-11-17",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 615751,
@@ -773,10 +690,10 @@
       ],
       "url": "https://ai-openbuild.devpost.com/",
       "country": "Global",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "devpost",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 529315,
@@ -794,10 +711,31 @@
       ],
       "url": "https://aws-agentic-msp.devpost.com/",
       "country": "Global",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "devpost",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
+    },
+    {
+      "id": 786334,
+      "name": "Relate by Neo4j Hackathon",
+      "desc": "Global hackathon open worldwide.",
+      "prize": "Open prizes",
+      "deadline": "2026-12-11",
+      "deadlineLabel": "2026-12-11",
+      "type": "hackathon",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://relate.devpost.com/",
+      "country": "Global",
+      "addedDate": "2026-11-17",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 761458,
@@ -815,10 +753,10 @@
       ],
       "url": "https://opportunitydesk.org/2026/11/16/arab-american-leadership-program-2027/",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "rss",
       "verified": false,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 20,
@@ -856,10 +794,10 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/361526",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 635032,
@@ -877,10 +815,10 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/352741",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 10,
@@ -919,10 +857,10 @@
       ],
       "url": "https://opportunitydesk.org/2026/11/16/un-fao-award-for-achievement-2027/",
       "country": "Global",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "rss",
       "verified": false,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 13,
@@ -961,10 +899,10 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/364006",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 184883,
@@ -982,10 +920,10 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/334326",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 669169,
@@ -1003,10 +941,10 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/364033",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 835637,
@@ -1024,31 +962,31 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/363510",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
-      "id": 561347,
-      "name": "Global Startup Challenge 2026: $25,000 Prizes + San Francisco Trip ...",
-      "desc": "Apply free to the Hack4Hack Global Startup Challenge 2026 , open to startups from any country. The top 25 pitch online on 15 December, and the top 3 win $12,000, $8,000 and $5,000 and a fully sponsored trip to San Francisco (15-20 January 2027) to meet angel investors. Round 1 closes 30 November 2026 .",
-      "prize": "$25,000",
-      "deadline": "2027-01-20",
-      "deadlineLabel": "2027-01-20",
-      "type": "competition",
+      "id": 45933,
+      "name": "International Court of Justice Judicial Fellowship Programme 2027-2028",
+      "desc": "Deadline: February 5, 2027 Applications are open for the International Court of Justice Judicial Fellowship Programme 2027-2028. The Judicial Fellowship Programme, formerly known as the University Traineeship Programme, was established in 1999 to enable recent law graduates to gain professional experience by working for the International Court of Justice. The programme aims to deepen participants’ [...]",
+      "prize": "See listing",
+      "deadline": "2027-02-05",
+      "deadlineLabel": "2027-02-05",
+      "type": "fellowship",
       "loc": [
         "global"
       ],
       "sector": [
-        "general"
+        "edtech"
       ],
-      "url": "https://hack4hack.com/startup-challenge",
+      "url": "https://opportunitydesk.org/2026/11/16/icj-judicial-fellowship-2027-2028/",
       "country": "Global",
-      "addedDate": "2026-11-16",
-      "source": "search",
+      "addedDate": "2026-11-17",
+      "source": "rss",
       "verified": false,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 747996,
@@ -1068,10 +1006,10 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/364160",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 14,
@@ -1110,10 +1048,10 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/363622",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 643896,
@@ -1131,10 +1069,10 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/357498",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 145318,
@@ -1152,10 +1090,10 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/364255",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 86119,
@@ -1173,10 +1111,10 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/362551",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 18,
@@ -1214,10 +1152,10 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/351947",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 83496,
@@ -1235,10 +1173,10 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/325932",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 474778,
@@ -1256,10 +1194,10 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/324456",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 19,
@@ -1318,10 +1256,10 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/359757",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 778334,
@@ -1339,10 +1277,10 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/359671",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 893151,
@@ -1360,10 +1298,10 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/353413",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 207621,
@@ -1381,10 +1319,31 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/332894",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
+    },
+    {
+      "id": 767064,
+      "name": "National Science Foundation Translation to Practice (NSF TTP)",
+      "desc": "US federal grant from NSF. Opportunity #25-540.",
+      "prize": "Federal grant",
+      "deadline": "2027-05-18",
+      "deadlineLabel": "2027-05-18",
+      "type": "grant",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://www.grants.gov/search-results-detail/359966",
+      "country": "United States",
+      "addedDate": "2026-11-17",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 94575,
@@ -1402,10 +1361,10 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/364244",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 635429,
@@ -1423,10 +1382,10 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/357725",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 72236,
@@ -1444,10 +1403,10 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/357730",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 563235,
@@ -1465,10 +1424,31 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/345241",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
+    },
+    {
+      "id": 77661,
+      "name": "NIH Small Research Grant Program (Parent R03 Clinical Trial Not Allowed)",
+      "desc": "US federal grant from HHS-NIH11. Opportunity #PA-25-302.",
+      "prize": "Federal grant",
+      "deadline": "2028-01-07",
+      "deadlineLabel": "2028-01-07",
+      "type": "grant",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://www.grants.gov/search-results-detail/357805",
+      "country": "United States",
+      "addedDate": "2026-11-17",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 218339,
@@ -1486,10 +1466,10 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/359675",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 119823,
@@ -1507,10 +1487,10 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/359758",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 381068,
@@ -1528,10 +1508,10 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/359669",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 219755,
@@ -1549,10 +1529,10 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/360611",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 682696,
@@ -1570,10 +1550,10 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/358824",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 454414,
@@ -1591,10 +1571,10 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/329436",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 600254,
@@ -1612,10 +1592,10 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/361008",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 769870,
@@ -1633,10 +1613,10 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/360664",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 260735,
@@ -1654,10 +1634,10 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/45810",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 794950,
@@ -1675,10 +1655,10 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/112354",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 688081,
@@ -1696,10 +1676,10 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/350230",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 11,
@@ -1980,48 +1960,6 @@
       "source": "manual"
     },
     {
-      "id": 217468,
-      "name": "Fall 2026 Projects",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "Open prizes",
-      "deadline": "rolling",
-      "deadlineLabel": "Rolling / Open",
-      "type": "hackathon",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://fall-2026-projects.devpost.com/",
-      "country": "Global",
-      "addedDate": "2026-11-16",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-11-16"
-    },
-    {
-      "id": 893460,
-      "name": "Bharat Builds Tour",
-      "desc": "Global hackathon open worldwide.",
-      "prize": "Open prizes",
-      "deadline": "rolling",
-      "deadlineLabel": "Rolling / Open",
-      "type": "hackathon",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://bharat-builds-tour.devpost.com/",
-      "country": "Global",
-      "addedDate": "2026-11-16",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-11-16"
-    },
-    {
       "id": 179915,
       "name": "CRC Hacks",
       "desc": "Global hackathon open worldwide.",
@@ -2037,10 +1975,10 @@
       ],
       "url": "https://crc-student-hackathon.devpost.com/",
       "country": "Global",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "devpost",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 92148,
@@ -2058,10 +1996,10 @@
       ],
       "url": "https://projects-program-fall-2026.devpost.com/",
       "country": "Global",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "devpost",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 32528,
@@ -2079,10 +2017,10 @@
       ],
       "url": "https://ese1110f26.devpost.com/",
       "country": "Global",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "devpost",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 347278,
@@ -2100,10 +2038,10 @@
       ],
       "url": "https://sandbox-test-2.devpost.com/",
       "country": "Global",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "devpost",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 841698,
@@ -2121,10 +2059,10 @@
       ],
       "url": "https://wqcc-qiskit-fall-fest-2026.devpost.com/",
       "country": "Global",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "devpost",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 129485,
@@ -2142,10 +2080,10 @@
       ],
       "url": "https://ubc-hackathon-2026.devpost.com/",
       "country": "Global",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "devpost",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 68809,
@@ -2163,10 +2101,10 @@
       ],
       "url": "https://innovate-in-windsor-hackathon.devpost.com/",
       "country": "Global",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "devpost",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 433379,
@@ -2184,10 +2122,10 @@
       ],
       "url": "https://sq-hacks.devpost.com/",
       "country": "Global",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "devpost",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 527225,
@@ -2205,10 +2143,10 @@
       ],
       "url": "https://tripleh.devpost.com/",
       "country": "Global",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "devpost",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 232645,
@@ -2226,10 +2164,31 @@
       ],
       "url": "https://kuk-virtual-hackathon.devpost.com/",
       "country": "Global",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "devpost",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
+    },
+    {
+      "id": 711836,
+      "name": "Diwali Festiverse: The Agent-to-Agent Hackathon (India Edition)",
+      "desc": "Global hackathon open worldwide.",
+      "prize": "$700 in prizes",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "hackathon",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://theagent-to-agent-hackathon.devpost.com/",
+      "country": "Global",
+      "addedDate": "2026-11-17",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 420889,
@@ -2247,10 +2206,10 @@
       ],
       "url": "https://buildyourownwebsite.devpost.com/",
       "country": "Global",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "devpost",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 164292,
@@ -2268,10 +2227,10 @@
       ],
       "url": "https://firebasehybridaihackathon.devpost.com/",
       "country": "Global",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "devpost",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 884544,
@@ -2289,10 +2248,10 @@
       ],
       "url": "https://305veteransnov2026.devpost.com/",
       "country": "Global",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "devpost",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 597731,
@@ -2310,10 +2269,10 @@
       ],
       "url": "https://idealab-hacks.devpost.com/",
       "country": "Global",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "devpost",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 262488,
@@ -2331,10 +2290,10 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/362086",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 220657,
@@ -2352,10 +2311,10 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/325599",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 285954,
@@ -2373,10 +2332,10 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/336962",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 416033,
@@ -2396,10 +2355,10 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/300997",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 248668,
@@ -2417,10 +2376,10 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/358912",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 617479,
@@ -2438,10 +2397,10 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/358783",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 45417,
@@ -2459,10 +2418,10 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/334905",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 872370,
@@ -2480,10 +2439,10 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/359724",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 91457,
@@ -2501,10 +2460,10 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/352290",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 547082,
@@ -2522,10 +2481,10 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/350831",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 646240,
@@ -2543,10 +2502,10 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/363836",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 661392,
@@ -2564,10 +2523,10 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/327658",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 261848,
@@ -2585,10 +2544,10 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/363966",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 682749,
@@ -2606,10 +2565,10 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/363967",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 412583,
@@ -2627,10 +2586,10 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/362576",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 249607,
@@ -2648,10 +2607,10 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/359156",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 560550,
@@ -2669,10 +2628,10 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/329806",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 107545,
@@ -2690,10 +2649,10 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/360954",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 29049,
@@ -2711,10 +2670,10 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/360643",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 656451,
@@ -2732,10 +2691,10 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/360644",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 871607,
@@ -2753,10 +2712,10 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/363369",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 81093,
@@ -2774,10 +2733,10 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/339728",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 71681,
@@ -2795,10 +2754,10 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/360634",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 314683,
@@ -2816,10 +2775,10 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/360592",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 57819,
@@ -2837,10 +2796,10 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/363944",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 59756,
@@ -2858,10 +2817,10 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/359266",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 707560,
@@ -2879,10 +2838,10 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/336244",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 444950,
@@ -2900,10 +2859,10 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/353475",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 29139,
@@ -2921,10 +2880,10 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/360585",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 322708,
@@ -2942,10 +2901,10 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/360584",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 30569,
@@ -2963,10 +2922,10 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/333638",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 301129,
@@ -2984,10 +2943,10 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/363242",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 668535,
@@ -3005,10 +2964,10 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/363169",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 427257,
@@ -3026,10 +2985,10 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/363049",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 394286,
@@ -3047,10 +3006,10 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/360183",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 763226,
@@ -3068,10 +3027,10 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/361522",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 474884,
@@ -3089,10 +3048,10 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/356837",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 592446,
@@ -3110,10 +3069,10 @@
       ],
       "url": "https://www.grants.gov/search-results-detail/361317",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "grantsgov",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 779416,
@@ -3131,10 +3090,10 @@
       ],
       "url": "https://www.ycombinator.com/apply",
       "country": "Global",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "curated",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 719530,
@@ -3152,10 +3111,10 @@
       ],
       "url": "https://www.techstars.com/apply",
       "country": "Global",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "curated",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 330862,
@@ -3173,10 +3132,10 @@
       ],
       "url": "https://www.antler.co/apply",
       "country": "Global",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "curated",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 252186,
@@ -3194,10 +3153,10 @@
       ],
       "url": "https://www.nvidia.com/en-us/startups/",
       "country": "Global",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "curated",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 103495,
@@ -3215,10 +3174,10 @@
       ],
       "url": "https://aws.amazon.com/activate/",
       "country": "Global",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "curated",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 499007,
@@ -3236,10 +3195,10 @@
       ],
       "url": "https://cloud.google.com/startup",
       "country": "Global",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "curated",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 157650,
@@ -3257,10 +3216,10 @@
       ],
       "url": "https://seedfund.nsf.gov/",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "curated",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 17814,
@@ -3278,10 +3237,10 @@
       ],
       "url": "https://startupbangladesh.gov.bd/",
       "country": "Bangladesh",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "curated",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 477227,
@@ -3299,10 +3258,31 @@
       ],
       "url": "https://idea.gov.bd/",
       "country": "Bangladesh",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "curated",
       "verified": true,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
+    },
+    {
+      "id": 182950,
+      "name": "Zoom AI Launchpad Startup Grants 2027",
+      "desc": "Deadline: On Rolling Basis Applications are open for the Zoom AI Launchpad Startup Grants 2027. AI Launchpad is a grant program designed for startups building innovative products powered by artificial intelligence. They provide the resources you need to move fast, ship early, and scale confidently — including access to Zoom’s full suite of AI Services [...]",
+      "prize": "See listing",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "grant",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "ai"
+      ],
+      "url": "https://opportunitydesk.org/2026/11/16/zoom-ai-launchpad-startup-grants-2027/",
+      "country": "Global",
+      "addedDate": "2026-11-17",
+      "source": "rss",
+      "verified": false,
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 710486,
@@ -3320,10 +3300,10 @@
       ],
       "url": "https://grantsdatabase.org/2026/11/16/borno-e61-million-peacebuilding-ngo-funding-transparency/",
       "country": "Global",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "rss",
       "verified": false,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 494231,
@@ -3341,10 +3321,10 @@
       ],
       "url": "https://grantsdatabase.org/2026/11/09/bhcpf-nigeria-health-fund-releases-clinic-payments-2026/",
       "country": "Global",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "rss",
       "verified": false,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 503006,
@@ -3362,10 +3342,10 @@
       ],
       "url": "https://grantsdatabase.org/2026/11/06/grant-proposal-review-checklist-before-submission/",
       "country": "Global",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "rss",
       "verified": false,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 699748,
@@ -3383,10 +3363,10 @@
       ],
       "url": "https://grantsdatabase.org/2026/10/30/how-hubs-accelerators-help-members-access-funding/",
       "country": "Global",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "rss",
       "verified": false,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 207125,
@@ -3404,10 +3384,10 @@
       ],
       "url": "https://grantsdatabase.org/2026/10/30/grant-eligibility-vs-fit-vs-readiness/",
       "country": "Global",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "rss",
       "verified": false,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 811793,
@@ -3425,31 +3405,10 @@
       ],
       "url": "https://www.startupurban.com/us-startup-grants-non-dilutive-funding-2026/",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "search",
       "verified": false,
-      "checkedAt": "2026-11-16"
-    },
-    {
-      "id": 652288,
-      "name": "Top US Startup Grants & Non-Dilutive Funding Options for 2026",
-      "desc": "This grant opportunity provides funding options for US startups in 2026 , including SBIR/STTR changes, state programs, tax credits, and application tips. It is open to various types of startups seeking non-dilutive funding.",
-      "prize": "See listing",
-      "deadline": "rolling",
-      "deadlineLabel": "Rolling / Open",
-      "type": "grant",
-      "loc": [
-        "national"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://www.boostgrant.com/grants/learn/top-us-startup-grants-amp-non-dilutive-funding-options-for-2026",
-      "country": "United States",
-      "addedDate": "2026-11-16",
-      "source": "search",
-      "verified": false,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 548232,
@@ -3467,10 +3426,10 @@
       ],
       "url": "https://grantprobe.com/articles/grants-for-startups",
       "country": "United States",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "search",
       "verified": false,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 476805,
@@ -3488,10 +3447,73 @@
       ],
       "url": "https://creditforstartups.com/resources/tech-startup-grants",
       "country": "Global",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "search",
       "verified": false,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
+    },
+    {
+      "id": 413001,
+      "name": "US Startup Funding Schemes and Grants in 2026: The Complete Guide to ...",
+      "desc": "Contents Access to non-dilutive capital is one of the most significant advantages available to US-based founders in 2026 . Federal and state grant programs collectively distribute billions of dollars each year to startups working on technology, research, clean energy, manufacturing, and more.",
+      "prize": "See listing",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "grant",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "climate"
+      ],
+      "url": "https://beststartup.us/us-startup-funding-grants-schemes-2026/",
+      "country": "Global",
+      "addedDate": "2026-11-17",
+      "source": "search",
+      "verified": false,
+      "checkedAt": "2026-11-17"
+    },
+    {
+      "id": 580074,
+      "name": "Non-Dilutive Funding for Startups — Complete Guide (2026)",
+      "desc": "The non-dilutive funding landscape has expanded dramatically, with the federal government alone distributing over $4 billion annually through SBIR and STTR programs, and private foundations, corporate grant programs, and state economic development agencies adding billions more.",
+      "prize": "$4",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "grant",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://bootstrapdirectory.com/non-dilutive-funding",
+      "country": "United States",
+      "addedDate": "2026-11-17",
+      "source": "search",
+      "verified": false,
+      "checkedAt": "2026-11-17"
+    },
+    {
+      "id": 546815,
+      "name": "Startup Competition - Arch Grants",
+      "desc": "The Arch Grants Startup Competition awards innovative, scalable, and job-creating startups with $75,000 non-dilutive grants (plus an additional $25,000 for companies relocating to St. Louis) and access to an ecosystem of resources in exchange for headquartering their business in St. Louis for at least one year.",
+      "prize": "$75,000",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "grant",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "http://archgrants.org/programs/startup-competition/",
+      "country": "Global",
+      "addedDate": "2026-11-17",
+      "source": "search",
+      "verified": false,
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 752265,
@@ -3509,36 +3531,15 @@
       ],
       "url": "https://startupmaphub.com/guide/startup-grants-2026-us-founders",
       "country": "Global",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "search",
       "verified": false,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
-      "id": 174407,
-      "name": "Best Startup Business Grants in 2026 (US)",
-      "desc": "Home › Guides › Best Startup Grants US small business funding Best Small Business Grants for Startups ( 2026 Guide) Most non-dilutive startup grants in the US come through three channels: federal R&D grants (SBIR/STTR, up to $305K Phase I), state seed and innovation funds tied to R&D or technology commercialization, and private pitch competitions. Check your startup's eligibility across all ...",
-      "prize": "$305K",
-      "deadline": "rolling",
-      "deadlineLabel": "Rolling / Open",
-      "type": "grant",
-      "loc": [
-        "national"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://grantcompass.co/best-small-business-grants-for-startups",
-      "country": "United States",
-      "addedDate": "2026-11-16",
-      "source": "search",
-      "verified": false,
-      "checkedAt": "2026-11-16"
-    },
-    {
-      "id": 538139,
-      "name": "Top Grants for Startups in 2026: The Complete Guide to Early-Stage ...",
-      "desc": "What Types of Grants Are Best for Startups Seeking Early-Stage Funding? Discover the top 2026 startup grants in our expert guide and secure non-dilutive capital now.",
+      "id": 366425,
+      "name": "Non-Dilutive Funding - Startup Fund Hub",
+      "desc": "Search our self-service subscription database for the latest in non-dilutive funding opportunities. Gain immediate access to active, pre-screened funding opportunities for small businesses. We actively collect private, corporate, government grants , pitch competitions, accelerators, and more for all small businesses, all in one place.",
       "prize": "See listing",
       "deadline": "rolling",
       "deadlineLabel": "Rolling / Open",
@@ -3549,159 +3550,54 @@
       "sector": [
         "general"
       ],
-      "url": "https://grants.com/top-grants-for-startups-in-2026-the-complete-guide-to-early-stage-funding-success/",
+      "url": "https://www.startupfundhub.com/",
       "country": "Global",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "search",
       "verified": false,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
-      "id": 553441,
-      "name": "Startup Grants 2026: Government Funding for New Businesses",
-      "desc": "How startups can get federal government grants in 2026 — SBIR Phase I, NSF I-Corps, DOE ARPA-E, and state startup grant programs for new innovative businesses.",
+      "id": 236814,
+      "name": "10 Startup Grants and Non-Dilutive Funding Sources",
+      "desc": "Free money exists. Here are grants and non-dilutive funding options for startups , with eligibility requirements and how to apply.",
       "prize": "See listing",
       "deadline": "rolling",
       "deadlineLabel": "Rolling / Open",
       "type": "grant",
-      "loc": [
-        "national"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://grantmetric.com/insights/startup-grants-2026",
-      "country": "United States",
-      "addedDate": "2026-11-16",
-      "source": "search",
-      "verified": false,
-      "checkedAt": "2026-11-16"
-    },
-    {
-      "id": 879215,
-      "name": "Government Grants for Startups 2026 - Free Startup Funding",
-      "desc": "Government Grants for Startups 2026 Find non-dilutive government funding for your startup : SBIR, STTR, and other federal grant programs that don't require equity or repayment.",
-      "prize": "See listing",
-      "deadline": "rolling",
-      "deadlineLabel": "Rolling / Open",
-      "type": "grant",
-      "loc": [
-        "national"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://freestartupfunding.com/grants",
-      "country": "United States",
-      "addedDate": "2026-11-16",
-      "source": "search",
-      "verified": false,
-      "checkedAt": "2026-11-16"
-    },
-    {
-      "id": 423919,
-      "name": "Best Startup Grants and Non-Dilutive Funding Sources in 2026",
-      "desc": "SBIR, EIC Accelerator, cloud credits, and mission grants : the best non-dilutive funding programs available to startup founders in 2026 , with amounts and eligibility.",
-      "prize": "See listing",
-      "deadline": "rolling",
-      "deadlineLabel": "Rolling / Open",
-      "type": "grant",
-      "loc": [
-        "national"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://www.pitchwise.se/blog/best-startup-grants-non-dilutive-funding",
-      "country": "United States",
-      "addedDate": "2026-11-16",
-      "source": "search",
-      "verified": false,
-      "checkedAt": "2026-11-16"
-    },
-    {
-      "id": 141900,
-      "name": "HLTH USA 2026 Startup Pitch Competitions | Las Vegas",
-      "desc": "Pitch at HLTH USA 2026 . 4 Categories. Women's Health, Health Equity, AgeTech, and the main HLTH USA Pitch Competition ! Apply by June 26.",
-      "prize": "See listing",
-      "deadline": "rolling",
-      "deadlineLabel": "Rolling / Open",
-      "type": "competition",
-      "loc": [
-        "national"
-      ],
-      "sector": [
-        "women"
-      ],
-      "url": "https://hlth.com/events/usa/agenda/startup-pitch/",
-      "country": "United States",
-      "addedDate": "2026-11-16",
-      "source": "search",
-      "verified": false,
-      "checkedAt": "2026-11-16"
-    },
-    {
-      "id": 773256,
-      "name": "Pitch Competition 2026 | Elevate Your Startup - Apply Today — SENT Network",
-      "desc": "Join the SENT Pitch Competition 2026 to showcase faith-driven startups , connect with investors, and win cash and in-kind prizes at the SENT Summit.",
-      "prize": "See listing",
-      "deadline": "rolling",
-      "deadlineLabel": "Rolling / Open",
-      "type": "competition",
       "loc": [
         "global"
       ],
       "sector": [
         "general"
       ],
-      "url": "https://www.sentventures.com/pitch-2026",
+      "url": "https://www.foundra.ai/key-reads/startup-grants-non-dilutive-funding",
       "country": "Global",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "search",
       "verified": false,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
-      "id": 598820,
-      "name": "Get funding and prizes from 2026 startup competitions | F6S Startup ...",
-      "desc": "Find and enter top 2026 startup competitions , funding competitions , pitch contests, business plan competitions to get prizes , increase awareness and win money",
+      "id": 437250,
+      "name": "Startups - Virginia Innovation Partnership Corporation",
+      "desc": "VIPC's Launch program provides competitive, non-dilutive grants and dilutive convertible notes to high-potential, pre-MVP (minimum viable product) startups that have raised minimal equity, generated limited revenue, and demonstrate strong potential for economic impact in Virginia. VIPC plans to issue quarterly solicitations for Launch Grants .",
       "prize": "See listing",
       "deadline": "rolling",
       "deadlineLabel": "Rolling / Open",
-      "type": "competition",
+      "type": "grant",
       "loc": [
         "global"
       ],
       "sector": [
         "general"
       ],
-      "url": "https://www.f6s.com/contests",
+      "url": "https://vipc.org/funding/startups/",
       "country": "Global",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "search",
       "verified": false,
-      "checkedAt": "2026-11-16"
-    },
-    {
-      "id": 836181,
-      "name": "Startup Pitch Competitions 2026 — Pitch for Funding & Prizes | Hack4Hack",
-      "desc": "Startup pitch competitions in 2026 for student founders and early-stage startups : pitch online to founders and investors for cash prizes and funding. Free to enter, open to all.",
-      "prize": "See listing",
-      "deadline": "rolling",
-      "deadlineLabel": "Rolling / Open",
-      "type": "competition",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "edtech"
-      ],
-      "url": "https://hack4hack.com/startup-pitch-competitions",
-      "country": "Global",
-      "addedDate": "2026-11-16",
-      "source": "search",
-      "verified": false,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 699533,
@@ -3719,10 +3615,52 @@
       ],
       "url": "https://www.alibabacocreate.com/pitch",
       "country": "Global",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "search",
       "verified": false,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
+    },
+    {
+      "id": 141900,
+      "name": "HLTH USA 2026 Startup Pitch Competitions | Las Vegas",
+      "desc": "Pitch at HLTH USA 2026 . 4 Categories. Women's Health, Health Equity, AgeTech, and the main HLTH USA Pitch Competition ! Apply by June 26.",
+      "prize": "See listing",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "competition",
+      "loc": [
+        "national"
+      ],
+      "sector": [
+        "women"
+      ],
+      "url": "https://hlth.com/events/usa/agenda/startup-pitch/",
+      "country": "United States",
+      "addedDate": "2026-11-17",
+      "source": "search",
+      "verified": false,
+      "checkedAt": "2026-11-17"
+    },
+    {
+      "id": 773256,
+      "name": "Pitch Competition 2026 | Elevate Your Startup - Apply Today — SENT Network",
+      "desc": "Join the SENT Pitch Competition 2026 to showcase faith-driven startups , connect with investors, and win cash and in-kind prizes at the SENT Summit.",
+      "prize": "See listing",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "competition",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://www.sentventures.com/pitch-2026",
+      "country": "Global",
+      "addedDate": "2026-11-17",
+      "source": "search",
+      "verified": false,
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 679071,
@@ -3740,15 +3678,36 @@
       ],
       "url": "https://constructionstartupcompetition.tech/",
       "country": "Global",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "search",
       "verified": false,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
-      "id": 854726,
-      "name": "The Top 40 Startup Pitch Competitions of 2026 | GrowthMentor",
-      "desc": "The top 40 startup pitch competitions of 2026 A hand-picked, fact-checked list of the 40 best startup pitch competitions running in 2026 , each with its location, dates, cost to enter, industry focus, and an honest read on what you can actually win, because a lot of these prizes are not the cash they look like.",
+      "id": 836181,
+      "name": "Startup Pitch Competitions 2026 — Pitch for Funding & Prizes | Hack4Hack",
+      "desc": "Startup pitch competitions in 2026 for student founders and early-stage startups : pitch online to founders and investors for cash prizes and funding. Free to enter, open to all.",
+      "prize": "See listing",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "competition",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "edtech"
+      ],
+      "url": "https://hack4hack.com/startup-pitch-competitions",
+      "country": "Global",
+      "addedDate": "2026-11-17",
+      "source": "search",
+      "verified": false,
+      "checkedAt": "2026-11-17"
+    },
+    {
+      "id": 452058,
+      "name": "Startup competitions 2026: how they work and how to apply - Hack4Hack",
+      "desc": "How startup competitions and pitch competitions work in 2026 : rounds, fees, judging, prizes and equity, plus a step-by-step guide to applying and getting into the top 25.",
       "prize": "See listing",
       "deadline": "rolling",
       "deadlineLabel": "Rolling / Open",
@@ -3759,12 +3718,12 @@
       "sector": [
         "general"
       ],
-      "url": "https://www.growthmentor.com/blog/startup-pitch-competitions",
+      "url": "https://hack4hack.com/guides/startup-competitions-2026",
       "country": "Global",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "search",
       "verified": false,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 357655,
@@ -3782,31 +3741,94 @@
       ],
       "url": "https://www.flagshipenterprise.org/pitch2026",
       "country": "Global",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "search",
       "verified": false,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
-      "id": 252881,
-      "name": "Pitch Competitions in NYC: The 2026-27 List — Startup Valley",
-      "desc": "Fourteen New York pitch competitions and demo days, every one re-checked in November 2026 . Prize checks from $15K to $75K, plus $200K+ university purses and $220K accelerator checks, who can actually enter each one, and the closing date on every application window.",
-      "prize": "$15K",
+      "id": 854726,
+      "name": "The Top 40 Startup Pitch Competitions of 2026 | GrowthMentor",
+      "desc": "The top 40 startup pitch competitions of 2026 A hand-picked, fact-checked list of the 40 best startup pitch competitions running in 2026 , each with its location, dates, cost to enter, industry focus, and an honest read on what you can actually win, because a lot of these prizes are not the cash they look like.",
+      "prize": "See listing",
       "deadline": "rolling",
       "deadlineLabel": "Rolling / Open",
       "type": "competition",
       "loc": [
-        "national"
+        "global"
       ],
       "sector": [
-        "edtech"
+        "general"
       ],
-      "url": "https://startupvalley.club/blog/nyc-pitch-competitions-2026",
-      "country": "United States",
-      "addedDate": "2026-11-16",
+      "url": "https://www.growthmentor.com/blog/startup-pitch-competitions",
+      "country": "Global",
+      "addedDate": "2026-11-17",
       "source": "search",
       "verified": false,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
+    },
+    {
+      "id": 598820,
+      "name": "Get funding and prizes from 2026 startup competitions | F6S Startup ...",
+      "desc": "Find and enter top 2026 startup competitions , funding competitions , pitch contests, business plan competitions to get prizes , increase awareness and win money",
+      "prize": "See listing",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "competition",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://www.f6s.com/contests",
+      "country": "Global",
+      "addedDate": "2026-11-17",
+      "source": "search",
+      "verified": false,
+      "checkedAt": "2026-11-17"
+    },
+    {
+      "id": 582173,
+      "name": "Apply to Pitch at GrowTECH FEST 2026 — Startup Folsom",
+      "desc": "Northern California startups can apply to pitch at GrowTECH FEST 2026 in Chico. Gain exposure, meet investors, and compete for cash prizes .",
+      "prize": "See listing",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "competition",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://www.startupfolsom.org/blog/apply-to-pitch-at-growtech-fest-2026",
+      "country": "Global",
+      "addedDate": "2026-11-17",
+      "source": "search",
+      "verified": false,
+      "checkedAt": "2026-11-17"
+    },
+    {
+      "id": 753954,
+      "name": "Startup Accelerator Application Deadlines (November 2026)",
+      "desc": "14 upcoming startup accelerator deadlines, plus the application cycle for all 118 programs in our directory: YC, Techstars, and more. Updated November 2026 .",
+      "prize": "See listing",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "competition",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://xraze.ai/accelerator-deadlines",
+      "country": "Global",
+      "addedDate": "2026-11-17",
+      "source": "search",
+      "verified": false,
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 343281,
@@ -3824,10 +3846,10 @@
       ],
       "url": "https://startupmaphub.com/funding/accelerators",
       "country": "Global",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "search",
       "verified": false,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 300212,
@@ -3845,10 +3867,10 @@
       ],
       "url": "https://founderstoday.org/startup-accelerators-2026",
       "country": "Global",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "search",
       "verified": false,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 732453,
@@ -3866,10 +3888,31 @@
       ],
       "url": "https://www.techloy.com/startup-accelerators-open-applications-2026/",
       "country": "Global",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "search",
       "verified": false,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
+    },
+    {
+      "id": 281743,
+      "name": "Apply to top startup accelerators in 2026 - F6S",
+      "desc": "Find the best 2026 startup accelerators for your market, stage and area to raise money, grow, get grants & corporate contracts",
+      "prize": "See listing",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "grant",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://www.f6s.com/accelerators",
+      "country": "Global",
+      "addedDate": "2026-11-17",
+      "source": "search",
+      "verified": false,
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 347995,
@@ -3887,73 +3930,10 @@
       ],
       "url": "https://foundercal.org/",
       "country": "Global",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "search",
       "verified": false,
-      "checkedAt": "2026-11-16"
-    },
-    {
-      "id": 281743,
-      "name": "Apply to top startup accelerators in 2026 - F6S",
-      "desc": "Discover top startup accelerators tailored to your market, stage, and area to secure funding, grow, and access grants or corporate contracts.",
-      "prize": "See listing",
-      "deadline": "rolling",
-      "deadlineLabel": "Rolling / Open",
-      "type": "grant",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://www.f6s.com/accelerators",
-      "country": "Global",
-      "addedDate": "2026-11-16",
-      "source": "search",
-      "verified": false,
-      "checkedAt": "2026-11-16"
-    },
-    {
-      "id": 198983,
-      "name": "Accelerator application deadlines calendar | Accelerator Atlas",
-      "desc": "Upcoming US startup accelerator application windows. Confirmed dates, expected windows, and rolling programs , filterable by vertical and terms, with per-vertical ICS feeds.",
-      "prize": "See listing",
-      "deadline": "rolling",
-      "deadlineLabel": "Rolling / Open",
-      "type": "competition",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://acceleratoratlas.com/deadlines",
-      "country": "Global",
-      "addedDate": "2026-11-16",
-      "source": "search",
-      "verified": false,
-      "checkedAt": "2026-11-16"
-    },
-    {
-      "id": 77488,
-      "name": "564 Startup Accelerators Accepting Applications (Nov 2026)",
-      "desc": "564 startup accelerators verified as accepting applications — 31 with published deadlines, 348 rolling. Checked Nov 2026 against each program's website.",
-      "prize": "See listing",
-      "deadline": "rolling",
-      "deadlineLabel": "Rolling / Open",
-      "type": "competition",
-      "loc": [
-        "global"
-      ],
-      "sector": [
-        "general"
-      ],
-      "url": "https://www.startersss.com/accelerators/open-applications",
-      "country": "Global",
-      "addedDate": "2026-11-16",
-      "source": "search",
-      "verified": false,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
       "id": 778871,
@@ -3971,15 +3951,15 @@
       ],
       "url": "https://www.techstars.com/blog/program-news/applications-are-now-open-for-techstars-spring-2026-accelerator-programs",
       "country": "Global",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "search",
       "verified": false,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
     },
     {
-      "id": 449970,
-      "name": "Accelerator Atlas: verified US startup accelerator directory",
-      "desc": "A verified directory of US vertical-specific startup accelerators . Compare check sizes, equity, and application deadlines, each shown with its source and the date we checked.",
+      "id": 211176,
+      "name": "Top Startup Accelerator Programs for Founders in 2026",
+      "desc": "Top Startup Accelerator Programs for Founders in 2026 Explore the best startup accelerator programs of 2026 . Compare YC, Techstars, and more on funding, equity, and perks to find the right fit for your company.",
       "prize": "See listing",
       "deadline": "rolling",
       "deadlineLabel": "Rolling / Open",
@@ -3990,12 +3970,54 @@
       "sector": [
         "general"
       ],
-      "url": "https://acceleratoratlas.com/",
+      "url": "https://creditforstartups.com/resources/startup-accelerator-programs",
       "country": "Global",
-      "addedDate": "2026-11-16",
+      "addedDate": "2026-11-17",
       "source": "search",
       "verified": false,
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-17"
+    },
+    {
+      "id": 77488,
+      "name": "564 Startup Accelerators Accepting Applications (Nov 2026)",
+      "desc": "564 startup accelerators verified as accepting applications — 31 with published deadlines, 348 rolling. Checked Nov 2026 against each program's website.",
+      "prize": "See listing",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "competition",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://www.startersss.com/accelerators/open-applications",
+      "country": "Global",
+      "addedDate": "2026-11-17",
+      "source": "search",
+      "verified": false,
+      "checkedAt": "2026-11-17"
+    },
+    {
+      "id": 198983,
+      "name": "Accelerator application deadlines calendar | Accelerator Atlas",
+      "desc": "Upcoming US startup accelerator application windows. Confirmed dates, expected windows, and rolling programs , filterable by vertical and terms, with per-vertical ICS feeds.",
+      "prize": "See listing",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling / Open",
+      "type": "competition",
+      "loc": [
+        "global"
+      ],
+      "sector": [
+        "general"
+      ],
+      "url": "https://acceleratoratlas.com/deadlines",
+      "country": "Global",
+      "addedDate": "2026-11-17",
+      "source": "search",
+      "verified": false,
+      "checkedAt": "2026-11-17"
     }
   ]
 }

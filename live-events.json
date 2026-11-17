@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-16T17:51:50.937046+00:00",
+  "updated": "2026-11-17T17:19:36.384772+00:00",
   "count": 120,
   "verifiedCount": 120,
   "policy": "verified-only · persistent",
@@ -10,26 +10,10 @@
     "Grants.gov: 80",
     "Codeforces: 5",
     "Curated: 10",
-    "RSS: 13",
-    "Search: 29"
+    "RSS: 11",
+    "Search: 30"
   ],
   "opportunities": [
-    {
-      "title": "Learn AR with SPECS",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "Devpost",
-      "amt": "$2,500 in prizes",
-      "deadline": "2026-11-09",
-      "elig": "Open — see official listing",
-      "link": "https://learn-specs.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/541/121/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-10-21",
-      "liveAPI": true
-    },
     {
       "title": "Limited Competition: NIH Research Evaluation and Commercialization Hubs (REACH) (SB0 Clinical Trial Optional)",
       "type": "Grant",
@@ -687,6 +671,22 @@
       "liveAPI": true
     },
     {
+      "title": "Learn AR with SPECS",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "Devpost",
+      "amt": "$2,500 in prizes",
+      "deadline": "2026-12-07",
+      "elig": "Open — see official listing",
+      "link": "https://learn-specs.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/837/067/datas/medium_square.png",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-11-17",
+      "liveAPI": true
+    },
+    {
       "title": "Reddit’s Game of the Day Hackathon",
       "type": "Hackathon",
       "country": "Global",
@@ -748,6 +748,22 @@
       "source": "devpost",
       "verified": true,
       "checkedAt": "2026-11-03",
+      "liveAPI": true
+    },
+    {
+      "title": "Relate by Neo4j Hackathon",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "Neo4j",
+      "amt": "Open prizes",
+      "deadline": "2026-12-11",
+      "elig": "Open — see official listing",
+      "link": "https://relate.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/838/437/datas/medium_square.png",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-11-17",
       "liveAPI": true
     },
     {
@@ -1913,22 +1929,6 @@
       "link": "https://codecoogsxcenterpointhackathon.devpost.com/",
       "desc": "Global hackathon open worldwide.",
       "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/853/579/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-11-13",
-      "liveAPI": true
-    },
-    {
-      "title": "Hackperimeter",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "Georgia State University",
-      "amt": "$1,000 in prizes",
-      "deadline": null,
-      "elig": "Open — see official listing",
-      "link": "https://hackperimeter.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/534/551/datas/medium_square.png",
       "source": "devpost",
       "verified": true,
       "checkedAt": "2026-11-13",
