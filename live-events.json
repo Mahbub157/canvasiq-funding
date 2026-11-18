@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-17T17:19:36.384772+00:00",
+  "updated": "2026-11-18T16:54:26.559619+00:00",
   "count": 120,
   "verifiedCount": 120,
   "policy": "verified-only · persistent",
@@ -10,58 +10,10 @@
     "Grants.gov: 80",
     "Codeforces: 5",
     "Curated: 10",
-    "RSS: 11",
-    "Search: 30"
+    "RSS: 12",
+    "Search: 19"
   ],
   "opportunities": [
-    {
-      "title": "Limited Competition: NIH Research Evaluation and Commercialization Hubs (REACH) (SB0 Clinical Trial Optional)",
-      "type": "Grant",
-      "country": "United States",
-      "org": "National Institutes of Health",
-      "amt": "Federal grant",
-      "deadline": "2026-11-10",
-      "elig": "Open — see official listing",
-      "link": "https://www.grants.gov/search-results-detail/362965",
-      "desc": "US federal grant from HHS-NIH11. Opportunity #RFA-OD-27-009.",
-      "img": "",
-      "source": "grantsgov",
-      "verified": true,
-      "checkedAt": "2026-09-25",
-      "liveAPI": true
-    },
-    {
-      "title": "Herhack",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "Echelon institute of technology",
-      "amt": "$200,000 in prizes",
-      "deadline": "2026-11-10",
-      "elig": "Open — see official listing",
-      "link": "https://herhack.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/553/888/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-10-23",
-      "liveAPI": true
-    },
-    {
-      "title": "DATANOVA 2026 GLOBAL DATA-THON",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "DataNova",
-      "amt": "$1,750 in prizes",
-      "deadline": "2026-11-10",
-      "elig": "Open — see official listing",
-      "link": "https://datanova-2026-global-data-thon.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/708/795/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-10-26",
-      "liveAPI": true
-    },
     {
       "title": "PayPal AI Hackathon",
       "type": "Hackathon",
@@ -412,6 +364,22 @@
       "source": "devpost",
       "verified": true,
       "checkedAt": "2026-10-27",
+      "liveAPI": true
+    },
+    {
+      "title": "Codeforces Round 1137 (Div. 2)",
+      "type": "Competition",
+      "country": "Global",
+      "org": "Codeforces",
+      "amt": "Rating + recognition",
+      "deadline": "2026-11-22",
+      "elig": "Open — see official listing",
+      "link": "https://codeforces.com/contest/2289",
+      "desc": "Competitive programming contest on Codeforces, open to everyone. Great for students sharpening problem-solving and global ranking.",
+      "img": "",
+      "source": "codeforces",
+      "verified": true,
+      "checkedAt": "2026-11-18",
       "liveAPI": true
     },
     {
@@ -1932,6 +1900,38 @@
       "source": "devpost",
       "verified": true,
       "checkedAt": "2026-11-13",
+      "liveAPI": true
+    },
+    {
+      "title": "GWC Projects Program Fall 2026",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "Girls Who Code UCF",
+      "amt": "Open prizes",
+      "deadline": null,
+      "elig": "Open — see official listing",
+      "link": "https://projects-program-fall-2026.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/830/152/datas/medium_square.png",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-11-18",
+      "liveAPI": true
+    },
+    {
+      "title": "ESE1110 Fall 2026",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "UPenn ESE",
+      "amt": "Open prizes",
+      "deadline": null,
+      "elig": "Open — see official listing",
+      "link": "https://ese1110f26.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "https://assets.devpost.com/assets/defaults/thumbnail-placeholder-8c916ef4da99a222ce6ece077c71c7e282f071f830747b2abb5718018cbfa699.gif",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-11-18",
       "liveAPI": true
     }
   ]
