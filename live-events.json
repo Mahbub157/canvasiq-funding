@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-19T17:00:49.228669+00:00",
+  "updated": "2026-11-20T16:39:23.248092+00:00",
   "count": 120,
   "verifiedCount": 120,
   "policy": "verified-only · persistent",
@@ -7,45 +7,13 @@
     "Devpost: 40",
     "Challenge.gov: 0",
     "HeroX: 0",
-    "Grants.gov: 0",
+    "Grants.gov: 80",
     "Codeforces: 5",
     "Curated: 10",
-    "RSS: 9",
-    "Search: 38"
+    "RSS: 11",
+    "Search: 30"
   ],
   "opportunities": [
-    {
-      "title": "PayPal AI Hackathon",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "PayPal",
-      "amt": "$67,500 in prizes",
-      "deadline": "2026-11-12",
-      "elig": "Open — see official listing",
-      "link": "https://paypalaihackathon.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/288/985/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-10-05",
-      "liveAPI": true
-    },
-    {
-      "title": "Codeforces Round 1134 (Div. 4)",
-      "type": "Competition",
-      "country": "Global",
-      "org": "Codeforces",
-      "amt": "Rating + recognition",
-      "deadline": "2026-11-12",
-      "elig": "Open — see official listing",
-      "link": "https://codeforces.com/contest/2290",
-      "desc": "Competitive programming contest on Codeforces, open to everyone. Great for students sharpening problem-solving and global ranking.",
-      "img": "",
-      "source": "codeforces",
-      "verified": true,
-      "checkedAt": "2026-11-07",
-      "liveAPI": true
-    },
     {
       "title": "DSH Hacks V2 ($100k+ in prizes!)",
       "type": "Hackathon",
@@ -892,6 +860,22 @@
       "source": "grantsgov",
       "verified": true,
       "checkedAt": "2026-08-31",
+      "liveAPI": true
+    },
+    {
+      "title": "FY 2027 Build to Scale Notice of Funding Opportunity",
+      "type": "Grant",
+      "country": "United States",
+      "org": "Economic Development Administration",
+      "amt": "Federal grant",
+      "deadline": "2027-02-26",
+      "elig": "Open — see official listing",
+      "link": "https://www.grants.gov/search-results-detail/364206",
+      "desc": "US federal grant from DOC-EDA. Opportunity #EDA-B2S-2027.",
+      "img": "",
+      "source": "grantsgov",
+      "verified": true,
+      "checkedAt": "2026-11-20",
       "liveAPI": true
     },
     {
@@ -1932,6 +1916,22 @@
       "source": "devpost",
       "verified": true,
       "checkedAt": "2026-11-18",
+      "liveAPI": true
+    },
+    {
+      "title": "University Blockchain Conference Hackathon 2026",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "college.xyz",
+      "amt": "$22,000 in prizes",
+      "deadline": null,
+      "elig": "Open — see official listing",
+      "link": "https://ubc-hackathon-2026.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/585/747/datas/medium_square.png",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-11-20",
       "liveAPI": true
     }
   ]
