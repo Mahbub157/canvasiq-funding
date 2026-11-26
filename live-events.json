@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-25T18:22:50.929204+00:00",
+  "updated": "2026-11-26T18:04:42.239481+00:00",
   "count": 120,
   "verifiedCount": 120,
   "policy": "verified-only · persistent",
@@ -10,26 +10,10 @@
     "Grants.gov: 80",
     "Codeforces: 5",
     "Curated: 10",
-    "RSS: 12",
+    "RSS: 10",
     "Search: 0"
   ],
   "opportunities": [
-    {
-      "title": "Meta VR Start Developer Competition 2026",
-      "type": "Hackathon",
-      "country": "Global",
-      "org": "Meta",
-      "amt": "$1,000,000 in prizes",
-      "deadline": "2026-11-18",
-      "elig": "Open — see official listing",
-      "link": "https://start-developer-competition-26.devpost.com/",
-      "desc": "Global hackathon open worldwide.",
-      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/374/843/datas/medium_square.png",
-      "source": "devpost",
-      "verified": true,
-      "checkedAt": "2026-10-05",
-      "liveAPI": true
-    },
     {
       "title": "FY27 Small Business Development Center State of Kansas Network Rebid",
       "type": "Grant",
@@ -428,6 +412,22 @@
       "source": "grantsgov",
       "verified": true,
       "checkedAt": "2026-10-22",
+      "liveAPI": true
+    },
+    {
+      "title": "Fanshawe Hacks",
+      "type": "Hackathon",
+      "country": "Global",
+      "org": "club",
+      "amt": "Open prizes",
+      "deadline": "2026-12-03",
+      "elig": "Open — see official listing",
+      "link": "https://fanshawe-hacks.devpost.com/",
+      "desc": "Global hackathon open worldwide.",
+      "img": "//d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/006/004/046/datas/medium_square.png",
+      "source": "devpost",
+      "verified": true,
+      "checkedAt": "2026-11-26",
       "liveAPI": true
     },
     {
